@@ -1,6 +1,7 @@
 # Site settings
 # the baseURL should end with a slash /
-baseURL = "http://faculty.chemeketa.edu/nmitche6/book/"
+# baseURL = "http://faculty.chemeketa.edu/nmitche6/book/"
+baseURL = "https://duragauge.github.io/"
 # if you are publishing to the root directory of your site, set canonifyURLs to "false", otherwise keep it "true"
 canonifyURLs = "true"
 languageCode = "en-us"
