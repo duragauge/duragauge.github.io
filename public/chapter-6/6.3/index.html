@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>6.3 Series &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://faculty.chemeketa.edu/nmitche6/book/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="http://faculty.chemeketa.edu/nmitche6/book/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-is-a-series">What is a Series?</a></li>
+    <li><a href="#arithmetic-series">Arithmetic Series</a></li>
+    <li><a href="#finite-geometric-series">Finite Geometric Series</a>
+      <ul>
+        <li><a href="#finite-geometric-series---example-1">Finite Geometric Series - Example 1</a></li>
+        <li><a href="#finite-geometric-series---example-2">Finite Geometric Series - Example 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#infinite-geometric-series">Infinite Geometric Series</a></li>
+    <li><a href="#summation-notation">Summation Notation</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>6.3 Series</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/school-1689750_1280.jpg"  title="Image by Julia Schwab from Pixabay"  alt="Image by Julia Schwab from Pixabay" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-1689750/">Image by Julia Schwab from Pixabay</a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>When Carl Friedrich Gauss
+<label for="sn-Gauss" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
+<span class="sidenote">
+This is the same Gauss that gave us <a href="http://faculty.chemeketa.edu/nmitche6/book/chapter-6/6.1">Gauss-Jordan Elimination</a> and the <a href="http://faculty.chemeketa.edu/nmitche6/book/chapter-5/5.2/#the-fundamental-theorem-of-algebra">Fundamental Theorem of Algebra</a>
+</span>
+was a young boy in Germany it was common for students to do their work on small slate chalkboards.</p>
+<p>The story is told that one day in 1786, when Gauss was just 9 years old, his teacher gave the class a challenging problem.  It was something along the lines of adding up all the whole numbers from $1$ to $100$, an exercise that would certainly take the entire class hour.</p>
+<p>Almost as soon as the problem had been given, Gauss wrote down a single number and put his slate on the teacher's desk.</p>
+<p>At the end of the hour, Gauss was one of the few students with the correct answer.</p>
+<p>So how did he do it?  That's what we'll look into in this section.</p>
+<h2 id="what-is-a-series">What is a Series?</h2>
+<p>In the last section we learned that an ordered list of numbers is called a <em>sequence</em>.  If you add up the terms of a sequence you get something new that we call a <strong>series</strong>.  Here is a side by side comparison.</p>
+<p>[
+\begin{align}
+\text{Sequence: } &amp; \thinspace 2, \ 4, \ 6, \ 8 \newline
+\text{Series: } &amp; \thinspace 2 + 4 + 6 + 8 = 20
+\end{align}
+]</p>
+<p>Notice that the addition in the series simplifies to a single value.  Finding the sum of a series, if it exists, is one of the primary exercises with series.</p>
+<p>The problem young Gauss was given was that of finding the value of a series, though it may not have been worded that way.</p>
+<p>[
+\begin{align}
+\text{Sequence: } &amp; \thinspace 1, \ 2, \ 3, \ \dots , \ 100 \newline
+\text{Series: } &amp; \thinspace 1 + 2 + 3 + \cdots + 100 = \text{ ?}
+\end{align}
+]</p>
+<p>In English the words &quot;sequence&quot; and &quot;series&quot; are often used interchangeably without much difference.  For example, a &quot;series of events&quot; generally means the same as &quot;a sequence of events&quot;.  In mathematics, however, they are different and we'll need to pay close attention to which word is used.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Is $17+27+37+47$ a sequence or a series?</li>
+</ol>
+<details><summary>Answer</summary><p>This is a series since we are adding up the numbers $17, 27, 37, 47$.</p>
+</details>
+<ol>
+<li>Write the series for the sequence $5, \ 10, \ 15, \ 20, \ 25$.</li>
+</ol>
+<details><summary>Answer</summary><p>$$5+10+15+20+25$$</p>
+</details>
+<ol>
+<li>Write a series for the sum of the first four terms of the sequence $a_n=2^n$.</li>
+</ol>
+<details><summary>Answer</summary><p>The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be $$2^1+2^2+2^3+2^4$$.</p>
+</details>
+</div>
+<h2 id="arithmetic-series">Arithmetic Series</h2>
+<p>We are now at a point where we can start to think about how Gauss might have be able to find his sum.</p>
+<p>$$\Large 1 + 2 + 3 + \cdots + 100$$</p>
+<p>While we don't know for sure how Gauss pictured this problem in his mind, but he certainly spotted a pattern and used that to his advantage.</p>
+<p>There are a number of ways to visualize it, but perhaps the simplest is to look at pairs of numbers.  If you choose the pairs carefully, they will all equal the same number!</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/series_gauss_v3.svg#center" alt=""></p>
+<p>In this case we end up with $50$ pairs that each equal $101$ so the total is $50 \times 101 = 5050$.</p>
+<p>This same pattern occurs for every arithmetic series.  To find the sum of the first $n$ terms you add the first and last terms and multiply by the number of pairs.  So, whenever your sequence is arithmetic in the form $a_n=a_1+d(n-1)$, the sum of the first $n$ terms is given by this formula.</p>
+<p>$$\Large S_n=\frac{n}{2} \bigl(a_1+a_n \bigr)$$</p>
+<p>Let's walk through an example using this formula by evaluating the following series.</p>
+<p>$$\Large 380 + 378 + 376 + \cdots + 252$$</p>
+<p>We should start by making sure these numbers come from an arithmetic sequence.  If they don't, then we can't use our formula to find the sum.</p>
+<p>The first term is $a_1=380$ and the spacing is $d=-2$, so this is an arithmetic series and the terms come from the equation $a_n=380-2(n-1)$.</p>
+<p>The arithmetic summation formula involves $n$, $a_1$ and $a_n$.  We know $a_1$ and $a_n$ but don't have a value for $n$.  However, if we put $a_n=252$ into the equation for the sequence we can solve for $n$.</p>
+<p>[
+\begin{align}
+a_n &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Sequence equation}} \newline
+252 &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Replace $a_n=252$}} \newline
+-128 &amp;= -2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $380$}} \newline
+64 &amp;= n-1 &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $-2$}} \newline
+65 &amp;= n &amp;&amp; \small \color{#5fa2ce}{\text{Add $1$}}
+\end{align}
+]</p>
+<p>We now have all the pieces in place to find the sum of the $n=65$ terms of our series, starting with $a_1=380$ and ending at $a_{65}=252$.</p>
+<p>[
+\begin{align}
+S_{n} &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
+S_{30}&amp;= \frac{65}{2} \bigl(380+252\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 20540 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>One final note on this summation formula.  Gauss wasn't the first to discover how to add up an arithmetic series.  Fibbonacci, for one, published this method in 1202 and Archimedes probably knew of it by 200BC.  But the story of Gauss discovering the formula in school is famous and it would be breaking tradition not to relate it!
+<label for="sn-Gauss" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
+<span class="sidenote">
+Many retellings of this famous story exist.  The earliest version was written in 1856 by <a href="https://archive.org/details/gauss00waltgoog/page/n15">Wolfgang Sartorius</a>, who worked with Gauss at the University of Göttingen.  <a href="http://bit-player.org/2007/a-mathematical-fable-revisited">Brian Hayes</a> compares many of them in this <a href="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/Gauss's_Day_of_Reckoning_by_Brian_Hayes">Scientific American article</a>.
+</span></p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$?</li>
+</ol>
+<details><summary>Answer</summary><div>Since $n=30$, $a_1=16$ and $a\_{30}=-129$, the sum is
+\begin{align}
+S\_{30} &= \frac{30}{2} \bigl(16-129 \bigr)\newline
+&= -1695
+\end{align}
+</div>
+</details>
+<ol>
+<li>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \ $.</li>
+</ol>
+<details><summary>Answer</summary><div>
+First find the equation for the sequence that creates the terms.
+$$a\_{n}= 380-2(n-1)$$
+Then use $a_n=80$ to find $n$.
+\begin{align}
+a\_{n} &=  380-2(n-1) &&  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
+80  &=  32+4(n-1)  &&  \small \color{#5fa2ce}{\text{Replace $a\_{n}=80$}} \newline
+48  &=  4(n-1)     &&  \small \color{#5fa2ce}{\text{Subtract $32$}} \newline
+12  &=  n-1        &&  \small \color{#5fa2ce}{\text{Divide by $4$}} \newline
+13  &=  n          &&  \small \color{#5fa2ce}{\text{Add $1$}}
+\end{align}
+And finally use the summation formula.
+\begin{align}
+S\_{n}  &= \frac{n}{2}\bigl(a_1+a_n\bigr) && \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
+S\_{13} &= \frac{13}{2} \bigl(32+80\bigr) && \small \color{#5fa2ce}{\text{Insert values}} \newline
+        &= 728                            && \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+</div>
+</details>
+</div>
+<h2 id="finite-geometric-series">Finite Geometric Series</h2>
+<p>It bears repeating that the formula above only works if the sequence is arithmetic.  If we encounter a geometric series then there is a completely different formula.</p>
+<p>To add up the first $n$ terms of a geometric sequence of the form $a_n=a_1 r^{n-1}$, use the following formula.</p>
+<p>$$\Large S_n = \frac{a_1(1-r^n)}{1-r}$$</p>
+<p>To show how this works let's look at an application.</p>
+<h3 id="finite-geometric-series---example-1">Finite Geometric Series - Example 1</h3>
+<p><label for="mn-strawberries" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-strawberries" class="margin-toggle" />
+<span class="marginnote">
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/johnny-martinez-lBIFDzYwbDo-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/lBIFDzYwbDo">Photo by Johnny Martínez on Unsplash</a> 
+</span></p>
+<p>In 1988 farmers in Oregon produced a record crop of 100 million pounds of strawberries. Since then strawberry production has dropped 7% annually.  Can we use that information to determine how many millions of pounds of strawberries grown over a 20 year period starting in 1998?</p>
+<p>If you look closely at the summation formula, all we need are the first term $a_1$, the common ratio $r$, and the number of terms $n$.  Unlike the arithmetic series formula, we don't need to find the final term $a_n$.</p>
+<p>Taking $a_1=100$, $r=0.93$ (since there is a 7% drop), and $n=20$, we can find the sum using the formula above.
+[
+\begin{align}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{20} &amp;= \frac{100 \bigl(1-(0.93)^{20}\bigr)}{1-(0.93)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 1093.94 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>This means Oregon produced around 1094 million total pounds of strawberries over that 20 year period.</p>
+<p>When using a calculator to evaluate expressions like this, be very careful to put the exponent in the correct place and include parenthesis around the denominator.  The above calculation looks like this.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/geometric_sequence_calculator_eval.svg#center" alt=""></p>
+<h3 id="finite-geometric-series---example-2">Finite Geometric Series - Example 2</h3>
+<p><label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote">
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/josh-appel-NeTPASr-bmQ-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/NeTPASr-bmQ">Photo by Josh Appel on Unsplash</a> 
+</span></p>
+<p>Suppose you put a penny on the first square of a chess board, two on the second, four on the third, eight on the
+fourth and continued doubling until you got to the 64th square. How much money, in dollars, would it take to fill up the chess board?</p>
+<p>In dollars $a_1=0.01$, since the amount is doubling $r=2$, and we know $n=64$.  So the sum is</p>
+<p>[
+\begin{align}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{64} &amp;= \frac{0.01 \bigl(1-(2)^{64}\bigr)}{1-(2)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline \newline
+&amp;\approx 1.84467 \times 10^{17} &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newline \newline
+&amp;\approx $184,467,000,000,000,000
+\end{align}
+]</p>
+<p>To help put that in perspective, every person on Earth would need to contribute more than 20 million dollars each to fill the chess board with pennies!</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career?</li>
+</ol>
+<details><summary>Answer</summary><div>Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
+\[
+\begin{align}
+S\_{n}  &= \frac{a_1(1-r^n)}{1-r} && \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S\_{50} &= \frac{25000 \bigl(1-(1.03)^{50}\bigr)}{1-(1.03)} && \small \color{#5fa2ce}{\text{Insert values}} \newline
+        &= \$2,819,921.68 && \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+\]
+</div>
+</details>
+</div>
+<h2 id="infinite-geometric-series">Infinite Geometric Series</h2>
+<p>Not that long ago most music was sold on compact disks, or CDs.<br>
+<label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote">
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/cd-1003342_1280.jpg" alt=""><a href="https://pixabay.com/images/id-1003342/">Photo by Bruno Glätsch on Pixabay</a> 
+</span></p>
+<p>According to data collected by the Recording Industry Association of America, 705.4 million CDs were sold in 2005 and that number has been declining by about 16.9% per year.</p>
+<p>Using the formula for a geometric series we can say that the cumulative total number of CDs sold (in millions) since 2005 is given by</p>
+<p>[
+S_{n}  = \frac{705.4(1-(0.831)^n)}{1-(0.831)}
+]</p>
+<p>Let's chart those values for several years starting in 2005.</p>
+<p>[
+\begin{array}{|c|c|c|}
+\hline
+\text{Year} &amp; n &amp; \text{Millions of CDs Sold} \newline
+\hline
+2005 &amp; 1 &amp; 705.4  \newline
+\hline
+2010 &amp; 6 &amp; 2799.4 \newline
+\hline
+2015 &amp; 11 &amp; 3629.3 \newline
+\hline
+2020 &amp; 16 &amp; 3958.1 \newline
+\hline
+2025 &amp; 21 &amp; 4088.4 \newline
+\hline
+2030 &amp; 26 &amp; 4140.1 \newline
+\hline
+\end{array}
+]</p>
+<p>Looking at these numbers it appears that the total number of CDs sold is growing more slowly as time progresses.</p>
+<p>And that seems reasonable.  Since fewer and fewer CDs are being sold we shouldn't expect the total to rise very much.</p>
+<p>In fact, if we compute the values for $2035$ and $2040$ they are nearly the same at $4160.5$ and $4168.6$.</p>
+<p>But what would happen if we projected this process out further into the future?  Could it be that there is some limit to the number of CDs that will ever be sold no mater how much time passes?</p>
+<p>Mathematically, what we are asking is if there is such a thing as an infinite sum that adds up to a fixed number.  Is it possible for something like $S_{\infty}$ to exist?</p>
+<p>The answer lies hidden in our formula for the sum of the first $n$ terms of a geometric sequence.</p>
+<p>$$\Large S_n = \frac{a_1(1-r^n)}{1-r}$$</p>
+<p>As $n$ increases the only part that changes is the $r^n$.  So what happens to $r^n$ as $n$ gets larger?  In the figure below you can change $r$ and see how that impacts $r^n$.</p>
+<iframe scrolling="no" title="Convergence of Geometric Sequences" src="https://www.geogebra.org/material/iframe/id/gwkjxypb/width/600/height/400/border/888888/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
+<br>
+Notice that the values for $r^n$ drop toward $0$ whenever $-1<r<1$.  In other words, if $-1<r<1$ then $r^n \rightarrow 0$ as $n \rightarrow \infty$.  When this happens our summation formula becomes
+<p>$$\Large S_{\infty}=\frac{a_1}{1-r}$$</p>
+<p>It might seem odd that you can add up infinitely many things and arrive at something other than infinity--but that's exactly what this formula says you can do, provided $-1&lt;r&lt;1$.</p>
+<p>We've already seen that the total number of CDs sold since 2005 appears to be leveling off.  Let's now use this infinite geometric series formula to find that limiting value.</p>
+<p>To do that we insert $a_1=705.4$ million and $r=0.831$ (16.9% decline) into the infinite sum formula.</p>
+<p>[
+\begin{align}
+S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
+&amp;= \frac{705.4}{1-(0.831)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 4173.96 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>This formula predicts that 4173.96 million CDs will be sold from 2005 to the end of time, if that 16.9% decline persists.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/mick-haupt-fnKoW9mvgkA-unsplash.jpg"  title="Photo by Mick Haupt on Unsplash"  alt="Photo by Mick Haupt on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/fnKoW9mvgkA">Photo by Mick Haupt on Unsplash</a>
+	</span>
+</div>
+<br>
+<ol>
+<li>Before CDs there were cassette tapes, and they faced an even more rapid demise.  If 76 million cassettes were sold in 2000 and that amount decreases by 55% per year, how many cassette tapes will be sold from 2000 until the end of time?</li>
+</ol>
+<details><summary>Answer</summary><div>Using $a_1=76$ and $r=.45$ the infinite geometric series formula gives
+\[
+\begin{align}
+S\_{\infty}  &= \frac{a_1}{1-r} && \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
+ &= \frac{76}{1-(0.45)} && \small \color{#5fa2ce}{\text{Insert values}} \newline
+        &= 138.18 && \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+\]
+and we conclude that the total number of cassette tapes sold from 2000 will be 138.18 million, assuming the 55% decline continues.
+</div>
+</details>
+<ol>
+<li>Why is there no formula for an infinite arithmetic series?</li>
+</ol>
+<details><summary>Answer</summary><p>An infinite geometric series only has a sum if each new value is sufficiently smaller than the previous number and eventually shrinks toward $0$ (that's why we need $-1&lt;r&lt;1$).  The terms in an arithmetic are evenly spaced, so shrinking towards $0$ is impossible.  If you add up an infinite number of terms from an arithmetic series you would approach $\infty$ or $-\infty$.</p>
+</details>
+</div>
+<h2 id="summation-notation">Summation Notation</h2>
+<p>When a series has more than a couple of terms there is a compact notation that helps us avoid having to write out a long string of sums.</p>
+<p>This new summation notation is sometimes called &quot;sigma&quot; notation, because the Greek letter $\Sigma$ (sigma) is used to represent summation.  Here's an example of what summation notation looks like.</p>
+<p>$$\Large \sum_{k=1}^{8} k^2$$</p>
+<p>This a very dense notation and there is a lot here for us to unpack.</p>
+<p>First note that the equation that generates the terms of the sequence is written to the right of the big $\Sigma \ $.</p>
+<p>Below the $\Sigma \ $ we are told what the variable is and what its first value should be.</p>
+<p>Above the $\Sigma \ $ is the final value that gets put into the equation.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/summation_notation.svg#center" alt=""></p>
+<p>To expand this shorthand version back into a large sum we start by letting $k=1$ in the equation and keep going until $k=8$, all the while adding up the terms we create.  In the figure below you can see how this would work.</p>
+<div class="geogebra" style="padding-top: 21.58%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/kete4zs4/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+ <br>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Expand the series below.
+$$\Large \sum_{k=1}^{5} 3k$$</li>
+</ol>
+<details><summary>Answer</summary><p>$$\sum_{k=1}^{5} 3k=3(1)+3(2)+3(3)+3(4)+3(5)$$</p>
+</details>
+</div>
+<p>Now let's work in the other direction, turning a large sum into compact summation notation.  If we were to write the series connected to this sequence</p>
+<p>$$3, \ 5, \ 7, \ 9, \ 11, \ 13, \ 15, \ 17, \ 19, \ 21, \ 23, \ 25, \ 27, \ 29, \ 31$$</p>
+<p>then we would need to write out the sum of all fifteen terms.</p>
+<p>$$3+5+7+9+11+13+15+17+19+21+23+25+27+29+31$$</p>
+<p>To convert this to summation notation the first thing we need is an equation for the sequence that generates these terms.  The values appear to come from an arithmetic sequence with a starting value of $3$ and a spacing of $2$, so the equation is $a_n=3+2(n-1)=2n+1$.</p>
+<p>All that's left is to determine the starting and ending values for $n$.</p>
+<p>$$\Large \sum_{n=?}^{?} (2n+1)$$</p>
+<p>It's tempting to use $3$ as the starting value but, because $3=a_1$, we actually need to use $n=1$.</p>
+<p>The same holds true for the final value of $n$.  We don't use $31$ but instead use its location in the sequence, which is $15$.</p>
+<p>Inserting the starting and ending values for $n$ completes our summation notation for this example.</p>
+<p>$$\Large \sum_{n=1}^{15} (2n+1)$$</p>
+<p>If we had wanted to skip the first three terms and start our series at $9$ then we would adjust the sigma notation so it begins at $n=4$.  And by changing the number on top of the $\Sigma$ we could end the series at a different term.  This makes summation notation extremely flexible.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Write Gauss's series $ \ 1 + 2 + 3 + \cdots + 100 \ $ in summation notation.</li>
+</ol>
+<details><summary>Answer</summary><p>$$\sum_{n=1}^{100} n$$</p>
+</details>
+<ol>
+<li>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd.</li>
+</ol>
+<details><summary>Answer</summary><p>$$\sum_{n=10}^{82} n$$</p>
+</details>
+</div>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrolly.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrollex.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/skel.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>

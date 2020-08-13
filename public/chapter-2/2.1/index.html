@@ -1,0 +1,538 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>2.1 Power Functions &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://faculty.chemeketa.edu/nmitche6/book/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="http://faculty.chemeketa.edu/nmitche6/book/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#power-functions">Power Functions</a></li>
+    <li><a href="#use-rules-of-exponents-to-identify-power-functions">Use Rules of Exponents to Identify Power Functions</a>
+      <ul>
+        <li><a href="#negative-powers">Negative Powers</a></li>
+        <li><a href="#roots">Roots</a></li>
+        <li><a href="#fractional-powers">Fractional Powers</a></li>
+      </ul>
+    </li>
+    <li><a href="#inverses-of-power-functions">Inverses of Power Functions</a></li>
+    <li><a href="#graphs-of-power-functions">Graphs of Power Functions</a>
+      <ul>
+        <li><a href="#case-1-colorredp0">Case 1: $\color{red}{p&lt;0}$</a></li>
+        <li><a href="#case-2-colorgreen0p1">Case 2: $\color{green}{0&lt;p&lt;1}$</a></li>
+        <li><a href="#case-3-colorbluep1">Case 3: $\color{blue}{p&gt;1}$</a></li>
+      </ul>
+    </li>
+    <li><a href="#symmetry-of-power-functions">Symmetry of Power Functions</a></li>
+    <li><a href="#use-symmetry-to-graph-power-functions">Use Symmetry to Graph Power Functions</a></li>
+    <li><a href="#how-power-functions-change">How Power Functions Change</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>2.1 Power Functions</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/art-artist-brush-102127.jpg"  title="Photo by Daian Gan from Pexels"  alt="Photo by Daian Gan from Pexels" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://www.pexels.com/photo/brush-painting-color-paint-102127/">Photo by Daian Gan from Pexels</a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Part of the enjoyment of art comes from its patterns of sound and color and motion.</p>
+<p>Patterns are also an essential part of mathematics.  The British mathematician G. H. Hardy once said that <em>&quot;A mathematician, like a painter or a poet, is a maker of patterns.   If his patterns are more permanent than theirs, it is because they are made with ideas&quot;</em>.</p>
+<p>In this section, we will find an underlying structure that unifies the six library functions from Chapter 1 and opens up a new category of functions for our use.</p>
+<h2 id="power-functions">Power Functions</h2>
+<p>When working with a group of functions, the first pattern we look for is any similarity in the <em>form</em>, or equation, of the functions.  Once we have identified a pattern, we can create new functions by changing the parameters of that basic equation.</p>
+<p>For instance, these three functions</p>
+<div>
+$$\begin{align}
+\text{identity function} && f(x) &= x = x^1 \newline
+\text{square function} && f(x) &= x^{2} \newline
+\text{cube function} && f(x) &= x^3 \newline
+\end{align}$$
+</div>
+<p>are all written in the form $f(x)=x^{p}$, where $p$ is the power of the variable $x$.  New functions can be made by taking that basic format and changing the power $p$.  Since the power is the important parameter of the equation, we will call these <em>power</em> functions.</p>
+<p>In general, a <strong>power function</strong> is any function that can be written as $f(x)=x^{p}$, where $p$ is a constant.  Notice that the variable must be raised to a fixed power.  That power can be positive or negative, a whole number, a fraction or a decimal, but it cannot be a variable.  As an example, $g(x)=3^{x}$ has a variable exponent, so it cannot be a power function even though it looks somewhat similar.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Decide if the following are power functions or not.  If it is, identify the value of the power $p$.</p>
+<ol>
+<li>
+<p>$f(x)=x^{-2}$<details><summary>Answer</summary>Yes, it is a power function with $p=-2$</details></p>
+</li>
+<li>
+<p>$f(x)=2^{x}$<details><summary>Answer</summary>No, since the variable $x$ is in the exponent, this is not a power function.  Functions like this are exponential functions and will be studied in Chapter 3.</details></p>
+</li>
+<li>
+<p>$f(x)=x^{1.68}$<details><summary>Answer</summary>Yes, this is a power function with $p=1.68$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="use-rules-of-exponents-to-identify-power-functions">Use Rules of Exponents to Identify Power Functions</h2>
+<p>We now know that the identity, square and cube are all power functions, but what about the other basic functions from Chapter 1?  At first glance, these functions</p>
+<div>
+$$\begin{align}
+\text{reciprocal function} && f(x) &= \frac{1}{x} \newline
+\text{square root function} && f(x) &= \sqrt{x} \newline
+\text{cube root function} && f(x) &= \sqrt[3]{x}
+\end{align}$$
+</div>
+<p>do not appear to be power functions since they are not written in the form $f(x)=x^{p}$.</p>
+<p>However, any function that <em>can</em> be written as $f(x)=x^{ p}$ is a power function, even if it is often written in a different format.  A brief review of a few rules of exponents will show that these three functions are indeed power functions.</p>
+<h3 id="negative-powers">Negative Powers</h3>
+<p>You might recall the rule $\frac{1}{x}=x^{-1}$.  This tells us that the <em>reciprocal function</em> $f(x) = \frac{1}{x}$  is the same as the power function $f(x) =  x^{-1}$.  The general rule of exponents at work here is</p>
+<p>$$\frac{1}{x^{n}}=x^{-n}$$</p>
+<p>This rule can be used to convert any reciprocal-type function into a power function.  For instance, $f(x)=\frac{1}{x^{5}}$ can be rewritten in the standard power function format as $f(x)=x^{-5}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Rewrite the following functions in the standard power function form.</p>
+<ol>
+<li>
+<p>$f(x)=\frac{1}{x^{2}}$<details><summary>Answer</summary>$f(x)=x^{-2}$</details></p>
+</li>
+<li>
+<p>$f(x)=\frac{1}{x^{4.11}}$<details><summary>Answer</summary>$f(x)=x^{-4.11}$</details></p>
+</li>
+</ol>
+</div>
+<h3 id="roots">Roots</h3>
+<p>Another rule of exponents allows us to rewrite roots as fractional powers.  Specifically,</p>
+<p>$$\sqrt[m]{x}  =  x^{1/m}$$</p>
+<p>From this we see that the <em>square root</em> function $f(x)=\sqrt{x}$ and the <em>cube root</em> function $f(x)=\sqrt[3]{x}$ can be written as power functions where the powers are $1/2$ and $1/3$, respectively.</p>
+<p>$$f(x)=\sqrt{{x}}  =  x^{1/2}$$</p>
+<p>and</p>
+<p>$$f(x)=\sqrt[3]{x}  =  x^{1/3}$$</p>
+<p>Other roots can be rewritten as power functions in the same way.  For instance, $f(x)=\sqrt[8]{x}   =  x^{1/8}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Rewrite the following functions in the standard power function form.</p>
+<ol>
+<li>
+<p>$f(x)=\sqrt[5]{x}$<details><summary>Answer</summary>$f(x)=x^{1/5}$</details></p>
+</li>
+<li>
+<p>$f(x)=\sqrt[4]{x}$<details><summary>Answer</summary>$f(x)=x^{1/4}$</details></p>
+</li>
+</ol>
+</div>
+<h3 id="fractional-powers">Fractional Powers</h3>
+<p>The family of power functions also includes roots of powers, such as $f(x)=\sqrt[m]{x^{n}}$ , or powers of roots like $f(x)=(\sqrt[m]{x})^{n}$, which happen to be the same thing.  These can be rewritten as power functions where the power is a rational number, or faction, of the form $p=n/m$, such as $-3/8$ or $2/5$.</p>
+<p>$$\sqrt[m]{ x^n }  =  \left(\sqrt[m]{x}\right)^{n}  =  x^{n/m} $$</p>
+<p>Since all three forms are equivalent, you may be asked to convert one into the others.  The power function $f(x)  = x^{2/5 }$, for instance, can also be written as  $f(x) =  \sqrt[5]{x^{2}}$ or as $f(x) =  (\sqrt[5]{x})^2$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Rewrite the following functions in the other two formats.</p>
+<ol>
+<li>$f(x)=\sqrt{ x^3 }$</li>
+</ol>
+<details><summary>Answer</summary>$f(x)=x^{3/2} =  (\sqrt{ x } )^{3}$</details>
+<ol>
+<li>$f(x)=(\sqrt[4]{x})^{7}$</li>
+</ol>
+<details><summary>Answer</summary>$f(x)=x^{7/4}  =  \sqrt[4]{ x^{7}  }$</details>
+<ol>
+<li>$f(x)=x^{2/9}$</li>
+</ol>
+<details><summary>Answer</summary>$f(x)=\sqrt[9]{ x^{2}} =  (\sqrt[9]{ x } )^{2}$</details>
+</div>
+<h2 id="inverses-of-power-functions">Inverses of Power Functions</h2>
+<p>Finding the inverse of a power function is a very straightforward process.  As an illustration, consider the cube function $f(x) =  x^{3}$ and its inverse, the cube root function $f^{-1}(x) =  \sqrt[3]{x}$.</p>
+<p>Since the cube root can be written as the one-third power $x^{1/3}$, the inverse of $f(x)=x^{3}$ is the power function $f^{-1}(x)=x^{1/3}$.</p>
+<p>Notice that the two powers are <em>reciprocals</em> of each other, that is the key.</p>
+<p>In general, the inverse of any power function restricted to $x\geq0$ is the power function whose power is the reciprocal of the other.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-1/reciprocal_power.png#center" alt=""></p>
+<p>That is to say, given some power function $f(x)=x^{p}$, then its inverse is always $f^{-1}(x)=x^{1/p}$, for all powers other than $p=0$ (which does not have an inverse).</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Find the inverse of the following power functions.</p>
+<ol>
+<li>
+<p>$f(x) =  x^5$ <details><summary>Answer</summary>$f^{-1}(x) =  x^{1/5}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{7/4}$ <details><summary>Answer</summary>$f^{-1}(x) =  x^{4/7}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{-3/5}$ <details><summary>Answer</summary>$f^{-1}(x) =  x^{-5/3}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{2.3}$ <details><summary>Answer</summary>$f^{-1}(x) =  x^{1/2.3}$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="graphs-of-power-functions">Graphs of Power Functions</h2>
+<p>Now let's turn our attention to identifying patterns in the graphs of power functions. The shape of the graph of a power function $f(x)=x^{ p}$ is controlled by the value of the power $p$.  In this interactive figure you can use the <strong><font color="blue">blue</font></strong> slider to change $p$.</p>
+<p>Since many powers are undefined when $x&lt; 0$, we will focus on the first quadrant for now.   As you change $p$, look for patterns or similarities between the different graphs.  In particular, try to group the graphs into three distinct shapes.</p>
+<div class="geogebra" style="padding-top: 58.33%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/FyjpfmvA/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<p>As you may have noticed, all power functions pass through the point $(1,\ 1)$, though they do so in three different ways depending on the power $p$.  The three behavior patterns are separated from one another by $p=0$ (when we get the horizontal line $y=1$) and $p=1$ (when we get the identity function $y=x$).</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/powers_all_3.svg#center" alt=""></p>
+<p>In Chapter 1 you learned how to identify several characteristics of a function by reading its graph.  Since understanding the properties of these three shapes will impact you ability to use power functions effectively, our next goal must be to analyze each of these shapes individually.</p>
+<h3 id="case-1-colorredp0">Case 1: $\color{red}{p&lt;0}$</h3>
+<p>Let's start our analysis with the case where the power is negative, that is $p&lt;0$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_a.svg#center" alt=""></p>
+<p>Looking at the graph we see that it drops sharply along the y-axis and levels off toward the positive x-axis, as you move from left to right.  In mathematical terms, the graph is both decreasing and concave up on the interval $(0, \infty)$, with a vertical asymptote at $x=0$ (the y-axis) and a horizontal asymptote at $y=0$ (the x-axis).</p>
+<p>Because of the asymptotes, the graph never reaches a minimum nor a maximum value.  It does not display any form of odd or even symmetry.  Based on the shape of the graph, it would be reasonable to use this type of power function to represent quantities that decay as $x$ increases.</p>
+<h3 id="case-2-colorgreen0p1">Case 2: $\color{green}{0&lt;p&lt;1}$</h3>
+<p>If the power is small, that is $0&lt;p&lt;1$, then the graph of the power function $f(x)=x^{p}$ is increasing and concave down over the interval $(0, \infty)$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_b.svg#center" alt=""></p>
+<p>The graph has a minimum value at $(0, 0)$, but does not have a maximum.  Neither does it have any symmetry or asymptotes.  Since the graph is concave down, the rate of increase is decreasing, suggesting that this type of power function might model quantities whose growth is slowing down.</p>
+<h3 id="case-3-colorbluep1">Case 3: $\color{blue}{p&gt;1}$</h3>
+<p>When $p&gt;1$, the power function $f(x)=x^{p}$ increases and is concave up on the interval $(0, \infty)$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_c.svg#center" alt=""></p>
+<p>There is a minimum value at the origin $(0, 0)$, but no maximums, asymptotes, or symmetry.  These functions will be useful when modeling quantities that grow faster and faster.  Lastly, note that this graph, along with the two previous ones, is one-to-one and must have an inverse.</p>
+<h2 id="symmetry-of-power-functions">Symmetry of Power Functions</h2>
+<p>So far, we have restricted our attention to power functions with $x \geq 0$ because many powers not defined when $x&lt;0$.</p>
+<p>However, if the power is a rational number, or faction, of the form $p =\color{blue}{n}/\color{green}{m}$, then the function <em>might</em> be defined for $x&lt;0$, in which case the graph would have a left side.</p>
+<p>In this interactive figure you can adjust the value of the numerator $\color{blue}{n}$ and the denominator $\color{green}{m}$.  As you do so, keep in mind the following questions:</p>
+<ul>
+<li>For which values of $\color{green}{m}$ does the left side of the graph exist?</li>
+<li>When the left side exists, for which values of $\color{blue}{n}$ is the graph symmetric across the y-axis (ie. even symmetry) and for which is the graph symmetric around the origin (ie. odd symmetry)?</li>
+</ul>
+<div class="geogebra" style="padding-top: 57.69%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/lUgvcybm/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<p>From the interactive figure we can see that if $p =\color{blue}{n}/\color{green}{m}$ (and all common factors of $\color{blue}{n}$ and $\color{green}{m}$ have been cancelled), then the function only has a left side when the denominator $\color{green}{m}$ is odd.</p>
+<p>Additionally, when denominator $\color{green}{m}$ is odd, the function displays even symmetry if the numerator $\color{blue}{n}$ is even and
+odd symmetry if the numerator $\color{blue}{n}$ is odd.</p>
+<p>Understanding this allows us to answer questions about a power function just by inspecting it's equation.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Which of the following are defined when $x&lt;0$?</p>
+<ol>
+<li>
+<p>$f(x) =  x^{7/5}$ <details><summary>Answer</summary>Yes, since the denominator $5$ is odd, this function is defined when $x&lt;0$.</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{-3/2}$ <details><summary>Answer</summary>No, since the denominator $2$ is even, this function is not defined for $x&lt;0$.</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{8/4}$ <details><summary>Answer</summary>Yes, since the power $8/4$ simplifies to $2/1$, the denominator is $1$ and the function is defined when $x&lt;0$.</details></p>
+</li>
+</ol>
+<p>Describe the symmetry, if any, of each function without referring to a graph.</p>
+<ol>
+<li>
+<p>$f(x) =  x^{5/3}$ <details><summary>Answer</summary>This function has odd symmetry.</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{-6/5}$ <details><summary>Answer</summary>This function has even symmetry.</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{3/4}$ <details><summary>Answer</summary>Since the denominator is not an odd number, this function is not defined for $x&lt;0$, so it does not have any symmetry.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="use-symmetry-to-graph-power-functions">Use Symmetry to Graph Power Functions</h2>
+<p>Knowing how the values of $\color{blue}{n}$ and $\color{green}{m}$ affect the symmetry of $f(x)=x^{p}$ with $p = \color{blue}{n} / \color{green}{m}$ also allows us to sketch the graph of a power function very quickly.</p>
+<p>Consider, for instance, $f(x) =  x^{\color{blue}{2}/\color{green}{3}}$.  The power $p =\color{blue}{2}/\color{green}{3}$ is between $0$ and $1$, so the graph of this function looks similar to the basic shape for $0&lt;p&lt;1$, which resembles the square root function.  The denominator $\color{green}{3}$ is an odd number, which tells us that this function has a left side.  And since the numerator $\color{blue}{2}$ is even, we should reflect the right side across the y-axis to create a graph with even symmetry.  Thus, the graph of $f(x) =  x^{2/3}$ looks something like this:</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_2_3.svg#center" alt=""></p>
+<p>If the numerator had been odd, such as $f(x) =  x^{5/3}$ then we would have reflected around the origin instead, ending up with this rough sketch:</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_5_3.svg#center" alt=""></p>
+<p>In summary, to sketch the graph of a power function with a rational exponent, first choose the basic that matches the power $p$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_functions.svg#center" alt=""></p>
+<p>Then use the symmetry rules to draw the other half of the graph, if it exists.</p>
+<ul>
+<li>If the denominator $\color{green}{m}$ is odd, then the function also exists when $x&lt;0$ so it has a left side.</li>
+<li>When $\color{green}{m}$ is odd, the function has even symmetry if $\color{blue}{n}$ is even and odd symmetry if $\color{blue}{n}$ is odd.</li>
+</ul>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Make rough sketch of the function $f(x)=x^{8/3}$.</li>
+</ol>
+<details><summary>Answer</summary><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_check_c.svg" alt=""></details>
+<ol>
+<li>Make a sketch of the function $f(x)=x^{-3/5}$.</li>
+</ol>
+<details><summary>Answer</summary><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_check_b.svg" alt=""></details>
+<ol>
+<li>Draw a graph of the function $f(x)=x^{-2/7}$.</li>
+</ol>
+<details><summary>Answer</summary><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-2/power_check_a.svg" alt=""></details>
+</div>
+<h2 id="how-power-functions-change">How Power Functions Change</h2>
+<p>We can also find patterns in the way power functions change.  In particular, the difference quotients of power functions have a very intriguing property.</p>
+<p>You will recall that the difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval $[x, x+h]$, where $h$ is any positive number.  The difference quotient of a function is given by</p>
+<p>$$D(x)=\frac{f(x+h)-f(x)}{h}$$</p>
+<p>Below are the difference quotients for the power functions $f(x)=x^{2}$ and $f(x)=x^3$.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Function</strong></th>
+<th><strong>Difference quotient $D(x)$</strong></th>
+<th><strong>Power function similar to $D(x)$</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x^{2}$</td>
+<td>$2\color{black}{\boldsymbol{x}}+h$</br><a href="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-1/difference_quotient_x_squared.svg">(see steps)</a></td>
+<td>$\color{black}{\boldsymbol{x^1}}$</td>
+</tr>
+<tr>
+<td>$x^3$</td>
+<td>$3\color{black}{\boldsymbol{x^2}}+3xh+h^2$</br><a href="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-1/difference_quotient_x_cubed.svg">(see steps)</a></td>
+<td>$\color{black}{\boldsymbol{x^{2}}}$</td>
+</tr>
+</tbody>
+</table>
+<p><em>Click the link under each difference quotient to see the steps required to arrive at the equation.</em></p>
+<p>Notice that the difference quotient of each power function is similar to the next smaller power function.  In general, the difference quotient of $f(x)=x^{p}$ will involve the power function $f(x)=x^{p-1}$ for any $p\neq0$.  This is a fact that is verified in the first term of calculus.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In this section we discovered that the basic library functions could all be written in an identical algebraic form.  We then used that common form to create a new category of functions, whose properties we explored.   This is a process that will be repeated in later chapters as well.  We'll start with functions we understand and then create new functions that have slightly different algebraic forms and investigate their properties.</p>
+<p>An understanding of the properties and behaviors of functions is essential when trying to deduce which mathematical model will be the best fit for a particular set of data.  That knowledge is also helpful when working with applications, which is where we will head next with power functions.</p>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrolly.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrollex.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/skel.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>

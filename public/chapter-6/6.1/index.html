@@ -1,0 +1,674 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>6.1 Systems of Equations &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://faculty.chemeketa.edu/nmitche6/book/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="http://faculty.chemeketa.edu/nmitche6/book/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#solutions-to-systems-of-equations">Solutions to Systems of Equations</a></li>
+    <li><a href="#methods-for-solving-systems">Methods for Solving Systems</a></li>
+    <li><a href="#solve-systems-by-substitution">Solve Systems by Substitution</a>
+      <ul>
+        <li><a href="#substitution-example---find-an-exponential-function-given-2-points">Substitution Example - Find an Exponential Function Given 2 Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#solve-systems-by-elimination">Solve Systems by Elimination</a>
+      <ul>
+        <li><a href="#elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#identify-systems-of-linear-equations">Identify Systems of Linear equations</a></li>
+    <li><a href="#converting-between-systems-and-matrices">Converting Between Systems and Matrices</a></li>
+    <li><a href="#solve-2x2-systems-of-linear-equations-with-technology">Solve 2x2 Systems of Linear Equations with Technology</a></li>
+    <li><a href="#solve-larger-systems-of-linear-equations-with-technology">Solve Larger Systems of Linear Equations with Technology</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>6.1 Systems of Equations</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/car-3075497_1280.jpg"  title="Image by Tayeb MEZAHDIA from Pixabay "  alt="Image by Tayeb MEZAHDIA from Pixabay " style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-3075497/">Image by Tayeb MEZAHDIA from Pixabay </a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Many of the images we see in movies, videos, games and in print are created and edited by computer graphics software.  Artists, designers, architects and engineers use computer generated images to make simulations, prototypes, animations, life-like models and stunningly realistic visual effects.</p>
+<p>The shapes and surfaces that comprise computer generated images are created by mathematical equations.</p>
+<p>In order for these shapes and surfaces to fit together seamlessly and move smoothly their equations often need to satisfy several parameters simultaneously.</p>
+<p>Those parameters give us sets of two or more equations which are known as <strong>systems of equations</strong>.</p>
+<h2 id="solutions-to-systems-of-equations">Solutions to Systems of Equations</h2>
+<p>A system of equations is a list of equations that all need to be solved at the same time.  For instance, this is a system of two equations with two unknown values $a$ and $b$.</p>
+<p>[
+\begin{align}
+a + b &amp;= 10 &amp;&amp; \small \text{Equation #1} \newline
+2b &amp;= 6  &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>Solving a system of equations means finding values that satisfy every equation in the system.</p>
+<p>Equation #2 above implies that $b=3$.  If we combine that with Equation #1 it appears that $a$ must be $7$.  So the values $a=7$ and $b=3$ are a solution to this system.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Is $a=5$, $b=2$ a solution to the system below?
+[
+\begin{align}
+a - b &amp;= 3 &amp;&amp; \small \text{Equation #1} \newline
+a + b^2 &amp;= 9 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>Yes, since both equations are true when $a=5$ and $b=2$.
+[
+\begin{align}
+5 - 2 &amp;= 3 &amp;&amp; \small \text{Equation #1} \newline
+5 + (2)^2 &amp;= 9 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+</details>
+<ol>
+<li>Is $a=1$, $b=10$ a solution to the system below?
+[
+\begin{align}
+a + b &amp;= 11 &amp;&amp; \small \text{Equation #1} \newline
+a \cdot b &amp;= 7 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>No.  If $a=1$ and $b=10$ then only the first equation is true.
+[
+\begin{align}
+1 + 10 &amp;= 11 &amp;&amp; \small \text{Equation #1} \newline
+(1)(10) &amp;\ne 7 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+</details>
+</div>
+<h2 id="methods-for-solving-systems">Methods for Solving Systems</h2>
+<p>The three most common methods for solving systems are substitution, elimination and matrix methods.</p>
+<p>Small systems with just two or three variables can be solved by hand in not too many steps using substitution or elimination, so we will introduce those techniques first.</p>
+<p>Large systems are almost always solved by matrix methods using algorithms running in a calculator or on a computer, especially in applications where the number of unknowns is in the hundreds or thousands.  Obviously, we won't get to anything of that size, but we'll discuss some of the basic ideas that carry over to systems of any size.</p>
+<p>Even though most all of the examples we will look at have solutions, its important to keep in mind that systems do not always have solutions.</p>
+<p>However, generally speaking, the number of equations in a system should match the number of unknown values if we hope to solve the system.  To solve for $6$ values, for instance, you typically need $6$ equations.</p>
+<p>We will start with systems of two equations with two variables and move up from there.</p>
+<h2 id="solve-systems-by-substitution">Solve Systems by Substitution</h2>
+<p>Our first solving method is called <strong>substitution</strong>.  Substitution means replacing one thing with another equivalent object.  Substitution is used throughout all levels of mathematics and, in fact, we've already used it several times.  As a simple example, notice that when we evaluate the function $f(x)=x^2$ for $x=5$ then we <em>substitute</em> $5$ for every $x$ in the function.</p>
+<p>When working with systems, substitution will involve solving one equation for one variable and then substituting that expression into the other equation.  Since this might be a new technique, we will look at an example.</p>
+<h3 id="substitution-example---find-an-exponential-function-given-2-points">Substitution Example - Find an Exponential Function Given 2 Points</h3>
+<p>Suppose we are asked to find an exponential function $f(x)=a \thinspace b^{x}$ that passes through the points $(1, 12)$ and $(3, 27)$.  There are two values we don't know, $a$ and $b$, so we need a system of two equations.</p>
+<p>To turn what we know into a system we need to remember that each point has an $x$ and a $y=f(x)$ coordinate.  Inserting those values into the exponential equation will give us two equations.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/substitution_exponential.svg#center" alt=""></p>
+<p>Those two equations are our system.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \text{Equation #1} \newline
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>To solve our system by substitution we should first solve one of these equations for one of the unknown values, either $a$ or $b$.  It makes no difference which equation or which value we pick, so look for the one that seems simplest.</p>
+<p>Since Equation #1 has the lower power, let's use it to solve for $a$.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+\frac{12}{b} &amp; = a  &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $b$}} \newline
+\end{align}
+]</p>
+<p>This next step is the key to substitution.  We take this expression for $a$ and substitute it into the other equation, Equation #2.</p>
+<p>[
+\begin{align}
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
+27 &amp; = \frac{12}{b}  \thinspace  b^{3}  &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $a=\frac{12}{b}$}} \newline
+27 &amp; = 12 b^{2}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify powers of $b$}} \newline
+\frac{27}{12} &amp;= b^{2}   &amp;&amp; \small \color{#5fa2ce}{\text{Divide by 12}} \newline
+\frac{9}{4} &amp;= b^{2}   &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+\pm \sqrt{\frac{9}{4}} &amp;= b   &amp;&amp; \small \color{#5fa2ce}{\text{Take $\pm \sqrt{\text{  }}$}} \newline
+\pm \frac{3}{2} &amp;= b  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]</p>
+<p>Normally getting two answers could cause a problem, but in this case we know something extra.  We are trying to find the base of an exponential function, and the base of an exponential is never negative.  So the correct value must be $b=\frac{3}{2}$.</p>
+<p>This is only half of the solution, we also need to know what $a$ is.  To find that, we'll substitute $b$ back into one of our equations.  As before, either one will work but we'll choose Equation #1 since it is a bit simpler.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+12 &amp; = a \frac{3}{2} &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{3}{2}$}} \newline
+\frac{2}{3} \cdot 12 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Multiply by $\frac{2}{3}$}} \newline
+8 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]</p>
+<p>Now that we know the values for $a$ and $b$, we can finally say that</p>
+<p>$$f(x)=8 \left(\frac{3}{2} \right)^{x}$$</p>
+<p>is the exponential function that passes through the points $(1, 12)$ and $(3, 27)$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>If we had solved Equation #2 for $a$ at the start, we would have gotten $a = \frac{27}{b^3}$.  Substitute that expression into Equation #1.</li>
+</ol>
+<details><summary>Answer</summary><p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+12 &amp; = \frac{27}{b^3} \cdot b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $a = \frac{27}{b^3}$}} \newline
+12 &amp; = \frac{27}{b^{2}}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify powers of $b$}} \newline
+12 b^{2} &amp;= 27   &amp;&amp; \small \color{#5fa2ce}{\text{Multiply by $b^2$}} \newline
+b^{2} &amp;= \frac{27}{12} &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $12$}} \newline
+b^{2} &amp;= \frac{9}{4}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+b &amp;= \pm \sqrt{\frac{9}{4}} &amp;&amp; \small \color{#5fa2ce}{\text{Take $\pm \sqrt{\text{  }}$}} \newline
+b &amp;= \pm \frac{3}{2} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]
+which is the same result we had when using Equation #1.</p>
+</details>
+<ol>
+<li>Suppose you were looking for a power function through the points $(2, 5)$ and $(6,10)$.  Write the system of equations that would result from inserting the values from those points into the power function format $f(x)=k \thinspace x^{p}$ .</li>
+</ol>
+<details><summary>Answer</summary><p>[
+\begin{align}
+5 &amp;= k \thinspace 2^{p} &amp;&amp; \small \text{Equation #1} \newline
+10 &amp;= k \thinspace 6^{p} &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+</details>
+</div>
+<h2 id="solve-systems-by-elimination">Solve Systems by Elimination</h2>
+<p>Our second technique for solving systems is called <strong>elimination</strong>.  For elimination to work both equations must be written in the same format.  You then try to combine the equation in a way that eliminates one of the parameters.  Let's look at an example.</p>
+<h3 id="elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</h3>
+<p>Suppose we need to find a logarithmic function through the two points $(5, 3)$ and $(20, 9)$.  We'll use the format $f(x)=a+b \ln x$ so that we can use <code>LnReg</code> to double check our answer.</p>
+<p>As we have done earlier, we begin by substituting the $x$ and $y=f(x)$ coordinates into the equation of our model to generate a system.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>Notice that if we were to subtract the two equations then $a$ would be eliminated.  That is our elimination step.</p>
+<p>[
+\begin{array}{l r c l}
+&amp; 9 &amp; = &amp;  a+b \ln 20 \newline
+-   &amp; (3 &amp; = &amp; a+b \ln 5 ) \newline
+\hline
+&amp; 6 &amp; = &amp;  b \ln 20 - b \ln 5
+\end{array}
+]</p>
+<p>The result of the elimination is a new equation that only has $b$ in it.  After we solve this for $b$ we can substitute that value back into one of our equations and find $a$.</p>
+<p>[
+\begin{align}
+6 &amp;= b \ln 20 - b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original Equation}} \newline
+6 &amp;= b \left(\ln 20 - \ln 5 \right) &amp;&amp; \small \color{#5fa2ce}{\text{Factor out $b$}} \newline
+6 &amp;= b \ln \left(\frac{20}{5} \right) &amp;&amp; \small \color{#5fa2ce}{\text{Use Quotient rule for Logs}} \newline
+6 &amp;= b \ln 4 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+\frac{6}{\ln 4} &amp;= b &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $\ln 4$}} \newline
+b &amp;\approx 4.328 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>The next step is to find $a$ by substituting $b=\frac{6}{\ln 4}$ into one of our equations.  Either equation will work, but we'll pick Equation #2 since it looks a bit simpler.</p>
+<p>[
+\begin{align}
+3 &amp;= a+b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
+3 &amp;= a + \frac{6}{\ln 4} \cdot \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{6}{\ln 4}$}} \newline
+3 - \frac{6}{\ln 4} \cdot \ln 5 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $\frac{6}{\ln 4} \cdot \ln 5$}} \newline
+a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>Now that we have both $a$ and $b$, we can write out our function.</p>
+<p>$$f(x) =  -3.966+4.328 \ln x$$</p>
+<p>A quick way to check this is to run logarithmic regression on the limited data set $(5, 3)$ and $(20, 9)$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/log_regression_2_points.svg#center" alt=""></p>
+<p>This give the same values for $a$ and $b$ and the graph clearly goes through our two points.</p>
+<h2 id="identify-systems-of-linear-equations">Identify Systems of Linear equations</h2>
+<p>One of the most powerful tools for solving systems is a matrix method called Gauss-Jordan Elimination, which is programed into most graphing calculators.</p>
+<p>Gauss-Jordan Elimination is designed to solve systems of <em>linear</em> equations.  You might assume this means it is only good for finding lines, but that is not the case.</p>
+<p>The system we solved a moment ago was actually a linear system, even though the equations came from a logarithmic model.  Let's look at it again.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>These equations are linear because $a$ and $b$ have a power of $1$ and are combined using only addition.  If the equations had powers/roots or exponents/logs or products of $a$ and $b$ then they would not be linear.</p>
+<p>In our first system the equations came from an exponential model.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \text{Equation #1} \newline
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>This is a system of <em>non-linear</em> equations because $b$ has a power of $3$ in the second equation and because the variables are multiplied together.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+y &amp; = &amp; x^2 + 1 \newline
+y &amp; = &amp; x^3 + x^2 + 1
+\end{array}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>This is a non-linear system.</p>
+</details>
+<ol>
+<li>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+x - y &amp; = &amp; 4 \newline
+2y &amp; = &amp; x \newline
+\end{array}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>This system is linear.</p>
+</details>
+<ol>
+<li>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+\sqrt x + 1 &amp; = &amp; y \newline
+x \cdot y &amp; = &amp; 2 \newline
+\end{array}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>This is a non-linear system.</p>
+</details>
+</div>
+<h2 id="converting-between-systems-and-matrices">Converting Between Systems and Matrices</h2>
+<p>Systems of linear equations are easier to work with if we organize them by sorting the terms with variables on the left and putting the constant terms on the right, like in this example below.</p>
+<p>$$
+\begin{align}
+3x + 4y &amp;= 3 \newline
+2x - 3y &amp;= 2
+\end{align}
+$$</p>
+<p>Once the equations are written in the same format we don't really need the variables or the equals sign anymore.  By stripping those away we are left with something called a <strong>augmented matrix</strong>.  In the figure below you can convert a linear system into a matrix and back again.</p>
+<iframe scrolling="no" title="Convert Between System and Matrix" src="https://www.geogebra.org/material/iframe/id/uwdgq9fy/width/500/height/175/border/888888/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="175px" style="border:0px;"> </iframe>
+<p>The matrix contains the same information as the original system, since knowing where a number is located is enough to tell us if it represents an $x$ or a $y$ or a constant.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Convert this system of linear equations into an augmented matrix.
+$$
+\begin{align}
+2x + y &amp;= 5 \newline
+3x - 2y &amp;= 4
+\end{align}
+$$</li>
+</ol>
+<details><summary>Answer</summary><p>$$
+\left[
+\begin{array}{rr|r}
+2 &amp; 1 &amp; 5 \newline
+3 &amp; -2 &amp; 4
+\end{array}\right]
+$$</p>
+</details>
+<ol>
+<li>Convert this augmented matrix back to a system of equations.
+$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 2 &amp; 3 \newline
+2 &amp; 0 &amp; 2
+\end{array}\right]
+$$</li>
+</ol>
+<details><summary>Answer</summary><p>$$
+\begin{align}
+x + 2y &amp;= 3 \newline
+2x +0y &amp;= 2
+\end{align}
+$$</p>
+</details>
+</div>
+<h2 id="solve-2x2-systems-of-linear-equations-with-technology">Solve 2x2 Systems of Linear Equations with Technology</h2>
+<p>Once a system is represented by a matrix, we can enter the matrix into a calculator and let it run through all the steps of Gauss-Jordan Elimination for us.</p>
+<p>To illustrate how this is done, let's use the system of from the first part of the last Quick Check.</p>
+<p>$$
+\begin{align}
+2x + y &amp;= 5 \newline
+3x - 2y &amp;= 4
+\end{align}
+$$</p>
+<p>In matrix form this system becomes</p>
+<p>$$
+\left[
+\begin{array}{rr|r}
+2 &amp; 1 &amp; 5 \newline
+3 &amp; -2 &amp; 4
+\end{array}\right]
+$$</p>
+<p>To enter this matrix into a calculator press the <code>[2ND]</code> and <code>[x^-1]</code> keys to enter the <code>MATRIX</code> menu and choose the <code>EDIT</code> tab.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/matrix_edit.png#center" alt=""></p>
+<p>At the top change the dimensions to <code>2 x3</code>, since our matrix has $2$ rows and $3$ columns, and type in all the values.  It should look like this.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/2x2_rref_1.png#center" alt=""></p>
+<p>The next step requires us to go back to the home screen, so press <code>[2nd]</code> and <code>[MODE]</code> to <code>QUIT</code>.</p>
+<p>Then go back into the <code>MATRIX</code> menu and this time choose the <code>MATH</code> tab.  Scroll down to option <code>B: rref</code> and press <code>[ENTER]</code>.  That is the command that will run Gauss-Jordan Elimination.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/2x2_rref_2.png#center" alt=""></p>
+<p>The <code>B: rref</code> command needs to know which matrix to work with, so return to the <code>MATRIX</code> menu a third time, stay in the <code>NAME</code> tab and press <code>[ENTER]</code> to select matrix <code>1: [A]</code>.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/2x2_rref_3.png#center" alt=""></p>
+<p>Press <code>[ENTER]</code> once again and the calculator will work through Gauss-Jordan Elimination.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/2x2_rref_4.png#center" alt=""></p>
+<p>What we get back is a matrix that is in reduced row echelon form, which is why the command is called <code>rref</code>.</p>
+<p>$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 0 &amp; 2 \newline
+0 &amp; 1 &amp; 1
+\end{array}\right]
+$$</p>
+<p>Look what happens when we convert this reduced matrix back into a system.</p>
+<p>$$
+\begin{align}
+x &amp;= 2 \newline
+y &amp;= 1
+\end{align}
+$$</p>
+<p>It's now obvious that the solution is $x=2$ and $y=1$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>What is the solution to the system whose reduced matrix is shown below?
+$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 0 &amp; -3 \newline
+0 &amp; 1 &amp; 4
+\end{array}\right]
+$$</li>
+</ol>
+<details><summary>Answer</summary>The solution is $x=-3$ and $y=4$.</details>
+</div>
+<h2 id="solve-larger-systems-of-linear-equations-with-technology">Solve Larger Systems of Linear Equations with Technology</h2>
+<p>When solving a larger system on a calculator, the only thing that will change is the size of the matrix.  For instance, suppose we start with  this system of three linear equations each with three variables.</p>
+<p>[
+\begin{array}{r c r c r c r}
+3a &amp; + &amp; 2b &amp; - &amp; c &amp; = &amp; 5 \newline
+a &amp;  &amp;  &amp; + &amp; 6c &amp; = &amp; 1 \newline
+2a &amp; + &amp; b &amp; - &amp; 2c &amp; = &amp; 5 \newline
+\end{array}
+]</p>
+<p>Even though it has three unknows, $a$, $b$ and $c$, this is still a linear system since none of those unknowns are raised to power/roots, etc. or are multiplying each other.</p>
+<p>The matrix version of our system is</p>
+<p>$$
+\left[
+\begin{array}{rrr|r}
+3 &amp; 2 &amp; -1 &amp; 5 \newline
+1 &amp; 0 &amp; 6 &amp; 1 \newline
+2 &amp; 1 &amp; -2 &amp; 5
+\end{array}\right]
+$$</p>
+<p>Notice that there are $3$ rows, one for each equation, and $4$ columns, one for each of the coefficients and a fourth for the constant.  Also note that when a value is missing from the system we put a $0$ into the matrix at the appropriate location.</p>
+<p>Since this matrix has $3$ rows and $4$ columns we change the dimensions to <code>3 x4</code>, enter the values and run <code>rref</code>.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/3x3_rref_1.png#center" alt=""></p>
+<p>We get back a reduced matrix with decimal values.  Sometimes the decimals can be converted to fractions by pressing <code>[2ND]</code>, <code>[MATH]</code> and choosing <code>1:Frac</code>.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/3x3_rref_2.png#center" alt=""></p>
+<p>Our reduced matrix is</p>
+<p>$$
+\left[\begin{array}{r r r | r}
+1 &amp; 0 &amp; 0 &amp; \frac{11}{3} \newline
+0 &amp; 1 &amp; 0 &amp; \frac{-29}{9} \newline
+0 &amp; 0 &amp; 1 &amp; \frac{-4}{9}
+\end{array}\right]
+$$</p>
+<p>and the solution must be $a=\frac{11}{3}$, $b=\frac{-29}{9}$ and $c=\frac{-4}{9}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Use a calculator to solve the system below.  Convert your answers to fractions.
+[
+\begin{align}
+x+2y+3z&amp;=4 \newline
+5x+7z&amp;=1 \newline
+2x-y+z&amp;=-2
+\end{align}
+]</li>
+</ol>
+<details><summary>Answer</summary><p>The matrix for this system is
+$$
+\left[\begin{array}{r r r | r}
+1 &amp; 2 &amp; 3 &amp; 4 \newline
+5 &amp; 0 &amp; 7 &amp; 1 \newline
+2 &amp; -1 &amp; 1 &amp; -2
+\end{array}\right]
+$$
+Entering this into the calculator and running <code>rref</code> gives
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/3x3_rref_check_1.png#center" alt="">
+Converting to fractions this becomes
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-6/3x3_rref_check_2.png#center" alt="">
+so the solution is $x=\frac{-1}{2}$, $y=\frac{3}{2}$ and $z=\frac{1}{2}$.</p>
+</details>
+</div>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrolly.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrollex.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/skel.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>

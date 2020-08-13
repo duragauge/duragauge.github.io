@@ -1,0 +1,597 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>5.2 Complex Numbers and The Fundamental Theorem of Algebra &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://faculty.chemeketa.edu/nmitche6/book/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="http://faculty.chemeketa.edu/nmitche6/book/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="http://faculty.chemeketa.edu/nmitche6/book/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="http://faculty.chemeketa.edu/nmitche6/book/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#imaginary-numbers">Imaginary Numbers</a></li>
+    <li><a href="#complex-numbers">Complex Numbers</a></li>
+    <li><a href="#visualizing-complex-numbers">Visualizing Complex Numbers</a></li>
+    <li><a href="#graph-complex-valued-functions">Graph Complex Valued Functions</a></li>
+    <li><a href="#domain-coloring-part-i">Domain Coloring, Part I</a></li>
+    <li><a href="#domain-coloring-part-ii">Domain Coloring, Part II</a></li>
+    <li><a href="#identify-real-and-imaginary-zeros">Identify Real and Imaginary Zeros</a></li>
+    <li><a href="#the-fundamental-theorem-of-algebra">The Fundamental Theorem of Algebra</a></li>
+    <li><a href="#determine-the-number-of-real--imaginary-zeros">Determine the Number of Real &amp; Imaginary Zeros</a></li>
+    <li><a href="#conjugate-zeros-theorem">Conjugate Zeros Theorem</a></li>
+    <li><a href="#multiple-zeros">Multiple Zeros</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>5.2 Complex Numbers and The Fundamental Theorem of Algebra</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/venice.jpg"  title="Venice, Italy.  Photo by Damiano Baschiera on Unsplash"  alt="Venice, Italy.  Photo by Damiano Baschiera on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/hFXZ5cNfkOk">Venice, Italy.  Photo by Damiano Baschiera on Unsplash</a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>During the 1500's Italian mathematicians held public contests as a way to gain notoriety and supplement their income.  Since anyone could be challenged at any time, most mathematicians kept their discoveries secret.</p>
+<p>Antonio Fior was an inexperienced mathematician who learned a secret for solving one type of cubic equation from his dying master.  Anxious to make a name for himself, Fior traveled to Venice and challenged Niccolò Tartaglia, one of the most gifted mathematicians of the day, to solve 30 cubic equations.</p>
+<p>Working day and night, Tartagia found what no one though possible: a general process for solving all cubic equations, not just the ones Fior had asked.</p>
+<p>With this new technique Tartaglia solved all of Fior's problems in 2 hours and easily won the contest.</p>
+<p>But Tartaglia had done more than that.  He had discovered the first practical use of the square roots of negative values, what we now call <em>imaginary numbers</em>.</p>
+<h2 id="imaginary-numbers">Imaginary Numbers</h2>
+<p>Before Tartaglia imaginary numbers had been ignored simply because they had no obvious connection to geometry; they just weren't useful for measuring anything.  For instance, an irrational real number like $\sqrt{2}$ can be viewed as the length of the diagonal of a $1 \times 1$ unit square, but no part of a square corresponds to the imaginary number $\sqrt{-2}$.</p>
+<p>But Tartaglia's method relied on imaginary numbers, even in some cases where all the solutions are real numbers.  This forced mathematicians to develop rules for working with and visualizing these new numbers, a process that took hundreds of years. 
+<label for="sn-Cardano" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Cardano" class="margin-toggle" />
+<span class="sidenote">
+Gerolamo Cardano, who published Tartaglia's methods in 1545, wrote that working with imaginary numbers involved &quot;mental tortures.&quot; 
+</span></p>
+<p>The name &quot;imaginary&quot; was coined by the French mathematician/philosopher René Descartes (1596–1650) and the great Swiss mathematician Leonard Euler (1707-1783) introduced the notation $i=\sqrt{-1}$ that we use today.  The imaginary unit $i$ has the special property that $i^2=-1$.</p>
+<p>Any multiple of $i$ is an <strong>imaginary number</strong>.  For instance $2.5 i$ and $-18 i$ are both imaginary numbers.</p>
+<p>The square root of a negative number is always an imaginary number and can be rewritten as</p>
+<p>$$\sqrt{-x} = \sqrt{x} \thinspace \cdot i$$</p>
+<p>For example, $\sqrt{-9 }$ and $\sqrt{-5 }$ are the imaginary numbers $3 i$ and $\sqrt{5} \thinspace i$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>
+<p>Is $\sqrt{-25}$ an imaginary number? <details><summary>Answer</summary>Yes. $$\sqrt{-25}=\sqrt{25} \thinspace i=5i$$</details></p>
+</li>
+<li>
+<p>Is $\sqrt{7}$ an imaginary number? <details><summary>Answer</summary>No, $\sqrt{7}$ is an irrational real number.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="complex-numbers">Complex Numbers</h2>
+<p>By combining the real numbers with the imaginary numbers we can construct an even larger set called the <strong>complex numbers</strong>.  Every complex number can be written as</p>
+<p>$$z=\color{red}{a}+\color{blue}{b} i$$</p>
+<p>where $\color{red}{a}$ is the real part and $\color{blue}{b}$ is the imaginary part.  This set includes numbers like   $\color{red}{3}\color{blue}{-2}i$ and $\color{red}{1}+\color{blue}{6}i$.</p>
+<p>Any real number can be expressed in complex form, as can every purely imaginary number.  For instance, the real number $5$ can be written in complex form as $\color{red}{5}+\color{blue}{0}i$ where the imaginary part is $\color{blue}{0}$.  And the purely imaginary number $\color{blue}{4}i$ can be written as $\color{red}{0} + \color{blue}{4}i$ where the real part is $\color{red}{0}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Write $0$, $ \thinspace  7i \thinspace $ and $ \thinspace \frac{5}{4}$ as complex numbers.</li>
+</ol>
+<details><summary>Answer</summary>$0=0+0i$<br><br>  $7i=0+7i$<br><br>$\frac{5}{4}=\frac{5}{4}+0i$</details>
+</div>
+<h2 id="visualizing-complex-numbers">Visualizing Complex Numbers</h2>
+<p>Since each complex number $z=a+b i$ has two parts, a real part $a$ and an imaginary part $b$, it is natural to identify it with the point $(a, b)$.</p>
+<p>By using the horizontal axis for the real part and the vertical for the imaginary part, we change the standard x-y pane into the <strong>complex plane</strong>.  Every complex number matches up with a point in the complex plane, and every point corresponds to a complex number.</p>
+<p>As an example, the complex number $-2+i$ is represented by the point $(-2, 1)$.</p>
+<div class="geogebra" style="padding-top: 50.00%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/cUi7FuiL/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<p>Use the interactive figure above to explore this connection and help you answer the questions below.  You are free to move the <font color="blue"><strong>blue point</strong></font> anywhere you like.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>
+<p>How would you plot the complex number $1-3 i$ on the complex plane ?<details><summary>Answer</summary>You would plot the point $(1, -3)$.</details></p>
+</li>
+<li>
+<p>Which complex number is represented by the point $(-4, 3)$ ?<details><summary>Answer</summary>The number $-4+3i$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="graph-complex-valued-functions">Graph Complex Valued Functions</h2>
+<p>Visualizing complex valued functions can be, for lack of a better word, complex.  The issue is that since the inputs and outputs are both complex numbers each with a real part and an imaginary part, we would need 4-dimensions to see all the inputs and outputs at the same time.</p>
+<p>One option is to simply create two complex planes, one for the inputs and another for the outputs.</p>
+<p>Suppose, for example, that $f(z)=z^2-1$.  If we choose $z = -2 + i$ as our input, then
+[ \begin{align}
+f(-2 + i) &amp;= (-2 + i)^2-1 \newline
+&amp;= (-2 + i)(-2 + i)-1 &amp;&amp; \text{since } (-2 + i)^2 = (-2 + i)(-2 + i) \newline
+&amp;= (4-2i-2i+i^2)-1 &amp;&amp; \text{expanding } (-2 + i)(-2 + i) \newline
+&amp;= (4-2i-2i-1)-1 &amp;&amp; \text{because } i^2 = -1 \newline
+&amp;= (3-4i)-1 &amp;&amp; \text{combine like terms} \newline
+&amp;= 2-4i &amp;&amp; \text{simplify}
+\end{align}
+]
+is the output value.  This particular input-output pair is shown in the interactive figure below.</p>
+<div class="geogebra" style="padding-top: 59.72%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/az8h6xcv/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+ <br>
+<p>Feel free to move the input point and see how that changes the output point.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Use the figure above to help you find the values below by changing the input point.  You can also check each one algebraically.</p>
+<ol>
+<li>
+<p>$f(1 + i)$ <details><summary>Answer</summary>$-1+2i$</details></p>
+</li>
+<li>
+<p>$f(-1 + 2i)$ <details><summary>Answer</summary>$-4-4i$</details></p>
+</li>
+<li>
+<p>$f(2 + i)$ <details><summary>Answer</summary>$2+4i$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="domain-coloring-part-i">Domain Coloring, Part I</h2>
+<p>While the two graph method is fine for showing individual input-output pairs, it still doesn't give us a good sense of what the entire function is doing.</p>
+<p>In the 1990's a new technique was developed that involves applying a color map to the output values.  Here we will use a color wheel where points become lighter the closer they are to the origin.  Notice that the origin itself is bright white.</p>
+<div class="geogebra" style="padding-top: 59.72%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/swfafb4c/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+ <br>
+<p>With this new method we change the color and brightness of the input point to match its output value.</p>
+<p>For instance, we calculated earlier that if $f(z)=z^2-1$, then $f(-2+i)=2-4i$.  Since the color map puts $2 - 4i$ in the purple region, we make our original point <strong>$\color{#9C0973}{-2 + i}$</strong> purple.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Use the figure above to find the colors of $f(z)=z^2-1$ at the following points.</p>
+<ol>
+<li>
+<p>$1+0i$ <details><summary>Answer</summary>white</details></p>
+</li>
+<li>
+<p>$-2-i$ <details><summary>Answer</summary>yellow</details></p>
+</li>
+<li>
+<p>$1-2i$ <details><summary>Answer</summary>blue</details></p>
+</li>
+<li>
+<p>$-1-i$ <details><summary>Answer</summary>green</details></p>
+</li>
+</ol>
+</div>
+<h2 id="domain-coloring-part-ii">Domain Coloring, Part II</h2>
+<p>If we keep track of the colors, then we can literally paint, or color, the function onto the domain.  In essence, this combines our two earlier plots into one single graph.  These graphs are called <strong>domain coloring graphs</strong> and are very different from the plots you are used to drawing by hand or creating on a graphing calculator.</p>
+<p>Here we start with the default color map and then recolor color the domain using the output colors.  Give this a try by moving the point on the figure below.  Your result should look something like <a href="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_z2-1.gif">this</a>.</p>
+<div class="geogebra" style="padding-top: 61.805%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/jw3h7t2m/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+ <br>
+<p>Since creating a domain coloring graph requires a computer graphics program, you will not be expected to make them on your own.  But we will use them in this section to discover some useful facts about polynomials.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Use the figure above to create the domain coloring graph of the function $f(z)=z^2-1$.</p>
+<ol>
+<li>What does the resulting domain coloring graph look like? <details><summary>Answer</summary><p>The result looks something like this <br>
+<img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_z2-1.gif" alt=""></p></li>
+</ol>
+</details>
+<ol start="2">
+<li>Which points on the domain coloring graph, if any, are white? <details><summary>Answer</summary>The points $(-1, 0)$ and $(1, 0)$ are white, which correspond to the complex numbers $-1+0i=-1$ and $1+0i=1$.</details></li>
+</ol>
+</div>
+<h2 id="identify-real-and-imaginary-zeros">Identify Real and Imaginary Zeros</h2>
+<p>999999999999999999999999 The key insight of this coloring technique is that each point now has 4 properties.  The coordinates give the input value while the color and brightness represent the output.</p>
+<p>Domain coloring graphs are especially helpful in identifying the zeros of functions like polynomials.  Since you will be required to identify zeros from a domain coloring graph, we should review the definition of a zero.</p>
+<p>Remember that a number $c$ is a zero of a function if $f(c)=0$.  If $c$ is a real number then we call it a <strong>real zero</strong> of the function.</p>
+<p>Imaginary numbers can also be zeros of a function.  If $c$ is an imaginary number and $f(c)=0$, then it is an <strong>imaginary zero</strong> of the function.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>The solutions to $z^{3}+z^2+z+1=0$ are $z=-1,$ $z=i$ and $z=-i$.</p>
+<ol>
+<li>
+<p>Which of the zeros listed above is a real zero?<details><summary>Answer</summary>$z=-1$ is the only real zero.</details></p>
+</li>
+<li>
+<p>Which of the zeros above is an imaginary zero?<details><summary>Answer</summary>The imaginary zeros are $z=i$ and $z=-i$.</details></p>
+</li>
+</ol>
+</div>
+<p>The key to identifying zeros visually from a domain coloring graph is to realize that the number $0$ corresponds to the origin $(0, 0)$ in the complex plane.</p>
+<p>Since the origin in our color map is a white point at the center of all the colors, the zeros of a function will have a similar appearance.  In other words, we can find the zeros by looking for bright white points surrounded by all the colors.</p>
+<p>Take a look at this domain coloring graph of the function $f(z)=z^2-1$, which is a higher-resolution copy of the graph you made a moment ago.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_Z_squared_minus_1.png#center" alt=""></p>
+<p>There are two bright white points, one at $(-1, 0)$ and another at $(1, 0)$, corresponding to the complex numbers $-1+0i=-1$ and $1+0i=1$.  This means that the function $f(z)=z^2-1$ has real zeros of $-1$ and $1$.  Real zeros, such as these, will always be found along the real axis of a domain coloring graph.</p>
+<p>Imaginary zeros also show up on domain coloring graphs as bright white points.  For instance, in this graph of $f(z)=z^2-4z+5$, the points $(2, 1)$ and $(2, -1)$ are bright white points where all the colors meet.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/Identify_complex_zeros_from_domain_coloring.png#center" alt=""></p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_z2-4z+5.png#center" alt=""></p>
+<p>That means the zeros are the imaginary numbers $2+i$ and $2-i$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_Z_squared_plus_1_small.png#center" alt=""></p>
+<ol>
+<li>Use this domain coloring graph to find the zeros of $f(z)=z^2+1$.</li>
+</ol>
+<details><summary>Answer</summary>Since the white points are at $(0,1)$ and $(0,-1)$, the zeros must be $i$ and $-i$.</details>
+</div>
+<p>It's possible for a function to have a mixture of real zeros and imaginary zeros.  In an earlier Quick Check we saw that the zeros of  $f(z)=z^{3}+z^2+z+1$ are $z=-1,$ $z=i$ and $z=-i$.  These three zeros are visible in the domain coloring graph as the points are $(-1, 0)$, $(0, 1)$ and $(0,-1)$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_v_standard.png#center" alt=""></p>
+<p>However, if we plot the equivalent polynomial $p(x)=x^{3}+x^{2}+x+1$ on a standard graph, only the real zero (x-intercept) at $x-1$ is visible.  Imaginary zeros are never visible on standard real-valued graphs.</p>
+<h2 id="the-fundamental-theorem-of-algebra">The Fundamental Theorem of Algebra</h2>
+<p>With a domain coloring graph we can easily count the number of real and imaginary zeros of a function.  Remember, if the zero is on the real axis, then it is a real zero.  If it is anywhere else, it is imaginary.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>For each domain coloring graph below, determine the number of real zeros and the number of imaginary zeros.</p>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_1.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>There is only 1 zero.  Since it is on the real axis, it is a real zero.</details>
+<ol>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_2.png#center" alt=""> <details><summary>Answer</summary>There are 2 zeros.  Since they are not on the real axis, they must both be imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_3.png#center" alt=""> <details><summary>Answer</summary>1 real zero and 2 imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_4.png#center" alt=""> <details><summary>Answer</summary>2 real zeros and 2 imaginary zeros.</details></p>
+</li>
+</ol>
+</div>
+<p>You may not have realized it, but each of the functions in the previous Quick Check was a polynomial.  Since we are interested in understanding polynomials, let's look at those same graphs again.  This time, pay attention to the degree of the polynomial as well the number of zeros.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>For each domain coloring graph below, determine the number of real zeros and the number of imaginary zeros. Also give the degree of the polynomial.</p>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_1.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>1 real zero and 0 imaginary zeros. The degree is 1.</details>
+<ol>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_2.png#center" alt=""> <details><summary>Answer</summary>0 real zeros and 2 imaginary zeros.  The degree is 2.</details></p>
+</li>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_3.png#center" alt=""> <details><summary>Answer</summary>1 real zero and 2 imaginary zeros.  The degree is 3.</details></p>
+</li>
+<li>
+<p>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_FTA_4.png#center" alt=""> <details><summary>Answer</summary>2 real zeros and 2 imaginary zeros.  The degree is 4.</details></p>
+</li>
+</ol>
+</div>
+<p>After looking at those graphs a second time you might have noticed a connection between the zeros and the degree of the polynomial.  The number of real zeros plus the number of imaginary zeros equals the degree of the polynomial exactly.  This is a consequence of the <strong>Fundamental Theorem of Algebra</strong>, which was proven by the 20-year-old Carl Friedrich Gauss in his doctoral dissertation of 1799.  We will hear more about Gauss in the next chapter.</p>
+<p>While the proof is very complicated and beyond the scope of this text, what the Fundamental Theorem of Algebra says is actually very simple.  In essence, Gauss showed that a polynomial whose degree is $n$ will always have exactly $n$ zeros.  Some of the zeros might be imaginary, some may be repeated, but it will always have $n$ zeros total.</p>
+<p>For instance, since  $p(x)=2x^4-3x+8$ is a $4th$ degree polynomial, we know from the Fundamental Theorem of Algebra that it has exactly $4$ zeros.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>How many total zeros does $p(x)=-3x^6+x^{2}-9x$ have?</li>
+</ol>
+<details><summary>Answer</summary>It is a 6th degree polynomial, so it must have 6 zeros.</details>
+<ol>
+<li>How many total zeros does $p(x)=5x^{3}-4$ have?</li>
+</ol>
+<details><summary>Answer</summary>It is a 3rd degree polynomial, so it must have 3 zeros.</details>
+</div>
+<h2 id="determine-the-number-of-real--imaginary-zeros">Determine the Number of Real &amp; Imaginary Zeros</h2>
+<p>We will use the Fundamental Theorem of Algebra to help us identify the number of real and imaginary zeros of a polynomial when a domain coloring graph is unavailable.</p>
+<p>Consider, for instance, the polynomial $p(x)=x^5+1$ whose graph is given below.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/poly_turns_6.svg#center" alt=""></p>
+<p>We can see from the graph that it has just one real zero, corresponding to the x-intercept at $x=-1$.  Since it is a 5th degree polynomial, the Fundamental Theorem of Algebra tells us that it must have 5 zeros total, so the remaining 4 zeros must be imaginary.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Find the number of real and imaginary zeros of each polynomial.</p>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/FTA_4c.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This is a 4th degree polynomial with 2 real zeros (x-intercepts), so there must be 2 imaginary zeros.</details>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/FTA_3b.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This is a 3rd degree polynomial with 3 real zeros (x-intercepts), so there are no imaginary zeros.</details>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/FTA_5b.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This is a 5th degree polynomial with 3 real zeros (x-intercepts), so there are 2 imaginary zeros.</details>
+</div>
+<h2 id="conjugate-zeros-theorem">Conjugate Zeros Theorem</h2>
+<p>You may have noticed a curious fact about the number of imaginary zeros.  In every example we've looked at so far, the number of imaginary zeros has always been even, and there's a very good reason for that.</p>
+<p>The <strong>conjugate zeros theorem</strong> says that if the coefficients of your polynomial are real numbers, and $a+bi$ is a zero, then its <em>conjugate</em> $a-bi$ is also a zero.  In other words, imaginary zeros always come in pairs, which means there must always a even number of them.</p>
+<p>You can see the conjugate pairs in a domain coloring graph.  For instance, look at the domain coloring graph of $f(z)=z^2-4z+5$.</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/domain_coloring_z2-4z+5.png#center" alt=""></p>
+<p>There are two imaginary zeros, $2+i$ and $2-i$, corresponding to the points $(2, 1)$ and $(2, -1)$ on the graph.  As expected, these two imaginary zeros are conjugates.  The only difference between them is that one has a positive imaginary part while the imaginary part of the other is negative.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Suppose you know that $4+3i$ is an imaginary zero of some a a polynomial with real valued coefficients.  Which other imaginary number must also be a zero?</li>
+</ol>
+<details><summary>Answer</summary>Its conjugate $4-3i$ must also be a zero.</details>
+<ol>
+<li>Is it possible for a polynomial with real valued coefficients to have exactly one imaginary zero?</li>
+</ol>
+<details><summary>Answer</summary>No, the conjugate zeros theorem says they only come in pairs.</details>
+</div>
+<h2 id="multiple-zeros">Multiple Zeros</h2>
+<p>When using the Fundamental Theorem of Algebra to count the number of real and imaginary zeros of a polynomial, we must be mindful of multiple zeros.</p>
+<p>For instance, when looking at the graph of $p(x)=x^4-3x^{2}$</p>
+<p><img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/FTA_4b.png#center" alt=""></p>
+<p>it would be easy to mistakenly say that since it has $3$ x-intercepts, it must have $3$ real zeros and only $1$ imaginary zero.  Clearly this cannot be the case; the conjugate zeros theorem tells us that having only $1$ imaginary zero is impossible.</p>
+<p>Taking another look at the graph we notice that the real zero at $x=0$ has a multiplicity of $2$, since it touches the x-axis and bounces off.  This means that $p(x)=x^4-3x^{2}$ actually has $4$ real zeros and $0$ imaginary zeros.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>State the degree of each polynomial.  Then give the number of real zeros and the number of imaginary zeros.</p>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/poly_graph_real_imaginary_zeros_3.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>It is a 3rd degree polynomial.  The real zero at $x=2$ has a multiplicity of $3$, giving us $3$ real zeros and no imaginary zeros.</details>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/poly_graph_real_imaginary_zeros_2.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>It is a 5th degree polynomial.  It has x-intercepts (real zeros) at $x=-1$, $x=0$ and $x=1$. The zeros at $x=-1$ and $x=1$ both have a multiplicity of $2$ since they bounce off the x-axis like a parabola.  This means there are $5$ real zeros total and none that are imaginary.</details>
+<ol>
+<li>  <img src="http://faculty.chemeketa.edu/nmitche6/book/img/chapter-5/poly_graph_real_imaginary_zeros_1.png#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This is a 6th degree polynomial, so there must be $6$ zeros total.  We can see $4$ real zeros (two each at $x=-2$ and $x=2$) which leaves $2$ more zeros that must be imaginary and cannot be seen on the graph.</details>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>After Tartaglia's work, a method was quickly found for finding all 4 zeros of any 4th degree polynomial by Cardano's assistant, Ferrari.  Mathematicians all over the world felt that it was just a mater of time before they would have formulas for not only any 5th degree polynomial, but for every polynomial.  In the next section we will see the end result of their efforts.</p>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrolly.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/jquery.scrollex.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/skel.min.js"></script>
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="http://faculty.chemeketa.edu/nmitche6/book/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>
