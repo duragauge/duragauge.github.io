@@ -1,2 +1,2 @@
 # College-Algebra
-Open-source College Algebra textbook
+Let's see if we can figure this thing out.
