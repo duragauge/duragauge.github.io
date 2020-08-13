@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>2.4 Modeling with Power Functions &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://duragauge.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="https://duragauge.github.io/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io/" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#keplers-third-law">Kepler's Third Law</a></li>
+    <li><a href="#allometry">Allometry</a></li>
+    <li><a href="#book-sales">Book Sales</a></li>
+    <li><a href="#census-data">Census Data</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>2.4 Modeling with Power Functions</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-2/solar-system-11111_1280.jpg"  title="Image by NASA"  alt="Image by NASA" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://en.wikipedia.org/wiki/File:Solar_sys8.jpg">Image by NASA</a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets:  Mercury, Venus, Earth, Mars, Jupiter and Saturn.  Kepler based his theory on measurements taken years earlier by Tycho Brahe who made all of his observations with the naked eye--the telescope was invented 8 years after his death.</p>
+<p>Given the technological limitations of the day, is there any chance these 400 year-old theories are still useful today?</p>
+<h2 id="keplers-third-law">Kepler's Third Law</h2>
+<p>Kepler struggled for 17 years to find a relationship between the time it takes a planet to orbit the Sun (called its orbital period) and its average distance from the Sun (called the semi-major axis).  Eventually he settled on the &quot;sesquialternate proportion&quot;, a fancy way to say the $3/2$ power.</p>
+<p>By using the <code>PwrReg</code> program in a calculator we should be able to do the same thing in just a couple of minutes.</p>
+<p>The table below lists the periods and distances for the 8 major planets in our solar system.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/planets.svg#center" alt=""></p>
+<p>We start by entering the data into a calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_data.svg#center" alt=""></p>
+<p>and taking a look at the scatterplot.  Using <code>9: ZoomStat</code> gives a good viewing window.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_scatterplot.svg#center" alt=""></p>
+<p>The scatterplot definitely looks like it could be a power function, so we run <code>PwrReg</code></p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_equation.svg#center" alt=""></p>
+<p>and get back the equation $y=x^{1.5}$.  Graphing this equation along with our scatterplot shows that it is a very good fit.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_fit.svg#center" alt=""></p>
+<p>If we write the power $1.5$ as $3/2$ then we have the same model as Kepler.</p>
+<blockquote>
+<p>The orbital period $P$ of a planet, in years, can be modeled by the equation
+$$P =  D^{3/2}$$
+where $D$ is the distance of the planet from the Sun in astronomical units (AU).</p>
+</blockquote>
+<p>Remember that including a description of the variables is an essential part of making a model.  If the data had been measured in days instead of years, or miles instead of astronomical units, then the equation would be different.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Kepler discovered his third law by studying planets.  Below are the values for some objects in our solar system that are not planets.  <img src="https://duragauge.github.io/img/chapter-2/celestial_objects.svg#center" alt="">  Does Kepler's 3rd law work for these objects as well?  In other words, do the values fit the equation $P =  D^{3/2}$?<details><summary>Answer</summary>Yes, Kepler's 3rd law is works for all of these objects, not just planets.</details></li>
+</ol>
+</div>
+<h2 id="allometry">Allometry</h2>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-2/james-youn-IA2pNk_dyqw-unsplash.jpg"  title="Photo by James Youn on Unsplash"  alt="Photo by James Youn on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/IA2pNk_dyqw">Photo by James Youn on Unsplash</a>
+	</span>
+</div>
+<br>
+<p>In the natural sciences, many other aspects of an organism's life are connected to its size. Life expectancy, brain size, gestational period, metabolic rate, just to name a few, all depend on body mass. The study of the relationship of body size to shape, anatomy, physiology and behavior is called &quot;allometry&quot;.  Very often allometric data is best modeled by power functions.</p>
+<p>For example, the accompanying table shows the weight and cruising speed of several birds.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/bird_data.svg#center" alt=""></p>
+<p>A scatterplot of the data suggests that a slowly increasing power function with $0&lt;p&lt;1$ might model the data well.</p>
+<div class="geogebra" style="padding-top: 72.73%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/ZnU6AiQr/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+</br>
+Running the `PwrReg` program gives $f(x) =  23.66 x^{0.2}$ as the best fit, confirming our initial observation that $0<p<1$.
+<p>We can use this function to predict the flying speed of other animals based on their weight.  For instance, the giant golden-crowned flying fox is one of the heaviest bat species, with some individuals weighing up to $3.1$ pounds.  At that weight we would predict an optimal flying speed of $f(3.1) =  23.66 (3.1)^{0.2}=29.67 \text{ mph}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Check to see if this function works for an airplane like the Cessna 172 Skyhawk, which has a cruising speed of $140 \text{ mph}$ and weighs $2300 \text{ pounds}$.</li>
+</ol>
+<details><summary>Answer</summary>This model predicts a flying speed of $$f(2300) =  23.66 (2300)^{0.2} = 111.27 \text{ mph}$$ which isn't too far off the actual value of $140 \text{ mph}$.</details>
+</div>
+<h2 id="book-sales">Book Sales</h2>
+<p>In the previous examples, the independent variables were well defined.  However, it is sometimes possible to fit a power function to data even if there is no independent variable.  In such cases, it is common to sort the data from largest to smallest and use the rank as the x-value.  For instance, $x=1$ corresponds to the largest value, $x=2$ corresponds to the second largest value, and so on.</p>
+<p>One place to find ranked data is in a best-selling book list.  This table shows some of the best-selling books in the United Kingdom from 1998 though the end of 2011.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/Top_books_UK.svg#center" alt=""></p>
+<p>Since the values decrease, if a trend exists it will resemble a decreasing power function, one where the power is negative.</p>
+<div class="geogebra" style="padding-top: 57.41%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/Wps11VWC/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+</br>
+A scatterplot of the book data shows a pattern that appears to match the shape of a power function with $p<1$.  Using a power regression program, we find the power function that fits this data best is
+<p>$$f(x)=5408784.21 x^{-0.46}$$</p>
+<p>Eric Carle's children's book <em>The Very Hungry Catepillar</em> is ranked 54th on the list.  According to our model, the number of copies sold should be</p>
+<p>$$f(54) = 5408784.21(54)^{-0.46}\approx 863373$$</p>
+<p>which is fairly close to the 855,920 actually sold.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Use the function above to estimate the ranking of John Grisham's book <em>The Summons</em>, which sold 677,378 copies, by solving for $x$ when $f(x)=677378$.</p>
+<details><summary>Answer</summary><div>
+  $$\begin{aligned}
+    677378 &=  5 408 784.21 x^{-0.46} && \text{Set up the equation.} \newline
+    0.1252366 &= x^{-0.46} && \text{Divide both sides by 5408784.21.} \newline
+    91 &\approx x && \text{Apply the } 1/-0.46 \text{ power to both sides.}
+  \end{aligned}$$
+</div>
+*The Summons* actually ranked number 84 which is reasonably close to our approximation.
+</details>
+</div>
+<h2 id="census-data">Census Data</h2>
+<p>Another example of ranked data comes to us from the 2010 United States Census, which gives the population of every city in the country.  This table shows the rank and populations of several cities.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/census_data.svg#center" alt=""></p>
+<p>A scatterplot of the data shows a clear power function trend modeled by the function $f(x) = 6274804.56x^{-0.74}$.</p>
+<div class="geogebra" style="padding-top: 70.27%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/W8vbZMNE/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+</br>
+While this model fits the overall trend of the data very well, we should not expect it to perfectly match every value.
+<p>For instance, the Census shows that Kansas City, Missouri was ranked 37th with a population of 459,787.  However, our model predicts a population of $f(37)\approx433,642$.  That's reasonably close, but not perfect.</p>
+<p>This is a common occurrence with many models and we should be cautious about expecting perfection from them.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>Follow this <a href="http://www.wolframalpha.com/widgets/view.jsp?id=e7f26c273c1aec446e52d436e32e1a49">link</a> to check the rank and population of your favorite city.  How does it compare to the value predicted by our model?</p>
+<details><summary>Answer</summary><p>Your answer will depend on the city chosen.  Here are a few examples.</p>
+<table>
+<thead>
+<tr>
+<th>Actual Data from 2010</th>
+<th>Predicted Population</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Fransico, CA was ranked 13th with a population of 805,235.</td>
+<td>$f(13)\approx940,333$</td>
+</tr>
+<tr>
+<td>Cleveland, OH was ranked 44th with a population of 396,815.</td>
+<td>$f(44)\approx381,456$</td>
+</tr>
+<tr>
+<td>Kent, WA was ranked 285th with a population of 92,411.</td>
+<td>$f(285)\approx95,723$</td>
+</tr>
+</tbody>
+</table>
+</details>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In this chapter we've seen that power functions fit are used in a wide variety of applications.  Even so, there are lots of times when a power function isn't a good fit.</p>
+<p>The data below might look like they could be modeled by a power function, but no mater which values you choose for $k$ and $p$, the power function will never fit the curvature of the scatterplot.</p>
+<iframe scrolling="no" title="Power Function Bad Fit" src="https://www.geogebra.org/material/iframe/id/Rv4EWJmR/width/300/height/380/border/fafafa/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="300px" height="380px" style="border:0px;"> </iframe>
+<p>The data here are best modeled by a new type of function called an <em>exponential</em> function.  Exponential functions and their inverses, the <em>logarithms</em>, are the focus of the next chapter.</p>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://duragauge.github.io/js/jquery.min.js"></script>
+    <script src="https://duragauge.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://duragauge.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://duragauge.github.io/js/skel.min.js"></script>
+    <script src="https://duragauge.github.io/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="https://duragauge.github.io/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>

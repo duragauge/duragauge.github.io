@@ -1,0 +1,698 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.69.2" />
+	<title>3.6 Fitting Exponential and Logarithmic Models to Data &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://duragauge.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+        <!-- Header -->
+    <header id="header" class="alt">
+      <a href="https://duragauge.github.io/" class="logo"><strong>College</strong>Algebra</a>
+
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+
+    </header>
+
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
+
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io/" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#convert-between-exponential-models">Convert Between Exponential Models</a></li>
+    <li><a href="#create-exponential-models">Create Exponential Models</a></li>
+    <li><a href="#create-exponential-models-1">Create Exponential Models</a></li>
+    <li><a href="#fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+    </nav>
+
+
+        <!-- Main -->
+            <div id="main" class="tufte">
+
+                
+                    <section id="one">
+                        <div class="inner">
+                            <header class="major">
+                                <h1>3.6 Fitting Exponential and Logarithmic Models to Data</h1>
+                            </header>
+
+                            <div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-3/sushi-373588_1280.jpg"  title="Image by Design n Print from Pixabay"  alt="Image by Design n Print from Pixabay" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-373588/">Image by Design n Print from Pixabay</a>
+	</span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.  Fortunately, most things that we eat have biological half-lives and can be modeled using the functions we've learned about in this chapter.</p>
+<p>In this section we will also learn how fit exponential, logarithmic, or logistic functions to data and use those models to make predictions.</p>
+<h2 id="convert-between-exponential-models">Convert Between Exponential Models</h2>
+<p>When working with exponential models it is important to realize that there are many ways to write the same function.  Specifically, the following models are equivalent.</p>
+<table>
+<thead>
+<tr>
+<th>Standard model:</th>
+<th>$f(x)=a \thinspace b^{x}$, where $b=1+r$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Continuous growth model:</td>
+<td>$f(t)=a \thinspace e^{k  t}$</td>
+</tr>
+</tbody>
+</table>
+<p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half life model.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$.</li>
+</ol>
+<details><summary>Answer</summary>Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details>
+<ol>
+<li>Use the identity $k = \ln (b)$ to rewrite $f(x)=138(1.493)^{x}$ as a continuous growth exponential function of the form $f(t)=a \thinspace e^{k  t}$.</li>
+</ol>
+<details><summary>Answer</summary>Since $\ln(1.493)=0.4$, the equivalent continuous growth model is $f(t)=138 \thinspace e^{0.4 t}$.</details>
+</div>
+<h2 id="create-exponential-models">Create Exponential Models</h2>
+<p><img src="https://duragauge.github.io/img/chapter-3/petri_dishes.png#center" alt=""></p>
+<p>A common experiment in college biology labs is to incubate bakers' yeast in a petri dish filled with a nutrient-rich solution.  As the yeast grows groups of cells, called colonies, begin to appear as small white balls.</p>
+<p>Suppose you initially count $3$ yeast colonies, and that $24$ hours later the number of colonies has jumped to $87$.</p>
+<p>In this next example, are asked to finding a continuous growth model .
+To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must use the given data to find the continuous growth rate $k$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Using $a=3$, $t=24$ and $f(t)=87$ find the equation we must solve to find $k$.  You do not need to solve the equation.</li>
+</ol>
+<details><summary>Answer</summary>We need to solve the equation $87=3 e^{k \thinspace 24}$ for $k$.</details>
+</div>
+<p>To solve $87=3 e^{k(24)}$ for $k$, we proceed as follows:</p>
+<table>
+<thead>
+<tr>
+<th>$87 =3 e^{k(24)}$</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{87}{3} =  e^{24  k}$</td>
+<td><em>Divide both sides by $3$ to isolate the exponential.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{87}{3}\right) =  \ln\left(e^{24  k}\right)$</td>
+<td><em>Apply the natural log $\ln$ to both sides.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{87}{3}\right) =  24 k$</td>
+<td><em>Use the inverse relationship</em> $\ln\left(e^{x}\right)=x$.</td>
+</tr>
+<tr>
+<td>$\frac{\ln\left(\frac{87}{3}\right)}{24} =  k$</td>
+<td><em>Divide both sides by $24$.</em></td>
+</tr>
+<tr>
+<td>$k  \approx  0.140$</td>
+<td><em>Use a calculator to find a decimal approximation.</em></td>
+</tr>
+</tbody>
+</table>
+<p>We now know that the yeast are growing at a continuous rate of 14%, and that the function modeling their growth is</p>
+<p>$$f(t)=3 e^{0.14 t}$$</p>
+<p>models the number of yeast colonies $t$ hours after the experiment began.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>
+<p>We were told that there were 87 yeast colonies after 24 hours.  According to this model, how many will there be after 48 hours? <details><summary>Answer</summary>$f(48)=3 e^{0.14(48)}\approx2486$</details></p>
+</li>
+<li>
+<p>In this example, the yeast were growing at a continuous rate of $k=0.14$, or 14%.  Use the fact that $b=e^{k}$ to convert the function $f(t)=3 e^{0.14 t}$ into the standard form $f(x)=a \thinspace b^{x}$.  Then identify the growth factor and growth rate. <details><summary>Answer</summary>Since $b=e^0.14\approx1.15$ the growth factor is $1.15$ and the growth rate is $r=0.15$, meaning the yeast grow 15% per hour.  The function $f(x)=3(1.15)^{x}$ is the standard form of the continuous growth function $f(t)=3 e^{0.14 t}$.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="create-exponential-models-1">Create Exponential Models</h2>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-3/sushi-373588_1280.jpg"  title="Image by Design n Print from Pixabay"  alt="Image by Design n Print from Pixabay" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-373588/">Image by Design n Print from Pixabay</a>
+	</span>
+</div>
+<br>
+<p>Many people are concerned about the amount of mercury they ingest by eating some kinds of fish.  When small fish eat collect in large predatory fish such as shark, swordfish, and tuna.
+<label for="sn-fish" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-fish" class="margin-toggle" />
+<span class="sidenote">
+<img src="https://duragauge.github.io/img/chapter-3/MercuryFoodChain.svg#center" alt="">
+</span>
+Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.</p>
+<p>The U. S. Environmental Protection Agency (EPA) believes that if a person has a blood mercury level under 5.8 micrograms per liter ($\mu$g/L) then they are relatively safe and should see no adverse effects.</p>
+<p>Suppose the Mercury level in your blood is at 15 $\mu$g/L.  If 5 days later it has only dropped to 14  $\mu$g/L, how long will it take to reach a safe level?</p>
+<p>If we assume mercury leaves your body in a continuous fashion, then we can try to find a model of the form $f(t)=ae^{k t}$.  From the information given we can find $k$ by solving  $14=15e^{k \thinspace 5}$.</p>
+<table>
+<thead>
+<tr>
+<th>$14 =15e^{k \thinspace 5}$</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{14}{15} =e^{5 \thinspace  k}$</td>
+<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{14}{15}\right) =\ln\left(e^{5 k}\right)$</td>
+<td><em>Apply the natural log $\ln$ to both sides.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{14}{15}\right) =5 k$</td>
+<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+</tr>
+<tr>
+<td>$\frac{\ln\left(\frac{14}{15}\right)}{5} =k$</td>
+<td><em>Divide both sides by $5$.</em></td>
+</tr>
+<tr>
+<td>$k  \approx  -0.0138$</td>
+<td><em>Use a calculator to find a decimal approximation.</em></td>
+</tr>
+</tbody>
+</table>
+<p>From this we see that the mercury concentration can be modeled by $f(t)=15e^{-0.0138  \thinspace  t}$.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Now that we know the model is $f(t)=15e^{-0.0138 \thinspace t}$, how do we figure out the amount of time it will take to reach a safe level of  5.8$\mu$/L?</li>
+</ol>
+<details><summary>Answer</summary>We need to set $f(t)=5.8$ and solve the equation for $t$.</details>
+</div>
+<p>We know that if your blood mercury level is initially at 15 $\mu$/L, then the mercury concentration can be modeled by the function $f(t)=15e^{-0.0138  \thinspace t}$ where $t$ is time in days.</p>
+<p>To find out how long it will take to reach a safe level of 5.8 $\mu$g/L, we need to find $t$ so that $f(t)=5.8$.</p>
+<table>
+<thead>
+<tr>
+<th>$5.8 =  15e^{-0.0138 \thinspace  t}$</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{5.8}{15}  =  e^{-0.0138 \thinspace  t}$</td>
+<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{5.8}{15}\right)  =  \ln\left(e^{-0.0138 t}\right)$</td>
+<td><em>Apply the natural log $\ln$ to both sides.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{5.8}{15}\right)  =  -0.0138 t$</td>
+<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+</tr>
+<tr>
+<td>$\frac{\ln\left(\frac{5.8}{15}\right)}{-0.0138}  =  t$</td>
+<td><em>Divide both sides by $-0.0138$.</em></td>
+</tr>
+<tr>
+<td>$t  \approx  68.85$</td>
+<td><em>Use a calculator to find a decimal approximation.</em></td>
+</tr>
+</tbody>
+</table>
+<p>It appears that it will take roughly 69 days for the blood mercury concentration to return to a safe level.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>How would this process have changed if you were asked to find the biological half life of mercury in the blood stream?</li>
+</ol>
+<details><summary>Answer</summary>To find the half life we would need to solve for $t$ with $f(t)=\frac{1}{2} a$ where $a$ is the initial concentration.  The solving steps would be nearly identical to what was done above.</details>
+</div>
+<p>It is very common to use the half life model $f(x)=a\left(\frac{1}{2}\right)^{x/c}$ to describe the biological decay of substances in the body.  To change the continuous growth model  $f(t)=15e^{-0.0138 \thinspace t}$ into a half life model, we must find $t$ so that $f(t)=\frac{1}{2}  a$, where $a$ is the initial concentration.</p>
+<table>
+<thead>
+<tr>
+<th>$\frac{1}{2} \cdot 15  =  15 e^{-0.0138 t}$</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{1}{2}  =  e^{-0.0138 t}$</td>
+<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{1}{2}\right)  =  \ln(e^{-0.0138 t})$</td>
+<td><em>Apply the natural log $\ln$ to both sides.</em></td>
+</tr>
+<tr>
+<td>$\ln\left(\frac{1}{2}\right)  =  -0.0138 t$</td>
+<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+</tr>
+<tr>
+<td>$\frac{\ln\left(\frac{1}{2}\right)}{-0.0138}  =  t$</td>
+<td><em>Divide both sides by $-0.0138$.</em></td>
+</tr>
+<tr>
+<td>$t  \approx  50.23$</td>
+<td><em>Use a calculator to find a decimal approximation.</em></td>
+</tr>
+</tbody>
+</table>
+<p>This shows that the half life of mercury in the body is about 50 days.  By taking $c=50$, we conclude that the function</p>
+<p>$$f(x)=15\left(\frac{1}{2}\right)^{x/50}$$</p>
+<p>is an equivalent model for mercury concentration.</p>
+<h2 id="fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</h2>
+<p>When provided with data, it is often possible to use a built in regression program to find the equation of a function that fits the data.</p>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-3/39664780224_6dd2c482f6_b.jpg"  title="Photo by Jim Choate on Flickr"  alt="Photo by Jim Choate on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://www.flickr.com/photos/jimchoate/39664780224/">Photo by Jim Choate on Flickr</a>
+	</span>
+</div>
+<br>
+<p>For instance, in 1970 the total population of Wheeler county in central Oregon was just 1849 people. By 1990, that number had dropped to 1396 people. Assuming that the population decays exponentially, we can use an exponential regression program like <code>ExpReg</code> to find an exponential model for the given data.</p>
+<p>The steps for doing this will vary depending on the calculator used.  You will want to become familiar with the instructions for your calculator.  The basic process should be similar to the steps you used in previous chapters for  <code>LinReg</code> , <code>QuadReg</code>  and <code>PwrReg</code>.</p>
+<p>Since the initial population given is from 1970, it makes sense let our variable $x$ be years since 1970.  After entering the data and running <code>ExpReg</code></p>
+<p><img src="https://duragauge.github.io/img/chapter-3/expreg_1.png#center" alt=""></p>
+<p>we see that the population of Wheeler county Oregon can be modeled by the function $f(x)=1849(0.986)^{x}$, where $x$ is years since 1970.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Using this model, interpolate the population for 1980.  How does this prediction match the actual US Census value of 1513 people?  <details><summary>Answer</summary>Since 1980 is in between our two data points, we expect that interpolating the value for 1980 should be reasonably close.  With $x = 10$ we get $$f(10) = 1849e^{-0.014 \cdot 10} \approx = 1607$$ which isn't too far off the actual US Census value of 1513.</details></li>
+</ol>
+</div>
+<p>Let's use our model $f(x) = 1849(0.986)^{x}$, where $x$ is years since 1970, to predict the population of Wheeler county in 2010.    Using $x = 40$ we have</p>
+<p>$$f(40) = 1849(0.986)^{40} \approx 1052$$</p>
+<p>meaning that our model predicts that the population should have been 1052 people in 2010.  But according to the US Census, Wheeler county actually had 1441 residents in 2010!</p>
+<p>Inaccuracies like this are a risk any time we extrapolate our results far into the future, especially if the model is built on limited data.  A more reasonable approach would be to gather all of the available census data and then make a model.  The data and scatterplot below includes US Census data from 1970 through 2010.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/wheeler_scatterplot.png#center" alt=""></p>
+<p>It's not clear from the scatterplot that an exponential function would match the shape of the data.  What we seem to need is a function that can go down and up and then down again.  In Chapters 4 and 5 we'll discover polynomial functions which increase and decrease any number of times.</p>
+<p>Even though polynomials will eventually let us find a function that fits this data exactly, it still may not be a good predictor of the future.  This uncertainty is one of the difficulties in modeling real life situations.</p>
+<p>As we have just seen, it is best to include as much data as possible and consider the shape of the data before selecting a model.  We can then compare the shape of the data to the shape of known functions and decide which model to use.  For instance, the three data sets below appear to follow exponential, logarithmic, and logistic trends.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/scatterplots.svg#center" alt=""></p>
+<p>Remember, it is easy to mistakenly identify data that comes from a power function as having an exponential or logarithmic trend.  The log transforms and log plots discussed in can help us be fairly confident in the nature of the data.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
+<ol>
+<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This data looks similar to a quadratic function.</details>
+<ol>
+<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_linear.svg#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This data has the shape of a linear function.</details>
+<ol>
+<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_sqrt.svg#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This data is similar to a power function with a power of $0&lt;p&lt;1$, such as the square root function.  This shape is also visually similar to a logarithmic function.</details>
+<ol>
+<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_reciprocal.svg#center" alt=""></li>
+</ol>
+<details><summary>Answer</summary>This data has the shape of a power function with a power of $p&lt;0$, such as the reciprocal function.  This shape is also similar to an exponential decay function.</details>
+</div>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile.gif#center" alt=""></p>
+<p>In the summer of 2005, Road and Track magazine gathered 13 cars, 1 motorcycle, and a Navy F/A-18 Hornet fighter jet for a one-mile long acceleration test at the Lemoore Naval Air Base in California.  The first-placed Lola Champ Car (yellow car on the bottom right) crossed the finish line in just 24.2 seconds!  The following table show how long it took the Lola to reach different speeds.</p>
+<table>
+<thead>
+<tr>
+<th>Time (sec)</th>
+<th>Speed (mph)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td>60</td>
+</tr>
+<tr>
+<td>5.6</td>
+<td>100</td>
+</tr>
+<tr>
+<td>8.6</td>
+<td>150</td>
+</tr>
+<tr>
+<td>9.9</td>
+<td>161.4</td>
+</tr>
+<tr>
+<td>22</td>
+<td>200</td>
+</tr>
+<tr>
+<td>24.2</td>
+<td>203.3</td>
+</tr>
+</tbody>
+</table>
+<p>Which would fit the data better: an exponential model, a logarithmic model, or a logistic model?  To find out, we start by creating a scatterplot of the data.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_scatterplot.png#center" alt=""></p>
+<p>Looking at the scatterplot helps us narrow down the list of possible models.  For instance, the data does not appear to be linear, so no attempt will be made at running <code>LinReg</code> and trying to fit a line to the data.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Of all the functions you've seen, which one(s) do you think have a shape similar to the shape of this scatterplot?</li>
+</ol>
+<details><summary>Answer</summary>Of the shapes we have seen, this might match a logarithmic function, a logistic function, or even a quadratic.  In a moment we will try each of these and choose the one that appears to fit best.</details>
+</div>
+<p>In an attempt to find a function that models the speed of the Lola Champ Car (bottom right), we have run a natural log regression <code>LnReg</code>, a logistic regression <code>Logistic</code>, and a quadratic regression <code>QuadReg</code>.  The equations and graphs are shown below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_regressions.png#center" alt=""></p>
+<p>It appears that the logistic function $f(x) = \frac{201.91}{1+6.31 e^{-0.334x}}$ is very close to each point, and we choose it as the best fit.  The carrying capacity $201.91$ of the model also seems to match up closely with the top speed $203.3$ of the car, even though it is not an exact match.  Since all models are an approximate fit, we should not expect them replicate every data point exactly.</p>
+<p>Let's consider one final example.</p>
+<p>The majority of teachers in primary education (K-12) are women. However, positions in K-12 administration, such as principal or superintendent, are more frequently held by men. The following data, from Indiana's department of education, shows the percentage of women in K-12 administration. 
+<label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote">
+<img src="https://duragauge.github.io/img/chapter-3/woman-2773007_1280.jpg" alt=""> <a href="https://pixabay.com/images/id-2773007/">Image by ernestoeslava on Pixabay</a>
+</span></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>% of women administrators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1990</td>
+<td>18.3</td>
+</tr>
+<tr>
+<td>1992</td>
+<td>22.8</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>26.7</td>
+</tr>
+<tr>
+<td>1996</td>
+<td>30.2</td>
+</tr>
+<tr>
+<td>1998</td>
+<td>32.5</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>34.4</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>36.3</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>37.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>39.3</td>
+</tr>
+</tbody>
+</table>
+<p>A scatterplot of the data shows an increasing, concave down trend.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/educator_scatterplot.png#center" alt=""></p>
+<p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit?</li>
+</ol>
+<details><summary>Answer</summary>The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details>
+</div>
+<p>Before running any regressions, we stop to point out that our normal practice letting $x$ represent years since 1990 could be problematic, since $0$ is not in the domain of any logarithmic function.  To eliminate that possibility, we let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
+<table>
+<thead>
+<tr>
+<th>Years since 1989</th>
+<th>% of women administrators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>18.3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>22.8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>26.7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>30.2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>32.5</td>
+</tr>
+<tr>
+<td>11</td>
+<td>34.4</td>
+</tr>
+<tr>
+<td>13</td>
+<td>36.3</td>
+</tr>
+<tr>
+<td>15</td>
+<td>37.8</td>
+</tr>
+<tr>
+<td>17</td>
+<td>39.3</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the curve of the data, we chose to run a logistic regression <code>Logistic</code>, a logarithmic regression <code>LnReg</code>, and a power regression <code>PwrReg</code>.  The results are shown below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/educator_regressions.png#center" alt=""></p>
+<p>All three models match the data fairly well.  However, the logistic function has a significant flaw.  Remember that the carrying capacity $c$ is a horizontal asymptote.  In this case, the logistic model would never predict a percentage of female administrators that exceeds the carrying capacity of 40.866%.</p>
+<p>Consequently, either the logarithmic or the power models might be better predictors of future trends.</p>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In this section we have modeled data with exponential, logarithmic, and logistic functions.  Along the way we encountered a data set that went down, then up, and then down again.  None of the functions we have studied so far have that type of behavior.
+However, by using combinations of power functions and exponential functions we can create new functions that have much more complex behaviors.  Combining functions will be the focus of the next chapter.</p>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            
+                <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+            
+
+        </div>
+
+        <!-- Scripts -->
+          <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://duragauge.github.io/js/jquery.min.js"></script>
+    <script src="https://duragauge.github.io/js/jquery.scrolly.min.js"></script>
+    <script src="https://duragauge.github.io/js/jquery.scrollex.min.js"></script>
+    <script src="https://duragauge.github.io/js/skel.min.js"></script>
+    <script src="https://duragauge.github.io/js/util.js"></script>
+
+
+
+    
+
+    <!-- Main JS -->
+    <script src="https://duragauge.github.io/js/main.js"></script>
+
+    
+
+    
+
+
+
+
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+          <script>
+          let vuesearch = new Vue({
+              el: '#search', 
+              data: {
+                  txt: '', 
+                  timeoutID: 0, 
+                  showresult: false, 
+                  result: {}, 
+                  bdd: [] 
+                  },
+              mounted: function() {
+                  
+                  axios.get('')
+                  .then(function (response) {
+                      vuesearch.bdd = response.data.results;
+                      })
+                  .catch(function (error) {
+                      console.log(error);
+                      });
+                  },
+              methods: {
+                  close: function() {
+                      
+                      
+                      setTimeout(function() {
+                          vuesearch.showresult = false;
+                          vuesearch.txt = '';
+                          }, 300);
+                      },
+                  search: function() {
+                      
+                      clearTimeout(this.timeoutID);
+                      this.timeoutID = setTimeout(this.dosearch, 500);
+                      },
+                  dosearch: function() {
+                      
+                      this.result = []; 
+                      let words = this.txt.split(' '); 
+                      let words2 = []; 
+                      words.forEach(function(element) { 
+                          if(element) {words2.push(element);}
+                          });
+                      let r;
+                      let resultmp;
+                      words2.forEach(function(e) { 
+                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                          resultmp = [];
+                          vuesearch.result.forEach(function(all1) {
+                              r.forEach(function(all2) { 
+                                  if(all1.url===all2.url) {resultmp.push(all1);}
+                                  });
+                              });
+                          vuesearch.result = resultmp.slice();
+                          });
+                      this.result = this.result.slice(0, 10); 
+                      this.showresult = (this.result.length>0); 
+                      } 
+                  } 
+              }); 
+          </script>
+
+
+
+    </body>
+</html>
