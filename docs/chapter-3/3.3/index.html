@@ -82,8 +82,8 @@
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#definition-of-logarithms">Definition of Logarithms</a></li>
-    <li><a href="#understand-the-definition-of-logarithms">Understand the Definition of Logarithms</a></li>
-    <li><a href="#understand-the-definition-of-logarithms-1">Understand the Definition of Logarithms</a></li>
+    <li><a href="#convert-between-exponential-and-logarithmic-equations">Convert Between Exponential and Logarithmic Equations</a></li>
+    <li><a href="#evaluate-logarithms">Evaluate Logarithms</a></li>
     <li><a href="#graph-logarithmic-functions">Graph Logarithmic Functions</a></li>
     <li><a href="#understand-how-logarithmic-functions-change">Understand How Logarithmic Functions Change</a></li>
     <li><a href="#difference-quotient-of-logarithmic-functions">Difference Quotient of Logarithmic Functions</a></li>
@@ -119,7 +119,7 @@
 </div>
 <br>
 <h2 id="introduction">Introduction</h2>
-<p>Up until the invention of scientific calculators 
+<p>Up until the invention of scientific calculators
 <label for="sn-HP-35" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-HP-35" class="margin-toggle" />
@@ -131,7 +131,9 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 <p>To build a slide rule you need a function that can extract exponents.  Such functions are called <em>logarithmic</em> functions and just happen to be the inverses of exponential functions.  In this section we will study logarithms and even learn how to use a simple slide rule.</p>
 <h2 id="definition-of-logarithms">Definition of Logarithms</h2>
 <p>We learned in a previous chapter that every one-to-one function has an inverse.  Since the exponential function $b^{x}$ (where $b&gt;0$ and $b\neq1$) is one-to-one, it must have an inverse.</p>
-<p>The inverse of the exponential with base $b$ is called the <strong>logarithm</strong> with base $b$ and is written $\log_b (x)$.  As with exponential functions, the base $b$ must be a positive number not equal to $1$.</p>
+<p>The inverse of the exponential with base $b$ is called the <strong>logarithm</strong> with base $b$ and is written $\log_b (x)$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/inverse_exp_log.svg#center" alt=""></p>
+<p>As with exponential functions, the base $b$ must be a positive number not equal to $1$.</p>
 <p>In other words, as long as the base is the same, the functions $b^{x}$ and $\log_b(x)$ are inverses of each other.</p>
 <table>
 <thead>
@@ -186,11 +188,18 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 </li>
 </ol>
 </div>
-<h2 id="understand-the-definition-of-logarithms">Understand the Definition of Logarithms</h2>
+<h2 id="convert-between-exponential-and-logarithmic-equations">Convert Between Exponential and Logarithmic Equations</h2>
 <p>Whenever a function has an inverse, we know that $f(x) = y$ if and only if $f^{-1}(y) = x$.   In the present context, this inverse relationship means that $b^{x} = y$ is equivalent to $\log_{b}(y) = x$.</p>
-<p>This gives us the ability to rewrite exponential equations as logarithmic equations and convert logarithmic equations into exponential equations.</p>
-<p>For example,  $3^{2}=9$ is equivalent to $\log_{3}(9) = 2$.</p>
-<p>Going the other direction, $\log_{10}(1000)=3$ means the same thing as $10^{3}=1000$.  Here are a few more examples.</p>
+<p>This gives us the ability to rewrite exponential equations as logarithmic equations and/or convert logarithmic equations into exponential equations.
+<label for="sn-convert exp to log" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-convert exp to log" class="margin-toggle" />
+<span class="sidenote">
+To convert between exponential and logarithmic equations it is easiest to first identify the base and then remember that the logarithm equals the  exponent.
+</span></p>
+<p><img src="https://duragauge.github.io/img/chapter-3/rewrite_exp_log.svg#center" alt=""></p>
+<p>For example,  the exponential equation $9=3^{2}$ is equivalent to logarithmic equation $\log_{3}(9) = 2$.</p>
+<p>Going the other direction, $\log_{10}(1000)=3$ means the same thing as $1000=10^{3}$.  Here are a few more examples.</p>
 <table>
 <thead>
 <tr>
@@ -273,20 +282,20 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 </ol>
 <details><summary>Answer</summary>$7^2=49$</details>
 </div>
-<h2 id="understand-the-definition-of-logarithms-1">Understand the Definition of Logarithms</h2>
+<h2 id="evaluate-logarithms">Evaluate Logarithms</h2>
 <p>The inverse relationship</p>
-<p>$$b^{x}=y \Longleftrightarrow \log_{b}(y) = x$$</p>
+<p>$$y=b^{x} \Longleftrightarrow \log_{b}(y) = x$$</p>
 <p>can also be used to evaluate logarithms by rewriting known exponential values. To illustrate this point, let's compute a few values of $\log_{2}(x)$ by looking at known values of $2^{x}$.</p>
 <table>
 <thead>
 <tr>
-<th>$2^{x}=y  \Longleftrightarrow  \log_{2}(y)=$</th>
+<th>$y=2^{x}  \Longleftrightarrow  \log_{2}(y)=$</th>
 <th>$x$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$2^{0}=1  \Longleftrightarrow  \log_{2}(1)=$</td>
+<td>$1=2^{0}  \Longleftrightarrow  \log_{2}(1)=$</td>
 <td><details><summary>Answer</summary>$0$</details></td>
 </tr>
 <tr>
@@ -294,7 +303,7 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 <td></td>
 </tr>
 <tr>
-<td>$2^{1}=2  \Longleftrightarrow  \log_{2}(2)=$</td>
+<td>$2=2^{1}  \Longleftrightarrow  \log_{2}(2)=$</td>
 <td><details><summary>Answer</summary>$1$</details></td>
 </tr>
 <tr>
@@ -302,7 +311,7 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 <td></td>
 </tr>
 <tr>
-<td>$2^{2}=4  \Longleftrightarrow  \log_{2}(4)=$</td>
+<td>$4=2^{2}  \Longleftrightarrow  \log_{2}(4)=$</td>
 <td><details><summary>Answer</summary>$2$</details></td>
 </tr>
 <tr>
@@ -310,7 +319,7 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 <td></td>
 </tr>
 <tr>
-<td>$2^{3}=8  \Longleftrightarrow  \log_{2}(8)=$</td>
+<td>$8=2^{3}  \Longleftrightarrow  \log_{2}(8)=$</td>
 <td><details><summary>Answer</summary>$3$</details></td>
 </tr>
 <tr>
@@ -320,9 +329,31 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 </tbody>
 </table>
 <p>Notice that in each instance the logarithm is the exponent.  For example, $\log_{2}(8)=3$ because $3$ is the exponent that makes $2^{x}=8$.</p>
+<p>Of course, logarithmic functions can also be evaluated on a calculator.  Starting with the <a href="https://duragauge.github.io/img/chapter-3/HP-35_large.jpg">HP-35</a> in 1972, two different logarithms have been built into every handheld scientific and graphing calculator: the <strong>common log</strong> and the <strong>natural log</strong>.
+<label for="sn-calculator log and ln" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-calculator log and ln" class="margin-toggle" />
+<span class="sidenote">
+The buttons for $\log$ and $\ln$ on different calculators are shown below. <img src="https://duragauge.github.io/img/chapter-3/calculator_log_and_ln.png" alt=""><br>
+</span></p>
+<p>The common logarithm has a base of $10$.  It is written as $\log$ (lowercase LOG).  The natural logarithm has
+a base of $e$.  It is written as $\ln$ (lowercase LN).</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+<ol>
+<li>
+<p>Use a calculator to evaluate $\log 1000$. <details><summary>Answer</summary>$\log 1000 = 3$ <br> This is the exponent you would have to put on $10$ to generate $1000$.  You can check your answer by seeing if $10^{3} = 1000$.</details></p>
+</li>
+<li>
+<p>Use a calculator to evaluate $\ln 1000$.<details><summary>Answer</summary>$\ln 1000 \approx 6.9076$ <br>  This is the exponent you would have to put on $e$ to generate $1000$.  You can check your answer by seeing if $e^{6.9076} \approx 1000$</details></p>
+</li>
+</ol>
+</div>
 <h2 id="graph-logarithmic-functions">Graph Logarithmic Functions</h2>
-<p>We can also use the inverse function relationship to sketch graphs of logarithmic functions.  Remember, if the point $(x,y)$ is on the graph of $f$ then $(y,x)$ is on the graph of $f^{-1}$.  In other words, to obtain the graph of $f^{-1}$ we reflect the graph of $f$ across the line $y=x$.</p>
-<p>Use the figure to the right to help you graph $\log_2(x)$.  As you move the <strong><font  color="blue">blue</font></strong> point, the pencil will plot its inverse (in <strong>black</strong>).  Verify that each of the following points are on the appropriate graphs.</p>
+<p>We can also use the inverse function relationship to sketch graphs of logarithmic functions.  Remember, with inverse function if the point $(x,y)$ is on the graph of $f$ then the point $(y,x)$ is on the graph of $f^{-1}$.</p>
+<p>Use the figure below to help you graph $\log_2(x)$.  As you move the <strong><font  color="blue">blue</font></strong> point, the pencil will plot its inverse (in <strong>black</strong>).</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/NqdtIjsk/width/450/height/400/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="450px" height="400px" style="border:0px;"> </iframe>
+<p>You may want to verify that each of the following points is on the appropriate graph.</p>
 <table>
 <thead>
 <tr>
@@ -349,7 +380,6 @@ in the 1970's, people relied on 300-year-old mechanical calculators called &quot
 </tr>
 </tbody>
 </table>
-<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/NqdtIjsk/width/450/height/400/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="450px" height="400px" style="border:0px;"> </iframe>
 <p>Like exponential functions, the shape of the graph of a logarithmic function is controlled entirely by the value of the base $b$.  Each base will have its own, slightly different graph. Use the following interactive figure to change the value of $b$ and analyze the behavior of the function.</p>
 <iframe scrolling="no" title="Logarithmic Functions" src="https://www.geogebra.org/material/iframe/id/u2R6RhFZ/width/540/height/240/border/fafafa/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="540px" height="240px" style="border:0px;"> </iframe>
 <p>Specifically, check for any of the 9 basic function properties.</p>
@@ -368,6 +398,7 @@ The function does not exist when $b \leq 0$ or if $b=1$. </details>
 <p>Click each property to check your observations.</p>
 <h2 id="understand-how-logarithmic-functions-change">Understand How Logarithmic Functions Change</h2>
 <p>Every time we define a new function, we need to investigate the way it changes.   Let's start by looking at the average rate of change $\frac{\Delta y}{\Delta x}$ over several intervals.</p>
+<p>For convenience, we will use the common logarithm $\log(x)$ and, to simplify the calculations, we will choose intervals $[a, b]$ that have a width of $\Delta x=1$.</p>
 <table>
 <thead>
 <tr>
@@ -402,13 +433,12 @@ The function does not exist when $b \leq 0$ or if $b=1$. </details>
 </tr>
 </tbody>
 </table>
-<p>For convenience, we will use the common logarithm $\log(x)$, and to simplify the calculations we will choose intervals $[a, b]$ whose width is $\Delta x=1$.</p>
 <p>What do these values for $\frac{\Delta y}{\Delta x}$ in the table tell us about the common logarithm function?  It appears that $\log(x)$ changes more when $x$ is small than it does when $x$ is large.  In other words, the values of $\log(x)$ are further apart when $x$ is small, and closer together when $x$ is large.  The difference quotient will help us understand why this happens.</p>
 <h2 id="difference-quotient-of-logarithmic-functions">Difference Quotient of Logarithmic Functions</h2>
-<p>Recall that the difference quotient of a function is given by $D(x)=\frac{f(x+h)-f(x)}{h}$ where $h&gt;0$ can be any small, positive number.</p>
-<p>Unlike power functions and exponential functions, it is very difficult to simplify the difference quotient of a logarithmic function.</p>
-<p>However, since $D(x)$ is itself a function, we can observe its graph in order to draw some conclusions about how how $f(x)$ changes.</p>
-<p>It the figure below, the graphs of  the function $f(x)=\log_{b}(x)$  and its difference quotient $D(x)$  are shown in **black** and in **<font  color="red">red</font>**, respectively.   We have fixed $h=0.001$, but the value of the base $b$ can change, allowing us to view the difference quotient for several different logarithms.  Use the **<font color="blue">blue</font>** slider to change the value of $b$ and see if you recognize $D(x)$ as one of the basic functions from Chapter 1.</p>
+<p>In earlier chapters we saw that the difference quotient of a function, given by $D(x)=\frac{f(x+h)-f(x)}{h}$, is a function that describes how $f$ changes on any interval of length $h&gt;0$.</p>
+<p>Unlike power functions and exponential functions, it is very difficult to simplify the difference quotient of a logarithmic function by hand, so we will not attempt that.</p>
+<p>However, since $D(x)$ is itself a function, we can take a look at its graph and see if it has any interesting properties.</p>
+<p>It the figure below, the graphs of $f(x)=\log_{b}(x)$ and its difference quotient $D(x)$ are shown in **black** and in **<font  color="red">red</font>**, respectively.   We have fixed $h=0.001$, but the value of the base $b$ can change, allowing us to view the difference quotient for several different logarithms.  Use the **<font color="blue">blue</font>** slider to change the value of $b$ and see if you recognize $D(x)$ as one of the basic functions from Chapter 1.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/XWcmkpYg/width/600/height/250/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="600px" height="250px" style="border:0px;"> </iframe>
 <p>No matter which base is chosen, the graph of $D(x)$ always looks like the reciprocal function $1/x$.  And the fact that $1/x$ is large when $x$ is small and small when $x$ is large confirms our earlier observation that logarithmic functions change rapidly when $x$ is small but that rate slows down as $x$ increases.</p>
 <h2 id="logarithmic-scales">Logarithmic Scales</h2>
@@ -428,12 +458,12 @@ The function does not exist when $b \leq 0$ or if $b=1$. </details>
 <p>Notice that the resulting bar lines up with $15$ on the log scale.  We learn from this that $\log(3)+\log(5)=\log(15)$ or,  in other words,</p>
 <p>$$\log(3)+\log(5)=\log(3 \cdot 5)$$</p>
 <p>If you try this with other values you will find that it is always true.  The pattern is</p>
-<p>$$\log(x)+\log(y)=\log(x  \thinspace  y)$$</p>
+<p>$$\log(x)+\log(y)=\log(x , y)$$</p>
 <p>and is called the <strong>product rule</strong>.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
 <ol>
-<li>Verify the product rule $\log(x)+\log(y)=\log(x  \thinspace  y)$ by evaluating both $\log(18)+\log(2)$ and $\log(18 \cdot 2)$ on your calculator.<details><summary>Answer</summary><img src="https://duragauge.github.io/img/chapter-3/log18_plus_log2.gif#center" alt=""></details></li>
+<li>Verify the product rule $\log(x)+\log(y)=\log(x , y)$ by evaluating both $\log(18)+\log(2)$ and $\log(18 \cdot 2)$ on your calculator.<details><summary>Answer</summary><img src="https://duragauge.github.io/img/chapter-3/log18_plus_log2.gif#center" alt=""></details></li>
 </ol>
 </div>
 <h2 id="quotient-rule-for-logarithms">Quotient Rule for Logarithms</h2>
@@ -470,7 +500,7 @@ which is known as the <strong>quotient rule</strong>.</p>
 <tbody>
 <tr>
 <td><strong>Product Rule</strong></td>
-<td>$$\log_b (x \thinspace y) = \log_b (x) + \log_b (y)$$</td>
+<td>$$\log_b (x,y) = \log_b (x) + \log_b (y)$$</td>
 <td>$$\ln(20) =  \ln(4) + \ln(5)$$</td>
 </tr>
 <tr>
