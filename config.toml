@@ -10,6 +10,7 @@ title = "College Algebra"
 theme = "forty"
 
 
+
 [outputs]
 home = [ "HTML"]
 
