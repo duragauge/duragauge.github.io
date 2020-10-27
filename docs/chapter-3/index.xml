@@ -23,7 +23,7 @@ The images below illustrate three different real world examples of exponential g
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-3/3.2/</guid>
-      <description>Hot cocoa photo by Rawpixels on UnsplashIntroduction Imagine that you have a delicious mug of creamy, homemade hot cocoa that is, unfortunately, much too hot to drink. How long should you leave it on your kitchen counter so that it cools but doesn&#39;t lose all of its comforting warmth?
+      <description>Hot cocoa photo by Rawpixels on UnsplashIntroduction Imagine that you have a delicious mug of creamy, homemade hot cocoa that is, unfortunately, much too hot to drink. How long should you leave it on your kitchen counter so that it cools but doesn&#39;t lose all of its comforting warmth?
 We&#39;re not ready to answer that question yet, but it should not surprise you that it has to do with exponential functions!</description>
     </item>
     
@@ -33,8 +33,9 @@ We&#39;re not ready to answer that question yet, but it should not surprise you 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-3/3.3/</guid>
-      <description>Photo by john allspawIntroduction Up until the invention of scientific calculators  The HP-35 was the first handheld scientific calculator. Developed by Hewlett-Packard, it went on sale in 1972 for $395. Photo by Julian Bucknall  in the 1970&#39;s, people relied on 300-year-old mechanical calculators called &amp;quot;slide rules&amp;quot;.
-Slide rules use the properties of exponents to simplify calculations. For example, multiplication turns into addition and division becomes subtraction.</description>
+      <description>Photo by john allspawIntroduction Up until the invention of scientific calculators  The HP-35 was the first handheld scientific calculator. Developed by Hewlett-Packard, it went on sale in 1972 for $395. Photo by Julian Bucknall in the 1970&#39;s, people relied on 300-year-old mechanical calculators called &amp;quot;slide rules&amp;quot;.
+Slide rules use the properties of exponents to simplify calculations. For example, multiplication turns into addition and division becomes subtraction.
+To build a slide rule you need a function that can extract exponents.</description>
     </item>
     
     <item>
@@ -43,7 +44,7 @@ Slide rules use the properties of exponents to simplify calculations. For exampl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-3/3.4/</guid>
-      <description>Photo by Matthieu A on UnsplashIntroduction The human senses are capable of perceiving a wide range of stimuli. Our sense of hearing, for example, picks up both faint whispers and highly amplified music.
+      <description>Photo by Matthieu A on UnsplashIntroduction The human senses are capable of perceiving a wide range of stimuli. Our sense of hearing, for example, picks up both faint whispers and highly amplified music.
 One reason for this is the fact that your ears don&#39;t perceive the actual intensity of sound, rather they respond approximately to logarithm of the sound intensity. For example, if you increase the intensity of a sound 10 times, it will only sound about twice as loud.</description>
     </item>
     
@@ -53,7 +54,7 @@ One reason for this is the fact that your ears don&#39;t perceive the actual int
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-3/3.5/</guid>
-      <description>Photo by Ken Treloar on UnsplashIntroduction Since exponential and logarithmic functions arise in many applications, it is essential to be able to manipulate and solve equations involving them. As an example of the type of problems we might encounter, consider the following situation.
+      <description>Photo by Ken Treloar on UnsplashIntroduction Since exponential and logarithmic functions arise in many applications, it is essential to be able to manipulate and solve equations involving them. As an example of the type of problems we might encounter, consider the following situation.
 A patient who is undergoing diagnostic imaging for thyroid cancer typically swallows a capsule containing the radioactive isotope Iodine-123 shortly before being placed inside a scanner.</description>
     </item>
     
@@ -63,7 +64,7 @@ A patient who is undergoing diagnostic imaging for thyroid cancer typically swal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-3/3.6/</guid>
-      <description>Image by Design n Print from PixabayIntroduction Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna. Mercury levels in large fish can be over a million times higher than that found in the surrounding waters. Fortunately, most things that we eat have biological half-lives and can be modeled using the functions we&#39;ve learned about in this chapter.</description>
+      <description>Image by Design n Print from PixabayIntroduction Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna. Mercury levels in large fish can be over a million times higher than that found in the surrounding waters. Fortunately, most things that we eat have biological half-lives and can be modeled using the functions we&#39;ve learned about in this chapter.</description>
     </item>
     
   </channel>

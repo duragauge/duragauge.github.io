@@ -84,8 +84,10 @@
     <li><a href="#the-definition-of-a-function">The Definition of a Function</a></li>
     <li><a href="#explore-the-concept-of-a-function">Explore the Concept of a Function</a></li>
     <li><a href="#function-notation">Function Notation</a></li>
+    <li><a href="#function-notation-and-units">Function Notation and Units</a></li>
     <li><a href="#representations-of-functions">Representations of Functions</a></li>
-    <li><a href="#vertical-line-test">Vertical Line Test</a></li>
+    <li><a href="#graphs-of-functions">Graphs of Functions</a></li>
+    <li><a href="#the-vertical-line-test">The Vertical Line Test</a></li>
     <li><a href="#determining-the-domain-of-a-function">Determining the Domain of a Function</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
@@ -107,8 +109,7 @@
                             <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-1/vending_machine.jpg"  title="Soda Vending Machine Japan Coast, photo by slackrhackr"  alt="Soda Vending Machine Japan Coast, photo by slackrhackr" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://commons.wikimedia.org/wiki/File:Soda_Vending_Machine_Japan_Coast.jpg">Soda Vending Machine Japan Coast, photo by slackrhackr</a>
-	</span>
+    <a href = "https://commons.wikimedia.org/wiki/File:Soda_Vending_Machine_Japan_Coast.jpg">Soda Vending Machine Japan Coast, photo by slackrhackr</a></span>
 </div>
 <br>
 <h2 id="introduction">Introduction</h2>
@@ -144,7 +145,7 @@
  <br>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<ol>
+  <ol>
 <li>
 <p>Does this diagram represent a function?  If so, also identify the domain and range.
 <img src="https://duragauge.github.io/img/chapter-1/arrow_diagram_sandwiches_3.svg#center" alt=""><details><summary>Answer</summary><strong>YES</strong>, this is a function.  Even though they all ordered the same thing, each person is only getting one sandwich, so it is a function.  The <strong>domain</strong> is the set of people and the <strong>range</strong> is the set of sandwiches.</details></p>
@@ -156,62 +157,118 @@
 </ol>
 </div>
 <h2 id="function-notation">Function Notation</h2>
-<p>If there is a function relationship between $x$ and $y$, then it is standard practice to replace $y$ with $f(x)$ and say that $y=f(x)$.</p>
+<p>When there is a function relationship between $x$ and $y$ it is common practice to replace $y$ with $f(x)$ and say that $y=f(x)$.  This is known as <strong>function notation</strong>.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/arrow_diagram_function_x_f_of_x.svg#center" alt=""></p>
-<p>This is known as <strong>function notation</strong> and reminds us that the output $y$ is the result of putting the input $x$ inside of the function $f$.  When said aloud the notation $f(x)$ is read &quot;$f$ <strong>of</strong> $x$&quot;.</p>
+<p>When said aloud the notation $f(x)$ is read &quot;$f$ of  $x$&quot;.  This notation reminds us that the output $f(x)$ is the result of putting the input $x$ inside of the function $f$.</p>
+<p>In fact, it can be helpful to think of a function as a machine that changes an object $x$ into something new $f(x)$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/function_machine.svg#center" alt=""></p>
 <p>Suppose, for example, that pressing the button $\text{B4}$ on a vending machine gives you a bag of potato chips. Using function notation we might write $f(\text{B4})=\text{potato chips}$.</p>
+<p>The process of determining the output given a particular input is called <strong>evaluating</strong> the function.
+<label for="sn-solving" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-solving" class="margin-toggle" />
+<span class="sidenote">Evaluating is sometimes confused with solving, which is understandable since they are like two sides of a coin.  <br><br>To <strong>evaluate</strong> we start with an input and find the output.<br><br><strong>Solving</strong> is the reverse process, we are given an output and must find the input.</span></p>
+<p>For instance, if our function is $f(x)=x^{2}+6x$, then we evaluate $f(5)$ by replacing every $x$ with $5$:</p>
+<p>$$\begin{align}f(5) &amp;= (5)^2+6(5) \newline
+&amp;= 25+30 \newline
+&amp;= 55
+\end{align}$$</p>
+<p>A function can be evaluated even if we do not get a numerical result.  Evaluating $f(x^{2})$ or $f(t)$ would mean substituting each $x$ with an $x^{2}$ or with a $t$.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
+  <ol>
+<li>
+<p>Evaluate $f(2)$ if $f(x)=x-3$. <details><summary>Answer</summary>$f(2)=(2)-3=-1$</details></p>
+</li>
+<li>
+<p>If $g(x)=x^{2}+6x$, what is $g(😀)$? <details><summary>Answer</summary>$g(😀)=(😀)^2+6(😀)$</details></p>
+</li>
+<li>
+<p>For the function shown below, what is $f(5)$? <br><br> <img src="https://duragauge.github.io/img/chapter-1/arrow_diagram_b_inverse.svg#center" alt=""><details><summary>Answer</summary>$f(5)=A$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="function-notation-and-units">Function Notation and Units</h2>
+<p>With function notation the choice of letters is completely arbitrary. For example, if a function always adds $3$ it makes no difference whether we refer to it as $f(x)=x+3$ or as $g(x)=x+3$ or as $w(t)=t+3$. It is what a function does that matters, not what it is called.
+<label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-1/cliff_dive.jpg" alt="Saltos Red Bull en Bilbao 2015"> Photo by <a href="https://www.flickr.com/photos/jamoral/21713225096/">jamoral, on Flickr</a></span></p>
+<p>This is especially helpful when modeling something in real life since we can choose letters that match the context.</p>
+<p>For instance, if the height of a professional cliff diver depends on how long it has been since he leapt into the air, then we might use $h$ as the name of the height function and $t$ for the time that has elapsed. The quantity $h(t)$ would then be the height at a particular time $t$.</p>
+<p>We should also pay attention to the units of measurement being used. If height is measured in feet and time is in seconds, then it is entirely possible that $2$ <em>seconds</em> after jumping the diver is exactly $2$ <em>feet</em> above the water and we could write $h(2)=2$. Even though the input and output are the same number, when we consider the units we realize they represent very different quantities.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+  <div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-1/doug-maloney-1157775-unsplash.jpg"  title="Volkswagen Beetle photo by Doug Maloney on Unsplash"  alt="Volkswagen Beetle photo by Doug Maloney on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/PUmAQ2sTGMY">Volkswagen Beetle photo by Doug Maloney on Unsplash</a></span>
+</div>
+<br>
+<p>Suppose that the function  $C$  gives you the cost in dollars of a Volkswagen Beetle based on its age $t$ in years.</p>
 <ol>
-<li>For the function shown below, what is $f(5)$?
-<img src="https://duragauge.github.io/img/chapter-1/arrow_diagram_b_inverse.svg#center" alt=""><details><summary>Answer</summary>$f(5)=A$</details></li>
+<li>
+<p>Are the inputs dollars or years? <details><summary>Answer</summary>The inputs are <strong>years</strong>.</details></p>
+</li>
+<li>
+<p>Are the outputs dollars or years? <details><summary>Answer</summary>The outputs are <strong>dollars</strong>.</details></p>
+</li>
+<li>
+<p>Describe the difference in meaning between $C(50)=2000$ and $C(2000)=50$. Which one is more reasonable? <details><summary>Answer</summary>In this example the inputs are always years and the outputs are always dollars.  The first equation means that the cost of a 50 year-old Beetle is 2000 dollars.  The second would mean that the cost of a 2000 year-old Beetle is just 50 dollars (which is highly unlikely).</details></p>
+</li>
 </ol>
 </div>
 <h2 id="representations-of-functions">Representations of Functions</h2>
-<p>Because functions are so widely used, there are many different ways to represent them.  We have already encountered functions represented by mapping diagrams.  We'll also see functions written as tables, sets of points, equations, graphs and sequences of operations.</p>
-<p>Switching from one representation of a function to another can help us see different features and discover connections that might have been hidden otherwise.</p>
+<p>Because functions are so widely used, there are many different ways to represent them.  We have already encountered functions represented by mapping diagrams and equations.  We'll also see functions written as tables, sets of points, sequences of operations, and graphs.</p>
+<p>Switching from one representation to another can help us see different features and discover connections that might have been hidden otherwise.</p>
 <p>Of primary importance will be the connection between a function defined by an equation and its graph.</p>
-<p>The <strong>graph</strong> of a function is the set of all $(x, \color{red}{y})$ ordered pairs where each $\color{red}{y}$ is found by evaluating $f(x)$.</p>
-<p>For instance, the equation $\color{red}{y}=x^{2}-3$ defines $\color{red}{y}$ as a function of $x$.  To graph this function we choose several different values for $x$ and evaluate $\color{red}{y}$ for each one, creating a table of values.</p>
+<h2 id="graphs-of-functions">Graphs of Functions</h2>
+<p>The <strong>graph</strong> of a function is the set of all points $(x, y)$ where each $y$ is found by evaluating the function's equation, since $y=f(x)$.</p>
+<p>For instance, to graph the function $f(x)=x^{2}-3$ we randomly choose a handful of values for $x$ and evaluate the function for each one, creating a table of values.</p>
 <table>
 <thead>
 <tr>
 <th>$x$</th>
-<th>$\color{red}{y}=x^{2}-3$</th>
+<th>$f(x)=x^{2}-3$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$-2$</td>
-<td>$(-2)^2-3 = \color{red}{1}$</td>
+<td>$(-2)^2-3 = 1$</td>
 </tr>
 <tr>
 <td>$-1$</td>
-<td>$(-1)^2-3 =  \color{red}{-2}$</td>
+<td>$(-1)^2-3 =  -2$</td>
 </tr>
 <tr>
 <td>$0$</td>
-<td>$(0)^2-3 = \color{red}{-3}$</td>
+<td>$(0)^2-3 = -3$</td>
 </tr>
 <tr>
 <td>$1$</td>
-<td>$(1)^2-3 = \color{red}{-2}$</td>
+<td>$(1)^2-3 = -2$</td>
 </tr>
 <tr>
 <td>$2$</td>
-<td>$(2)^2-3 = \color{red}{1}$</td>
+<td>$(2)^2-3 = 1$</td>
 </tr>
 <tr>
 <td>$3$</td>
-<td>$(3)^2-3 = \color{red}{6}$</td>
+<td>$(3)^2-3 = 6$</td>
 </tr>
 </tbody>
 </table>
-<p>The graph is found by converting those values into ordered $(x, \color{red}{y})$ pairs</p>
-<p>$$\{ (-2, \color{red}{1}),  (-1, \color{red}{-2}),  (0, \color{red}{-3}),  (1, \color{red}{-2}),  (2, \color{red}{1}),  (3, \color{red}{6}) \}$$</p>
-<p>that can then be plotted and connected with a smooth curve.</p>
+<p>Then we convert those values into ordered $(x, y)$ pairs</p>
+<p>$$\{ (-2, 1),  (-1, -2),  (0, -3),  (1, -2),  (2, 1),  (3, 6) \}$$</p>
+<p>that can be plotted and connected with a smooth curve.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/function_graph_x2-3.svg#center" alt=""></p>
-<h2 id="vertical-line-test">Vertical Line Test</h2>
+<p>Even though calculators and apps can graph most functions, graphing functions by hand is still an important skill to practice.</p>
+<div class="alert alert-success">
+  <h4>QUICK CHECK</h4>
+  Sketch a graph of the function $f(x)=\frac{2}{3}x + 1$.<details><summary>Answer</summary><img src="https://duragauge.github.io/img/chapter-1/function_graph_2_over_3_x+1.svg#center" alt=""></details>
+</div>
+<h2 id="the-vertical-line-test">The Vertical Line Test</h2>
 <p>It is important to remember that not every relationship or rule defines a function.  The key is that each input corresponds to just one output.</p>
 <p>In order for a graph to be a function each $x$ can only correspond to one $y$.  This means that no two points on the graph can share the same $x$-coordinate.</p>
 <p>A quick way to test this is to draw (or imagine drawing) several vertical lines through the graph.  If the graph is a function, then no vertical line will cross the graph more than once.  On the other hand, if any vertical line intersects the graph more than once, then the graph is not a function.  For obvious reasons, this test is called the <strong>vertical line test</strong>.</p>
@@ -221,20 +278,19 @@
 <p>The vertical line test is very useful, but we must make sure we can see the entire graph.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<ol>
+  <ol>
 <li>
-<p>Does the equation $y=3x+6$ define $y$ as a function of $x$?   <details><summary>Answer</summary>Yes, each $x$ will create exactly one $y$ value.  Also, the graph of $y=3x-6$ passes the vertical line test.</details></p>
+<p>Does the equation $y=2x-3$ define $y$ as a function of $x$?   <details><summary>Answer</summary>Yes, each $x$ will create exactly one $y$ value.  And if we graph $y=x-3$ it clearly passes the vertical line test.<br><img src="https://duragauge.github.io/img/chapter-1/function_graph_VLT_Quick_Check_1.svg#center" alt=""></details></p>
 </li>
 <li>
-<p>If $x+2y=8$, is $y$ a function of $x$?   <details><summary>Answer</summary>Yes.  Rewriting the equation as $y=-1/2 x +4$ we see that each $x$ has exactly one corresponding $y$ value.  The graph would also pass the vertical line test.</details></p>
+<p>If $x+2y=4$, is $y$ a function of $x$?   <details><summary>Answer</summary>Yes.  Rewriting the equation as $y=-1/2 x +2$ we see that each $x$ has exactly one corresponding $y$ value and the graph passes the vertical line test.<br><img src="https://duragauge.github.io/img/chapter-1/function_graph_VLT_Quick_Check_2.svg#center" alt=""></details></p>
 </li>
 <li>
-<p>Use a graph to decide if the equation $x^2+y^2=3$ defines $y$ as a function of $x$. <details><summary>Answer</summary><p>No, the graph  of $x^2+y^2=3$ is a circle, which would not pass the vertical line test.
-<br><img src="https://duragauge.github.io/img/chapter-1/graph_circle_3.svg#center" alt=""><br>
-To graph $x^2+y^2=3$ on a calculator you would need to solve for $y$, which results in two equations.  The top half of the circle is $y=\sqrt{3-x^2}$ and the bottom half is $y=-\sqrt{3-x^2}$.  Looking at just one half might lead you to incorrectly assume that the equation is a function.</p></p>
+<p>Use a graph to decide if the equation $x^2+y^2=3$ defines $y$ as a function of $x$. <details><summary>Answer</summary>No, the graph  of $x^2+y^2=3$ is a circle, which would not pass the vertical line test.
+<br><img src="https://duragauge.github.io/img/chapter-1/function_graph_VLT_Quick_Check_3.svg#center" alt=""><br>
+To graph $x^2+y^2=3$ on a calculator you would need to solve for $y$, which results in two equations.  The top half of the circle is $y=\sqrt{3-x^2}$ and the bottom half is $y=-\sqrt{3-x^2}$.  Looking at just one half might lead you to incorrectly assume that the equation is a function.</details></p>
 </li>
 </ol>
-</details>
 </div>
 <h2 id="determining-the-domain-of-a-function">Determining the Domain of a Function</h2>
 <p>Every time we identify a function we should also determine its domain.  Recall that the domain is the set of all input values.</p>
@@ -245,7 +301,7 @@ To graph $x^2+y^2=3$ on a calculator you would need to solve for $y$, which resu
 <p>As this example shows, it is often easiest to say what is not in the domain.  Specifically, we must always eliminate from the domain any numbers that result in division by zero and even roots of negative numbers.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<ol>
+  <ol>
 <li>
 <p>Explain why the domain of $f(x)=\frac{1}{x^2-9}$ is $\{x \vert x \neq \pm 3\}$. <details><summary>Answer</summary>The denominator cannot equal zero, so $x$ cannot be $3$ or $-3$. Using interval notation the domain is $(-\infty,-3) \bigcup (-3, 3) \bigcup (3,\infty)$.  With set-builder notation we can write that a bit more compactly as { $ x  \vert  x\neq \pm 3 $ }.</details></p>
 </li>

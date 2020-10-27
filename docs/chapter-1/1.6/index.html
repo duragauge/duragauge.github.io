@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.69.2" />
+	<meta name="generator" content="Hugo 0.75.1" />
 	<title>1.6 How Functions Change &middot; College Algebra</title>
 	<!-- Stylesheets -->
 	
@@ -107,19 +107,17 @@
                             <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-1/ipod-1428164_1280.jpg"  title="iPod photo by mikefoster on Pixabay"  alt="iPod photo by mikefoster on Pixabay" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/photo-1428164/">iPod photo by mikefoster on Pixabay</a>
-	</span>
+    <a href = "https://pixabay.com/photo-1428164/">iPod photo by mikefoster on Pixabay</a></span>
 </div>
 <br>
 <h2 id="introduction">Introduction</h2>
-<p>Where you are headed is often more important than where you are at the moment.</p>
-<p>On Friday, October 19, 2001, stock in Enron (a Fortune-500 energy company) was trading for about $25 per share.</p>
-<p>At the same time stock in Apple (the electronics manufacturer) could be purchased for less than $1.50 per share.</p>
-<p>Without any additional information, it would be natural to assume that Enron, with a stock price of $25, was a more healthy and valuable company than Apple, whose stock was worth much less. The reality was much different.</p>
-<p>Four days later, on October 23, 2001, Apple CEO Steve Jobs unveiled the very first iPod. It was an iconic success that revolutionized the consumer electronics industry and helped establish Apple as one of the most innovative technology companies in the world.</p>
-<p>Enron, on the other hand, was about to implode from a wave of accounting scandals. Within weeks Enron stock fell to just $0.26 and the company declared bankruptcy.  Several of Enron’s executives eventually served prison terms. The collapse of Enron is frequently studied today as a prime example of fraud and conspiracy.</p>
+<p>When the stock market opened on Monday, October 22, 2001, stock in Enron (a Fortune-500 energy company) was trading for about $20 per share.</p>
+<p>At the same time stock in Apple (the electronics manufacturer) could be also be purchased for $20.</p>
+<p>Without additional information, it would be natural to assume that state of both companies was the same.  In reality, however, they were headed in opposite directions.</p>
+<p>Later that same day Enron announced they were being investigated for accounting irregularities.  Within weeks the company declared bankruptcy and several Enron executives were sent to prison for fraud and conspiracy.</p>
+<p>Apple, on the other hand, had an important announcement of their own.  The next day, on October 23, 2001, Apple CEO Steve Jobs unveiled the very first iPod.  It was an iconic success that revolutionized the consumer electronics industry and helped establish Apple as one of the most innovative technology companies in the world.</p>
 <h2 id="rates-of-change">Rates of Change</h2>
-<p>Just like stocks, functions can increase and decrease in value.  In an <a href="../1.4#concavity">earlier section</a> we saw that graphs can be concave up, concave down, or even straight.  This is an indication that functions can change at different rates, or speeds.</p>
+<p>Just like stocks, functions can increase and decrease in value.  In an <a href="../1.3#concavity">earlier section</a> we saw that graphs can be concave up, concave down, or even straight.  This is an indication that functions can change at different rates, or speeds.</p>
 <p>For instance, an increasing function could grow at a steady rate, at a rate that quickens, or at a rate that slows.  All three options are shown below.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/increasing_3.svg#center" alt=""></p>
 <p>Functions can also decrease at constant, increasing, and decreasing rates.</p>
@@ -127,7 +125,7 @@
 <p>Our goal now is to develop tools that allow us to measure, compare and categorize functions based on their rates of change.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<p>For each of the scenarios below, decide if the rates of change would be increasing, decreasing or constant.</p>
+  <p>For each of the scenarios below, decide if the rates of change would be increasing, decreasing or constant.</p>
 <ol>
 <li>
 <p>The temperature of a turkey as it roasts in an oven. <details><summary>Answer</summary>The temperature would increase at a decreasing rate.</details></p>
@@ -148,9 +146,7 @@
 <label for="sn-delta" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-delta" class="margin-toggle" />
-<span class="sidenote">
-The upper-case Greek leter delta ($\Delta$) is used throughout math and science to indicate change.
-</span></p>
+<span class="sidenote">The upper-case Greek leter delta ($\Delta$) is used throughout math and science to indicate change.</span></p>
 <p>To calculate the total change of a function on some interval $[a, b]$ we find the difference between the starting value $f(a)$ and the ending value $f(b)$.</p>
 <table>
 <thead>
@@ -171,20 +167,19 @@ The upper-case Greek leter delta ($\Delta$) is used throughout math and science 
 <p><img src="https://duragauge.github.io/img/chapter-1/deltaY_deltaX.svg#center" alt=""></p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<p>Use the graph of $f(x)$ to answer the questions below.
+  <p>Use the graph of $f(x)$ to answer the questions below.
 <img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
 <ol>
-<li>What is the length of the interval $[-1, 6]$?</li>
+<li>
+<p>What is the length of the interval $[-1, 6]$? <details><summary>Answer</summary>$$\Delta x = b-a=6-(-1)=7$$</details></p>
+</li>
+<li>
+<p>Find $\Delta y$ on the interval $[-1,  1]$. <details><summary>Answer</summary>$$f(b)-f(a)=f(1)-f(-1)=2-0=2$$</details></p>
+</li>
+<li>
+<p>Calculate $\Delta y$ on the interval $[3, 6]$. <details><summary>Answer</summary>$$f(b)-f(a)=f(6)-f(3)=4-(-4)=8$$</details></p>
+</li>
 </ol>
-<details><summary>Answer</summary>$$\Delta x = b-a=6-(-1)=7$$</details>
-<ol>
-<li>Find $\Delta y$ on the interval $[-1,  1]$.</li>
-</ol>
-<details><summary>Answer</summary>$$f(b)-f(a)=f(1)-f(-1)=2-0=2$$</details>
-<ol>
-<li>Calculate $\Delta y$ on the interval $[3, 6]$.</li>
-</ol>
-<details><summary>Answer</summary>$$f(b)-f(a)=f(6)-f(3)=4-(-4)=8$$</details>
 </div>
 <h2 id="percentage-change">Percentage Change</h2>
 <p>The <strong>percentage change</strong> of a function $f$ over an interval $[a, b]$ is the ratio of the total change to the starting value.  We calculate percentage change as follows:</p>
@@ -198,16 +193,16 @@ The upper-case Greek leter delta ($\Delta$) is used throughout math and science 
 <p>With this formula the percentage change is given in decimal form.  In other words, a value such as $0.12$ should be interpreted as $12%$.  Also note that the percentage change cannot be computed if $f(a)=0$.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<p>Use the graph to help answer the questions below.
+  <p>Use the graph to help answer the questions below.
 <img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
 <ol>
-<li>Find the percentage change in $f$ over the interval $[1,  6]$.</li>
+<li>
+<p>Find the percentage change in $f$ over the interval $[1,  6]$. <details><summary>Answer</summary>$$\begin{align}\frac{f(b)-f(a)}{f(a)} \thinspace &amp;= \thinspace \frac{f(6)-f(1)}{f(1)} \newline \thinspace &amp;= \thinspace \frac{4-2}{2} \newline \thinspace &amp;= \thinspace 1\end{align}$$ which we interpret as a $100%$ increase.</details></p>
+</li>
+<li>
+<p>Find the percentage change in $f$ over the interval $[1, 3]$. <details><summary>Answer</summary>$\frac{f(b)-f(a)}{f(a)}=\frac{f(3)-f(1)}{f(1)}=\frac{-4-2}{2}=-3$ </br></br> which we interpret as a $300%$ decrease.</details></p>
+</li>
 </ol>
-<details><summary>Answer</summary>$$\begin{align}\frac{f(b)-f(a)}{f(a)} \thinspace &amp;= \thinspace \frac{f(6)-f(1)}{f(1)} \newline \thinspace &amp;= \thinspace \frac{4-2}{2} \newline \thinspace &amp;= \thinspace 1\end{align}$$ which we interpret as a $100%$ increase.</details>
-<ol>
-<li>Find the percentage change in $f$ over the interval $[1, 3]$.</li>
-</ol>
-<details><summary>Answer</summary>$\frac{f(b)-f(a)}{f(a)}=\frac{f(3)-f(1)}{f(1)}=\frac{-4-2}{2}=-3$ </br></br> which we interpret as a $300%$ decrease.</details>
 </div>
 <h2 id="average-rate-of-change">Average Rate of Change</h2>
 <p>The concepts of total change and percentage change are more useful when we average them across the length of the interval.  The resulting quantities describe per unit changes.  That is to say, by averaging we can tell what will happen to $f(x)$ every time $x$ increases by $1$.</p>
@@ -233,15 +228,14 @@ The upper-case Greek leter delta ($\Delta$) is used throughout math and science 
 <p>This means that from $x=9$ to $x=100$ the function $f(x)=\sqrt x$ increases, on average, by $0.077$ every time $x$ increases by $1$.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<p>Calculate the average rate of change of $f(x)=\sqrt x$ over the interval $[0,16]$.  <details><summary>Answer</summary><p>$$\frac{\Delta y}{\Delta x}=\frac{\sqrt{16}-\sqrt{0}}{16-0}=\frac{4-0}{16}=\frac{1}{4}$$</p></p>
-</details>
+  Calculate the average rate of change of $f(x)=\sqrt x$ over the interval $[0,16]$.  <details><summary>Answer</summary>$$\frac{\Delta y}{\Delta x}=\frac{\sqrt{16}-\sqrt{0}}{16-0}=\frac{4-0}{16}=\frac{1}{4}$$</details>
 </div>
 <p>The average rate of change formula might look familiar.  That's because it is the same thing as the <em>slope</em> of the line connecting the points $(a, f(a))$ and $(b, f(b))$.  This line is called a secant line.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/secant.svg#center" alt=""></p>
 <p>When a function is defined by a graph, the average rate of change can always be found by calculating the slope of the secant line.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<p><img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
+  <p><img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
 <ol>
 <li>
 <p>Use the graph above to find $\frac{\Delta y}{\Delta x}$ on the interval $[-1,  1]$.<details><summary>Answer</summary>$\frac{\Delta y}{\Delta x}=\frac{2}{2}=1$</details></p>
@@ -270,13 +264,10 @@ The upper-case Greek leter delta ($\Delta$) is used throughout math and science 
 <p>Functions like this one, where the percentage change is constant, are called exponential functions, and we study them in Chapter 3.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<ol>
-<li>Determine the first and second differences of the function $g$ given below.  What type of function is $g$?
-<img src="https://duragauge.github.io/img/chapter-1/finite_differences_quick_check.svg#center" alt=""></li>
-</ol>
-<details><summary>Answer</summary><p><img src="https://duragauge.github.io/img/chapter-1/finite_differences_quick_check_answer.png#center" alt="">
-Since the second differences are constant, $g$ is a quadratic function.</p>
-</details>
+  <p>Determine the first and second differences of the function $g$ given below.  What type of function is $g$?
+<img src="https://duragauge.github.io/img/chapter-1/finite_differences_quick_check.svg#center" alt=""></p>
+<details><summary>Answer</summary><img src="https://duragauge.github.io/img/chapter-1/finite_differences_quick_check_answer.png#center" alt="">
+Since the second differences are constant, $g$ is a quadratic function.</details>
 </div>
 <p>First and second differences also provide us a way to identify when it is increasing or decreasing and its concavity.</p>
 <table>
@@ -310,10 +301,8 @@ Since the second differences are constant, $g$ is a quadratic function.</p>
 <p>Note that the first differences are all positive, suggesting that $f(x) = x^3$ is always increasing.  And since the second differences switch from negative to positive at $0$, we conclude that the function is concave down to the left of $0$ and concave up to the right of $0$.  We came to the same conclusions after a visual inspection in <a href="1.2.18">Section 1.2</a>, but now we have numeric evidence as well.</p>
 <div class="alert alert-success">
   <h4>QUICK CHECK</h4>
-<ol>
-<li>What do the first and second differences of the square function $f(x)=x^{2}$ tell you about its behavior?
-<img src="https://duragauge.github.io/img/chapter-1/finite_differences_2.svg#center" alt=""></li>
-</ol>
+  <p>What do the first and second differences of the square function $f(x)=x^{2}$ tell you about its behavior?
+<img src="https://duragauge.github.io/img/chapter-1/finite_differences_2.svg#center" alt=""></p>
 <details><summary>Answer</summary>Since the first differences switch from negative to positive at $0$, we can conclude that the square function decreases to the left of $0$ and increases to the right of $0$.  And since the second differences are always positive, the square function must be concave up over its entire domain.</details>
 </div>
 <h2 id="difference-quotients">Difference Quotients</h2>
@@ -322,12 +311,20 @@ Since the second differences are constant, $g$ is a quadratic function.</p>
 The tool that does this is called the <strong>difference quotient</strong>.  The difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval from $x$ to  $\color{blue}{x+h}$, where  $\color{blue}{h}$  is any positive number.  To find the formula for the difference quotient we simply take the average rate of change formula</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/average_change.svg#center" alt=""></p>
 <p>and substitute $x$ in place of  $a$, and $\color{blue}{x+h}$  in place of  $\color{blue}{b}$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient_definition.svg#center" alt=""></p>
-<p>The behavior of $D(x)$ will help us understand how $f(x)$ changes.  Specifically, the following are all true.</p>
+<p>$$
+\begin{align}
+\frac{f(\color{blue}{b})-f(\color{red}{a})}{\color{blue}{b}-\color{red}{a}} &amp;= \frac{f(\color{blue}{x+h})-f(\color{red}{x})}{\color{blue}{(x+h)}-\color{red}{x}} \newline \newline
+&amp;= \frac{f(x+h)-f(x)}{h}
+\end{align}
+$$</p>
+<p>The behavior of $D(x)$ will help us understand how $f(x)$ changes.  For instance, the value of $D(x)$ indicates whether the function is increasing, decreasing or constant.</p>
 <ul>
 <li>If $D(x)&gt;0$, then $f(x)$ in increasing.</li>
 <li>If $D(x)&lt;0$, then $f(x)$ is decreasing.</li>
 <li>If $D(x)=0$, then $f(x)$ is constant.</li>
+</ul>
+<p>And the way $D(x)$ changes tells us the concavity of the function.  Specifically,</p>
+<ul>
 <li>If $D(x)$ is increasing, then $f(x)$ is concave up.</li>
 <li>If $D(x)$ is decreasing, then $f(x)$ is concave down.</li>
 <li>If $D(x)$ is constant, then $f(x)$ is a straight line and $D(x)$ is the slope.</li>
