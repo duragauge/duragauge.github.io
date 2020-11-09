@@ -176,7 +176,9 @@
 <span class="sidenote">A decibel is one tenth (deci-) of a <b>bel</b>, a unit named after Alexander Graham Bell, and is abbreviated as dB.</span>
 scale in the 1920's to rank the intensity of sounds with respect to the lowest sound level a listener can detect, called the <em>threshold of hearing</em>.</p>
 <p>To find the decibel level (in dB) of a sound we use the formula</p>
-<p>$$D = 10\log\left(\frac{I}{I_0}\right)$$</p>
+<p>[
+D = 10\log\left(\frac{I}{I_0}\right)
+]</p>
 <p>where $I$ is the intensity of the sound being ranked and $I_0$ is the threshold of hearing, both measured in watts per square meter.  And while hearing ability varies from person to person, it is generally accepted that $I_0=10^{-12}$ watts per square meter.</p>
 <p>As an example, the sound of a typical household vacuum cleaner has an intensity of $10^{-4}$ watts per square meter.  On the decibel scale this would measure
 [
@@ -239,17 +241,14 @@ D &amp;= 10 \log \left( \frac{10^{-4}}{10^{-12}}\right) \newline
 </tr>
 </tbody>
 </table>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Some of the quietest dishwashers on the market produce only about $4 \times 10^{-8}$ watts per square meter of sound.  Where would that rank on the decibel scale? <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Some of the quietest dishwashers on the market produce only about $4 \times 10^{-8}$ watts per square meter of sound.  Where would that rank on the decibel scale? <details><summary>Answer</summary>[
 \begin{align}
 D &amp;= 10 \log \left( \frac{4 \times 10^{-8}}{10^{-12}}\right) \newline
 &amp;= 10 \log (39810.7) \newline
 &amp;= 10 \times 4.6 \newline
 &amp;= 46 \text{ dB}
 \end{align}
-]</details>
-</div>
+]</details></div>
 <h2 id="the-stellar-magnitude-scale">The Stellar Magnitude Scale</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-3/denis-degioanni-9wH624ALFQA-unsplash.jpg"  title="Photo by Denis Degioanni on Unsplash"  alt="Photo by Denis Degioanni on Unsplash" style="display:block; width:100%; height:auto;" >
@@ -260,14 +259,16 @@ D &amp;= 10 \log \left( \frac{4 \times 10^{-8}}{10^{-12}}\right) \newline
 <p>One of the oldest logarithmic scales is the apparent magnitude scale used for measuring the brightness of stars.</p>
 <p>It dates back at least to the Greek astronomer Hipparchus who categorized stars into 6 magnitudes, from weakest ($6$) to brightest ($1$).  The stars in each magnitude were roughly twice as bright as those in the prior magnitude.</p>
 <p>Today astronomers have a precise magnitude scale and use the following equation to calculate the apparent magnitude $m$ of a star in a particular color of light:</p>
-<p>$$m=-2.5  \log \left(\frac{F}{F_{0}}\right)$$</p>
+<p>[
+m=-2.5  \log \left(\frac{F}{F_{0}}\right)
+]</p>
 <p>In this formula $F$ is the observed flux (ie. brightness) of a star and $F_0$ is a reference flux in the same color.  Flux is usually given in watts per square meter.  When working with visible light, we use the brightness of the star Vega as the reference flux: $F_0=2.8\times10^{-8}$  watts/m<sup>2</sup>.</p>
 <p>Suppose, for instance, that we wanted to find the apparent magnitude of the Sun, which has a flux of $1340$ watts/m<sup>2</sup>.</p>
-<p>$$m=-2.5  \log \left( \frac{1340}{2.8\times10^{-8}}\right)\approx-26.7$$</p>
+<p>[
+m=-2.5  \log \left( \frac{1340}{2.8\times10^{-8}}\right)\approx-26.7
+]</p>
 <p>This number might seem low at first, but remember that the apparent magnitude scale puts the brightest objects low on the scale and the weakest objects at the top.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Sirius is the brightest star in the night sky.  The flux of Sirius is $F=1.1\times10^{-7}$ watts/m<sup>2</sup>.  What is the apparent magnitude of Sirius?   <details><summary>Answer</summary>[
 \begin{align}
@@ -293,20 +294,23 @@ m &amp;= -2.5 \log \left( \frac{0.004}{10^{-12}}\right) \newline
 <input type="checkbox" id="mn-pH scale" class="margin-toggle" />
 <span class="marginnote">Typical pH values of common substances. <img src="https://duragauge.github.io/img/chapter-3/PH_Scale.svg" alt=""></span>
 To calculate pH we use the formula</p>
-<p>$$pH=\log\frac{1}{[H^+]}=-\log[H^+]$$</p>
+<p>[
+pH=\log\frac{1}{[H^+]}=-\log[H^+]
+]</p>
 <p>where $[H^+]$ is the concentration of hydrogen ions, measured in moles per liter, found in the substance.</p>
 <p>For example, household bleach has a hydrogen ion concentration of $2.512 \times 10^{-13}$ moles per liter, whereas the concentration in milk is nearly a million times greater at $1.995 \times 10^{-7}$ moles per liter.  Their rankings on the pH scale are</p>
-<p>$$pH_\text{bleach}=-\log(2.512 \times 10^{-13})\approx12.6$$</p>
-<p>$$pH_\text{milk}=-\log(1.995 \times 10^{-7})\approx6.7$$</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Lime juice has a hydrogen ion concentration of $[H^+]=0.00631$ moles per liter.  Where does lime juice rank on the pH scale?    <details><summary>Answer</summary>[
+<p>[
+pH_\text{bleach}=-\log(2.512 \times 10^{-13})\approx12.6
+]</p>
+<p>[
+pH_\text{milk}=-\log(1.995 \times 10^{-7})\approx6.7
+]</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Lime juice has a hydrogen ion concentration of $[H^+]=0.00631$ moles per liter.  Where does lime juice rank on the pH scale?    <details><summary>Answer</summary>[
 \begin{align}
 pH_\text{lime juice} &amp;= -\log(0.00631) \newline
 &amp;\approx2.2
 \end{align}
-]</details>
-</div>
+]</details></div>
 <h2 id="the-richter-scale">The Richter Scale</h2>
 <p>In the early 1930's, Charles Richter was attempting to measure the strength of earthquakes in California.  He soon came to the conclusion that the range between the largest and smallest earthquakes was &quot;unmanageably large&quot;.</p>
 <p>At that point a colleague suggested he plot the amplitudes logarithmically.  Even though Richter felt that &quot;logarithmic plots are a device of the devil&quot;, he gave them a try and soon &quot;I saw that I could now rank the earthquakes one above the other. ... This set of logarithmic differences thus became the numbers on a new instrumental scale.&quot; (See <i>Earthquake Information Bulletin, Volume 12, Issue 1, 1980.</i>)</p>
@@ -315,18 +319,17 @@ pH_\text{lime juice} &amp;= -\log(0.00631) \newline
 </label>
 <input type="checkbox" id="mn-earthquake list" class="margin-toggle" />
 <span class="marginnote"><img src="https://duragauge.github.io/img/chapter-3/Earthquake_list.svg#center" alt=""></span></p>
-<p>$$R=\log\left(\frac{I}{I_0}\right)$$</p>
+<p>[
+R=\log\left(\frac{I}{I_0}\right)
+]</p>
 <p>where $I$ is the earthquake's reading on a <a href="https://duragauge.github.io/img/chapter-3/seismograph.jpg">seismograph</a>, an instrument used to measure the motion of an earthquake.</p>
 <p>Richter arbitrarily chose $I_0$ to be an earthquake whose reading shows a 0.001 millimeter movement on a seismograph that is 100km away from the center of the earthquake.  Due to the logarithmic basis of the scale, each whole number increase in magnitude represents a tenfold increase in the intensity of the quake.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  The 1906 earthquake in San Francisco would have had a seismographic reading of 7643 millimeters 100km from the epicenter.  Determine its magnitude on the Richter scale. <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>The 1906 earthquake in San Francisco would have had a seismographic reading of 7643 millimeters 100km from the epicenter.  Determine its magnitude on the Richter scale. <details><summary>Answer</summary>[
 \begin{align}
 R&amp;=\log \left(\frac{7643}{0.001}\right) \newline
 &amp;\approx6.88$
 \end{align}
-]</details>
-</div>
+]</details></div>
 <h2 id="work-with-log-plots">Work with Log Plots</h2>
 <p>Even though Charles Richter felt they were a &quot;device of the devil&quot;, we will now take a moment to introduce log plots.  In a standard plot both, axis are linear and the increments are evenly spaced.  With log plots one, or perhaps both, of the axes are logarithmic scales.</p>
 <p>A log plot is called a <strong>linear-log</strong> plot when the x-axis is linear and the y-axis is logarithmic.  A log plot is called a <strong>log-linear</strong> plot when the x-axis is logarithmic and the y-axis is linear.  Both of these are sometimes referred to as <em>semi-log</em> plots.</p>
@@ -343,10 +346,10 @@ R&amp;=\log \left(\frac{7643}{0.001}\right) \newline
 </thead>
 <tbody>
 <tr>
-<td><img src="https://duragauge.github.io/img/chapter-3/lin_lin_1_large.gif" alt=""></td>
-<td><img src="https://duragauge.github.io/img/chapter-3/lin_log_1_large.gif" alt=""></td>
-<td><img src="https://duragauge.github.io/img/chapter-3/log_lin_1_large.gif" alt=""></td>
-<td><img src="https://duragauge.github.io/img/chapter-3/log_log_1_large.gif" alt=""></td>
+<td><a href="https://duragauge.github.io/img/chapter-3/lin_lin_1_large.gif"><img src="https://duragauge.github.io/img/chapter-3/lin_lin_1_large.gif" alt=""></a></td>
+<td><a href="https://duragauge.github.io/img/chapter-3/lin_log_1_large.gif"><img src="https://duragauge.github.io/img/chapter-3/lin_log_1_large.gif" alt=""></a></td>
+<td><a href="https://duragauge.github.io/img/chapter-3/log_lin_1_large.gif"><img src="https://duragauge.github.io/img/chapter-3/log_lin_1_large.gif" alt=""></a></td>
+<td><a href="https://duragauge.github.io/img/chapter-3/log_log_1_large.gif"><img src="https://duragauge.github.io/img/chapter-3/log_log_1_large.gif" alt=""></a></td>
 </tr>
 <tr>
 <td><em>x-axis and y-axis are both linear</em></td>
@@ -376,9 +379,7 @@ R&amp;=\log \left(\frac{7643}{0.001}\right) \newline
 <h2 id="linear-log-plots">Linear-Log Plots</h2>
 <p>A linear-log plot will <em>always</em> transform exponential data into a straight line.  In other words, if data plotted on a linear-log plot looks linear, then that data can be modeled by an exponential function.</p>
 <p>Since both exponential and power functions can be increasing and concave up, it is often difficult to decide if data is following an exponential or a power trend.  Plotting the data on a linear-log plot will often reveal the true nature of the data.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Decide if either of the following sets of data are exponential by converting each one from a standard plot to a linear-log plot.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Decide if either of the following sets of data are exponential by converting each one from a standard plot to a linear-log plot.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/IGKPQXuw/width/360/height/300/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="360px" height="300px" style="border:0px;"> </iframe>
 <details><summary>Answer</summary>No, the linear-log plot is not linear, so the data is not exponential.</details>
 <br>
@@ -404,9 +405,7 @@ R&amp;=\log \left(\frac{7643}{0.001}\right) \newline
 <p>The standard plot shows the typical logarithmic curve we have seen before, but the log-linear plot converts that into a linear relationship.</p>
 <p>The key point here is that if a log-linear plot of data is linear, then the data follows a logarithmic pattern and can be modeled by a logarithmic function.
 This is especially useful since logarithmic functions and root functions often have similar shapes.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Decide if either of the following sets of data are logarithmic by converting each one from a standard plot to a log-linear plot.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Decide if either of the following sets of data are logarithmic by converting each one from a standard plot to a log-linear plot.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/AFzzMiyd/width/360/height/360/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="360px" height="360px" style="border:0px;"> </iframe>
 <details><summary>Answer</summary>Yes, the log-linear plot is linear, so the data is logarithmic.</details>
 <br>
@@ -438,9 +437,7 @@ This is especially useful since logarithmic functions and root functions often h
 <li>If data follows a power function trend, then a log-log plot of the data will appear linear.</li>
 </ul>
 <p>Now you can discern between quantities that exhibit exponential, logarithmic, and power growth by using semi-log and log-log graphs.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Decide if the data below is best modeled by an exponential, a logarithmic, or a power function.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Decide if the data below is best modeled by an exponential, a logarithmic, or a power function.</p>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/WqQQ2Yh6/width/360/height/360/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="360px" height="360px" style="border:0px;"> </iframe> <details><summary>Answer</summary>Since the log-log plot is linear, this data can be modeled by a power function.</details>
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/M5zGov2j/width/360/height/360/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/preferhtml5" width="360px" height="360px" style="border:0px;"> </iframe>
 <details><summary>Answer</summary>Since the linear-log plot is linear, this data can be modeled by an exponential function.</details>
@@ -448,14 +445,16 @@ This is especially useful since logarithmic functions and root functions often h
 <h2 id="solve-exponential-equations">Solve Exponential Equations</h2>
 <p>Another major use of logarithms is found in solving exponential equations.  Here we aim to explain the basic principles at work.  A  number of detailed examples and techniques will be discussed <a href="../3.5">Section 3.5</a>.</p>
 <p>Because logarithms and exponentials are inverses of each other, the following cancellation properties hold:</p>
-<p>$$\log_b(b^{x})=x \text{  for all   } x$$</p>
+<p>[
+\log_b(b^{x})=x \text{  for all   } x
+]</p>
 <p>and</p>
-<p>$$b^{\log_b(x)}=x  \text{  for  } x&gt;0$$</p>
+<p>[
+b^{\log_b(x)}=x  \text{  for  } x&gt;0
+]</p>
 <p>These properties imply that taking a logarithm and exponentiation are <em>inverse operations</em>, as long as the bases are the same.</p>
 <p>For example, applying the base $10$ logarithm is the opposite of applying the base $10$ exponential.  Thus, an expression like $\log_{10}(10^{\pi})$ simplifies to $\pi$, because the log cancels the exponential.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>What is the opposite of applying the base $3$ logarithm to an equation? <details><summary>Answer</summary>Exponentiating with a base of $3$.</details></p>
 </li>
@@ -520,27 +519,31 @@ This is especially useful since logarithmic functions and root functions often h
 </tbody>
 </table>
 <p>We chose $\ln$ simply because most calculators have a <code>LN</code> button.  Had we used a $\log$ or any other logarithm for that matter, the answer would have been the same.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Use your calculator to verify that <code>log(100)/log(3)</code> gives the same value as <code>ln(100)/ln(3)</code>.  Does this mean that $\log$ and $\ln$ are the same thing? <details><summary>Answer</summary><strong>NO</strong>.  The base of $\log$ is $10$ while the base of $\ln$ is $e$, so they are not the same function.  However, since all logarithms share the same properties (such as the power rule), either one can be used to solve an exponential equation.</details></li>
 </ol>
 </div>
 <h2 id="change-of-base-formula">Change of Base Formula</h2>
 <p>We have just solved the equation $3^{x}=100$ three different ways.  One answer was $x=\log_3(100)$, another was  $x=\frac{\ln(100)}{\ln(3)}$, and in the last <strong>QUICK CHECK</strong> we saw that $x=\frac{\log(100)}{\log(3)}$ is also a solution.  How do we reconcile these three solutions?</p>
 <p>Since all exponential functions are one-to-one, the equation $3^{x}=100$ can only have one solution, and we are forced to conclude that <em>all three are equal</em>:</p>
-<p>$$\log_3(100)= \frac{\ln 100}{\ln 3}=\frac{\log 100}{\log3}$$</p>
+<p>[
+\log_3(100)= \frac{\ln 100}{\ln 3}=\frac{\log 100}{\log3}
+]</p>
 <p>What we have discovered is a way to evaluate $\log_{3} 100$ by utilizing either $\ln$ or $\log$.</p>
 <p>In practice, we can evaluate a logarithm with any base by rewriting it as an expression involving $\ln$ or $\log$.</p>
-<p>$$\log_{b}(x)=\frac{\log(x)}{\log(b)}$$</p>
+<p>[
+\log_{b}(x)=\frac{\log(x)}{\log(b)}
+]</p>
 <p>or</p>
-<p>$$\log_{b}(x)=\frac{\ln(x)}{\ln(b)}$$.</p>
+<p>[
+\log_{b}(x)=\frac{\ln(x)}{\ln(b)}
+]</p>
 <p>We use $\log$ or $\ln$ simply because calculators have <code>LOG</code> and <code>LN</code> buttons.  In theory, any other logarithm $\log_{a}$ could be used:</p>
-<p>$$\log_{b}(x)=\frac{\log_a(x)}{\log_a(b)}$$</p>
+<p>[
+\log_{b}(x)=\frac{\log_a(x)}{\log_a(b)}
+]</p>
 <p>which is called the generic <strong>change of base formula</strong>.  It allows us to convert from one base to any other base.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Use the change of base formula to approximate $\log_7(13)$. <details><summary>Answer</summary>$\log_7(13)=\frac{\ln(13)}{\ln(7)} \approx 1.318$</details></p>
 </li>

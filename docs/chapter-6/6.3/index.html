@@ -128,7 +128,7 @@ was a young boy in Germany it was common for students to do their work on small 
 <p>In the last section we learned that an ordered list of numbers is called a <em>sequence</em>.  If you add up the terms of a sequence you get something new that we call a <strong>series</strong>.  Here is a side by side comparison.</p>
 <p>[
 \begin{align}
-\text{Sequence: } &amp; \thinspace 2, \ 4, \ 6, \ 8 \newline
+\text{Sequence: } &amp; \thinspace 2, \thinspace 4, \thinspace 6, \thinspace 8 \newline
 \text{Series: } &amp; \thinspace 2 + 4 + 6 + 8 = 20
 \end{align}
 ]</p>
@@ -136,37 +136,35 @@ was a young boy in Germany it was common for students to do their work on small 
 <p>The problem young Gauss was given was that of finding the value of a series, though it may not have been worded that way.</p>
 <p>[
 \begin{align}
-\text{Sequence: } &amp; \thinspace 1, \ 2, \ 3, \ \dots , \ 100 \newline
+\text{Sequence: } &amp; \thinspace 1, \thinspace 2, \thinspace 3, \thinspace \dots , \thinspace 100 \newline
 \text{Series: } &amp; \thinspace 1 + 2 + 3 + \cdots + 100 = \text{ ?}
 \end{align}
 ]</p>
 <p>In English the words &quot;sequence&quot; and &quot;series&quot; are often used interchangeably without much difference.  For example, a &quot;series of events&quot; generally means the same as &quot;a sequence of events&quot;.  In mathematics, however, they are different and we'll need to pay close attention to which word is used.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Is $17+27+37+47$ a sequence or a series?</li>
 </ol>
 <details><summary>Answer</summary>This is a series since we are adding up the numbers $17, 27, 37, 47$.</details>
 <ol>
-<li>Write the series for the sequence $5, \ 10, \ 15, \ 20, \ 25$.</li>
+<li>Write the series for the sequence $5, \thinspace 10, \thinspace 15, \thinspace 20, \thinspace 25$.</li>
 </ol>
-<details><summary>Answer</summary>$$5+10+15+20+25$$</details>
+<details><summary>Answer</summary>[5+10+15+20+25]</details>
 <ol>
 <li>Write a series for the sum of the first four terms of the sequence $a_n=2^n$.</li>
 </ol>
-<details><summary>Answer</summary>The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be $$2^1+2^2+2^3+2^4$$.</details>
+<details><summary>Answer</summary>The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be [2^1+2^2+2^3+2^4].</details>
 </div>
 <h2 id="arithmetic-series">Arithmetic Series</h2>
 <p>We are now at a point where we can start to think about how Gauss might have be able to find his sum.</p>
-<p>$$\Large 1 + 2 + 3 + \cdots + 100$$</p>
+<p>[\Large 1 + 2 + 3 + \cdots + 100]</p>
 <p>While we don't know for sure how Gauss pictured this problem in his mind, but he certainly spotted a pattern and used that to his advantage.</p>
 <p>There are a number of ways to visualize it, but perhaps the simplest is to look at pairs of numbers.  If you choose the pairs carefully, they will all equal the same number!</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/series_gauss_v3.svg#center" alt=""></p>
 <p>In this case we end up with $50$ pairs that each equal $101$ so the total is $50 \times 101 = 5050$.</p>
 <p>This same pattern occurs for every arithmetic series.  To find the sum of the first $n$ terms you add the first and last terms and multiply by the number of pairs.  So, whenever your sequence is arithmetic in the form $a_n=a_1+d(n-1)$, the sum of the first $n$ terms is given by this formula.</p>
-<p>$$\Large S_n=\frac{n}{2} \bigl(a_1+a_n \bigr)$$</p>
+<p>[\Large S_n=\frac{n}{2} \bigl(a_1+a_n \bigr)]</p>
 <p>Let's walk through an example using this formula by evaluating the following series.</p>
-<p>$$\Large 380 + 378 + 376 + \cdots + 252$$</p>
+<p>[\Large 380 + 378 + 376 + \cdots + 252]</p>
 <p>We should start by making sure these numbers come from an arithmetic sequence.  If they don't, then we can't use our formula to find the sum.</p>
 <p>The first term is $a_1=380$ and the spacing is $d=-2$, so this is an arithmetic series and the terms come from the equation $a_n=380-2(n-1)$.</p>
 <p>The arithmetic summation formula involves $n$, $a_1$ and $a_n$.  We know $a_1$ and $a_n$ but don't have a value for $n$.  However, if we put $a_n=252$ into the equation for the sequence we can solve for $n$.</p>
@@ -192,9 +190,7 @@ S_{30}&amp;= \frac{65}{2} \bigl(380+252\bigr) &amp;&amp; \small \color{#5fa2ce}{
 </label>
 <input type="checkbox" id="sn-Gauss" class="margin-toggle" />
 <span class="sidenote">Many retellings of this famous story exist.  The earliest version was written in 1856 by <a href="https://archive.org/details/gauss00waltgoog/page/n15">Wolfgang Sartorius</a>, who worked with Gauss at the University of Göttingen.  <a href="http://bit-player.org/2007/a-mathematical-fable-revisited">Brian Hayes</a> compares many of them in this <a href="https://duragauge.github.io/img/chapter-6/Gauss's_Day_of_Reckoning_by_Brian_Hayes">Scientific American article</a>.</span></p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$?</li>
 </ol>
 <details><summary>Answer</summary><div>Since $n=30$, $a_1=16$ and $a\_{30}=-129$, the sum is
@@ -205,11 +201,11 @@ S\_{30} &= \frac{30}{2} \bigl(16-129 \bigr)\newline
 </div>
 </details>
 <ol>
-<li>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \ $.</li>
+<li>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \thinspace $.</li>
 </ol>
 <details><summary>Answer</summary><div>
 First find the equation for the sequence that creates the terms.
-$$a\_{n}= 380-2(n-1)$$
+\[a\_{n}= 380-2(n-1)\]
 Then use $a_n=80$ to find $n$.
 \begin{align}
 a\_{n} &=  380-2(n-1) &&  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
@@ -230,7 +226,7 @@ S\_{13} &= \frac{13}{2} \bigl(32+80\bigr) && \small \color{#5fa2ce}{\text{Insert
 <h2 id="finite-geometric-series">Finite Geometric Series</h2>
 <p>It bears repeating that the formula above only works if the sequence is arithmetic.  If we encounter a geometric series then there is a completely different formula.</p>
 <p>To add up the first $n$ terms of a geometric sequence of the form $a_n=a_1 r^{n-1}$, use the following formula.</p>
-<p>$$\Large S_n = \frac{a_1(1-r^n)}{1-r}$$</p>
+<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
 <p>To show how this works let's look at an application.</p>
 <h3 id="finite-geometric-series---example-1">Finite Geometric Series - Example 1</h3>
 <p><label for="mn-strawberries" class="margin-toggle">⊕
@@ -267,9 +263,7 @@ S_{64} &amp;= \frac{0.01 \bigl(1-(2)^{64}\bigr)}{1-(2)} &amp;&amp; \small \color
 \end{align}
 ]</p>
 <p>To help put that in perspective, every person on Earth would need to contribute more than 20 million dollars each to fill the chess board with pennies!</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career?</li>
 </ol>
 <details><summary>Answer</summary><div>Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
@@ -320,12 +314,12 @@ S_{n}  = \frac{705.4(1-(0.831)^n)}{1-(0.831)}
 <p>But what would happen if we projected this process out further into the future?  Could it be that there is some limit to the number of CDs that will ever be sold no mater how much time passes?</p>
 <p>Mathematically, what we are asking is if there is such a thing as an infinite sum that adds up to a fixed number.  Is it possible for something like $S_{\infty}$ to exist?</p>
 <p>The answer lies hidden in our formula for the sum of the first $n$ terms of a geometric sequence.</p>
-<p>$$\Large S_n = \frac{a_1(1-r^n)}{1-r}$$</p>
+<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
 <p>As $n$ increases the only part that changes is the $r^n$.  So what happens to $r^n$ as $n$ gets larger?  In the figure below you can change $r$ and see how that impacts $r^n$.</p>
 <iframe scrolling="no" title="Convergence of Geometric Sequences" src="https://www.geogebra.org/material/iframe/id/gwkjxypb/width/600/height/400/border/888888/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="600px" height="400px" style="border:0px;"> </iframe>
 <br>
 Notice that the values for $r^n$ drop toward $0$ whenever $-1<r<1$.  In other words, if $-1<r<1$ then $r^n \rightarrow 0$ as $n \rightarrow \infty$.  When this happens our summation formula becomes
-<p>$$\Large S_{\infty}=\frac{a_1}{1-r}$$</p>
+<p>[\Large S_{\infty}=\frac{a_1}{1-r}]</p>
 <p>It might seem odd that you can add up infinitely many things and arrive at something other than infinity--but that's exactly what this formula says you can do, provided $-1&lt;r&lt;1$.</p>
 <p>We've already seen that the total number of CDs sold since 2005 appears to be leveling off.  Let's now use this infinite geometric series formula to find that limiting value.</p>
 <p>To do that we insert $a_1=705.4$ million and $r=0.831$ (16.9% decline) into the infinite sum formula.</p>
@@ -337,9 +331,7 @@ S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infin
 \end{align}
 ]</p>
 <p>This formula predicts that 4173.96 million CDs will be sold from 2005 to the end of time, if that 16.9% decline persists.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <div style="position:relative; clear:both; padding:0;">
+<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-6/mick-haupt-fnKoW9mvgkA-unsplash.jpg"  title="Photo by Mick Haupt on Unsplash"  alt="Photo by Mick Haupt on Unsplash" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
     <a href = "https://unsplash.com/photos/fnKoW9mvgkA">Photo by Mick Haupt on Unsplash</a></span>
@@ -367,11 +359,11 @@ and we conclude that the total number of cassette tapes sold from 2000 will be 1
 <h2 id="summation-notation">Summation Notation</h2>
 <p>When a series has more than a couple of terms there is a compact notation that helps us avoid having to write out a long string of sums.</p>
 <p>This new summation notation is sometimes called &quot;sigma&quot; notation, because the Greek letter $\Sigma$ (sigma) is used to represent summation.  Here's an example of what summation notation looks like.</p>
-<p>$$\Large \sum_{k=1}^{8} k^2$$</p>
+<p>[\Large \sum_{k=1}^{8} k^2]</p>
 <p>This a very dense notation and there is a lot here for us to unpack.</p>
-<p>First note that the equation that generates the terms of the sequence is written to the right of the big $\Sigma \ $.</p>
-<p>Below the $\Sigma \ $ we are told what the variable is and what its first value should be.</p>
-<p>Above the $\Sigma \ $ is the final value that gets put into the equation.</p>
+<p>First note that the equation that generates the terms of the sequence is written to the right of the big $\Sigma \thinspace $.</p>
+<p>Below the $\Sigma \thinspace $ we are told what the variable is and what its first value should be.</p>
+<p>Above the $\Sigma \thinspace $ is the final value that gets put into the equation.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/summation_notation.svg#center" alt=""></p>
 <p>To expand this shorthand version back into a large sum we start by letting $k=1$ in the equation and keep going until $k=8$, all the while adding up the terms we create.  In the figure below you can see how this would work.</p>
 <div class="geogebra" style="padding-top: 21.58%;margin-bottom:0.5rem; ">
@@ -386,36 +378,28 @@ and we conclude that the total number of cassette tapes sold from 2000 will be 1
       </iframe>
 </div>
  <br>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>Expand the series below.
-$$\Large \sum_{k=1}^{5} 3k$$</li>
-</ol>
-<details><summary>Answer</summary>$$\sum_{k=1}^{5} 3k=3(1)+3(2)+3(3)+3(4)+3(5)$$</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Expand the series below.
+[\Large \sum_{k=1}^{5} 3k] <details><summary>Answer</summary>[\sum_{k=1}^{5} 3k=3(1)+3(2)+3(3)+3(4)+3(5)]</details></div>
 <p>Now let's work in the other direction, turning a large sum into compact summation notation.  If we were to write the series connected to this sequence</p>
-<p>$$3, \ 5, \ 7, \ 9, \ 11, \ 13, \ 15, \ 17, \ 19, \ 21, \ 23, \ 25, \ 27, \ 29, \ 31$$</p>
+<p>[3, \thinspace 5, \thinspace 7, \thinspace 9, \thinspace 11, \thinspace 13, \thinspace 15, \thinspace 17, \thinspace 19, \thinspace 21, \thinspace 23, \thinspace 25, \thinspace 27, \thinspace 29, \thinspace 31]</p>
 <p>then we would need to write out the sum of all fifteen terms.</p>
-<p>$$3+5+7+9+11+13+15+17+19+21+23+25+27+29+31$$</p>
+<p>[3+5+7+9+11+13+15+17+19+21+23+25+27+29+31]</p>
 <p>To convert this to summation notation the first thing we need is an equation for the sequence that generates these terms.  The values appear to come from an arithmetic sequence with a starting value of $3$ and a spacing of $2$, so the equation is $a_n=3+2(n-1)=2n+1$.</p>
 <p>All that's left is to determine the starting and ending values for $n$.</p>
-<p>$$\Large \sum_{n=?}^{?} (2n+1)$$</p>
+<p>[\Large \sum_{n=?}^{?} (2n+1)]</p>
 <p>It's tempting to use $3$ as the starting value but, because $3=a_1$, we actually need to use $n=1$.</p>
 <p>The same holds true for the final value of $n$.  We don't use $31$ but instead use its location in the sequence, which is $15$.</p>
 <p>Inserting the starting and ending values for $n$ completes our summation notation for this example.</p>
-<p>$$\Large \sum_{n=1}^{15} (2n+1)$$</p>
+<p>[\Large \sum_{n=1}^{15} (2n+1)]</p>
 <p>If we had wanted to skip the first three terms and start our series at $9$ then we would adjust the sigma notation so it begins at $n=4$.  And by changing the number on top of the $\Sigma$ we could end the series at a different term.  This makes summation notation extremely flexible.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>Write Gauss's series $ \ 1 + 2 + 3 + \cdots + 100 \ $ in summation notation.</li>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Write Gauss's series $ \thinspace 1 + 2 + 3 + \cdots + 100 \thinspace $ in summation notation.</li>
 </ol>
-<details><summary>Answer</summary>$$\sum_{n=1}^{100} n$$</details>
+<details><summary>Answer</summary>[\sum_{n=1}^{100} n]</details>
 <ol>
 <li>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd.</li>
 </ol>
-<details><summary>Answer</summary>$$\sum_{n=10}^{82} n$$</details>
+<details><summary>Answer</summary>[\sum_{n=10}^{82} n]</details>
 </div>
 
                         </div>

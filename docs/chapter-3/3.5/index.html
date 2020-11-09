@@ -140,7 +140,9 @@
 <p>One of the main advantages of using Iodine-123 is that it has a relatively short half-life of approximately 13.2 hours.  This means that within 13.2 hours, one-half of the Iodine-123 will be gone.</p>
 <p>If a patient is given 400 microcuries of Iodine-123, how long will it take for the radiation level to drop to a negligible 10 microcuries?</p>
 <p>To answer this question, we need to be able to solve the exponential half-life equation</p>
-<p>$$10=400\left(\frac{1}{2}\right)^{t/13.2}$$</p>
+<p>[
+10=400\left(\frac{1}{2}\right)^{t/13.2}
+]</p>
 <p>In this section, we will learn techniques for solving equations like this, where the variable is in the exponent, as well as equations involving logarithms. Once we have established the basic techniques, we can return and solve questions like this one.</p>
 <h2 id="techniques-for-solving-exponential-equations">Techniques for Solving Exponential Equations</h2>
 <p>There are three main techniques for solving exponential equations.  But before solving any exponential equation we should first isolate the exponential expression.</p>
@@ -154,9 +156,7 @@
 \end{align}
 ]</p>
 <p>At this point we can choose an appropriate solving technique from the choices discussed below.  But this initial step of isolating the exponential is always an essential first step.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>What must be done to isolate the exponential in the equation $2^{x}+6=54$?<details><summary>Answer</summary>Subtracting $6$ from both sides will isolate the exponential.</details></p>
 </li>
@@ -167,7 +167,9 @@
 </div>
 <h3 id="solving-method-1-the-one-to-one-property-of-exponentials">Solving Method 1: The One-to-One Property of Exponentials</h3>
 <p>One technique for solving an exponential equation is to take advantage of the fact that all exponential functions are one-to-one.  This means that</p>
-<p>$$b^N=b^M \text{ if and only if }N=M$$</p>
+<p>[
+b^N=b^M \text{ if and only if }N=M
+]</p>
 <p>So if we can express both sides of an equations as powers of the same base, then the one-to-one property tells us that the solution can be found by comparing the exponents.</p>
 <p>For example, suppose we want to solve $7^{x+3}=49$.  We can do so by writing both sides as powers of $7$ and equating the exponents.</p>
 <p>[
@@ -179,27 +181,24 @@ x &amp;= -1 &amp;&amp; \small \color{#5fa2ce}{-3 \text{ from both sides}}
 \end{align}
 ]</p>
 <p>Notice that this method only works when both sides can be written easily as powers of the same base.  If the equation had been just slightly different, say $7^{x+3}=50$, we would not have been able to solve it easily with this technique.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>Solve the exponential equation $2^{x-1}=8$ by relating the bases.    <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Solve the exponential equation $2^{x-1}=8$ by relating the bases.    <details><summary>Answer</summary>[
 \begin{align}
 2^{x-1} &amp;= 8 \newline
 2^{x-1} &amp;= 2^{3} &amp;&amp; \small \color{#5fa2ce}{\text{rewrite } 8=2^{3}} \newline
 x-1 &amp;=3 &amp;&amp; \small \color{#5fa2ce}{\text{since exponentials are one-to-one}} \newline
 x &amp;= 4  &amp;&amp; \small \color{#5fa2ce}{+1 \text{ to both sides}}
 \end{align}
-]</details></li>
-</ol>
-</div>
+]</details></div>
 <h3 id="solving-method-2--rewrite-as-a-logarithmic-equation">Solving Method 2:  Rewrite as a Logarithmic Equation</h3>
 <p>Another useful technique is to rewrite an exponential equation as an equivalent logarithmic equation using the definition of a logarithm.</p>
-<p>$$b^{x}=y \Longleftrightarrow \log_{b}(y) = x$$</p>
+<p>[
+b^{x}=y \Longleftrightarrow \log_{b}(y) = x
+]</p>
 <p>For instance, if we start with the equation $3^{x}=10$ then rewriting it as a logarithm gives us the solution $x = \log_3{10}$, which could be evaluated using the change of base formula.
 <label for="sn-Change of Base" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-Change of Base" class="margin-toggle" />
-<span class="sidenote">$$\log_b(x)=\frac{\log(x)}{\log(b)}=\frac{\ln(x)}{\ln(b)}$$</span>
+<span class="sidenote">[ \log_b(x)=\frac{\log(x)}{\log(b)}=\frac{\ln(x)}{\ln(b)} ]</span>
 The complete process would look like this:</p>
 <p>[
 \begin{align}
@@ -210,19 +209,14 @@ x &amp; \approx 2.0959 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newli
 \end{align}
 ]</p>
 <p>We could have used $\log$ for the change of base formula and still arrived at the correct answer, but $\ln$ will be our default choice.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>How would you solve $5^{x}=200$ for $x$?    <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>How would you solve $5^{x}=200$ for $x$?    <details><summary>Answer</summary>[
 \begin{align}
 5^{x} &amp;= 200 \newline
 x &amp;= \log_5(200) &amp;&amp; \small \color{#5fa2ce}{\text{Rewrite as a log equation}} \newline
 x &amp;= \frac{\ln(200)}{\ln(5)} &amp;&amp; \small \color{#5fa2ce}{\text{Change of base formula}} \newline
 x &amp; \approx 3.292 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newline
 \end{align}
-]</details></li>
-</ol>
-</div>
+]</details></div>
 <h3 id="solving-method-3-take-the-logarithm-of-both-sides">Solving Method #3: Take the Logarithm of Both Sides</h3>
 <p>Perhaps the most useful technique for solving an exponential equation is to take the logarithm of both sides.</p>
 <p>For example, suppose we start with $3^{x}=10$ and take the natural log of both sides.
@@ -236,7 +230,7 @@ x &amp; \approx 3.292 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newlin
 <label for="sn-Power Rule" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-Power Rule" class="margin-toggle" />
-<span class="sidenote">$$\log_b x^{p} =  p \log_b (x)$$</span>
+<span class="sidenote">[ \log_b x^{p} =  p \log_b (x) ]</span>
 and bring the $x$ out of the exponent.</p>
 <p>[
 \begin{align}
@@ -253,9 +247,7 @@ x  &amp;\approx 2.0959 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 \end{align}
 ]</p>
 <p>Notice that the last two lines are exactly the same as when we solved this earlier with the change of base formula.  One of the nice features of this technique is that the change of base formula is built in, so you do not need to memorize it.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Solve the same equation $3^{x}=10$ using $\log$ instead of $\ln$.  Verify that your decimal approximation is identical to the one found above.   <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Solve the same equation $3^{x}=10$ using $\log$ instead of $\ln$.  Verify that your decimal approximation is identical to the one found above.   <details><summary>Answer</summary>[
 \begin{align}
 3^{x} &amp;= 10 \newline
 \log\left(3^{x}\right) &amp;= \log(10)  &amp;&amp; \small \color{#5fa2ce}{\text{Apply } \log} \newline
@@ -263,14 +255,13 @@ x \cdot \log(3) &amp;= \log(10) &amp;&amp; \small \color{#5fa2ce}{\text{Power ru
 x  &amp;= \frac{\log(10)}{\log(3)} &amp;&amp; \small \color{#5fa2ce} {\text{Divide by } \log(3)} \newline
 x  &amp;\approx 2.0959 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 \end{align}
-]</details>
-</div>
+]</details></div>
 <p>This method has an extra benefit if the base of the exponential in the equation is $e$.</p>
 <p>If we start with the equation $e^{2x}=17$, as an example, then when taking the natural log of both sides we are able to use the inverse property of logs
 <label for="sn-Inverse Logs" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-Inverse Logs" class="margin-toggle" />
-<span class="sidenote">$$\log_b\left(b^x\right)=x$$</span>
+<span class="sidenote">[ \log_b\left(b^x\right)=x ]</span>
 rather than the power rule.</p>
 <p>[
 \begin{align}
@@ -291,7 +282,9 @@ x &amp;\approx 1.4166 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 <br>
 <p>Now that we have established the basic techniques for solving exponential equations, let's return to the section opener.</p>
 <p>We want to know how long it will take for the radiation level to drop to 10 microcuries given an initial dose of 400 microcuries of Iodine-123.  Since we know that the half-life of Iodine-123 is 13.2 hours, we will use the half-life formula to write our equation:</p>
-<p>$$10=400\left(\frac{1}{2}\right)^{t/13.2}$$</p>
+<p>[
+10=400\left(\frac{1}{2}\right)^{t/13.2}
+]</p>
 <p>Our task is to solve this equation for $t$.  The first step is to isolate the exponential.</p>
 <p>[
 \begin{align}
@@ -317,48 +310,29 @@ t &amp;\approx 70.249 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US_%245000_1934_Federal_Reserve_Note.jpg/1024px-US_%245000_1934_Federal_Reserve_Note.jpg" alt=""></p>
 <p>For instance, suppose you have invested $5000 in an account earning 2% interest compounded continuously.  How long will it take for your investment to double?</p>
 <p>Since this question involves continuously compounded interest, we should use the continuous growth model $A(t)=P e^{r t}$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>Based on the information given, what are the values for $P$, $r$ and $A(t)$?</li>
-</ol>
-<details><summary>Answer</summary>The initial deposit is $5000, so $P=5000$.  The rate is given as 2%, so $r=0.02$.  The balance of the account should be double the initial deposit, so $A(t)=10000$.  Substituting those values into $A(t)=P e^{r*t)$ will let us solve for the time it takes for the investment to double.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Based on the information given, what are the values for $P$, $r$ and $A(t)$?  <details><summary>Answer</summary>The initial deposit is $5000, so $P=5000$.  The rate is given as 2%, so $r=0.02$.  The balance of the account should be double the initial deposit, so $A(t)=10000$.  Substituting those values into $A(t)=P e^{r*t)$ will let us solve for the time it takes for the investment to double.</details></div>
 <p>Making the substitutions $P=5000$ and $r=0.02$ we see that the account balance for any $t$ is given by $A(t)=5000e^{0.02 t}$.  We need to find $t$ so that $A(t)=10000$.</p>
-<table>
-<thead>
-<tr>
-<th>$10000 =5000 e^{0.02 t}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$2 =e^{0.02 t}$</td>
-<td><em>Divide both sides by $5000$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln(2) = \ln(e^{0.02 t})$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln(2) = 0.02 t$</td>
-<td><em>Use the inverse relationship</em> $\ln(e^{x})=x$.</td>
-</tr>
-<tr>
-<td>$\frac{\ln(2)}{0.02} = t$</td>
-<td><em>Divide both sides by $0.02$.</em></td>
-</tr>
-<tr>
-<td>$t \approx 34.657$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
-</table>
+<p>[
+\begin{align}
+10000 &amp;= 5000 e^{0.02 t} \newline
+2 &amp;= e^{0.02 t} &amp;&amp; \small \color{#5fa2ce} {\text{Divide both sides by } 5000} \newline
+\ln(2) &amp;= \ln(e^{0.02 t}) &amp;&amp; \small \color{#5fa2ce} {\text{Apply } \ln \text{ to both sides}} \newline
+\ln(2) &amp;= 0.02 t &amp;&amp; \small \color{#5fa2ce} {\text{Use the inverse relationship } \ln(e^{x})=x} \newline
+\frac{\ln(2)}{0.02} &amp;= t &amp;&amp; \small \color{#5fa2ce} {\text{Divide both sides by } 0.02} \newline
+t &amp;\approx 34.657 &amp;&amp; \small \color{#5fa2ce} {\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>\begin{equation}
+\setlength{\jot}{10pt}
+\begin{aligned}
+T_{P} &amp;= K_{T}. \rho . n^{2}_{p} . D^{4}_{p} \<br>
+Q_{P} &amp;= K_{Q}. \rho . n^{2}_{p} . D^{5}_{p} \<br>
+N_{P} &amp;= K_{N}. \rho . n^{2}_{p} . D^{6}_{p} \<br>
+K_{P} &amp;= K_{K}. \rho . n^{2}_{p} . D^{7}_{p}
+\end{aligned}
+\end{equation}</p>
 <p>We have found that it will take close to 35 years for the investment to double if it earns 2% continuously.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Rework the problem above assuming the initial deposit is just $70$ dollars.  What is the doubling time?  What does this tell you about doubling times in general?<details><summary>Answer</summary><p>Once we divide by $70$, this is exactly the same as the problem above and has the same solution. </br></p></p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Rework the problem above assuming the initial deposit is just $70$ dollars.  What is the doubling time?  What does this tell you about doubling times in general?<details><summary>Answer</summary><p>Once we divide by $70$, this is exactly the same as the problem above and has the same solution. </br></p></p>
 <table>
 <thead>
 <tr>
@@ -424,11 +398,8 @@ t &amp;\approx 70.249 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 <p>The age of fossils is often determined by a process called <em>carbon dating</em>.  Plants absorb small amounts of the radioactive isotope carbon-14 from the atmosphere.  People and animals collect carbon-14 when they eat plants and other animals.  Once they die, however, the amount of carbon-14 begins to decay exponentially with a half-life of about 5730 years.  By comparing the amount of carbon-14 in a fossil with the amount that would have been been present when it was alive we can estimate the fossil's age.</p>
 <p>Suppose that you were able to get a small fragment of the bone and extract $9.7 \times 10^{-15}$ grams of carbon-14 out of it.  If there would have been $1.05 \times 10^{-14}$ grams present when Piltdown Man was alive, how old is this fossil?</p>
 <p>To solve this we will use the half-life formula $f(t) = a \left(\frac{1}{2}\right)^{t/c}$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Use the information above to write the equation that we must solve.  Keep in mind that $a$ is the initial value, $c$ is the half life, and $f(t)$ is the amount after some period of time.   <details><summary>Answer</summary>Taking $a = 1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$, the equation that must be solved is
-$9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}$.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Use the information above to write the equation that we must solve.  Keep in mind that $a$ is the initial value, $c$ is the half life, and $f(t)$ is the amount after some period of time.   <details><summary>Answer</summary>Taking $a = 1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$, the equation that must be solved is
+$9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}$.</details></div>
 <p>To determine the actual age of the Piltdown skull, we must use the half-life formula with $a=1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$.  Our task is to solve for $t$.</p>
 <table>
 <thead>
@@ -509,11 +480,8 @@ $9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}$.</
 </tbody>
 </table>
 <p>So if the number of nuclear warheads since 1950 is given by $f(t)=369(2)^{t/2.27}$, then our work suggests the United States had a stockpile of more than 30,000 warheads some time in the spring of 1964.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  If nuclear arms production had continued at that rate, how many warheads would there have been in 2010?  <details><summary>Answer</summary>Taking $t=60$, we have $$f(60)=369(2)^{60/2.27} \approx 33,401,528,382$$
-which would have been enough for everyone on Earth to have about 5.  As of 2017, the official number was 3822 stockpiled warheads according to the <a href="https://open.defense.gov/Portals/23/Documents/frddwg/2017_Tables_UNCLASS.pdf">US Department of Energy</a>.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>If nuclear arms production had continued at that rate, how many warheads would there have been in 2010?  <details><summary>Answer</summary>Taking $t=60$, we have [ f(60)=369(2)^{60/2.27} \approx 33,401,528,382 ]
+which would have been enough for everyone on Earth to have about 5.  As of 2017, the official number was 3822 stockpiled warheads according to the <a href="https://open.defense.gov/Portals/23/Documents/frddwg/2017_Tables_UNCLASS.pdf">US Department of Energy</a>.</details></div>
 <h3 id="population-growth">Population Growth</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-3/rabbit-1436329_1280.jpg"  title="Photo by Andreas Lischka from Pixabay"  alt="Photo by Andreas Lischka from Pixabay" style="display:block; width:100%; height:auto;" >
@@ -554,10 +522,7 @@ which would have been enough for everyone on Earth to have about 5.  As of 2017,
 </tbody>
 </table>
 <p>So the number of bunnies can be modeled by $f(t)=4e^{0.0195 \thinspace t}$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  How can we determine when there will be 500 rabbits? <details><summary>Answer</summary>We need to find $t$ so that $f(t)=500$, so we have to solve the equation $500=4e^{0.0195 \thinspace  t}$.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>How can we determine when there will be 500 rabbits? <details><summary>Answer</summary>We need to find $t$ so that $f(t)=500$, so we have to solve the equation $500=4e^{0.0195 \thinspace  t}$.</details></div>
 <p>Since the number of bunnies is modeled by $f(t)=4e^{0.0195 \thinspace t}$, to figure out when the population is at 500 we should solve the equation $500 = 4e^{0.0195 \thinspace t}$ for $t$.</p>
 <table>
 <thead>
@@ -590,9 +555,7 @@ which would have been enough for everyone on Earth to have about 5.  As of 2017,
 </tbody>
 </table>
 <p>We conclude that in roughly 250 days the farmer will have 500 rabbits.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>How would the equation have been different if we wanted to know when the farmer would have 2000 rabbits?</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>How would the equation have been different if we wanted to know when the farmer would have 2000 rabbits?</p>
 <details><summary>Answer</summary>The only change would be that $f(t)=2000$.  The solving process would remain the same.</details>
 </div>
 <h1 id="techniques-for-solving-logarithmic-equations">Techniques for Solving Logarithmic Equations</h1>
@@ -608,9 +571,7 @@ which would have been enough for everyone on Earth to have about 5.  As of 2017,
 \end{align}
 ]</p>
 <p>At this point we can choose an appropriate solving technique from the choices discussed below.  But this initial step of trying to condense multiple logarithms is always something we should look for first.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Use the product property to write the left side of the equation $\ln 8 + \ln x = 7$ as a single logarithm.  <details><summary>Answer</summary>$\ln(8x)=7$</details></p>
 </li>
@@ -621,7 +582,9 @@ which would have been enough for everyone on Earth to have about 5.  As of 2017,
 </div>
 <h3 id="solving-method-1-the-one-to-one-property-of-logarithms">Solving Method 1: The One-to-One Property of Logarithms</h3>
 <p>Since logarithms are one-to-one functions, if we know that two logs with the same base are equal then their inputs must also be equal.</p>
-<p>$$\log_b(N) = \log_b(M) \text{ if and only if } N=M$$</p>
+<p>[
+\log_b(N) = \log_b(M) \text{ if and only if } N=M
+]</p>
 <p>In other words, as long as both sides are written as single logarithms with the same base, then the logarithms themselves can be ignored.</p>
 <p>For example, solving the equation $\log_2(x^{2}+1) = \log_2(26)$ is equivalent to solving $x^{2}+1 = 26$ as we see below.</p>
 <p>[
@@ -632,9 +595,7 @@ x^{2} &amp;= 25 &amp;&amp; \small \color{#5fa2ce}{\text{Subtract } 1} \newline
 x &amp;= \pm 5 &amp;&amp; \small \color{#5fa2ce}{\text{Square root both sides}}
 \end{align}
 ]</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Solve the equation $\log_5(x-3) = \log_5(9)$. <details><summary>Answer</summary>Using the logarithm property of equality, we only need to solve $x-3=9$.  The solution is $x=12$.</details></p>
 </li>
@@ -645,7 +606,9 @@ x &amp;= \pm 5 &amp;&amp; \small \color{#5fa2ce}{\text{Square root both sides}}
 </div>
 <h3 id="solving-method-2-rewrite-as-an-exponential-equation">Solving Method 2: Rewrite as an Exponential Equation</h3>
 <p>Another solving technique is to isolate the logarithmic expression and rewrite the equation as an equivalent exponential using the definition of a logarithm.</p>
-<p>$$b^{x}=y \Longleftrightarrow \log_{b}(y) = x$$</p>
+<p>[
+b^{x}=y \Longleftrightarrow \log_{b}(y) = x
+]</p>
 <p>Consider the equation $4 \log_3(x-2) = 16$.  If we divide both sides by $4$ then the logarithm will be isolated and we can solve by rewriting it as an exponential equation.</p>
 <p>[
 \begin{align}
@@ -657,9 +620,7 @@ x &amp;= 83 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}}
 \end{align}
 ]</p>
 <p>This is useful anytime the equation can be written as a single logarithm, even if it doesn't start out that way.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>What should be done to isolate the logarithm in the equation $6+\log(2x)=9$?</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>What should be done to isolate the logarithm in the equation $6+\log(2x)=9$?</p>
 <details><summary>Answer</summary>Subtracting $6$ from both sides will isolate the logarithm.  It can then be solved using the technique above.
 [
 \begin{align}
@@ -677,23 +638,18 @@ x &amp;= 500 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}}
 <label for="sn-Inverse Exp" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-Inverse Exp" class="margin-toggle" />
-<span class="sidenote">$$b^{\log_b x} = x$$</span></p>
+<span class="sidenote">[ b^{\log_b x} = x ]</span></p>
 <p>We will illustrate the process using the equation $\log_2 x= 6$.</p>
-<div>
-$$
+<p>[
 \begin{align}
-\log_2 x &= 6 \newline
-2^{\log_{2} x} &= 2^{6}  && \small \color{#5fa2ce}{\text{Exponentiate base } 2} \newline
-x &= 2^{6} && \small \color{#5fa2ce}{\text{Inverse property}} \newline
-x &= 64 && \small \color{#5fa2ce}{\text{Evaluate}}
+\log_2 x &amp;= 6 \newline
+2^{\log_{2} x} &amp;= 2^{6}  &amp;&amp; \small \color{#5fa2ce}{\text{Exponentiate base } 2} \newline
+x &amp;= 2^{6} &amp;&amp; \small \color{#5fa2ce}{\text{Inverse property}} \newline
+x &amp;= 64 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
 \end{align}
-$$
-</div>
+]</p>
 <p>Earlier we would have solved this by rewriting it as the exponential equation $x=2^6$ and simplifying to see that $x=64$, and rewriting is probably the preferred method.  We introduce the idea of exponentiation here to reemphasize the inverse relationship between exponentials and logarithms.  Not only are they inverse functions, but it can sometimes be useful to think of exponentiation and taking the logarithm as inverse operations.  Exponentiating can then be viewed as just another operation we can use when we solve equations by reversing the order of operations.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Exponentiate both sides of the equation $\ln(x) = 4$.  Simplify if possible.  <details><summary>Answer</summary>The base of the natural logarithm is $e$, so we will place both sides of the equation into the exponent of an $e$.  $e^{\ln(x)} = e^{4}$ But $e$ and $\ln$ are inverses, so this simplifies to $x=e^4$ which is the same answer we would get by converting $\ln(x) = 4$ to an exponential equation.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Exponentiate both sides of the equation $\ln(x) = 4$.  Simplify if possible.  <details><summary>Answer</summary>The base of the natural logarithm is $e$, so we will place both sides of the equation into the exponent of an $e$.  $e^{\ln(x)} = e^{4}$ But $e$ and $\ln$ are inverses, so this simplifies to $x=e^4$ which is the same answer we would get by converting $\ln(x) = 4$ to an exponential equation.</details></div>
 <h2 id="find-inverses">Find Inverses</h2>
 <p>As we learned earlier, we can find an inverse by listing the operations performed by the function and doing the <em>opposite operations in the reverse order</em>.  Viewing exponentiation and logarithms as opposite operations allows us to find the inverses of more complicated exponential and logarithmic functions.</p>
 <p>For instance, the function $f(x)=5(3)^{x+2}$ does three things to each input value.  It adds $2$, then exponentiates with a base of $3$, and lastly multiplies by $5$.  It's inverse should divide by $5$, then apply the base $3$ logarithm, and finally subtract $2$.  We summarize this in the table below.</p>
@@ -759,11 +715,8 @@ $$
 </tr>
 </tbody>
 </table>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Identify the order of operations of the function $f(x)=500(2)^{x/27}$.  Then find the inverse function $f^{\thinspace-1}$.  <details><summary>Answer</summary>This function <strong>(1)</strong> divides by 27, then <strong>(2)</strong> exponentiates with a base of 2, and <strong>(3)</strong> multiplies by 500.  The inverse should <strong>(1)</strong> divide by 500, <strong>(2)</strong> apply the base 2 logarithm, and <strong>(3)</strong> multiply by 27.  The equation is
-$f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the order of operations of the function $f(x)=500(2)^{x/27}$.  Then find the inverse function $f^{\thinspace-1}$.  <details><summary>Answer</summary>This function <strong>(1)</strong> divides by 27, then <strong>(2)</strong> exponentiates with a base of 2, and <strong>(3)</strong> multiplies by 500.  The inverse should <strong>(1)</strong> divide by 500, <strong>(2)</strong> apply the base 2 logarithm, and <strong>(3)</strong> multiply by 27.  The equation is
+$f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details></div>
 <p>Let's look at another example.  This time we will find the inverse of $g(t)=\log_2(3 t-7)$.  Start by listing the operations of the function in the proper order and then list which operations its inverse should do.</p>
 <table>
 <thead>

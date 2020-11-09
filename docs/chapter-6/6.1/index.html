@@ -134,9 +134,7 @@ a + b &amp;= 10 &amp;&amp; \small \text{Equation #1} \newline
 ]</p>
 <p>Solving a system of equations means finding values that satisfy every equation in the system.</p>
 <p>Equation #2 above implies that $b=3$.  If we combine that with Equation #1 it appears that $a$ must be $7$.  So the values $a=7$ and $b=3$ are a solution to this system.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Is $a=5$, $b=2$ a solution to the system below?
 [
 \begin{align}
@@ -221,11 +219,9 @@ a \cdot b &amp;= 7 &amp;&amp; \small \text{Equation #2} \newline
 \end{align}
 ]</p>
 <p>Now that we know the values for $a$ and $b$, we can finally say that</p>
-<p>$$f(x)=8 \left(\frac{3}{2} \right)^{x}$$</p>
+<p>[f(x)=8 \left(\frac{3}{2} \right)^{x}]</p>
 <p>is the exponential function that passes through the points $(1, 12)$ and $(3, 27)$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>If we had solved Equation #2 for $a$ at the start, we would have gotten $a = \frac{27}{b^3}$.  Substitute that expression into Equation #1.</li>
 </ol>
 <details><summary>Answer</summary>[
@@ -292,7 +288,7 @@ a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximat
 \end{align}
 ]</p>
 <p>Now that we have both $a$ and $b$, we can write out our function.</p>
-<p>$$f(x) =  -3.966+4.328 \ln x$$</p>
+<p>[f(x) =  -3.966+4.328 \ln x]</p>
 <p>A quick way to check this is to run logarithmic regression on the limited data set $(5, 3)$ and $(20, 9)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/log_regression_2_points.svg#center" alt=""></p>
 <p>This give the same values for $a$ and $b$ and the graph clearly goes through our two points.</p>
@@ -315,9 +311,7 @@ a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximat
 \end{align}
 ]</p>
 <p>This is a system of <em>non-linear</em> equations because $b$ has a power of $3$ in the second equation and because the variables are multiplied together.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Is this system linear or non-linear?
 [
 \begin{array}{rcl}
@@ -350,67 +344,65 @@ x \cdot y &amp; = &amp; 2 \newline
 </div>
 <h2 id="converting-between-systems-and-matrices">Converting Between Systems and Matrices</h2>
 <p>Systems of linear equations are easier to work with if we organize them by sorting the terms with variables on the left and putting the constant terms on the right, like in this example below.</p>
-<p>$$
+<p>[
 \begin{align}
 3x + 4y &amp;= 3 \newline
 2x - 3y &amp;= 2
 \end{align}
-$$</p>
+]</p>
 <p>Once the equations are written in the same format we don't really need the variables or the equals sign anymore.  By stripping those away we are left with something called a <strong>augmented matrix</strong>.  In the figure below you can convert a linear system into a matrix and back again.</p>
 <iframe scrolling="no" title="Convert Between System and Matrix" src="https://www.geogebra.org/material/iframe/id/uwdgq9fy/width/500/height/175/border/888888/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="175px" style="border:0px;"> </iframe>
 <p>The matrix contains the same information as the original system, since knowing where a number is located is enough to tell us if it represents an $x$ or a $y$ or a constant.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Convert this system of linear equations into an augmented matrix.
-$$
+[
 \begin{align}
 2x + y &amp;= 5 \newline
 3x - 2y &amp;= 4
 \end{align}
-$$</li>
+]</li>
 </ol>
-<details><summary>Answer</summary>$$
+<details><summary>Answer</summary>[
 \left[
 \begin{array}{rr|r}
 2 &amp; 1 &amp; 5 \newline
 3 &amp; -2 &amp; 4
 \end{array}\right]
-$$</details>
+]</details>
 <ol>
 <li>Convert this augmented matrix back to a system of equations.
-$$
+[
 \left[
 \begin{array}{rr|r}
 1 &amp; 2 &amp; 3 \newline
 2 &amp; 0 &amp; 2
 \end{array}\right]
-$$</li>
+]</li>
 </ol>
-<details><summary>Answer</summary>$$
+<details><summary>Answer</summary>[
 \begin{align}
 x + 2y &amp;= 3 \newline
 2x +0y &amp;= 2
 \end{align}
-$$</details>
+]</details>
 </div>
 <h2 id="solve-2x2-systems-of-linear-equations-with-technology">Solve 2x2 Systems of Linear Equations with Technology</h2>
 <p>Once a system is represented by a matrix, we can enter the matrix into a calculator and let it run through all the steps of Gauss-Jordan Elimination for us.</p>
 <p>To illustrate how this is done, let's use the system of from the first part of the last Quick Check.</p>
-<p>$$
+<p>[
 \begin{align}
 2x + y &amp;= 5 \newline
 3x - 2y &amp;= 4
 \end{align}
-$$</p>
+]</p>
 <p>In matrix form this system becomes</p>
-<p>$$
+<p>[
 \left[
 \begin{array}{rr|r}
 2 &amp; 1 &amp; 5 \newline
 3 &amp; -2 &amp; 4
 \end{array}\right]
-$$</p>
+]</p>
 <p>To enter this matrix into a calculator press the <code>[2ND]</code> and <code>[x^-1]</code> keys to enter the <code>MATRIX</code> menu and choose the <code>EDIT</code> tab.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/matrix_edit.png#center" alt=""></p>
 <p>At the top change the dimensions to <code>2 x3</code>, since our matrix has $2$ rows and $3$ columns, and type in all the values.  It should look like this.</p>
@@ -423,32 +415,30 @@ $$</p>
 <p>Press <code>[ENTER]</code> once again and the calculator will work through Gauss-Jordan Elimination.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/2x2_rref_4.png#center" alt=""></p>
 <p>What we get back is a matrix that is in reduced row echelon form, which is why the command is called <code>rref</code>.</p>
-<p>$$
+<p>[
 \left[
 \begin{array}{rr|r}
 1 &amp; 0 &amp; 2 \newline
 0 &amp; 1 &amp; 1
 \end{array}\right]
-$$</p>
+]</p>
 <p>Look what happens when we convert this reduced matrix back into a system.</p>
-<p>$$
+<p>[
 \begin{align}
 x &amp;= 2 \newline
 y &amp;= 1
 \end{align}
-$$</p>
+]</p>
 <p>It's now obvious that the solution is $x=2$ and $y=1$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>What is the solution to the system whose reduced matrix is shown below?
-$$
+[
 \left[
 \begin{array}{rr|r}
 1 &amp; 0 &amp; -3 \newline
 0 &amp; 1 &amp; 4
 \end{array}\right]
-$$</li>
+]</li>
 </ol>
 <details><summary>Answer</summary>The solution is $x=-3$ and $y=4$.</details>
 </div>
@@ -463,31 +453,29 @@ a &amp;  &amp;  &amp; + &amp; 6c &amp; = &amp; 1 \newline
 ]</p>
 <p>Even though it has three unknows, $a$, $b$ and $c$, this is still a linear system since none of those unknowns are raised to power/roots, etc. or are multiplying each other.</p>
 <p>The matrix version of our system is</p>
-<p>$$
+<p>[
 \left[
 \begin{array}{rrr|r}
 3 &amp; 2 &amp; -1 &amp; 5 \newline
 1 &amp; 0 &amp; 6 &amp; 1 \newline
 2 &amp; 1 &amp; -2 &amp; 5
 \end{array}\right]
-$$</p>
+]</p>
 <p>Notice that there are $3$ rows, one for each equation, and $4$ columns, one for each of the coefficients and a fourth for the constant.  Also note that when a value is missing from the system we put a $0$ into the matrix at the appropriate location.</p>
 <p>Since this matrix has $3$ rows and $4$ columns we change the dimensions to <code>3 x4</code>, enter the values and run <code>rref</code>.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/3x3_rref_1.png#center" alt=""></p>
 <p>We get back a reduced matrix with decimal values.  Sometimes the decimals can be converted to fractions by pressing <code>[2ND]</code>, <code>[MATH]</code> and choosing <code>1:Frac</code>.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/3x3_rref_2.png#center" alt=""></p>
 <p>Our reduced matrix is</p>
-<p>$$
+<p>[
 \left[\begin{array}{r r r | r}
 1 &amp; 0 &amp; 0 &amp; \frac{11}{3} \newline
 0 &amp; 1 &amp; 0 &amp; \frac{-29}{9} \newline
 0 &amp; 0 &amp; 1 &amp; \frac{-4}{9}
 \end{array}\right]
-$$</p>
+]</p>
 <p>and the solution must be $a=\frac{11}{3}$, $b=\frac{-29}{9}$ and $c=\frac{-4}{9}$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Use a calculator to solve the system below.  Convert your answers to fractions.
 [
 \begin{align}
@@ -498,13 +486,13 @@ x+2y+3z&amp;=4 \newline
 ]</li>
 </ol>
 <details><summary>Answer</summary>The matrix for this system is
-$$
+[
 \left[\begin{array}{r r r | r}
 1 &amp; 2 &amp; 3 &amp; 4 \newline
 5 &amp; 0 &amp; 7 &amp; 1 \newline
 2 &amp; -1 &amp; 1 &amp; -2
 \end{array}\right]
-$$
+]
 Entering this into the calculator and running <code>rref</code> gives
 <img src="https://duragauge.github.io/img/chapter-6/3x3_rref_check_1.png#center" alt="">
 Converting to fractions this becomes

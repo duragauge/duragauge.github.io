@@ -125,11 +125,11 @@
 <p>We can also say that each new value of $f(x)=1.08^{x}$ is $8 \text{%}$ larger than the current one.  This second interpretation focuses on the <em>growth rate</em> $r=b-1$ rather than the growth factor $b$.</p>
 <p>In real world applications the growth rate is given much more frequently than the growth factor.  For instance, business commonly report that sales are up by $3 \text{%}$ or down by $5 \text{%}$, instead of announcing growth factors of $1.03$ or $0.95$.</p>
 <p>For this reason, it is often useful to make the substitution $b = 1+r$ and write exponential functions in the form</p>
-<p>$$f(x)=(1+r)^{x}$$</p>
+<p>[
+f(x)=(1+r)^{x}
+]</p>
 <p>Note that growth occurs when $r&gt;0$ and decay occurs if $ -1&lt;r&lt;0$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Suppose $f(x)=2.6^{x}$.  Identify both the growth factor and the growth rate.  <details><summary>Answer</summary>The growth factor is the base $b=2.6$.  The growth rate is $r=1.6$, meaning that  every time $x$ increases by $1$ the function increases by $160\text{%}$.</details></p>
 </li>
@@ -147,27 +147,23 @@
 <p>You should have noticed that multiplying an exponential function $f(x)=b^{x}$ by a constant $a$ causes the y-intercept to change from $(0, 1)$ to $(0, a)$.  For instance, if $a=4$, then the y-intercept will be $(0, 4)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/exponential_vertical_stretch.png#center" alt=""></p>
 <p>This is actually a consequence of the rule of exponents that says $b^{0}=1$, so $f(0)=a \cdot b^{0} = a$ for any valid base.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <em>Without graphing</em>, identify the y-intercept of the function $f(x)=59(0.86)^{x}$. <details><summary>Answer</summary>The y-intercept is $(0, 59)$.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><em>Without graphing</em>, identify the y-intercept of the function $f(x)=59(0.86)^{x}$. <details><summary>Answer</summary>The y-intercept is $(0, 59)$.</details></div>
 <h2 id="the-standard-exponential-model">The Standard Exponential Model</h2>
 <p>By including a vertical stretch with the exponential form $f(x)=(1+r)^{x}$, we obtain a more general function</p>
-<p>$$f(x)=a(1+r)^{x}$$</p>
+<p>[
+f(x)=a(1+r)^{x}
+]</p>
 <p>that starts with an initial value of $a$ and grows (or decays) at a constant rate $r$. We will call this equation the <strong>standard exponential model</strong>.  All other exponential functions are variations of this equation.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Write the equation for an exponential function with an initial value of $31$ that grows at a rate of $25 \text{%}$.  <details><summary>Answer</summary>Using $a=31$ and $r=0.25$, the function is $f(x)=31(1+0.25)^{x}$ or $f(x)=31(1.25)^{x}$.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Write the equation for an exponential function with an initial value of $31$ that grows at a rate of $25 \text{%}$.  <details><summary>Answer</summary>Using $a=31$ and $r=0.25$, the function is $f(x)=31(1+0.25)^{x}$ or $f(x)=31(1.25)^{x}$.</details></div>
 <p>Let's revisit an earlier example.  In the final stage of the 2010 FIFA World Cup, 16 teams competed for the world championship.  After each round, one-half of the teams were eliminated and eventually Spain emerged as the champion.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/Spain_World_Cup_2.gif#center" alt=""></p>
 <p>We now have the tools needed to model this scenario with the standard exponential model $f(x)=a(1+r)^{x}$.</p>
 <p>Since the final stage of the World Cup starts with 16 teams, we know that $a=16$.  And if $50\text{%}$ the teams are eliminated after each round, then $r=-0.5$ and the function</p>
-<p>$$f(x)=16 (1-0.5)^{x}=16(0.5)^{x}$$</p>
+<p>[
+f(x)=16 (1-0.5)^{x}=16(0.5)^{x}
+]</p>
 <p>models the number of teams left after $x$ rounds have been played.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Write the equation of an exponential function that starts at $8$ and increases at a rate of $10\text{%}$. <details><summary>Answer</summary>With $a=8$ and $r=0.1$, the function is $f(x)=8(1+0.1)^{x}=8(1.1)^{x}$.</details></p>
 </li>
@@ -182,31 +178,30 @@
 <p><img src="https://duragauge.github.io/img/chapter-3/half_life.svg#center" alt=""></p>
 <p>For instance, the exponential decay function in this graph models the value of a sports car.  The initial value of $60,000 is cut in half every 3 years, so we would say it has a half-life of 3 years.</p>
 <p>To make the standard model fit this situation we must stretch the $50\text{%}$ decay out over a three-year period.  In other words, we must stretch the function horizontally by a factor of $3$.  So we can model the value of this car with the function</p>
-<p>$$f(x)=60000(1-0.5)^{x/3}$$</p>
+<p>[
+f(x)=60000(1-0.5)^{x/3}
+]</p>
 <p>where $a=60000$ is the initial value and $r=-0.5$ is the growth rate.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Create an exponential function that starts at $10$ and is cut in half every time $x$ increases by $4$. <details><summary>Answer</summary>$f(x)=10(1-0.5)^{x/4}$  or $f(x)=10(1/2)^{x/4}$</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Create an exponential function that starts at $10$ and is cut in half every time $x$ increases by $4$. <details><summary>Answer</summary>$f(x)=10(1-0.5)^{x/4}$  or $f(x)=10(1/2)^{x/4}$</details></div>
 <h2 id="doubling-time">Doubling Time</h2>
 <p>On the other hand, the <strong>doubling time</strong> of a function is the amount of time needed for the value to double.  Every exponential growth function has a doubling time.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/doubling_time.svg#center" alt=""></p>
 <p>Consider, for example, the value of a collectible toy car like the one shown in this graph.  We say that the value of this toy car has a doubling time of 5 years, since it's value doubles every 5 years.</p>
 <p>To make the standard model fit this situation we must stretch the $100\text{%}$ growth out over a five-year period.  In other words, we need to stretch the function horizontally by a factor of $5$.  This means we can model the value of this toy car with the function</p>
-<p>$$f(x)=2(1+1.00)^{x/5}$$</p>
+<p>[
+f(x)=2(1+1.00)^{x/5}
+]</p>
 <p>where $a=2$ is the initial value and $r=1.00$ is the growth rate.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Create an exponential function that starts at 10 and has a doubles every time $x$ increases by 4.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Create an exponential function that starts at 10 and has a doubles every time $x$ increases by 4.</p>
 <details><summary>Answer</summary>$f(x)=10(1+1.00)^{x/4}$ or $f(x)=10(2)^{x/4}$</details>
 </div>
 <h2 id="recognize-doubling-time-and-half-life-models">Recognize Doubling Time and Half Life Models</h2>
 <p>Let's generalize these last two examples.  If an initial quantity $a$ grows exponentially at a rate of $r$ every time $x$ increases by $c$, then that growth can be modeled by an exponential function of the form</p>
-<p>$$f(x)=a (1+r)^{x/c}$$</p>
+<p>[
+f(x)=a (1+r)^{x/c}
+]</p>
 <p>For instance, the function $f(x)=18(1+0.64)^{x/7}$ could model an initial quantity of $18$ that increases by $64\text{%}$ every time $x$ increases by $7$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Write the equation for an exponential function that starts at 20 and increases by $87\text{%}$ every time $x$ increases by 3.  <details><summary>Answer</summary>$f(x)=20(1+0.87)^{x/3}$ or $f(x)=20(1.87)^{x/3}$.</details></p>
 </li>
@@ -230,13 +225,12 @@
 </tr>
 </tbody>
 </table>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Identify the half life of the function $g(t) = 9.2\left(\frac{1}{2}\right)^{t/1.4}$.   Assume $t$ is measured in hours. <details><summary>Answer</summary>The half life is $1.4$ hours.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the half life of the function $g(t) = 9.2\left(\frac{1}{2}\right)^{t/1.4}$.   Assume $t$ is measured in hours. <details><summary>Answer</summary>The half life is $1.4$ hours.</details></div>
 <p><img src="https://duragauge.github.io/img/chapter-3/Intel_C4004.jpg#center" alt=""></p>
 <p>As an example, when technology innovator, Intel, produced its first microprocessor in 1971, it contained 2300 transistors.  Intel's founder, Gordon Moore, predicted that the number of transistors on a computer chip would double <em>every two years</em>.  His prediction is known as <em>Moore's law</em> and can be modeled by</p>
-<p>$$f(x)=2300(2)^{x/2}$$</p>
+<p>[
+f(x)=2300(2)^{x/2}
+]</p>
 <p>where $x$ is the number of years since 1971.</p>
 <p>In 2011, Intel's <em>Sandy Bridge</em> processor had more than 2.2 billion transistors.  How does this compare with Moore's prediction for 2011?  Since 2011 is 40 years after 1971, we evaluate the above function with $x=40$</p>
 <table>
@@ -252,13 +246,10 @@
 </tbody>
 </table>
 <p>which is very close to the actual value.  When evaluating expressions like this on a calculator, make sure to include parenthesis around the exponent.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  Intel released the first <em>Pentium</em> processor in 1993.  According to Moore's law, how many transistors should it have had? <details><summary>Answer</summary>1993 is 22 years after 1971.  Using $x=22$ we have
-$$f(22)=2300(2)^{22/2}=4,710,400$$
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Intel released the first <em>Pentium</em> processor in 1993.  According to Moore's law, how many transistors should it have had? <details><summary>Answer</summary>1993 is 22 years after 1971.  Using $x=22$ we have
+[ f(22)=2300(2)^{22/2}=4,710,400 ]
 On a calculator you should enter </br>  <code>2300*2^(22/2) = 4710400</code>
-</br>The first <em>Pentium</em> actually had 3.1 million transistors, somewhat less than what was predicted.</details>
-</div>
+</br>The first <em>Pentium</em> actually had 3.1 million transistors, somewhat less than what was predicted.</details></div>
 <h2 id="periodic-compound-interest">Periodic Compound Interest</h2>
 <p>Another variation of the standard model $f(x)=a(1+r)^{x}$ arises from applications in banking and finance.</p>
 <p>An essential concept of investing is taught in the classic movie <em>Mary Poppins</em>.  In one scene, Mr. Dawes tries to convince young Michael
@@ -274,7 +265,9 @@ Will compound.</em></p>
 <p>Interest is <strong>compounded</strong> when it is added to the initial account balance, or <strong>principal</strong>.  Once that interest has been added to the principal it starts earning interest as well, compounding the effect.</p>
 <p>In the financial world, it is common for interest to be compounded periodically throughout the year, sometimes on a monthly, weekly or even a daily basis.</p>
 <p>If interest is compounded $n$ times a year, only a fraction $\frac{r}{n}$ of the annual interest is earned during each of those periods.  If there are $n$ interest periods per year, the number of periods in $t$ years would be $n \cdot t$. With this in mind, we modify the standard exponential model to create a function for working with <strong>periodic compound interest</strong>.</p>
-<p>$$A(t) = P\left(1 + \frac{r}{n}\right)^{n \cdot t}$$</p>
+<p>[
+A(t) = P\left(1 + \frac{r}{n}\right)^{n \cdot t}
+]</p>
 <p>where</p>
 <ul>
 <li>$A(t)$  is the account balance after t years</li>
@@ -284,15 +277,14 @@ Will compound.</em></p>
 <li>$t$  is time in years</li>
 </ul>
 <p>For example, if $3000 is invested at 6% compounded monthly for 8 years, the account balance would be</p>
-<p>$$A(8) =  3000\left(1+\frac{0.06}{12}\right)^{12 \cdot 8}\approx 4842.43$$</p>
+<p>[
+A(8) =  3000\left(1+\frac{0.06}{12}\right)^{12 \cdot 8}\approx 4842.43
+]</p>
 <p>When using a calculator, remember to include parenthesis around the exponent.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  What is the account balance after 10 years if $8500 is invested at 3% compounded weekly?  <details><summary>Answer</summary>$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details>
-</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>What is the account balance after 10 years if $8500 is invested at 3% compounded weekly?  <details><summary>Answer</summary>$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details></div>
 <h2 id="continuous-compound-interest">Continuous Compound Interest</h2>
 <p>It is logical to wonder what might happen if we were to increase the number of compounding periods $n$ over the course of a year.  Let's investigate.</p>
-<p>Suppose you invest \$25,000 at $5\text{%}$ interest for one year.  Using $P=25000$, $r=0.05$ and $t=1$, the accompanying table shows the account balance $A$ for ever increasing values of $n$.</p>
+<p>Suppose you invest $\$25,000$ at $5\text{%}$ interest for one year.  Using $P=25000$, $r=0.05$ and $t=1$, the accompanying table shows the account balance $A$ for ever increasing values of $n$.</p>
 <table>
 <thead>
 <tr>
@@ -363,7 +355,9 @@ Will compound.</em></p>
 </tbody>
 </table>
 <p>The expression in brackets $[(1+h)^{1/h}]$ might remind you of something from the previous section.  If $h \rightarrow 0$ then $(1+h)^{1/h} \rightarrow e \approx 2.71828$.  This is the reason for the limit.  Compounding interest more and more frequently makes the base closer and closer to $e$.  The resulting function</p>
-<p>$$A(t)=P e^{r  \thinspace  t}$$</p>
+<p>[
+A(t)=P e^{r  \thinspace  t}
+]</p>
 <p>is known as the <strong>continuous compound interest formula</strong> and is widely used in finance, business and economics.</p>
 <h2 id="work-with-continuous-growth">Work with Continuous Growth</h2>
 <div style="position:relative; clear:both; padding:0;">
@@ -376,7 +370,9 @@ Will compound.</em></p>
 <p>Similarly, the amount of carbon-14 in an object decays continuously.</p>
 <p>When used in different settings such as these, the $A(t)=P e^{ r t}$  formula is often referred to as &quot;continuous growth&quot;.</p>
 <p>In general, we will say a quantity that experiences <strong>continuous exponential growth</strong> (or decay) can be modeled by a function of the form</p>
-<p>$$f(t)=a e^{ k t}$$</p>
+<p>[
+f(t)=a e^{ k t}
+]</p>
 <p>where $a$ is the initial quantity when $x=0$ and $k$ is the continuous rate of growth.</p>
 <p>The continuous exponential growth function is often written with different letters to match specific application.  You will need to be able to recognize continuous growth regardless of how the function is written.  For example,</p>
 <p>[
@@ -387,9 +383,7 @@ y &amp;= C e^{ r x}
 \end{align}
 ]</p>
 <p>are all continuous growth models.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>What are the distinguishing features of continuous exponential growth?  <details><summary>Answer</summary>The base of the exponential function is $e$ and the growth rate is in the exponent along with the variable.</details></p>
 </li>
@@ -412,7 +406,9 @@ y &amp;= C e^{ r x}
 <br>
 <p>Suppose you put a pizza in a 450°F oven.  The temperature of the pizza will increase, but in a limited way since it will never exceed the temperature of the oven.  Isaac Newton studied situations like this and discovered a law that modeled the heating or cooling of an object.</p>
 <p><strong>Newton's law of cooling</strong> says that rate of temperature change in an object is proportional to the temperature difference between the object and its surroundings.  Based on this, Newton found that the temperature of an object at time $t$ is given by</p>
-<p>$$T(t) = S + (T_{0} - S)e^{-k  \thinspace t}$$</p>
+<p>[
+T(t) = S + (T_{0} - S)e^{-k  \thinspace t}
+]</p>
 <p>where $S$ is the temperature of the surroundings (or the temperature of the oven, in this case) $T_{0}$ is the initial temperature of the object (or the original temperature of the pizza), and $ k $ is a positive constant that depends on the nature of the object.</p>
 <p>This function models cooling when $T_0 &gt; S $ and heating if $T_0 &lt; S$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/newtons_law.svg#center" alt=""></p>
@@ -440,9 +436,7 @@ T(t) &amp;= S+(T_0-S)e^{-k  \thinspace  t} \newline
 <p>In 1838, Belgian mathematician Pierre-Francois Verhulst created a function that has this very behavior.  His function, now called the <strong>logistic function</strong>, assumes growth is proportional to both the current population size and the available resources.  The equation and graph of a logistic function are given below.  The values $a$, $b$ and $c$ are constants.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/logistic.svg#center" alt=""></p>
 <p>The number $c$ is a horizontal asymptote of the function and is often called the <strong>carrying capacity</strong>.  In the trout example, it would represent the maximum number of trout that the lake can support.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Suppose the population of trout in a particular mountain lake is modeled by the logistic equation $f(x)=\frac{20000}{1+39e^{-0.2x}}$ where $x$ is the number of years since the lake was first stocked.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose the population of trout in a particular mountain lake is modeled by the logistic equation $f(x)=\frac{20000}{1+39e^{-0.2x}}$ where $x$ is the number of years since the lake was first stocked.</p>
 <ol>
 <li>
 <p>Calculate the initial trout population.  <details><summary>Answer</summary>At time $x=0$ the equation suggests that there were $f(0)=500$ trout.</details></p>

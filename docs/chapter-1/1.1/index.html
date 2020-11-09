@@ -130,21 +130,23 @@
 <label for="sn-note about braces" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-note about braces" class="margin-toggle" />
-<span class="sidenote">Sets are always enclosed in curly braces $\{ \thinspace \thinspace \}$.</span></p>
+<span class="sidenote">Sets are always enclosed in curly braces $\lbrace \thinspace \thinspace \rbrace$.</span></p>
 <p>It can also be helpful to draw a set as a diagram.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/set_colors_diagram.svg#center" alt="the set of colors on a traffic light"></p>
 <h2 id="set-builder-notation">Set-Builder Notation</h2>
 <p>Sometimes it's hard to list everything in a set.  For instance, $\text{whiskers on kittens}$, $\text{bright copper kettles}$ and $\text{warm woolen mittens}$ might be a few of my favorite things, but listing all my favorites would be impossible.  What we do instead is describe the set using words</p>
-<p>$$\{\text{my favorite things}\}.$$</p>
+<p>[
+\left\lbrace \text{my favorite things} \right\rbrace
+]</p>
 <p>If we want to talk about a generic element of the set we include a variable like $x$ and write it as</p>
-<p>$$\{ x \thinspace \vert \thinspace x \text{ is one of my favorite things}\}.$$</p>
+<p>[
+\left\lbrace x \thinspace \vert \thinspace x \text{ is one of my favorite things} \right\rbrace
+]</p>
 <p>This last example is called <strong>set-builder notation</strong>.  The vertical bar symbol $\vert$ is shorthand for &quot;such that&quot; or &quot;where&quot;.  If we put the set above into words we would read it as &quot;the set of all $x$ <em>where</em> $x$ is one of my favorite things.&quot;</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Describe the following set in words and list a few items that are in the set:
-$$
-{x \thinspace \vert \thinspace x \text{ is something in your backpack} }
-$$</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Describe the following set in words and list a few items that are in the set:
+[
+\left\lbrace x \thinspace \vert \thinspace x \text{ is something in your backpack} \right\rbrace
+]</p>
 <details><summary>Answer</summary>This is the set of all $x$ where $x$ is something you might need in math class.  Elements in this set could include note paper, a pencil, a calculator, etc.</details>
 </div>
 <h2 id="combining-sets">Combining Sets</h2>
@@ -161,7 +163,9 @@ $$</p>
       </iframe>
 </div>
 <p>The union of some set $A$ with another set $B$ is written using the union symbol: $\bigcup$.</p>
-<p>$$A \bigcup B=\{x \ \vert \ x \text{ is in } A  \text{ or }  x \text{ is in }B  \}.$$</p>
+<p>[
+A \bigcup B = \left\lbrace x \thinspace \vert \thinspace x \text{ is in } A  \text{ or }  x \text{ is in }B  \right\rbrace
+]</p>
 <p>The second way to combine sets is to only consider items that the two sets have in common. This is called the <strong>intersection</strong> of the sets.</p>
 <div class="geogebra" style="padding-top: 29.16%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/f6fbnnnc/border/fafafa" scrolling="no"
@@ -175,27 +179,27 @@ $$</p>
       </iframe>
 </div>
 <p>The intersection of two sets also has its own symbol: $\bigcap$.</p>
-<p>$$A \bigcap B=\{x \ \vert \ x \text{ is in } A  \text{ and }  x \text{ is in }B\ \}$$</p>
+<p>[
+A \bigcap B = \left\lbrace x \thinspace \vert \thinspace x \text{ is in } A  \text{ and }  x \text{ is in }B\ \right\rbrace
+]</p>
 <p>If the intersection has nothing in it we say it is <em>empty</em> and use the symbol $\varnothing$ to represent the <strong>empty set</strong>.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>Consider the following sets
-$$
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Consider the following sets
+[
 \begin{align}
-A &amp;= {\text{flour, sugar, butter, eggs, milk}} \newline
-B &amp;= {\text{bacon, pancakes, eggs, milk}} \newline
-C &amp;= {\text{peas, carrots, potatoes}}.
+A &amp;= \lbrace \text{flour, sugar, butter, eggs, milk} \rbrace \newline
+B &amp;= \lbrace \text{bacon, pancakes, eggs, milk} \rbrace \newline
+C &amp;= \lbrace \text{peas, carrots, potatoes} \rbrace.
 \end{align}
-$$</p>
+]</p>
 <ol>
 <li>
-<p>List everything that would be in $A\bigcup C$. <details><summary>Answer</summary>Since the union is all of the items in both sets combined, $A\bigcup C$ would contain flour, sugar, butter, eggs, milk, peas, carrots, and potatoes.</br></br></details></p>
+<p>List everything that would be in $A \bigcup C$. <details><summary>Answer</summary>Since the union is all of the items in both sets combined, $A \bigcup C$ would contain flour, sugar, butter, eggs, milk, peas, carrots, and potatoes.</br></br></details></p>
 </li>
 <li>
-<p>List all the elements of $A\bigcap B$. <details><summary>Answer</summary>Since intersection is only the items that the two sets have in common, $A\bigcap B$ would contain just eggs and milk.</br></br></details></p>
+<p>List all the elements of $A \bigcap B$. <details><summary>Answer</summary>Since intersection is only the items that the two sets have in common, $A \bigcap B$ would contain just eggs and milk.</br></br></details></p>
 </li>
 <li>
-<p>Describe $B\bigcap C$. <details><summary>Answer</summary>The sets have nothing in common so their intersection is the empty set.  $$B\bigcap C = \varnothing$$</details></p>
+<p>Describe $B\bigcap C$. <details><summary>Answer</summary>The sets have nothing in common so their intersection is the empty set.  [ B \bigcap C = \varnothing ]</details></p>
 </li>
 </ol>
 </div>
@@ -230,15 +234,17 @@ $$</p>
 <h2 id="natural-numbers-and-integers">Natural Numbers and Integers</h2>
 <p>The numbers we are most familiar with are the counting numbers $1, 2, 3, 4, ...$.</p>
 <p>The set of counting numbers is also known as the <strong>natural numbers</strong> and is represented by the symbol $\mathbb{N}$. In set notation we would say</p>
-<p>$$\mathbb{N}=\{1,2,3,...\}.$$</p>
+<p>[
+\mathbb{N} = \left\lbrace 1,2,3,...\right\rbrace
+]</p>
 <p>You might already know that when we add two natural numbers the result is also a natural number. For example, $3$ and $5$ are both natural numbers and so is $3+5=8$.</p>
 <p>But what if we subtract one natural number from another, is the result always in $\mathbb{N}$?  Clearly not, since subtraction can result in negative values.</p>
-<p>The set that combines $\mathbb{N}$ with $0$ and all the negative natural numbers $\{..., -3, -2, \}$ is called the set of <strong>integers</strong> and is represented by the symbol $\mathbb{Z}$.</p>
-<p>$$\mathbb{Z}=\{...,-3,-2,-1,0,1,2,3,...\}.$$</p>
+<p>The set that combines $\mathbb{N}$ with $0$ and all the negative natural numbers $ \left\lbrace ..., -3, -2, \right\rbrace$ is called the set of <strong>integers</strong> and is represented by the symbol $\mathbb{Z}$.</p>
+<p>[
+\mathbb{Z} = \left\lbrace ...,-3,-2,-1,0,1,2,3,... \right\rbrace
+]</p>
 <p>We can add and subtract integers as much as we like and the result will always be an integer.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>True or False:  $5$ is an integer. <details><summary>Answer</summary><strong>True</strong>.  It is also a natural number.</details></p>
 </li>
@@ -254,7 +260,9 @@ $$</p>
 <p>While multiplying two integers always results in another integer, division is more complicated.</p>
 <p>If $p$ and $q$ are integers, then the fraction $\frac{p}{q}$ could be an integer, but it doesn't have to be. For instance $\frac{6}{2}=3$ is an integer, but $\frac{5}{2}$ is not.</p>
 <p>The set that contains all the fractions, or ratios, of integers, is called the set of <strong>rational numbers</strong>, or $\mathbb{Q}$.</p>
-<p>$$\mathbb{Q} = \left\lbrace \frac{p}{q}  \thinspace \bigg|  \thinspace {p} \text{ and } {q} \text{ are integers with } q\neq0 \right\rbrace.$$</p>
+<p>[
+\mathbb{Q} = \left\lbrace \frac{p}{q}  \thinspace \bigg|  \thinspace {p} \text{ and } {q} \text{ are integers with } q\neq0 \right\rbrace.
+]</p>
 <p>Since division by $0$ is not well defined, ratios like $\frac{4}{0}$ and $\frac{-2}{0}$ are undefined and not included in the set of rational numbers.</p>
 <p>Also notice that since any integer can be written as a fraction, the set of rational numbers includes all of the integers.</p>
 <p>Rational numbers may be written as fractions or as decimals. The decimal expansion of a rational number will either terminate or eventually have a pattern that repeats forever, as these examples illustrate:
@@ -267,35 +275,35 @@ $$</p>
 \end{align}
 ]
 The set of rational numbers is special because you can add, subtract, multiply and divide as much as you want and never end up with a different type of number---the answer will always be a rational number.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Find three different ways to write $7$ as a rational number.  <details><summary>Answer</summary>$\frac{7}{1}$, $\frac{14}{2}$, and $\frac{21}{3}$ are a few of the many possible answers.</details></p>
 </li>
 <li>
 <p>Write $1.5$ as a rational number.  <details><summary>Answer</summary>To convert decimals to fractions, write the decimal over $1$ then multiply both top and bottom by $10$ for every digit to the right of decimal point.  Then simplify as needed.
-$$\begin{align}
+[
+\begin{align}
 1.5 &amp;= \frac{1.5}{1} &amp;&amp; \small \color{#5fa2ce}{\text{put the decimal over a }1} \newline \newline
 &amp; = \frac{15}{10} &amp;&amp; \small \color{#5fa2ce}{\text{multiply top &amp; bottom by }10} \newline \newline
 &amp; = \frac{3}{2} &amp;&amp; \small \color{#5fa2ce}{\text{simplify}}
-\end{align}$$</details></p>
+\end{align}
+]</details></p>
 </li>
 <li>
 <p>Write $\frac{3}{2} + \frac{5}{6}$ as a rational number.  <details><summary>Answer</summary>Remember that to add fractions they must have the same denominator.  So first rewrite $\frac{3}{2}$ as $\frac{9}{6}$.  Then add and simplify.
-$$\begin{align}
+[\begin{align}
 \frac{3}{2} + \frac{5}{6} &amp;= \frac{9}{6} + \frac{5}{6} \newline
 &amp;= \frac{14}{6} \newline
 &amp;= \frac{7}{3}
-\end{align}$$</details></p>
+\end{align}]</details></p>
 </li>
 <li>
 <p>Write $\frac{3}{2} \div \frac{5}{6}$ as a rational number.  <details><summary>Answer</summary>Dividing fractions is the same as multiplying by the reciprocal.  So
-$$\begin{align}
+[\begin{align}
 \frac{3}{2} \div \frac{5}{6} &amp;= \frac{3}{2} \times \frac{6}{5} \newline
 &amp;= \frac{18}{10} \newline
 &amp;= \frac{9}{5}
-\end{align}$$</details></p>
+\end{align}]</details></p>
 </li>
 </ol>
 </div>
@@ -314,9 +322,7 @@ $$\begin{align}
 <p>For example, $-0.5$, $\sqrt{2}$, $\frac{7}{3}$, $-0.248$, and  $8.\overline{261}$ are all real numbers.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/real_numbers.png#center" alt=""></p>
 <p>The set of real numbers is closed under all standard operations including powers and some roots.  In fact, you can do just about anything to a real number and the result will still be a real number, as long as you do not take the square root of a negative value, something we will look into in a later chapter.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>True or False:  $ 2^{3}+9.5-\frac{8}{\sqrt{2}}$ is a real number. <details><summary>Answer</summary><strong>True</strong>.  Since we did not divide by zero and did not take the square root of a negative, the result must be a real number.</br></br></details></p>
 </li>
@@ -337,24 +343,22 @@ $$\begin{align}
 <h2 id="intervals-of-real-numbers">Intervals of Real Numbers</h2>
 <p>The set of all values in between two numbers is called an <strong>interval</strong>.  For instance, all of the numbers between $0$ and $3$ make an interval.</p>
 <p>There are several ways to describe this interval.  One way is to use inequalities and write it as a set.</p>
-<p>$$\lbrace x \thinspace \vert \thinspace 0&lt;x&lt;3  \rbrace$$</p>
+<p>[\lbrace x \thinspace \vert \thinspace 0&lt;x&lt;3  \rbrace]</p>
 <p>Another option is to color the interval on a numberline</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/interval_open_0_to_3.svg#center" alt=""></p>
 <p>Open circles indicate that the numbers $0$ and $3$ are <strong>not</strong> included in the interval.</p>
 <p>A third option is to use <strong>interval notation</strong>, which is a written abbreviation of the number line.  In this example the interval notation would be</p>
-<p>$$(0 , 3)$$</p>
+<p>[(0 , 3)]</p>
 <p>Notice that this mirrors the number line by having the lowest number on the left, with parenthesis taking the place of the open circles.</p>
 <p>Other intervals might include an end point or even extend out toward infinity.  For example, the interval of all numbers greater than or equal to $2$ can be described in any of the following ways</p>
 <ul>
-<li><strong>set notation</strong>: $$\lbrace x\vert-2\leq x&lt;\infty  \rbrace$$</li>
+<li><strong>set notation</strong>: [\lbrace x\vert-2\leq x&lt;\infty  \rbrace]</li>
 <li><strong>number line</strong>: <img src="https://duragauge.github.io/img/chapter-1/interval_closed_-2_to_infinity.svg#center" alt=""></li>
-<li><strong>interval notation</strong>: $$[ -2\thinspace, \thinspace \infty)$$</li>
+<li><strong>interval notation</strong>: [[ -2\thinspace, \thinspace \infty)]</li>
 </ul>
 <p>There are a few subtleties here that deserved to be highlighted.  First, when an endpoint is included, (1) the inequality in set notation includes an equal sign, (2) the circle on the number line is filled in, and (3) the parenthesis in interval notation changes to a square bracket.</p>
 <p>Second, to indicate that an interval continues out toward infinity we use an arrow pointing in the appropriate direction.  Since nothing equals infinity we must always use a parenthesis when writing that part of the interval.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Sketch the interval $\lbrace x \thinspace \vert \thinspace -1&lt; x \leq 4  \rbrace$ on a number line.<details><summary>Answer</summary></br><img src="https://duragauge.github.io/img/chapter-1/interval_open_-1_closed_4.svg" alt="">Because of the equal sign $4$ is included but $-1$ is not, so we put an open circle at $-1$ and a closed circle at $4$.</details></p>
 </li>
@@ -383,7 +387,7 @@ $$\begin{align}
       </iframe>
 </div>
 <p>Once we've identified the union on the number line, it's much easier to write it in interval notation.</p>
-<p>$$(-1, \infty) \bigcup  [-3,0 ) = [-3, \infty)$$</p>
+<p>[(-1, \infty) \bigcup  [-3,0 ) = [-3, \infty)]</p>
 <p>The <strong>intersection</strong> of the same two intervals is smaller, since it is only where they overlap.  You can explore the intersection in the figure below.</p>
 <div class="geogebra" style="padding-top: 23.81%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/gmuyj24e/border/fafafa" scrolling="no"
@@ -397,10 +401,8 @@ $$\begin{align}
       </iframe>
 </div>
 <p>Now that we can see the intersection visually, the notation follows naturally.</p>
-<p>$$(-1, \infty) \bigcap  [-3,0 ) = (-1, 0)$$</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<p>[(-1, \infty) \bigcap  [-3,0 ) = (-1, 0)]</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Sketch the intersection of two intervals shown below
 <img src="https://duragauge.github.io/img/chapter-1/interval_open_-8_open_-2.svg" alt=""> <img src="https://duragauge.github.io/img/chapter-1/interval_closed_-6_open_2.svg" alt=""> <details><summary>Answer</summary><img src="https://duragauge.github.io/img/chapter-1/interval_closed_-6_open_-2.svg" alt=""></details></p>
@@ -422,17 +424,15 @@ $$\begin{align}
 </ol>
 <p>When several of these operations are combined, operations higher on the list should be dealt with before those lower on the list.</p>
 <p>If an expression has more than one operation with equal priority (like multiplication and division) then you work with them from left to right.</p>
- <div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+ <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Evaluate $\frac{4+2(5)}{7}$ <details><summary>Answer</summary>$\frac{4+2(5)}{7}=\frac{14}{7}=2$</details></p>
 </li>
 <li>
-<p>True or False:  $\frac{8}{4+2}=\frac{8}{4}+\frac{8}{2}$ <details><summary>Answer</summary><strong>False</strong>. The correct calculation is $$\frac{8}{4+2}=\frac{8}{6}=\frac{4}{3}$$ which is not the same as $\frac{8}{4}+\frac{8}{2}=2+4=6$.</details></p>
+<p>True or False:  $\frac{8}{4+2}=\frac{8}{4}+\frac{8}{2}$ <details><summary>Answer</summary><strong>False</strong>. The correct calculation is [\frac{8}{4+2}=\frac{8}{6}=\frac{4}{3}] which is not the same as $\frac{8}{4}+\frac{8}{2}=2+4=6$.</details></p>
 </li>
 <li>
-<p>True or False:  $(a+b)^2=a^2+b^2$ <details><summary>Answer</summary><strong>False</strong>. To see why pick any two numbers and check if the expressions are equal.  If $a=2$ and $b=3$, for example, then $(2+3)^2=(5)^2=25$.  But the other side of the equation is $(2)^2+(3)^2=4+9=13$.  Since they are not equal the statement must be false.  <br><br>The true statement would be $$(a+b)^2=a^2+2ab+b^2$$ using distribution.</details></p>
+<p>True or False:  $(a+b)^2=a^2+b^2$ <details><summary>Answer</summary><strong>False</strong>. To see why pick any two numbers and check if the expressions are equal.  If $a=2$ and $b=3$, for example, then $(2+3)^2=(5)^2=25$.  But the other side of the equation is $(2)^2+(3)^2=4+9=13$.  Since they are not equal the statement must be false.  <br><br>The true statement would be [(a+b)^2=a^2+2ab+b^2] using distribution.</details></p>
 </li>
 </ol>
 </div>

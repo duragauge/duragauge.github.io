@@ -128,9 +128,7 @@
 </tbody>
 </table>
 <p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half life model.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$.</li>
 </ol>
 <details><summary>Answer</summary>Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details>
@@ -145,9 +143,7 @@
 <p>Suppose you initially count $3$ yeast colonies, and that $24$ hours later the number of colonies has jumped to $87$.</p>
 <p>In this next example, are asked to finding a continuous growth model .
 To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must use the given data to find the continuous growth rate $k$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Using $a=3$, $t=24$ and $f(t)=87$ find the equation we must solve to find $k$.  You do not need to solve the equation.</li>
 </ol>
 <details><summary>Answer</summary>We need to solve the equation $87=3 e^{k \thinspace 24}$ for $k$.</details>
@@ -184,11 +180,11 @@ To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models th
 </tbody>
 </table>
 <p>We now know that the yeast are growing at a continuous rate of 14%, and that the function modeling their growth is</p>
-<p>$$f(t)=3 e^{0.14 t}$$</p>
+<p>[
+f(t)=3 e^{0.14 t}
+]</p>
 <p>models the number of yeast colonies $t$ hours after the experiment began.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>We were told that there were 87 yeast colonies after 24 hours.  According to this model, how many will there be after 48 hours? <details><summary>Answer</summary>$f(48)=3 e^{0.14(48)}\approx2486$</details></p>
 </li>
@@ -244,9 +240,7 @@ Mercury levels in large fish can be over a million times higher than that found 
 </tbody>
 </table>
 <p>From this we see that the mercury concentration can be modeled by $f(t)=15e^{-0.0138  \thinspace  t}$.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Now that we know the model is $f(t)=15e^{-0.0138 \thinspace t}$, how do we figure out the amount of time it will take to reach a safe level of  5.8$\mu$/L?</li>
 </ol>
 <details><summary>Answer</summary>We need to set $f(t)=5.8$ and solve the equation for $t$.</details>
@@ -284,9 +278,7 @@ Mercury levels in large fish can be over a million times higher than that found 
 </tbody>
 </table>
 <p>It appears that it will take roughly 69 days for the blood mercury concentration to return to a safe level.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>How would this process have changed if you were asked to find the biological half life of mercury in the blood stream?</li>
 </ol>
 <details><summary>Answer</summary>To find the half life we would need to solve for $t$ with $f(t)=\frac{1}{2} a$ where $a$ is the initial concentration.  The solving steps would be nearly identical to what was done above.</details>
@@ -323,7 +315,9 @@ Mercury levels in large fish can be over a million times higher than that found 
 </tbody>
 </table>
 <p>This shows that the half life of mercury in the body is about 50 days.  By taking $c=50$, we conclude that the function</p>
-<p>$$f(x)=15\left(\frac{1}{2}\right)^{x/50}$$</p>
+<p>[
+f(x)=15\left(\frac{1}{2}\right)^{x/50}
+]</p>
 <p>is an equivalent model for mercury concentration.</p>
 <h2 id="fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</h2>
 <p>When provided with data, it is often possible to use a built in regression program to find the equation of a function that fits the data.</p>
@@ -338,14 +332,14 @@ Mercury levels in large fish can be over a million times higher than that found 
 <p>Since the initial population given is from 1970, it makes sense let our variable $x$ be years since 1970.  After entering the data and running <code>ExpReg</code></p>
 <p><img src="https://duragauge.github.io/img/chapter-3/expreg_1.png#center" alt=""></p>
 <p>we see that the population of Wheeler county Oregon can be modeled by the function $f(x)=1849(0.986)^{x}$, where $x$ is years since 1970.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
-<li>Using this model, interpolate the population for 1980.  How does this prediction match the actual US Census value of 1513 people?  <details><summary>Answer</summary>Since 1980 is in between our two data points, we expect that interpolating the value for 1980 should be reasonably close.  With $x = 10$ we get $$f(10) = 1849e^{-0.014 \cdot 10} \approx = 1607$$ which isn't too far off the actual US Census value of 1513.</details></li>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Using this model, interpolate the population for 1980.  How does this prediction match the actual US Census value of 1513 people?  <details><summary>Answer</summary>Since 1980 is in between our two data points, we expect that interpolating the value for 1980 should be reasonably close.  With $x = 10$ we get [ f(10) = 1849e^{-0.014 \cdot 10} \approx = 1607 ] which isn't too far off the actual US Census value of 1513.</details></li>
 </ol>
 </div>
 <p>Let's use our model $f(x) = 1849(0.986)^{x}$, where $x$ is years since 1970, to predict the population of Wheeler county in 2010.    Using $x = 40$ we have</p>
-<p>$$f(40) = 1849(0.986)^{40} \approx 1052$$</p>
+<p>[
+f(40) = 1849(0.986)^{40} \approx 1052
+]</p>
 <p>meaning that our model predicts that the population should have been 1052 people in 2010.  But according to the US Census, Wheeler county actually had 1441 residents in 2010!</p>
 <p>Inaccuracies like this are a risk any time we extrapolate our results far into the future, especially if the model is built on limited data.  A more reasonable approach would be to gather all of the available census data and then make a model.  The data and scatterplot below includes US Census data from 1970 through 2010.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/wheeler_scatterplot.png#center" alt=""></p>
@@ -354,9 +348,7 @@ Mercury levels in large fish can be over a million times higher than that found 
 <p>As we have just seen, it is best to include as much data as possible and consider the shape of the data before selecting a model.  We can then compare the shape of the data to the shape of known functions and decide which model to use.  For instance, the three data sets below appear to follow exponential, logarithmic, and logistic trends.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/scatterplots.svg#center" alt=""></p>
 <p>Remember, it is easy to mistakenly identify data that comes from a power function as having an exponential or logarithmic trend.  The log transforms and log plots discussed in can help us be fairly confident in the nature of the data.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
 <ol>
 <li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""></li>
 </ol>
@@ -413,9 +405,7 @@ Mercury levels in large fish can be over a million times higher than that found 
 <p>Which would fit the data better: an exponential model, a logarithmic model, or a logistic model?  To find out, we start by creating a scatterplot of the data.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_scatterplot.png#center" alt=""></p>
 <p>Looking at the scatterplot helps us narrow down the list of possible models.  For instance, the data does not appear to be linear, so no attempt will be made at running <code>LinReg</code> and trying to fit a line to the data.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Of all the functions you've seen, which one(s) do you think have a shape similar to the shape of this scatterplot?</li>
 </ol>
 <details><summary>Answer</summary>Of the shapes we have seen, this might match a logarithmic function, a logistic function, or even a quadratic.  In a moment we will try each of these and choose the one that appears to fit best.</details>
@@ -478,9 +468,7 @@ Mercury levels in large fish can be over a million times higher than that found 
 <p>A scatterplot of the data shows an increasing, concave down trend.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/educator_scatterplot.png#center" alt=""></p>
 <p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
-<div class="alert alert-success">
-  <h4>QUICK CHECK</h4>
-  <ol>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit?</li>
 </ol>
 <details><summary>Answer</summary>The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details>
