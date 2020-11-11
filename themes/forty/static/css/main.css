@@ -3785,10 +3785,6 @@ div#table_of_contents ul {
 	  break-inside: avoid;
 	}
 
-	details {
-		display: none !important;
-	}
-
 	.no-print, .no-print * {
 		display: none !important;
 	}

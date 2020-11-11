@@ -126,7 +126,7 @@
 <p>If we insert $x = 4$ into $\color{blue}{g}$ then $\color{blue}{6}$ comes out.  Now take $\color{blue}{6}$ and use it as the input to $\color{red}{f}$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_laundry_values.svg" alt=""></p>
 <p>The result is the composition $\color{red}{f(}\color{blue}{g(}4\color{blue}{)}\color{red}{)}=60$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose the example above had started with $x = 1$ instead.  What would be the result of the composition?  <details><summary>Answer</summary>Putting $x =1$ into $\color{blue}{g}$ gives $\color{blue}{g(}1\color{blue}{)}=\color{blue}{3}$.  Putting $\color{blue}{3}$ into $\color{red}{f}$  produces  $\color{red}{f(}\color{blue}{3}\color{red}{)}=\color{red}{30}$.  So $\color{red}{f(}\color{blue}{g(}1\color{blue}{)}\color{red}{)}=30$ is the result of the composition.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose the example above had started with $x = 1$ instead.  What would be the result of the composition?  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Putting $x =1$ into $\color{blue}{g}$ gives $\color{blue}{g(}1\color{blue}{)}=\color{blue}{3}$.  Putting $\color{blue}{3}$ into $\color{red}{f}$  produces  $\color{red}{f(}\color{blue}{3}\color{red}{)}=\color{red}{30}$.  So $\color{red}{f(}\color{blue}{g(}1\color{blue}{)}\color{red}{)}=30$ is the result of the composition.</details></div>
 <h2 id="understand-composition-of-functions">Understand Composition of Functions</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-4/hanh-nguyen-j6DH45Bflho-unsplash.jpg"  title="Photo by Hanh Nguyen on Unsplash"  alt="Photo by Hanh Nguyen on Unsplash" style="display:block; width:100%; height:auto;" >
@@ -138,7 +138,7 @@
 <p>Recall that the Social Security deduction for someone who is self-employed was given by the function $S(P)=0.153P$, where $P$ are the profits earned.</p>
 <p>But the profit depends on how many items are sold.  In the cupcake example, for instance, $P(x)=1.85x -\frac{0.85}{x}$ where $x$ is the number of cupcakes sold.</p>
 <p>If you sold $1000$ cupcakes you would need to first calculate $P(1000)$ before using that value as the input to $S(P)$ to find the Social Security deduction.  This is composition since you are using the output of one function as the input to a second function.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the functions above, find the Social Security deduction on the profits from selling $1000$ cupcakes. <details><summary>Answer</summary>First find [P(1000)=1.85(1000) - \frac{0.85}{1000}\approx$1850]
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the functions above, find the Social Security deduction on the profits from selling $1000$ cupcakes. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />First find [P(1000)=1.85(1000) - \frac{0.85}{1000}\approx$1850]
 Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <h2 id="composition-notation">Composition Notation</h2>
 <p>Since composition is a new way of combining functions, it needs its own symbol.  The symbol for composition is a small open circle $\circ$ .  If $\color{red}{f}$ and $\color{blue}{g}$ are functions, the composition of $\color{red}{f}$ with $\color{blue}{g}$ is the function given by</p>
@@ -146,7 +146,7 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p>For example, using $\color{red}{f(x)=2x^{3}}$ and $\color{blue}{g(x)=\frac{x+3}{2}}$ as our two functions, we can find $(f \circ g)(1)$ as follows:</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_b.svg#center" alt=""></p>
 <p>Notice that the output of the $\color{blue}{g}$ function was used as the input of the $\color{red}{f}$ function.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, find $(f \circ g)(7)$.   <details><summary>Answer</summary>[
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, find $(f \circ g)(7)$.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
 \begin{align}
 (f \circ g)(7) &amp;= f(g(7) \newline
 &amp;=f\left(\frac{7+3}{2}\right) \newline
@@ -161,7 +161,7 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p>This begs the question: Is the operation of composition commutative?  Can we compose functions in any order we like, or is the order important?</p>
 <p>Our laundry analogy suggests that composition may not be commutative, since drying clothes before washing them is not the same as first washing and then drying.</p>
 <p>But the analogy is merely a suggestion.  To get real evidence we need to look at some functions and compare $(f \circ g)(x)$ with $(g \circ f)(x)$.</p>
-<p>Let's choose two simple functions to work with $\color{red}{f(x)=x+4}$ and $\color{blue}{x^2}$.</p>
+<p>Let's choose two simple functions to work with $\color{red}{f(x)=x+4}$ and $\color{blue}{g(x)=x^2}$.</p>
 <p>First we compute $(f \circ g)(5)$ and we'll compare that value with $(g \circ f)(5)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_a.svg#center" alt=""></p>
 <p>If we compare this with $(g \circ f)(5)$</p>
@@ -175,19 +175,19 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the table above to evaluate the following, if possible.</p>
 <ol>
 <li>
-<p>$(f \circ g)(2)$<details><summary>Answer</summary>$f(g(2))=f(-1)=-13$</details></p>
+<p>$(f \circ g)(2)$<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(g(2))=f(-1)=-13$</details></p>
 </li>
 <li>
-<p>$(g \circ f)(0)$ <details><summary>Answer</summary>$g(f(0))=g(1)=3$</details></p>
+<p>$(g \circ f)(0)$ <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$g(f(0))=g(1)=3$</details></p>
 </li>
 <li>
-<p>$(f \circ g)(1)$ <details><summary>Answer</summary>$f(g(3))=f(5)=&quot;undefined&quot;$</details></p>
+<p>$(f \circ g)(1)$ <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(g(3))=f(5)=&quot;undefined&quot;$</details></p>
 </li>
 <li>
-<p>$(g \circ f)(2)$ <details><summary>Answer</summary>$g(f(2))=g(7)=&quot;undefined&quot;$</details></p>
+<p>$(g \circ f)(2)$ <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$g(f(2))=g(7)=&quot;undefined&quot;$</details></p>
 </li>
 <li>
-<p>$(g \circ g)(5)$ <details><summary>Answer</summary>$g(g(5))=g(2)=-1$</details></p>
+<p>$(g \circ g)(5)$ <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$g(g(5))=g(2)=-1$</details></p>
 </li>
 </ol>
 </div>
@@ -210,13 +210,13 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p>Since $x = 1$ and $x = 3$ are not valid inputs to
 $h(x)=(f \circ g)(x)$ we conclude that the domain is the set $ \lbrace 2,4,5 \rbrace $.</p>
 <p>Notice again that the domain of $h=f \circ g$ is always a subset of the domain of $\color{blue}{g}$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same function tables as above, what is the domain of $(g \circ f)(x)$?   <details><summary>Answer</summary>The domain of $(g \circ f)(x)$ is the set {-2,0,1}.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same function tables as above, what is the domain of $(g \circ f)(x)$?   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The domain of $(g \circ f)(x)$ is the set {-2,0,1}.</details></div>
 <h2 id="equation-of-f-circ-g">Equation of $f \circ g$</h2>
 <p>When $\color{red}{f}$ and $\color{blue}{g}$ are defined by equations, we find the equation for $h=f \circ g$ by composing the two equations rather than working with individual values.</p>
 <p>For instance, if $\color{red}{f(x)=3x^2-x+2}$ and $\color{blue}{g(x)=2^x}$ then</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_4.svg#center" alt=""></p>
 <p>The benefit of having an equation for $h=f \circ g$ is that it allows you to evaluate the composition more efficiently.  You need only deal with one function instead of two.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, verify that $(f \circ g)(1)$ gives the same value as $h(1)$.   <details><summary>Answer</summary>[ \begin{align}
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, verify that $(f \circ g)(1)$ gives the same value as $h(1)$.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \begin{align}
 (f \circ g)(1)&amp;=f(g(1)) \newline
 &amp;=f(2^1) \newline
 &amp;=f(2) \newline
@@ -233,10 +233,10 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 <p>Notice that this domain of $x&gt;0$ is a subset of the domain of $g$, which is all real numbers.  Assuming $h=f \circ g$ exits, its domain is always either the entire domain of $g$ or a subset of it.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>If $f(x)=\sqrt{x}$ and $g(x)=8-x^{3}$, find the equation for $h(x)=(f \circ g)(x)$ and state its domain.   <details><summary>Answer</summary>$h(x)=(f \circ g)(x)=\sqrt{8-x^{3}}$. Since only positive numbers, or zero, have real square roots, we need $8-x^{3}\geq0$, or $x\leq2$.  So while the domain of $g$ is all real numbers, the domain of $h=f \circ g$ is $x \leq 2$.</details></p>
+<p>If $f(x)=\sqrt{x}$ and $g(x)=8-x^{3}$, find the equation for $h(x)=(f \circ g)(x)$ and state its domain.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$h(x)=(f \circ g)(x)=\sqrt{8-x^{3}}$. Since only positive numbers, or zero, have real square roots, we need $8-x^{3}\geq0$, or $x\leq2$.  So while the domain of $g$ is all real numbers, the domain of $h=f \circ g$ is $x \leq 2$.</details></p>
 </li>
 <li>
-<p>If $f(x)=1/x$ and $g(x)=e^{x}$, find the equation for $h(x)=(f \circ g)(x)$and state its domain.   <details><summary>Answer</summary>$h(x)=(f \circ g)(x)=e^{1/x}$.  Any real number can be inserted into the exponential function, so it does not impose any extra restrictions on the domain of $h=f \circ g$.  We conclude that the domain of $h=f \circ g$ is the same as the domain of $g$, which is $x \neq 0$.</details></p>
+<p>If $f(x)=1/x$ and $g(x)=e^{x}$, find the equation for $h(x)=(f \circ g)(x)$and state its domain.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$h(x)=(f \circ g)(x)=e^{1/x}$.  Any real number can be inserted into the exponential function, so it does not impose any extra restrictions on the domain of $h=f \circ g$.  We conclude that the domain of $h=f \circ g$ is the same as the domain of $g$, which is $x \neq 0$.</details></p>
 </li>
 </ol>
 </div>
@@ -249,7 +249,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_calculator.svg" alt=""></p>
 <p>With the graph it is easier to analyze the behavior of the function.  For instance, it is now clear that the function $h$ has a maximum of $h(x)=1$ at $x=0$.  We could also discuss asymptotes and regions where the function is increasing or decreasing as well as domain and range.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Using the graph above, or a graph on your own calculator, discuss domain, range, asymptotes, etc. of $h(x)=(f \circ g)(x)=e^{-x^{2}}$.</p>
-<details><summary>Answer</summary><ul>
+<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><ul>
 <li>The domain appears to be all real numbers.</li>
 <li>The range looks to be $(0,1]$.</li>
 <li>The x-axis appears to be a horizontal asymptote.</li>
