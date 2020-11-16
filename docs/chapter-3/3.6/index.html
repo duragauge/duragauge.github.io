@@ -129,13 +129,13 @@
 </table>
 <p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half life model.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$.</li>
+<li>
+<p>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details></p>
+</li>
+<li>
+<p>Use the identity $k = \ln (b)$ to rewrite $f(x)=138(1.493)^{x}$ as a continuous growth exponential function of the form $f(t)=a \thinspace e^{k  t}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $\ln(1.493)=0.4$, the equivalent continuous growth model is $f(t)=138 \thinspace e^{0.4 t}$.</details></p>
+</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details>
-<ol>
-<li>Use the identity $k = \ln (b)$ to rewrite $f(x)=138(1.493)^{x}$ as a continuous growth exponential function of the form $f(t)=a \thinspace e^{k  t}$.</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $\ln(1.493)=0.4$, the equivalent continuous growth model is $f(t)=138 \thinspace e^{0.4 t}$.</details>
 </div>
 <h2 id="create-exponential-models">Create Exponential Models</h2>
 <p><img src="https://duragauge.github.io/img/chapter-3/petri_dishes.png#center" alt=""></p>
@@ -350,21 +350,19 @@ f(40) = 1849(0.986)^{40} \approx 1052
 <p>Remember, it is easy to mistakenly identify data that comes from a power function as having an exponential or logarithmic trend.  The log transforms and log plots discussed in can help us be fairly confident in the nature of the data.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
 <ol>
-<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""></li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""> <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data looks similar to a quadratic function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_linear.svg#center" alt=""> <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a linear function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_sqrt.svg#center" alt=""> <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data is similar to a power function with a power of $0&lt;p&lt;1$, such as the square root function.  This shape is also visually similar to a logarithmic function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_reciprocal.svg#center" alt=""> <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a power function with a power of $p&lt;0$, such as the reciprocal function.  This shape is also similar to an exponential decay function.</details></p>
+</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data looks similar to a quadratic function.</details>
-<ol>
-<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_linear.svg#center" alt=""></li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a linear function.</details>
-<ol>
-<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_sqrt.svg#center" alt=""></li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data is similar to a power function with a power of $0&lt;p&lt;1$, such as the square root function.  This shape is also visually similar to a logarithmic function.</details>
-<ol>
-<li>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_reciprocal.svg#center" alt=""></li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a power function with a power of $p&lt;0$, such as the reciprocal function.  This shape is also similar to an exponential decay function.</details>
 </div>
 <p><img src="https://duragauge.github.io/img/chapter-3/standing_mile.gif#center" alt=""></p>
 <p>In the summer of 2005, Road and Track magazine gathered 13 cars, 1 motorcycle, and a Navy F/A-18 Hornet fighter jet for a one-mile long acceleration test at the Lemoore Naval Air Base in California.  The first-placed Lola Champ Car (yellow car on the bottom right) crossed the finish line in just 24.2 seconds!  The following table show how long it took the Lola to reach different speeds.</p>
@@ -469,9 +467,8 @@ f(40) = 1849(0.986)^{40} \approx 1052
 <p><img src="https://duragauge.github.io/img/chapter-3/educator_scatterplot.png#center" alt=""></p>
 <p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit?</li>
+<li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details></li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details>
 </div>
 <p>Before running any regressions, we stop to point out that our normal practice letting $x$ represent years since 1990 could be problematic, since $0$ is not in the domain of any logarithmic function.  To eliminate that possibility, we let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
 <table>
