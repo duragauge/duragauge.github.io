@@ -142,17 +142,16 @@ was a young boy in Germany it was common for students to do their work on small 
 ]</p>
 <p>In English the words &quot;sequence&quot; and &quot;series&quot; are often used interchangeably without much difference.  For example, a &quot;series of events&quot; generally means the same as &quot;a sequence of events&quot;.  In mathematics, however, they are different and we'll need to pay close attention to which word is used.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Is $17+27+37+47$ a sequence or a series?</li>
+<li>
+<p>Is $17+27+37+47$ a sequence or a series? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a series since we are adding up the numbers $17, 27, 37, 47$.</details></p>
+</li>
+<li>
+<p>Write the series for the sequence $5, \thinspace 10, \thinspace 15, \thinspace 20, \thinspace 25$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[5+10+15+20+25]</details></p>
+</li>
+<li>
+<p>Write a series for the sum of the first four terms of the sequence $a_n=2^n$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be [2^1+2^2+2^3+2^4].</details></p>
+</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a series since we are adding up the numbers $17, 27, 37, 47$.</details>
-<ol>
-<li>Write the series for the sequence $5, \thinspace 10, \thinspace 15, \thinspace 20, \thinspace 25$.</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[5+10+15+20+25]</details>
-<ol>
-<li>Write a series for the sum of the first four terms of the sequence $a_n=2^n$.</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be [2^1+2^2+2^3+2^4].</details>
 </div>
 <h2 id="arithmetic-series">Arithmetic Series</h2>
 <p>We are now at a point where we can start to think about how Gauss might have be able to find his sum.</p>
@@ -191,37 +190,36 @@ S_{30}&amp;= \frac{65}{2} \bigl(380+252\bigr) &amp;&amp; \small \color{#5fa2ce}{
 <input type="checkbox" id="sn-Gauss" class="margin-toggle" />
 <span class="sidenote">Many retellings of this famous story exist.  The earliest version was written in 1856 by <a href="https://archive.org/details/gauss00waltgoog/page/n15">Wolfgang Sartorius</a>, who worked with Gauss at the University of Göttingen.  <a href="http://bit-player.org/2007/a-mathematical-fable-revisited">Brian Hayes</a> compares many of them in this <a href="https://duragauge.github.io/img/chapter-6/Gauss's_Day_of_Reckoning_by_Brian_Hayes">Scientific American article</a>.</span></p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$?</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><div>Since $n=30$, $a_1=16$ and $a\_{30}=-129$, the sum is
-\begin{align}
-S\_{30} &= \frac{30}{2} \bigl(16-129 \bigr)\newline
-&= -1695
+<li>
+<p>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $n=30$, $a_1=16$ and $a_{30}=-129$, the sum is
+[ \begin{align}
+S_{30} &amp;= \frac{30}{2} \bigl(16-129 \bigr)\newline
+&amp;= -1695
 \end{align}
-</div>
-</details>
-<ol>
-<li>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \thinspace $.</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><div>
-First find the equation for the sequence that creates the terms.
-\[a\_{n}= 380-2(n-1)\]
+]</details></p>
+</li>
+<li>
+<p>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \thinspace $. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />First find the equation for the sequence that creates the terms.
+[a_{n}= 380-2(n-1)]
 Then use $a_n=80$ to find $n$.
-\begin{align}
-a\_{n} &=  380-2(n-1) &&  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
-80  &=  32+4(n-1)  &&  \small \color{#5fa2ce}{\text{Replace $a\_{n}=80$}} \newline
-48  &=  4(n-1)     &&  \small \color{#5fa2ce}{\text{Subtract $32$}} \newline
-12  &=  n-1        &&  \small \color{#5fa2ce}{\text{Divide by $4$}} \newline
-13  &=  n          &&  \small \color{#5fa2ce}{\text{Add $1$}}
+[ \begin{align}
+a_{n} &amp;=  380-2(n-1) &amp;&amp;  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
+80  &amp;=  32+4(n-1)  &amp;&amp;  \small \color{#5fa2ce}{\text{Replace $a_{n}=80$}} \newline
+48  &amp;=  4(n-1)     &amp;&amp;  \small \color{#5fa2ce}{\text{Subtract $32$}} \newline
+12  &amp;=  n-1        &amp;&amp;  \small \color{#5fa2ce}{\text{Divide by $4$}} \newline
+13  &amp;=  n          &amp;&amp;  \small \color{#5fa2ce}{\text{Add $1$}}
 \end{align}
+]
 And finally use the summation formula.
+[
 \begin{align}
-S\_{n}  &= \frac{n}{2}\bigl(a_1+a_n\bigr) && \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
-S\_{13} &= \frac{13}{2} \bigl(32+80\bigr) && \small \color{#5fa2ce}{\text{Insert values}} \newline
-        &= 728                            && \small \color{#5fa2ce}{\text{Evaluate}}
+S_{n}  &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
+S_{13} &amp;= \frac{13}{2} \bigl(32+80\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 728                            &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
 \end{align}
-</div>
-</details>
+]</details></p>
+</li>
+</ol>
 </div>
 <h2 id="finite-geometric-series">Finite Geometric Series</h2>
 <p>It bears repeating that the formula above only works if the sequence is arithmetic.  If we encounter a geometric series then there is a completely different formula.</p>
@@ -264,18 +262,15 @@ S_{64} &amp;= \frac{0.01 \bigl(1-(2)^{64}\bigr)}{1-(2)} &amp;&amp; \small \color
 ]</p>
 <p>To help put that in perspective, every person on Earth would need to contribute more than 20 million dollars each to fill the chess board with pennies!</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career?</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><div>Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
-\[
+<li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
+[
 \begin{align}
-S\_{n}  &= \frac{a_1(1-r^n)}{1-r} && \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
-S\_{50} &= \frac{25000 \bigl(1-(1.03)^{50}\bigr)}{1-(1.03)} && \small \color{#5fa2ce}{\text{Insert values}} \newline
-        &= \$2,819,921.68 && \small \color{#5fa2ce}{\text{Evaluate}}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{50} &amp;= \frac{25000 \bigl(1-(1.03)^{50}\bigr)}{1-(1.03)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= $2,819,921.68 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
 \end{align}
-\]
-</div>
-</details>
+]</details></li>
+</ol>
 </div>
 <h2 id="infinite-geometric-series">Infinite Geometric Series</h2>
 <p>Not that long ago most music was sold on compact disks, or CDs.<br>
@@ -338,23 +333,21 @@ S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infin
 </div>
 <br>
 <ol>
-<li>Before CDs there were cassette tapes, and they faced an even more rapid demise.  If 76 million cassettes were sold in 2000 and that amount decreases by 55% per year, how many cassette tapes will be sold from 2000 until the end of time?</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><div>Using $a_1=76$ and $r=.45$ the infinite geometric series formula gives
-\[
+<li>
+<p>Before CDs there were cassette tapes, and they faced an even more rapid demise.  If 76 million cassettes were sold in 2000 and that amount decreases by 55% per year, how many cassette tapes will be sold from 2000 until the end of time? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a_1=76$ and $r=.45$ the infinite geometric series formula gives
+[
 \begin{align}
-S\_{\infty}  &= \frac{a_1}{1-r} && \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
- &= \frac{76}{1-(0.45)} && \small \color{#5fa2ce}{\text{Insert values}} \newline
-        &= 138.18 && \small \color{#5fa2ce}{\text{Evaluate}}
+S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
+&amp;= \frac{76}{1-(0.45)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 138.18 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
 \end{align}
-\]
-and we conclude that the total number of cassette tapes sold from 2000 will be 138.18 million, assuming the 55% decline continues.
-</div>
-</details>
-<ol>
-<li>Why is there no formula for an infinite arithmetic series?</li>
+]
+and we conclude that the total number of cassette tapes sold from 2000 will be 138.18 million, assuming the 55% decline continues.</details></p>
+</li>
+<li>
+<p>Why is there no formula for an infinite arithmetic series? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />An infinite geometric series only has a sum if each new value is sufficiently smaller than the previous number and eventually shrinks toward $0$ (that's why we need $-1&lt;r&lt;1$).  The terms in an arithmetic are evenly spaced, so shrinking towards $0$ is impossible.  If you add up an infinite number of terms from an arithmetic series you would approach $\infty$ or $-\infty$.</details></p>
+</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />An infinite geometric series only has a sum if each new value is sufficiently smaller than the previous number and eventually shrinks toward $0$ (that's why we need $-1&lt;r&lt;1$).  The terms in an arithmetic are evenly spaced, so shrinking towards $0$ is impossible.  If you add up an infinite number of terms from an arithmetic series you would approach $\infty$ or $-\infty$.</details>
 </div>
 <h2 id="summation-notation">Summation Notation</h2>
 <p>When a series has more than a couple of terms there is a compact notation that helps us avoid having to write out a long string of sums.</p>
@@ -393,13 +386,13 @@ and we conclude that the total number of cassette tapes sold from 2000 will be 1
 <p>[\Large \sum_{n=1}^{15} (2n+1)]</p>
 <p>If we had wanted to skip the first three terms and start our series at $9$ then we would adjust the sigma notation so it begins at $n=4$.  And by changing the number on top of the $\Sigma$ we could end the series at a different term.  This makes summation notation extremely flexible.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Write Gauss's series $ \thinspace 1 + 2 + 3 + \cdots + 100 \thinspace $ in summation notation.</li>
+<li>
+<p>Write Gauss's series $ \thinspace 1 + 2 + 3 + \cdots + 100 \thinspace $ in summation notation. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=1}^{100} n]</details></p>
+</li>
+<li>
+<p>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=10}^{82} n]</details></p>
+</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=1}^{100} n]</details>
-<ol>
-<li>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd.</li>
-</ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=10}^{82} n]</details>
 </div>
 
                         </div>
