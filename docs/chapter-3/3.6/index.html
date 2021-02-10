@@ -82,8 +82,13 @@
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#convert-between-exponential-models">Convert Between Exponential Models</a></li>
-    <li><a href="#create-exponential-models">Create Exponential Models</a></li>
-    <li><a href="#create-exponential-models-1">Create Exponential Models</a></li>
+    <li><a href="#create-exponential-models">Create Exponential Models</a>
+      <ul>
+        <li><a href="#population-growth">Population Growth</a></li>
+        <li><a href="#continuous-biological-decay">Continuous Biological Decay</a></li>
+        <li><a href="#biological-half-life">Biological Half-Life</a></li>
+      </ul>
+    </li>
     <li><a href="#fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
@@ -127,7 +132,7 @@
 </tr>
 </tbody>
 </table>
-<p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half life model.</p>
+<p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half-life model.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details></p>
@@ -138,11 +143,11 @@
 </ol>
 </div>
 <h2 id="create-exponential-models">Create Exponential Models</h2>
+<h3 id="population-growth">Population Growth</h3>
 <p><img src="https://duragauge.github.io/img/chapter-3/petri_dishes.png#center" alt=""></p>
 <p>A common experiment in college biology labs is to incubate bakers' yeast in a petri dish filled with a nutrient-rich solution.  As the yeast grows groups of cells, called colonies, begin to appear as small white balls.</p>
 <p>Suppose you initially count $3$ yeast colonies, and that $24$ hours later the number of colonies has jumped to $87$.</p>
-<p>In this next example, are asked to finding a continuous growth model .
-To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must use the given data to find the continuous growth rate $k$.</p>
+<p>To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must first use the given data to find the continuous growth rate $k$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Using $a=3$, $t=24$ and $f(t)=87$ find the equation we must solve to find $k$.  You do not need to solve the equation.</li>
 </ol>
@@ -193,7 +198,7 @@ f(t)=3 e^{0.14 t}
 </li>
 </ol>
 </div>
-<h2 id="create-exponential-models-1">Create Exponential Models</h2>
+<h3 id="continuous-biological-decay">Continuous Biological Decay</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-3/sushi-373588_1280.jpg"  title="Image by Design n Print from Pixabay"  alt="Image by Design n Print from Pixabay" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
@@ -279,16 +284,17 @@ Mercury levels in large fish can be over a million times higher than that found 
 </table>
 <p>It appears that it will take roughly 69 days for the blood mercury concentration to return to a safe level.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>How would this process have changed if you were asked to find the biological half life of mercury in the blood stream?</li>
+<li>How would this process have changed if you were asked to find the biological half-life of mercury in the blood stream?</li>
 </ol>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />To find the half life we would need to solve for $t$ with $f(t)=\frac{1}{2} a$ where $a$ is the initial concentration.  The solving steps would be nearly identical to what was done above.</details>
+<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />To find the half-life we would need to solve for $t$ with $f(t)=\frac{1}{2} a$ where $a$ is the initial concentration.  The solving steps would be nearly identical to what was done above.</details>
 </div>
-<p>It is very common to use the half life model $f(x)=a\left(\frac{1}{2}\right)^{x/c}$ to describe the biological decay of substances in the body.  To change the continuous growth model  $f(t)=15e^{-0.0138 \thinspace t}$ into a half life model, we must find $t$ so that $f(t)=\frac{1}{2}  a$, where $a$ is the initial concentration.</p>
+<h3 id="biological-half-life">Biological Half-Life</h3>
+<p>It is very common to use the half-life model $f(x)=a\left(\frac{1}{2}\right)^{x/c}$ to describe the biological decay of substances in the body.  To change our continuous decay model for mercury into a half-life model, we must find $t$ so that $f(t)=\frac{1}{2}  a$, where $a$ is the initial concentration.</p>
 <table>
 <thead>
 <tr>
 <th>$\frac{1}{2} \cdot 15  =  15 e^{-0.0138 t}$</th>
-<th></th>
+<th><em>Start with continuous decay model from above.</em></th>
 </tr>
 </thead>
 <tbody>
@@ -314,11 +320,11 @@ Mercury levels in large fish can be over a million times higher than that found 
 </tr>
 </tbody>
 </table>
-<p>This shows that the half life of mercury in the body is about 50 days.  By taking $c=50$, we conclude that the function</p>
+<p>This shows that the half-life of mercury in the body is about 50 days.  By taking $c=50$, we conclude that the function</p>
 <p>[
 f(x)=15\left(\frac{1}{2}\right)^{x/50}
 ]</p>
-<p>is an equivalent model for mercury concentration.</p>
+<p>is the half-life model for mercury concentration that is equivalent to our earlier continuous decay model.  Both both produce the same values, they are just written in different formats.</p>
 <h2 id="fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</h2>
 <p>When provided with data, it is often possible to use a built in regression program to find the equation of a function that fits the data.</p>
 <div style="position:relative; clear:both; padding:0;">

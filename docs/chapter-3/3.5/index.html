@@ -89,9 +89,9 @@
         <li><a href="#solving-method-3-take-the-logarithm-of-both-sides">Solving Method #3: Take the Logarithm of Both Sides</a></li>
       </ul>
     </li>
-    <li><a href="#solve-applications-involving-exponential-equations">Solve Applications Involving Exponential Equations</a></li>
-    <li><a href="#more-applications">More Applications</a>
+    <li><a href="#solve-applications-involving-exponential-equations">Solve Applications Involving Exponential Equations</a>
       <ul>
+        <li><a href="#half-life">Half-Life</a></li>
         <li><a href="#doubling-time">Doubling Time</a></li>
         <li><a href="#stock-price-for-google">Stock Price for Google</a></li>
         <li><a href="#radioactive-decay">Radioactive Decay</a></li>
@@ -274,6 +274,7 @@ x &amp;\approx 1.4166 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 ]</p>
 <p>Notice how this simplifies the solving process, with the logarithm undoing the exponential.</p>
 <h2 id="solve-applications-involving-exponential-equations">Solve Applications Involving Exponential Equations</h2>
+<h3 id="half-life">Half-Life</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-3/ken-treloar-pFoA5Pphb-Q-unsplash.jpg"  title="Photo by Ken Treloar on Unsplash"  alt="Photo by Ken Treloar on Unsplash" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
@@ -304,10 +305,9 @@ t &amp;\approx 70.249 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 \end{align}
 ]</p>
 <p>This means that it will take 70.249 hours (roughly 3 days) for the radiation level to drop from 400 to 10 microcuries.</p>
-<h2 id="more-applications">More Applications</h2>
-<p>When solving real life problems, we usually will not be given the equation directly.  When this happens, we must construct it from the information available and our knowledge of appropriate models.</p>
 <h3 id="doubling-time">Doubling Time</h3>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US_%245000_1934_Federal_Reserve_Note.jpg/1024px-US_%245000_1934_Federal_Reserve_Note.jpg" alt=""></p>
+<p>When solving real life problems, we usually will not be given the equation directly.  When this happens, we must construct it from the information available and our knowledge of appropriate models.</p>
 <p>For instance, suppose you have invested $5000 in an account earning 2% interest compounded continuously.  How long will it take for your investment to double?</p>
 <p>Since this question involves continuously compounded interest, we should use the continuous growth model $A(t)=P e^{r t}$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Based on the information given, what are the values for $P$, $r$ and $A(t)$?  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The initial deposit is 5000 dollars, so $P=5000$.  The rate is given as 2%, so $r=0.02$.  The balance of the account should be double the initial deposit, so $A(t)=10000$.  Substituting those values into $A(t)=P e^{r t}$ will let us solve for the time it takes for the investment to double.</details></div>
@@ -389,7 +389,7 @@ t &amp;\approx 34.657 &amp;&amp; \small \color{#5fa2ce} {\text{Decimal approxima
 <p>The age of fossils is often determined by a process called <em>carbon dating</em>.  Plants absorb small amounts of the radioactive isotope carbon-14 from the atmosphere.  People and animals collect carbon-14 when they eat plants and other animals.  Once they die, however, the amount of carbon-14 begins to decay exponentially with a half-life of about 5730 years.  By comparing the amount of carbon-14 in a fossil with the amount that would have been been present when it was alive we can estimate the fossil's age.</p>
 <p>Suppose that you were able to get a small fragment of the bone and extract $9.7 \times 10^{-15}$ grams of carbon-14 out of it.  If there would have been $1.05 \times 10^{-14}$ grams present when Piltdown Man was alive, how old is this fossil?</p>
 <p>To solve this we will use the half-life formula $f(t) = a \left(\frac{1}{2}\right)^{t/c}$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Use the information above to write the equation that we must solve.  Keep in mind that $a$ is the initial value, $c$ is the half life, and $f(t)$ is the amount after some period of time.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Taking $a = 1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$, the equation that must be solved is
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Use the information above to write the equation that we must solve.  Keep in mind that $a$ is the initial value, $c$ is the half-life, and $f(t)$ is the amount after some period of time.   <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Taking $a = 1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$, the equation that must be solved is
 [9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}]</details></div>
 <p>To determine the actual age of the Piltdown skull, we must use the half-life formula with $a=1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$.  Our task is to solve for $t$.</p>
 <table>
