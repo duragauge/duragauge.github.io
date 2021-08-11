@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  {{ partial "header.html" . }}
+  <body>
+
+{{ $tempType := .Params.chapter }}
+
+  <h1>{{ .Title }}</h1>
+
+  <ul>
+    {{ range where .Site.RegularPages "Type" $tempType }}
+      <li><a href="#{{ substr .RelPermalink 1 -1 }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+
+
+  {{ range where .Site.RegularPages "Type" $tempType }}
+  	{{ "<!-- Wrapper -->" | safeHTML }}
+  	<div id="wrapper">
+
+  		{{ "<!-- Main -->" | safeHTML }}
+  		<div class="tufte" id="main">
+
+  			<!-- One -->
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="{{ substr .RelPermalink 1 -1 }}">{{ .Title }}</h1>
+  					</header>
+  					{{ .Content }}
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	{{ end }}
+
+  {{ "<!-- Footer -->" | safeHTML}}
+  {{ if .Site.Params.footer.enable}}
+  {{ partial "footer.html" . }}
+  {{ end }}
+
+</body>
+</html>

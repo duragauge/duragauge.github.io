@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>Chapter 5 &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://duragauge.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body>
+
+
+
+  <h1>Chapter 5</h1>
+
+  <ul>
+    
+      <li><a href="#chapter-5%2f5.1">5.1 Graphs of Polynomials</a></li>
+    
+      <li><a href="#chapter-5%2f5.2">5.2 Complex Numbers and The Fundamental Theorem of Algebra</a></li>
+    
+      <li><a href="#chapter-5%2f5.3">5.3 Polynomial Equations</a></li>
+    
+      <li><a href="#chapter-5%2f5.4">5.4 Applications of Polynomials</a></li>
+    
+      <li><a href="#chapter-5%2f5.5">5.5 Rational Functions</a></li>
+    
+  </ul>
+
+
+  
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-5/5.1">5.1 Graphs of Polynomials</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/al-jabr.jpg"  title="Statue of Al-Khwārizmī in his birth town Khiva, Uzbekistan. Photo by Yunuskhuja Tuygunkhujaev on Wikipedia"  alt="Statue of Al-Khwārizmī in his birth town Khiva, Uzbekistan. Photo by Yunuskhuja Tuygunkhujaev on Wikipedia" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi#/media/File:Khiva.jpg">Statue of Al-Khwārizmī in his birth town Khiva, Uzbekistan. Photo by Yunuskhuja Tuygunkhujaev on Wikipedia</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Polynomials have intrigued mathematicians for centuries.  Ancient Egyptian, Babylonian, and Greek mathematicians all studied simple polynomials.</p>
+<p>The Chinese are known to have worked with cubics in the early 7th century, at the same time mathematicians in India were busy creating the <a href="https://duragauge.github.io/img/chapter-5/quadratic_formula.svg">quadratic formula</a>.</p>
+<p>Two centuries later the Persian mathematician al-Khwārizmī introduced the world to “al-jabr”, or “algebra”, as a process for solving polynomial equations.</p>
+<p>During the Renaissance polynomials spread throughout western Europe and contests were held to see who could solve the hardest polynomial problem.</p>
+<p>As we explore the properties and behaviors of polynomial functions in this chapter you might begin to see why they have been able to hold the attention of great minds throughout history.</p>
+<h2 id="standard-form-of-a-polynomial">Standard Form of a Polynomial</h2>
+<p>One attractive feature of polynomial functions is the simplicity of their equations.  In <a href="//chapter-4/4.1#polynomials">Chapter 4</a> you learned that polynomials are sums of power functions with non-negative integer powers.</p>
+<p>For example, the polynomial $p(x)=\color{red}{5x^{3}}+\color{black}{7x^{2}}\color{orange}{-4x}+\color{green}{8}$ is a sum of the four power functions $\color{red}{5x^{3}}$,   $\color{black}{7x^{2}}$,   $\color{orange}{-4x}$   and   $\color{green}{8}$.</p>
+<p>Each power function is called a <strong>term</strong> of the polynomial.  The highest power is called the <strong>degree</strong> of the polynomial, and the coefficient of that term is called the <strong>leading coefficient</strong>.  The term without an $x$ is referred to as the <strong>constant term</strong>.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/polynomial_terms.svg#center" alt=""></p>
+<p>It is standard to write a polynomial so that the powers are in descending order.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Rewrite the polynomial $p(x)=6x-4x^{2}+15$ in standard form, with the powers in descending order.  Then identify the degree, leading coefficient and constant term. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />In standard form the polynomial is $p(x)=-4x^{2}+6x+15$.  Degree is $2$, the leading coefficient is $-4$ and the constant term is $15$.</details></li>
+</ol>
+</div>
+<h2 id="end-behavior-of-polynomials">End Behavior of Polynomials</h2>
+<p>It's important to be able to identify the degree and leading coefficient of a polynomial because they influence the overall shape of its graph.</p>
+<h3 id="even-vs-odd-degrees">Even vs Odd Degrees</h3>
+<p>Since degrees of polynomials are always whole numbers, the degree must either be an even number or an odd number. The ends of polynomials with even degrees behave differently than those with odd degrees.</p>
+<p>To investigate this, random polynomials with different degrees are shown in the figure below.  As you switch from one to another, try to decide how even degree polynomials are different from odd degree polynomials.  In particular, pay attention to the <font color="red">end behavior</font> of the graphs.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/kcvhpeer/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/d5gxgxxc"><img src="https://www.geogebra.org/resource/kcvhpeer/dijK8osMnd0mJq4S/material-kcvhpeer-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/d5gxgxxc"><a href="https://www.geogebra.org/m/d5gxgxxc">https://www.geogebra.org/m/d5gxgxxc</a></a></p>
+</div>
+<p>When a polynomial has an even degree, both ends of its graph will point in the same direction and it will look somewhat similar to a parabola.  When the degree is odd, however, one end will go up while the other goes down just like a line.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Without graphing, describe the end behavior of $p(x)=2x^5-3x^2+4$  Do the ends of the graph both point in the same direction or do they point in opposite directions? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The degree is $5$, which is an odd number, so the ends of the graph will point in opposite directions.</details></p>
+</li>
+<li>
+<p>Without graphing, describe the end behavior of $p(x)=x^4+2x-7$  Do the ends of the graph both point in the same direction or do they point in opposite directions? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The degree is $4$, which is an even number, so the ends of the graph will both point in the same direction.</details></p>
+</li>
+</ol>
+</div>
+<h3 id="positive-vs-negative-leading-coefficients">Positive vs Negative Leading Coefficients</h3>
+<p>The leading coefficient of a polynomial can change the direction of the graph, depending on if it is positive or negative.  In this figure you can change the sign of the leading coefficient for several polynomials.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/sayexky8/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/umnevpzw"><img src="https://www.geogebra.org/resource/sayexky8/OmmHWEiVVwMnQmRB/material-sayexky8-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/umnevpzw"><a href="https://www.geogebra.org/m/umnevpzw">https://www.geogebra.org/m/umnevpzw</a></a></p>
+</div>
+<p>If the degree is even then the graph mimics the behavior of a parabola, with both ends pointing up when the leading coefficient is positive and down when it is negative.</p>
+<p>If the degree is odd then the graph behaves like a line, pointing up to the right when the leading coefficient is positive and pointing down when the lading coefficient is negative.  This mirrors the behavior of a line with positive or negative slope.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Without graphing, describe the end behavior of $p(x)=-2x^6-3x^5+9$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The degree is $6$, which is an even number and the leading coefficient is negative.  So both ends of this polynomial will point down.</details></p>
+</li>
+<li>
+<p>Without graphing, describe the end behavior of $p(x)=-3x^5+x^4-7x^{3}+5x-6$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree is an odd number, and the leading coefficient is negative, the left end of the graph will point up while the right end points down.</details></p>
+</li>
+</ol>
+</div>
+<p>Since the end behavior of a polynomial depends only on the degree and the leading coefficient, in the long run its graph will look like the graph of its leading term.</p>
+<p>In this figure you can zoom out on the graphs of $\color{red}{p(x)=\frac{1}{2}x^4-2x^{2}+x+1}$ and $\color{black}{f(x)=\frac{1}{2}x^4}$.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/vsnxmmcg/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/wxpddg2b"><img src="https://www.geogebra.org/resource/vsnxmmcg/qcCwgLkxu1fSPGfm/material-vsnxmmcg-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/wxpddg2b"><a href="https://www.geogebra.org/m/wxpddg2b">https://www.geogebra.org/m/wxpddg2b</a></a></p>
+</div>
+>
+<p>We can see that the graph of $\color{red}{p(x)=\frac{1}{2}x^4-2x^{2}+x+1}$ is nearly identical to the graph of the power function $\color{black}{f(x)=\frac{1}{2}x^4}$ as we zoom out, even though they are very different for small values of $x$.</p>
+<p>In general, any polynomial will eventually behave like the power function $ax^n$, where $a$ is leading coefficient and $n$ is the degree of the polynomial.</p>
+<h3 id="determine-degree--leading-coefficient-from-a-graph">Determine Degree &amp; Leading Coefficient from a Graph</h3>
+<p>Knowing how the end behavior is connected to the degree and leading coefficient allows us draw conclusions about the equation of a polynomial simply by observing its graph.  Specifically, we know that</p>
+<ul>
+<li>If both ends point either up or point, then the degree is even.</li>
+<li>If one end is up while the other is down, then the degree is odd.</li>
+<li>If the right end points up, then the leading coefficient is positive.</li>
+<li>If the right end points down, then the leading coefficient is negative.</li>
+</ul>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>For each graph, decide if the degree of the polynomial is even or odd.  Also state whether the leading coefficient is positive or negative.</p>
+<ol>
+<li>
+<p> <img src="https://duragauge.github.io/img/chapter-5/poly_graph_QC1.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since both ends of the graph point up, this polynomial must have an even degree and a positive leading coefficient.</details></p>
+</li>
+<li>
+<p> <img src="https://duragauge.github.io/img/chapter-5/poly_graph_QC2.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the right end points up but the left side points down, this has an odd degree with a positive leading coefficient.</details></p>
+</li>
+<li>
+<p> <img src="https://duragauge.github.io/img/chapter-5/poly_graph_QC3.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Odd degree.  Negative leading coefficient.</details></p>
+</li>
+<li>
+<p> <img src="https://duragauge.github.io/img/chapter-5/poly_graph_QC4.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Even degree.  Negative leading coefficient.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="turning-points">Turning Points</h2>
+<p>Another thing that makes polynomials are useful is their ability to change direction.  The point where a polynomial changes from increasing to decreasing, or vice versa, is known as a <strong>turning point</strong>.  Turning points are always local maximums or local minimums.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_turns_a.svg#center" alt=""></p>
+<p>The number of turning points is related to the degree of the polynomial.  Look again at the graphs above. Can you spot a connection between the degree and the number of turns?</p>
+<p>From the graphs it would seem that the number of turns is always one less than the degree, since the 2nd degree polynomial had 1 turn, the 3rd degree had 2 turns, and the 4th degree had 3 turning points.</p>
+<p>Unfortunately, that's not always true.  Take a look a the three graphs below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_turns_b.svg#center" alt=""></p>
+<p>All three are 5th degree polynomials but each graph has a different number of turns.  It seems that a 5th degree polynomial can have 4 turns, but it could also have less than 4.</p>
+<p>A good way to describe this is to say that the <em>maximum</em> number of turning points is always one less than the degree.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>How many turns can a 6th degree polynomial have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree is 6, it can have at most 5 turning points.</details></p>
+</li>
+<li>
+<p>How many turns can a 3rd degree polynomial have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree is 3, it can have at most 2 turning points.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="find-the-minimum-degree-from-a-graph">Find the Minimum Degree from a Graph</h2>
+<p>Since we can find the maximum number of turns by looking at the equation, we should also be able to do the reverse:  find the minimum degree by looking at the graph.  This is done by counting the number of turns and adding 1.</p>
+<p>As an example, consider the following polynomial.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_turns_7.svg#center" alt=""></p>
+<p>Since the graph has 3 turning points, the degree of the polynomial must be <em>at least</em> 4.  The degree could be higher, but it must be <em>at least</em> 4.</p>
+<p>We actually know a little more than that.  Since both ends point in the same direction, the degree must be even.  So the actual degree could be any <em>even</em> degree of 4 or higher.  It cannot, for instance, be a 5th degree polynomial.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>State the number of turning points and the minimum degree of each graph.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_turns_8.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are 4 turning points, so the degree must be at least 5.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_turns_9.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The degree is at least 7, since there are 6 turning points.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_turns_10.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Only one turning point, so the degree must be at least 2.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="constant-term">Constant Term</h2>
+<p>The behaviors we have investigated so far were connected to the degree and the leading coefficient of the polynomial.  Next we will look at how the constant term affects a polynomial's graph.</p>
+<p>In the interactive figure below you can adjust the value of the constant term in a 3rd degree polynomial.  Look for a connection between the constant term and the graph.  Make a note of your observations before continuing.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/s33ajp8m/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/mmu4fvmg"><img src="https://www.geogebra.org/resource/s33ajp8m/JjYN8PiVptUupCYe/material-s33ajp8m-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/mmu4fvmg"><a href="https://www.geogebra.org/m/mmu4fvmg">https://www.geogebra.org/m/mmu4fvmg</a></a></p>
+</div>
+<p>You should have found that the constant term of a polynomial is the value of y-intercept of the graph.  The reason for this is simple.</p>
+<p>Recall that the y-intercept of any function occurs when $x=0$.  Replacing $x$ with $0$ will eliminate every term containing a power of $x$, leaving just the constant term.</p>
+<p>Take $p(x)=-4x^7+6x^4-18x^{2}+9$ as an example.  If we evaluate $p(0)$ we find</p>
+<p>[p(0)=-4(0)^7+6(0)^4-18(0)^2+9=9]</p>
+<p>which verifies that the y-intercept is $y=9$, exactly the same value as the constant term.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>What is the value of the y-intercept of the polynomial $p(x)=-5x^{2}+9x-4$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the constant term is $-4$, the y-intercept is $y=-4$.</details></li>
+</ol>
+</div>
+<h2 id="real-zeros-of-polynomials">Real Zeros of Polynomials</h2>
+<p>While it is easy to see the y-intercept from the standard equation of a polynomial, finding the x-intercepts is much more challenging.</p>
+<p>However, if the polynomial has been factored
+<label for="sn-factoring" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-factoring" class="margin-toggle" />
+<span class="sidenote">Factoring is the process of breaking a polynomial into simpler pieces which, when multiplied together, are the same as the original polynomial.  For instance, $(x+2)(x+3)$ is the factored form of $x^{2}+5x+6$.</span>
+, then finding the x-intercepts is simple.</p>
+<h3 id="the-factor-theorem">The Factor Theorem</h3>
+<p>In the interactive figure below, you can change the location of the x-intercepts.  As you do so, pay attention to how the factored equation changes.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/EyHYBvpj/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/EyHYBvpj"><img src="https://www.geogebra.org/resource/EyHYBvpj/OnJrwBBvCMm6r0oN/material-EyHYBvpj-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/EyHYBvpj"><a href="https://www.geogebra.org/m/EyHYBvpj">https://www.geogebra.org/m/EyHYBvpj</a></a></p>
+</div>
+<p>You probably noticed that there is a factor for each x-intercept.  The reason for this is that x-intercepts are real number solutions to $p(x)=0$.  And if $(x-c)$ is a factor, then $x=c$ will cause the entire function to equal zero.  In fact, x-intercepts are often called <strong>real zeros</strong> for this very reason.</p>
+<p>In general, $p(c)=0$ if and only if $(x-c)$ is a factor of the polynomial.  In other words, knowing that $(x-c)$ is a factor tells us that $x=c$ is a zero. The reverse is also true.  If $x=c$ is a zero then $(x-c)$ is a factor.  This is known as the <strong>factor theorem</strong>.</p>
+<p>With the factor theorem we can quickly find the x-intercepts of any factored polynomial.  For instance, if $p(x)=(x-3)(x+6)(x+15)$, then the x-intercepts are $x=3$, $x=-6$, and $x=-15$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>What are the x-intercepts of $p(x)=(x-2)(x+4)(x-1)$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The x-intercepts are the real zeros $x=2$, $x=-4$ and $x=1$.</details></p>
+</li>
+<li>
+<p>Find the x-intercepts of $p(x)=(x)(x-7)(x+3)$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The x-intercepts are the real zeros $x=0$, $x=7$ and $x=-3$.</details></p>
+</li>
+</ol>
+</div>
+<h3 id="multiple-zeros">Multiple Zeros</h3>
+<p>Consider a polynomial such as $f(x)=(x-2)(x-2)$.  The factor theorem tells us that this polynomial has real zeros at $x=2$ and $x=2$.  But what does it mean for a polynomial to have two zeros with the same value?  Can it have more than one x-intercept at $x=2$?</p>
+<p>The figure below will help answer this question.  You are fee to move the real zeros (<strong><font color="blue">blue points</font></strong>) anywhere you want. Look for a change in the shape of the graph and a corresponding change in the equation when multiple zeros are put in the same spot.</p>
+<div class="no-print geogebra" style="padding-top: 45%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/jupSjhUq/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/jupSjhUq"><img src="https://www.geogebra.org/resource/jupSjhUq/CdxLlYEgwcn28D5r/material-jupSjhUq-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/jupSjhUq"><a href="https://www.geogebra.org/m/jupSjhUq">https://www.geogebra.org/m/jupSjhUq</a></a></p>
+</div>
+<p>Putting multiple zeros in the same spot creates a factor of the form $(x-c)^m$ where the power $m$ corresponds to the number of zeros.  If the multiplicity of the zero is odd, then the graph crosses the x-axis.  If the multiplicity is even, then the graph does not cross the x-axis but instead just touches it and then bounces off.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Identify the zeros of the polynomial and state whether their multiplicities are even or odd.
+<img src="https://duragauge.github.io/img/chapter-5/multiple_zero_qc1.svg#center" alt=""></p>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><ul>
+<li>The zero at $x=-2$ has an odd multiplicity.</li>
+<li>The zero at $x=0$ has an even multiplicity.</li>
+<li>The zero at $x=3$ has an odd multiplicity.</li>
+</ul>
+</details>
+</div>
+<h2 id="determine-polynomial-functions-from-a-graph">Determine Polynomial Functions from a Graph</h2>
+<p>We have now arrived at a point where we can create an equation for a polynomial simply by analyzing its graph.  To see how this might work, let's start with this graph.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/find_poly_equation_1.svg#center" alt=""></p>
+<p>Since the graph has just one turn and both ends point upward, we expect the equation to be at least a 2nd degree polynomial with a positive leading coefficient.  It should also have a constant term of $-2$, since the y-intercept is at $(0, -2)$.</p>
+<p>In addition, the zeros at $x=-2$ and $x=1$ tell us that $(x+2)$ and $(x-1)$ must be factors.  This suggests that the equation might be $p(x)=(x+2)(x-1)=x^{2}+x-2$.</p>
+<p>This equation meets all of the expectations we had above;  it is a 2nd degree polynomial with a positive leading coefficient and the y-intercept is at $-2$.  Graphing this equation on a calculator
+<img src="https://duragauge.github.io/img/chapter-5/poly_calculator_1.png#center" alt="">
+shows that it does have the right shape.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Find an equation for a polynomial that has zeros at $x=5$ and $x=-1$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The polynomial $p(x)=a(x-5)(x+1)$ would work for any leading coefficient $a$.</details></div>
+<p>Let's try a few more examples, starting with the graph below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/find_poly_equation_2.svg#center" alt=""></p>
+<p>We can see 2 turning points which suggests that the degree is at least 3.  We also know that the leading coefficient is negative and the y-intercept is $(0, 2)$.</p>
+<p>The graph has real zeros at $x=-1$, $x=-2$ and $x=3$, which means $(x+1)$, $(x+2)$ and $(x-3)$ must be factors, so one possible equation is</p>
+<p>[p(x) = (x + 1) (x + 2) (x - 3)]</p>
+<p>To see if this is a good fit we'll expand the equation and check its leading coefficient and y-intercept.</p>
+<p>[
+\begin{align}
+p(x) &amp;= (x + 1) (x + 2) (x - 3) &amp;&amp; \newline
+&amp;= (x+1)(x^{2}-3x+2x-6) &amp;&amp; \text{multiply} (x+2)(x-3) \newline
+&amp;= (x+1)(x^{2}-x-6) &amp;&amp; \text{combine} -3x+2x \newline
+&amp;= (x^{3}+3x^{2}+2x-3x^{2}-9x-6) &amp;&amp; \text{distribute} (x+1) \newline
+&amp;= x^{3}-7x-6 &amp;&amp; \text{simplify}
+\end{align}
+]</p>
+<p>The leading coefficient is positive and, since the constant term is $-6$, this function has a y-intercept at $(0, -6)$.  Since neither of these matches our graph, we'll need to find a way to change both without altering the real zeros.</p>
+<p>We can change both the leading coefficient and the y-intercept if we multiply it by a constant $a$, making the equation $p(x)=a(x^{3}-7x-6)$.  Remember, multiplying a function by a constant vertically stretches and/or flips the graph, it doesn't change the x-intercepts or zeros.</p>
+<p>Since we want to have a y-intercept of $2$, the trick will be to find $a$ when $\color{red}{p(0)=2}$.</p>
+<p>[
+\begin{align}
+p(x) &amp;= a(x^{3}-7x-6) &amp;&amp; \newline
+p(0) &amp;= a((0)^3-7(0)-6) &amp;&amp; \text{replace each } x \text{ with } 0 \newline
+p(0) &amp;= -6a &amp;&amp; \text{simplify} \newline
+\color{red}{2} &amp;= -6a &amp;&amp; \text{since } \color{red}{p(0)=2} \newline
+-\frac{1}{3} &amp;= a &amp;&amp; \text{divide by } -6
+\end{align}
+]</p>
+<p>This gives us $p(x)=-\frac{1}{3}(x^{3}-7x-6)=-\frac{1}{3}x^{3}+\frac{7}{3}x+2$, which has all the properties (zeros, degree, leading coefficient, and y-intercept) of the graph we were trying to match.  Plotting this new equation on a calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_calculator_2.png#center" alt=""></p>
+<p>shows that it is, indeed, a good fit.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Find the equation for a polynomial with zeros at $x=2$ and $x=-4$ and a y-intercept of $(0, 16)$.
+<img src="https://duragauge.github.io/img/chapter-5/poly_equation_qc_1.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The function is [p(x)=\color{red}{-2}\color{blue}{(x-2)}\color{green}{(x+4)}] To find this first note that the zeros $\color{blue}{x=2}$ and $\color{green}{x=-4}$ give the factors $\color{blue}{(x-2)}\color{green}{(x+4)}$.  <br><br> For $\color{red}{a}$ remember that the y-intercept is $(0, 16)$ so $p(0)=16$.  The steps for solving for $\color{red}{a}$ follow
+[
+\begin{align}
+p(x) &amp;= a(x-2)(x+4) \newline
+p(0) &amp;= a(0-2)(0+4) \newline
+16 &amp;=-8a \newline
+\color{red}{-2 } &amp; \color{red}{ = a}
+\end{align}
+]</details></li>
+</ol>
+</div>
+<p>As our final example consider this graph.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/find_poly_equation_3.svg#center" alt=""></p>
+<p>This graph appears to have a single zero at $x=0$, a multiple zero with even multiplicity at $x=-1$, and a multiple zero with odd multiplicity at $x=2$.</p>
+<p>When faced with graphs that have multiple zeros we will choose the lowest power possible unless directed otherwise.  Thus we start with the equation</p>
+<p>[ p(x)=a(x)(x+1)^2(x-2)^3 ]</p>
+<p>To find $a$ we need another point on the graph.  Note that the point $(1, 2)$ is on the graph, so $p(1)=2$ which will help us solve for $a$.</p>
+<p>[
+\begin{align}
+p(x) &amp;= a(x)(x+1)^2(x-2)^3 \newline
+p(1) &amp;= a(1)(1+1)^2(1-2)^3 &amp;&amp; \text{Replace each } x \text{ with } 1 \newline
+2 &amp;= -4a &amp;&amp; \text{since } p(1)=2 \newline
+-\frac{1}{2} &amp;= a &amp;&amp; \text{divide by }-4
+\end{align}
+]</p>
+<blockquote>
+</blockquote>
+<p>Using $a=-\frac{1}{2}$ we arrive at the equation $p(x)=-\frac{1}{2}(x+1)^2(x)(x-2)^3$.  Checking this on a graphing calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_calculator_3.png#center" alt=""></p>
+<p>shows that we have found a good match.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Find an equation for the polynomial shown below.
+<img src="https://duragauge.github.io/img/chapter-5/poly_equation_qc_2.svg#center" alt=""></li>
+</ol>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$p(x) = \frac{1}{4}(x + 2)^2(x - 1)$ fits nicely.</details>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>We should point out that this process of finding the factored equation of a polynomial from a graph only works if the number of real zeros equals the degree.</p>
+<p>As a case in point, look at the graph below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/find_poly_equation_4.svg#center" alt=""></p>
+<p>There is only one real zero, $x=-2$, implying that the equation only has one factor $(x+2)$ and is the first degree polynomial $p(x)=x+2$.</p>
+<p>But we can clearly see 2 turning points!  Since a first degree polynomial cannot have 2 turning points, there must be more to this polynomial than meets the eye.</p>
+<p>What we can't see are the zeros that are imaginary numbers.  While real zeros can be picked out as the x-intercepts, these <strong>imaginary zeros</strong> cannot be seen on a regular graph.  In the next section we will discuss ways to visualize and find imaginary zeros.</p>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-5/5.2">5.2 Complex Numbers and The Fundamental Theorem of Algebra</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/venice.jpg"  title="Venice, Italy.  Photo by Damiano Baschiera on Unsplash"  alt="Venice, Italy.  Photo by Damiano Baschiera on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/hFXZ5cNfkOk">Venice, Italy.  Photo by Damiano Baschiera on Unsplash</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>During the 1500's Italian mathematicians held public contests as a way to gain notoriety and supplement their income.  Since anyone could be challenged at any time, most mathematicians kept their discoveries secret.</p>
+<p>Antonio Fior was an inexperienced mathematician who learned a secret for solving one type of cubic equation from his dying master.  Anxious to make a name for himself, Fior traveled to Venice and challenged Niccolò Tartaglia, one of the most gifted mathematicians of the day, to solve 30 cubic equations.</p>
+<p>Working day and night, Tartagia found what no one though possible: a general process for solving all cubic equations, not just the ones Fior had asked.</p>
+<p>With this new technique Tartaglia solved all of Fior's problems in 2 hours and easily won the contest.  But what cemented Tartaglia's place in history is that his solution involved square roots of negative values, what we now call <em>imaginary numbers</em>.</p>
+<h2 id="imaginary-numbers">Imaginary Numbers</h2>
+<p>Before Tartaglia imaginary numbers had been ignored simply because they had no obvious connection to geometry; they just weren't useful for measuring anything.  For instance, an irrational real number like $\sqrt{2}$ can be viewed as the length of the diagonal of a unit square, but no part of a square corresponds to the imaginary number $\sqrt{-2}$.</p>
+<p>But Tartaglia's method required square roots of negative numbers, even in some cases where all the solutions turned out to be real numbers.  This forced mathematicians to develop rules for working with and visualizing these new numbers, a process that took hundres of years.
+<label for="sn-Cardano" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Cardano" class="margin-toggle" />
+<span class="sidenote">Gerolamo Cardano, who published Tartaglia's methods in 1545, wrote that working with imaginary numbers involved &quot;mental tortures.&quot; </span></p>
+<p>It was the Swiss mathematician Leonard Euler (1707-1783) who introduced the notation $i=\sqrt{-1}$ that we use today.  The imaginary unit $i$ has the special property that $i^2=-1$.</p>
+<p>Any multiple of $i$ is an <strong>imaginary number</strong>.  For instance $2.5i$ and $-18i$ are both imaginary numbers.</p>
+<p>The square root of a negative number is always an imaginary number and can be rewritten as</p>
+<p>[\sqrt{-x} = \sqrt{x} \thinspace i]</p>
+<p>For example, $\sqrt{-9 }$ and $\sqrt{-5 }$ are the imaginary numbers $3 i$ and $\sqrt{5},i$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is $\sqrt{-25}$ an imaginary number? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes. [\sqrt{-25}=\sqrt{25},i=5i]</details></p>
+</li>
+<li>
+<p>Is $\sqrt{7}$ an imaginary number? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, $\sqrt{7}$ is an irrational real number.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="complex-numbers">Complex Numbers</h2>
+<p>By combining the real numbers with the imaginary numbers we can construct an even larger set called the <strong>complex numbers</strong>.  Every complex number can be written as</p>
+<p>[ z=\color{red}{a}+\color{blue}{b} i ]</p>
+<p>where $\color{red}{a}$ is the real part and $\color{blue}{b}$ is the imaginary part.  This set includes numbers like   $\color{red}{3}\color{blue}{-2}i$ and $\color{red}{1}+\color{blue}{6}i$.</p>
+<p>Any real number can be expressed in complex form, as can every purely imaginary number.  For instance, the real number $5$ can be written in complex form as $\color{red}{5}+\color{blue}{0}i$ where the imaginary part is $\color{blue}{0}$.  And the purely imaginary number $\color{blue}{4}i$ can be written as $\color{red}{0} + \color{blue}{4}i$ where the real part is $\color{red}{0}$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Write $0$, $, 7i,$ and $,\frac{5}{4}$ as complex numbers. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$0=0+0i$<br><br>  $7i=0+7i$<br><br>$\frac{5}{4}=\frac{5}{4}+0i$</details></div>
+<h2 id="visualizing-complex-numbers">Visualizing Complex Numbers</h2>
+<p>Since each complex number $z=a+b i$ has two parts, a real part $a$ and an imaginary part $b$, it is natural to identify it with the point $(a, b)$.</p>
+<p>By using the horizontal axis for the real part and the vertical for the imaginary part, we change the standard x-y pane into the <strong>complex plane</strong>.  Every complex number matches up with a point in the complex plane, and every point corresponds to a complex number.</p>
+<p>As an example, the complex number $-2+i$ is represented by the point $(-2, 1)$.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/cUi7FuiL/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/cUi7FuiL"><img src="https://www.geogebra.org/resource/cUi7FuiL/Fxcz1U3TWYyaxDAt/material-cUi7FuiL-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/cUi7FuiL"><a href="https://www.geogebra.org/m/cUi7FuiL">https://www.geogebra.org/m/cUi7FuiL</a></a></p>
+</div>
+<p>Use the interactive figure above to explore this connection and help you answer the questions below.  You are free to move the <font color="blue">blue point</font> anywhere you like.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>How would you plot the complex number $1-3i$ on the complex plane? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />You would plot the point $(1, -3)$.</details></p>
+</li>
+<li>
+<p>Which complex number is represented by the point $(-4, 3)$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The number $-4+3i$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="graph-complex-valued-functions">Graph Complex Valued Functions</h2>
+<p>Complex valued functions can also be graphed on a complex plane.  One way to do this is to draw an arrow between an input $z$ and its output $f(z)$.</p>
+<p>Suppose, for example, that $f(z)=z^2-1$.  If we choose $z = -2 + i$ as our input, then we have</p>
+<p>[
+\begin{align}
+f(-2 + i) &amp;= (-2 + i)^2-1 \newline
+&amp;= (-2 + i)(-2 + i)-1 &amp;&amp; \text{since } (-2 + i)^2 = (-2 + i)(-2 + i) \newline
+&amp;= (4-2i-2i+i^2)-1 &amp;&amp; \text{expanding } (-2 + i)(-2 + i) \newline
+&amp;= (4-2i-2i-1)-1 &amp;&amp; \text{because } i^2 = -1 \newline
+&amp;= (3-4i)-1 &amp;&amp; \text{combine like terms} \newline
+&amp;= 2-4i &amp;&amp; \text{simplify}
+\end{align}
+]</p>
+<p>as the output value.  This particular input-output pair is shown in the interactive figure below.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/yeevacaw/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/qsjhnxhs"><img src="https://www.geogebra.org/resource/yeevacaw/zz8FMRzvtfze1pSP/material-yeevacaw-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/qsjhnxhs"><a href="https://www.geogebra.org/m/qsjhnxhs">https://www.geogebra.org/m/qsjhnxhs</a></a></p>
+</div>
+<p>The main disadvantage of this technique is that it only shows one input-output pair at a time, which makes it difficult to understand exactly what the whole function is doing.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the figure above to help you find the values below.  Changing $\color{blue}{z}$ will change $\color{red}{f(z)}$. You can also check each one algebraically as above.</p>
+<ol>
+<li>
+<p>$f(1 + i)$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-1+2i$</details></p>
+</li>
+<li>
+<p>$f(-1 + 2i)$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-4-4i$</details></p>
+</li>
+<li>
+<p>$f(2 + i)$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$2+4i$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="domain-coloring">Domain Coloring</h2>
+<p>Another way to visualize complex valued functions was developed in the 1990's and it allows us to see the entire function.  Rather than drawing an arrow to show what happens to a particular point, this method uses colors.</p>
+<p>The goal is to give each complex number its own color.  To do this we cover the complex plane with a color map
+<label for="sn-color map" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-color map" class="margin-toggle" />
+<span class="sidenote">The color map we will use looks like this <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_map.png" alt="color map"></span>
+that spans the whole spectrum of colors.  A point is lighter if it is closer to the origin and darker if it is farther away, with the origin itself $(0, 0)$ being bright white.</p>
+<p>With this method we visualize the function by coloring $z$ based on where $f(z)$ is on the color map.</p>
+<p>For instance, we calculated earlier that if $f(z)=z^2-1$, then $f(-2+i)=2-4i$.  Since the color map puts $2 - 4i$ in the purple region, we color our original point <strong>$\color{#9C0973}{-2 + i}$</strong> purple.</p>
+<p>If we combine this idea with the earlier arrow diagram, then the arrow will point to the color that should be used for $z$.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/HMI6jSd0/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/HMI6jSd0"><img src="https://www.geogebra.org/resource/HMI6jSd0/x04EPvycQtqZF4WB/material-HMI6jSd0-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/HMI6jSd0"><a href="https://www.geogebra.org/m/HMI6jSd0">https://www.geogebra.org/m/HMI6jSd0</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the figure above to help you find the colors of $f(z)=z^2-1$ at the following points.</p>
+<ol>
+<li>
+<p>$1+0i$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />white</details></p>
+</li>
+<li>
+<p>$-2-i$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />yellow</details></p>
+</li>
+<li>
+<p>$1-2i$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />blue</details></p>
+</li>
+<li>
+<p>$-1-i$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />green</details></p>
+</li>
+</ol>
+</div>
+<p>If we keep track of the color of each point then the entire domain can be colored, giving us a more complete picture of the function.</p>
+<p>These graphs are called <strong>domain coloring graphs</strong> of a complex function, and look very different from the graphs you are used to drawing by hand or creating on a graphing calculator.</p>
+<p>Since creating a domain coloring graph requires a computer graphics program, you will not be expected to make them on your own.  But we will use them in this section to discover some useful facts about polynomials.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use this figure to color the domain of the function $f(z)=z^2-1$ by moving the point all over the plane.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/ZWqCzTEm/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ZWqCzTEm"><img src="https://www.geogebra.org/resource/ZWqCzTEm/tnPXOE2aj2xS8KP5/material-ZWqCzTEm-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ZWqCzTEm"><a href="https://www.geogebra.org/m/ZWqCzTEm">https://www.geogebra.org/m/ZWqCzTEm</a></a></p>
+</div>
+<ol>
+<li>
+<p>What does the resulting domain coloring graph look like?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The result looks something like this
+<img src="https://duragauge.github.io/img/chapter-5/complex_plot_color_traced_z2-1.png#center" alt=""></details></p>
+</li>
+<li>
+<p>Which points in the domain coloring graph, if any, are white? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The points $(-1, 0)$ and $(1, 0)$ are white, which correspond to the complex numbers $-1+0i=-1$ and $1+0i=1$.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="identify-real-and-imaginary-zeros">Identify Real and Imaginary Zeros</h2>
+<p>Domain coloring graphs are especially helpful in identifying the zeros of functions like polynomials.  Since you will be required to identify zeros from a domain coloring graph, we should review the definition of a zero.</p>
+<p>Remember that a number $c$ is a zero of a function if $f(c)=0$.  If $c$ is a real number then we call it a <strong>real zero</strong> of the function.</p>
+<p>Imaginary numbers can also be zeros of a function.  If $c$ is an imaginary number and $f(c)=0$, then it is an <strong>imaginary zero</strong> of the function.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>The solutions to $z^{3}+z^2+z+1=0$ are $z=-1,$ $z=i$ and $z=-i$.</p>
+<ol>
+<li>
+<p>Which of the zeros listed above is a real zero? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$z=-1$ is the only real zero.</details></p>
+</li>
+<li>
+<p>Which of the zeros above is an imaginary zero? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The imaginary zeros are $z=i$ and $z=-i$.</details></p>
+</li>
+</ol>
+</div>
+<p>The key to identifying zeros visually from a domain coloring graph is to realize that the number $0$ corresponds to the origin $(0, 0)$ in the complex plane.</p>
+<p>Since the origin in our color map is a white point at the center of all the colors, the zeros of a function will have a similar appearance.  In other words, we can find the zeros by looking for bright white points surrounded by all the colors.</p>
+<p>Take a look at this domain coloring graph of the function $f(z)=z^2-1$, which is a higher-resolution copy of the graph you made a moment ago.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/domain_coloring_Z_squared_minus_1.png#center" alt=""></p>
+<p>There are two bright white points, one at $(-1, 0)$ and another at $(1, 0)$, corresponding to the complex numbers $-1+0i=-1$ and $1+0i=1$.  This means that the function $f(z)=z^2-1$ has real zeros of $-1$ and $1$.  Real zeros, such as these, will always be found along the real axis of a domain coloring graph.</p>
+<p>Imaginary zeros also show up on domain coloring graphs as bright white points.  For instance, in this graph of $f(z)=z^2-4z+5$, the points $(2, 1)$ and $(2, -1)$ are bright white points where all the colors meet.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/domain_coloring_z2-4z+5.png#center" alt=""></p>
+<p>That means the zeros are the imaginary numbers $2+i$ and $2-i$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p><img src="https://duragauge.github.io/img/chapter-5/domain_coloring_Z_squared_plus_1_small.png#center" alt=""></p>
+<ol>
+<li>Use this domain coloring graph to find the zeros of $f(z)=z^2+1$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the white points are at $(0,1)$ and $(0,-1)$, the zeros must be $i$ and $-i$.</details></li>
+</ol>
+</div>
+<p>It's possible for a function to have a mixture of real zeros and imaginary zeros.  In an earlier Quick Check we saw that the zeros of  $f(z)=z^{3}+z^2+z+1$ are $z=-1,$ $z=i$ and $z=-i$.  These three zeros are visible in the domain coloring graph as the points are $(-1, 0)$, $(0, 1)$ and $(0,-1)$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/domain_coloring_v_standard.png#center" alt=""></p>
+<p>However, if we plot the equivalent polynomial $p(x)=x^{3}+x^{2}+x+1$ on a standard graph, only the real zero (x-intercept) at $x-1$ is visible.  Imaginary zeros are never visible on standard real-valued graphs.</p>
+<h2 id="the-fundamental-theorem-of-algebra">The Fundamental Theorem of Algebra</h2>
+<p>With a domain coloring graph we can easily count the number of real and imaginary zeros of a function.  Remember, if the zero is on the real axis, then it is a real zero.  If it is anywhere else, it is imaginary.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>For each domain coloring graph below, determine the number of real zeros and the number of imaginary zeros.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_1.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There is only 1 zero.  Since it is on the real axis, it is a real zero.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_2.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are 2 zeros.  Since they are not on the real axis, they must both be imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_3.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />1 real zero and 2 imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_4.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />2 real zeros and 2 imaginary zeros.</details></p>
+</li>
+</ol>
+</div>
+<p>You may not have realized it, but each of the functions in the previous Quick Check was a polynomial.  Since we are interested in understanding polynomials, let's look at those same graphs again.  This time, pay attention to the degree of the polynomial as well the number of zeros.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>For each domain coloring graph below, determine the number of real zeros and the number of imaginary zeros. Also give the degree of the polynomial.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_1.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />1 real zero and 0 imaginary zeros. The degree is 1.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_2.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />0 real zeros and 2 imaginary zeros.  The degree is 2.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_3.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />1 real zero and 2 imaginary zeros.  The degree is 3.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/domain_coloring_FTA_4.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />2 real zeros and 2 imaginary zeros.  The degree is 4.</details></p>
+</li>
+</ol>
+</div>
+<p>After looking at those graphs a second time you might have noticed a connection between the zeros and the degree of the polynomial.  The number of real zeros plus the number of imaginary zeros equals the degree of the polynomial exactly.  This is a consequence of the <strong>Fundamental Theorem of Algebra</strong>, which was proven by the 20-year-old Carl Friedrich Gauss in his doctoral dissertation of 1799.  We will hear more about Gauss in the <a href="https://duragauge.github.io/chapter-6/6.3">next chapter</a>.</p>
+<p>While the proof is very complicated and beyond the scope of this text, what the Fundamental Theorem of Algebra says is actually very simple.  In essence, Gauss showed that a polynomial whose degree is $n$ will always have exactly $n$ zeros.  Some of the zeros might be imaginary, some may be repeated, but it will always have $n$ zeros total.</p>
+<p>For instance, since  $p(x)=2x^4-3x+8$ is a $4th$ degree polynomial, we know from the Fundamental Theorem of Algebra that it has exactly $4$ zeros.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>How many total zeros does $p(x)=-3x^6+x^{2}-9x$ have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 6th degree polynomial, so it must have 6 zeros.</details></p>
+</li>
+<li>
+<p>How many total zeros does $p(x)=5x^{3}-4$ have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 3rd degree polynomial, so it must have 3 zeros.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="determine-the-number-of-real--imaginary-zeros">Determine the Number of Real &amp; Imaginary Zeros</h2>
+<p>We will use the Fundamental Theorem of Algebra to help us identify the number of real and imaginary zeros of a polynomial when a domain coloring graph is unavailable.</p>
+<p>Consider, for instance, the polynomial $p(x)=x^5+1$ whose graph is given below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_turns_6.svg#center" alt=""></p>
+<p>We can see from the graph that it has just one real zero, corresponding to the x-intercept at $x=-1$.  Since it is a 5th degree polynomial, the Fundamental Theorem of Algebra tells us that it must have 5 zeros total, so the remaining 4 zeros must be imaginary.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Find the number of real and imaginary zeros of each polynomial.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/FTA_4c.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a 4th degree polynomial with 2 real zeros (x-intercepts), so there must be 2 imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/FTA_3b.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a 3rd degree polynomial with 3 real zeros (x-intercepts), so there are no imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/FTA_5b.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a 5th degree polynomial with 3 real zeros (x-intercepts), so there are 2 imaginary zeros.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="conjugate-zeros-theorem">Conjugate Zeros Theorem</h2>
+<p>You may have noticed a curious fact about the number of imaginary zeros.  In every example we've looked at so far, the number of imaginary zeros has always been even, and there's a very good reason for that.</p>
+<p>The <strong>conjugate zeros theorem</strong> says that if the coefficients of your polynomial are real numbers, and $a+bi$ is a zero, then its <em>conjugate</em> $a-bi$ is also a zero.  In other words, imaginary zeros always come in pairs, which means there must always a even number of them.</p>
+<p>You can see the conjugate pairs in a domain coloring graph.  For instance, look at the domain coloring graph of $f(z)=z^2-4z+5$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/domain_coloring_z2-4z+5.png#center" alt=""></p>
+<p>There are two imaginary zeros, $2+i$ and $2-i$, corresponding to the points $(2, 1)$ and $(2, -1)$ on the graph.  As expected, these two imaginary zeros are conjugates.  The only difference between them is that one has a positive imaginary part while the imaginary part of the other is negative.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Suppose you know that $4+3i$ is an imaginary zero of some a a polynomial with real valued coefficients.  Which other imaginary number must also be a zero? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Its conjugate $4-3i$ must also be a zero.</details></p>
+</li>
+<li>
+<p>Is it possible for a polynomial with real valued coefficients to have exactly one imaginary zero? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, the conjugate zeros theorem says they only come in pairs.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="multiple-zeros">Multiple Zeros</h2>
+<p>When using the Fundamental Theorem of Algebra to count the number of real and imaginary zeros of a polynomial, we must be mindful of multiple zeros.</p>
+<p>For instance, when looking at the graph of $p(x)=x^4-3x^{2}$</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/FTA_4b.png#center" alt=""></p>
+<p>it would be easy to mistakenly say that since it has $3$ x-intercepts, it must have $3$ real zeros and only $1$ imaginary zero.  Clearly this cannot be the case; the conjugate zeros theorem tells us that having only $1$ imaginary zero is impossible.</p>
+<p>Taking another look at the graph we notice that the real zero at $x=0$ has a multiplicity of $2$, since it touches the x-axis and bounces off.  This means that $p(x)=x^4-3x^{2}$ actually has $4$ real zeros and $0$ imaginary zeros.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>State the degree of each polynomial.  Then give the number of real zeros and the number of imaginary zeros.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_graph_real_imaginary_zeros_3.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 3rd degree polynomial.  The real zero at $x=2$ has a multiplicity of $3$, giving us $3$ real zeros and no imaginary zeros.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_graph_real_imaginary_zeros_2.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 5th degree polynomial.  It has x-intercepts (real zeros) at $x=-1$, $x=0$ and $x=1$. The zeros at $x=-1$ and $x=1$ both have a multiplicity of $2$ since they bounce off the x-axis like a parabola.  This means there are $5$ real zeros total and none that are imaginary.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-5/poly_graph_real_imaginary_zeros_1.png#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a 6th degree polynomial, so there must be $6$ zeros total.  We can see $4$ real zeros (two each at $x=-2$ and $x=2$) which leaves $2$ more zeros that must be imaginary and cannot be seen on the graph.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>After Tartaglia's work, a method was quickly found for finding all 4 zeros of any 4th degree polynomial by Cardano's assistant, Ferrari.  Mathematicians all over the world felt that it was just a mater of time before they would have formulas for not only any 5th degree polynomial, but for every polynomial.  In the next section we will see the end result of their efforts.</p>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-5/5.3">5.3 Polynomial Equations</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/duel.jpg"  title="Drawing by Bauce and Rouget"  alt="Drawing by Bauce and Rouget" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://commons.wikimedia.org/wiki/File:Duel_pistolet.JPG">Drawing by Bauce and Rouget</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>As the smoke cleared on the morning of May 30, 1832, young Évariste Galois lay mortally wounded on the ground, having been shot in the stomach.  Though only 20 years old, Galois had earned a reputation not only as a brilliant mathematician, but also as a reckless political activist who had threatened the life of the French king and been arrested for carrying loaded weapons during a protest in Paris.</p>
+<p>No one knows for sure why Galois was involved the duel.  Some say that he was defending the honor of a young lady or that he was the victim of a government conspiracy.  All we know is that he feared for his life and spent the night before the duel writing farewell letters to close friends.</p>
+<p>In one of those letters Galois famously described a new mathematical theory that revealed the hidden framework of polynomials.</p>
+<h2 id="galios-theory">Galios Theory</h2>
+<p>What Galois had discovered was a way to link polynomials with mathematical structures called &quot;groups&quot;.  What's more, Galois showed that the symmetries and patterns in these groups were related to the zeros of polynomials.</p>
+<p>Galois's theory, together with the work of his equally tragic contemporary Niels Henrik Abel
+<label for="sn-Abel" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Abel" class="margin-toggle" />
+<span class="sidenote">Abel was a young Norwegian mathematician struggling to find steady income so he could marry his fiancée.  He died at the age of 26 from tuberculosis.  Two days later a letter arrived offering a post at the University of Berlin.</span>
+, showed that it is impossible to find a general algebraic formula (ie. a formula involving only addition, subtraction, multiplication, division, powers and roots) for the zeros of a polynomial if the degree is higher than 4.</p>
+<p>In other words, we cannot count on using a formula to find the zeros of a polynomial if its degree is higher than 4.  In fact, since the formulas for the <a href="https://duragauge.github.io/img/chapter-5/cubic_formula.svg">cubic</a> and <a href="https://duragauge.github.io/img/chapter-5/quartic_formula.svg">quartic</a> are impractical, the only polynomial formula you'll likely need to remember is the <a href="https://duragauge.github.io/img/chapter-5/quadratic_formula.svg">quadratic formula</a>.</p>
+<p>Instead of using complicated formulas, we will use a combination of graphical, algebraic, and numerical methods to find the zeros of polynomials.  And since graphs help us estimate the number and location of any real zeros as well as the number of imaginary zeros, it is preferable to study the graph of a polynomial first.</p>
+<h2 id="verifying-zeros">Verifying Zeros</h2>
+<p>You'll recall that the real zeros of a polynomial are real numbers that are solutions to the equation $p(x)=0$.  Graphically they correspond to the x-intercepts of its graph.</p>
+<p>For instance, the graph of $p(x)=x^5-5x^{3}+4x$, shown here, appears to have x-intercepts at $x=-2$, $x=-1$, $x=0$, $x=1$ and $x=2$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_5_integer_zeros.svg#center" alt=""></p>
+<p>But how do we know if these really are the zeros?  Maybe the true values are slightly different.  To verify that those values really are zeros we must check to see if $p(x)=0$ for each one.  With $x=-2$, for example,</p>
+<p>[ \begin{align}
+p(-2) &amp;= (-2)^5-5(-2)^3+4(-2) \newline
+&amp;=-32+40-8 \newline
+&amp;=0
+\end{align}
+]</p>
+<p>so we can be confident that $x=-2$ truly is a zero.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Verify that $x=-1$, $x=0$, $x=1$ and $x=2$ are each zeros of $p(x)=x^5-5x^{3}+4x$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
+\begin{align}
+p(-1)&amp;=(-1)^5-5(-1)^3+4(-1) \newline
+&amp;=-1+5-4 \newline
+&amp;=0 \newline \newline
+p(0)&amp;=(0)^5-5(0)^3+4(0) \newline
+&amp;=0-0+0 \newline
+&amp;=0 \newline \newline
+p(1)&amp;=(1)^5-5(1)^3+4(1) \newline
+&amp;=1-5+4 \newline
+&amp;=0 \newline \newline
+p(2)&amp;=(2)^5-5(2)^3+4(2) \newline
+&amp;=32-40+8 \newline
+&amp;=0
+\end{align}
+]</details></li>
+</ol>
+</div>
+<h2 id="the-rational-zeros-theorem">The Rational Zeros Theorem</h2>
+<p>With many polynomials it is difficult to determine the exact location of the real zeros from a graph alone.</p>
+<p>Consider the cubic polynomial $p(x)=3x^{3}+8x^{2}+3x-2$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_rational_2_integer_zeros.svg#center" alt=""></p>
+<p>From the Fundamental Theorem of Algebra we know that this has exactly three zeros, and $x=-2$ and $x=-1$ appear to be two of them.</p>
+<p>But the location of third zero is not clear.  It might be $\frac{1}{4}$ or $\frac{1}{3}$ or maybe it's some irrational number like $\sqrt{\frac{1}{8}}$.  We simply can't tell just by looking. Luckily, there are a couple of new tools that can help.</p>
+<p>The first new tool is the <strong>rational zeros theorem</strong>.  The rational zeros theorem comes from a nice pattern that occurs if the zeros of a polynomial happen to be fractions.  Inspect the table below and see if you can spot a pattern.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/rational_zeros_table.svg#center" alt=""></p>
+<p>Notice that the <em><font color="red">numerators</font></em> of each zero are factors of the <em><font color="red">constant term</font></em> and the <em><font color="blue">denominators</font></em> are factors of the <em><font color="blue">leading coefficient</font></em>.  If a polynomial with integer coefficients has a rational zero, then this pattern will always occur.</p>
+<p>In other words, if all the coefficients of a polynomial are integers, then there are a limited number of rational numbers that can be zeros and they must all follow the pattern above, with <em><font color="red">numerators</font></em>  coming from the <em><font color="red">constant term</font></em> and <em><font color="blue">denominators</font></em> from the <em><font color="blue">leading coefficient</font></em>.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Consider the polynomial $p(x)=\color{blue}{5}x^2+3x+\color{red}{6}$.</p>
+<ol>
+<li>
+<p>List all the factors of the constant term $\color{red}{6}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{red}{6}$ can be divided evenly by $\color{red}{\pm 1, \thinspace \pm 2, \thinspace \pm 3, \thinspace \pm 6}$ , so those are its factors.</details></p>
+</li>
+<li>
+<p>List all the factors of the leading coefficient $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{blue}{5}$ can be divided evenly by $\color{blue}{\pm 1, \thinspace \pm 5}$ , so those are its factors.</details></p>
+</li>
+<li>
+<p>List all the fractions whose numerators come from factors of $\color{red}{6}$ with denominators that are factors of $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are sixteen combinations.
+[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{1}} ]
+and
+[ \pm \frac{\color{red}{1}}{\color{blue}{5}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{5}} ]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="finding-rational-zeros-of-a-polynomial">Finding Rational Zeros of a Polynomial</h2>
+<h3 id="rational-zeros-example-1">Rational Zeros Example 1</h3>
+<p>Let's return to the polynomial  $p(x)=\color{blue}{3}x^{3}+8x^{2}+3x\color{red}{-2}$ and see how the rational zeros theorem helps us identify its zeros.  Since the leading coefficient is $\color{blue}{3}$ and the constant term is $\color{red}{-2}$, we know that the numerators and denominators of possible rational zeros must be</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/rational_zeros_1_num_den.png#center" alt=""></p>
+<p>This means that all rational zeros of $p(x)=\color{blue}{3}x^{3}+8x^{2}+3x\color{red}{-2}$  can be found in the following list.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/rational_zeros_1.png#center" alt=""></p>
+<p>We can see from the graph that $-1$ and $-2$ are zeros, and both appear in this list.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_rational_2_integer_zeros_color.svg#center" alt=""></p>
+<p>Judging from the graph, if the third zero is a rational number then it is either $\frac{\color{red}{1}}{\color{blue}{3}}$ or $\frac{\color{red}{2}}{\color{blue}{3}}$.</p>
+<p>To see if either of these are the zeros we put the into the function and see if the result is zero.  We'll start with $\frac{\color{red}{1}}{\color{blue}{3}}$.</p>
+<p>[
+\begin{align}
+p\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)&amp;=3\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)^{3}+8\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)^2+3\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)-2 \newline
+&amp;=3\left(\frac{1}{27}\right)+8\left(\frac{1}{9}\right)+1-2 \newline
+&amp;= \frac{3}{27}+\frac{8}{9}-1 \newline
+&amp;= \frac{1}{9} + \frac{8}{9}-1 \newline
+&amp;= \frac{9}{9} - 1 \newline
+&amp;= 1 - 1 \newline
+&amp;= 0
+\end{align}
+]</p>
+<p>Since $p\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)=0$ we know that $\frac{\color{red}{1}}{\color{blue}{3}}$ is the third zero of the polynomial.  There's no need to check $\frac{\color{red}{2}}{\color{blue}{3}}$ because this polynomial only has three zeros.</p>
+<h3 id="rational-zeros-example-2">Rational Zeros Example 2</h3>
+<p>Let's use a graph and the rational zeros theorem to see if $p(x)=\color{blue}{6}x^2+7x\color{red}{-5}$ has any rational zeros.</p>
+<p>With a leading coefficient of $\color{blue}{6}$ and a constant term of $\color{red}{-5}$, we know that all rational zeros, if there are any, must be in the following list.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5//rational_zeros_3.png#center" alt=""></p>
+<p>With the help of the graph we can narrow this list down to $\frac{ \color{red}{1} } { \color{blue}{2} }$, $\frac{\color{red}{1}}{\color{blue}{3}}$ and $\frac{\color{red}{-5}}{\color{blue}{3}}$, since the other values are not near the x-intercepts.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_2_rational_zeros_color.svg#center" alt=""></p>
+<p>Now we need to check each one, beginning with $x=\frac{\color{red}{1}}{\color{blue}{2}}$.</p>
+<p>[
+\begin{align}
+p\left(\frac{\color{red}{1}}{\color{blue}{2}}\right) &amp;= 6\left(\frac{\color{red}{1}}{\color{blue}{2}}\right)^2+7\left(\frac{\color{red}{1}}{\color{blue}{2}}\right)-5 \newline
+&amp;=\frac{6}{4}+\frac{7}{2}-5 \newline
+&amp;=0
+\end{align}
+]</p>
+<p>We've found one zero!  Let's keep going and check $x=\frac{\color{red}{1}}{\color{blue}{3}}$.</p>
+<p>[
+\begin{align}
+p\left(\frac{\color{red}{1}}{\color{blue}{3}}\right) &amp;= 6\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)^2+7\left(\frac{\color{red}{1}}{\color{blue}{3}}\right)-5 \newline
+&amp;=\frac{6}{9}+\frac{7}{3}-5 \newline
+&amp;=2
+\end{align}
+]</p>
+<p>Since this is not $0$, we move on to our last option, $x=\frac{\color{red}{-5}}{\color{blue}{3}}$.</p>
+<p>[
+\begin{align}
+p\left(\frac{\color{red}{-5}}{\color{blue}{3}}\right) &amp;= 6\left(\frac{\color{red}{-5}}{\color{blue}{3}}\right)^2+7\left(\frac{\color{red}{-5}}{\color{blue}{3}}\right)-5 \newline
+&amp;=\frac{150}{9}-\frac{35}{3}-5 \newline
+&amp;=0
+\end{align}
+]</p>
+<p>From this it's clear that $\frac{ \color{red}{1} } { \color{blue}{2} }$ and $\frac{\color{red}{-5}}{\color{blue}{3}}$ are both zeros of our polynomial.  And since the Fundamental Theorem of Algebra says that a second degree polynomial has exactly two zeros, we know we have found all of the solutions.</p>
+<h2 id="finding-real-zeros-of-a-polynomial">Finding Real Zeros of a Polynomial</h2>
+<h3 id="real-zeros-example-1">Real Zeros Example 1</h3>
+<p>There are two other tools we have at our disposal that we shouldn't forget about.  For example, the possible rational zeros of $p(x)=\color{blue}{1}x^2-\color{red}{3}$ are</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{1}} ]</p>
+<p>but the graph does not have x-intercepts at $\pm 1$ or at $\pm 3$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_2_irrational.svg#center" alt=""></p>
+<p>It's important remember that the Rational Zeros Theorem only gives us a list of rational numbers that <em>might</em> be zeros.  If none of them work then the zeros are not fractions.</p>
+<p>In this case the two zeros are irrational numbers and can be found with the Quadratic Formula.</p>
+<p>[
+\begin{align}
+x &amp;= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \newline
+&amp;= \frac{-(0)\pm\sqrt{(0)^2-4(\color{blue}{1})(\color{red}{3})}}{2\color{blue}{(1)}} \newline
+&amp;= \frac{\pm\sqrt{12}}{2} \newline
+&amp;= \frac{\pm2\sqrt{3}}{2} \newline
+&amp;= \pm \sqrt{3} \newline
+\end{align}
+]</p>
+<p>So the first tool we shouldn't forget about is the Quadratic Formula.</p>
+<h3 id="real-zeros-example-2">Real Zeros Example 2</h3>
+<p>The second tool that is often helpful is synthetic division.  Consider, for instance the polynomial $p(x)=\color{blue}{6}x^3+7x^2-16x\color{red}{-12}$.  The list of possible rational zeros is huge.</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{2}}{\color{blue}{1}},\thinspace \pm \frac{\color{red}{3}}{\color{blue}{1}},\thinspace  \pm \frac{\color{red}{4}}{\color{blue}{1}},\thinspace\pm \frac{\color{red}{6}}{\color{blue}{1}},\thinspace \pm \frac{\color{red}{12}}{\color{blue}{1}} ]</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{2}}, \thinspace \pm \frac{\color{red}{2}}{\color{blue}{2}},\thinspace \pm \frac{\color{red}{3}}{\color{blue}{2}},\thinspace \pm \frac{\color{red}{4}}{\color{blue}{2}},\thinspace \pm \frac{\color{red}{6}}{\color{blue}{2}},\thinspace \pm \frac{\color{red}{12}}{\color{blue}{2}} ]</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{3}}, \thinspace \pm \frac{\color{red}{2}}{\color{blue}{3}},\thinspace \pm \frac{\color{red}{3}}{\color{blue}{3}},\thinspace \pm \frac{\color{red}{4}}{\color{blue}{3}},\thinspace \pm \frac{\color{red}{6}}{\color{blue}{3}},\thinspace \pm \frac{\color{red}{12}}{\color{blue}{3}} ]</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{6}}, \thinspace \pm \frac{\color{red}{2}}{\color{blue}{6}},\thinspace \pm \frac{\color{red}{3}}{\color{blue}{6}},\thinspace \pm \frac{\color{red}{4}}{\color{blue}{6}},\thinspace \pm \frac{\color{red}{6}}{\color{blue}{6}},\thinspace \pm \frac{\color{red}{12}}{\color{blue}{6}} ]</p>
+<p>By eliminating duplicate values like $\frac{\color{red}{1}}{\color{blue}{1}}$ and $\frac{\color{red}{2}}{\color{blue}{2}}$ and looking at the graph</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_integer_2_rational.svg#center" alt=""></p>
+<p>we can trim this list down significantly, but there are still five numbers to check (listed here in numerical order).</p>
+<p>[ \frac{\color{red}{-2}}{\color{blue}{1}}, \thinspace \frac{\color{red}{-2}}{\color{blue}{3}}, \thinspace \frac{\color{red}{-1}}{\color{blue}{2}}, \thinspace \frac{\color{red}{-1}}{\color{blue}{3}}, \thinspace \frac{\color{red}{3}}{\color{blue}{2}}]</p>
+<p>Earlier we plugged the values into the polynomial to check each one.  While that always works, synthetic division can also be used.  To show how this works we'll pick $\frac{\color{red}{-2}}{\color{blue}{1}}=-2$ out of our list and do synthetic division.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_2_a.svg#center" alt=""></p>
+<p>Since the remainder is $0$ we know that $\left(x-\frac{\color{red}{-2}}{\color{blue}{1}}\right)$ is a factor of the polynomial, which also means that $\frac{\color{red}{-2}}{\color{blue}{1}}$ is a zero.</p>
+<p>Anytime we do synthetic division and end with a remainder of $0$ then we have found a zero of the polynomial.</p>
+<p>Additionally, any other real zeros must be inside the quotient $6x^2-5x-6$ and could be found by the quadratic formula.  But since our list of rational zeros was so small, it may be preferable to check the remaining three numbers by synthetic division before resorting to the quadratic formula.</p>
+<p>Starting with $\frac{\color{red}{-2}}{\color{blue}{3}}$, the synthetic division tells us that it is a zero.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_2_b.svg#center" alt=""></p>
+<p>Since $\frac{\color{red}{-2}}{\color{blue}{3}}$ is a zero, there's no need to check $\frac{\color{red}{-1}}{\color{blue}{2}}$ and $\frac{\color{red}{-1}}{\color{blue}{3}}$, but we should still look at $\frac{\color{red}{3}}{\color{blue}{2}}$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_2_c.svg#center" alt=""></p>
+<p>We conclude that the three zeros of our polynomial are $-2$, $\thinspace \frac{\color{red}{-2}}{\color{blue}{3}} \thinspace$ and $\thinspace \frac{\color{red}{3}}{\color{blue}{2}}$.</p>
+<h2 id="finding-complex-zeros-of-a-polynomial">Finding Complex Zeros of a Polynomial</h2>
+<h3 id="complex-zeros-example-1">Complex Zeros Example 1</h3>
+<p>The process we have developed can also find imaginary zeros.  This time we'll examine $p(x)=\color{blue}{3} x^{3}-14 x^{2}+23 x\color{red}{-10}$.</p>
+<p>This is a third degree polynomial so it must have three zeros.  We can tell right away from the graph that it only has one real zero, so there must be two that are imaginary.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_rational_2_imaginary.svg#center" alt=""></p>
+<p>If that real zero is a rational number, then we can find it using the Rational Zeros Theorem by examining the list of fractions that might be zeros.</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{2}}{\color{blue}{1}},\thinspace \pm \frac{\color{red}{5}}{\color{blue}{1}},\thinspace \pm \frac{\color{red}{10}}{\color{blue}{1}}]</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{3}}, \thinspace \pm ,\thinspace \pm \frac{\color{red}{5}}{\color{blue}{3}},\thinspace \pm \frac{\color{red}{10}}{\color{blue}{3}}]</p>
+<p>Out of that list $\frac{\color{red}{2}}{\color{blue}{3}}$ appears to be out best choice, so we'll use synthetic division to check it.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_3.svg#center" alt=""></p>
+<p>Because the remainder is $0$ we know for sure that $\frac{\color{red}{2}}{\color{blue}{3}}$ is a zero.</p>
+<p>That takes care of our one real zero, but what about the two that are imaginary?  Those are inside the quotient $3x^{2}-12x+15$ and we'll get them with the quadratic formula.</p>
+<p>[
+\begin{align}
+x &amp;= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \newline
+&amp;= \frac{-(-12)\pm\sqrt{(-12)^2-4(3)(15)}}{2(3)} \newline
+&amp;= \frac{12 \pm\sqrt{-36}}{6} \newline
+&amp;= \frac{12 \pm 6i}{6} \newline
+&amp;= 2 \pm i \newline
+\end{align}
+]</p>
+<p>The two imaginary zeros are $2+i$ and $2-i$ and we have now found all three of the complex zeros of our polynomial.</p>
+<h3 id="complex-zeros-example-2">Complex Zeros Example 2</h3>
+<p>Our final example $p(x)=x^4 + x^3 - x^2 + x -2$ is a fourth degree polynomial with a very short list of possible rational zeros.  The choices are $\pm 1$ and $\pm 2$ and a graph quickly shows us that $-2$ and $1$ are the likely candidates.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_2_integer_2_imaginary.svg#center" alt=""></p>
+<p>As before we'll check one of these by synthetic division, starting with $-2$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_4_a.svg#center" alt=""></p>
+<p>This tells us that $-2$ is a zero, but we still have three more to find.  The key is to remember that all the other zeros must be in the quotient $x^3-x^2+x-1$.  So now we focus on the quotient and repeat the process.</p>
+<p>If $x^3-x^2+x-1$ has a rational zero then it is in our original list, so let's try $1$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/synthetic_4_b.svg#center" alt=""></p>
+<p>Since the remainder is zero, we know $1$ is a zero of the polynomial.  The final two zeros must be inside this new quotient $x^2+1$ and we'll use the quadratic formula to get them out.</p>
+<p>[
+\begin{align}
+x &amp;= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \newline
+&amp;= \frac{-(0)\pm\sqrt{(0)^2-4(1)(1)}}{2(1)} \newline
+&amp;= \frac{\pm\sqrt{-4}}{2} \newline
+&amp;= \frac{\pm 2i}{2} \newline
+&amp;= \pm i \newline
+\end{align}
+]</p>
+<p>We add these two imaginary numbers to our list and can finally say that the four complex zeros of $p(x)=x^4 + x^3 - x^2 + x -2$ are $-2, \thinspace 1, \thinspace, -i \thinspace$ and $\thinspace i$.</p>
+<h2 id="summary">Summary</h2>
+<p>Let's take a moment to summarize the process that we have developed.  Given a polynomial, we can attempt to find its complex (real and imaginary) zeros by working through the following steps.</p>
+<ol>
+<li>Use the Rational Zeros Theorem to list all possible fractions that might be zeros.</li>
+<li>Trim down that list by looking at a graph and eliminating any values that are not reasonably close to the x-intercepts.</li>
+<li>Check the remaining values either by testing if $p(x)=0$ or by performing synthetic division and seeing if the remainder is zero.</li>
+<li>Repeat the process for the other zeros or, if the quotient is a 2nd degree polynomial, apply the quadratic formula.</li>
+</ol>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>While the process outlined here will work for all the exercises in the homework, it is far from being a universal method that will work for every polynomial.  For most problems, in fact, it is not possible to find exact zeros, so we have to find approximations.  There is even an entire field of modern math (numerical analysis) dedicated to, among other things, constructing algorithms for finding zeros of equations.  And many practical applications in physics, chemistry, engineering, etc. rely on those computational methods.</p>
+<p>In the next section we get a brief glimpse of a few ways polynomials end up being used in the real world.</p>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-5/5.4">5.4 Applications of Polynomials</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/generalife-3111770_1280x720.jpg"  title="Photo by granadandyou from Pixabay "  alt="Photo by granadandyou from Pixabay " style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-3111770/">Photo by granadandyou from Pixabay </a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Located in the foothills of the Sierra Nevada mountains in the Andalusia region of Spain, the Alhambra palace is a world heritage site from the 13th century.  Among it's most photographed features today are the water fountains in the Generalife gardens.</p>
+<p>The water that flows out of these fountains follows a curved path through the air.  But it's not just any random curve, it is a parabola!</p>
+<h2 id="projectile-motion">Projectile Motion</h2>
+<p>It was Galileo who proved that any object launched into the air will follow the path of a parabola.
+<label for="sn-Galileo" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Galileo" class="margin-toggle" />
+<span class="sidenote">Drawings from <a href="https://www.mpiwg-berlin.mpg.de/Galileo_Prototype/HTML/F116_V/F116_V.HTM">Galileo's notebook</a> showing results of his free fall experiments, dating from about 1609. <img src="https://duragauge.github.io/img/chapter-5/Galileo_Notebook_C116_V.jpg" alt="Folio 116v from Galileo's notebook"></span>
+This could be water tossed into the air by a fountain or a ball throw by a child, they all take on the same characteristic arc.</p>
+<p>Physicists have studied this for hundreds of years and have discovered several equations that model the motion of projectiles.  In particular, the vertical height of a projectile (in meters) can be written as a function of time</p>
+<p>[ h(t) = -4.9 t^{2} + v t + h ]</p>
+<p>where $v$ is vertical velocity (in meters per second), $h$ is the initial height (in meters) and $t$ is the time (in seconds).</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/16333686542_ca8b5866fc_b_flipped.jpg"  title="Photo by Petri Damstén on Flickr"  alt="Photo by Petri Damstén on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://flic.kr/p/qTmpXd">Photo by Petri Damstén on Flickr</a></span>
+</div>
+<br>
+ Suppose the skier in this photo is leaves the jump with a vertical velocity of 2 meters per second from a initial height of 70 meters.  Write an function that models their height, assuming the jump follows projectile motion. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $v=2$ and $h=70$ the function would be
+[ h(t)=-4.9t^{2}+2t+70 ]</details>
+</div>
+<h2 id="finding-the-vertex-of-a-parabola">Finding the Vertex of a Parabola</h2>
+<p>One place where projectile motion is used is in the sport of pumpkin chuckin', where teams build slingshots, catapults or air cannons (like the one below) to throw pumpkins as far as possible.</p>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/14421974334_a9a983284b_b_flipped.jpg"  title="Photos by Clark on Flickr"  alt="Photos by Clark on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://flic.kr/p/nYqovU">Photos by Clark on Flickr</a></span>
+</div>
+<br>
+<p>If pumpkins leave the barrel of this air cannon 6.4 meters above the ground with a vertical velocity of 170 meters per second, then the height at any time is given by</p>
+<p>[ h(t) = -4.9 t^{2} + 170 t + 6.4 ]</p>
+<p>Our model gives the height at any time, so only questions involving height and time are fair game.
+<label for="sn-Pumpkin" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Pumpkin" class="margin-toggle" />
+<span class="sidenote">The obvious question of how far the cannon can shoot a pumpkin is, unfortunately, not one we can solve with this function.  <br><br>Distance depends on the launch angle and you have to use trigonometry to find it.  But to give you some idea, the current world record is well over one mile!</span>
+The two that come to mind are determining when the pumpkin will come back down and hit the ground and finding its maximum height.</p>
+<p>Graphing our function will give us a better idea of where to look for the answers.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/projectile_graph_pumpkin.svg#center" alt=""></p>
+<p>The pumpkin will come back down and hit the ground when the height is $0$, which means we need to find the zeros of the function.  All that needs to be done is to solve $0= -4.9 t^{2} + 170 t + 6.4$ using the quadratic formula like we've done before.</p>
+<p>[
+\begin{align}
+t &amp;= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \newline
+&amp;= \frac{-(170)\pm\sqrt{(170)^2-4(-4.9)(6.4)}}{(2)(-4.9)} \newline
+&amp;= \frac{-170\pm\sqrt{29025.44}}{-9.8} \newline
+&amp;= -0.0376 \small \text{ and } \normalsize 34.731 \small \text{ seconds} \newline
+\end{align}
+]</p>
+<p>Of the two values the only one that makes physical sense is $t=34.731$ seconds, which also matches the value in our graph.</p>
+<p>The maximum height occurs at the peak of the graph which, for a parabola, is called the <strong>vertex</strong>.  Due to symmetry, the vertex always occurs halfway between the two x-intercepts.  In other words, if $x_1$ and $x_2$ are the two x-intercepts, then the x-coordinate of the vertex is $x_v=\frac{x_1+x_2}{2}$.</p>
+<p>For our particular pumpkin cannon function $h(t) = -4.9 t^{2} + 170 t + 6.4 $ which had x-intercepts of $-0.0376$ and $34.731$, the x-coordinate of the vertex is</p>
+<p>[
+\begin{align}
+x_v &amp; =\frac{x_1+x_2}{2} \newline
+&amp;= \frac{-0.0376 + 34.731}{2} \newline
+&amp;= 17.347
+\end{align}
+]</p>
+<p>So our maximum height occurs $17.347$ seconds after launch.</p>
+<p>To figure out what that height is, we put this time into the function</p>
+<p>[
+\begin{align}
+h(t) &amp;= -4.9 t^{2} + 170 t + 6.4 \newline
+h(17.347) &amp;= -4.9(17.347)^{2} + 170(17.347) + 6.4 \newline
+&amp;= 1480.9 \small \text{ meters}
+\end{align}
+]</p>
+<p>and find that the maximum height is $1480.9$ meters.</p>
+<p>Using the x-intercepts to find the vertex always works, but there is a faster method.</p>
+<p>If your function is quadratic polynomial written as $f(x)=ax^2+bx+c$, then the x-coordinate of the vertex is always $x_v=\frac{-b}{2a}$ and the y-coordinate is $y_v=f(x_v)$.</p>
+<p>Let's go back to the pumpkin function $h(t) = -4.9 t^{2} + 170 t + 6.4$ and see how this works.</p>
+<p>The x-coordinate of the vertex is found by computing</p>
+<p>[
+\begin{align}
+x_v &amp;=\frac{-b}{2a} \newline
+&amp;= \frac{-170}{(2)(-4.9)} \newline
+&amp;= 17.347
+\end{align}
+]</p>
+<p>which is the same value as before, but we did not need to go through the quadratic formula to find the two zeros and locate the halfway point between them.</p>
+<p>Getting the y-coordinate of the vertex is exactly the same as before, we just evaluate the function when $x=17.347$.</p>
+<p>[
+\begin{align}
+y_v &amp;= f(x_v) \newline
+&amp;= f(17.347) \newline
+&amp;= -4.9(17.347)^{2} + 170(17.347) + 6.4 \newline
+&amp;= 1480.9 \small \text{ meters}
+\end{align}
+]</p>
+<p>This technique for finding the vertex works on any quadratic function, not just with projectile motion.  One thing to keep in mind, however, is that the vertex is <em>not always</em> a maximum.  Depending on the shape of the parabola it could be a minimum.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/9764584931_cab334ff9a_b.jpg"  title="Photo by Jeremy Taylor on Flickr"  alt="Photo by Jeremy Taylor on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://flic.kr/p/fSS3UB">Photo by Jeremy Taylor on Flickr</a></span>
+</div>
+<br>
+ Suppose the motorcyclist in this photo is leaves the jump with a vertical velocity of 14 meters per second from a initial height of 2 meters.  Write an function that models their height, assuming the jump follows projectile motion.  Then find their maximum height by locating the vertex of your function. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $v=14$ and $h=2$ the function would be
+[ h(t)=-4.9t^{2}+14t+2 ]
+The x-coordinate of the vertex is
+[
+\begin{align}
+x_v &amp;=\frac{-b}{2a} \newline
+&amp;= \frac{-(14)}{(2)(-4.9)} \newline
+&amp;= 1.43 \small \text{ seconds}
+\end{align}
+]
+and the y-coordinate of the vertex is
+[
+\begin{align}
+y_v &amp;= f(x_v) \newline
+&amp;= f(1.43) \newline
+&amp;= -4.9(1.43)^2+14(1.43)+2 \newline
+&amp;= 12 \small \text{ meters}
+\end{align}
+]
+So the motorcycle reaches a maximum height of 12 meters 1.429 seconds after leaving the ramp.</details>
+</div>
+<h2 id="solving-quadratic-equations">Solving Quadratic Equations</h2>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-1/cliff_dive.jpg"  title="Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr"  alt="Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://www.flickr.com/photos/jamoral/21713225096/">Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr</a></span>
+</div>
+<br>
+<p>Cliff diving is potentially a very dangerous sport.  One maneuver that makes it a bit safer is called a <em>barani</em>.
+<label for="sn-barani" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-barani" class="margin-toggle" />
+<span class="sidenote"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/tx2ZgKYS-Yc?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
+<p>The barani is a gymnastics move that combines a half somersault with a half twist.  Performing a barani gives the diver time to see the water and control their landing so that they hit the water feet first.</p>
+<p>Assuming a professional cliff diver can jump up with a vertical velocity of $3$ meters per second, then the projectile motion function</p>
+<p>[ h(t)=-4.9 t^{2} + 3t + 27 ]</p>
+<p>gives us their height above the water $t$ seconds after diving off the $27$ meter platform.</p>
+<p>If a diver can complete a barani about 5 meters above the surface of the water, then the chance of a safe dive is very high.  How much time does that give them to do their flips and twists?</p>
+<p>To answer this we have to find $t$ so that $h(t)=5$.  Setting up the equation we find that</p>
+<p>[
+\begin{align}
+h(t) &amp;= 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original equation}} \newline
+-4.9 t^{2} + 3t + 27 &amp;= 5 &amp;&amp; \small \color{#5fa2ce}{\text{Insert equation for $h(t)$}} \newline
+-4.9 t^{2} + 3t + 22 &amp;= 0 &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $5$}}
+\end{align}
+]</p>
+<p>which is another situation for the quadratic formula.</p>
+<p>[
+\begin{align}
+t &amp;= \frac{-(3)\pm\sqrt{(3)^2-4(-4.9)(22)}}{2(-4.9)} &amp;&amp; \small \color{#5fa2ce}{\text{Apply Quadratic Formula}} \newline
+t &amp;= \frac{-3\pm\sqrt{440.2}}{-9.8} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+t &amp;= -1.84 \small \text{ and } \normalsize 2.45 \small \text{ seconds } &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>Clearly $t=1.84$ seconds can't be our answer, so it must be that the diver has $2.45$ seconds to do their dive and complete the barani.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Assuming the diver completes their barani after $2.45$ seconds, how much longer will it take before they hit the water? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This question is asking us to find the zeros, or x-intercepts of our function $h(t)=-4.9 t^{2} + 3t + 27$ which, as we've done before, can be found through the quadratic formula.
+[
+\begin{align}
+t &amp;= \frac{-(3)\pm\sqrt{(3)^2-4(-4.9)(27)}}{2(-4.9)} &amp;&amp; \small \color{#5fa2ce}{\text{Apply Quadratic Formula}} \newline
+t &amp;= \frac{-3\pm\sqrt{538.2}}{-9.8} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+t &amp;= -2.06 \small \text{ and } \normalsize 2.67 \small \text{ seconds } &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]
+The diver hits the water at $t=2.67$ seconds, which is $2.67-2.45=0.22$ seconds after completing the barani.</details></div>
+<h2 id="piecewise-polynomials">Piecewise Polynomials</h2>
+<p>Under some circumstances it might make sense to construct a piecewise function using polynomials.  Consider, for example, the path a bounding ball.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/piecewise_bounce.gif#center" alt="http://www.davidhazy.org/andpph/exhibit-bouncing-balls.html"></p>
+<p>Each bounce is an individual parabola, with its own equation, and its own limited domain.  The piecewise function for this particular ball is</p>
+<p>[ f(x)=\begin{cases}
+-(x+2)(x-2) &amp; \text{if } &amp; 0 \leq x \leq 2 \newline
+-1.2(x-2)(x-5) &amp; \text{if } &amp; 2 &lt;  x \leq 5 \newline
+-1.8(x-5)(x-7) &amp; \text{if } &amp; 5 &lt; x \leq 7
+\end{cases}
+]</p>
+<p>To find a value such as $f(4)$, we first compare our x-value $4$ with the three inequalities.  Since $4$ would fit in $2&lt;x \leq 5$, we must use the second equation.  Thus, $f(4)=-1.2(4-2)(4-5) =2.4$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the piecewise function above to evaluate the following:</p>
+<ol>
+<li>
+<p>$f(0)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(0+2)(0-2) = 4$</details></p>
+</li>
+<li>
+<p>$f(2)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(2+2)(2-2)=0$</details></p>
+</li>
+<li>
+<p>$f(6)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-1.8(6-5)(6-7)=1.8$</details></p>
+</li>
+</ol>
+</div>
+<h2 id="polynomial-regression">Polynomial regression</h2>
+<p>Polynomials can be very useful when modeling data. Generally, if you notice a pattern of $n$ turns in the data you can model it effectively with an $n-1$ degree polynomial. Most calculators can do up to 4th degree polynomial
+regression and programs are available that can do much higher degrees.</p>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/6625662063_a45070af3b_b.jpg"  title="Photo of Smith Rock by Unsettler on Flickr"  alt="Photo of Smith Rock by Unsettler on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://flic.kr/p/b6ufuP">Photo of Smith Rock by Unsettler on Flickr</a></span>
+</div>
+<br>
+<p>With stunning mountain views, snowy winters, warm summers and world-class outdoor activities, Redmond is
+one of the fastest growing cities in Oregon. The following table shows the population growth since 1970.</p>
+<p>[
+\begin{array}{|c|c|}
+\hline
+\text{Year} &amp; \text{Population} \newline
+\hline
+1970 &amp; 3721  \newline
+\hline
+1980 &amp; 6452 \newline
+\hline
+1990 &amp; 7165 \newline
+\hline
+2000 &amp; 13481 \newline
+\hline
+2010 &amp; 26216 \newline
+\hline
+\end{array}
+]</p>
+<p>Before choosing a polynomial model we should plot the data and see what it looks like.  To make it easier, we will use years <em>since</em> 1970 rather than the actual year.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_1.png#center" alt=""></p>
+<p>The data appears to increase, slow down, and then increase again, suggesting that a cubic polynomial might be a good fit.  Running <code>CubicReg</code> on a calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_2.png#center" alt=""></p>
+<p>gives us the cubic polynomial</p>
+<p>[ y=0.70x^3-23.89x^2+393.10+3818.21 ]</p>
+<p>which does fit the data well, coming very close to most of the data points.</p>
+<p>But since we had 5 data points, a 4th degree polynomial should fit the data exactly.  Running <code>QuarticReg</code> shows that the quartic polynomial</p>
+<p>[ y=-0.028x^4+2.97x^3-79.38x^2+798.16x+3721 ]</p>
+<p>is indeed a perfect fit, hitting every single point precisely.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_3.png#center" alt=""></p>
+<p>So the 4th degree polynomial must be a better model than the 3rd degree polynomial, right?  Maybe not.</p>
+<p>Notice that our quartic model has a negative leading coefficient.  Because of that the right side of the graph must eventually come down. This makes it a poor predictor for events in the distant future.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_4.png#center" alt=""></p>
+<p>The cubic model may prove to be unreliable as well but at least its values seem within the realm of possibility.</p>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-5/5.5">5.5 Rational Functions</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/erik-mclean-oPWGhqBPNI0-unsplash.jpg"  title="Photo by Erik Mclean on Unsplash"  alt="Photo by Erik Mclean on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/oPWGhqBPNI0">Photo by Erik Mclean on Unsplash</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Some observable characteristics, such as eye and hair color, are controlled by genes that pass from parent to child.  It's not unusual for a trait to skip generations and appear to pop up out of nowhere.  For instance, two people who don't have red hair can have redheaded children, or someone might have blue eyes even if both parents have brown eyes.</p>
+<p>Since rational functions are built with polynomials, they inherit some of the same behaviors as their &quot;parents&quot;, the polynomials.  But rational functions also have several properties that polynomials do not have.</p>
+<h2 id="rational-functions">Rational Functions</h2>
+<p>In <a href="https://duragauge.github.io/chapter-4/4.2/#rational-functions">Chapter 4</a> we saw that dividing two polynomials $n$ and $d$ resulted in a new type of function called a <em>rational function</em>.</p>
+<p>[ r(x)=\frac{n(x)}{d(x)} ]</p>
+<p>The graphs of rational functions have some of the most complicated behavior we have seen so far.</p>
+<p><img src="https://duragauge.github.io/img/chapter-4/rational_functions_graphs.svg#center" alt=""></p>
+<p>As you can see from these examples, rational functions often have x-intercepts, a property they share with polynomials, but they can also have <a href="https://duragauge.github.io/chapter-1/1.3/#asymptotes">vertical and horizonal asymptotes</a>, two things polynomials never have.  There is even a entirely new behavior that we have not seen before that seems to pop up almost out of nowhere.</p>
+<h2 id="zeros">Zeros</h2>
+<p>Rational functions inherit their zero behavior from the polynomial in the numerator.  You can explore this in the figure below.  Look carefully at the link between the location of the zero and the factors in the numerator.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/tk5488nc/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/hrgyn3qw"><img src="https://www.geogebra.org/resource/tk5488nc/zigao44ostIFLpfy/material-tk5488nc-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hrgyn3qw"><a href="https://www.geogebra.org/m/hrgyn3qw">https://www.geogebra.org/m/hrgyn3qw</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>How can you find the x-intercepts of a rational function by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the numerator, then the function has an x-intercept at $x=c$. The zeros of the polynomial in the numerator cause the zeros of the ration function.</details></li>
+</ol>
+</div>
+<h2 id="vertical-asymptotes">Vertical Asymptotes</h2>
+<p>The vertical asymptotes of a rational function are caused by the polynomial in the denominator.  In the figure below you can move the vertical asymptotes (indicated by the dotted lines).  Look for a connection between the location of the vertical asymptotes and the factors in the denominator.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/pcxugr4b/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ssgbhywx"><img src="https://www.geogebra.org/resource/pcxugr4b/68P3xw4hSKGeNNe4/material-pcxugr4b-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ssgbhywx"><a href="https://www.geogebra.org/m/ssgbhywx">https://www.geogebra.org/m/ssgbhywx</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>How can you tell if a rational function has a vertical asymptote, just by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the denominator, then the function has an vertical asymptote at $x=c$. The zeros of the polynomial in the denominator cause the vertical asymptotes of the ration function.</details></li>
+</ol>
+</div>
+<h2 id="removable-discontinuities">Removable Discontinuities</h2>
+<p>So far we've determined that zeros in the numerator cause x-intercepts while zeros in the denominator cause vertical asymptotes.  But what would happen if there was a zero in both at the same place?</p>
+<p>Or to ask the question another way, what is $\frac{0}{0}$?  One thought is that it should equal $1$, since a number divided by itself is $1$.  Another argument is that it should be $0$, since $0$ divided by any number is $0$.</p>
+<p>But if we look back at what division means it gets even more complicated.  Remember that $a \div b = x$ means $a = b \times x$.</p>
+<p>Then $0 \div 0 = x$ would mean $0 = 0 \times x$, but that's true for every number!  Since there's no single well defined way to say what $0 \div 0$ equals, we leave it <em>undefined</em>.</p>
+<p>So whenever we have a rational function that has matching factors in the numerator and denominator, the graph is undefined at that point and there is a hole or break in the graph.  The official term is &quot;<em>removable discontinuity</em>&quot;.</p>
+<p>In the figure below you can change the locations of the zero, the vertical asymptote, and the hole.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/mhChyVxw/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ntYzprQz"><img src="https://www.geogebra.org/resource/mhChyVxw/xPIL41W5dZKruUnz/material-mhChyVxw-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ntYzprQz"><a href="https://www.geogebra.org/m/ntYzprQz">https://www.geogebra.org/m/ntYzprQz</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Identify all of the x-intercepts, vertical asymptotes and holes of the rational function [r(x)=\frac{(x-5)(x+3)(x-1)}{(x-2)(x-7)(x-1)}] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are x-intercepts at $x=5, x=-3$, vertical asymptotes at $x=2, x=7$ and a hole at $x=1$.</details></p>
+</li>
+<li>
+<p>Write an equation for a rational function that has a zero at $x=2$, a vertical asymptote at $x=11$, and a hole at $x=4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[r(x)=\frac{(x-2)(x-4)}{(x-11)(x-4)}]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="horizontal-asymptotes">Horizontal Asymptotes</h2>
+<p>In addition to x-intercepts, vertical asymptotes and holes, rational functions often have horizontal asymptotes.</p>
+<p>Recall that a horizontal asymptote is a long-term behavior, describing how the function levels off as $x \rightarrow \pm \infty$.  Since the long-term behavior of a polynomial is controlled by the degree and leading coefficient, we should focus our attention on the degree and leading coefficients of the polynomials that make up a rational function.</p>
+<p>In this first figure both polynomials have the same degree.  Adjust the leading coefficients and see how that impacts the location of the horizontal asymptote.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/at9thts5/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/u76wmebr"><img src="https://www.geogebra.org/resource/at9thts5/pe7TUPcu5aPtBhgT/material-at9thts5-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/u76wmebr"><a href="https://www.geogebra.org/m/u76wmebr">https://www.geogebra.org/m/u76wmebr</a></a></p>
+</div>
+<p>As you've just seen, if the degrees match then you can simplify the leading coefficients to find the horizontal asymptote.</p>
+<p>But what if the degrees do not match?  In this figure you can alter the degree of each polynomial.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/pdxmcuxv/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/prrwdbcz"><img src="https://www.geogebra.org/resource/pdxmcuxv/zxRWUiBDisUD0ALZ/material-pdxmcuxv-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/prrwdbcz"><a href="https://www.geogebra.org/m/prrwdbcz">https://www.geogebra.org/m/prrwdbcz</a></a></p>
+</div>
+<p>If the degree of the numerator is larger, then no horizontal asymptote exists. However, if the degree of the denominator is larger, the horizontal asymptote is automatically at $y = 0$ (i.e. the x-axis).</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{10x^3+4}{2x^3-8x^2} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degrees match, the horizontal asymptote is $y=\frac{10}{2}=5$.</details></p>
+</li>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{5x-2}{3x^2+97x+13} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree on the bottom is larger, the horizontal asymptote is $y=0$.</details></p>
+</li>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{x^{6974}+1}{x^{3827}-4x} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree in the numerator is larger, there is no horizontal asymptote.</details></p>
+</li>
+</ol>
+</div>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+
+  <!-- Footer -->
+  
+  <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  
+
+</body>
+</html>

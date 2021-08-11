@@ -131,30 +131,44 @@ f(x)=(1+r)^{x}
 <p>Note that growth occurs when $r&gt;0$ and decay occurs if $ -1&lt;r&lt;0$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Suppose $f(x)=2.6^{x}$.  Identify both the growth factor and the growth rate.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The growth factor is the base $b=2.6$.  The growth rate is $r=1.6$, meaning that  every time $x$ increases by $1$ the function increases by $160\text{%}$.</details></p>
+<p>Suppose $f(x)=2.6^{x}$.  Identify both the growth factor and the growth rate.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The growth factor is the base $b=2.6$.  The growth rate is $r=1.6$, meaning that  every time $x$ increases by $1$ the function increases by $160\text{%}$.</details></p>
 </li>
 <li>
-<p>Write an exponential function that has a growth rate of  $0.25$.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=(1+0.25)^{x}$  or $f(x)=1.25^{x}$.</details></p>
+<p>Write an exponential function that has a growth rate of  $0.25$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=(1+0.25)^{x}$  or $f(x)=1.25^{x}$.</details></p>
 </li>
 <li>
-<p>Find an exponential function that decreases by $50\text{%}$ every time $x$ increases by $1$.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $r=-0.5$ we must have $b=-0.5+1=0.5$ and $f(x)=0.5^{x}$.</details></p>
+<p>Find an exponential function that decreases by $50\text{%}$ every time $x$ increases by $1$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $r=-0.5$ we must have $b=-0.5+1=0.5$ and $f(x)=0.5^{x}$.</details></p>
 </li>
 </ol>
 </div>
 <h2 id="initial-value">Initial Value</h2>
 <p>Another way to change the basic exponential function $f(x)=b^{x}$ is to apply a vertical stretch.  A vertical stretch by a factor of $a$ has the effect of multiplying each y-value by $a$. by multiplying the function by some constant $a$.  Use the figure below to explore the effect of multiplying $f(x)=2^{x}$ by a constant $a$.  Make a note of your observations before continuing.</p>
-<iframe scrolling="no" title="Exponetial Function Vertical Stretch" src="https://www.geogebra.org/material/iframe/id/ZfNEAkbh/width/475/height/300/border/fafafa/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="475px" height="300px" style="border:0px;"> </iframe>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/ZfNEAkbh/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ZfNEAkbh"><img src="https://www.geogebra.org/resource/ZfNEAkbh/aMSg0ulYcZkY4Re8/material-ZfNEAkbh-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ZfNEAkbh"><a href="https://www.geogebra.org/m/ZfNEAkbh">https://www.geogebra.org/m/ZfNEAkbh</a></a></p>
+</div>
 <p>You should have noticed that multiplying an exponential function $f(x)=b^{x}$ by a constant $a$ causes the y-intercept to change from $(0, 1)$ to $(0, a)$.  For instance, if $a=4$, then the y-intercept will be $(0, 4)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/exponential_vertical_stretch.png#center" alt=""></p>
 <p>This is actually a consequence of the rule of exponents that says $b^{0}=1$, so $f(0)=a \cdot b^{0} = a$ for any valid base.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><em>Without graphing</em>, identify the y-intercept of the function $f(x)=59(0.86)^{x}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The y-intercept is $(0, 59)$.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><em>Without graphing</em>, identify the y-intercept of the function $f(x)=59(0.86)^{x}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The y-intercept is $(0, 59)$.</details></div>
 <h2 id="the-standard-exponential-model">The Standard Exponential Model</h2>
 <p>By including a vertical stretch with the exponential form $f(x)=(1+r)^{x}$, we obtain a more general function</p>
 <p>[
 f(x)=a(1+r)^{x}
 ]</p>
 <p>that starts with an initial value of $a$ and grows (or decays) at a constant rate $r$. We will call this equation the <strong>standard exponential model</strong>.  All other exponential functions are variations of this equation.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Write the equation for an exponential function with an initial value of $31$ that grows at a rate of $25 \text{%}$.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a=31$ and $r=0.25$, the function is $f(x)=31(1+0.25)^{x}$ or $f(x)=31(1.25)^{x}$.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Write the equation for an exponential function with an initial value of $31$ that grows at a rate of $25 \text{%}$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a=31$ and $r=0.25$, the function is $f(x)=31(1+0.25)^{x}$ or $f(x)=31(1.25)^{x}$.</details></div>
 <p>Let's revisit an earlier example.  In the final stage of the 2010 FIFA World Cup, 16 teams competed for the world championship.  After each round, one-half of the teams were eliminated and eventually Spain emerged as the champion.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/Spain_World_Cup_2.gif#center" alt=""></p>
 <p>We now have the tools needed to model this scenario with the standard exponential model $f(x)=a(1+r)^{x}$.</p>
@@ -165,10 +179,10 @@ f(x)=16 (1-0.5)^{x}=16(0.5)^{x}
 <p>models the number of teams left after $x$ rounds have been played.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Write the equation of an exponential function that starts at $8$ and increases at a rate of $10\text{%}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $a=8$ and $r=0.1$, the function is $f(x)=8(1+0.1)^{x}=8(1.1)^{x}$.</details></p>
+<p>Write the equation of an exponential function that starts at $8$ and increases at a rate of $10\text{%}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $a=8$ and $r=0.1$, the function is $f(x)=8(1+0.1)^{x}=8(1.1)^{x}$.</details></p>
 </li>
 <li>
-<p>Write the equation of an exponential function that starts at $8$ and decreases at a rate of $10\text{%}$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $a=8$ and $r=-0.1$, the function is $f(x)=8(1-0.1)^{x}=8(0.9)^{x}$.</details></p>
+<p>Write the equation of an exponential function that starts at $8$ and decreases at a rate of $10\text{%}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $a=8$ and $r=-0.1$, the function is $f(x)=8(1-0.1)^{x}=8(0.9)^{x}$.</details></p>
 </li>
 </ol>
 </div>
@@ -182,7 +196,7 @@ f(x)=16 (1-0.5)^{x}=16(0.5)^{x}
 f(x)=60000(1-0.5)^{x/3}
 ]</p>
 <p>where $a=60000$ is the initial value and $r=-0.5$ is the growth rate.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Create an exponential function that starts at $10$ and is cut in half every time $x$ increases by $4$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=10(1-0.5)^{x/4}$  or $f(x)=10(1/2)^{x/4}$</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Create an exponential function that starts at $10$ and is cut in half every time $x$ increases by $4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=10(1-0.5)^{x/4}$  or $f(x)=10(1/2)^{x/4}$</details></div>
 <h2 id="doubling-time">Doubling Time</h2>
 <p>On the other hand, the <strong>doubling time</strong> of a function is the amount of time needed for the value to double.  Every exponential growth function has a doubling time.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/doubling_time.svg#center" alt=""></p>
@@ -193,7 +207,7 @@ f(x)=2(1+1.00)^{x/5}
 ]</p>
 <p>where $a=2$ is the initial value and $r=1.00$ is the growth rate.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Create an exponential function that starts at 10 and doubles every time $x$ increases by 4.</p>
-<details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=10(1+1.00)^{x/4}$ or $f(x)=10(2)^{x/4}$</details>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=10(1+1.00)^{x/4}$ or $f(x)=10(2)^{x/4}$</details>
 </div>
 <h2 id="recognize-doubling-time-and-half-life-models">Recognize Doubling Time and half-life Models</h2>
 <p>Let's generalize these last two examples.  If an initial quantity $a$ grows exponentially at a rate of $r$ every time $x$ increases by $c$, then that growth can be modeled by an exponential function of the form</p>
@@ -203,10 +217,10 @@ f(x)=a (1+r)^{x/c}
 <p>For instance, the function $f(x)=18(1+0.64)^{x/7}$ could model an initial quantity of $18$ that increases by $64\text{%}$ every time $x$ increases by $7$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Write the equation for an exponential function that starts at 20 and increases by $87\text{%}$ every time $x$ increases by 3.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=20(1+0.87)^{x/3}$ or $f(x)=20(1.87)^{x/3}$.</details></p>
+<p>Write the equation for an exponential function that starts at 20 and increases by $87\text{%}$ every time $x$ increases by 3.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=20(1+0.87)^{x/3}$ or $f(x)=20(1.87)^{x/3}$.</details></p>
 </li>
 <li>
-<p>Write the equation for an exponential function that starts at $30$ and decreases by $52\text{%}$ every time $x$ increases by $2$. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=30(1-0.52)^{x*2}$ or $f(x)=30(0.48)^{x/2}$.</details></p>
+<p>Write the equation for an exponential function that starts at $30$ and decreases by $52\text{%}$ every time $x$ increases by $2$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=30(1-0.52)^{x*2}$ or $f(x)=30(0.48)^{x/2}$.</details></p>
 </li>
 </ol>
 </div>
@@ -225,7 +239,7 @@ f(x)=a (1+r)^{x/c}
 </tr>
 </tbody>
 </table>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the half-life of the function $g(t) = 9.2\left(\frac{1}{2}\right)^{t/1.4}$.   Assume $t$ is measured in hours. <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The half-life is $1.4$ hours.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the half-life of the function $g(t) = 9.2\left(\frac{1}{2}\right)^{t/1.4}$.   Assume $t$ is measured in hours. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The half-life is $1.4$ hours.</details></div>
 <p><img src="https://duragauge.github.io/img/chapter-3/Intel_C4004.jpg#center" alt=""></p>
 <p>As an example, when technology innovator, Intel, produced its first microprocessor in 1971, it contained 2300 transistors.  Intel's founder, Gordon Moore, predicted that the number of transistors on a computer chip would double <em>every two years</em>.  His prediction is known as <em>Moore's law</em> and can be modeled by</p>
 <p>[
@@ -246,7 +260,7 @@ f(x)=2300(2)^{x/2}
 </tbody>
 </table>
 <p>which is very close to the actual value.  When evaluating expressions like this on a calculator, make sure to include parenthesis around the exponent.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Intel released the first <em>Pentium</em> processor in 1993.  According to Moore's law, how many transistors should it have had? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />1993 is 22 years after 1971.  Using $x=22$ we have
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Intel released the first <em>Pentium</em> processor in 1993.  According to Moore's law, how many transistors should it have had? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />1993 is 22 years after 1971.  Using $x=22$ we have
 [ f(22)=2300(2)^{22/2}=4,710,400 ]
 On a calculator you should enter </br>  <code>2300*2^(22/2) = 4710400</code>
 </br>The first <em>Pentium</em> actually had 3.1 million transistors, somewhat less than what was predicted.</details></div>
@@ -281,7 +295,7 @@ A(t) = P\left(1 + \frac{r}{n}\right)^{n \cdot t}
 A(8) =  3000\left(1+\frac{0.06}{12}\right)^{12 \cdot 8}\approx 4842.43
 ]</p>
 <p>When using a calculator, remember to include parenthesis around the exponent.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>What is the account balance after 10 years if $8500 is invested at 3% compounded weekly?  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>What is the account balance after 10 years if $8500 is invested at 3% compounded weekly?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details></div>
 <h2 id="continuous-compound-interest">Continuous Compound Interest</h2>
 <p>It is logical to wonder what might happen if we were to increase the number of compounding periods $n$ over the course of a year.  Let's investigate.</p>
 <p>Suppose you invest $\$25,000$ at $5\text{%}$ interest for one year.  Using $P=25000$, $r=0.05$ and $t=1$, the accompanying table shows the account balance $A$ for ever increasing values of $n$.</p>
@@ -385,10 +399,10 @@ y &amp;= C e^{ r x}
 <p>are all continuous growth models.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>What are the distinguishing features of continuous exponential growth?  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The base of the exponential function is $e$ and the growth rate is in the exponent along with the variable.</details></p>
+<p>What are the distinguishing features of continuous exponential growth?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The base of the exponential function is $e$ and the growth rate is in the exponent along with the variable.</details></p>
 </li>
 <li>
-<p>What is the continuous rate of growth (or decay) of the function $f(x)=36e^{-0.03 x}$ ? <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The rate is $k=-0.03$, which indicates a continuous decay of 3%.</details></p>
+<p>What is the continuous rate of growth (or decay) of the function $f(x)=36e^{-0.03 x}$ ? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The rate is $k=-0.03$, which indicates a continuous decay of 3%.</details></p>
 </li>
 </ol>
 </div>
@@ -439,13 +453,13 @@ T(t) &amp;= S+(T_0-S)e^{-k  \thinspace  t} \newline
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose the population of trout in a particular mountain lake is modeled by the logistic equation $f(x)=\frac{20000}{1+39e^{-0.2x}}$ where $x$ is the number of years since the lake was first stocked.</p>
 <ol>
 <li>
-<p>Calculate the initial trout population.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />At time $x=0$ the equation suggests that there were $f(0)=500$ trout.</details></p>
+<p>Calculate the initial trout population.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />At time $x=0$ the equation suggests that there were $f(0)=500$ trout.</details></p>
 </li>
 <li>
-<p>What is the carrying capacity, or maximum number of trout the lake can support?  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $c=20000$, the carrying capacity is $20000$ trout.</details></p>
+<p>What is the carrying capacity, or maximum number of trout the lake can support?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $c=20000$, the carrying capacity is $20000$ trout.</details></p>
 </li>
 <li>
-<p>Determine the trout population $10$ years after the lake was stocked.  <details style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(10) = \frac{20000}{1+39 e^{-0.2*10}}\approx 3186$ trout.</details></p>
+<p>Determine the trout population $10$ years after the lake was stocked.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(10) = \frac{20000}{1+39 e^{-0.2*10}}\approx 3186$ trout.</details></p>
 </li>
 </ol>
 </div>

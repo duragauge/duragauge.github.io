@@ -137,6 +137,10 @@ home = [ "HTML"]
     buttonText = "Scroll down"
 
 
+  # create a chapter parameter for use when compiling full-chapters
+  [params.chapter]
+
+
   # Tiles Section
   [params.tiles]
     enable = true

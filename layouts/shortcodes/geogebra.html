@@ -8,8 +8,8 @@ Also makes sense to set the background color in Geogebra to the same thing, whic
 ** This is still not working exactly the way I want.
 Best case: it should only scale Geogebra when the screen is smaller than the original width of the figure.
 -->
-<div class="geogebra" style="padding-top: {{ .Get "ratio"}};margin-bottom:0.5rem; ">
-      <iframe src="https://www.geogebra.org/material/iframe/id/{{ .Get "id"}}/border/fafafa" scrolling="no"
+<div class="no-print geogebra" style="padding-top: {{ .Get "ratio"}};margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/{{ .Get "id_2"}}/border/fafafa" scrolling="no"
       style="
         position: absolute;
         top: 0;
@@ -18,4 +18,9 @@ Best case: it should only scale Geogebra when the screen is smaller than the ori
         height: 100%;
         background-color: transparent">
       </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/{{ .Get "id_m"}}"><img src="https://www.geogebra.org/resource/{{ .Get "id_2"}}/{{ .Get "id_1"}}/material-{{ .Get "id_2"}}-thumb@l.png"></img></a>
+
+  <em>To use the interactive figure visit </em> &nbsp; <a href="https://www.geogebra.org/m/{{ .Get "id_m"}}">https://www.geogebra.org/m/{{ .Get "id_m"}}</a>
 </div>

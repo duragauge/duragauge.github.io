@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="A book about college algebra">
+	<meta name="author" content="Nolan Mitchell">
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>Chapter 6 &middot; College Algebra</title>
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://duragauge.github.io/css/main.css"/>
+	
+	
+
+	
+
+	<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://duragauge.github.io/favicon.ico">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body>
+
+
+
+  <h1>Chapter 6</h1>
+
+  <ul>
+    
+      <li><a href="#chapter-6%2f6.1">6.1 Systems of Equations</a></li>
+    
+      <li><a href="#chapter-6%2f6.2">6.2 Sequences</a></li>
+    
+      <li><a href="#chapter-6%2f6.3">6.3 Series</a></li>
+    
+  </ul>
+
+
+  
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-6/6.1">6.1 Systems of Equations</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-6/car-3075497_1280.jpg"  title="Image by Tayeb MEZAHDIA from Pixabay "  alt="Image by Tayeb MEZAHDIA from Pixabay " style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-3075497/">Image by Tayeb MEZAHDIA from Pixabay </a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>Many of the images we see in movies, videos, games and in print are created and edited by computer graphics software.  Artists, designers, architects and engineers use computer generated images to make simulations, prototypes, animations, life-like models and stunningly realistic visual effects.</p>
+<p>The shapes and surfaces that comprise computer generated images are created by mathematical equations.</p>
+<p>In order for these shapes and surfaces to fit together seamlessly and move smoothly their equations often need to satisfy several parameters simultaneously.</p>
+<p>Those parameters give us sets of two or more equations which are known as <strong>systems of equations</strong>.</p>
+<h2 id="solutions-to-systems-of-equations">Solutions to Systems of Equations</h2>
+<p>A system of equations is a list of equations that all need to be solved at the same time.  For instance, this is a system of two equations with two unknown values $a$ and $b$.</p>
+<p>[
+\begin{align}
+a + b &amp;= 10 &amp;&amp; \small \text{Equation #1} \newline
+2b &amp;= 6  &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>Solving a system of equations means finding values that satisfy every equation in the system.</p>
+<p>Equation #2 above implies that $b=3$.  If we combine that with Equation #1 it appears that $a$ must be $7$.  So the values $a=7$ and $b=3$ are a solution to this system.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is $a=5$, $b=2$ a solution to the system below?
+[
+\begin{align}
+a - b &amp;= 3 &amp;&amp; \small \text{Equation #1} \newline
+a + b^2 &amp;= 9 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, since both equations are true when $a=5$ and $b=2$.
+[
+\begin{align}
+5 - 2 &amp;= 3 &amp;&amp; \small \text{Equation #1} \newline
+5 + (2)^2 &amp;= 9 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</details></p>
+</li>
+<li>
+<p>Is $a=1$, $b=10$ a solution to the system below?
+[
+\begin{align}
+a + b &amp;= 11 &amp;&amp; \small \text{Equation #1} \newline
+a \cdot b &amp;= 7 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No.  If $a=1$ and $b=10$ then only the first equation is true.
+[
+\begin{align}
+1 + 10 &amp;= 11 &amp;&amp; \small \text{Equation #1} \newline
+(1)(10) &amp;\ne 7 &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="methods-for-solving-systems">Methods for Solving Systems</h2>
+<p>The three most common methods for solving systems are substitution, elimination and matrix methods.</p>
+<p>Small systems with just two or three variables can be solved by hand in not too many steps using substitution or elimination, so we will introduce those techniques first.</p>
+<p>Large systems are almost always solved by matrix methods using algorithms running in a calculator or on a computer, especially in applications where the number of unknowns is in the hundreds or thousands.  Obviously, we won't get to anything of that size, but we'll discuss some of the basic ideas that carry over to systems of any size.</p>
+<p>Even though most all of the examples we will look at have solutions, its important to keep in mind that systems do not always have solutions.</p>
+<p>However, generally speaking, the number of equations in a system should match the number of unknown values if we hope to solve the system.  To solve for $6$ values, for instance, you typically need $6$ equations.</p>
+<p>We will start with systems of two equations with two variables and move up from there.</p>
+<h2 id="solve-systems-by-substitution">Solve Systems by Substitution</h2>
+<p>Our first solving method is called <strong>substitution</strong>.  Substitution means replacing one thing with another equivalent object.  Substitution is used throughout all levels of mathematics and, in fact, we've already used it several times.  As a simple example, notice that when we evaluate the function $f(x)=x^2$ for $x=5$ then we <em>substitute</em> $5$ for every $x$ in the function.</p>
+<p>When working with systems, substitution will involve solving one equation for one variable and then substituting that expression into the other equation.  Since this might be a new technique, we will look at an example.</p>
+<h3 id="substitution-example---find-an-exponential-function-given-2-points">Substitution Example - Find an Exponential Function Given 2 Points</h3>
+<p>Suppose we are asked to find an exponential function $f(x)=a \thinspace b^{x}$ that passes through the points $(1, 12)$ and $(3, 27)$.  There are two values we don't know, $a$ and $b$, so we need a system of two equations.</p>
+<p>To turn what we know into a system we need to remember that each point has an $x$ and a $y=f(x)$ coordinate.  Inserting those values into the exponential equation will give us two equations.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/substitution_exponential.svg#center" alt=""></p>
+<p>Those two equations are our system.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \text{Equation #1} \newline
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>To solve our system by substitution we should first solve one of these equations for one of the unknown values, either $a$ or $b$.  It makes no difference which equation or which value we pick, so look for the one that seems simplest.</p>
+<p>Since Equation #1 has the lower power, let's use it to solve for $a$.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+\frac{12}{b} &amp; = a  &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $b$}} \newline
+\end{align}
+]</p>
+<p>This next step is the key to substitution.  We take this expression for $a$ and substitute it into the other equation, Equation #2.</p>
+<p>[
+\begin{align}
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
+27 &amp; = \frac{12}{b}  \thinspace  b^{3}  &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $a=\frac{12}{b}$}} \newline
+27 &amp; = 12 b^{2}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify powers of $b$}} \newline
+\frac{27}{12} &amp;= b^{2}   &amp;&amp; \small \color{#5fa2ce}{\text{Divide by 12}} \newline
+\frac{9}{4} &amp;= b^{2}   &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+\pm \sqrt{\frac{9}{4}} &amp;= b   &amp;&amp; \small \color{#5fa2ce}{\text{Take $\pm \sqrt{\text{  }}$}} \newline
+\pm \frac{3}{2} &amp;= b  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]</p>
+<p>Normally getting two answers could cause a problem, but in this case we know something extra.  We are trying to find the base of an exponential function, and the base of an exponential is never negative.  So the correct value must be $b=\frac{3}{2}$.</p>
+<p>This is only half of the solution, we also need to know what $a$ is.  To find that, we'll substitute $b$ back into one of our equations.  As before, either one will work but we'll choose Equation #1 since it is a bit simpler.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+12 &amp; = a \frac{3}{2} &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{3}{2}$}} \newline
+\frac{2}{3} \cdot 12 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Multiply by $\frac{2}{3}$}} \newline
+8 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]</p>
+<p>Now that we know the values for $a$ and $b$, we can finally say that</p>
+<p>[f(x)=8 \left(\frac{3}{2} \right)^{x}]</p>
+<p>is the exponential function that passes through the points $(1, 12)$ and $(3, 27)$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>If we had solved Equation #2 for $a$ at the start, we would have gotten $a = \frac{27}{b^3}$.  Substitute that expression into Equation #1. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
+12 &amp; = \frac{27}{b^3} \cdot b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $a = \frac{27}{b^3}$}} \newline
+12 &amp; = \frac{27}{b^{2}}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify powers of $b$}} \newline
+12 b^{2} &amp;= 27   &amp;&amp; \small \color{#5fa2ce}{\text{Multiply by $b^2$}} \newline
+b^{2} &amp;= \frac{27}{12} &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $12$}} \newline
+b^{2} &amp;= \frac{9}{4}  &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+b &amp;= \pm \sqrt{\frac{9}{4}} &amp;&amp; \small \color{#5fa2ce}{\text{Take $\pm \sqrt{\text{  }}$}} \newline
+b &amp;= \pm \frac{3}{2} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
+\end{align}
+]
+which is the same result we had when using Equation #1.</details></p>
+</li>
+<li>
+<p>Suppose you were looking for a power function through the points $(2, 5)$ and $(6,10)$.  Write the system of equations that would result from inserting the values from those points into the power function format $f(x)=k \thinspace x^{p}$ . <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
+\begin{align}
+5 &amp;= k \thinspace 2^{p} &amp;&amp; \small \text{Equation #1} \newline
+10 &amp;= k \thinspace 6^{p} &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="solve-systems-by-elimination">Solve Systems by Elimination</h2>
+<p>Our second technique for solving systems is called <strong>elimination</strong>.  For elimination to work both equations must be written in the same format.  You then try to combine the equation in a way that eliminates one of the parameters.  Let's look at an example.</p>
+<h3 id="elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</h3>
+<p>Suppose we need to find a logarithmic function through the two points $(5, 3)$ and $(20, 9)$.  We'll use the format $f(x)=a+b \ln x$ so that we can use <code>LnReg</code> to double check our answer.</p>
+<p>As we have done earlier, we begin by substituting the $x$ and $y=f(x)$ coordinates into the equation of our model to generate a system.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>Notice that if we were to subtract the two equations then $a$ would be eliminated.  That is our elimination step.</p>
+<p>[
+\begin{array}{l r c l}
+&amp; 9 &amp; = &amp;  a+b \ln 20 \newline
+-   &amp; (3 &amp; = &amp; a+b \ln 5 ) \newline
+\hline
+&amp; 6 &amp; = &amp;  b \ln 20 - b \ln 5
+\end{array}
+]</p>
+<p>The result of the elimination is a new equation that only has $b$ in it.  After we solve this for $b$ we can substitute that value back into one of our equations and find $a$.</p>
+<p>[
+\begin{align}
+6 &amp;= b \ln 20 - b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original Equation}} \newline
+6 &amp;= b \left(\ln 20 - \ln 5 \right) &amp;&amp; \small \color{#5fa2ce}{\text{Factor out $b$}} \newline
+6 &amp;= b \ln \left(\frac{20}{5} \right) &amp;&amp; \small \color{#5fa2ce}{\text{Use Quotient rule for Logs}} \newline
+6 &amp;= b \ln 4 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+\frac{6}{\ln 4} &amp;= b &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $\ln 4$}} \newline
+b &amp;\approx 4.328 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>The next step is to find $a$ by substituting $b=\frac{6}{\ln 4}$ into one of our equations.  Either equation will work, but we'll pick Equation #2 since it looks a bit simpler.</p>
+<p>[
+\begin{align}
+3 &amp;= a+b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
+3 &amp;= a + \frac{6}{\ln 4} \cdot \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{6}{\ln 4}$}} \newline
+3 - \frac{6}{\ln 4} \cdot \ln 5 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $\frac{6}{\ln 4} \cdot \ln 5$}} \newline
+a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>Now that we have both $a$ and $b$, we can write out our function.</p>
+<p>[f(x) =  -3.966+4.328 \ln x]</p>
+<p>A quick way to check this is to run logarithmic regression on the limited data set $(5, 3)$ and $(20, 9)$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/log_regression_2_points.svg#center" alt=""></p>
+<p>This give the same values for $a$ and $b$ and the graph clearly goes through our two points.</p>
+<h2 id="identify-systems-of-linear-equations">Identify Systems of Linear equations</h2>
+<p>One of the most powerful tools for solving systems is a matrix method called Gauss-Jordan Elimination, which is programed into most graphing calculators.</p>
+<p>Gauss-Jordan Elimination is designed to solve systems of <em>linear</em> equations.  You might assume this means it is only good for finding lines, but that is not the case.</p>
+<p>The system we solved a moment ago was actually a linear system, even though the equations came from a logarithmic model.  Let's look at it again.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>These equations are linear because $a$ and $b$ have a power of $1$ and are combined using only addition.  If the equations had powers/roots or exponents/logs or products of $a$ and $b$ then they would not be linear.</p>
+<p>In our first system the equations came from an exponential model.</p>
+<p>[
+\begin{align}
+12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \text{Equation #1} \newline
+27 &amp;= a  \thinspace  b^{3} &amp;&amp; \small \text{Equation #2} \newline
+\end{align}
+]</p>
+<p>This is a system of <em>non-linear</em> equations because $b$ has a power of $3$ in the second equation and because the variables are multiplied together.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+y &amp; = &amp; x^2 + 1 \newline
+y &amp; = &amp; x^3 + x^2 + 1
+\end{array}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a non-linear system.</details></p>
+</li>
+<li>
+<p>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+x - y &amp; = &amp; 4 \newline
+2y &amp; = &amp; x \newline
+\end{array}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This system is linear.</details></p>
+</li>
+<li>
+<p>Is this system linear or non-linear?
+[
+\begin{array}{rcl}
+\sqrt x + 1 &amp; = &amp; y \newline
+x \cdot y &amp; = &amp; 2 \newline
+\end{array}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a non-linear system.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="converting-between-systems-and-matrices">Converting Between Systems and Matrices</h2>
+<p>Systems of linear equations are easier to work with if we organize them by sorting the terms with variables on the left and putting the constant terms on the right, like in this example below.</p>
+<p>[
+\begin{align}
+3x + 4y &amp;= 3 \newline
+2x - 3y &amp;= 2
+\end{align}
+]</p>
+<p>Once the equations are written in the same format we don't really need the variables or the equals sign anymore.  By stripping those away we are left with something called a <strong>augmented matrix</strong>.  In the figure below you can convert a linear system into a matrix and back again.</p>
+<div class="no-print geogebra" style="padding-top: 25%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/uwdgq9fy/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/vmkcyyt2"><img src="https://www.geogebra.org/resource/uwdgq9fy/TIQ57dvm8gydTpfV/material-uwdgq9fy-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/vmkcyyt2"><a href="https://www.geogebra.org/m/vmkcyyt2">https://www.geogebra.org/m/vmkcyyt2</a></a></p>
+</div>
+<p>The matrix contains the same information as the original system, since knowing where a number is located is enough to tell us if it represents an $x$ or a $y$ or a constant.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Convert this system of linear equations into an augmented matrix.
+[
+\begin{align}
+2x + y &amp;= 5 \newline
+3x - 2y &amp;= 4
+\end{align}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$
+\left[
+\begin{array}{rr|r}
+2 &amp; 1 &amp; 5 \newline
+3 &amp; -2 &amp; 4
+\end{array}\right]
+$$</details></p>
+</li>
+<li>
+<p>Convert this augmented matrix back to a system of equations.
+$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 2 &amp; 3 \newline
+2 &amp; 0 &amp; 2
+\end{array}\right]
+$$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
+\begin{align}
+x + 2y &amp;= 3 \newline
+2x +0y &amp;= 2
+\end{align}
+]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="solve-2x2-systems-of-linear-equations-with-technology">Solve 2x2 Systems of Linear Equations with Technology</h2>
+<p>Once a system is represented by a matrix, we can enter the matrix into a calculator and let it run through all the steps of Gauss-Jordan Elimination for us.</p>
+<p>To illustrate how this is done, let's use the system of from the first part of the last Quick Check.</p>
+<p>[
+\begin{align}
+2x + y &amp;= 5 \newline
+3x - 2y &amp;= 4
+\end{align}
+]</p>
+<p>In matrix form this system becomes</p>
+<p>$$
+\left[
+\begin{array}{rr|r}
+2 &amp; 1 &amp; 5 \newline
+3 &amp; -2 &amp; 4
+\end{array}\right]
+$$</p>
+<p>To enter this matrix into a calculator press the <code>[2ND]</code> and <code>[x^-1]</code> keys to enter the <code>MATRIX</code> menu and choose the <code>EDIT</code> tab.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/matrix_edit.png#center" alt=""></p>
+<p>At the top change the dimensions to <code>2 x3</code>, since our matrix has $2$ rows and $3$ columns, and type in all the values.  It should look like this.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/2x2_rref_1.png#center" alt=""></p>
+<p>The next step requires us to go back to the home screen, so press <code>[2nd]</code> and <code>[MODE]</code> to <code>QUIT</code>.</p>
+<p>Then go back into the <code>MATRIX</code> menu and this time choose the <code>MATH</code> tab.  Scroll down to option <code>B: rref</code> and press <code>[ENTER]</code>.  That is the command that will run Gauss-Jordan Elimination.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/2x2_rref_2.png#center" alt=""></p>
+<p>The <code>B: rref</code> command needs to know which matrix to work with, so return to the <code>MATRIX</code> menu a third time, stay in the <code>NAME</code> tab and press <code>[ENTER]</code> to select matrix <code>1: [A]</code>.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/2x2_rref_3.png#center" alt=""></p>
+<p>Press <code>[ENTER]</code> once again and the calculator will work through Gauss-Jordan Elimination.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/2x2_rref_4.png#center" alt=""></p>
+<p>What we get back is a matrix that is in reduced row echelon form, which is why the command is called <code>rref</code>.</p>
+<p>$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 0 &amp; 2 \newline
+0 &amp; 1 &amp; 1
+\end{array}\right]
+$$</p>
+<p>Look what happens when we convert this reduced matrix back into a system.</p>
+<p>[
+\begin{align}
+x &amp;= 2 \newline
+y &amp;= 1
+\end{align}
+]</p>
+<p>It's now obvious that the solution is $x=2$ and $y=1$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>What is the solution to the system whose reduced matrix is shown below?
+$$
+\left[
+\begin{array}{rr|r}
+1 &amp; 0 &amp; -3 \newline
+0 &amp; 1 &amp; 4
+\end{array}\right]
+$$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The solution is $x=-3$ and $y=4$.</details></li>
+</ol>
+</div>
+<h2 id="solve-larger-systems-of-linear-equations-with-technology">Solve Larger Systems of Linear Equations with Technology</h2>
+<p>When solving a larger system on a calculator, the only thing that will change is the size of the matrix.  For instance, suppose we start with  this system of three linear equations each with three variables.</p>
+<p>[
+\begin{array}{r c r c r c r}
+3a &amp; + &amp; 2b &amp; - &amp; c &amp; = &amp; 5 \newline
+a &amp;  &amp;  &amp; + &amp; 6c &amp; = &amp; 1 \newline
+2a &amp; + &amp; b &amp; - &amp; 2c &amp; = &amp; 5 \newline
+\end{array}
+]</p>
+<p>Even though it has three unknows, $a$, $b$ and $c$, this is still a linear system since none of those unknowns are raised to power/roots, etc. or are multiplying each other.</p>
+<p>The matrix version of our system is</p>
+<p>$$
+\left[
+\begin{array}{rrr|r}
+3 &amp; 2 &amp; -1 &amp; 5 \newline
+1 &amp; 0 &amp; 6 &amp; 1 \newline
+2 &amp; 1 &amp; -2 &amp; 5
+\end{array}\right]
+$$</p>
+<p>Notice that there are $3$ rows, one for each equation, and $4$ columns, one for each of the coefficients and a fourth for the constant.  Also note that when a value is missing from the system we put a $0$ into the matrix at the appropriate location.</p>
+<p>Since this matrix has $3$ rows and $4$ columns we change the dimensions to <code>3 x4</code>, enter the values and run <code>rref</code>.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/3x3_rref_1.png#center" alt=""></p>
+<p>We get back a reduced matrix with decimal values.  Sometimes the decimals can be converted to fractions by pressing <code>[2ND]</code>, <code>[MATH]</code> and choosing <code>1:Frac</code>.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/3x3_rref_2.png#center" alt=""></p>
+<p>Our reduced matrix is</p>
+<p>$$
+\left[\begin{array}{r r r | r}
+1 &amp; 0 &amp; 0 &amp; \frac{11}{3} \newline
+0 &amp; 1 &amp; 0 &amp; \frac{-29}{9} \newline
+0 &amp; 0 &amp; 1 &amp; \frac{-4}{9}
+\end{array}\right]
+$$</p>
+<p>and the solution must be $a=\frac{11}{3}$, $b=\frac{-29}{9}$ and $c=\frac{-4}{9}$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Use a calculator to solve the system below.  Convert your answers to fractions.
+[
+\begin{align}
+x+2y+3z&amp;=4 \newline
+5x+7z&amp;=1 \newline
+2x-y+z&amp;=-2
+\end{align}
+] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The matrix for this system is
+[
+\left[\begin{array}{r r r | r}
+1 &amp; 2 &amp; 3 &amp; 4 \newline
+5 &amp; 0 &amp; 7 &amp; 1 \newline
+2 &amp; -1 &amp; 1 &amp; -2
+\end{array}\right]
+]
+Entering this into the calculator and running <code>rref</code> gives
+<img src="https://duragauge.github.io/img/chapter-6/3x3_rref_check_1.png#center" alt="">
+Converting to fractions this becomes
+<img src="https://duragauge.github.io/img/chapter-6/3x3_rref_check_2.png#center" alt="">
+so the solution is $x=\frac{-1}{2}$, $y=\frac{3}{2}$ and $z=\frac{1}{2}$.</details></li>
+</ol>
+</div>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-6/6.2">6.2 Sequences</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-6/cookbook-746005_1280.jpg"  title="Image by RitaE from Pixabay"  alt="Image by RitaE from Pixabay" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-746005/">Image by RitaE from Pixabay</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>When shopping at a grocery store it makes no difference if you grab eggs or flour first.  As long as you get everything on your list you'll be fine.</p>
+<p>But a recipe is much different than a shopping list.  A recipe is an ordered list of instructions.  If you want the dish to turn out right, you have to do each step in the proper order.</p>
+<p>In this section we are studying <strong>sequences</strong> which are more like recipes than shopping list.  With sequences, order matters.</p>
+<h2 id="sequence-notation">Sequence Notation</h2>
+<p>A sequence is generally though of as any ordered list.</p>
+<p>Most of the time we will focus on sequences of numbers, but for the moment let's take a broad view and consider sequences of letters as well.</p>
+<p>The two sequences below both have the same letters, but the different order completely changes the meaning.</p>
+<p>[
+\begin{array}{c}
+D, E, S, S, E, R, T, S \newline \newline
+S, T, R, E, S, S, E, D
+\end{array}
+]</p>
+<p>The same is true for sequences of numbers.  We cannot change the order of a sequence without affecting its meaning.  If you have ever typed a wrong digit in one of your PIN numbers then you've experienced this.</p>
+<p>So when we work with sequences it is important to be able to describe precisely where a particular term is located in a sequence.  Since each term has a unique position (first, second, third, etc.) we label each entry as $a_1, a_2, a_3$ and so on.</p>
+<p>For instance, here is a sequence of multiples of $5$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/sequence_terms.svg#center" alt=""></p>
+<p>Notice that the label for each term gives its position, so that $a_1=5$ is the first term and $a_5=25$ is the fifth term, for example.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>In the sequence $ \thinspace  2, \thinspace  4, \thinspace  6, \thinspace  8, \thinspace  10, \thinspace \dots  \thinspace $ , identify the term $a_4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$a_4$ is the label for the fourth term, so $a_4=8$.</details></p>
+</li>
+<li>
+<p>In the sequence $ \thinspace  3, \thinspace  6, \thinspace  9, \thinspace  12, \thinspace  15, \thinspace \dots  \thinspace $ , what is the proper label for the number $9$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$9$ is the third term listed, so $a_3=9$.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="equations-of-sequences">Equations of Sequences</h2>
+<p>If the numbers in a sequence appear to follow some pattern, then it might be possible to find an equation that generates any term in the sequence.</p>
+<p>An equation of sequence should return the value of a term based on its position.  Let's take another look at our sequence of multiples of $5$, this time listing the position of each term next to its value.</p>
+<p>[
+\begin{array}{|c|c|}
+\hline
+\text{Position} &amp; \text{Value} \newline
+\hline
+1 &amp; 5  \newline
+\hline
+2 &amp; 10 \newline
+\hline
+3 &amp; 15 \newline
+\hline
+4 &amp; 20 \newline
+\hline
+5 &amp; 25 \newline
+\hline
+\end{array}
+]</p>
+<p>It certainly appears that the value of each term is $5$ times its position.  In other words, to find the value of the $n$th term in the sequence we would just evaluate $5n$, which means the equation for this sequence is $a_{n}=5n$.</p>
+<p>This looks similar to function notation, and that is not a coincidence.  In fact, it would not be incorrect to write it as $a(n)=5n$, provided we stipulate that $n$ can only be $1, 2, 3, \dots$ and so on.</p>
+<p>So rather that thinking of a sequence only as an ordered list of numbers, we can equivalently think of it as any function whose domain is restricted to the natural numbers $1, 2, 3, \dots$.</p>
+<p>With this new perspective in hand we can convert any function into a sequence just by changing the notation.  Instead of using $x$ (a generic real number) as the input variable we switch to $n$ (a generic natural number) and use $a_{n}$ to indicate the output rather than $f(x)$.</p>
+<p>Aside from those notational differences, sequences are evaluated and manipulated exactly the same as regular functions.</p>
+<p>For instance, if $a_n = 2n + 6$ and we wanted to know the value of the $100$th term $a_{100}$ the we evaluate it as follows.</p>
+<p>[
+\begin{align}
+a_n &amp;= 2n+6 &amp;&amp; \small \color{#5fa2ce}{\text{Original sequence}} \newline
+a_{100} &amp;= 2(100)+6 &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $n=100$}} \newline
+a_{100} &amp;= 206 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}}
+\end{align}
+]</p>
+<p>The main difference, again, is that $a_n$ can only be evaluated for natural number inputs.  Expressions like $a_{1/2}$ or $a_{-3}$ or $a_{2.6}$ are not allowed.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>What is the 85th term of the sequence $ \thinspace  a_n=2 n − 5(n−1)$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
+\begin{align}
+a_{n} &amp;= 2 n − 5(n−1) &amp;&amp; \small \color{#5fa2ce}{\text{Original sequence}} \newline
+a_{85} &amp;= 2 (85) − 5(85−1) &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $n=85$}} \newline
+a_{85} &amp;= 2 (85) − 5(84) &amp;&amp; \small \color{#5fa2ce}{\text{Simplify $85-1$}} \newline
+a_{85} &amp;= 170 − 420 &amp;&amp; \small \color{#5fa2ce}{\text{Multiply $2(85)$ and $5(84)$}} \newline
+a_{85} &amp;= − 250 &amp;&amp; \small \color{#5fa2ce}{\text{Subtract}}
+\end{align}
+]</details></li>
+</ol>
+</div>
+<h2 id="arithmetic-sequences">Arithmetic Sequences</h2>
+<p>One common pattern that can emerge from sequences is that all the terms might be evenly spaced, as in this example below.</p>
+<p>[3, \thinspace 10, \thinspace 17, \thinspace 24, \thinspace \dots]</p>
+<p>Note that each term is $7$ larger than the previous one.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/sequence_arithmetic.svg#center" alt=""></p>
+<p>If the terms are equally spaced then the sequence is called an <strong>arithmetic</strong> sequence.  The spacing between terms is called the <em>common difference</em> and can be found by taking any term and subtracting the one in front of it, so that $d=a_n - a_{n-1}$.</p>
+<p>All arithmetic sequences can be written using the following template</p>
+<p>[a_{n}=a_1+d(n-1)]</p>
+<p>where $a_1$ is the first term of the sequence and $d$ is the constant spacing between terms.</p>
+<p>Using this pattern, the equation for the sequence above is</p>
+<p>[a_{n}=3+7(n-1)]</p>
+<p>since the first term is $3$ and the spacing is $7$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is $\ 5, \thinspace 9, \thinspace 13, \thinspace 19, \thinspace 25 \thinspace $ an arithmetic sequence?  If so, give its equation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No this is not an arithmetic sequence.  The spacing for the first few terms is $4$ but for the last few it is $6$.  Since the spacing is not constant it cannot be an arithmetic sequence.</details></p>
+</li>
+<li>
+<p>Is $\ 72, \thinspace 63, \thinspace 54, \thinspace 45, \thinspace 36 \thinspace $ an arithmetic sequence?  If so, give its equation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, this is an arithmetic sequence since the spacing between terms is always $-9$.  The equation is
+[a_n=72-9(n-1)]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="geometric-sequences">Geometric Sequences</h2>
+<p>The other common pattern we encounter with sequences occurs when each new value is a multiple of the previous one.</p>
+<p>Here is an example where each term is $2$ times the term in front of it.</p>
+<p>[11, \thinspace 22, \thinspace 44, \thinspace 88, \thinspace \dots]</p>
+<p>When there is a consistent multiplying factor between terms, the sequence is called a <strong>geometric</strong> sequence.  The multipling factor is called the <em>common ratio</em> and can be found by dividing any term by the one right in front of it, so that $r=\frac{a_n}{a_{n-1}}$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/sequence_geometric.svg#center" alt=""></p>
+<p>All geometric sequences can be written using the following model</p>
+<p>[a_{n}=a_1 \cdot r^{n-1}]</p>
+<p>where $a_1$ is the first term of the sequence and $r$ is the common ratio between terms.</p>
+<p>Using this pattern, the equation for the sequence above is</p>
+<p>[a_{n}=11(2)^{n-1}]</p>
+<p>since the first term is $11$ and the ratio is $2$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is $\ 64, \thinspace 32, \thinspace 16, \thinspace 8, \thinspace 4 \thinspace $ a geometric sequence?  If so, give its equation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, each term is $1/2$ times the previous one, so this is geometric with a ratio of $r=1/2$.  The equation is
+[a_n=64 \left(\frac{1}{2}\right)^{n-1}]</details></p>
+</li>
+<li>
+<p>Is $\ \frac{-1}{3}, \thinspace \frac{2}{15}, \thinspace \frac{-4}{75}, \thinspace \frac{8}{375}, \thinspace \frac{-16}{1875} \thinspace $ a geometric sequence?  If so, give its equation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, this is geometric with a ratio of $r=-2/5$.  The equation is
+[a_n=\frac{-1}{3}\left(\frac{-2}{5} \right)^{n-1}]</details></p>
+</li>
+</ol>
+</div>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+  	<!-- Wrapper -->
+  	<div id="wrapper">
+
+  		<!-- Main -->
+  		<div class="tufte" id="main">
+
+  			
+  			<section id="one">
+  				<div class="inner">
+  					<header class="major">
+  						<h1 id="chapter-6/6.3">6.3 Series</h1>
+  					</header>
+  					<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-6/school-1689750_1280.jpg"  title="Image by Julia Schwab from Pixabay"  alt="Image by Julia Schwab from Pixabay" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-1689750/">Image by Julia Schwab from Pixabay</a></span>
+</div>
+<br>
+<h2 id="introduction">Introduction</h2>
+<p>When Carl Friedrich Gauss
+<label for="sn-Gauss" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
+<span class="sidenote">This is the same Gauss that gave us <a href="https://duragauge.github.io/chapter-6/6.1">Gauss-Jordan Elimination</a> and the <a href="https://duragauge.github.io/chapter-5/5.2/#the-fundamental-theorem-of-algebra">Fundamental Theorem of Algebra</a></span>
+was a young boy in Germany it was common for students to do their work on small slate chalkboards.</p>
+<p>The story is told that one day in 1786, when Gauss was just 9 years old, his teacher gave the class a challenging problem.  It was something along the lines of adding up all the whole numbers from $1$ to $100$, an exercise that would certainly take the entire class hour.</p>
+<p>Almost as soon as the problem had been given, Gauss wrote down a single number and put his slate on the teacher's desk.</p>
+<p>At the end of the hour, Gauss was one of the few students with the correct answer.</p>
+<p>So how did he do it?  That's what we'll look into in this section.</p>
+<h2 id="what-is-a-series">What is a Series?</h2>
+<p>In the last section we learned that an ordered list of numbers is called a <em>sequence</em>.  If you add up the terms of a sequence you get something new that we call a <strong>series</strong>.  Here is a side by side comparison.</p>
+<p>[
+\begin{align}
+\text{Sequence: } &amp; \thinspace 2, \thinspace 4, \thinspace 6, \thinspace 8 \newline
+\text{Series: } &amp; \thinspace 2 + 4 + 6 + 8 = 20
+\end{align}
+]</p>
+<p>Notice that the addition in the series simplifies to a single value.  Finding the sum of a series, if it exists, is one of the primary exercises with series.</p>
+<p>The problem young Gauss was given was that of finding the value of a series, though it may not have been worded that way.</p>
+<p>[
+\begin{align}
+\text{Sequence: } &amp; \thinspace 1, \thinspace 2, \thinspace 3, \thinspace \dots , \thinspace 100 \newline
+\text{Series: } &amp; \thinspace 1 + 2 + 3 + \cdots + 100 = \text{ ?}
+\end{align}
+]</p>
+<p>In English the words &quot;sequence&quot; and &quot;series&quot; are often used interchangeably without much difference.  For example, a &quot;series of events&quot; generally means the same as &quot;a sequence of events&quot;.  In mathematics, however, they are different and we'll need to pay close attention to which word is used.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Is $17+27+37+47$ a sequence or a series? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a series since we are adding up the numbers $17, 27, 37, 47$.</details></p>
+</li>
+<li>
+<p>Write the series for the sequence $5, \thinspace 10, \thinspace 15, \thinspace 20, \thinspace 25$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[5+10+15+20+25]</details></p>
+</li>
+<li>
+<p>Write a series for the sum of the first four terms of the sequence $a_n=2^n$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be [2^1+2^2+2^3+2^4].</details></p>
+</li>
+</ol>
+</div>
+<h2 id="arithmetic-series">Arithmetic Series</h2>
+<p>We are now at a point where we can start to think about how Gauss might have be able to find his sum.</p>
+<p>[\Large 1 + 2 + 3 + \cdots + 100]</p>
+<p>While we don't know for sure how Gauss pictured this problem in his mind, but he certainly spotted a pattern and used that to his advantage.</p>
+<p>There are a number of ways to visualize it, but perhaps the simplest is to look at pairs of numbers.  If you choose the pairs carefully, they will all equal the same number!</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/series_gauss_v3.svg#center" alt=""></p>
+<p>In this case we end up with $50$ pairs that each equal $101$ so the total is $50 \times 101 = 5050$.</p>
+<p>This same pattern occurs for every arithmetic series.  To find the sum of the first $n$ terms you add the first and last terms and multiply by the number of pairs.  So, whenever your sequence is arithmetic in the form $a_n=a_1+d(n-1)$, the sum of the first $n$ terms is given by this formula.</p>
+<p>[\Large S_n=\frac{n}{2} \bigl(a_1+a_n \bigr)]</p>
+<p>Let's walk through an example using this formula by evaluating the following series.</p>
+<p>[\Large 380 + 378 + 376 + \cdots + 252]</p>
+<p>We should start by making sure these numbers come from an arithmetic sequence.  If they don't, then we can't use our formula to find the sum.</p>
+<p>The first term is $a_1=380$ and the spacing is $d=-2$, so this is an arithmetic series and the terms come from the equation $a_n=380-2(n-1)$.</p>
+<p>The arithmetic summation formula involves $n$, $a_1$ and $a_n$.  We know $a_1$ and $a_n$ but don't have a value for $n$.  However, if we put $a_n=252$ into the equation for the sequence we can solve for $n$.</p>
+<p>[
+\begin{align}
+a_n &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Sequence equation}} \newline
+252 &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Replace $a_n=252$}} \newline
+-128 &amp;= -2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $380$}} \newline
+64 &amp;= n-1 &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $-2$}} \newline
+65 &amp;= n &amp;&amp; \small \color{#5fa2ce}{\text{Add $1$}}
+\end{align}
+]</p>
+<p>We now have all the pieces in place to find the sum of the $n=65$ terms of our series, starting with $a_1=380$ and ending at $a_{65}=252$.</p>
+<p>[
+\begin{align}
+S_{n} &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
+S_{65}&amp;= \frac{65}{2} \bigl(380+252\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 20540 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>One final note on this summation formula.  Gauss wasn't the first to discover how to add up an arithmetic series.  Fibbonacci, for one, published this method in 1202 and Archimedes probably knew of it by 200BC.  But the story of Gauss discovering the formula in school is famous and it would be breaking tradition not to relate it!
+<label for="sn-Gauss" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
+<span class="sidenote">Many retellings of this famous story exist.  The earliest version was written in 1856 by <a href="https://archive.org/details/gauss00waltgoog/page/n15">Wolfgang Sartorius</a>, who worked with Gauss at the University of Göttingen.  <a href="http://bit-player.org/2007/a-mathematical-fable-revisited">Brian Hayes</a> compares many of them in this <a href="https://duragauge.github.io/img/chapter-6/Gauss's_Day_of_Reckoning_by_Brian_Hayes">Scientific American article</a>.</span></p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $n=30$, $a_1=16$ and $a_{30}=-129$, the sum is
+[ \begin{align}
+S_{30} &amp;= \frac{30}{2} \bigl(16-129 \bigr)\newline
+&amp;= -1695
+\end{align}
+]</details></p>
+</li>
+<li>
+<p>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \thinspace $. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />First find the equation for the sequence that creates the terms.
+[a_{n}= 380-2(n-1)]
+Then use $a_n=80$ to find $n$.
+[ \begin{align}
+a_{n} &amp;=  380-2(n-1) &amp;&amp;  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
+80  &amp;=  32+4(n-1)  &amp;&amp;  \small \color{#5fa2ce}{\text{Replace $a_{n}=80$}} \newline
+48  &amp;=  4(n-1)     &amp;&amp;  \small \color{#5fa2ce}{\text{Subtract $32$}} \newline
+12  &amp;=  n-1        &amp;&amp;  \small \color{#5fa2ce}{\text{Divide by $4$}} \newline
+13  &amp;=  n          &amp;&amp;  \small \color{#5fa2ce}{\text{Add $1$}}
+\end{align}
+]
+And finally use the summation formula.
+[
+\begin{align}
+S_{n}  &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
+S_{13} &amp;= \frac{13}{2} \bigl(32+80\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 728                            &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="finite-geometric-series">Finite Geometric Series</h2>
+<p>It bears repeating that the formula above only works if the sequence is arithmetic.  If we encounter a geometric series then there is a completely different formula.</p>
+<p>To add up the first $n$ terms of a geometric sequence of the form $a_n=a_1 r^{n-1}$, use the following formula.</p>
+<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
+<p>To show how this works let's look at an application.</p>
+<h3 id="finite-geometric-series---example-1">Finite Geometric Series - Example 1</h3>
+<p><label for="mn-strawberries" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-strawberries" class="margin-toggle" />
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/johnny-martinez-lBIFDzYwbDo-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/lBIFDzYwbDo">Photo by Johnny Martínez on Unsplash</a> </span></p>
+<p>In 1988 farmers in Oregon produced a record crop of 100 million pounds of strawberries. Since then strawberry production has dropped 7% annually.  Can we use that information to determine how many millions of pounds of strawberries grown over a 20 year period starting in 1998?</p>
+<p>If you look closely at the summation formula, all we need are the first term $a_1$, the common ratio $r$, and the number of terms $n$.  Unlike the arithmetic series formula, we don't need to find the final term $a_n$.</p>
+<p>Taking $a_1=100$, $r=0.93$ (since there is a 7% drop), and $n=20$, we can find the sum using the formula above.
+[
+\begin{align}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{20} &amp;= \frac{100 \bigl(1-(0.93)^{20}\bigr)}{1-(0.93)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 1093.94 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>This means Oregon produced around 1094 million total pounds of strawberries over that 20 year period.</p>
+<p>When using a calculator to evaluate expressions like this, be very careful to put the exponent in the correct place and include parenthesis around the denominator.  The above calculation looks like this.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/geometric_sequence_calculator_eval.svg#center" alt=""></p>
+<h3 id="finite-geometric-series---example-2">Finite Geometric Series - Example 2</h3>
+<p><label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/josh-appel-NeTPASr-bmQ-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/NeTPASr-bmQ">Photo by Josh Appel on Unsplash</a> </span></p>
+<p>Suppose you put a penny on the first square of a chess board, two on the second, four on the third, eight on the
+fourth and continued doubling until you got to the 64th square. How much money, in dollars, would it take to fill up the chess board?</p>
+<p>In dollars $a_1=0.01$, since the amount is doubling $r=2$, and we know $n=64$.  So the sum is</p>
+<p>[
+\begin{align}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{64} &amp;= \frac{0.01 \bigl(1-(2)^{64}\bigr)}{1-(2)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline \newline
+&amp;\approx 1.84467 \times 10^{17} &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newline \newline
+&amp;\approx $184,467,000,000,000,000
+\end{align}
+]</p>
+<p>To help put that in perspective, every person on Earth would need to contribute more than 20 million dollars each to fill the chess board with pennies!</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
+[
+\begin{align}
+S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
+S_{50} &amp;= \frac{25000 \bigl(1-(1.03)^{50}\bigr)}{1-(1.03)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= $2,819,921.68 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</details></li>
+</ol>
+</div>
+<h2 id="infinite-geometric-series">Infinite Geometric Series</h2>
+<p>Not that long ago most music was sold on compact disks, or CDs.<br>
+<label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/cd-1003342_1280.jpg" alt=""><a href="https://pixabay.com/images/id-1003342/">Photo by Bruno Glätsch on Pixabay</a> </span></p>
+<p>According to data collected by the Recording Industry Association of America, 705.4 million CDs were sold in 2005 and that number has been declining by about $16.9\%$ per year.</p>
+<p>Using the formula for a geometric series we can say that the cumulative total number of CDs sold (in millions) since 2005 is given by</p>
+<p>[
+S_{n}  = \frac{705.4(1-(0.831)^n)}{1-(0.831)}
+]</p>
+<p>Let's chart those values for several years starting in 2005.</p>
+<p>[
+\begin{array}{|c|c|c|}
+\hline
+\text{Year} &amp; n &amp; \text{Millions of CDs Sold} \newline
+\hline
+2005 &amp; 1 &amp; 705.4  \newline
+\hline
+2010 &amp; 6 &amp; 2799.4 \newline
+\hline
+2015 &amp; 11 &amp; 3629.3 \newline
+\hline
+2020 &amp; 16 &amp; 3958.1 \newline
+\hline
+2025 &amp; 21 &amp; 4088.4 \newline
+\hline
+2030 &amp; 26 &amp; 4140.1 \newline
+\hline
+\end{array}
+]</p>
+<p>Looking at these numbers it appears that the total number of CDs sold is growing more slowly as time progresses.</p>
+<p>And that seems reasonable.  Since fewer and fewer CDs are being sold we shouldn't expect the total to rise very much.</p>
+<p>In fact, if we compute the values for $2035$ and $2040$ they are nearly the same at $4160.5$ and $4168.6$.</p>
+<p>But what would happen if we projected this process out further into the future?  Could it be that there is some limit to the number of CDs that will ever be sold no mater how much time passes?</p>
+<p>Mathematically, what we are asking is if there is such a thing as an infinite sum that adds up to a fixed number.  Is it possible for something like $S_{\infty}$ to exist?</p>
+<p>The answer lies hidden in our formula for the sum of the first $n$ terms of a geometric sequence.</p>
+<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
+<p>As $n$ increases the only part that changes is the $r^n$.  So what happens to $r^n$ as $n$ gets larger?  In the figure below you can change $r$ and see how that impacts $r^n$.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/gwkjxypb/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/rpg8fm6k"><img src="https://www.geogebra.org/resource/gwkjxypb/D6uDhhnaO0kN7YDh/material-gwkjxypb-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/rpg8fm6k"><a href="https://www.geogebra.org/m/rpg8fm6k">https://www.geogebra.org/m/rpg8fm6k</a></a></p>
+</div>
+<br>
+<p>Notice that the values for $r^n$ drop toward $0$ whenever $-1&lt;r&lt;1$.  In other words, if $-1&lt;r&lt;1$ then $r^n \rightarrow 0$ as $n \rightarrow \infty$.  When this happens our summation formula becomes</p>
+<p>[\Large S_{\infty}=\frac{a_1}{1-r}]</p>
+<p>It might seem odd that you can add up infinitely many things and arrive at something other than infinity--but that's exactly what this formula says you can do, provided $-1&lt;r&lt;1$.</p>
+<p>We've already seen that the total number of CDs sold since 2005 appears to be leveling off.  Let's now use this infinite geometric series formula to find that limiting value.</p>
+<p>To do that we use infinite sum formula with $a_1=705.4$ million and, since there is a $16.9\%$ decline, $r=0.831$.</p>
+<p>[
+\begin{align}
+S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
+&amp;= \frac{705.4}{1-(0.831)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 4173.96 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]</p>
+<p>This formula predicts that 4173.96 million CDs will be sold from 2005 to the end of time, if that $16.9\%$ decline persists.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-6/mick-haupt-fnKoW9mvgkA-unsplash.jpg"  title="Photo by Mick Haupt on Unsplash"  alt="Photo by Mick Haupt on Unsplash" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://unsplash.com/photos/fnKoW9mvgkA">Photo by Mick Haupt on Unsplash</a></span>
+</div>
+<br>
+<ol>
+<li>
+<p>Before CDs there were cassette tapes, and they faced an even more rapid demise.  If 76 million cassettes were sold in 2000 and that amount decreases by 55% per year, how many cassette tapes will be sold from 2000 until the end of time? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a_1=76$ and $r=.45$ the infinite geometric series formula gives
+[
+\begin{align}
+S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
+&amp;= \frac{76}{1-(0.45)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
+&amp;= 138.18 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
+\end{align}
+]
+and we conclude that the total number of cassette tapes sold from 2000 will be 138.18 million, assuming the 55% decline continues.</details></p>
+</li>
+<li>
+<p>Why is there no formula for an infinite arithmetic series? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />An infinite geometric series only has a sum if each new value is sufficiently smaller than the previous number and eventually shrinks toward $0$ (that's why we need $-1&lt;r&lt;1$).  The terms in an arithmetic are evenly spaced, so shrinking towards $0$ is impossible.  If you add up an infinite number of terms from an arithmetic series you would approach $\infty$ or $-\infty$.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="summation-notation">Summation Notation</h2>
+<p>When a series has more than a couple of terms there is a compact notation that helps us avoid having to write out a long string of sums.</p>
+<p>This new summation notation is sometimes called &quot;sigma&quot; notation, because the Greek letter $\Sigma$ (sigma) is used to represent summation.  Here's an example of what summation notation looks like.</p>
+<p>[\Large \sum_{k=1}^{8} k^2]</p>
+<p>This a very dense notation and there is a lot here for us to unpack.</p>
+<p>First note that the equation that generates the terms of the sequence is written to the right of the big $\Sigma \thinspace $.</p>
+<p>Below the $\Sigma \thinspace $ we are told what the variable is and what its first value should be.</p>
+<p>Above the $\Sigma \thinspace $ is the final value that gets put into the equation.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/summation_notation.svg#center" alt=""></p>
+<p>To expand this shorthand version back into a large sum we start by letting $k=1$ in the equation and keep going until $k=8$, all the while adding up the terms we create.  In the figure below you can see how this would work.</p>
+<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/kete4zs4/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ekmgvmg8"><img src="https://www.geogebra.org/resource/kete4zs4/NscTHqSUr5DSOQ1W/material-kete4zs4-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ekmgvmg8"><a href="https://www.geogebra.org/m/ekmgvmg8">https://www.geogebra.org/m/ekmgvmg8</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Expand the series below.
+[\Large \sum_{k=1}^{5} 3k] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{k=1}^{5} 3k=3(1)+3(2)+3(3)+3(4)+3(5)]</details></div>
+<p>Now let's work in the other direction, turning a large sum into compact summation notation.  If we were to write the series connected to this sequence</p>
+<p>[3, \thinspace 5, \thinspace 7, \thinspace 9, \thinspace 11, \thinspace 13, \thinspace 15, \thinspace 17, \thinspace 19, \thinspace 21, \thinspace 23, \thinspace 25, \thinspace 27, \thinspace 29, \thinspace 31]</p>
+<p>then we would need to write out the sum of all fifteen terms.</p>
+<p>[3+5+7+9+11+13+15+17+19+21+23+25+27+29+31]</p>
+<p>To convert this to summation notation the first thing we need is an equation for the sequence that generates these terms.  The values appear to come from an arithmetic sequence with a starting value of $3$ and a spacing of $2$, so the equation is $a_n=3+2(n-1)=2n+1$.</p>
+<p>All that's left is to determine the starting and ending values for $n$.</p>
+<p>[\Large \sum_{n=?}^{?} (2n+1)]</p>
+<p>It's tempting to use $3$ as the starting value but, because $3=a_1$, we actually need to use $n=1$.</p>
+<p>The same holds true for the final value of $n$.  We don't use $31$ but instead use its location in the sequence, which is $15$.</p>
+<p>Inserting the starting and ending values for $n$ completes our summation notation for this example.</p>
+<p>[\Large \sum_{n=1}^{15} (2n+1)]</p>
+<p>If we had wanted to skip the first three terms and start our series at $9$ then we would adjust the sigma notation so it begins at $n=4$.  And by changing the number on top of the $\Sigma$ we could end the series at a different term.  This makes summation notation extremely flexible.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Write Gauss's series $ \thinspace 1 + 2 + 3 + \cdots + 100 \thinspace $ in summation notation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=1}^{100} n]</details></p>
+</li>
+<li>
+<p>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=10}^{82} n]</details></p>
+</li>
+</ol>
+</div>
+
+  				</div>
+  			</section>
+  		</div>
+    </div>
+	
+
+  <!-- Footer -->
+  
+  <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Nolan Mitchell</li>
+                
+                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      },
+      "HTML-CSS": {
+        styles: {".MathJax": {color: "#ff0000"}}
+        }
+});
+</script>
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  
+
+</body>
+</html>
