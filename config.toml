@@ -245,7 +245,7 @@ home = [ "HTML"]
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Nolan Mitchell"
+    copyright = ""
 
 
 

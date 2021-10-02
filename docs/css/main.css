@@ -1969,7 +1969,7 @@ input[type="radio"]+label:before {
 	padding: 0;
 }
 
- #printOnly {display: none !important;}
+
 
 /* Icon */
 
@@ -3757,6 +3757,9 @@ div#table_of_contents ul {
 	text-align: left;
 	list-style: none;
 }
+
+ #printOnly {display: none !important;} 
+
 
 
 /* override styles when printing.  Set page size to Letter and orientation to Portriat.  Use in or cm for units. */
