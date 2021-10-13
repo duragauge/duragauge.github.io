@@ -1615,7 +1615,7 @@ This <strong>horizontal stretch</strong> is one of the most counter-intuitive tr
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/iHmotfOF"><a href="https://www.geogebra.org/m/iHmotfOF">https://www.geogebra.org/m/iHmotfOF</a></a></p>
 </div>
 <h2 id="even-and-odd-symmetry">Even and Odd Symmetry</h2>
-<p>When reflecting a graph, two interesting things happen sometimes.  The first is that a horizontal reflection across the y-axis might  produces the same exact graph as the original function.  Symbolically, $f(-x)=f(x)$.  When this happens we say that the function has <strong>even symmetry</strong>, or is symmetric across the y-axis.   The figure below illustrates the concept.</p>
+<p>When reflecting a graph, two interesting things happen sometimes.  The first is that a horizontal reflection across the y-axis might  produce the same exact graph as the original function.  Symbolically, $f(-x)=f(x)$.  When this happens we say that the function has <strong>even symmetry</strong>, or is symmetric across the y-axis.   The figure below illustrates the concept.</p>
 <div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/mSp9DhKO/border/fafafa" scrolling="no"
       style="
@@ -1897,11 +1897,10 @@ Since the second differences are constant, $g$ is a quadratic function.</details
 <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the first differences switch from negative to positive at $0$, we can conclude that the square function decreases to the left of $0$ and increases to the right of $0$.  And since the second differences are always positive, the square function must be concave up over its entire domain.</details>
 </div>
 <h2 id="difference-quotients">Difference Quotients</h2>
-<p>The formulas and tables we have used so far can only show what happens on a limited number of intervals.  What would be very helpful is a mechanism that has the potential to describing the behavior of the function on any interval all at once.</p>
+<p>The formulas and tables we have used so far can only show what happens on a limited number of intervals.  What would be very helpful is a mechanism that has the potential to describe the behavior of the function on any interval all at once.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient.svg#center" alt="">
-The tool that does this is called the <strong>difference quotient</strong>.  The difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval from $x$ to  $\color{blue}{x+h}$, where  $\color{blue}{h}$  is any positive number.  To find the formula for the difference quotient we simply take the average rate of change formula</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/average_change.svg#center" alt=""></p>
-<p>and substitute $x$ in place of  $a$, and $\color{blue}{x+h}$  in place of  $\color{blue}{b}$.</p>
+The tool that does this is called the <strong>difference quotient</strong>.  The difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval from $x$ to  $\color{blue}{x+h}$, where  $\color{blue}{h}$  is any positive number.</p>
+<p>To find the formula for the difference quotient we simply take the average rate of change formula and substitute $x$ in place of  $a$, and $\color{blue}{x+h}$  in place of  $\color{blue}{b}$.</p>
 <p>[
 \begin{align}
 \frac{f(\color{blue}{b})-f(\color{red}{a})}{\color{blue}{b}-\color{red}{a}} &amp;= \frac{f(\color{blue}{x+h})-f(\color{red}{x})}{\color{blue}{(x+h)}-\color{red}{x}} \newline \newline
@@ -2101,11 +2100,11 @@ One set of data compared the number of tornadoes observed at different hours of 
 <p>Where did this equation come from and how do we know it is the best?  Well, that's a great question would take a few weeks in a statistics course to explain fully.  For now, it's enough to know that most graphing calculators have a built-in programs that fit equations to data.  That process is called <em>least squares regression</em>, and we will look at it later in this section.</p>
 <h2 id="construct-models">Construct Models</h2>
 <p>Now that we have an equation, $\color{blue}{y} = \color{red}{0.04}x + \color{green}{0.86}$, it's time to turn that into an actual model.</p>
-<p>Throughout this text, a model will consist of a function along with a description of its the variables and their units of measure.  Without an accurate description, the function itself is meaningless since there would be no way to relate it to the real world.</p>
+<p>Throughout this text, a model will consist of a function along with a description of the variables and their units of measure.  Without an accurate description, the function itself is meaningless since there would be no way to relate it to the real world.</p>
 <p>Since our independent variable is time in years since 2000, we take the liberty of using $t$ in place of $\color{blue}{x}$.</p>
 <p>Similarly, using $p$ instead of $\color{blue}{y}$ will help us remember that the dependent variable represents the price of apples.  We are now ready to write our model.</p>
 <blockquote>
-<p>According to data provided by the U.S. Department of Agriculture, the price $p$ of apples per pound can be modeled by the function
+<p>According to data provided by the U.S. Department of Agriculture, the price $p$ of apples per pound in dollars can be modeled by the function
 [ p(t) = 0.04t + 0.86 ]
 where $t$ is the time in years since 2000.</p>
 </blockquote>
@@ -2113,7 +2112,7 @@ where $t$ is the time in years since 2000.</p>
 <p>[
 p(30) = 0.04(30) + 0.86 = 2.06
 ]</p>
-<p>Thus, our model predicts the average price of apples will be $2.06 in the year 2030.  How accurate is that?  We'll have to wait and see.</p>
+<p>Thus, our model predicts the average price of a pound of apples will be $2.06 in the year 2030.  How accurate is that?  We'll have to wait and see.</p>
 <h2 id="modeling-with-technology">Modeling with Technology</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-1/horses-61158_1280.jpg"  title="Photo Steppinstars from Pixabay "  alt="Photo Steppinstars from Pixabay " style="display:block; width:100%; height:auto;" >
@@ -2121,7 +2120,7 @@ p(30) = 0.04(30) + 0.86 = 2.06
     <a href = "https://pixabay.com/images/id-61158/">Photo Steppinstars from Pixabay </a></span>
 </div>
 <br>
-<p>We now turn our attention to another scenario.  Throughout the grasslands of Nevada live herds of wild horses known as &quot;mustangs&quot;.  Since 1971, the Bureau of Land Management has been monitoring the number of mustangs and the land's capacity to support them.  When the number of horses exceeds an appropriate management level, the BLM gathers animals from overpopulated herds and makes them available for adoption.</p>
+<p>We now turn our attention to another scenario.  Throughout the grasslands of Nevada live herds of wild horses known as &quot;mustangs&quot;.  Since 1971, the Bureau of Land Management (BLM) has been monitoring the number of mustangs and the land's capacity to support them.  When the number of horses exceeds an appropriate management level, the BLM gathers animals from overpopulated herds and makes them available for adoption.</p>
 <p>Every year the BLM conducts aerial surveys in an effort to count each horse.  A functional model of that data can be used to predict the future size of a herd, helping the BML anticipate when it might be necessary to prepare some mustangs for adoption.</p>
 <p>The table below gives the total number of mustangs in Nevada since 2000.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/horse_data.png" alt="">
