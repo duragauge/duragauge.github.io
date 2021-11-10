@@ -200,7 +200,7 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_tahiti.png#center" alt=""></p>
 <p>If we regard each flight as a function, then the entire trip could be viewed as a composition of functions.  This analogy gives us two useful insights.</p>
 <p>First, in order for composition to work, there must be some location, like Hawaii, where the range of the first function intersects the domain of the second function.  Otherwise, the composition is undefined, as you discovered previously.</p>
-<p>Second, it is possible to define a new function that has the same actions as composition of the two individual functions.  This new function would be similar to a direct flight from Portland to Tahiti.</p>
+<p>Second, it's possible to create a single new function that has the same actions as the composition of the two separate functions.  This new function would be similar to a direct flight from Portland to Tahiti.</p>
 <p>Consider the two functions $\color{red}{f}$ and $\color{blue}{g}$ defined by the arrow diagrams below.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_arrow_diagram_1.svg#center" alt=""></p>
 <p>Since the range of $\color{blue}{g}$ intersects the domain of $\color{red}{f}$ only at $10$, the domain of $h=f \circ g$ can only be the single number $2$, there's no way to use $1$ as an input to $h = f \circ g$ because $5$ is not in the domain of $\color{red}{f}$.</p>
@@ -232,7 +232,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 &amp; =12
 \end{align}]&lt;/details&gt;</div>
 <p>Finding an equation for $h=f \circ g$ also helps us determine its domain.</p>
-<p>Take, for example, $f(x)=ln(x)$ and $g(x)=x-4$.  The composed equation is $h(x)=(f \circ g)(x)=ln(x-4)$.</p>
+<p>Take, for example, $f(x)=\ln(x)$ and $g(x)=x-4$.  The composed equation is $h(x)=(f \circ g)(x)=\ln(x-4)$.</p>
 <p>Since the natural logarithm can only take in positive numbers, the domain of $h=f \circ g$ can only include $x$ values for which $x-4&gt;0$.  Therefore, the domain of $h=f \circ g$ must be $x&gt;4$.</p>
 <p>Notice that this domain of $x&gt;0$ is a subset of the domain of $g$, which is all real numbers.  Assuming $h=f \circ g$ exits, its domain is always either the entire domain of $g$ or a subset of it.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
@@ -240,7 +240,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 <p>If $f(x)=\sqrt{x}$ and $g(x)=8-x^{3}$, find the equation for $h(x)=(f \circ g)(x)$ and state its domain.   <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$h(x)=(f \circ g)(x)=\sqrt{8-x^{3}}$. Since only positive numbers, or zero, have real square roots, we need $8-x^{3}\geq0$, or $x\leq2$.  So while the domain of $g$ is all real numbers, the domain of $h=f \circ g$ is $x \leq 2$.</details></p>
 </li>
 <li>
-<p>If $f(x)=1/x$ and $g(x)=e^{x}$, find the equation for $h(x)=(f \circ g)(x)$and state its domain.   <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$h(x)=(f \circ g)(x)=e^{1/x}$.  Any real number can be inserted into the exponential function, so it does not impose any extra restrictions on the domain of $h=f \circ g$.  We conclude that the domain of $h=f \circ g$ is the same as the domain of $g$, which is $x \neq 0$.</details></p>
+<p>If $f(x)=e^{x}$ and $g(x)=1/x$, find the equation for $h(x)=(f \circ g)(x)$and state its domain.   <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$h(x)=(f \circ g)(x)=e^{1/x}$.  Any real number can be inserted into the exponential function, so it does not impose any extra restrictions on the domain of $h=f \circ g$.  We conclude that the domain of $h=f \circ g$ is the same as the domain of $g$, which is $x \neq 0$.</details></p>
 </li>
 </ol>
 </div>
@@ -262,7 +262,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
   <a href="https://www.geogebra.org/m/Kbg4KOk8"><img src="https://www.geogebra.org/resource/Kbg4KOk8/QNrmk8lmdIInXZ3s/material-Kbg4KOk8-thumb@l.png"></img></a>
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/Kbg4KOk8"><a href="https://www.geogebra.org/m/Kbg4KOk8">https://www.geogebra.org/m/Kbg4KOk8</a></a></p>
 </div>
-<p>Determining the exact shape of the graph of graph a composite function $h=f \circ g$ by examining the equations and/or graphs of $f$ and $g$ is a complicated process.  Generally, it will be best to find the equation for $h=f \circ g$ and then use a computer or graphing calculator to analyze its behavior.</p>
+<p>Determining the exact shape of the graph of a composite function $h=f \circ g$ by examining the equations and/or graphs of $f$ and $g$ is a complicated process.  Generally, it will be best to find the equation for $h=f \circ g$ and then use a computer or graphing calculator to analyze its behavior.</p>
 <p>For instance, if $f(x)=e^{-x}$ and $g(x)=x^{2}$ then $h(x)=(f \circ g)(x)=e^{-x^{2}}$ and it can be graphed as follows.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/composition_calculator.svg" alt=""></p>
 <p>With the graph it is easier to analyze the behavior of the function.  For instance, it is now clear that the function $h$ has a maximum of $h(x)=1$ at $x=0$.  We could also discuss asymptotes and regions where the function is increasing or decreasing as well as domain and range.</p>
