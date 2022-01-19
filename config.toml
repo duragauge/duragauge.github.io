@@ -250,6 +250,6 @@ home = [ "HTML"]
 
 
     [[params.footer.quicklinks]]
-      text = "Design: "
+      text = "Deign: "
       url= "https://www.html5up.net"
       alt = "HTML5 UP"
