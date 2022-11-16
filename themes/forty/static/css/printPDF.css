@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, table_of_contents, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 	display: block;
+}
+
+footer, header, nav {
+	display: none;
 }
 
 body {
@@ -775,10 +779,7 @@ label.margin-toggle:not(.sidenote-number) {
 
 
 div#table_of_contents ul {
-	padding: 0;
-	margin: 0;
-	text-align: left;
-	list-style: none;
+	display: none;
 }
 
 /* override styles when printing.  Set page size to Letter and orientation to Portriat.  Use in or cm for units. */
