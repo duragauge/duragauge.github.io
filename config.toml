@@ -77,7 +77,7 @@ home = [ "HTML"]
 
   # Provide your metadata here.
   name = "Nolan Mitchell"
-  description = "A book about college algebra"
+  description = "A book about precalculus"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -94,8 +94,8 @@ home = [ "HTML"]
 
   # Navigation Section
   [params.navigation]
-    title = "College"
-    subtitle = "Algebra"
+    title = "Precalculus"
+    subtitle = "Functions"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -199,7 +199,7 @@ home = [ "HTML"]
   [params.two]
     enable = true
     title = "About"
-    subtitle = "This is an online College Algebra textbook created by Nolan Mitchell at Chemeketa Community College.  The content (text, equations, figures, etc.) is freely available under a Creative Commons license for non-commercial purposes only and was created entirely with free software.  Math equations were written in LaTeX and are rendered using MathJax.  All photos are freely available--each one is linked to the source--and most do not require attribution.  Interactive figures were created in GeoGebra.  All other graphics were created by the author using Inkscape (including the Tex Text extension) and Gimp (including the Math Map plugin).  All content was compiled using the Hugo static site generator from Markdown files written on the Atom text editor."
+    subtitle = "This is an online College Algebra textbook created by Nolan Mitchell at Chemeketa Community College.  The content (text, equations, figures, etc.) is freely available under a Creative Commons license for non-commercial purposes only and was created entirely with free software.  Math equations were written in LaTeX and are rendered using MathJax.  All photos are freely available--each one is linked to the source--and most do not require attribution.  Interactive figures were created in GeoGebra.  All other graphics were created by the author using Inkscape (including the Tex Text extension) and Gimp (including the Math Map plugin).  All content was compiled using the Hugo static site generator from Markdown files written in Visual Studio."
 #   If you want an action button in the TWO section, alter the file two.html in the partials folder
 #    buttonText = "Get Started"
 #    url = "blogs"
