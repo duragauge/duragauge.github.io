@@ -1,14 +1,13 @@
 # Site settings
 # the baseURL should end with a slash /
-# baseURL = "http://faculty.chemeketa.edu/nmitche6/book/"
+# baseURL = "http://faculty.chemeketa.edu/nmitche6/precalculus/"
 baseURL = "https://duragauge.github.io"
 publishDir = "docs"
 # if you are publishing to the root directory of your site, set canonifyURLs to "false", otherwise keep it "true"
 canonifyURLs = "true"
 languageCode = "en-us"
-title = "College Algebra"
+title = "Precalculus 1 - Functions"
 theme = "forty"
-
 
 
 [outputs]

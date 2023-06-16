@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chapter 2 on College Algebra</title>
+    <title>Chapter 2 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-2/</link>
-    <description>Recent content in Chapter 2 on College Algebra</description>
+    <description>Recent content in Chapter 2 on Precalculus 1 - Functions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -34,16 +34,6 @@ Patterns are also an essential part of mathematics. The British mathematician G.
       <description>Photo from the US Air Force on FlickrIntroduction Do skydivers fall at a constant speed or do they go faster and faster the longer they fall? Is there anything they can do to control their speed or is it completely out of their hands?
 After we spend a moment outlining the basic solving process for power functions, we will return to these questions.
 Techniques for Solving Power Equations Since most equations involving power functions will be of the form $y = k x^{p}$, the steps for solving all of them are essentially the same.</description>
-    </item>
-    
-    <item>
-      <title>2.4 Modeling with Power Functions</title>
-      <link>https://duragauge.github.io/chapter-2/2.4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://duragauge.github.io/chapter-2/2.4/</guid>
-      <description>Image by NASAIntroduction When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets: Mercury, Venus, Earth, Mars, Jupiter and Saturn. Kepler based his theory on measurements taken years earlier by Tycho Brahe who made all of his observations with the naked eye--the telescope was invented 8 years after his death.
-Given the technological limitations of the day, is there any chance these 400 year-old theories are still useful today?</description>
     </item>
     
   </channel>

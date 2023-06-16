@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chapter 3 on College Algebra</title>
+    <title>Chapter 3 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-3/</link>
-    <description>Recent content in Chapter 3 on College Algebra</description>
+    <description>Recent content in Chapter 3 on Precalculus 1 - Functions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-3/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -56,15 +56,6 @@ One reason for this is the fact that your ears don&#39;t perceive the actual int
       <guid>https://duragauge.github.io/chapter-3/3.5/</guid>
       <description>Photo by Ken Treloar on UnsplashIntroduction Since exponential and logarithmic functions arise in many applications, it is essential to be able to manipulate and solve equations involving them. As an example of the type of problems we might encounter, consider the following situation.
 A patient who is undergoing diagnostic imaging for thyroid cancer typically swallows a capsule containing the radioactive isotope Iodine-123 shortly before being placed inside a scanner.</description>
-    </item>
-    
-    <item>
-      <title>3.6 Fitting Exponential and Logarithmic Models to Data</title>
-      <link>https://duragauge.github.io/chapter-3/3.6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://duragauge.github.io/chapter-3/3.6/</guid>
-      <description>Image by Design n Print from PixabayIntroduction Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna. Mercury levels in large fish can be over a million times higher than that found in the surrounding waters. Fortunately, most things that we eat have biological half-lives and can be modeled using the functions we&#39;ve learned about in this chapter.</description>
     </item>
     
   </channel>

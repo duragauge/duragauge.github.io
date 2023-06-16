@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>6.3 Series &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>6.3 Modeling Data &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -83,16 +83,11 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#what-is-a-series">What is a Series?</a></li>
-    <li><a href="#arithmetic-series">Arithmetic Series</a></li>
-    <li><a href="#finite-geometric-series">Finite Geometric Series</a>
-      <ul>
-        <li><a href="#finite-geometric-series---example-1">Finite Geometric Series - Example 1</a></li>
-        <li><a href="#finite-geometric-series---example-2">Finite Geometric Series - Example 2</a></li>
-      </ul>
-    </li>
-    <li><a href="#infinite-geometric-series">Infinite Geometric Series</a></li>
-    <li><a href="#summation-notation">Summation Notation</a></li>
+    <li><a href="#keplers-third-law">Kepler's Third Law</a></li>
+    <li><a href="#allometry">Allometry</a></li>
+    <li><a href="#book-sales">Book Sales</a></li>
+    <li><a href="#census-data">Census Data</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
 </nav>
         </div>
@@ -106,277 +101,59 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>6.3 Series</h1>
+                                <h1>6.3 Modeling Data</h1>
                             </header>
 
                             <div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-6/school-1689750_1280.jpg"  title="Image by Julia Schwab from Pixabay"  alt="Image by Julia Schwab from Pixabay" style="display:block; width:100%; height:auto;" >
+  <img src="https://duragauge.github.io/img/chapter-2/solar-system-11111_1280.jpg"  title="Image by NASA"  alt="Image by NASA" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/images/id-1689750/">Image by Julia Schwab from Pixabay</a></span>
+    <a href = "https://en.wikipedia.org/wiki/File:Solar_sys8.jpg">Image by NASA</a></span>
 </div>
 <br>
+<p><strong>UNDER REVISION</strong></p>
+<p>Objectives:</p>
+<ul>
+<li>Utilize regression analysis technology, such as a graphing calculator or software, to find best-fit functions.</li>
+<li>Compare and evaluate different regression models to choose the most appropriate one for a specific data set.</li>
+<li>Use interpolation and extrapolation and address their limitations and potential errors.</li>
+</ul>
 <h2 id="introduction">Introduction</h2>
-<p>When Carl Friedrich Gauss
-<label for="sn-Gauss" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
-<span class="sidenote">This is the same Gauss that gave us <a href="https://duragauge.github.io/chapter-6/6.1">Gauss-Jordan Elimination</a> and the <a href="https://duragauge.github.io/chapter-5/5.2/#the-fundamental-theorem-of-algebra">Fundamental Theorem of Algebra</a></span>
-was a young boy in Germany it was common for students to do their work on small slate chalkboards.</p>
-<p>The story is told that one day in 1786, when Gauss was just 9 years old, his teacher gave the class a challenging problem.  It was something along the lines of adding up all the whole numbers from $1$ to $100$, an exercise that would certainly take the entire class hour.</p>
-<p>Almost as soon as the problem had been given, Gauss wrote down a single number and put his slate on the teacher's desk.</p>
-<p>At the end of the hour, Gauss was one of the few students with the correct answer.</p>
-<p>So how did he do it?  That's what we'll look into in this section.</p>
-<h2 id="what-is-a-series">What is a Series?</h2>
-<p>In the last section we learned that an ordered list of numbers is called a <em>sequence</em>.  If you add up the terms of a sequence you get something new that we call a <strong>series</strong>.  Here is a side by side comparison.</p>
-<p>[
-\begin{align}
-\text{Sequence: } &amp; \thinspace 2, \thinspace 4, \thinspace 6, \thinspace 8 \newline
-\text{Series: } &amp; \thinspace 2 + 4 + 6 + 8 = 20
-\end{align}
-]</p>
-<p>Notice that the addition in the series simplifies to a single value.  Finding the sum of a series, if it exists, is one of the primary exercises with series.</p>
-<p>The problem young Gauss was given was that of finding the value of a series, though it may not have been worded that way.</p>
-<p>[
-\begin{align}
-\text{Sequence: } &amp; \thinspace 1, \thinspace 2, \thinspace 3, \thinspace \dots , \thinspace 100 \newline
-\text{Series: } &amp; \thinspace 1 + 2 + 3 + \cdots + 100 = \text{ ?}
-\end{align}
-]</p>
-<p>In English the words &quot;sequence&quot; and &quot;series&quot; are often used interchangeably without much difference.  For example, a &quot;series of events&quot; generally means the same as &quot;a sequence of events&quot;.  In mathematics, however, they are different and we'll need to pay close attention to which word is used.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>
-<p>Is $17+27+37+47$ a sequence or a series? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a series since we are adding up the numbers $17, 27, 37, 47$.</details></p>
-</li>
-<li>
-<p>Write the series for the sequence $5, \thinspace 10, \thinspace 15, \thinspace 20, \thinspace 25$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[5+10+15+20+25]</details></p>
-</li>
-<li>
-<p>Write a series for the sum of the first four terms of the sequence $a_n=2^n$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The first four terms of the sequence are $2^1, 2^2, 2^3, 2^4$, so the series would be [2^1+2^2+2^3+2^4].</details></p>
-</li>
-</ol>
-</div>
-<h2 id="arithmetic-series">Arithmetic Series</h2>
-<p>We are now at a point where we can start to think about how Gauss might have be able to find his sum.</p>
-<p>[\Large 1 + 2 + 3 + \cdots + 100]</p>
-<p>While we don't know for sure how Gauss pictured this problem in his mind, he certainly spotted a pattern and used that to his advantage.</p>
-<p>There are a number of ways to visualize it, but perhaps the simplest is to look at pairs of numbers.  If you choose the pairs carefully, they will all equal the same number!</p>
-<p><img src="https://duragauge.github.io/img/chapter-6/series_gauss_v3.svg#center" alt=""></p>
-<p>In this case we end up with $50$ pairs that each equal $101$ so the total is $50 \times 101 = 5050$.</p>
-<p>This same pattern occurs for every arithmetic series.  To find the sum of the first $n$ terms you add the first and last terms and multiply by the number of pairs.  So, whenever your sequence is arithmetic in the form $a_n=a_1+d(n-1)$, the sum of the first $n$ terms is given by this formula.</p>
-<p>[\Large S_n=\frac{n}{2} \bigl(a_1+a_n \bigr)]</p>
-<p>Let's walk through an example using this formula by evaluating the following series.</p>
-<p>[\Large 380 + 378 + 376 + \cdots + 252]</p>
-<p>We should start by making sure these numbers come from an arithmetic sequence.  If they don't, then we can't use our formula to find the sum.</p>
-<p>The first term is $a_1=380$ and the spacing is $d=-2$, so this is an arithmetic series and the terms come from the equation $a_n=380-2(n-1)$.</p>
-<p>The arithmetic summation formula involves $n$, $a_1$ and $a_n$.  We know $a_1$ and $a_n$ but don't have a value for $n$.  However, if we put $a_n=252$ into the equation for the sequence we can solve for $n$.</p>
-<p>[
-\begin{align}
-a_n &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Sequence equation}} \newline
-252 &amp;= 380-2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Replace $a_n=252$}} \newline
--128 &amp;= -2(n-1) &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $380$}} \newline
-64 &amp;= n-1 &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $-2$}} \newline
-65 &amp;= n &amp;&amp; \small \color{#5fa2ce}{\text{Add $1$}}
-\end{align}
-]</p>
-<p>We now have all the pieces in place to find the sum of the $n=65$ terms of our series, starting with $a_1=380$ and ending at $a_{65}=252$.</p>
-<p>[
-\begin{align}
-S_{n} &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
-S_{65}&amp;= \frac{65}{2} \bigl(380+252\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= 20540 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</p>
-<p>One final note on this summation formula.  Gauss wasn't the first to discover how to add up an arithmetic series.  Fibbonacci, for one, published this method in 1202 and Archimedes probably knew of it by 200BC.  But the story of Gauss discovering the formula in school is famous and it would be breaking tradition not to relate it!
-<label for="sn-Gauss" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-Gauss" class="margin-toggle" />
-<span class="sidenote">Many retellings of this famous story exist.  The earliest version was written in 1856 by <a href="https://archive.org/details/gauss00waltgoog/page/n15">Wolfgang Sartorius</a>, who worked with Gauss at the University of Göttingen.  <a href="http://bit-player.org/2007/a-mathematical-fable-revisited">Brian Hayes</a> compares many of them in this <a href="https://duragauge.github.io/img/chapter-6/Gauss's_Day_of_Reckoning_by_Brian_Hayes">Scientific American article</a>.</span></p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>
-<p>If there are $30$ terms in the series $16+11+6+ \cdots -129$, what is the sum $S_{30}$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $n=30$, $a_1=16$ and $a_{30}=-129$, the sum is
-[ \begin{align}
-S_{30} &amp;= \frac{30}{2} \bigl(16-129 \bigr)\newline
-&amp;= -1695
-\end{align}
-]</details></p>
-</li>
-<li>
-<p>Find the sum of the arithmetic series $\ 32,\ 36,\ 40,\ \dots,\ 80 \thinspace $. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />First find the equation for the sequence that creates the terms.
-[a_{n}= 380-2(n-1)]
-Then use $a_n=80$ to find $n$.
-[ \begin{align}
-a_{n} &amp;=  380-2(n-1) &amp;&amp;  \small \color{#5fa2ce}{\text{Sequence equation}} \newline
-80  &amp;=  32+4(n-1)  &amp;&amp;  \small \color{#5fa2ce}{\text{Replace $a_{n}=80$}} \newline
-48  &amp;=  4(n-1)     &amp;&amp;  \small \color{#5fa2ce}{\text{Subtract $32$}} \newline
-12  &amp;=  n-1        &amp;&amp;  \small \color{#5fa2ce}{\text{Divide by $4$}} \newline
-13  &amp;=  n          &amp;&amp;  \small \color{#5fa2ce}{\text{Add $1$}}
-\end{align}
-]
-And finally use the summation formula.
-[
-\begin{align}
-S_{n}  &amp;= \frac{n}{2}\bigl(a_1+a_n\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Arithmetic summation formula}} \newline
-S_{13} &amp;= \frac{13}{2} \bigl(32+80\bigr) &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= 728                            &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</details></p>
-</li>
-</ol>
-</div>
-<h2 id="finite-geometric-series">Finite Geometric Series</h2>
-<p>It bears repeating that the formula above only works if the sequence is arithmetic.  If we encounter a geometric series then there is a completely different formula.</p>
-<p>To add up the first $n$ terms of a geometric sequence of the form $a_n=a_1 r^{n-1}$, use the following formula.</p>
-<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
-<p>To show how this works let's look at an application.</p>
-<h3 id="finite-geometric-series---example-1">Finite Geometric Series - Example 1</h3>
-<p><label for="mn-strawberries" class="margin-toggle">⊕
-</label>
-<input type="checkbox" id="mn-strawberries" class="margin-toggle" />
-<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/johnny-martinez-lBIFDzYwbDo-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/lBIFDzYwbDo">Photo by Johnny Martínez on Unsplash</a> </span></p>
-<p>In 1988 farmers in Oregon produced a record crop of 100 million pounds of strawberries. Since then strawberry production has dropped 7% annually.  Can we use that information to determine how many millions of pounds of strawberries grown over a 20 year period starting in 1998?</p>
-<p>If you look closely at the summation formula, all we need are the first term $a_1$, the common ratio $r$, and the number of terms $n$.  Unlike the arithmetic series formula, we don't need to find the final term $a_n$.</p>
-<p>Taking $a_1=100$, $r=0.93$ (since there is a 7% drop), and $n=20$, we can find the sum using the formula above.
-[
-\begin{align}
-S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
-S_{20} &amp;= \frac{100 \bigl(1-(0.93)^{20}\bigr)}{1-(0.93)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= 1093.94 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</p>
-<p>This means Oregon produced around 1094 million total pounds of strawberries over that 20 year period.</p>
-<p>When using a calculator to evaluate expressions like this, be very careful to put the exponent in the correct place and include parenthesis around the denominator.  The above calculation looks like this.</p>
-<p><img src="https://duragauge.github.io/img/chapter-6/geometric_sequence_calculator_eval.svg#center" alt=""></p>
-<h3 id="finite-geometric-series---example-2">Finite Geometric Series - Example 2</h3>
-<p><label for="mn-" class="margin-toggle">⊕
-</label>
-<input type="checkbox" id="mn-" class="margin-toggle" />
-<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/josh-appel-NeTPASr-bmQ-unsplash.jpg" alt=""> <a href="https://unsplash.com/photos/NeTPASr-bmQ">Photo by Josh Appel on Unsplash</a> </span></p>
-<p>Suppose you put a penny on the first square of a chess board, two on the second, four on the third, eight on the
-fourth and continued doubling until you got to the 64th square. How much money, in dollars, would it take to fill up the chess board?</p>
-<p>In dollars $a_1=0.01$, since the amount is doubling $r=2$, and we know $n=64$.  So the sum is</p>
-<p>[
-\begin{align}
-S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
-S_{64} &amp;= \frac{0.01 \bigl(1-(2)^{64}\bigr)}{1-(2)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline \newline
-&amp;\approx 1.84467 \times 10^{17} &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}} \newline \newline
-&amp;\approx $184,467,000,000,000,000
-\end{align}
-]</p>
-<p>To help put that in perspective, every person on Earth would need to contribute more than 20 million dollars each to fill the chess board with pennies!</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>After college Bob got a job earning $25,000 with 3% raises each year. 50 years later he retired from that same job. How much money did he earn over his entire career? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Use $a_1=25000$, $r=1.03$ and $n=50$ to evaluate the sum.
-[
-\begin{align}
-S_{n}  &amp;= \frac{a_1(1-r^n)}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Geometric summation formula}} \newline
-S_{50} &amp;= \frac{25000 \bigl(1-(1.03)^{50}\bigr)}{1-(1.03)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= $2,819,921.68 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</details></li>
-</ol>
-</div>
-<h2 id="infinite-geometric-series">Infinite Geometric Series</h2>
-<p>Not that long ago most music was sold on compact disks, or CDs.<br>
-<label for="mn-" class="margin-toggle">⊕
-</label>
-<input type="checkbox" id="mn-" class="margin-toggle" />
-<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-6/cd-1003342_1280.jpg" alt=""><a href="https://pixabay.com/images/id-1003342/">Photo by Bruno Glätsch on Pixabay</a> </span></p>
-<p>According to data collected by the Recording Industry Association of America, 705.4 million CDs were sold in 2005 and that number has been declining by about $16.9\%$ per year.</p>
-<p>Using the formula for a geometric series we can say that the cumulative total number of CDs sold (in millions) since 2005 is given by</p>
-<p>[
-S_{n}  = \frac{705.4(1-(0.831)^n)}{1-(0.831)}
-]</p>
-<p>Let's chart those values for several years starting in 2005.</p>
-<p>[
-\begin{array}{|c|c|c|}
-\hline
-\text{Year} &amp; n &amp; \text{Millions of CDs Sold} \newline
-\hline
-2005 &amp; 1 &amp; 705.4  \newline
-\hline
-2010 &amp; 6 &amp; 2799.4 \newline
-\hline
-2015 &amp; 11 &amp; 3629.3 \newline
-\hline
-2020 &amp; 16 &amp; 3958.1 \newline
-\hline
-2025 &amp; 21 &amp; 4088.4 \newline
-\hline
-2030 &amp; 26 &amp; 4140.1 \newline
-\hline
-\end{array}
-]</p>
-<p>Looking at these numbers it appears that the total number of CDs sold is growing more slowly as time progresses.</p>
-<p>And that seems reasonable.  Since fewer and fewer CDs are being sold we shouldn't expect the total to rise very much.</p>
-<p>In fact, if we compute the values for $2035$ and $2040$ they are nearly the same at $4160.5$ and $4168.6$.</p>
-<p>But what would happen if we projected this process out further into the future?  Could it be that there is some limit to the number of CDs that will ever be sold no mater how much time passes?</p>
-<p>Mathematically, what we are asking is if there is such a thing as an infinite sum that adds up to a fixed number.  Is it possible for something like $S_{\infty}$ to exist?</p>
-<p>The answer lies hidden in our formula for the sum of the first $n$ terms of a geometric sequence.</p>
-<p>[\Large S_n = \frac{a_1(1-r^n)}{1-r}]</p>
-<p>As $n$ increases the only part that changes is the $r^n$.  So what happens to $r^n$ as $n$ gets larger?  In the figure below you can change $r$ and see how that impacts $r^n$.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-      <iframe src="https://www.geogebra.org/material/iframe/id/gwkjxypb/border/fafafa" scrolling="no"
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent">
-      </iframe>
-</div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
-  <a href="https://www.geogebra.org/m/rpg8fm6k"><img src="https://www.geogebra.org/resource/gwkjxypb/D6uDhhnaO0kN7YDh/material-gwkjxypb-thumb@l.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/rpg8fm6k"><a href="https://www.geogebra.org/m/rpg8fm6k">https://www.geogebra.org/m/rpg8fm6k</a></a></p>
-</div>
-<br>
-<p>Notice that the values for $r^n$ drop toward $0$ whenever $-1&lt;r&lt;1$.  In other words, if $-1&lt;r&lt;1$ then $r^n \rightarrow 0$ as $n \rightarrow \infty$.  When this happens our summation formula becomes</p>
-<p>[\Large S_{\infty}=\frac{a_1}{1-r}]</p>
-<p>It might seem odd that you can add up infinitely many things and arrive at something other than infinity--but that's exactly what this formula says you can do, provided $-1&lt;r&lt;1$.</p>
-<p>We've already seen that the total number of CDs sold since 2005 appears to be leveling off.  Let's now use this infinite geometric series formula to find that limiting value.</p>
-<p>To do that we use infinite sum formula with $a_1=705.4$ million and, since there is a $16.9\%$ decline, $r=0.831$.</p>
-<p>[
-\begin{align}
-S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
-&amp;= \frac{705.4}{1-(0.831)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= 4173.96 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</p>
-<p>This formula predicts that 4173.96 million CDs will be sold from 2005 to the end of time, if that $16.9\%$ decline persists.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-6/mick-haupt-fnKoW9mvgkA-unsplash.jpg"  title="Photo by Mick Haupt on Unsplash"  alt="Photo by Mick Haupt on Unsplash" style="display:block; width:100%; height:auto;" >
+<p>When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets:  Mercury, Venus, Earth, Mars, Jupiter and Saturn.  Kepler based his theory on measurements taken years earlier by Tycho Brahe who made all of his observations with the naked eye--the telescope was invented 8 years after his death.</p>
+<p>Given the technological limitations of the day, is there any chance these 400 year-old theories are still useful today?</p>
+<h2 id="keplers-third-law">Kepler's Third Law</h2>
+<p>Kepler struggled for 17 years to find a relationship between the time it takes a planet to orbit the Sun (called its orbital period) and its average distance from the Sun (called the semi-major axis).  Eventually he settled on the &quot;sesquialternate proportion&quot;, a fancy way to say the $3/2$ power.</p>
+<p>By using the <code>PwrReg</code> program in a calculator we should be able to do the same thing in just a couple of minutes.</p>
+<p>The table below lists the periods and distances for the 8 major planets in our solar system.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/planets.svg#center" alt=""></p>
+<p>We start by entering the data into a calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_data.svg#center" alt=""></p>
+<p>and taking a look at the scatterplot.  Using <code>9: ZoomStat</code> gives a good viewing window.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_scatterplot.svg#center" alt=""></p>
+<p>The scatterplot definitely looks like it could be a power function, so we run <code>PwrReg</code></p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_equation.svg#center" alt=""></p>
+<p>and get back the equation $y=x^{1.5}$.  Graphing this equation along with our scatterplot shows that it is a very good fit.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/kepler_fit.svg#center" alt=""></p>
+<p>If we write the power $1.5$ as $3/2$ then we have the same model as Kepler.</p>
+<blockquote>
+<p>The orbital period $P$ of a planet, in years, can be modeled by the equation
+[ P =  D^{3/2} ]
+where $D$ is the distance of the planet from the Sun in astronomical units (AU).</p>
+</blockquote>
+<p>Remember that including a description of the variables is an essential part of making a model.  If the data had been measured in days instead of years, or miles instead of astronomical units, then the equation would be different.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Kepler discovered his third law by studying planets.  Below are the values for some objects in our solar system that are not planets.  <img src="https://duragauge.github.io/img/chapter-2/celestial_objects.svg#center" alt="">  Does Kepler's 3rd law work for these objects as well?  In other words, do the values fit the equation $P =  D^{3/2}$?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, Kepler's 3rd law is works for all of these objects, not just planets.</details></div>
+<h2 id="allometry">Allometry</h2>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-2/james-youn-IA2pNk_dyqw-unsplash.jpg"  title="Photo by James Youn on Unsplash"  alt="Photo by James Youn on Unsplash" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://unsplash.com/photos/fnKoW9mvgkA">Photo by Mick Haupt on Unsplash</a></span>
+    <a href = "https://unsplash.com/photos/IA2pNk_dyqw">Photo by James Youn on Unsplash</a></span>
 </div>
 <br>
-<ol>
-<li>
-<p>Before CDs there were cassette tapes, and they faced an even more rapid demise.  If 76 million cassettes were sold in 2000 and that amount decreases by 55% per year, how many cassette tapes will be sold from 2000 until the end of time? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a_1=76$ and $r=.45$ the infinite geometric series formula gives
-[
-\begin{align}
-S_{\infty}  &amp;= \frac{a_1}{1-r} &amp;&amp; \small \color{#5fa2ce}{\text{Infinite geometric summation formula}} \newline
-&amp;= \frac{76}{1-(0.45)} &amp;&amp; \small \color{#5fa2ce}{\text{Insert values}} \newline
-&amp;= 138.18 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]
-and we conclude that the total number of cassette tapes sold from 2000 will be 138.18 million, assuming the 55% decline continues.</details></p>
-</li>
-<li>
-<p>Why is there no formula for an infinite arithmetic series? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />An infinite geometric series only has a sum if each new value is sufficiently smaller than the previous number and eventually shrinks toward $0$ (that's why we need $-1&lt;r&lt;1$).  The terms in an arithmetic are evenly spaced, so shrinking towards $0$ is impossible.  If you add up an infinite number of terms from an arithmetic series you would approach $\infty$ or $-\infty$.</details></p>
-</li>
-</ol>
-</div>
-<h2 id="summation-notation">Summation Notation</h2>
-<p>When a series has more than a couple of terms there is a compact notation that helps us avoid having to write out a long string of sums.</p>
-<p>This new summation notation is sometimes called &quot;sigma&quot; notation, because the Greek letter $\Sigma$ (sigma) is used to represent summation.  Here's an example of what summation notation looks like.</p>
-<p>[\Large \sum_{k=1}^{8} k^2]</p>
-<p>This a very dense notation and there is a lot here for us to unpack.</p>
-<p>First note that the equation that generates the terms of the sequence is written to the right of the big $\Sigma \thinspace $.</p>
-<p>Below the $\Sigma \thinspace $ we are told what the variable is and what its first value should be.</p>
-<p>Above the $\Sigma \thinspace $ is the final value that gets put into the equation.</p>
-<p><img src="https://duragauge.github.io/img/chapter-6/summation_notation.svg#center" alt=""></p>
-<p>To expand this shorthand version back into a large sum we start by letting $k=1$ in the equation and keep going until $k=8$, all the while adding up the terms we create.  In the figure below you can see how this would work.</p>
-<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
-      <iframe src="https://www.geogebra.org/material/iframe/id/kete4zs4/border/fafafa" scrolling="no"
+<p>In the natural sciences, many other aspects of an organism's life are connected to its size. Life expectancy, brain size, gestational period, metabolic rate, just to name a few, all depend on body mass. The study of the relationship of body size to shape, anatomy, physiology and behavior is called &quot;allometry&quot;.  Very often allometric data is best modeled by power functions.</p>
+<p>For example, the accompanying table shows the weight and cruising speed of several birds.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/bird_data.svg#center" alt=""></p>
+<p>A scatterplot of the data suggests that a slowly increasing power function with $0&lt;p&lt;1$ might model the data well.</p>
+<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/ZnU6AiQr/border/fafafa" scrolling="no"
       style="
         position: absolute;
         top: 0;
@@ -387,32 +164,122 @@ and we conclude that the total number of cassette tapes sold from 2000 will be 1
       </iframe>
 </div>
 <div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
-  <a href="https://www.geogebra.org/m/ekmgvmg8"><img src="https://www.geogebra.org/resource/kete4zs4/NscTHqSUr5DSOQ1W/material-kete4zs4-thumb@l.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ekmgvmg8"><a href="https://www.geogebra.org/m/ekmgvmg8">https://www.geogebra.org/m/ekmgvmg8</a></a></p>
+  <a href="https://www.geogebra.org/m/ZnU6AiQr"><img src="https://www.geogebra.org/resource/ZnU6AiQr/ncguvQHLwhXvamtn/material-ZnU6AiQr-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ZnU6AiQr"><a href="https://www.geogebra.org/m/ZnU6AiQr">https://www.geogebra.org/m/ZnU6AiQr</a></a></p>
 </div>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Expand the series below.
-[\Large \sum_{k=1}^{5} 3k] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{k=1}^{5} 3k=3(1)+3(2)+3(3)+3(4)+3(5)]</details></div>
-<p>Now let's work in the other direction, turning a large sum into compact summation notation.  If we were to write the series connected to this sequence</p>
-<p>[3, \thinspace 5, \thinspace 7, \thinspace 9, \thinspace 11, \thinspace 13, \thinspace 15, \thinspace 17, \thinspace 19, \thinspace 21, \thinspace 23, \thinspace 25, \thinspace 27, \thinspace 29, \thinspace 31]</p>
-<p>then we would need to write out the sum of all fifteen terms.</p>
-<p>[3+5+7+9+11+13+15+17+19+21+23+25+27+29+31]</p>
-<p>To convert this to summation notation the first thing we need is an equation for the sequence that generates these terms.  The values appear to come from an arithmetic sequence with a starting value of $3$ and a spacing of $2$, so the equation is $a_n=3+2(n-1)=2n+1$.</p>
-<p>All that's left is to determine the starting and ending values for $n$.</p>
-<p>[\Large \sum_{n=?}^{?} (2n+1)]</p>
-<p>It's tempting to use $3$ as the starting value but, because $3=a_1$, we actually need to use $n=1$.</p>
-<p>The same holds true for the final value of $n$.  We don't use $31$ but instead use its location in the sequence, which is $15$.</p>
-<p>Inserting the starting and ending values for $n$ completes our summation notation for this example.</p>
-<p>[\Large \sum_{n=1}^{15} (2n+1)]</p>
-<p>If we had wanted to skip the first three terms and start our series at $9$ then we would adjust the sigma notation so it begins at $n=4$.  And by changing the number on top of the $\Sigma$ we could end the series at a different term.  This makes summation notation extremely flexible.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>
-<p>Write Gauss's series $ \thinspace 1 + 2 + 3 + \cdots + 100 \thinspace $ in summation notation. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=1}^{100} n]</details></p>
-</li>
-<li>
-<p>Adjust your answer above so that the series starts with the tenth term and ends on the 82nd. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\sum_{n=10}^{82} n]</details></p>
-</li>
-</ol>
+</br>
+Running the `PwrReg` program gives $f(x) =  23.66 x^{0.2}$ as the best fit, confirming our initial observation that $0 < p < 1$.
+<p>We can use this function to predict the flying speed of other animals based on their weight.  For instance, the giant golden-crowned flying fox is one of the heaviest bat species, with some individuals weighing up to $3.1$ pounds.  At that weight we would predict an optimal flying speed of $f(3.1) =  23.66 (3.1)^{0.2}=29.67 \text{ mph}$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Check to see if this function works for an airplane like the Cessna 172 Skyhawk, which has a cruising speed of $140 \text{ mph}$ and weighs $2300 \text{ pounds}$.</p>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This model predicts a flying speed of [ f(2300) =  23.66 (2300)^{0.2} = 111.27 \text{ mph} ] which isn't too far off the actual value of $140 \text{ mph}$.</details>
 </div>
+<h2 id="book-sales">Book Sales</h2>
+<p>In the previous examples, the independent variables were well defined.  However, it is sometimes possible to fit a power function to data even if there is no independent variable.  In such cases, it is common to sort the data from largest to smallest and use the rank as the x-value.  For instance, $x=1$ corresponds to the largest value, $x=2$ corresponds to the second largest value, and so on.</p>
+<p>One place to find ranked data is in a best-selling book list.  This table shows some of the best-selling books in the United Kingdom from 1998 though the end of 2011.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/Top_books_UK.svg#center" alt=""></p>
+<p>Since the values decrease, if a trend exists it will resemble a decreasing power function, one where the power is negative.</p>
+<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/Wps11VWC/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/Wps11VWC"><img src="https://www.geogebra.org/resource/Wps11VWC/suD06NFpAVH7oCiU/material-Wps11VWC-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/Wps11VWC"><a href="https://www.geogebra.org/m/Wps11VWC">https://www.geogebra.org/m/Wps11VWC</a></a></p>
+</div>
+</br>
+A scatterplot of the book data shows a pattern that appears to match the shape of a power function with $p<1$.  Using a power regression program, we find the power function that fits this data best is
+<p>[
+f(x)=5408784.21 x^{-0.46}
+]</p>
+<p>Eric Carle's children's book <em>The Very Hungry Catepillar</em> is ranked 54th on the list.  According to our model, the number of copies sold should be</p>
+<p>[
+f(54) = 5408784.21(54)^{-0.46}\approx 863373
+]</p>
+<p>which is fairly close to the 855,920 actually sold.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the function above to estimate the ranking of John Grisham's book <em>The Summons</em>, which sold 677,378 copies, by solving for $x$ when $f(x)=677378$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><p>[
+\begin{align}
+677378 &amp;=  5 408 784.21 x^{-0.46} &amp;&amp; \text{Set up the equation.} \newline
+0.1252366 &amp;= x^{-0.46} &amp;&amp; \text{Divide both sides by 5408784.21.} \newline
+91 &amp;\approx x &amp;&amp; \text{Apply the } 1/-0.46 \text{ power to both sides.}
+\end{align}
+]</p></p>
+<p><em>The Summons</em> actually ranked number 84 which is reasonably close to our approximation.</p>
+</details>
+</div>
+<h2 id="census-data">Census Data</h2>
+<p>Another example of ranked data comes to us from the 2010 United States Census, which gives the population of every city in the country.  This table shows the rank and populations of several cities.</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/census_data.svg#center" alt=""></p>
+<p>A scatterplot of the data shows a clear power function trend modeled by the function $f(x) = 6274804.56x^{-0.74}$.</p>
+<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/W8vbZMNE/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/W8vbZMNE"><img src="https://www.geogebra.org/resource/W8vbZMNE/lKfVBqdt3s0cBSli/material-W8vbZMNE-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/W8vbZMNE"><a href="https://www.geogebra.org/m/W8vbZMNE">https://www.geogebra.org/m/W8vbZMNE</a></a></p>
+</div>
+<p>While this model fits the overall trend of the data very well, we should not expect it to perfectly match every value.</p>
+<p>For instance, the Census shows that Kansas City, Missouri was ranked 37th with a population of 459,787.  However, our model predicts a population of $f(37)\approx433,642$.  That's reasonably close, but not perfect.</p>
+<p>This is a common occurrence with many models and we should be cautious about expecting perfection from them.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Follow this <a href="http://www.wolframalpha.com/widgets/view.jsp?id=e7f26c273c1aec446e52d436e32e1a49">link</a> to check the rank and population of your favorite city.  How does it compare to the value predicted by our model?</p>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><p>Your answer will depend on the city chosen.  Here are a few examples.</p>
+<table>
+<thead>
+<tr>
+<th>Actual Data from 2010</th>
+<th>Predicted Population</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>San Fransico, CA was ranked 13th with a population of 805,235.</td>
+<td>$f(13)\approx940,333$</td>
+</tr>
+<tr>
+<td>Cleveland, OH was ranked 44th with a population of 396,815.</td>
+<td>$f(44)\approx381,456$</td>
+</tr>
+<tr>
+<td>Kent, WA was ranked 285th with a population of 92,411.</td>
+<td>$f(285)\approx95,723$</td>
+</tr>
+</tbody>
+</table>
+</details>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In this chapter we've seen that power functions fit are used in a wide variety of applications.  Even so, there are lots of times when a power function isn't a good fit.</p>
+<p>The data below might look like they could be modeled by a power function, but no mater which values you choose for $k$ and $p$, the power function will never fit the curvature of the scatterplot.</p>
+<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/Rv4EWJmR/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/Rv4EWJmR"><img src="https://www.geogebra.org/resource/Rv4EWJmR/LLBa2iAu6P4mcBKq/material-Rv4EWJmR-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/Rv4EWJmR"><a href="https://www.geogebra.org/m/Rv4EWJmR">https://www.geogebra.org/m/Rv4EWJmR</a></a></p>
+</div>
+<p>The data here are best modeled by a new type of function called an <em>exponential</em> function.  Exponential functions and their inverses, the <em>logarithms</em>, are the focus of the <a href="../../chapter-3/">next chapter</a>.</p>
 
                         </div>
                     </section>

@@ -1,6 +1,6 @@
 ---
 title: "Chapter 6"
-subtitle: "Additional Topics"
+subtitle: "Modeling with Functions"
 image: ""
 draft: false
 ---

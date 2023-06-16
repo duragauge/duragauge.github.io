@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>5.3 Polynomial Equations &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>5.2 Zeros &amp; Polynomial Equations &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -83,9 +83,10 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#zeros-of-polynomials">Zeros of Polynomials</a></li>
     <li><a href="#galois-theory">Galois Theory</a></li>
+    <li><a href="#finding-possible-zeros">Finding Possible Zeros</a></li>
     <li><a href="#verifying-zeros">Verifying Zeros</a></li>
-    <li><a href="#the-rational-zeros-theorem">The Rational Zeros Theorem</a></li>
     <li><a href="#finding-rational-zeros-of-a-polynomial">Finding Rational Zeros of a Polynomial</a>
       <ul>
         <li><a href="#rational-zeros-example-1">Rational Zeros Example 1</a></li>
@@ -119,7 +120,7 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>5.3 Polynomial Equations</h1>
+                                <h1>5.2 Zeros &amp; Polynomial Equations</h1>
                             </header>
 
                             <div style="position:relative; clear:both; padding:0;">
@@ -132,16 +133,71 @@
 <p>As the smoke cleared on the morning of May 30, 1832, young Évariste Galois lay mortally wounded on the ground, having been shot in the stomach.  Though only 20 years old, Galois had earned a reputation not only as a brilliant mathematician, but also as a reckless political activist who had threatened the life of the French king and been arrested for carrying loaded weapons during a protest in Paris.</p>
 <p>No one knows for sure why Galois was involved the duel.  Some say that he was defending the honor of a young lady or that he was the victim of a government conspiracy.  All we know is that he feared for his life and spent the night before the duel writing farewell letters to close friends.</p>
 <p>In one of those letters Galois famously described a new mathematical theory that revealed the hidden framework of polynomials.</p>
+<h2 id="zeros-of-polynomials">Zeros of Polynomials</h2>
+<p>In the last section we saw that x-intercepts are real number solutions to the polynomial equation $p(x)=0$ and that they are simple to find if the polynomial has been factored.
+<label for="sn-factor theorem" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-factor theorem" class="margin-toggle" />
+<span class="sidenote">The <strong>factor theorem</strong> told us that $x=c$ is an x-intercept if and only if $(x-c)$ is a factor</span>
+If the polynomial isn't factored, then solving $p(x)=0$ can be challenging.</p>
+<p>Throughout history efforts have been made to find formulas that will produce the zeros of polynomials. The Indian mathematician Brahmagupta is generally credited as being the first to publish a description of the <a href="https://duragauge.github.io/img/chapter-5/quadratic_formula.svg">quadratic formula</a> in 628 AD, though the roots of the solution go back thousands of years.  The quadratic formula gives the two zeros of any 2nd degree polynomial.</p>
+<p>In the 1500's, Niccolò Tartaglia, one of the most gifted mathematicians in Italy, found a general process for solving all cubic equations.  Within a few years a fellow Italian by the name of Lodovico Ferrari found a way to find the zeros of all 4th degree polynomials.</p>
+<p>The work of Tartaglia and Ferrari showed there are always 3 solutions to every 3rd degree polynomial and 4 solutions to every 4th degree polynomial.  Following that pattern, it would be reasonable to expect that a polynomial with a degree of $n$ always has $n$ zeros.</p>
+<p>If you made that assumption, you'd be in good company.  In 1799, Carl Friedrich Gauss, arguably the greatest mathematician in history, proved that result as a consequence of his <strong>Fundamental Theorem of Algebra</strong>.</p>
+<p>While the proof is very complicated and beyond the scope of this text, what the Fundamental Theorem of Algebra says is actually very simple.  In essence, Gauss showed that a polynomial whose degree is $n$ will always have exactly $n$ zeros.  Some of the zeros might involve imaginary numbers, some may be repeated, but there will always be $n$ zeros total.</p>
+<p>For instance, since  $p(x)=2x^4-3x+8$ is a $4th$ degree polynomial, we know that it has exactly $4$ zeros.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>How many total zeros does $p(x)=-3x^6+x^{2}-9x$ have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 6th degree polynomial, so it must have 6 zeros.</details></p>
+</li>
+<li>
+<p>How many total zeros does $p(x)=5x^{3}-4$ have? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />It is a 3rd degree polynomial, so it must have 3 zeros.</details></p>
+</li>
+</ol>
+</div>
 <h2 id="galois-theory">Galois Theory</h2>
-<p>What Galois had discovered was a way to link polynomials with mathematical structures called &quot;groups&quot;.  What's more, Galois showed that the symmetries and patterns in these groups were related to the zeros of polynomials.</p>
-<p>Galois's theory, together with the work of his equally tragic contemporary Niels Henrik Abel
+<p>Gauss showed that for an polynomial of degree $n$ there will always be $n$ solutions to the equation $p(x)=0$.  He did not, however, come up with a formula to find all of those solutions.  And there's a very good reason he didn't.</p>
+<p>In the early 1800's, Galois notes and letters, together with the work of his equally tragic contemporary Niels Henrik Abel
 <label for="sn-Abel" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-Abel" class="margin-toggle" />
-<span class="sidenote">Abel was a young Norwegian mathematician struggling to find steady income so he could marry his fiancée.  He died at the age of 26 from tuberculosis.  Two days later a letter arrived offering a post at the University of Berlin.</span>
-, showed that it is impossible to find a general algebraic formula (ie. a formula involving only addition, subtraction, multiplication, division, powers and roots) for the zeros of a polynomial if the degree is higher than 4.</p>
+<span class="sidenote">Abel was a young Norwegian mathematician struggling to find steady income so he could marry his fiancée.  He died, unwed, at the age of 26 from tuberculosis.  Two days later a letter arrived offering a post at the University of Berlin.</span>
+, showed that it is impossible to find a general algebraic formula (ie. a formula involving only addition, subtraction, multiplication, division, powers and roots) for the zeros of a polynomial if the degree is .</p>
 <p>In other words, we cannot count on using a formula to find the zeros of a polynomial if its degree is higher than 4.  In fact, since the formulas for the <a href="https://duragauge.github.io/img/chapter-5/cubic_formula.svg">cubic</a> and <a href="https://duragauge.github.io/img/chapter-5/quartic_formula.svg">quartic</a> are impractical, the only polynomial formula you'll likely need to remember is the <a href="https://duragauge.github.io/img/chapter-5/quadratic_formula.svg">quadratic formula</a>.</p>
 <p>Instead of using complicated formulas, we will use a combination of graphical, algebraic, and numerical methods to find the zeros of polynomials.  And since graphs help us estimate the number and location of any real zeros as well as the number of imaginary zeros, it is preferable to study the graph of a polynomial first.</p>
+<h2 id="finding-possible-zeros">Finding Possible Zeros</h2>
+<p>Since the real zeros of a polynomial correspond to the x-intercepts of its graph, we can sometimes identify them with just by looking.</p>
+<p>For instance, the graph of $p(x)=x^5-5x^{3}+4x$, shown here, appears to have x-intercepts at $x=-2$, $x=-1$, $x=0$, $x=1$ and $x=2$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_5_integer_zeros.svg#center" alt=""></p>
+<p>But what if a graph isn't available or if the graph is difficult to read?  For example, the cubic polynomial $p(x)=3x^{3}+8x^{2}+3x-2$ appears to have zeros when $x=-2$ and $x=-1$ the location of third zero is not clear.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_rational_2_integer_zeros.svg#center" alt=""></p>
+<p>It might be $\frac{1}{4}$ or $\frac{1}{3}$ or maybe it's some irrational number like $\sqrt{\frac{1}{8}}$.  We simply can't tell just by looking.</p>
+<p>Luckily, there is a nice tool called the <strong>rational zeros theorem</strong> that allows us to make a list of numbers that <em>might</em> be zeros.  Take a look at the table below and see if you can spot the (color-coded) pattern yourself.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/rational_zeros_table.svg#center" alt=""></p>
+<p>Notice that the <em><font color="red">numerators</font></em> of each zero are factors of the <em><font color="red">constant term</font></em> and the <em><font color="blue">denominators</font></em> are factors of the <em><font color="blue">leading coefficient</font></em>.</p>
+<p>If a polynomial with integer coefficients has a rational zero, then the <strong>rational zeros theorem</strong> says this pattern will always occur.  Which means we can use that pattern to reverse engineer a list of fractions that <em>might</em> be zeros.</p>
+<p>Let's test this and find all the fractions that might be zeros of $p(x)=\color{blue}{3}x^{3}+8x^{2}+3x\color{red}{-2}$.</p>
+<p>The constant term is $\color{red}{-2}$, which can be divided evenly by $\color{red}{\pm 1, \thinspace \pm 2}$, so those are its factors.</p>
+<p>The factors of the leading coefficient $\color{blue}{3}$ are $\color{blue}{\pm 1, \thinspace \pm 3}$.</p>
+<p>Putting those together, our list of fractions that might be zeros is</p>
+<p>[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{1}},  \pm \frac{\color{red}{1}}{\color{blue}{3}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{3}} ]</p>
+<p>Notice that the two zeros we spotted from the graph, $x=-2$ and $x=-1$, are in this list.  If our missing third zero is a fraction, then the rational zeros theorem guarantees that it is in this list.  The theorem <strong>does not</strong> however, guarantee that the missing zero is a fraction.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Consider the polynomial $p(x)=\color{blue}{5}x^2+3x+\color{red}{6}$.</p>
+<ol>
+<li>
+<p>List all the factors of the constant term $\color{red}{6}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{red}{6}$ can be divided evenly by $\color{red}{\pm 1, \thinspace \pm 2, \thinspace \pm 3, \thinspace \pm 6}$ , so those are its factors.</details></p>
+</li>
+<li>
+<p>List all the factors of the leading coefficient $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{blue}{5}$ can be divided evenly by $\color{blue}{\pm 1, \thinspace \pm 5}$ , so those are its factors.</details></p>
+</li>
+<li>
+<p>List all the fractions with numerators that are factors of $\color{red}{6}$ and denominators that are factors of $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are sixteen combinations.
+[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{1}} ]
+and
+[ \pm \frac{\color{red}{1}}{\color{blue}{5}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{5}} ]</details></p>
+</li>
+</ol>
+</div>
 <h2 id="verifying-zeros">Verifying Zeros</h2>
 <p>You'll recall that the real zeros of a polynomial are real numbers that are solutions to the equation $p(x)=0$.  Graphically they correspond to the x-intercepts of its graph.</p>
 <p>For instance, the graph of $p(x)=x^5-5x^{3}+4x$, shown here, appears to have x-intercepts at $x=-2$, $x=-1$, $x=0$, $x=1$ and $x=2$.</p>
@@ -154,6 +210,20 @@ p(-2) &amp;= (-2)^5-5(-2)^3+4(-2) \newline
 \end{align}
 ]</p>
 <p>so we can be confident that $x=-2$ truly is a zero.</p>
+<p>ALSO SYNTHETIC DIVISION
+[ \begin{array}{c|rrr}
+1 &amp;2 &amp;3 &amp;4 \newline
+\hline &amp;&amp;  5&amp; 6 \newline 
+\hline &amp;7 &amp;8 &amp;9 \newline 
+\end{array}
+]</p>
+<p>[
+\begin{array}{rrrrr}
+\multicolumn{1}{r|}{-\frac{4}{3}} &amp; {3} &amp; -1 &amp; -6 &amp; 12\\cline{2-5}
+&amp; &amp; -4&amp; \frac{20}{3} &amp; -\frac{8}{9}\\cline{2-5}
+&amp; 3 &amp; -5&amp; \frac{2}{3} &amp; \frac{100}{9}
+\end{array}
+]</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Verify that $x=-1$, $x=0$, $x=1$ and $x=2$ are each zeros of $p(x)=x^5-5x^{3}+4x$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
 \begin{align}
@@ -171,32 +241,6 @@ p(2)&amp;=(2)^5-5(2)^3+4(2) \newline
 &amp;=0
 \end{align}
 ]</details></li>
-</ol>
-</div>
-<h2 id="the-rational-zeros-theorem">The Rational Zeros Theorem</h2>
-<p>With many polynomials it is difficult to determine the exact location of the real zeros from a graph alone.</p>
-<p>Consider the cubic polynomial $p(x)=3x^{3}+8x^{2}+3x-2$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/poly_graph_1_rational_2_integer_zeros.svg#center" alt=""></p>
-<p>From the Fundamental Theorem of Algebra we know that this has exactly three zeros, and $x=-2$ and $x=-1$ appear to be two of them.</p>
-<p>But the location of third zero is not clear.  It might be $\frac{1}{4}$ or $\frac{1}{3}$ or maybe it's some irrational number like $\sqrt{\frac{1}{8}}$.  We simply can't tell just by looking. Luckily, there are a couple of new tools that can help.</p>
-<p>The first new tool is the <strong>rational zeros theorem</strong>.  The rational zeros theorem comes from a nice pattern that occurs whenever the zeros of a polynomial happen to be fractions.  Inspect the table below and see if you can spot a pattern.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/rational_zeros_table.svg#center" alt=""></p>
-<p>Notice that the <em><font color="red">numerators</font></em> of each zero are factors of the <em><font color="red">constant term</font></em> and the <em><font color="blue">denominators</font></em> are factors of the <em><font color="blue">leading coefficient</font></em>.  If a polynomial with integer coefficients has a rational zero, then this pattern will always occur.</p>
-<p>We can use that pattern to create a list of fractions that <em>might</em> be zeros.  Those fractions could then be tested to see if any of them really are zeros.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Consider the polynomial $p(x)=\color{blue}{5}x^2+3x+\color{red}{6}$.</p>
-<ol>
-<li>
-<p>List all the factors of the constant term $\color{red}{6}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{red}{6}$ can be divided evenly by $\color{red}{\pm 1, \thinspace \pm 2, \thinspace \pm 3, \thinspace \pm 6}$ , so those are its factors.</details></p>
-</li>
-<li>
-<p>List all the factors of the leading coefficient $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$\color{blue}{5}$ can be divided evenly by $\color{blue}{\pm 1, \thinspace \pm 5}$ , so those are its factors.</details></p>
-</li>
-<li>
-<p>List all the fractions whose numerators come from factors of $\color{red}{6}$ with denominators that are factors of $\color{blue}{5}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are sixteen combinations.
-[ \pm \frac{\color{red}{1}}{\color{blue}{1}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{1}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{1}} ]
-and
-[ \pm \frac{\color{red}{1}}{\color{blue}{5}}, \thinspace  \pm \frac{\color{red}{2}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{3}}{\color{blue}{5}}, \thinspace \pm \frac{\color{red}{6}}{\color{blue}{5}} ]</details></p>
-</li>
 </ol>
 </div>
 <h2 id="finding-rational-zeros-of-a-polynomial">Finding Rational Zeros of a Polynomial</h2>

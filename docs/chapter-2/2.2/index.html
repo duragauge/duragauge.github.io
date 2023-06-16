@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>2.2 Applications of Power Functions &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>2.2 Applications of Power Functions &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -83,7 +83,6 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#evaluating-power-functions">Evaluating Power functions</a></li>
     <li><a href="#the-standard-power-function-model">The Standard Power Function Model</a></li>
     <li><a href="#applications-of-power-functions">Applications of Power Functions</a>
       <ul>
@@ -93,13 +92,18 @@
       </ul>
     </li>
     <li><a href="#direct-variation">Direct Variation</a></li>
-    <li><a href="#inverse-variation">Inverse Variation</a></li>
+    <li><a href="#inverse-variation">Inverse Variation</a>
+      <ul>
+        <li><a href="#boyles-law">Boyle's Law</a></li>
+      </ul>
+    </li>
     <li><a href="#combining-direct-and-inverse-variation">Combining Direct and Inverse Variation</a>
       <ul>
         <li><a href="#stopping-distance">Stopping Distance</a></li>
         <li><a href="#newtons-universal-law-of-gravity">Newton's Universal Law of Gravity</a></li>
       </ul>
     </li>
+    <li><a href="#finding-the-constant-of-variation">Finding the Constant of Variation</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
 </nav>
@@ -131,44 +135,14 @@
 <span class="sidenote"> <img src="https://duragauge.github.io/img/chapter-2/Prinicipia-title.png" alt=""><br> A rare first edition copy of <em>Principia</em> sold at auction for $3.7 million in 2016.</span>
 In <em>Principia</em> Newton formulated his three laws of motion, expanded Kepler's work on planetary orbits, laid the foundations for classical mechanics and, for the first time ever, gave a mathematical description of gravity.</p>
 <p>Newton wrote that the gravitational force between two objects is <em>&quot;proportional to the product of their masses and inversely proportional to the square of the distance between them&quot;</em>.</p>
-<p>In this section we'll spend time trying to figure out what Newton meant by that and uncover a few other applications of power functions along the way.  But before we do that, we need to quickly discuss some tips and tricks for evaluating power functions.</p>
-<h2 id="evaluating-power-functions">Evaluating Power functions</h2>
-<p>When using a calculator to evaluate power functions we need to be careful to wrap $x$ and/or $p$ in parenthesis anytime either one anything other than a whole number. For example, if $f(x)=x^{2/5}$ then to evaluate $f(-3/8)$  parenthesis should be put around both $-3/8$ and around the power $2/5$.  Without parenthesis, the normal order of operations would give a very different answer.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Correct evaluation of $(-3/8)^{2/5}$</strong></th>
-<th><strong>Incorrect evaluation of $(-3/8)^{2/5}$</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>(-3/8)^(2/5) = 0.675480019</code></td>
-<td><code>-3/8^2/5 = -0.009375</code></td>
-</tr>
-</tbody>
-</table>
-<p>We should also keep in mind that many power functions are not defined when $x&lt;0$, and that if the power is negative then $0$ is not in the domain.  Expressions involving either of these will produce an error message on your calculator.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use a calculator to find the following values of the function $f(x) =  x^{-1/2}$.</p>
-<ol>
-<li>
-<p>$f(4)$  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$0.5$</details></p>
-</li>
-<li>
-<p>$f(-6.1)$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Undefined</details></p>
-</li>
-<li>
-<p>$f(0)$  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Undefined</details></p>
-</li>
-</ol>
-</div>
+<p>In this section we'll spend time trying to figure out what Newton meant by that and uncover a few other applications of power functions along the way.</p>
 <h2 id="the-standard-power-function-model">The Standard Power Function Model</h2>
 <p>Most power functions applications require us to scale the basic form $f(x)=x^{p}$ by a factor of $k$.  The resulting equation</p>
 <p>[
 f(x) =  k x^{p}
 ]</p>
 <p>is called the <strong>standard power function model</strong>.</p>
-<p>To understand how $k$ impacts the model let's focus on the effect this has on a single point.</p>
+<p>To understand how $k$ impacts the model let's focus on the effect it has on a single point.</p>
 <div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/enm1qAJj/border/fafafa" scrolling="no"
       style="
@@ -184,7 +158,7 @@ f(x) =  k x^{p}
   <a href="https://www.geogebra.org/m/enm1qAJj"><img src="https://www.geogebra.org/resource/enm1qAJj/7EOvipXoNUqjGren/material-enm1qAJj-thumb@l.png"></img></a>
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/enm1qAJj"><a href="https://www.geogebra.org/m/enm1qAJj">https://www.geogebra.org/m/enm1qAJj</a></a></p>
 </div>
-<p>This causes a vertical scaling of the graph by a factor of $k$ s that all power functions of the form $f(x)=k x^{p}$ must pass through the point$(1, k)$.</p>
+<p>This causes a vertical scaling of the graph by a factor of $k$, so that any power functions of the form $f(x)=k x^{p}$ will pass through the point$(1, k)$.</p>
 <p>In many cases the scaling factor $k$ is composed of more than one constant.  For instance, the volume of a sphere is a function of the of the radius and is given by $V=\frac{4}{3} \pi r^{3}$.  Here the constant $k$ includes both the fraction $\frac{4}{3}$ and $\pi$, that is $k=\frac{4}{3} \pi$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Identify the scaling factor $k$ for each of the power functions listed below.</p>
 <ol>
@@ -200,8 +174,8 @@ f(x) =  k x^{p}
 </ol>
 </div>
 <h2 id="applications-of-power-functions">Applications of Power Functions</h2>
-<p>Frequently we will find that the only difference between applications is the value of the scaling constant $k$ and, of course, the context.  The next three examples illustrate this fact.  All three are completely different applications, yet each one is modeled by a variation of $f(x)=kx^{1/2}$.</p>
-<p>The goal here is not to master the applications, but simply to become familiar with the terminology and maybe even begin to appreciate the usefulness of power functions.  All you will be asked to do at this point is evaluate power functions.</p>
+<p>Frequently we will find that the only difference between applications is the value of the scaling constant $k$ and, of course, the context.  The next three examples illustrate this fact.  All three are completely different applications, yet each one is modeled by $f(x)=kx^{1/2}$ for differing values of $a$.</p>
+<p>The goal here is not to master the applications, but simply to become familiar with the terminology and maybe even begin to appreciate the usefulness of power functions.  All you will be asked to do at this point is evaluate the functions.</p>
 <h3 id="tugboats">Tugboats</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-2/6566018279_2e151a187c_o.jpg"  title="Photo by James Abbot on Flickr"  alt="Photo by James Abbot on Flickr" style="display:block; width:100%; height:auto;" >
@@ -214,7 +188,7 @@ f(x) =  k x^{p}
 </label>
 <input type="checkbox" id="sn-tug" class="margin-toggle" />
 <span class="sidenote"><iframe src="https://www.youtube.com/embed/1Tj4xvAp_8I?start=166&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-<p>When the length of this wave matches the length of the boat, then the boat has reached its <em>hull speed</em> $V$, which is generally considered to be the fastest it can go.  The hull speed of a large ship doesn't depend at all on the size of its motor(s) or how heavy it is.  Hull speed is actually a function of the ship's length and is given by the power function</p>
+<p>When the length of this wave matches the length of the boat, then the boat has reached its <em>hull speed</em> $V$, which is generally considered to be the fastest it can go.  The hull speed of a large ship doesn't depend at all on the size of its motor(s) or how heavy it is.  Hull speed is only a function of the ship's length and is given by</p>
 <p>[
 V=1.34 L^{1/2}
 ]</p>
@@ -230,14 +204,14 @@ V=1.34(1.25)^{1/2}\approx 2 \text{knots}
 ]</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>The Crowley Marine Invader class tugboat <em>Hunter</em> has won the Seattle Maritime Festival's tugboat race every year that it has competed since 1995.  If the <em>Hunter</em> is 136 feet long at the water line, what is its hull speed? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$V=1.34(136)^{1/2}\approx15.63 $knots</details></div>
 <h3 id="pendulums">Pendulums</h3>
-<p>A pendulum is any object that swings from a fixed point.  A playground swing and a grandfather clock are two example of pendulums.  In one tower of the Oregon Convention Center, the 900 pound <em>Principia</em> pendulum hangs from a 70 foot long cable as it swings.
+<p>A pendulum is a object that swings from a fixed point.  A playground swing and a grandfather clock are two examples of pendulums.  In one tower of the Oregon Convention Center, the 900 pound <em>Principia</em> pendulum hangs from a 70 foot long cable as it swings.
 <label for="sn-pendulum" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-pendulum" class="margin-toggle" />
 <span class="sidenote"><iframe width="100%" src="https://www.youtube.com/embed/6oYvffE6iGY?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-<p>Surprisingly, the amount of time that it takes a pendulum to swing back and forth once (called its period) doesn't depend at all on how heavy it is.  The period of a pendulum depends only on the length of the cable and is given by the power function</p>
+<p>Surprisingly, the amount of time that it takes a pendulum to swing back and forth once (called its period) doesn't depend at all on how heavy it is.  The period of a pendulum depends only on the length of the cable and is given by</p>
 <p>[
-P=\frac{2 \pi}{\sqrt{32}} \thinspace L^{1/2}
+P=1.11 \thinspace L^{1/2}
 ]</p>
 <p>where $P$ is the period in seconds and $L$ is the length of the pendulum in feet.</p>
 <p><label for="mn-clocks" class="margin-toggle">⊕
@@ -246,10 +220,10 @@ P=\frac{2 \pi}{\sqrt{32}} \thinspace L^{1/2}
 <span class="marginnote"><img src="https://duragauge.github.io/img/chapter-2/clocks.jpg" alt=""><a href="https://www.flickr.com/photos/lisabrideau/40606329161/">Photo by Lisa Brideau on Flickr</a></span></p>
 <p>Pendulums in grandfather clocks are often 39 inches long.  Since 39 inches is 3.25 feet, this gives them a period of</p>
 <p>[
-P=\frac{2 \pi}{\sqrt{32}} \thinspace  (3.25)^{1/2}\approx 2.0024 \text{ seconds}
+P=1.11\thinspace  (3.25)^{1/2}\approx 2.0024 \text{ seconds}
 ]</p>
 <p>If the entire period is 2 seconds, then each swing to the left or to the right lasts almost exactly 1 second, just what a clockmaker would want.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose the swings at a local park are 12 feet long.  How long will it take to swing back and forth once? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$P=\frac{2 \pi}{\sqrt{32}}  12^{1/2}\approx 3.85$ seconds.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose the swings at a local park are 12 feet long.  How long will it take to swing back and forth once? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$P=1.11  12^{1/2}\approx 3.85$ seconds.</details></div>
 <h3 id="falling-bodies">Falling Bodies</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-2/pisa-1247452_1280.jpg"  title="Photo by Monika Neumann on Pixabay"  alt="Photo by Monika Neumann on Pixabay" style="display:block; width:100%; height:auto;" >
@@ -257,10 +231,10 @@ P=\frac{2 \pi}{\sqrt{32}} \thinspace  (3.25)^{1/2}\approx 2.0024 \text{ seconds}
     <a href = "https://pixabay.com/images/id-1247452/">Photo by Monika Neumann on Pixabay</a></span>
 </div>
 <br>
-<p>Italian scientist Galileo Galilei is reported to have dropped two spheres of different masses from the top of the Leaning Tower of Pisa and observed that both hit the ground at the same time.  He concluded that the time it takes an object to fall is independent of its weight.  In other words,  if air resistance is removed, a light object, like a feather, will fall just as fast as a heavy object, like a hammer.</p>
-<p>On Earth, the time it takes an object to fall, ignoring air resistance, is given by the power function</p>
+<p>Italian scientist Galileo Galilei is reported to have dropped two spheres of different masses from the top of the Leaning Tower of Pisa and observed that both hit the ground at the same time.  He concluded that the time it takes an object to fall is independent of its mass.  In other words,  if air resistance is removed, a light object, like a feather, will fall just as fast as a heavy object, like a hammer.</p>
+<p>On Earth, the time it takes an object to fall, ignoring air resistance, is given by</p>
 <p>[
-t=\frac{1}{4} d^{1/2}
+t=0.25 d^{1/2}
 ]</p>
 <p>where $t$ is time in seconds and $d$ is the distance in feet.  This was famously verified on the Moon by the astronauts of Apollo 15 in 1971, who captured the event on video.
 <label for="sn-galileo" class="margin-toggle sidenote-number">
@@ -269,10 +243,10 @@ t=\frac{1}{4} d^{1/2}
 <span class="sidenote"><iframe width="100%" src="https://www.youtube.com/embed//4mTsrRZEMwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
 <p>In 1930, Chicago Cubs' baseball player Gabby Hartnett caught a baseball that had been dropped 800 feet out of a blimp before a pre-season game in Los Angeles.  Ignoring air resistance, the ball would have fallen for
 [
-t=\frac{1}{4}(800)^{1/2}\approx 7 \text{ seconds}
+t=0.25(800)^{1/2}\approx 7 \text{ seconds}
 ]</p>
-<p>According to reports, the blimp tossed out another ball which he caught as well.  The baseball reached a top speed of about 95 miles per hour due to the air resistance.  We'll look at air resistance in Section 2.3.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose you drop a 10 pound bowling ball off the top of a 36 foot building.  Ignoring the effects of air resistance, how long will it take to reach the ground? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since falling time is independent of mass, we ignore the fact that this is a 10 pound ball and focus only on the distance.  From the equation above, $t=1/4(36)^{1/2}=1.5$ seconds.</details></div>
+<p>According to reports, the blimp tossed out another ball which he caught as well.  The baseball reached a top speed of about 95 miles per hour.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose you drop a 10 pound bowling ball off the top of a 36 foot building.  Ignoring the effects of air resistance, how long will it take to reach the ground? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since falling time is independent of mass, we ignore the fact that this is a 10 pound ball and focus only on the distance.  From the equation above, $t=0.25(36)^{1/2}=1.5$ seconds.</details></div>
 <h2 id="direct-variation">Direct Variation</h2>
 <p>Many applications, especially in science and engineering, are expressed in the language of variation.  Our focus here is on the vocabulary and converting between verbal and symbolic descriptions.  Solving equations is left for the next section.</p>
 <p>Two quantities $x$ and $y$ are said to <strong>vary directly</strong>
@@ -285,7 +259,7 @@ if $y$ is a constant <em>multiple</em> of $x$.  Algebraically this means that</p
 y =  k \thinspace x
 ]</p>
 <p>for any constant $k$.</p>
-<p>The number $k$ is called the <strong>constant of variation</strong>.  Whenever $x$ increases by $1$ then $y$ will increase by a factor of $k$.</p>
+<p>In a variation problem the number $k$ is called the <strong>constant of variation</strong>.  Whenever $x$ increases by $1$ then $y$ will increase by a factor of $k$.</p>
 <p>While we normally think of $x$ and $y$ as single variables, they could also be algebraic expressions.  For instance, Kepler's third law describes a directly proportional relationship between a square and a cube.  It states that the square of the time it takes a planet to orbit the Sun (called its period) varies directly with the cube of its distance from the Sun.  The equation is $P^2 =  k \thinspace D^{3}$.</p>
 <p>In this case the two quantities that are proportional are $P^2$ and $D^{3}$.</p>
 <p>Of particular interest to us are equations of the form $y =  k \thinspace x^{p}$, where $y$ varies directly with the $p$-th power of $x$.  Note that this is nothing more than our standard power function model with a different name.</p>
@@ -324,6 +298,7 @@ y =  k \thinspace x^{-n}  =  k \frac{1}{x^{n}} , n&gt;0
 </li>
 </ol>
 </div>
+<h3 id="boyles-law">Boyle's Law</h3>
 <p>One example of inverse variation is Boyle's Law.  According to Boyle's Law, if the temperature of a gas in a sealed container is held constant, then the volume of the gas is inversely proportional to the pressure applied.  Algebraically this means that</p>
 <p>[
 P=k \thinspace V^{-1}
@@ -347,11 +322,9 @@ P=0.103(5.0)^{-1}=0.0206 \text{ kilograms per square centimeter}
     <a href = "https://pixabay.com/images/id-2369616/">Photo by Hannes215 on Pixabay</a></span>
 </div>
 <br>
-<p>Physics shows that the stopping distance $d$ of a car is directly proportional to the square of its speed $v$ and inversely proportional to the friction $\mu$ between the tires and the road.</p>
-<p>It also tells us that the constant of proportionality is $k =  \frac{1}{2 g}$, where $g =  32 \text{ft/sec}^{2}$ is the acceleration of gravity.</p>
-<p>Symbolically we have the following formula</p>
+<p>Physics shows that the stopping distance $d$ of a car is directly proportional to the square of its speed $v$ and inversely proportional to the friction $\mu$ between the tires and the road. If $v$ is measured in miles per hour and $d$ in feet, then</p>
 <p>[
-d =  \frac{1}{(2)(32)}{ v^2 } \frac{1}{\mu}  =  \frac{v^{2}}{64\mu}
+d =  \frac{0.0366 v^2 }{\mu}
 ]</p>
 <p>It is interesting to note that the size and weight of the vehicle are not part of the equation.   More importantly, from a safety standpoint, is the fact that doubling the speed $v$ results in a quadrupling of the stopping distance $d$.</p>
 <p>Suppose you are driving $60$ mph down a snowy road and suddenly slam on the brakes.  When will you come to a complete stop?  We now know the equation, but before we can use it we need the friction coefficient $\mu$.  Finding the exact value of the friction coefficient is difficult, but traffic engineers have calculated approximate values for different surfaces. 
@@ -359,12 +332,12 @@ d =  \frac{1}{(2)(32)}{ v^2 } \frac{1}{\mu}  =  \frac{v^{2}}{64\mu}
 </label>
 <input type="checkbox" id="sn-stopping" class="margin-toggle" />
 <span class="sidenote"><img src="https://duragauge.github.io/img/chapter-2/friction_coefficients.svg" alt=""></span></p>
-<p>In this case we will use $\mu =  0.2$, since the car is on snow. Lastly, we should convert our speed from $60$ miles per hour (mph) to $88$ feet per second (ft/sec).  Substituting these values into our equation gives a stopping distance of</p>
+<p>In this case we will use $\mu =  0.2$, since the car is on snow. Substituting these values into our equation gives a stopping distance of</p>
 <p>[
-d =  \frac{88^{2}}{64(0.2)}  = 605 \text{ feet}
+d =  \frac{0.03661(60)^{2}}{0.2}  \approx 605 \text{ feet}
 ]</p>
-<p>So if you were travelling at 60mph down a snow covered road, it would take at least 605 feet for your car to stop once you had applied the brakes.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose you were driving under the same conditions at a much safer speed of $30$ mph, or $44$ ft/sec.  What would the stopping distance be? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $\mu=0.2$ and $v=44$ ft/sec, we have [ d =  \frac{44^{2}}{64(0.2_}  =  151.25 \text{ feet} ]</details></div>
+<p>So if you were travelling at 60mph down a snow covered road, it would take about 605 feet for your car to stop once you had applied the brakes.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose you were driving under the same conditions at a much safer speed of $30$ mph.  What would the stopping distance be? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $\mu=0.2$ and $v=30$ mph, we have [ d =  \frac{0.0336144(30)^2}{0.2}  \approx  151.25 \text{ feet} ]</details></div>
 <h3 id="newtons-universal-law-of-gravity">Newton's Universal Law of Gravity</h3>
 <p>As a final example let's now turn our attention to Newton's law of gravity.  Isaac Newton discovered that the force of gravity $F$ between two objects, like the Sun and the Earth, is proportional to the product of their two masses, $m_1$ and $m_2$, and inversely proportional to the square of the distance $d$ between them.</p>
 <p><img src="https://duragauge.github.io/img/chapter-2/gravity.svg#center" alt=""></p>
@@ -383,6 +356,7 @@ F =  k \frac{m_1 m_2 }{d^{2}}
 </li>
 </ol>
 </div>
+<h2 id="finding-the-constant-of-variation">Finding the Constant of Variation</h2>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>In this section we were given equations that represented real life scenarios and were able to evaluate them.  In the next section we will solve these equations for different parameters, and in the section after that we will create our own models.</p>
 

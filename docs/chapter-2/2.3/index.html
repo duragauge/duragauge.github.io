@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>2.3 Equations Involving Power Functions &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>2.3 Equations Involving Power Functions &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -159,7 +159,7 @@ x &amp;= \pm 4 &amp;&amp; \text{Simplify.}
 <p>When reconstructing accident scenes, police officers rely on a number of tools, including measuring the length of any skid marks made by the tires.  With that distance, and an assessment of the road conditions, they can approximate the speed of the vehicle.</p>
 <p>So how do they do it? In the prior section we saw how to calculate the stopping distance $d$ using the formula</p>
 <p>[
-d =  \frac{v^{2}}{64\mu}
+d =  \frac{0.03361 v^{2}}{\mu}
 ]</p>
 <p>where $v$ is the speed of the car in feet per second and $\mu$ is the friction coefficient of the road surface.</p>
 <p>When police need to find the speed of a car that was involved in an accident they measure the distance of the skid marks, make an observation of the road conditions, and solve this equation for $v$.</p>
@@ -171,38 +171,34 @@ d =  \frac{v^{2}}{64\mu}
 and solve for $v$.   The result is</p>
 <p>[
 \begin{align}
-286 &amp;=   \frac{v^{2}}{64(0.2)} \newline
-3660.8 &amp;=   v^{2} &amp;&amp; \text{Multiply both sides by } 64(0.2)=12.8 \newline
-v &amp;=   (3660.8)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
-v &amp;\approx\ 60.5 &amp;&amp; \text{Evaluate}
+286 &amp;=   \frac{0.03361 v^{2}}{0.2} \newline
+1701.874 &amp;=   v^{2} &amp;&amp; \text{Divide both sides by } \frac{0.03361}{0.2}=0.16805 \newline
+v &amp;=   (1701.874)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
+v &amp;\approx\ 41.3 &amp;&amp; \text{Evaluate}
 \end{align}
 ]</p>
-<p>The officer can safely conclude that the car was going at least 60.5 feet per second, which converts to 41.3 miles per hour using 1 mile = 5280 feet and 1 hour = 3600 seconds as follows:</p>
-<p>[
-\frac{60.5 \text{ feet}}{1 \text{ sec}} \cdot \frac{1 \text{ mile}}{5280 \text{ feet}} \cdot \frac{3600 \text{ sec}}{1 \text{ hour}} \approx41.3 \text{ mph}
-]</p>
+<p>The officer can safely conclude that the car was going a around 41.3 miles per hour.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>If 180 foot long skid marks are found on wet concrete, what was the speed of the car? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $d=180$ feet and $\mu=0.6$, we have
 [
 \begin{align}
-180 &amp;=   \frac{v^{2}}{64(0.6)} \newline
-6912 &amp;=   v^{2} &amp;&amp; \text{Multiply both sides by } 64(0.6) \newline
-v &amp;=   (6912)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
-v &amp;\approx 83.1 &amp;&amp; \text{Evaluate}
+180 &amp;=   \frac{0.03361 v^{2}}{0.6} \newline
+3213.138 &amp;=   v^{2} &amp;&amp; {Divide both sides by } \frac{0.03361}{0.2}=0.05602 \newline
+v &amp;=   (3213.138)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
+v &amp;\approx 56.7 &amp;&amp; \text{Evaluate}
 \end{align}
 ]
-So $v \approx 83.1$ ft/sec, which is almost $56.7$ mph.</details></div>
-<p>It is easy to see that the police might need to repeat this process on a regular basis.  To simplify the work needed, it makes sense to create a formula for $v$ by solving the equation $d =  \frac{v^{2}}{64\mu}$ for $v$ without inserting values for $d$ and $\mu$.  The result is</p>
+So $v \approx 56.7$ mph.</details></div>
+<p>It is easy to see that the police might need to repeat this process on a regular basis.  To simplify the work needed, it makes sense to create a formula by solving the equation for $v$ without inserting values for $d$ and $\mu$.  Assuming $v&gt;0$, the result is</p>
 <p>[
 \begin{align}
-d &amp;=  \frac{v^{2}}{64\mu} \newline
-64\mu d &amp;=  v^2 &amp;&amp; \text{Multiply both sides by } 64\mu \newline
-v &amp;=  (64\mu d)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
-v &amp;=  8 \sqrt{\mu d  } &amp;&amp; \text{Simplify}
+d &amp;=  \frac{0.03361 v^{2}}{\mu} \newline
+\mu d &amp;= 0.03361 v^2 &amp;&amp; \text{Multiply both sides by } \mu \newline
+\frac{\mu d}{0.03361} &amp;=  v^2 &amp;&amp; \text{Divide both sides by } 0.03361 \newline
+v &amp;=  \left(\frac{\mu d}{0.03361}\right)^{1/2} &amp;&amp; \text{Apply the } 1/2 \text{ power to both sides} \newline
 \end{align}
 ]</p>
-<p>assuming $v&gt;0$.</p>
 <p>This formula will give the same results as solving, but is more efficient and less prone to error.  In general, when a calculation needs to be repeated frequently, it's best to find a formula rather than repeating the solving process over and over.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Use the formula above find the speed of a car that left 180 foot long skid marks on wet concrete, which has a friction coefficient of $\mu=0.6$.  How do your results compare with the QUICK CHECK above? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $d=180$ feet and $\mu=0.6$, we have $v=8 \sqrt{ (0.6)(180)} \approx83.1$ which is the same result obtained by solving in the prior QUICK CHECK.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Use the formula above find the speed of a car that left 180 foot long skid marks on wet concrete, which has a friction coefficient of $\mu=0.6$.  How do your results compare with the QUICK CHECK above? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $d=180$ feet and $\mu=0.6$, we have $v=\left(\frac{0.6 \cdot 180}{0.03361}\right)^{1/2} \approx 56.7$ which is the same result obtained by solving in the prior QUICK CHECK.</details></div>
 <h2 id="terminal-velocity">Terminal Velocity</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-2/skydive.jpg"  title="Skydiving photo from the US Air Force on Flickr"  alt="Skydiving photo from the US Air Force on Flickr" style="display:block; width:100%; height:auto;" >
@@ -210,11 +206,11 @@ v &amp;=  8 \sqrt{\mu d  } &amp;&amp; \text{Simplify}
     <a href = "https://flic.kr/p/cecNKQ">Skydiving photo from the US Air Force on Flickr</a></span>
 </div>
 <br>
-<p>The force of aerodynamic drag $D$ acting on a skydiver is directly proportional to four parameters: the square of the velocity $v$, the density of air $\rho$, the drag coefficient $C$, as well as the amount of surface area $A$ that is facing the ground, where the constant of proportionality is $1/2$.  From this information, is it possible to find a formula for velocity?</p>
-<p>We start by converting the language of proportionality into an equation.  Translating the statement above, we obtain the equation</p>
+<p>The force of aerodynamic drag $F_D$ acting on a skydiver is directly proportional to four parameters: the square of the velocity $v$, the density of air $\rho$, the drag coefficient $C$, and the amount of surface area $A$ that is facing the ground, with a constant of proportionality of $1/2$.  Translating the statement above, we obtain the equation</p>
 <p>[
-D =  \frac{1}{2} \rho C A v^2
+F_D =  \frac{1}{2} C \rho A v^2
 ]</p>
+<p>From this information, is it possible to find a formula for velocity?</p>
 <p>Solving for $v$ gives the following formula:</p>
 <p>[
 v =  \left(\frac{2 D}{ \rho C A}\right)^{1/2} =  \sqrt{\frac{2D}{\rho C A}}

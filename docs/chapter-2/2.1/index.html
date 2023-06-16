@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>2.1 Power Functions &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>2.1 Power Functions &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -91,7 +91,7 @@
         <li><a href="#fractional-powers">Fractional Powers</a></li>
       </ul>
     </li>
-    <li><a href="#inverses-of-power-functions">Inverses of Power Functions</a></li>
+    <li><a href="#evaluating-power-functions">Evaluating Power functions</a></li>
     <li><a href="#graphs-of-power-functions">Graphs of Power Functions</a>
       <ul>
         <li><a href="#case-1-colorredp0">Case 1: $\color{red}{p&lt;0}$</a></li>
@@ -101,6 +101,7 @@
     </li>
     <li><a href="#symmetry-of-power-functions">Symmetry of Power Functions</a></li>
     <li><a href="#use-symmetry-to-graph-power-functions">Use Symmetry to Graph Power Functions</a></li>
+    <li><a href="#inverses-of-power-functions">Inverses of Power Functions</a></li>
     <li><a href="#how-power-functions-change">How Power Functions Change</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
@@ -224,32 +225,39 @@ $$</p>
 </li>
 </ol>
 </div>
-<h2 id="inverses-of-power-functions">Inverses of Power Functions</h2>
-<p>Finding the inverse of a power function is a very straightforward process.  As an illustration, consider the cube function $f(x) =  x^{3}$ and its inverse, the cube root function $f^{-1}(x) =  \sqrt[3]{x}$.</p>
-<p>Since the cube root can be written as the one-third power $x^{1/3}$, the inverse of $f(x)=x^{3}$ is the power function $f^{-1}(x)=x^{1/3}$.</p>
-<p>Notice that the two powers are <em>reciprocals</em> of each other, that is the key.</p>
-<p>In general, the inverse of any power function restricted to $x\geq0$ is the power function whose power is the reciprocal of the other.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/reciprocal_power.png#center" alt=""></p>
-<p>That is to say, given some power function $f(x)=x^{p}$, then its inverse is always $f^{-1}(x)=x^{1/p}$, for all powers other than $p=0$ (which does not have an inverse).</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Find the inverse of the following power functions.</p>
+<h2 id="evaluating-power-functions">Evaluating Power functions</h2>
+<p>When using a calculator to evaluate and graph power functions we need to be careful to wrap $x$ and/or $p$ in parenthesis anytime either one is anything other than a whole number. For example, if $f(x)=x^{2/5}$ then to evaluate $f(-3/8)$  parenthesis should be put around both $-3/8$ and around the power $2/5$.  Without parenthesis, the normal order of operations would give a very different answer.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Correct evaluation of $(-3/8)^{2/5}$</strong></th>
+<th><strong>Incorrect evaluation of $(-3/8)^{2/5}$</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(-3/8)^(2/5) = 0.675480019</code></td>
+<td><code>-3/8^2/5 = -0.009375</code></td>
+</tr>
+</tbody>
+</table>
+<p>We should also keep in mind that many power functions are not defined when $x&lt;0$, and that if the power is negative then $0$ is not in the domain.  Expressions involving either of these will produce an error message on your calculator.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use a calculator to find the following values of the function $f(x) =  x^{-1/2}$.</p>
 <ol>
 <li>
-<p>$f(x) =  x^5$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{1/5}$</details></p>
+<p>$f(4)$  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$0.5$</details></p>
 </li>
 <li>
-<p>$f(x) =  x^{7/4}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{4/7}$</details></p>
+<p>$f(-6.1)$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Undefined</details></p>
 </li>
 <li>
-<p>$f(x) =  x^{-3/5}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{-5/3}$</details></p>
-</li>
-<li>
-<p>$f(x) =  x^{2.3}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{1/2.3}$</details></p>
+<p>$f(0)$  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Undefined</details></p>
 </li>
 </ol>
 </div>
 <h2 id="graphs-of-power-functions">Graphs of Power Functions</h2>
-<p>Now let's turn our attention to identifying patterns in the graphs of power functions. The shape of the graph of a power function $f(x)=x^{ p}$ is controlled by the value of the power $p$.  In this interactive figure you can use the <strong><font color="blue">blue</font></strong> slider to change $p$.</p>
-<p>Since many powers are undefined when $x&lt; 0$, we will focus on the first quadrant for now.   As you change $p$, look for patterns or similarities between the different graphs.  In particular, try to group the graphs into three distinct shapes.</p>
+<p>While technology can be used to graph power functions, you can often create a &quot;good enough&quot; sketch within seconds just by examining the equation.  The shape of the graph of a power function $f(x)=x^{ p}$ is controlled by the value of the power $p$.  In this interactive figure you can use the <strong><font color="blue">blue</font></strong> slider to change $p$.</p>
+<p>Since many powers are undefined when $x&lt; 0$, we will focus on the first quadrant for now.   As you change $p$, look for patterns or similarities between the different graphs.  In particular, try to group the graphs into <em>three</em> distinct shapes.</p>
 <div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/FyjpfmvA/border/fafafa" scrolling="no"
       style="
@@ -274,7 +282,7 @@ $$</p>
 <p>Looking at the graph we see that it drops sharply along the y-axis and levels off toward the positive x-axis, as you move from left to right.  In mathematical terms, the graph is both decreasing and concave up on the interval $(0, \infty)$, with a vertical asymptote at $x=0$ (the y-axis) and a horizontal asymptote at $y=0$ (the x-axis).</p>
 <p>Because of the asymptotes, the graph never reaches a minimum nor a maximum value.  Based on the shape of the graph, it would be reasonable to use this type of power function to represent quantities that decay as $x$ increases.</p>
 <h3 id="case-2-colorgreen0p1">Case 2: $\color{green}{0&lt;p&lt;1}$</h3>
-<p>If the power is small, that is $0&lt;p&lt;1$, then the graph of the power function $f(x)=x^{p}$ is increasing and concave down over the interval $(0, \infty)$.   Note that this graph resembles the <a href="//chapter-1/1.3#the-square-root-function">square root function</a>.</p>
+<p>If the power is small, that is $0&lt;p&lt;1$, then the graph of the power function $f(x)=x^{p}$ is increasing and concave down over the interval $(0, \infty)$.   Note that this shape resembles the <a href="//chapter-1/1.3#the-square-root-function">square root function</a>.</p>
 <p><img src="https://duragauge.github.io/img/chapter-2/power_b.svg#center" alt=""></p>
 <p>The graph has a minimum value at $(0, 0)$, but does not have a maximum or any asymptotes.  Since the graph is concave down, the rate of increase is decreasing, suggesting that this type of power function might model quantities whose growth is slowing down.</p>
 <h3 id="case-3-colorbluep1">Case 3: $\color{blue}{p&gt;1}$</h3>
@@ -283,12 +291,8 @@ $$</p>
 <p>There is a minimum value at the origin $(0, 0)$, but no maximums or asymptotes.  These functions will be useful when modeling quantities that grow faster and faster.  Lastly, note that this graph, along with the two previous ones, is one-to-one and must have an inverse.</p>
 <h2 id="symmetry-of-power-functions">Symmetry of Power Functions</h2>
 <p>So far, we have restricted our attention to power functions with $x \geq 0$ because many powers not defined when $x&lt;0$.</p>
-<p>However, if the power is a rational number, or faction, of the form $p =\color{blue}{n}/\color{green}{m}$, then the function <em>might</em> be defined for $x&lt;0$, in which case the graph would have a left side.</p>
-<p>In this interactive figure you can adjust the value of the numerator $\color{blue}{n}$ and the denominator $\color{green}{m}$.  As you do so, keep in mind the following questions:</p>
-<ul>
-<li>For which values of $\color{green}{m}$ does the left side of the graph exist?</li>
-<li>When the left side exists, for which values of $\color{blue}{n}$ is the graph symmetric across the y-axis (ie. even symmetry) and for which is the graph symmetric around the origin (ie. odd symmetry)?</li>
-</ul>
+<p>In particular,  if the power is a rational number, or faction, of the form $p =\color{blue}{n}/\color{green}{m}$ (and the power has been reduced) then the function is not defined when $x&lt;0$.  The reason for this is that fractional powers with even denominators are even roots, and even roots of negatives are not real numbers.</p>
+<p>However, if the denominator $\color{green}{m}$ is odd then the function is defined for negative values of $x$. You can explore this in the interactive figure below.</p>
 <div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
       <iframe src="https://www.geogebra.org/material/iframe/id/lUgvcybm/border/fafafa" scrolling="no"
       style="
@@ -304,10 +308,8 @@ $$</p>
   <a href="https://www.geogebra.org/m/lUgvcybm"><img src="https://www.geogebra.org/resource/lUgvcybm/nkn0x5386gxHgm4s/material-lUgvcybm-thumb@l.png"></img></a>
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/lUgvcybm"><a href="https://www.geogebra.org/m/lUgvcybm">https://www.geogebra.org/m/lUgvcybm</a></a></p>
 </div>
-<p>From the interactive figure we can see that if $p =\color{blue}{n}/\color{green}{m}$ (and all common factors of $\color{blue}{n}$ and $\color{green}{m}$ have been cancelled), then the function only has a left side when the denominator $\color{green}{m}$ is odd.</p>
-<p>Additionally, when denominator $\color{green}{m}$ is odd, the function displays even symmetry if the numerator $\color{blue}{n}$ is even and
-odd symmetry if the numerator $\color{blue}{n}$ is odd.</p>
-<p>Understanding this allows us to answer questions about a power function just by inspecting it's equation.</p>
+<p>Notice that when the denominator $\color{green}{m}$ is odd, the function displays even symmetry if the numerator $\color{blue}{n}$ is even and odd symmetry if the numerator $\color{blue}{n}$ is odd.</p>
+<p>So a quick look at the power helps us know where the function is defined and what type of symmetry it has.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Which of the following are defined when $x&lt;0$?</p>
 <ol>
 <li>
@@ -359,13 +361,37 @@ odd symmetry if the numerator $\color{blue}{n}$ is odd.</p>
 </li>
 </ol>
 </div>
+<h2 id="inverses-of-power-functions">Inverses of Power Functions</h2>
+<p>Finding the inverse of a power function is a very straightforward process.  As an illustration, consider the cube function $f(x) =  x^{3}$ and its inverse, the cube root function $f^{-1}(x) =  \sqrt[3]{x}$.</p>
+<p>Since the cube root can be written as the one-third power $x^{1/3}$, the inverse of $f(x)=x^{3}$ is the power function $f^{-1}(x)=x^{1/3}$.</p>
+<p>Notice that the two powers are <em>reciprocals</em> of each other, that is the key.</p>
+<p>In general, the inverse of any power function is the power function whose power is the reciprocal of the other.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/reciprocal_power.png#center" alt=""></p>
+<p>That is to say, given some power function $f(x)=x^{p}$, then its inverse is always $f^{-1}(x)=x^{1/p}$, assuming $p\neq 0$.</p>
+<p>Of course, if the function is not one-to-one (like in the case of $f(x)=x^2$), then we should restrict ourselves to a portion of the domain (usually $x \geq 0$) where the function is one-to-one.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Find the inverse of the following power functions.</p>
+<ol>
+<li>
+<p>$f(x) =  x^5$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{1/5}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{7/4}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{4/7}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{-3/5}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{-5/3}$</details></p>
+</li>
+<li>
+<p>$f(x) =  x^{2.3}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f^{-1}(x) =  x^{1/2.3}$</details></p>
+</li>
+</ol>
+</div>
 <h2 id="how-power-functions-change">How Power Functions Change</h2>
-<p>We can also find patterns in the way power functions change.  In particular, the difference quotients of power functions have a very intriguing property.</p>
+<p>Our last task for this section is to see if we can find any patterns in the way power functions change.</p>
 <p>You will recall that the difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval $[x, x+h]$, where $h$ is any positive number.  The difference quotient of a function is given by</p>
 <p>[
 D(x)=\frac{f(x+h)-f(x)}{h}
 ]</p>
-<p>Below are the difference quotients for the power functions $f(x)=x^{2}$ and $f(x)=x^3$.</p>
+<p>Below are the difference quotients for the power functions $f(x)=x^2$ and $f(x)=x^3$.</p>
 <table>
 <thead>
 <tr>
@@ -388,10 +414,10 @@ D(x)=\frac{f(x+h)-f(x)}{h}
 </tbody>
 </table>
 <p><em>Click the link under each difference quotient to see the steps required to arrive at the equation.</em></p>
-<p>Notice that the difference quotient of each power function is similar to the next smaller power function.  In general, the difference quotient of $f(x)=x^{p}$ will involve the power function $f(x)=x^{p-1}$ for any $p\neq0$.  This is a fact that is verified in the first term of calculus.</p>
+<p>Notice that the difference quotient of each power function is similar to the next smaller power function.  In general, the difference quotient of $f(x)=x^p$ will involve the power function $f(x)=x^{p-1}$ for any $p\neq0$.  This is a fact that is verified in the first term of calculus.</p>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>In this section we discovered that the basic library functions could all be written in an identical algebraic form.  We then used that common form to create a new category of functions, whose properties we explored.   This is a process that will be repeated in later chapters as well.  We'll start with functions we understand and then create new functions that have slightly different algebraic forms and investigate their properties.</p>
-<p>An understanding of the properties and behaviors of functions is essential when trying to deduce which mathematical model will be the best fit for a particular set of data.  That knowledge is also helpful when working with applications, which is where we will head next with power functions.</p>
+<p>An understanding of the properties and behaviors of functions is essential when working with applications, which is where we will head next.</p>
 
                         </div>
                     </section>

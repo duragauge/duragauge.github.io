@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chapter 6 on College Algebra</title>
+    <title>Chapter 6 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-6/</link>
-    <description>Recent content in Chapter 6 on College Algebra</description>
+    <description>Recent content in Chapter 6 on Precalculus 1 - Functions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-6/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>6.1 Systems of Equations</title>
+      <title>6.1 Algebraic Methods</title>
       <link>https://duragauge.github.io/chapter-6/6.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-6/6.1/</guid>
-      <description>Image by Tayeb MEZAHDIA from Pixabay Introduction Many of the images we see in movies, videos, games and in print are created and edited by computer graphics software. Artists, designers, architects and engineers use computer generated images to make simulations, prototypes, animations, life-like models and stunningly realistic visual effects.
-The shapes and surfaces that comprise computer generated images are created by mathematical equations.
-In order for these shapes and surfaces to fit together seamlessly and move smoothly their equations often need to satisfy several parameters simultaneously.</description>
+      <description>Image by Design n Print from PixabayUNDER REVISION
+Objectives:
+ Recognize linear, exponential, and proportional relationships from verbal descriptions. Interpret the meaning of coefficients and constants in the context of the modeled situations. Apply algebraic techniques to create equations of linear, power, and exponential functions that model real-life scenarios.  Introduction Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna.</description>
     </item>
     
     <item>
-      <title>6.2 Sequences</title>
+      <title>6.2 Aligning Graphs to Data</title>
       <link>https://duragauge.github.io/chapter-6/6.2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-6/6.2/</guid>
-      <description>Image by RitaE from PixabayIntroduction When shopping at a grocery store it makes no difference if you grab eggs or flour first. As long as you get everything on your list you&#39;ll be fine.
-But a recipe is much different than a shopping list. A recipe is an ordered list of instructions. If you want the dish to turn out right, you have to do each step in the proper order.</description>
+      <description>Tornado photo by Nikolas Noonan on UnsplashUNDER REVISION
+Objectives:
+ Understand and apply transformations, including shifts and stretches, to align graphs with data points. Use point-slope form and vertex form to derive equations of lines and parabolas that best fit data. Create piecewise functions by incorporating transformations. Analyze the effects of transformations in the context of the modeled situations..  Introduction Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of nature&#39;s most violent events: a tornado.</description>
     </item>
     
     <item>
-      <title>6.3 Series</title>
+      <title>6.3 Modeling Data</title>
       <link>https://duragauge.github.io/chapter-6/6.3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://duragauge.github.io/chapter-6/6.3/</guid>
-      <description>Image by Julia Schwab from PixabayIntroduction When Carl Friedrich Gauss  This is the same Gauss that gave us Gauss-Jordan Elimination and the Fundamental Theorem of Algebra was a young boy in Germany it was common for students to do their work on small slate chalkboards.
-The story is told that one day in 1786, when Gauss was just 9 years old, his teacher gave the class a challenging problem.</description>
+      <description>Image by NASAUNDER REVISION
+Objectives:
+ Utilize regression analysis technology, such as a graphing calculator or software, to find best-fit functions. Compare and evaluate different regression models to choose the most appropriate one for a specific data set. Use interpolation and extrapolation and address their limitations and potential errors.  Introduction When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets: Mercury, Venus, Earth, Mars, Jupiter and Saturn.</description>
     </item>
     
   </channel>

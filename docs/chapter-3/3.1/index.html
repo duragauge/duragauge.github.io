@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="A book about college algebra">
 	<meta name="author" content="Nolan Mitchell">
-	<meta name="generator" content="Hugo 0.92.2" />
-	<title>3.1 Exponential Functions &middot; College Algebra</title>
+	<meta name="generator" content="Hugo 0.75.1" />
+	<title>3.1 Exponential Functions &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -314,13 +314,13 @@ f(x+1)=b \cdot f(x)
 <p>You'll recall that this pattern was the key to identifying exponential growth and decay.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/exponential_growth_vs_decay_table.svg#center" alt=""></p>
 <p>This simple property, $f(x+1)=b \cdot f(x)$, is unique to exponential functions and causes them to change in a way that is different than any other type of function.</p>
-<p>Consider, for example, the percentage change of an exponential function $f$ over the interval $[x,\thinspace x+1]$.</p>
+<p>Consider, for example, the percent change of an exponential function $f$ over the interval $[x,\thinspace x+1]$.</p>
 <table>
 <thead>
 <tr>
-<th>Percentage change</th>
+<th>Percent change</th>
 <th>[ \frac{f(x+1)-f(x)}{f(x)} ]</th>
-<th><em>Percentage change formula.</em></th>
+<th><em>Percent change formula.</em></th>
 </tr>
 </thead>
 <tbody>
@@ -336,9 +336,9 @@ f(x+1)=b \cdot f(x)
 </tr>
 </tbody>
 </table>
-<p>Since $b$ is constant, $b-1$ is also constant.  This means that the percentage change from one value to the next is always constant.  Having a constant percentage change is one of the features that distinguishes exponential functions from all other functions.</p>
+<p>Since $b$ is constant, $b-1$ is also constant.  This means that the percent change from one value to the next is always constant.  Having a constant percent change is one of the features that distinguishes exponential functions from all other functions.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>The percentage changes for two functions, $f$ and $g$, are shown below.<br>
+<li>The percent changes for two functions, $f$ and $g$, are shown below.<br>
 <img src="https://duragauge.github.io/img/chapter-3/percent_change_quick_check_b.png" alt="">
 <img src="https://duragauge.github.io/img/chapter-3/percent_change_quick_check_a.png" alt=""><br>
 Which one is an exponential function? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The first function $f$ is exponential because its percent change is constant.  The second function $g$ is likely a power function, since its percent change is decreasing.</details></li>
@@ -378,10 +378,6 @@ Which one is an exponential function? <details class='no-print' style="margin-le
 <li>Suppose $f(x)=1.26^{x}$.  Identify both the growth factor $b$ and the growth rate $r$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The growth factor is the base $b=1.26$.  The growth rate is $r=0.26$, meaning the  every time $x$ increases by $1$ the function increases by $26\text{%}$.</details></li>
 </ol>
 </div>
-<p>Now let's examine the first, second, and third differences of an exponential function.  For convenience, we will use $f(x)=10^{x}$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/finite_differences_exponential_10.png#center" alt=""></p>
-<p>Notice that the first differences $9,90,900,9000,90000$ follow an exponential growth pattern with a growth factor of $b=10$.  The same is true for the second and third differences as well; each value is $10$ times the size of the previous one.</p>
-<p>This is surprising.  Not only are the first, second, and third differences growing exponentially, but their growth factors are exactly the same as the growth factor of the original function $f(x)=10^{x}$.  To understand why exponential functions behave this way we must turn our attention to the difference quotient.</p>
 <h2 id="difference-quotients-of-exponentials">Difference Quotients of Exponentials</h2>
 <p>The difference quotient of an exponential function $f(x)=b^{x}$ can be simplified as follows:</p>
 <table>
@@ -433,7 +429,6 @@ Which one is an exponential function? <details class='no-print' style="margin-le
 <p>[
 D(x) = \left( \frac{10^{1}-1}{1} \right) 10^{x} = 9 \cdot 10^{x}
 ]</p>
-<p>This particular result is what caused the pattern $9,90,900,9000,90000$ that we saw earlier in the first differences of $f(x)=10^{x}$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>What is the difference quotient of $f(x)=3^{x}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Inserting $b=3$ into the formula above we see that $D(x)=\left(\frac{3^{h-1}}{h}\right) 3^{x}$</details></p>

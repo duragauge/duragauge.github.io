@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chapter 5 on College Algebra</title>
+    <title>Chapter 5 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-5/</link>
-    <description>Recent content in Chapter 5 on College Algebra</description>
+    <description>Recent content in Chapter 5 on Precalculus 1 - Functions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-5/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -18,17 +18,7 @@ Two centuries later the Persian mathematician al-Khwārizmī introduced the worl
     </item>
     
     <item>
-      <title>5.2 Complex Numbers and The Fundamental Theorem of Algebra</title>
-      <link>https://duragauge.github.io/chapter-5/5.2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://duragauge.github.io/chapter-5/5.2/</guid>
-      <description>Venice, Italy. Photo by Damiano Baschiera on UnsplashIntroduction During the 1500&#39;s Italian mathematicians held public contests as a way to gain notoriety and supplement their income. Since anyone could be challenged at any time, most mathematicians kept their discoveries secret.
-Antonio Fior was an inexperienced mathematician who learned a secret for solving one type of cubic equation from his dying master. Anxious to make a name for himself, Fior traveled to Venice and challenged Niccolò Tartaglia, one of the most gifted mathematicians of the day, to solve 30 cubic equations.</description>
-    </item>
-    
-    <item>
-      <title>5.3 Polynomial Equations</title>
+      <title>5.2 Zeros &amp; Polynomial Equations</title>
       <link>https://duragauge.github.io/chapter-5/5.3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
