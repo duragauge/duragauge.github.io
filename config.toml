@@ -183,7 +183,7 @@ home = [ "HTML"]
 
     [[params.tiles.showcase]]
       title = "Chapter 6"
-      subtitle = "Additional Topics"
+      subtitle = "Modeling with Functions"
       image = "chapter-6-header.jpg"
       url = "chapter-6"
     # You can make more showcases by copy and pasting the code above
