@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="A book about college algebra">
+	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
 	<title>6.2 Aligning Graphs to Data &middot; Precalculus 1 - Functions</title>
@@ -56,7 +56,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>College</strong>Algebra</a>
+      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
           <a href="#menu">Menu</a>
@@ -96,8 +96,8 @@
     </li>
     <li><a href="#aligning--scaling-data">Aligning &amp; Scaling Data</a></li>
     <li><a href="#construct-models">Construct Models</a></li>
-    <li><a href="#modeling-with-technology">Modeling with Technology</a></li>
     <li><a href="#modeling-with-piecewise-defined-functions">Modeling with Piecewise-Defined Functions</a></li>
+    <li><a href="#piecewise-polynomials">Piecewise Polynomials</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
 </nav>
@@ -133,10 +133,13 @@
 <p>Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of nature's most violent events:  a tornado.  While some go to &quot;Tornado Alley&quot; just for the thrill, most professional storm chasers have a different goal.  What they want is data: scientific measurements that can only be found inside real tornadoes.</p>
 <p>Scientists and university researchers, like those at NOAA's National Severe Storms Laboratory, hope to use that data to create mathematical models that will help them understand the inner workings of tornadoes and how they form.</p>
 <h2 id="understand-the-modeling-process">Understand the Modeling Process</h2>
-<p>When we speak of a <strong>mathematical model</strong>, what exactly are we talking about?  A model is simplified representation of a real world object.  It often takes the form of a table of values, a graph, or an equation.  Mathematical models are found in nearly every field of study and are useful when it is not feasible, economical, practical, or safe to work with the real item.</p>
+<p>When we speak of finding a <strong>mathematical model</strong> from a set of data, what exactly are we talking about?</p>
+<p>A model is simplified representation of a real world object.  Mathematical models are found in nearly every field of study and are useful when it is not feasible, economical, practical, or safe to work with the real item.</p>
+<p>To make a model We'll start with a collection of data points and try to find the equation of a function that matches those values as closely as possible.</p>
 <p>Once a model has been created, we can use the rules of mathematics to discover things about its mathematical behavior. Those discoveries can, in turn, can be used to make predictions and give insight about how the real world object might behave.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/modeling_diagram.svg#center" alt=""></p>
-<p>Further observations and adjustments help the model look more like how the real world looks.</p>
+<p>Further observations and adjustments help the model more closely match the real world phenomena that is being modeled.</p>
+<p>And while our models will never be perfect, there is a good chance that they might be accurate enough to be useful.  Physicist Eugene Wigner has referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This is something that we will see more of in this chapter.</p>
 <h2 id="scatterplots">Scatterplots</h2>
 <p>Many physical laws, like the law of gravity, were discovered by gathering data and looking for patterns.  One of our primary tools for visualizing data is the <strong>scatterplot</strong>.  A scatterplot is nothing more than pairs of data plotted as points on a grid.</p>
 <p>For example, researchers from Purdue University analyzed 1285 tornadoes in Indiana from 1950 to 2012.
@@ -152,16 +155,16 @@ One set of data compared the number of tornadoes observed at different hours of 
 <p>Models can be used to make estimations in two different ways. Making a prediction outside of a data set is called <strong>extrapolation</strong>.  Estimating a value that is in between known values is <strong>interpolation</strong>.</p>
 <p>For example, if we knew the number of tornadoes in 1900 and in 2000, then predicting how many will happen in 2050 would be an extrapolation, since that value lies outside of the known data.  Extrapolation assumes that an existing trend will continue unchanged into the future, which is never guaranteed.</p>
 <p>Estimating the number of tornadoes in the year 1950, however, would be interpolation, since 1950 is between the known values.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose that the price of a movie ticket in 2000 and 2010 are known.  Decide if the following would be examples of interpolation or extrapolation.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose that we know the price of a movie ticket in 2000 and also the price in 2010, but no other years.  Decide if the following would be examples of interpolation or extrapolation.</p>
 <ol>
 <li>
-<p>Predicting what the cost of a movie ticket will be in 2050. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation</details></p>
+<p>Predicting what the cost of a movie ticket will be in 2050. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation because 2050 is outside of the known data.</details></p>
 </li>
 <li>
-<p>Estimating what the cost of a movie ticket was in 1920. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation</details></p>
+<p>Estimating what the cost of a movie ticket was in 2005. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Interpolation since 2005 is in between known values.</details></p>
 </li>
 <li>
-<p>Estimating what the cost of a movie ticket was in 2005. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Interpolation</details></p>
+<p>Estimating what the cost of a movie ticket was in 1920. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation.  1920 is outside of the data set.</details></p>
 </li>
 </ol>
 </div>
@@ -277,7 +280,7 @@ One set of data compared the number of tornadoes observed at different hours of 
 <p>Where did this equation come from and how do we know it is the best?  Well, that's a great question would take a few weeks in a statistics course to explain fully.  For now, it's enough to know that most graphing calculators have a built-in programs that fit equations to data.  That process is called <em>least squares regression</em>, and we will look at it later in this section.</p>
 <h2 id="construct-models">Construct Models</h2>
 <p>Now that we have an equation, $\color{blue}{y} = \color{red}{0.04}x + \color{green}{0.86}$, it's time to turn that into an actual model.</p>
-<p>Throughout this text, a model will consist of a function along with a description of the variables and their units of measure.  Without an accurate description, the function itself is meaningless since there would be no way to relate it to the real world.</p>
+<p>A model is not just an equation or function, it also includes a description of the variables and their units of measure.  Without an accurate description, the function itself is meaningless since there would be no way to relate it to the real world.</p>
 <p>Since our independent variable is time in years since 2000, we take the liberty of using $t$ in place of $\color{blue}{x}$.</p>
 <p>Similarly, using $p$ instead of $\color{blue}{y}$ will help us remember that the dependent variable represents the price of apples.  We are now ready to write our model.</p>
 <blockquote>
@@ -290,53 +293,6 @@ where $t$ is the time in years since 2000.</p>
 p(30) = 0.04(30) + 0.86 = 2.06
 ]</p>
 <p>Thus, our model predicts the average price of a pound of apples will be $2.06 in the year 2030.  How accurate is that?  We'll have to wait and see.</p>
-<h2 id="modeling-with-technology">Modeling with Technology</h2>
-<div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-1/horses-61158_1280.jpg"  title="Photo Steppinstars from Pixabay "  alt="Photo Steppinstars from Pixabay " style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/images/id-61158/">Photo Steppinstars from Pixabay </a></span>
-</div>
-<br>
-<p>We now turn our attention to another scenario.  Throughout the grasslands of Nevada live herds of wild horses known as &quot;mustangs&quot;.  Since 1971, the Bureau of Land Management (BLM) has been monitoring the number of mustangs and the land's capacity to support them.  When the number of horses exceeds an appropriate management level, the BLM gathers animals from overpopulated herds and makes them available for adoption.</p>
-<p>Every year the BLM conducts aerial surveys in an effort to count each horse.  A functional model of that data can be used to predict the future size of a herd, helping the BML anticipate when it might be necessary to prepare some mustangs for adoption.</p>
-<p>The table below gives the total number of mustangs in Nevada since 2000.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_data.png" alt="">
-Since the population decreased and then started to increase, it seems reasonable that a transformation of the square function $f(x)=x^{2}$ might fit the data.</p>
-<p>In the figure below the vertex form of a quadratic is shown along with the data.  Adjust the values of $\color{blue}{a}$, $\color{brown}{h}$ and $\color{green}{k}$ until you find a good fit for the data.</p>
-<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
-      <iframe src="https://www.geogebra.org/material/iframe/id/FdLFe4II/border/fafafa" scrolling="no"
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent">
-      </iframe>
-</div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
-  <a href="https://www.geogebra.org/m/FdLFe4II"><img src="https://www.geogebra.org/resource/FdLFe4II/NYMIg0eN3w5XIZtN/material-FdLFe4II-thumb@l.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/FdLFe4II"><a href="https://www.geogebra.org/m/FdLFe4II">https://www.geogebra.org/m/FdLFe4II</a></a></p>
-</div>
-<p>With data sets like this one it is hard to know which combination of transformations will make the curve fit the data the best.  In instances like this it is often best to let technology find the equation for us.</p>
-<p>Most graphing calculators have a quadratic regression program <code>QuadReg</code> that finds a quadratic equation fitting the data.  Here we will show the steps for the Texas-Instruments 83/84 series of calculators.</p>
-<p>We start by entering the data into the calculator by pressing the <code>STAT</code> button and selecting <code>1: Edit</code>.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_1.png#center" alt=""></p>
-<p>The data is entered into the <code>L1</code> and <code>L2</code> lists.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_2.png#center" alt=""></p>
-<p>To view the scatterplot, press <code>2ND</code> and <code>Y=</code> to enter the <code>STAT PLOTS</code> menu,  then select the first plot and make sure it is turned on.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_3.png#center" alt=""></p>
-<p>Using <code>9:ZoomStat</code> in the <code>ZOOM</code> menu gives a good viewing window for the data.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_4.png#center" alt=""></p>
-<p>Once we have confirmed the shape of the data, we go back to the <code>STAT</code> menu and this time choose the <code>CALC</code> tab.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_5.png#center" alt=""></p>
-<p>This reveals all of the regression models built into the calculator, letting us choose the model that we think visually matches the shape of the data.  Since this data looks like the square function, we choose <code>5: QuadReg</code>.  If the data had looked like a line then <code>4: LinReg(ax+b)</code> would have been a good choice.</p>
-<p>After running <code>5: QuadReg</code> we are shown the equation that fits the data.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_6.png#center" alt=""></p>
-<p>The result is given in the standard form $y = a x^{2} + b x + c$ rather than in the vertex form we used when trying to fit the data by hand.  Copying this equation into the graphing window shows that it fits the data reasonably well.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_7.png#center" alt=""></p>
-<p>We could now use the equation $y=239.8x^2-3147.9x+24397.8$ as the basis for a model of the wild mustang population in Nevada.</p>
-<p>It bears repeating that a mathematical model is not the same as the real object, nor does it control the behavior of the real thing.  For instance, this model might <em>predict</em> the future number of wild mustangs, but it is in no way a guarantee of what will happen.</p>
 <h2 id="modeling-with-piecewise-defined-functions">Modeling with Piecewise-Defined Functions</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-1/pompidou_1.jpg"  title="Photo by Yann Caradec on Flickr"  alt="Photo by Yann Caradec on Flickr" style="display:block; width:100%; height:auto;" >
@@ -371,10 +327,33 @@ Since the population decreased and then started to increase, it seems reasonable
 </li>
 </ol>
 </div>
+<p>x x x x x x x x x x x x x x x</p>
+<h2 id="piecewise-polynomials">Piecewise Polynomials</h2>
+<p>Under some circumstances it might make sense to construct a piecewise function using polynomials.  Consider, for example, the path a bounding ball.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/piecewise_bounce.gif#center" alt="http://www.davidhazy.org/andpph/exhibit-bouncing-balls.html"></p>
+<p>Each bounce is an individual parabola, with its own equation, and its own limited domain.  The piecewise function for this particular ball is</p>
+<p>[ f(x)=\begin{cases}
+-(x+2)(x-2) &amp; \text{if } &amp; 0 \leq x \leq 2 \newline
+-1.2(x-2)(x-5) &amp; \text{if } &amp; 2 &lt;  x \leq 5 \newline
+-1.8(x-5)(x-7) &amp; \text{if } &amp; 5 &lt; x \leq 7
+\end{cases}
+]</p>
+<p>To find a value such as $f(4)$, we first compare our x-value $4$ with the three inequalities.  Since $4$ would fit in $2&lt;x \leq 5$, we must use the second equation.  Thus, $f(4)=-1.2(4-2)(4-5) =2.4$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the piecewise function above to evaluate the following:</p>
+<ol>
+<li>
+<p>$f(0)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(0+2)(0-2) = 4$</details></p>
+</li>
+<li>
+<p>$f(2)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(2+2)(2-2)=0$</details></p>
+</li>
+<li>
+<p>$f(6)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-1.8(6-5)(6-7)=1.8$</details></p>
+</li>
+</ol>
+</div>
+<p>x x x x x x x x x x x x x x x</p>
 <h2 id="looking-ahead">Looking Ahead</h2>
-<p>In the chapters that follow, we will encounter new functions that increase our ability to model real life scenarios, but the basic process will be the same. We will always start by comparing the properties of the data with the behaviors of functions we know.  Then we use transformations and/or technology to fit a model to the data.  The model can be used to interpolate and/or extrapolate unknown values.</p>
-<p>If the model predicts unreasonable values that do not make any sense, then we should try to explain how we know the result is an error and why it might have occurred.  An analysis of the errors can often lead to the construction of a more robust model.</p>
-<p>And while our models will never be perfect, there is a good chance that they might be accurate enough to be useful.  Physicist Eugene Wigner has referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This is something that we will see more of in the next chapters.</p>
 
                         </div>
                     </section>

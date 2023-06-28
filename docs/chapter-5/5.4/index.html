@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="A book about college algebra">
+	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
 	<title>5.4 Applications of Polynomials &middot; Precalculus 1 - Functions</title>
@@ -56,7 +56,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>College</strong>Algebra</a>
+      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
           <a href="#menu">Menu</a>
@@ -86,8 +86,6 @@
     <li><a href="#projectile-motion">Projectile Motion</a></li>
     <li><a href="#finding-the-vertex-of-a-parabola">Finding the Vertex of a Parabola</a></li>
     <li><a href="#solving-quadratic-equations">Solving Quadratic Equations</a></li>
-    <li><a href="#piecewise-polynomials">Piecewise Polynomials</a></li>
-    <li><a href="#polynomial-regression">Polynomial regression</a></li>
   </ul>
 </nav>
         </div>
@@ -271,73 +269,6 @@ t &amp;= -2.06 \small \text{ and } \normalsize 2.67 \small \text{ seconds } &amp
 \end{align}
 ]
 The diver hits the water at $t=2.67$ seconds, which is $2.67-2.45=0.22$ seconds after completing the barani.</details></div>
-<h2 id="piecewise-polynomials">Piecewise Polynomials</h2>
-<p>Under some circumstances it might make sense to construct a piecewise function using polynomials.  Consider, for example, the path a bounding ball.</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/piecewise_bounce.gif#center" alt="http://www.davidhazy.org/andpph/exhibit-bouncing-balls.html"></p>
-<p>Each bounce is an individual parabola, with its own equation, and its own limited domain.  The piecewise function for this particular ball is</p>
-<p>[ f(x)=\begin{cases}
--(x+2)(x-2) &amp; \text{if } &amp; 0 \leq x \leq 2 \newline
--1.2(x-2)(x-5) &amp; \text{if } &amp; 2 &lt;  x \leq 5 \newline
--1.8(x-5)(x-7) &amp; \text{if } &amp; 5 &lt; x \leq 7
-\end{cases}
-]</p>
-<p>To find a value such as $f(4)$, we first compare our x-value $4$ with the three inequalities.  Since $4$ would fit in $2&lt;x \leq 5$, we must use the second equation.  Thus, $f(4)=-1.2(4-2)(4-5) =2.4$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the piecewise function above to evaluate the following:</p>
-<ol>
-<li>
-<p>$f(0)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(0+2)(0-2) = 4$</details></p>
-</li>
-<li>
-<p>$f(2)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(2+2)(2-2)=0$</details></p>
-</li>
-<li>
-<p>$f(6)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-1.8(6-5)(6-7)=1.8$</details></p>
-</li>
-</ol>
-</div>
-<h2 id="polynomial-regression">Polynomial regression</h2>
-<p>Polynomials can be very useful when modeling data. Generally, if you notice a pattern of $n$ turns in the data you can model it effectively with an $n-1$ degree polynomial. Most calculators can do up to 4th degree polynomial
-regression and programs are available that can do much higher degrees.</p>
-<div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-5/6625662063_a45070af3b_b.jpg"  title="Photo of Smith Rock by Unsettler on Flickr"  alt="Photo of Smith Rock by Unsettler on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://flic.kr/p/b6ufuP">Photo of Smith Rock by Unsettler on Flickr</a></span>
-</div>
-<br>
-<p>With stunning mountain views, snowy winters, warm summers and world-class outdoor activities, Redmond is
-one of the fastest growing cities in Oregon. The following table shows the population growth since 1970.</p>
-<p>[
-\begin{array}{|c|c|}
-\hline
-\text{Year} &amp; \text{Population} \newline
-\hline
-1970 &amp; 3721  \newline
-\hline
-1980 &amp; 6452 \newline
-\hline
-1990 &amp; 7165 \newline
-\hline
-2000 &amp; 13481 \newline
-\hline
-2010 &amp; 26216 \newline
-\hline
-\end{array}
-]</p>
-<p>Before choosing a polynomial model we should plot the data and see what it looks like.  To make it easier, we will use years <em>since</em> 1970 rather than the actual year.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_1.png#center" alt=""></p>
-<p>The data appears to increase, slow down, and then increase again, suggesting that a cubic polynomial might be a good fit.  Running <code>CubicReg</code> on a calculator</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_2.png#center" alt=""></p>
-<p>gives us the cubic polynomial</p>
-<p>[ y=0.70x^3-23.89x^2+393.10x+3818.21 ]</p>
-<p>which does fit the data well, coming very close to most of the data points.</p>
-<p>But since we had 5 data points, a 4th degree polynomial should fit the data exactly.  Running <code>QuarticReg</code> shows that the quartic polynomial</p>
-<p>[ y=-0.028x^4+2.97x^3-79.38x^2+798.16x+3721 ]</p>
-<p>is indeed a perfect fit, hitting every single point precisely.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_3.png#center" alt=""></p>
-<p>So the 4th degree polynomial must be a better model than the 3rd degree polynomial, right?  Maybe not.</p>
-<p>Notice that our quartic model has a negative leading coefficient.  Because of that the right side of the graph must eventually come down. This makes it a poor predictor for events in the distant future.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_4.png#center" alt=""></p>
-<p>The cubic model may prove to be unreliable as well but at least its values seem within the realm of possibility.</p>
 
                         </div>
                     </section>

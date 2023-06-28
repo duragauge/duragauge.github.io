@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="A book about college algebra">
+	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
 	<title>6.3 Modeling Data &middot; Precalculus 1 - Functions</title>
@@ -56,7 +56,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>College</strong>Algebra</a>
+      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
           <a href="#menu">Menu</a>
@@ -83,11 +83,13 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#modeling-with-technology">Modeling with Technology</a></li>
     <li><a href="#keplers-third-law">Kepler's Third Law</a></li>
     <li><a href="#allometry">Allometry</a></li>
     <li><a href="#book-sales">Book Sales</a></li>
     <li><a href="#census-data">Census Data</a></li>
-    <li><a href="#looking-ahead">Looking Ahead</a></li>
+    <li><a href="#fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</a></li>
+    <li><a href="#polynomial-regression">Polynomial regression</a></li>
   </ul>
 </nav>
         </div>
@@ -116,10 +118,60 @@
 <li>Utilize regression analysis technology, such as a graphing calculator or software, to find best-fit functions.</li>
 <li>Compare and evaluate different regression models to choose the most appropriate one for a specific data set.</li>
 <li>Use interpolation and extrapolation and address their limitations and potential errors.</li>
+<li>Also discuss realistic domains &amp; ranges</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
 <p>When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets:  Mercury, Venus, Earth, Mars, Jupiter and Saturn.  Kepler based his theory on measurements taken years earlier by Tycho Brahe who made all of his observations with the naked eye--the telescope was invented 8 years after his death.</p>
 <p>Given the technological limitations of the day, is there any chance these 400 year-old theories are still useful today?</p>
+<p>x x x x x x x x x x x x x x</p>
+<h2 id="modeling-with-technology">Modeling with Technology</h2>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-1/horses-61158_1280.jpg"  title="Photo Steppinstars from Pixabay "  alt="Photo Steppinstars from Pixabay " style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://pixabay.com/images/id-61158/">Photo Steppinstars from Pixabay </a></span>
+</div>
+<br>
+<p>We now turn our attention to another scenario.  Throughout the grasslands of Nevada live herds of wild horses known as &quot;mustangs&quot;.  Since 1971, the Bureau of Land Management (BLM) has been monitoring the number of mustangs and the land's capacity to support them.  When the number of horses exceeds an appropriate management level, the BLM gathers animals from overpopulated herds and makes them available for adoption.</p>
+<p>Every year the BLM conducts aerial surveys in an effort to count each horse.  A functional model of that data can be used to predict the future size of a herd, helping the BML anticipate when it might be necessary to prepare some mustangs for adoption.</p>
+<p>The table below gives the total number of mustangs in Nevada since 2000.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_data.png" alt="">
+Since the population decreased and then started to increase, it seems reasonable that a transformation of the square function $f(x)=x^{2}$ might fit the data.</p>
+<p>In the figure below the vertex form of a quadratic is shown along with the data.  Adjust the values of $\color{blue}{a}$, $\color{brown}{h}$ and $\color{green}{k}$ until you find a good fit for the data.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/FdLFe4II/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/FdLFe4II"><img src="https://www.geogebra.org/resource/FdLFe4II/NYMIg0eN3w5XIZtN/material-FdLFe4II-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/FdLFe4II"><a href="https://www.geogebra.org/m/FdLFe4II">https://www.geogebra.org/m/FdLFe4II</a></a></p>
+</div>
+<p>With data sets like this one it is hard to know which combination of transformations will make the curve fit the data the best.  In instances like this it is often best to let technology find the equation for us.</p>
+<p>Most graphing calculators have a quadratic regression program <code>QuadReg</code> that finds a quadratic equation fitting the data.  Here we will show the steps for the Texas-Instruments 83/84 series of calculators.</p>
+<p>We start by entering the data into the calculator by pressing the <code>STAT</code> button and selecting <code>1: Edit</code>.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_1.png#center" alt=""></p>
+<p>The data is entered into the <code>L1</code> and <code>L2</code> lists.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_2.png#center" alt=""></p>
+<p>To view the scatterplot, press <code>2ND</code> and <code>Y=</code> to enter the <code>STAT PLOTS</code> menu,  then select the first plot and make sure it is turned on.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_3.png#center" alt=""></p>
+<p>Using <code>9:ZoomStat</code> in the <code>ZOOM</code> menu gives a good viewing window for the data.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_4.png#center" alt=""></p>
+<p>Once we have confirmed the shape of the data, we go back to the <code>STAT</code> menu and this time choose the <code>CALC</code> tab.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_5.png#center" alt=""></p>
+<p>This reveals all of the regression models built into the calculator, letting us choose the model that we think visually matches the shape of the data.  Since this data looks like the square function, we choose <code>5: QuadReg</code>.  If the data had looked like a line then <code>4: LinReg(ax+b)</code> would have been a good choice.</p>
+<p>After running <code>5: QuadReg</code> we are shown the equation that fits the data.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_6.png#center" alt=""></p>
+<p>The result is given in the standard form $y = a x^{2} + b x + c$ rather than in the vertex form we used when trying to fit the data by hand.  Copying this equation into the graphing window shows that it fits the data reasonably well.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/horse_regression_7.png#center" alt=""></p>
+<p>We could now use the equation $y=239.8x^2-3147.9x+24397.8$ as the basis for a model of the wild mustang population in Nevada.</p>
+<p>It bears repeating that a mathematical model is not the same as the real object, nor does it control the behavior of the real thing.  For instance, this model might <em>predict</em> the future number of wild mustangs, but it is in no way a guarantee of what will happen.</p>
+<p>x x x x x x x x x x x x x x</p>
 <h2 id="keplers-third-law">Kepler's Third Law</h2>
 <p>Kepler struggled for 17 years to find a relationship between the time it takes a planet to orbit the Sun (called its orbital period) and its average distance from the Sun (called the semi-major axis).  Eventually he settled on the &quot;sesquialternate proportion&quot;, a fancy way to say the $3/2$ power.</p>
 <p>By using the <code>PwrReg</code> program in a calculator we should be able to do the same thing in just a couple of minutes.</p>
@@ -261,25 +313,254 @@ f(54) = 5408784.21(54)^{-0.46}\approx 863373
 </table>
 </details>
 </div>
-<h2 id="looking-ahead">Looking Ahead</h2>
-<p>In this chapter we've seen that power functions fit are used in a wide variety of applications.  Even so, there are lots of times when a power function isn't a good fit.</p>
-<p>The data below might look like they could be modeled by a power function, but no mater which values you choose for $k$ and $p$, the power function will never fit the curvature of the scatterplot.</p>
-<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
-      <iframe src="https://www.geogebra.org/material/iframe/id/Rv4EWJmR/border/fafafa" scrolling="no"
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent">
-      </iframe>
+<p>x x x x x x x x x x x x x x</p>
+<h2 id="fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</h2>
+<p>When provided with data, it is often possible to use a built in regression program to find the equation of a function that fits the data.</p>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-3/39664780224_6dd2c482f6_b.jpg"  title="Photo by Jim Choate on Flickr"  alt="Photo by Jim Choate on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://www.flickr.com/photos/jimchoate/39664780224/">Photo by Jim Choate on Flickr</a></span>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
-  <a href="https://www.geogebra.org/m/Rv4EWJmR"><img src="https://www.geogebra.org/resource/Rv4EWJmR/LLBa2iAu6P4mcBKq/material-Rv4EWJmR-thumb@l.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/Rv4EWJmR"><a href="https://www.geogebra.org/m/Rv4EWJmR">https://www.geogebra.org/m/Rv4EWJmR</a></a></p>
+<br>
+<p>For instance, in 1970 the total population of Wheeler county in central Oregon was just 1849 people. By 1990, that number had dropped to 1396 people. Assuming that the population decays exponentially, we can use an exponential regression program like <code>ExpReg</code> to find an exponential model for the given data.</p>
+<p>The steps for doing this will vary depending on the calculator used.  You will want to become familiar with the instructions for your calculator.  The basic process should be similar to the steps you used in previous chapters for  <code>LinReg</code> , <code>QuadReg</code>  and <code>PwrReg</code>.</p>
+<p>Since the initial population given is from 1970, it makes sense let our variable $x$ be years since 1970.  After entering the data and running <code>ExpReg</code></p>
+<p><img src="https://duragauge.github.io/img/chapter-3/expreg_1.png#center" alt=""></p>
+<p>we see that the population of Wheeler county Oregon can be modeled by the function $f(x)=1849(0.986)^{x}$, where $x$ is years since 1970.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Using this model, interpolate the population for 1980.  How does this prediction match the actual US Census value of 1513 people?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since 1980 is in between our two data points, we expect that interpolating the value for 1980 should be reasonably close.  With $x = 10$ we get
+[f(10) = 1849(0.986)^{10 \approx = 1606] which isn't too far off the actual US Census value of 1513.</details></li>
+</ol>
 </div>
-<p>The data here are best modeled by a new type of function called an <em>exponential</em> function.  Exponential functions and their inverses, the <em>logarithms</em>, are the focus of the <a href="../../chapter-3/">next chapter</a>.</p>
+<p>Let's use our model $f(x) = 1849(0.986)^{x}$, where $x$ is years since 1970, to predict the population of Wheeler county in 2010.  Using $x = 40$ we have</p>
+<p>[
+f(40) = 1849(0.986)^{40} \approx 1052
+]</p>
+<p>meaning that our model predicts that the population should have been 1052 people in 2010.  But according to the US Census, Wheeler county actually had 1441 residents in 2010!</p>
+<p>Inaccuracies like this are a risk any time we extrapolate our results far into the future, especially if the model is built on limited data.  A more reasonable approach would be to gather all of the available census data and then make a model.  The data and scatterplot below includes US Census data from 1970 through 2010.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/wheeler_scatterplot.png#center" alt=""></p>
+<p>It's not clear from the scatterplot that an exponential function would match the shape of the data.  What we seem to need is a function that can go down and up and then down again.  In Chapters 4 and 5 we'll discover polynomial functions which increase and decrease any number of times.</p>
+<p>Even though polynomials will eventually let us find a function that fits this data exactly, it still may not be a good predictor of the future.  This uncertainty is one of the difficulties in modeling real life situations.</p>
+<p>As we have just seen, it is best to include as much data as possible and consider the shape of the data before selecting a model.  We can then compare the shape of the data to the shape of known functions and decide which model to use.  For instance, the three data sets below appear to follow exponential, logarithmic, and logistic trends.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/scatterplots.svg#center" alt=""></p>
+<p>Remember, it is easy to mistakenly identify data with a power function shape as having an exponential or logarithmic trend, so it is good practice to try more than one type of function model to see which fits best.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
+<ol>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data looks similar to a quadratic function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_linear.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a linear function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_sqrt.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data is similar to a power function with a power of $0&lt;p&lt;1$, such as the square root function.  This shape is also visually similar to a logarithmic function.</details></p>
+</li>
+<li>
+<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_reciprocal.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a power function with a power of $p&lt;0$, such as the reciprocal function.  This shape is also similar to an exponential decay function.</details></p>
+</li>
+</ol>
+</div>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile.gif#center" alt=""></p>
+<p>In the summer of 2005, Road and Track magazine gathered 13 cars, 1 motorcycle, and a Navy F/A-18 Hornet fighter jet for a one-mile long acceleration test at the Lemoore Naval Air Base in California.  The first-placed Lola Champ Car (yellow car on the bottom right) crossed the finish line in just 24.2 seconds!  The following table show how long it took the Lola to reach different speeds.</p>
+<table>
+<thead>
+<tr>
+<th>Time (sec)</th>
+<th>Speed (mph)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td>60</td>
+</tr>
+<tr>
+<td>5.6</td>
+<td>100</td>
+</tr>
+<tr>
+<td>8.6</td>
+<td>150</td>
+</tr>
+<tr>
+<td>9.9</td>
+<td>161.4</td>
+</tr>
+<tr>
+<td>22</td>
+<td>200</td>
+</tr>
+<tr>
+<td>24.2</td>
+<td>203.3</td>
+</tr>
+</tbody>
+</table>
+<p>Which would fit the data better: an exponential model, a logarithmic model, or a logistic model?  To find out, we start by creating a scatterplot of the data.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_scatterplot.png#center" alt=""></p>
+<p>Looking at the scatterplot helps us narrow down the list of possible models.  For instance, the data does not appear to be linear, so no attempt will be made at running <code>LinReg</code> and trying to fit a line to the data.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Of all the functions you've seen, which one(s) do you think have a shape similar to the shape of this scatterplot?</li>
+</ol>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Of the shapes we have seen, this might match a logarithmic function, a logistic function, or even a quadratic.  In a moment we will try each of these and choose the one that appears to fit best.</details>
+</div>
+<p>In an attempt to find a function that models the speed of the Lola Champ Car (bottom right), we have run a natural log regression <code>LnReg</code>, a logistic regression <code>Logistic</code>, and a quadratic regression <code>QuadReg</code>.  The equations and graphs are shown below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_regressions.png#center" alt=""></p>
+<p>It appears that the logistic function $f(x) = \frac{201.91}{1+6.31 e^{-0.334x}}$ is very close to each point, and we choose it as the best fit.  The carrying capacity $201.91$ of the model also seems to match up closely with the top speed $203.3$ of the car, even though it is not an exact match.  Since all models are an approximate fit, we should not expect them replicate every data point exactly.</p>
+<p>Let's consider one final example.</p>
+<p>The majority of teachers in primary education (K-12) are women. However, positions in K-12 administration, such as principal or superintendent, are more frequently held by men. The following data, from Indiana's department of education, shows the percent of women in K-12 administration. 
+<label for="mn-" class="margin-toggle">⊕
+</label>
+<input type="checkbox" id="mn-" class="margin-toggle" />
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-3/woman-2773007_1280.jpg" alt=""> <a href="https://pixabay.com/images/id-2773007/">Image by ernestoeslava on Pixabay</a></span></p>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>% of women administrators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1990</td>
+<td>18.3</td>
+</tr>
+<tr>
+<td>1992</td>
+<td>22.8</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>26.7</td>
+</tr>
+<tr>
+<td>1996</td>
+<td>30.2</td>
+</tr>
+<tr>
+<td>1998</td>
+<td>32.5</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>34.4</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>36.3</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>37.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>39.3</td>
+</tr>
+</tbody>
+</table>
+<p>A scatterplot of the data shows an increasing, concave down trend.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/educator_scatterplot.png#center" alt=""></p>
+<p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details></li>
+</ol>
+</div>
+<p>Before running any regressions, we stop to point out that our normal practice letting $x$ represent years since 1990 could be problematic, since $0$ is not in the domain of any logarithmic function.  To eliminate that possibility, we let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
+<table>
+<thead>
+<tr>
+<th>Years since 1989</th>
+<th>% of women administrators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>18.3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>22.8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>26.7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>30.2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>32.5</td>
+</tr>
+<tr>
+<td>11</td>
+<td>34.4</td>
+</tr>
+<tr>
+<td>13</td>
+<td>36.3</td>
+</tr>
+<tr>
+<td>15</td>
+<td>37.8</td>
+</tr>
+<tr>
+<td>17</td>
+<td>39.3</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the curve of the data, we chose to run a logistic regression <code>Logistic</code>, a logarithmic regression <code>LnReg</code>, and a power regression <code>PwrReg</code>.  The results are shown below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/educator_regressions.png#center" alt=""></p>
+<p>All three models match the data fairly well.  However, the logistic function has a significant flaw.  Remember that the carrying capacity $c$ is a horizontal asymptote.  In this case, the logistic model would never predict a percent of female administrators that exceeds the carrying capacity of 40.866%.</p>
+<p>Consequently, either the logarithmic or the power models might be better predictors of future trends.</p>
+<p>x x x x x x x x x x x x x x</p>
+<h2 id="polynomial-regression">Polynomial regression</h2>
+<p>Polynomials can be very useful when modeling data. Generally, if you notice a pattern of $n$ turns in the data you can model it effectively with an $n-1$ degree polynomial. Most calculators can do up to 4th degree polynomial
+regression and programs are available that can do much higher degrees.</p>
+<div style="position:relative; clear:both; padding:0;">
+  <img src="https://duragauge.github.io/img/chapter-5/6625662063_a45070af3b_b.jpg"  title="Photo of Smith Rock by Unsettler on Flickr"  alt="Photo of Smith Rock by Unsettler on Flickr" style="display:block; width:100%; height:auto;" >
+  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
+    <a href = "https://flic.kr/p/b6ufuP">Photo of Smith Rock by Unsettler on Flickr</a></span>
+</div>
+<br>
+<p>With stunning mountain views, snowy winters, warm summers and world-class outdoor activities, Redmond is
+one of the fastest growing cities in Oregon. The following table shows the population growth since 1970.</p>
+<p>[
+\begin{array}{|c|c|}
+\hline
+\text{Year} &amp; \text{Population} \newline
+\hline
+1970 &amp; 3721  \newline
+\hline
+1980 &amp; 6452 \newline
+\hline
+1990 &amp; 7165 \newline
+\hline
+2000 &amp; 13481 \newline
+\hline
+2010 &amp; 26216 \newline
+\hline
+\end{array}
+]</p>
+<p>Before choosing a polynomial model we should plot the data and see what it looks like.  To make it easier, we will use years <em>since</em> 1970 rather than the actual year.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_1.png#center" alt=""></p>
+<p>The data appears to increase, slow down, and then increase again, suggesting that a cubic polynomial might be a good fit.  Running <code>CubicReg</code> on a calculator</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_2.png#center" alt=""></p>
+<p>gives us the cubic polynomial</p>
+<p>[ y=0.70x^3-23.89x^2+393.10x+3818.21 ]</p>
+<p>which does fit the data well, coming very close to most of the data points.</p>
+<p>But since we had 5 data points, a 4th degree polynomial should fit the data exactly.  Running <code>QuarticReg</code> shows that the quartic polynomial</p>
+<p>[ y=-0.028x^4+2.97x^3-79.38x^2+798.16x+3721 ]</p>
+<p>is indeed a perfect fit, hitting every single point precisely.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_3.png#center" alt=""></p>
+<p>So the 4th degree polynomial must be a better model than the 3rd degree polynomial, right?  Maybe not.</p>
+<p>Notice that our quartic model has a negative leading coefficient.  Because of that the right side of the graph must eventually come down. This makes it a poor predictor for events in the distant future.</p>
+<p><img src="https://duragauge.github.io/img/chapter-5/redmond_regression_4.png#center" alt=""></p>
+<p>The cubic model may prove to be unreliable as well but at least its values seem within the realm of possibility.</p>
 
                         </div>
                     </section>

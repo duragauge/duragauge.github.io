@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="A book about college algebra">
+	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
 	<title>6.1 Algebraic Methods &middot; Precalculus 1 - Functions</title>
@@ -56,7 +56,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>College</strong>Algebra</a>
+      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
           <a href="#menu">Menu</a>
@@ -83,6 +83,15 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#identifying-functions-from-descriptions">Identifying Functions from Descriptions</a>
+      <ul>
+        <li><a href="#linear-functions-constant-rates">Linear Functions: Constant Rates</a></li>
+        <li><a href="#exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</a></li>
+        <li><a href="#power-functions--proportional-changes">Power Functions:  Proportional Changes</a></li>
+        <li><a href="#elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#identify-systems-of-linear-equations">Identify Systems of Linear equations</a></li>
     <li><a href="#convert-between-exponential-models">Convert Between Exponential Models</a></li>
     <li><a href="#create-exponential-models">Create Exponential Models</a>
       <ul>
@@ -91,7 +100,6 @@
         <li><a href="#biological-half-life">Biological Half-Life</a></li>
       </ul>
     </li>
-    <li><a href="#fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
 </nav>
@@ -123,9 +131,80 @@
 <li>Apply algebraic techniques to create equations of linear, power, and exponential functions that model real-life scenarios.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.  Fortunately, most things that we eat have biological half-lives and can be modeled using the functions we've learned about in this chapter.</p>
-<p>In this section we will also learn how fit exponential, logarithmic, or logistic functions to data and use those models to make predictions.</p>
+<p>Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.</p>
+<p>Fortunately for us, many things that we eat have <em>biological half-lives</em>, and we know that things with half-lives can be modeled by exponential functions.</p>
+<p>In this section we will point out key words and descriptions that indicate a scenario might be modeled by a particular type of function.  We'll also cover algebraic methods for finding those equations.</p>
+<h2 id="identifying-functions-from-descriptions">Identifying Functions from Descriptions</h2>
+<h3 id="linear-functions-constant-rates">Linear Functions: Constant Rates</h3>
+<p>When we investigated how functions change in <a href="https://duragauge.github.io/chapter-1/1.6">Chapter 1</a>, we saw that the average rate of change formula was nothing more than the slope formula rewritten with function notation.  Since the slope of a line doesn't change, we can say that the average rate of change of a linear function is always constant.</p>
+<p>A constant <strong>rate</strong> is the key here.  A rate is ratio of two quantities.  Most often these are described using the word <em>per</em> (miles <em>per</em> gallon, servings <em>per</em> package, dollars <em>per</em> hour, feet <em>per</em> second) or something equivalent (two forks <em>for each</em> plate, 10000 steps <em>every</em> day).  That constant rate of change is the slope of the linear function.</p>
+<h3 id="exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</h3>
+<h3 id="power-functions--proportional-changes">Power Functions:  Proportional Changes</h3>
+<p>You may have noticed that frequently occurring things are often much smaller than things which occur rarely. For example, small diamonds are common, but large diamonds like the 45.52 carat Hope Diamond are extremely rare. Or the world population of blue whales is much smaller than that of the common house fly.</p>
+<p>Craters on the Moon have a similar pattern.  There are very few large craters but millions of small ones.</p>
+<p>In the natural sciences, many other aspects of an organism's life are connected to its size. Life expectancy, brain size, gestational period, metabolic rate, just to name a few, depend on body mass. These connections are often called &quot;power laws&quot;, because they involve power functions.</p>
+<p>With only two data points it's hard to be sure.  Could be exponential.  Logarithms could be used....to check</p>
+<p>In this third example we will plot points from the power function $y=x^{2}$ on a standard plot, where both axis are linear, along side a  log-log plot, where both axis are logarithmic.</p>
+<p>$ln(y) =</p>
+<p>more data in next sections</p>
+<p>x x x x x x x x x x x x x x x x x x x x x</p>
+<h3 id="elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</h3>
+<p>Suppose we need to find a logarithmic function through the two points $(5, 3)$ and $(20, 9)$.  We'll use the format $f(x)=a+b \ln x$ so that we can use <code>LnReg</code> to double check our answer.</p>
+<p>As we have done earlier, we begin by substituting the $x$ and $y=f(x)$ coordinates into the equation of our model to generate a system.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>Notice that if we were to subtract the two equations then $a$ would be eliminated.  That is our elimination step.</p>
+<p>[
+\begin{array}{l r c l}
+&amp; 9 &amp; = &amp;  a+b \ln 20 \newline
+-   &amp; (3 &amp; = &amp; a+b \ln 5 ) \newline
+\hline
+&amp; 6 &amp; = &amp;  b \ln 20 - b \ln 5
+\end{array}
+]</p>
+<p>The result of the elimination is a new equation that only has $b$ in it.  After we solve this for $b$ we can substitute that value back into one of our equations and find $a$.</p>
+<p>[
+\begin{align}
+6 &amp;= b \ln 20 - b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original Equation}} \newline
+6 &amp;= b \left(\ln 20 - \ln 5 \right) &amp;&amp; \small \color{#5fa2ce}{\text{Factor out $b$}} \newline
+6 &amp;= b \ln \left(\frac{20}{5} \right) &amp;&amp; \small \color{#5fa2ce}{\text{Use Quotient rule for Logs}} \newline
+6 &amp;= b \ln 4 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
+\frac{6}{\ln 4} &amp;= b &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $\ln 4$}} \newline
+b &amp;\approx 4.328 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>The next step is to find $a$ by substituting $b=\frac{6}{\ln 4}$ into one of our equations.  Either equation will work, but we'll pick Equation #2 since it looks a bit simpler.</p>
+<p>[
+\begin{align}
+3 &amp;= a+b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
+3 &amp;= a + \frac{6}{\ln 4} \cdot \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{6}{\ln 4}$}} \newline
+3 - \frac{6}{\ln 4} \cdot \ln 5 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $\frac{6}{\ln 4} \cdot \ln 5$}} \newline
+a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
+\end{align}
+]</p>
+<p>Now that we have both $a$ and $b$, we can write out our function.</p>
+<p>[f(x) =  -3.966+4.328 \ln x]</p>
+<p>A quick way to check this is to run logarithmic regression on the limited data set $(5, 3)$ and $(20, 9)$.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/log_regression_2_points.svg#center" alt=""></p>
+<p>This gives the same values for $a$ and $b$ and the graph clearly goes through our two points.</p>
+<h2 id="identify-systems-of-linear-equations">Identify Systems of Linear equations</h2>
+<p>One of the most powerful tools for solving systems is a matrix method called Gauss-Jordan Elimination, which is programed into most graphing calculators.</p>
+<p>Gauss-Jordan Elimination is designed to solve systems of <em>linear</em> equations.  You might assume this means it is only good for finding lines, but that is not the case.</p>
+<p>The system we solved a moment ago was actually a linear system, even though the equations came from a logarithmic model.  Let's look at it again.</p>
+<p>[
+\begin{align}
+9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
+3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
+\end{align}
+]</p>
+<p>These equations are linear because $a$ and $b$ have a power of $1$ and are combined using only addition.  If the equations had powers/roots or exponents/logs or products of $a$ and $b$ then they would not be linear.</p>
+<p>x x x x x x x x x x x x x x x x x x x x x</p>
 <h2 id="convert-between-exponential-models">Convert Between Exponential Models</h2>
+<p>continuous vs not --- doesn't really matter since we can switch between equations.</p>
 <p>When working with exponential models it is important to realize that there are many ways to write the same function.  Specifically, the following models are equivalent.</p>
 <table>
 <thead>
@@ -155,7 +234,7 @@
 <h3 id="population-growth">Population Growth</h3>
 <p><img src="https://duragauge.github.io/img/chapter-3/petri_dishes.png#center" alt=""></p>
 <p>A common experiment in college biology labs is to incubate bakers' yeast in a petri dish filled with a nutrient-rich solution.  As the yeast grows groups of cells, called colonies, begin to appear as small white balls.</p>
-<p>Suppose you initially count $3$ yeast colonies, and that $24$ hours later the number of colonies has jumped to $87$.</p>
+<p>Suppose you initially see $3$ yeast colonies.  You come back $24$ hours later the number of colonies has jumped to $87$.</p>
 <p>To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must first use the given data to find the continuous growth rate $k$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>Using $a=3$, $t=24$ and $f(t)=87$ find the equation we must solve to find $k$.  You do not need to solve the equation.</li>
@@ -334,212 +413,10 @@ Mercury levels in large fish can be over a million times higher than that found 
 f(x)=15\left(\frac{1}{2}\right)^{x/50}
 ]</p>
 <p>is the half-life model for mercury concentration that is equivalent to our earlier continuous decay model.  Both both produce the same values, they are just written in different formats.</p>
-<h2 id="fitting-exponential-logarithmic-and-logistic-functions-to-data">Fitting Exponential, Logarithmic and Logistic Functions to Data</h2>
-<p>When provided with data, it is often possible to use a built in regression program to find the equation of a function that fits the data.</p>
-<div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-3/39664780224_6dd2c482f6_b.jpg"  title="Photo by Jim Choate on Flickr"  alt="Photo by Jim Choate on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://www.flickr.com/photos/jimchoate/39664780224/">Photo by Jim Choate on Flickr</a></span>
-</div>
-<br>
-<p>For instance, in 1970 the total population of Wheeler county in central Oregon was just 1849 people. By 1990, that number had dropped to 1396 people. Assuming that the population decays exponentially, we can use an exponential regression program like <code>ExpReg</code> to find an exponential model for the given data.</p>
-<p>The steps for doing this will vary depending on the calculator used.  You will want to become familiar with the instructions for your calculator.  The basic process should be similar to the steps you used in previous chapters for  <code>LinReg</code> , <code>QuadReg</code>  and <code>PwrReg</code>.</p>
-<p>Since the initial population given is from 1970, it makes sense let our variable $x$ be years since 1970.  After entering the data and running <code>ExpReg</code></p>
-<p><img src="https://duragauge.github.io/img/chapter-3/expreg_1.png#center" alt=""></p>
-<p>we see that the population of Wheeler county Oregon can be modeled by the function $f(x)=1849(0.986)^{x}$, where $x$ is years since 1970.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Using this model, interpolate the population for 1980.  How does this prediction match the actual US Census value of 1513 people?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since 1980 is in between our two data points, we expect that interpolating the value for 1980 should be reasonably close.  With $x = 10$ we get
-[f(10) = 1849(0.986)^{10 \approx = 1606] which isn't too far off the actual US Census value of 1513.</details></li>
-</ol>
-</div>
-<p>Let's use our model $f(x) = 1849(0.986)^{x}$, where $x$ is years since 1970, to predict the population of Wheeler county in 2010.  Using $x = 40$ we have</p>
-<p>[
-f(40) = 1849(0.986)^{40} \approx 1052
-]</p>
-<p>meaning that our model predicts that the population should have been 1052 people in 2010.  But according to the US Census, Wheeler county actually had 1441 residents in 2010!</p>
-<p>Inaccuracies like this are a risk any time we extrapolate our results far into the future, especially if the model is built on limited data.  A more reasonable approach would be to gather all of the available census data and then make a model.  The data and scatterplot below includes US Census data from 1970 through 2010.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/wheeler_scatterplot.png#center" alt=""></p>
-<p>It's not clear from the scatterplot that an exponential function would match the shape of the data.  What we seem to need is a function that can go down and up and then down again.  In Chapters 4 and 5 we'll discover polynomial functions which increase and decrease any number of times.</p>
-<p>Even though polynomials will eventually let us find a function that fits this data exactly, it still may not be a good predictor of the future.  This uncertainty is one of the difficulties in modeling real life situations.</p>
-<p>As we have just seen, it is best to include as much data as possible and consider the shape of the data before selecting a model.  We can then compare the shape of the data to the shape of known functions and decide which model to use.  For instance, the three data sets below appear to follow exponential, logarithmic, and logistic trends.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/scatterplots.svg#center" alt=""></p>
-<p>Remember, it is easy to mistakenly identify data with a power function shape as having an exponential or logarithmic trend, so it is good practice to try more than one type of function model to see which fits best.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>The following scatterplots have shapes similar to functions that have been discussed in earlier chapters.  Describe the shape of each one.</p>
-<ol>
-<li>
-<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_quadratic.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data looks similar to a quadratic function.</details></p>
-</li>
-<li>
-<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_linear.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a linear function.</details></p>
-</li>
-<li>
-<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_sqrt.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data is similar to a power function with a power of $0&lt;p&lt;1$, such as the square root function.  This shape is also visually similar to a logarithmic function.</details></p>
-</li>
-<li>
-<p>  <img src="https://duragauge.github.io/img/chapter-1/scatterplot_reciprocal.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This data has the shape of a power function with a power of $p&lt;0$, such as the reciprocal function.  This shape is also similar to an exponential decay function.</details></p>
-</li>
-</ol>
-</div>
-<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile.gif#center" alt=""></p>
-<p>In the summer of 2005, Road and Track magazine gathered 13 cars, 1 motorcycle, and a Navy F/A-18 Hornet fighter jet for a one-mile long acceleration test at the Lemoore Naval Air Base in California.  The first-placed Lola Champ Car (yellow car on the bottom right) crossed the finish line in just 24.2 seconds!  The following table show how long it took the Lola to reach different speeds.</p>
-<table>
-<thead>
-<tr>
-<th>Time (sec)</th>
-<th>Speed (mph)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3.1</td>
-<td>60</td>
-</tr>
-<tr>
-<td>5.6</td>
-<td>100</td>
-</tr>
-<tr>
-<td>8.6</td>
-<td>150</td>
-</tr>
-<tr>
-<td>9.9</td>
-<td>161.4</td>
-</tr>
-<tr>
-<td>22</td>
-<td>200</td>
-</tr>
-<tr>
-<td>24.2</td>
-<td>203.3</td>
-</tr>
-</tbody>
-</table>
-<p>Which would fit the data better: an exponential model, a logarithmic model, or a logistic model?  To find out, we start by creating a scatterplot of the data.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_scatterplot.png#center" alt=""></p>
-<p>Looking at the scatterplot helps us narrow down the list of possible models.  For instance, the data does not appear to be linear, so no attempt will be made at running <code>LinReg</code> and trying to fit a line to the data.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Of all the functions you've seen, which one(s) do you think have a shape similar to the shape of this scatterplot?</li>
-</ol>
-<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Of the shapes we have seen, this might match a logarithmic function, a logistic function, or even a quadratic.  In a moment we will try each of these and choose the one that appears to fit best.</details>
-</div>
-<p>In an attempt to find a function that models the speed of the Lola Champ Car (bottom right), we have run a natural log regression <code>LnReg</code>, a logistic regression <code>Logistic</code>, and a quadratic regression <code>QuadReg</code>.  The equations and graphs are shown below.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/standing_mile_regressions.png#center" alt=""></p>
-<p>It appears that the logistic function $f(x) = \frac{201.91}{1+6.31 e^{-0.334x}}$ is very close to each point, and we choose it as the best fit.  The carrying capacity $201.91$ of the model also seems to match up closely with the top speed $203.3$ of the car, even though it is not an exact match.  Since all models are an approximate fit, we should not expect them replicate every data point exactly.</p>
-<p>Let's consider one final example.</p>
-<p>The majority of teachers in primary education (K-12) are women. However, positions in K-12 administration, such as principal or superintendent, are more frequently held by men. The following data, from Indiana's department of education, shows the percent of women in K-12 administration. 
-<label for="mn-" class="margin-toggle">⊕
-</label>
-<input type="checkbox" id="mn-" class="margin-toggle" />
-<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-3/woman-2773007_1280.jpg" alt=""> <a href="https://pixabay.com/images/id-2773007/">Image by ernestoeslava on Pixabay</a></span></p>
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>% of women administrators</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1990</td>
-<td>18.3</td>
-</tr>
-<tr>
-<td>1992</td>
-<td>22.8</td>
-</tr>
-<tr>
-<td>1994</td>
-<td>26.7</td>
-</tr>
-<tr>
-<td>1996</td>
-<td>30.2</td>
-</tr>
-<tr>
-<td>1998</td>
-<td>32.5</td>
-</tr>
-<tr>
-<td>2000</td>
-<td>34.4</td>
-</tr>
-<tr>
-<td>2002</td>
-<td>36.3</td>
-</tr>
-<tr>
-<td>2004</td>
-<td>37.8</td>
-</tr>
-<tr>
-<td>2006</td>
-<td>39.3</td>
-</tr>
-</tbody>
-</table>
-<p>A scatterplot of the data shows an increasing, concave down trend.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/educator_scatterplot.png#center" alt=""></p>
-<p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Based on the shape of the data in the scatterplot, which type of function do you think would be the best fit? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details></li>
-</ol>
-</div>
-<p>Before running any regressions, we stop to point out that our normal practice letting $x$ represent years since 1990 could be problematic, since $0$ is not in the domain of any logarithmic function.  To eliminate that possibility, we let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
-<table>
-<thead>
-<tr>
-<th>Years since 1989</th>
-<th>% of women administrators</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>18.3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>22.8</td>
-</tr>
-<tr>
-<td>5</td>
-<td>26.7</td>
-</tr>
-<tr>
-<td>7</td>
-<td>30.2</td>
-</tr>
-<tr>
-<td>9</td>
-<td>32.5</td>
-</tr>
-<tr>
-<td>11</td>
-<td>34.4</td>
-</tr>
-<tr>
-<td>13</td>
-<td>36.3</td>
-</tr>
-<tr>
-<td>15</td>
-<td>37.8</td>
-</tr>
-<tr>
-<td>17</td>
-<td>39.3</td>
-</tr>
-</tbody>
-</table>
-<p>Based on the curve of the data, we chose to run a logistic regression <code>Logistic</code>, a logarithmic regression <code>LnReg</code>, and a power regression <code>PwrReg</code>.  The results are shown below.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/educator_regressions.png#center" alt=""></p>
-<p>All three models match the data fairly well.  However, the logistic function has a significant flaw.  Remember that the carrying capacity $c$ is a horizontal asymptote.  In this case, the logistic model would never predict a percent of female administrators that exceeds the carrying capacity of 40.866%.</p>
-<p>Consequently, either the logarithmic or the power models might be better predictors of future trends.</p>
 <h2 id="looking-ahead">Looking Ahead</h2>
-<p>In this section we have modeled data with exponential, logarithmic, and logistic functions.  Along the way we encountered a data set that went down, then up, and then down again.  None of the functions we have studied so far have that type of behavior.
-However, by using combinations of power functions and exponential functions we can create new functions that have much more complex behaviors.  Combining functions will be the focus of the <a href="https://duragauge.github.io/chapter-4/">next chapter</a>.</p>
+<p>In the two sections that follow, we will use transformations and/or technology to find models that fit larger sets of data, but the basic process will be the same as what we've done here.</p>
+<p>We will always start by comparing the properties of the data with the behaviors of functions we know so that we can choose an appropriate function model that can be used to predict unknown values.</p>
+<p>If the model predicts unreasonable values that do not make any sense, then we should try to explain how we know the result is an error and why it might have occurred.  An analysis of the errors can often lead to the construction of a more robust model.</p>
 
                         </div>
                     </section>
