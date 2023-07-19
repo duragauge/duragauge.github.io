@@ -9,7 +9,7 @@
 	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
-	<title>5.4 Applications of Polynomials &middot; Precalculus 1 - Functions</title>
+	<title>5.4 Rational Functions &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -83,9 +83,11 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#projectile-motion">Projectile Motion</a></li>
-    <li><a href="#finding-the-vertex-of-a-parabola">Finding the Vertex of a Parabola</a></li>
-    <li><a href="#solving-quadratic-equations">Solving Quadratic Equations</a></li>
+    <li><a href="#rational-functions">Rational Functions</a></li>
+    <li><a href="#zeros">Zeros</a></li>
+    <li><a href="#vertical-asymptotes">Vertical Asymptotes</a></li>
+    <li><a href="#removable-discontinuities">Removable Discontinuities</a></li>
+    <li><a href="#horizontal-asymptotes">Horizontal Asymptotes</a></li>
   </ul>
 </nav>
         </div>
@@ -99,176 +101,146 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>5.4 Applications of Polynomials</h1>
+                                <h1>5.4 Rational Functions</h1>
                             </header>
 
                             <div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-5/generalife-3111770_1280x720.jpg"  title="Photo by granadandyou from Pixabay "  alt="Photo by granadandyou from Pixabay " style="display:block; width:100%; height:auto;" >
+  <img src="https://duragauge.github.io/img/chapter-5/erik-mclean-oPWGhqBPNI0-unsplash.jpg"  title="Photo by Erik Mclean on Unsplash"  alt="Photo by Erik Mclean on Unsplash" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/images/id-3111770/">Photo by granadandyou from Pixabay </a></span>
+    <a href = "https://unsplash.com/photos/oPWGhqBPNI0">Photo by Erik Mclean on Unsplash</a></span>
 </div>
 <br>
 <h2 id="introduction">Introduction</h2>
-<p>Located in the foothills of the Sierra Nevada mountains in the Andalusia region of Spain, the Alhambra palace is a world heritage site from the 13th century.  Among it's most photographed features today are the water fountains in the Generalife gardens.</p>
-<p>The water that flows out of these fountains follows a curved path through the air.  But it's not just any random curve, it is a parabola!</p>
-<h2 id="projectile-motion">Projectile Motion</h2>
-<p>It was Galileo who proved that any object launched into the air will follow the path of a parabola.
-<label for="sn-Galileo" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-Galileo" class="margin-toggle" />
-<span class="sidenote">Drawings from <a href="https://www.mpiwg-berlin.mpg.de/Galileo_Prototype/HTML/F116_V/F116_V.HTM">Galileo's notebook</a> showing results of his free fall experiments, dating from about 1609. <img src="https://duragauge.github.io/img/chapter-5/Galileo_Notebook_C116_V.jpg" alt="Folio 116v from Galileo's notebook"></span>
-This could be water tossed into the air by a fountain or a ball throw by a child, they all take on the same characteristic arc.</p>
-<p>Physicists have studied this for hundreds of years and have discovered several equations that model the motion of projectiles.  In particular, the vertical height of a projectile (in meters) can be written as a function of time</p>
-<p>[ h(t) = -4.9 t^{2} + v t + h ]</p>
-<p>where $v$ is vertical velocity (in meters per second), $h$ is the initial height (in meters) and $t$ is the time (in seconds).</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-5/16333686542_ca8b5866fc_b_flipped.jpg"  title="Photo by Petri Damstén on Flickr"  alt="Photo by Petri Damstén on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://flic.kr/p/qTmpXd">Photo by Petri Damstén on Flickr</a></span>
+<p>Some observable characteristics, such as eye and hair color, are controlled by genes that pass from parent to child.  It's not unusual for a trait to skip generations and appear to pop up out of nowhere.  For instance, two people who don't have red hair can have redheaded children, or someone might have blue eyes even if both parents have brown eyes.</p>
+<p>Since rational functions are built with polynomials, they inherit some of the same behaviors as their &quot;parents&quot;, the polynomials.  But rational functions also have several properties that polynomials do not have.</p>
+<h2 id="rational-functions">Rational Functions</h2>
+<p>In <a href="https://duragauge.github.io/chapter-4/4.2/#rational-functions">Chapter 4</a> we saw that dividing two polynomials $n$ and $d$ resulted in a new type of function called a <em>rational function</em>.</p>
+<p>[ r(x)=\frac{n(x)}{d(x)} ]</p>
+<p>The graphs of rational functions have some of the most complicated behavior we have seen so far.</p>
+<p><img src="https://duragauge.github.io/img/chapter-4/rational_functions_graphs.svg#center" alt=""></p>
+<p>As you can see from these examples, rational functions often have x-intercepts, a property they share with polynomials, but they can also have <a href="https://duragauge.github.io/chapter-1/1.3/#asymptotes">vertical and horizonal asymptotes</a>, two things polynomials never have.  There is even a entirely new behavior that we have not seen before that seems to pop up almost out of nowhere.</p>
+<h2 id="zeros">Zeros</h2>
+<p>Rational functions inherit their zero behavior from the polynomial in the numerator.  You can explore this in the figure below.  Look carefully at the link between the location of the zero and the factors in the numerator.</p>
+<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/tk5488nc/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
 </div>
-<br>
- Suppose the skier in this photo leaves the jump with a vertical velocity of $2$ meters per second from a initial height of $70$ meters.  Write an function that models their height, assuming the jump follows projectile motion. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $v=2$ and $h=70$ the function would be
-[ h(t)=-4.9t^{2}+2t+70 ]</details>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/hrgyn3qw"><img src="https://www.geogebra.org/resource/tk5488nc/zigao44ostIFLpfy/material-tk5488nc-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hrgyn3qw"><a href="https://www.geogebra.org/m/hrgyn3qw">https://www.geogebra.org/m/hrgyn3qw</a></a></p>
 </div>
-<h2 id="finding-the-vertex-of-a-parabola">Finding the Vertex of a Parabola</h2>
-<p>One place where projectile motion is used is in the sport of pumpkin chuckin', where teams build slingshots, catapults or air cannons (like the one below) to throw pumpkins as far as possible.</p>
-<div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-5/14421974334_a9a983284b_b_flipped.jpg"  title="Photos by Clark on Flickr"  alt="Photos by Clark on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://flic.kr/p/nYqovU">Photos by Clark on Flickr</a></span>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>How can you find the x-intercepts of a rational function by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the numerator, then the function has an x-intercept at $x=c$. The zeros of the polynomial in the numerator cause the zeros of the rational function.</details></li>
+</ol>
 </div>
-<br>
-<p>If pumpkins leave the barrel of this air cannon 6.4 meters above the ground with a vertical velocity of 170 meters per second, then the height at any time is given by</p>
-<p>[ h(t) = -4.9 t^{2} + 170 t + 6.4 ]</p>
-<p>Our model gives the height at any time, so only questions involving height and time are fair game.
-<label for="sn-Pumpkin" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-Pumpkin" class="margin-toggle" />
-<span class="sidenote">The obvious question of how far the cannon can shoot a pumpkin is, unfortunately, not one we can solve with this function.  <br><br>Distance depends on the launch angle and you have to use trigonometry to find it.  But to give you some idea, the current world record is well over one mile!</span>
-The two that come to mind are determining when the pumpkin will come back down and hit the ground and finding its maximum height.</p>
-<p>Graphing our function will give us a better idea of where to look for the answers.</p>
-<p><img src="https://duragauge.github.io/img/chapter-5/projectile_graph_pumpkin.svg#center" alt=""></p>
-<p>The pumpkin will come back down and hit the ground when the height is $0$, which means we need to find the zeros of the function.  All that needs to be done is to solve $0= -4.9 t^{2} + 170 t + 6.4$ using the quadratic formula like we've done before.</p>
-<p>[
-\begin{align}
-t &amp;= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \newline
-&amp;= \frac{-(170)\pm\sqrt{(170)^2-4(-4.9)(6.4)}}{(2)(-4.9)} \newline
-&amp;= \frac{-170\pm\sqrt{29025.44}}{-9.8} \newline
-&amp;= -0.0376 \small \text{ and } \normalsize 34.731 \small \text{ seconds} \newline
-\end{align}
-]</p>
-<p>Of the two values the only one that makes physical sense is $t=34.731$ seconds, which also matches the value in our graph.</p>
-<p>The maximum height occurs at the peak of the graph which, for a parabola, is called the <strong>vertex</strong>.  Due to symmetry, the vertex always occurs halfway between the two x-intercepts.  In other words, if $x_1$ and $x_2$ are the two x-intercepts, then the x-coordinate of the vertex is $x_v=\frac{x_1+x_2}{2}$.</p>
-<p>For our particular pumpkin cannon function $h(t) = -4.9 t^{2} + 170 t + 6.4 $ which had x-intercepts of $-0.0376$ and $34.731$, the x-coordinate of the vertex is</p>
-<p>[
-\begin{align}
-x_v &amp; =\frac{x_1+x_2}{2} \newline
-&amp;= \frac{-0.0376 + 34.731}{2} \newline
-&amp;= 17.347
-\end{align}
-]</p>
-<p>So our maximum height occurs $17.347$ seconds after launch.</p>
-<p>To figure out what that height is, we put this time into the function</p>
-<p>[
-\begin{align}
-h(t) &amp;= -4.9 t^{2} + 170 t + 6.4 \newline
-h(17.347) &amp;= -4.9(17.347)^{2} + 170(17.347) + 6.4 \newline
-&amp;= 1480.9 \small \text{ meters}
-\end{align}
-]</p>
-<p>and find that the maximum height is $1480.9$ meters.</p>
-<p>Using the x-intercepts to find the vertex always works, but there is a faster method.</p>
-<p>If your function is quadratic polynomial written as $f(x)=ax^2+bx+c$, then the x-coordinate of the vertex is always $x_v=\frac{-b}{2a}$ and the y-coordinate is $y_v=f(x_v)$.</p>
-<p>Let's go back to the pumpkin function $h(t) = -4.9 t^{2} + 170 t + 6.4$ and see how this works.</p>
-<p>The x-coordinate of the vertex is found by computing</p>
-<p>[
-\begin{align}
-x_v &amp;=\frac{-b}{2a} \newline
-&amp;= \frac{-170}{(2)(-4.9)} \newline
-&amp;= 17.347
-\end{align}
-]</p>
-<p>which is the same value as before, but we did not need to go through the quadratic formula to find the two zeros and locate the halfway point between them.</p>
-<p>Getting the y-coordinate of the vertex is exactly the same as before, we just evaluate the function when $x=17.347$.</p>
-<p>[
-\begin{align}
-y_v &amp;= f(x_v) \newline
-&amp;= f(17.347) \newline
-&amp;= -4.9(17.347)^{2} + 170(17.347) + 6.4 \newline
-&amp;= 1480.9 \small \text{ meters}
-\end{align}
-]</p>
-<p>This technique for finding the vertex works on any quadratic function, not just with projectile motion.  One thing to keep in mind, however, is that the vertex is <em>not always</em> a maximum.  Depending on the shape of the parabola it could be a minimum.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-5/9764584931_cab334ff9a_b.jpg"  title="Photo by Jeremy Taylor on Flickr"  alt="Photo by Jeremy Taylor on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://flic.kr/p/fSS3UB">Photo by Jeremy Taylor on Flickr</a></span>
+<h2 id="vertical-asymptotes">Vertical Asymptotes</h2>
+<p>The vertical asymptotes of a rational function are caused by the polynomial in the denominator.  In the figure below you can move the vertical asymptotes (indicated by the dotted lines).  Look for a connection between the location of the vertical asymptotes and the factors in the denominator.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/pcxugr4b/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
 </div>
-<br>
- Suppose the motorcyclist in this photo leaves the ramp with a vertical velocity of 14 meters per second from a initial height of 2 meters.  Write an function that models their height, assuming the jump follows projectile motion.  Then find their maximum height by locating the vertex of your function. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $v=14$ and $h=2$ the function would be
-[ h(t)=-4.9t^{2}+14t+2 ]
-The x-coordinate of the vertex is
-[
-\begin{align}
-x_v &amp;=\frac{-b}{2a} \newline
-&amp;= \frac{-(14)}{(2)(-4.9)} \newline
-&amp;= 1.43 \small \text{ seconds}
-\end{align}
-]
-and the y-coordinate of the vertex is
-[
-\begin{align}
-y_v &amp;= f(x_v) \newline
-&amp;= f(1.43) \newline
-&amp;= -4.9(1.43)^2+14(1.43)+2 \newline
-&amp;= 12 \small \text{ meters}
-\end{align}
-]
-So the motorcycle reaches a maximum height of 12 meters 1.429 seconds after leaving the ramp.</details>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ssgbhywx"><img src="https://www.geogebra.org/resource/pcxugr4b/68P3xw4hSKGeNNe4/material-pcxugr4b-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ssgbhywx"><a href="https://www.geogebra.org/m/ssgbhywx">https://www.geogebra.org/m/ssgbhywx</a></a></p>
 </div>
-<h2 id="solving-quadratic-equations">Solving Quadratic Equations</h2>
-<div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-1/cliff_dive.jpg"  title="Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr"  alt="Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr" style="display:block; width:100%; height:auto;" >
-  <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://www.flickr.com/photos/jamoral/21713225096/">Saltos Red Bull en Bilbao 2015 by jamoral, on Flickr</a></span>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>How can you tell if a rational function has a vertical asymptote, just by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the denominator, then the function has a vertical asymptote at $x=c$. The zeros of the polynomial in the denominator cause the vertical asymptotes of the rational function.</details></li>
+</ol>
 </div>
-<br>
-<p>Cliff diving is potentially a very dangerous sport.  One maneuver that makes it a bit safer is called a <em>barani</em>.
-<label for="sn-barani" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-barani" class="margin-toggle" />
-<span class="sidenote"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/tx2ZgKYS-Yc?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-<p>The barani is a gymnastics move that combines a half somersault with a half twist.  Performing a barani gives the diver time to see the water and control their landing so that they hit the water feet first.</p>
-<p>Assuming a professional cliff diver can jump up with a vertical velocity of $3$ meters per second, then the projectile motion function</p>
-<p>[ h(t)=-4.9 t^{2} + 3t + 27 ]</p>
-<p>gives us their height above the water $t$ seconds after diving off the $27$ meter platform.</p>
-<p>If a diver can complete a barani about 5 meters above the surface of the water, then the chance of a safe dive is very high.  How much time does that give them to do their flips and twists?</p>
-<p>To answer this we have to find $t$ so that $h(t)=5$.  Setting up the equation we find that</p>
-<p>[
-\begin{align}
-h(t) &amp;= 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original equation}} \newline
--4.9 t^{2} + 3t + 27 &amp;= 5 &amp;&amp; \small \color{#5fa2ce}{\text{Insert equation for $h(t)$}} \newline
--4.9 t^{2} + 3t + 22 &amp;= 0 &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $5$}}
-\end{align}
-]</p>
-<p>which is another situation for the quadratic formula.</p>
-<p>[
-\begin{align}
-t &amp;= \frac{-(3)\pm\sqrt{(3)^2-4(-4.9)(22)}}{2(-4.9)} &amp;&amp; \small \color{#5fa2ce}{\text{Apply Quadratic Formula}} \newline
-t &amp;= \frac{-3\pm\sqrt{440.2}}{-9.8} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
-t &amp;= -1.84 \small \text{ and } \normalsize 2.45 \small \text{ seconds } &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]</p>
-<p>Clearly $t=-1.84$ seconds can't be our answer, so it must be that the diver has $2.45$ seconds to do their dive and complete the barani.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Assuming the diver completes their barani after $2.45$ seconds, how much longer will it take before they hit the water? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This question is asking us to find the zeros, or x-intercepts of our function $h(t)=-4.9 t^{2} + 3t + 27$ which, as we've done before, can be found through the quadratic formula.
-[
-\begin{align}
-t &amp;= \frac{-(3)\pm\sqrt{(3)^2-4(-4.9)(27)}}{2(-4.9)} &amp;&amp; \small \color{#5fa2ce}{\text{Apply Quadratic Formula}} \newline
-t &amp;= \frac{-3\pm\sqrt{538.2}}{-9.8} &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
-t &amp;= -2.06 \small \text{ and } \normalsize 2.67 \small \text{ seconds } &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
-\end{align}
-]
-The diver hits the water at $t=2.67$ seconds, which is $2.67-2.45=0.22$ seconds after completing the barani.</details></div>
+<h2 id="removable-discontinuities">Removable Discontinuities</h2>
+<p>So far we've determined that zeros in the numerator cause x-intercepts while zeros in the denominator cause vertical asymptotes.  But what would happen if there was a zero in both at the same place?</p>
+<p>Or to ask the question another way, what is $\frac{0}{0}$?  One thought is that it should equal $1$, since a number divided by itself is $1$.  Another argument is that it should be $0$, since $0$ divided by any number is $0$.</p>
+<p>But if we look back at what division means it gets even more complicated.  Remember that $a \div b = x$ means $a = b \times x$.</p>
+<p>Then $0 \div 0 = x$ would mean $0 = 0 \times x$, but that's true for every number!  Since there's no single well defined way to say what $0 \div 0$ equals, we leave it <em>undefined</em>.</p>
+<p>So whenever we have a rational function that has matching factors in the numerator and denominator, the graph is undefined at that point and there is a hole or break in the graph.  The official term is &quot;<em>removable discontinuity</em>&quot;.</p>
+<p>In the figure below you can change the locations of the zero, the vertical asymptote, and the hole.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/mhChyVxw/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/ntYzprQz"><img src="https://www.geogebra.org/resource/mhChyVxw/xPIL41W5dZKruUnz/material-mhChyVxw-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ntYzprQz"><a href="https://www.geogebra.org/m/ntYzprQz">https://www.geogebra.org/m/ntYzprQz</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Identify all of the x-intercepts, vertical asymptotes and holes of the rational function [r(x)=\frac{(x-5)(x+3)(x-1)}{(x-2)(x-7)(x-1)}] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are x-intercepts at $x=5, x=-3$, vertical asymptotes at $x=2, x=7$ and a hole at $x=1$.</details></p>
+</li>
+<li>
+<p>Write an equation for a rational function that has a zero at $x=2$, a vertical asymptote at $x=11$, and a hole at $x=4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[r(x)=\frac{(x-2)(x-4)}{(x-11)(x-4)}]</details></p>
+</li>
+</ol>
+</div>
+<h2 id="horizontal-asymptotes">Horizontal Asymptotes</h2>
+<p>In addition to x-intercepts, vertical asymptotes and holes, rational functions often have horizontal asymptotes.</p>
+<p>Recall that a horizontal asymptote is a long-term behavior, describing how the function levels off as $x \rightarrow \pm \infty$.  Since the long-term behavior of a polynomial is controlled by the degree and leading coefficient, we should focus our attention on the degree and leading coefficients of the polynomials that make up a rational function.</p>
+<p>In this first figure both polynomials have the same degree.  Adjust the leading coefficients and see how that impacts the location of the horizontal asymptote.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/at9thts5/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/u76wmebr"><img src="https://www.geogebra.org/resource/at9thts5/pe7TUPcu5aPtBhgT/material-at9thts5-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/u76wmebr"><a href="https://www.geogebra.org/m/u76wmebr">https://www.geogebra.org/m/u76wmebr</a></a></p>
+</div>
+<p>As you've just seen, if the degrees match then you can simplify the leading coefficients to find the horizontal asymptote.</p>
+<p>But what if the degrees do not match?  In this figure you can alter the degree of each polynomial.</p>
+<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/pdxmcuxv/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/prrwdbcz"><img src="https://www.geogebra.org/resource/pdxmcuxv/zxRWUiBDisUD0ALZ/material-pdxmcuxv-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/prrwdbcz"><a href="https://www.geogebra.org/m/prrwdbcz">https://www.geogebra.org/m/prrwdbcz</a></a></p>
+</div>
+<p>If the degree of the numerator is larger, then no horizontal asymptote exists. However, if the degree of the denominator is larger, the horizontal asymptote is automatically at $y = 0$ (i.e. the x-axis).</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{10x^3+4}{2x^3-8x^2} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degrees match, the horizontal asymptote is $y=\frac{10}{2}=5$.</details></p>
+</li>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{5x-2}{3x^2+97x+13} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree on the bottom is larger, the horizontal asymptote is $y=0$.</details></p>
+</li>
+<li>
+<p>What is the horizontal asymptote of this rational function? [ r(x)=\frac{x^{6974}+1}{x^{3827}-4x} ] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since the degree in the numerator is larger, there is no horizontal asymptote.</details></p>
+</li>
+</ol>
+</div>
 
                         </div>
                     </section>
