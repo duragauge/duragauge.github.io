@@ -9,7 +9,7 @@
 	<meta name="description" content="A book about precalculus">
 	<meta name="author" content="Nolan Mitchell">
 	<meta name="generator" content="Hugo 0.75.1" />
-	<title>6.1 Algebraic Methods &middot; Precalculus 1 - Functions</title>
+	<title>6.1 Concepts of Modeling &middot; Precalculus 1 - Functions</title>
 	<!-- Stylesheets -->
 	
 
@@ -83,24 +83,19 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#identifying-functions-from-descriptions">Identifying Functions from Descriptions</a>
+    <li><a href="#the-modeling-process">The Modeling Process</a></li>
+    <li><a href="#scatterplots">Scatterplots</a></li>
+    <li><a href="#interpolation-and-extrapolation">Interpolation and Extrapolation</a></li>
+    <li><a href="#another-tornado-data-set">Another Tornado Data Set</a></li>
+    <li><a href="#independent-and-dependent-variables">Independent and Dependent Variables</a></li>
+    <li><a href="#aligning-and-scaling-data">Aligning and Scaling Data</a></li>
+    <li><a href="#modeling-with-transformations">Modeling with Transformations</a>
       <ul>
-        <li><a href="#linear-functions-constant-rates">Linear Functions: Constant Rates</a></li>
-        <li><a href="#exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</a></li>
-        <li><a href="#power-functions--proportional-changes">Power Functions:  Proportional Changes</a></li>
-        <li><a href="#elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</a></li>
+        <li><a href="#slope-intercept-form-of-a-line">Slope-Intercept Form of a Line</a></li>
+        <li><a href="#point-slope-form-of-a-line">Point-Slope Form of a Line</a></li>
+        <li><a href="#vertex-form-of-a-quadratic">Vertex Form of a Quadratic</a></li>
       </ul>
     </li>
-    <li><a href="#identify-systems-of-linear-equations">Identify Systems of Linear equations</a></li>
-    <li><a href="#convert-between-exponential-models">Convert Between Exponential Models</a></li>
-    <li><a href="#create-exponential-models">Create Exponential Models</a>
-      <ul>
-        <li><a href="#population-growth">Population Growth</a></li>
-        <li><a href="#continuous-biological-decay">Continuous Biological Decay</a></li>
-        <li><a href="#biological-half-life">Biological Half-Life</a></li>
-      </ul>
-    </li>
-    <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
 </nav>
         </div>
@@ -114,309 +109,359 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>6.1 Algebraic Methods</h1>
+                                <h1>6.1 Concepts of Modeling</h1>
                             </header>
 
                             <div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-3/sushi-373588_1280.jpg"  title="Image by Design n Print from Pixabay"  alt="Image by Design n Print from Pixabay" style="display:block; width:100%; height:auto;" >
+  <img src="https://duragauge.github.io/img/chapter-6/nikolas-noonan-682177-unsplash.jpg"  title="Tornado photo by Nikolas Noonan on Unsplash"  alt="Tornado photo by Nikolas Noonan on Unsplash" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/images/id-373588/">Image by Design n Print from Pixabay</a></span>
+    <a href = "https://unsplash.com/photos/fQM8cbGY6iQ">Tornado photo by Nikolas Noonan on Unsplash</a></span>
 </div>
 <br>
-<p><strong>UNDER REVISION</strong></p>
-<p>Objectives:</p>
-<ul>
-<li>Recognize linear, exponential, and proportional relationships from verbal descriptions.</li>
-<li>Interpret the meaning of coefficients and constants in the context of the modeled situations.</li>
-<li>Apply algebraic techniques to create equations of linear, power, and exponential functions that model real-life scenarios.</li>
-</ul>
 <h2 id="introduction">Introduction</h2>
-<p>Many people are concerned about the amount of mercury they ingest by eating fish such as shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.</p>
-<p>Fortunately for us, many things that we eat have <em>biological half-lives</em>, and we know that things with half-lives can be modeled by exponential functions.</p>
-<p>In this section we will point out key words and descriptions that indicate a scenario might be modeled by a particular type of function.  We'll also cover algebraic methods for finding those equations.</p>
-<h2 id="identifying-functions-from-descriptions">Identifying Functions from Descriptions</h2>
-<h3 id="linear-functions-constant-rates">Linear Functions: Constant Rates</h3>
-<p>When we investigated how functions change in <a href="https://duragauge.github.io/chapter-1/1.6">Chapter 1</a>, we saw that the average rate of change formula was nothing more than the slope formula rewritten with function notation.  Since the slope of a line doesn't change, we can say that the average rate of change of a linear function is always constant.</p>
-<p>A constant <strong>rate</strong> is the key here.  A rate is ratio of two quantities.  Most often these are described using the word <em>per</em> (miles <em>per</em> gallon, servings <em>per</em> package, dollars <em>per</em> hour, feet <em>per</em> second) or something equivalent (two forks <em>for each</em> plate, 10000 steps <em>every</em> day).  That constant rate of change is the slope of the linear function.</p>
-<h3 id="exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</h3>
-<h3 id="power-functions--proportional-changes">Power Functions:  Proportional Changes</h3>
-<p>You may have noticed that frequently occurring things are often much smaller than things which occur rarely. For example, small diamonds are common, but large diamonds like the 45.52 carat Hope Diamond are extremely rare. Or the world population of blue whales is much smaller than that of the common house fly.</p>
-<p>Craters on the Moon have a similar pattern.  There are very few large craters but millions of small ones.</p>
-<p>In the natural sciences, many other aspects of an organism's life are connected to its size. Life expectancy, brain size, gestational period, metabolic rate, just to name a few, depend on body mass. These connections are often called &quot;power laws&quot;, because they involve power functions.</p>
-<p>With only two data points it's hard to be sure.  Could be exponential.  Logarithms could be used....to check</p>
-<p>In this third example we will plot points from the power function $y=x^{2}$ on a standard plot, where both axis are linear, along side a  log-log plot, where both axis are logarithmic.</p>
-<p>$ln(y) =</p>
-<p>more data in next sections</p>
-<p>x x x x x x x x x x x x x x x x x x x x x</p>
-<h3 id="elimination-example---find-a-logarithmic-function-given-2-points">Elimination Example - Find a Logarithmic Function Given 2 Points</h3>
-<p>Suppose we need to find a logarithmic function through the two points $(5, 3)$ and $(20, 9)$.  We'll use the format $f(x)=a+b \ln x$ so that we can use <code>LnReg</code> to double check our answer.</p>
-<p>As we have done earlier, we begin by substituting the $x$ and $y=f(x)$ coordinates into the equation of our model to generate a system.</p>
-<p>[
-\begin{align}
-9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
-3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
-\end{align}
-]</p>
-<p>Notice that if we were to subtract the two equations then $a$ would be eliminated.  That is our elimination step.</p>
-<p>[
-\begin{array}{l r c l}
-&amp; 9 &amp; = &amp;  a+b \ln 20 \newline
--   &amp; (3 &amp; = &amp; a+b \ln 5 ) \newline
-\hline
-&amp; 6 &amp; = &amp;  b \ln 20 - b \ln 5
-\end{array}
-]</p>
-<p>The result of the elimination is a new equation that only has $b$ in it.  After we solve this for $b$ we can substitute that value back into one of our equations and find $a$.</p>
-<p>[
-\begin{align}
-6 &amp;= b \ln 20 - b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Original Equation}} \newline
-6 &amp;= b \left(\ln 20 - \ln 5 \right) &amp;&amp; \small \color{#5fa2ce}{\text{Factor out $b$}} \newline
-6 &amp;= b \ln \left(\frac{20}{5} \right) &amp;&amp; \small \color{#5fa2ce}{\text{Use Quotient rule for Logs}} \newline
-6 &amp;= b \ln 4 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify fraction}} \newline
-\frac{6}{\ln 4} &amp;= b &amp;&amp; \small \color{#5fa2ce}{\text{Divide by $\ln 4$}} \newline
-b &amp;\approx 4.328 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
-\end{align}
-]</p>
-<p>The next step is to find $a$ by substituting $b=\frac{6}{\ln 4}$ into one of our equations.  Either equation will work, but we'll pick Equation #2 since it looks a bit simpler.</p>
-<p>[
-\begin{align}
-3 &amp;= a+b \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Equation #2}} \newline
-3 &amp;= a + \frac{6}{\ln 4} \cdot \ln 5 &amp;&amp; \small \color{#5fa2ce}{\text{Substitute $b = \frac{6}{\ln 4}$}} \newline
-3 - \frac{6}{\ln 4} \cdot \ln 5 &amp;= a &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $\frac{6}{\ln 4} \cdot \ln 5$}} \newline
-a &amp;\approx -3.966 &amp;&amp; \small \color{#5fa2ce}{\text{Decimal approximation}} \newline
-\end{align}
-]</p>
-<p>Now that we have both $a$ and $b$, we can write out our function.</p>
-<p>[f(x) =  -3.966+4.328 \ln x]</p>
-<p>A quick way to check this is to run logarithmic regression on the limited data set $(5, 3)$ and $(20, 9)$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-6/log_regression_2_points.svg#center" alt=""></p>
-<p>This gives the same values for $a$ and $b$ and the graph clearly goes through our two points.</p>
-<h2 id="identify-systems-of-linear-equations">Identify Systems of Linear equations</h2>
-<p>One of the most powerful tools for solving systems is a matrix method called Gauss-Jordan Elimination, which is programed into most graphing calculators.</p>
-<p>Gauss-Jordan Elimination is designed to solve systems of <em>linear</em> equations.  You might assume this means it is only good for finding lines, but that is not the case.</p>
-<p>The system we solved a moment ago was actually a linear system, even though the equations came from a logarithmic model.  Let's look at it again.</p>
-<p>[
-\begin{align}
-9 &amp;= a+b \ln 20 &amp;&amp; \small \text{Equation #1} \newline
-3 &amp;= a+b \ln 5 &amp;&amp; \small \text{Equation #2}
-\end{align}
-]</p>
-<p>These equations are linear because $a$ and $b$ have a power of $1$ and are combined using only addition.  If the equations had powers/roots or exponents/logs or products of $a$ and $b$ then they would not be linear.</p>
-<p>x x x x x x x x x x x x x x x x x x x x x</p>
-<h2 id="convert-between-exponential-models">Convert Between Exponential Models</h2>
-<p>continuous vs not --- doesn't really matter since we can switch between equations.</p>
-<p>When working with exponential models it is important to realize that there are many ways to write the same function.  Specifically, the following models are equivalent.</p>
+<p>Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of nature's most violent events:  a tornado.  While some go to &quot;Tornado Alley&quot; just for the thrill, most professional storm chasers have a different goal.  What they want is data: scientific measurements that can only be found inside real tornadoes.</p>
+<p>Scientists and university researchers, like those at NOAA's National Severe Storms Laboratory, hope to use that data to create mathematical models that will help them understand the inner workings of tornadoes and how they form.</p>
+<h2 id="the-modeling-process">The Modeling Process</h2>
+<p>When we speak of creating a <strong>mathematical model</strong>, what exactly are we talking about?</p>
+<p>A model is simplified representation of a real world object.  Mathematical models are found in nearly every field of study and are useful when it is not feasible, economical, practical, or safe to work with the real item.</p>
+<p>To construct a model, we begin with a set of data points and a description of the scenario and then try to find an equation of a function that closely aligns with our observations and what we know about the situation.</p>
+<p>Once a model has been created, we can use the rules of mathematics to discover things about its mathematical behavior. The insights gained from these analyses can, in turn, be used to make predictions and gain understanding about how the real-world object might behave.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/modeling_diagram.svg#center" alt=""></p>
+<p>Through continued observations and adjustments, the model can be refined to more accurately represent the real-world phenomenon it is intended to simulate.</p>
+<p>While our models will never be perfect, there is a good chance that they might be accurate enough to be genuinely useful.  Renowened physicist Eugene Wigner referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This theme will be prevalent throughout this chapter.</p>
+<h2 id="scatterplots">Scatterplots</h2>
+<p>Many physical laws, like the law of gravity, were discovered by gathering data and looking for patterns.  One of our primary tools for visualizing data is the <strong>scatterplot</strong>.  A scatterplot is nothing more than pairs of data plotted as points on a grid.</p>
+<p>For instance, researchers from Purdue University analyzed 1285 tornadoes in Indiana from 1950 to 2012.
+<label for="sn-tornado citation" class="margin-toggle sidenote-number">
+</label>
+<input type="checkbox" id="sn-tornado citation" class="margin-toggle" />
+<span class="sidenote">See the paper by Olivia Kellner and Dev Niyogi in the <a href="https://doi.org/10.1175/2013EI000548.1">American Meteorological Society's Earth Interactions journal, volume 18 no. 10 (2014).</a></span>
+One set of data compared the number of tornadoes observed at different hours of the day.  The scatterplot below illustrates this data.</p>
+<p><img src="https://duragauge.github.io/img/chapter-1/tornado_time.svg#center" alt=""></p>
+<p>The scatterplot reveals a distinct pattern, suggesting that most tornadoes form late in the afternoon.  This is a well-known result that follows from the fact that, by mid-afternoon, the sun has sufficiently heated the ground and atmosphere enough to produce thunderstorms.</p>
+<p>Notice that there is a sublte but important difference between the data (black dots) and the model (the red curve).  The model allows us to make predictions for values that were not recorded.  For instance, no data point corresponds to 10:15am, but using the model we can say the number is likely to be around 20 tornadoes.</p>
+<h2 id="interpolation-and-extrapolation">Interpolation and Extrapolation</h2>
+<p>Models can be used to make estimations in two different ways. Making a prediction outside of a data set is called <strong>extrapolation</strong>.  Estimating a value that is in between known values is <strong>interpolation</strong>.</p>
+<p>For instance, if we knew the number of tornadoes in 1900 and in 2000, predicting how many will occur in 2050 would be an extrapolation since that value lies beyond the known data. Extrapolation assumes that an existing trend will continue unchanged into the future, which is not always guaranteed.</p>
+<p>On the other hand, estimating the number of tornadoes in the year 1950 would be interpolation since 1950 falls between the known values.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose that we know the price of a movie ticket in 2000 and also the price in 2010, but no other years.  Decide if the following would be examples of interpolation or extrapolation.</p>
+<ol>
+<li>
+<p>Predicting what the cost of a movie ticket will be in 2050. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation because 2050 is outside of the known data.</details></p>
+</li>
+<li>
+<p>Estimating what the cost of a movie ticket was in 2005. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Interpolation since 2005 is in between known values.</details></p>
+</li>
+<li>
+<p>Estimating what the cost of a movie ticket was in 1920. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Extrapolation.  1920 is outside of the data set.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="another-tornado-data-set">Another Tornado Data Set</h2>
+<p>Let's take a look at another set of tornado data, showing how closely tornadoes occur to populated areas.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/mrcsehab/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/j64zgw6h"><img src="https://www.geogebra.org/resource/mrcsehab/6XcJvVUnACwrTb4z/material-mrcsehab-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/j64zgw6h"><a href="https://www.geogebra.org/m/j64zgw6h">https://www.geogebra.org/m/j64zgw6h</a></a></p>
+</div>
+<p>This scatterplot reveals a strong linear trend, indicating that the percentage of observed tornadoes increases as one moves further away from the city or town center. The equation $y=\color{blue}{2.84}x+\color{green}{0.14}$ serves a good model for the data.</p>
+<p>If we use our model to extrapolate back to a distance of $0$ kilometers it suggests that there is a $0\%$ chance of seeing a tornado, which might lead to the assumption that people in cities are safer than those in rural areas. That conclusion, however, needs to be approached with caution since many other factors may come into play.</p>
+<p>Contrary to what one might think, tornadoes are not diverted by structures or buildings.  They have been know to hit large cities, pass over rivers, climb hills and cross canyons.</p>
+<p>Research even suggests that slower winds and hotter air in urban areas can actually <em>increase</em> the tornado-genesis process.  According to NOAA's tornado safety guidelines, the safest place is in a <a href="https://www.spc.noaa.gov/faq/tornado/#Safety" title="NOAA's tornado safety guidelines">fortified tornado shelter.</a></p>
+<p>This example serves as a valuable lesson that even when data displays an apparent pattern, it is crucial to take time to investigate and consider other underlying factors before we make predictions or draw conclusions from our model.</p>
+<h2 id="independent-and-dependent-variables">Independent and Dependent Variables</h2>
+<p>In all of the tonado data sets we've seen, it was up to the researchers to decide which variable was independent and which was dependent.</p>
+<p>Whenever we work with a raw set of data, it will be up to us to do the same thing and determine which quantity is the independent and which one is dependent.</p>
+<p>The <strong>independent variable</strong> is the parameter that changes or controls the other variable, and it is often plotted on the x-axis of a graph.</p>
+<p>On the other hand, the <strong>dependent variable</strong> is the outcome or response that is measured or observed as the independent variable changes, and it is typically plotted on the y-axis of a graph.</p>
+<p>Often, certain variables are naturally independent or dependent based on our knowledge of the situation. For example, suppose researchers collect data on the dosage of a medication given to patients and their corresponding blood pressure measurements.  Since researchers control the dosage, it would be considered the independent variable.  Blood pressure, on the other hand, is expected to change in response to the dosage level, so it should be the dependent variable.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>In an experiment, data is collected on the amount of sunlight and the harvest yield of a tomato plant.  Which variable would be considered depenent?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We would expect the yield to be dependent on the amount of sunlight.</details></p>
+</li>
+<li>
+<p>If the speed of a rocket is your dependent variable, what kinds of things might be reasonable indepenent variables? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Anything that influences the speed could be a reasonable choice:  time since launch; weight of the rocket; amount of fuel; size of the payload; etc.</details></p>
+</li>
+<li>
+<p>In 1662, scientist Robert Boyle investigated the relationship between pressure and volume in a gas.  Which variable do you think he used as the indepenent one? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is a harder one.  Boyle discovered that pressure and volume are inversely proportional to each other so, in theory, either one could be independent.  In practice, Boyle, found it easier to change the pressure rather than change the volume, so pressure was his indepenent variable.</details></p>
+</li>
+</ol>
+</div>
+<h2 id="aligning-and-scaling-data">Aligning and Scaling Data</h2>
+<p>To make the data more manageable and relatable, we often use aligning and scaling techniques.</p>
+<p><strong>Aligning</strong> the data involves shifting the independent variable to a more convenient starting point. <strong>Scaling</strong> the data allows us to convert the units of the dependent variable to a more practical scale.</p>
+<p>Let's look at an example where both of these might be helpful.  The table below shows the total number of mobile game downloads on iOS and Adroid from 2015 to 2022.</p>
 <table>
 <thead>
 <tr>
-<th>Standard model:</th>
-<th>$f(x)=a \thinspace b^{x}$, where $b=1+r$</th>
+<th>Year</th>
+<th>Downloads</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Continuous growth model:</td>
-<td>$f(t)=a \thinspace e^{k  t}$</td>
+<td>2015</td>
+<td>24,300,000,000</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>27,900,000,000</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>34,700,000,000</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>38,400,000,000</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>42,100,000,000</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>56,200,000,000</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>55,300,000,000</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>55,600,000,000</td>
 </tr>
 </tbody>
 </table>
-<p>It is possible to convert from one form to the other using $b=e^{k}$ or $k = \ln (b)$.  Either form can be used for any application.  The only difference is whether its preferable to emphasize the growth factor $b$ or the continuous growth rate $k$.  It is even possible to switch to a doubling time or a half-life model.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>
-<p>Use the identity $b=e^{k}$ to rewrite $f(t)=2 \thinspace e^{-0.356 t}$ in the standard exponential model form $f(x)=a \thinspace b^{x}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $e^{-0.356}=0.7$, the equivalent standard model is $f(x)=2(0.7)^{x}$.</details></p>
-</li>
-<li>
-<p>Use the identity $k = \ln (b)$ to rewrite $f(x)=138(1.493)^{x}$ as a continuous growth exponential function of the form $f(t)=a \thinspace e^{k  t}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $\ln(1.493)=0.4$, the equivalent continuous growth model is $f(t)=138 \thinspace e^{0.4 t}$.</details></p>
-</li>
-</ol>
-</div>
-<h2 id="create-exponential-models">Create Exponential Models</h2>
-<h3 id="population-growth">Population Growth</h3>
-<p><img src="https://duragauge.github.io/img/chapter-3/petri_dishes.png#center" alt=""></p>
-<p>A common experiment in college biology labs is to incubate bakers' yeast in a petri dish filled with a nutrient-rich solution.  As the yeast grows groups of cells, called colonies, begin to appear as small white balls.</p>
-<p>Suppose you initially see $3$ yeast colonies.  You come back $24$ hours later the number of colonies has jumped to $87$.</p>
-<p>To find a continuous growth function $f(t)=a \thinspace e^{k  t}$ that models the number of yeast colonies we must first use the given data to find the continuous growth rate $k$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Using $a=3$, $t=24$ and $f(t)=87$ find the equation we must solve to find $k$.  You do not need to solve the equation.</li>
-</ol>
-<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We need to solve the equation $87=3 e^{k \thinspace 24}$ for $k$.</details>
-</div>
-<p>To solve $87=3 e^{k(24)}$ for $k$, we proceed as follows:</p>
+<p>Since 2015 is a convenient starting point, we can align this data by converting the time to &quot;years since 2015&quot;. This is done by subtracting 2015 from each year, resulting in the aligned years 0, 1, 2, ..., 7.</p>
+<p>Next, we might want to scale the number of downloads so that 1 on the graph represents &quot;1 billion downloads&quot;. We can do this by dividing each value by 1,000,000,000.</p>
+<p>After aligning and scaling our data table has the same information but with more maneagable values.  Notice how the labels of each column have been updated to reflect those changes.</p>
 <table>
 <thead>
 <tr>
-<th>$87 =3 e^{k(24)}$</th>
-<th></th>
+<th>Year Since 2015</th>
+<th>Billions of Downloads</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\frac{87}{3} =  e^{24  k}$</td>
-<td><em>Divide both sides by $3$ to isolate the exponential.</em></td>
+<td>0</td>
+<td>24.3</td>
 </tr>
 <tr>
-<td>$\ln\left(\frac{87}{3}\right) =  \ln\left(e^{24  k}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
+<td>1</td>
+<td>27.9</td>
 </tr>
 <tr>
-<td>$\ln\left(\frac{87}{3}\right) =  24 k$</td>
-<td><em>Use the inverse relationship</em> $\ln\left(e^{x}\right)=x$.</td>
+<td>2</td>
+<td>34.7</td>
 </tr>
 <tr>
-<td>$\frac{\ln\left(\frac{87}{3}\right)}{24} =  k$</td>
-<td><em>Divide both sides by $24$.</em></td>
+<td>3</td>
+<td>38.4</td>
 </tr>
 <tr>
-<td>$k  \approx  0.140$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
+<td>4</td>
+<td>42.1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>56.2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>55.3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>55.6</td>
 </tr>
 </tbody>
 </table>
-<p>We now know that the yeast are growing at a continuous rate of 14%, and that the function modeling their growth is</p>
-<p>[
-f(t)=3 e^{0.14 t}
-]</p>
-<p>models the number of yeast colonies $t$ hours after the experiment began.</p>
+<p>Not only is the aligned and scaled data easier to read, it is also much easier to graph in a scatterplot.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/game_download_scatterplot.svg#center" alt=""></p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>We were told that there were 87 yeast colonies after 24 hours.  According to this model, how many will there be after 48 hours? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(48)=3 e^{0.14(48)}\approx2486$</details></p>
+<p>Suppose you have data on housing prices from 1956 through 1974.  What would be a convenient starting point and how would you align your data?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Several answers are possible, but perhaps the best one would be to use 1950 as the starting year and subtract 1950 from each given year.</details></p>
 </li>
 <li>
-<p>In this example, the yeast were growing at a continuous rate of $k=0.14$, or 14%.  Use the fact that $b=e^{k}$ to convert the function $f(t)=3 e^{0.14 t}$ into the standard form $f(x)=a \thinspace b^{x}$.  Then identify the growth factor and growth rate. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Since $b=e^0.14\approx1.15$ the growth factor is $1.15$ and the growth rate is $r=0.15$, meaning the yeast grow 15% per hour.  The function $f(x)=3(1.15)^{x}$ is the standard form of the continuous growth function $f(t)=3 e^{0.14 t}$.</details></p>
+<p>Suppose you were looking at data involving the national debt, which was $31,419,689,421,557.90 at the end of 2022.  How might you scale the data to make it more manageable? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Dividing by 1,000,000,000,000 (1-trillion) would give $31.42 trillion which would be easier to work with.</details></p>
 </li>
 </ol>
 </div>
-<h3 id="continuous-biological-decay">Continuous Biological Decay</h3>
+<h2 id="modeling-with-transformations">Modeling with Transformations</h2>
+<p>You might have noticed that the mobile game data above roughly has the shape of a line.  If we find that a set of data has a shape similar to one of our basic functions, then transformations can be used to shift and stretch that function to make align with the data.</p>
+<p>Let's start by looking at a few transformed functions that you might have seen in prior algebra classes.</p>
+<h3 id="slope-intercept-form-of-a-line">Slope-Intercept Form of a Line</h3>
+<p>To begin, we take the identity function $f(x)=x$ and stretch it vertically by a factor of $\color{blue}{m}$ and shift it vertically $\color{green}{b}$ units.  The resulting equation, $y=\color{blue}{m}x+\color{green}{b}$, is known as the <strong>slope-intercept</strong> form for a line, where $\color{blue}{m}$ is the slope and $\color{green}{b}$ is the y-intercept.  The figure below will let you experiment with this equation.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/hBQsE4O1/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/hBQsE4O1"><img src="https://www.geogebra.org/resource/hBQsE4O1/Wr52bKrzTkGnlmob/material-hBQsE4O1-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hBQsE4O1"><a href="https://www.geogebra.org/m/hBQsE4O1">https://www.geogebra.org/m/hBQsE4O1</a></a></p>
+</div>
+</br>
+<h3 id="point-slope-form-of-a-line">Point-Slope Form of a Line</h3>
+<p>Another transformed version of the identity function is $y=\color{blue}{m}(x-\color{brown}{x_1})+\color{green}{y_1}$.</p>
+<p>This new equation involves a shift right $\color{brown}{x_1}$ spaces, a vertical stretch by $\color{blue}{m}$, and a vertical shift $\color{green}{y_1}$ units.</p>
+<p>The result is a line that passes through the point $(\color{brown}{x_1}, \color{green}{y_1})$ and has a slope of $\color{blue}{m}$.  We refer to this equation as the <strong>point-slope</strong> form of a line.  Feel free to experiment with this equation using the figure below.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/PdeIue6n/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/PdeIue6n"><img src="https://www.geogebra.org/resource/PdeIue6n/kDqggaOWaZNpd7Ni/material-PdeIue6n-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/PdeIue6n"><a href="https://www.geogebra.org/m/PdeIue6n">https://www.geogebra.org/m/PdeIue6n</a></a></p>
+</div>
+</br>
+<h3 id="vertex-form-of-a-quadratic">Vertex Form of a Quadratic</h3>
+<p>Lastly, consider $y=\color{blue}{a}(x-\color{brown}{h})^2+\color{green}{k}$, which is a transformed version of the square function.</p>
+<p>The horizontal and vertical shifts move the vertex to the point $(\color{brown}{h}, \color{green}{k})$ while the vertical stretch by a factor of $\color{blue}{a}$ influences the concavity of the graph.</p>
+<p>This equation is often referred to as the <strong>vertex form</strong> of a quadratic function.  You can identify the three transformations in the figure below.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/uTrJWh1K/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/uTrJWh1K"><img src="https://www.geogebra.org/resource/uTrJWh1K/BBDfruwxgd3VVqyG/material-uTrJWh1K-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/uTrJWh1K"><a href="https://www.geogebra.org/m/uTrJWh1K">https://www.geogebra.org/m/uTrJWh1K</a></a></p>
+</div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
+<li>
+<p>Write the equation of a line with a slope of $2$ and a y-intercept of $3$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using the slope-intercept form, $m=2$ and $b=3$ so the equation would be $y=2x+3$.</details></p>
+</li>
+<li>
+<p>Write the equation for a line passing through the point $(3, 5)$ that has a slope of $4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With the point-slope form the equation would be $y=4(x-3)+5$.  If desired, this could be converted to the slope-intercept form as $y=4x -7$.</details></p>
+</li>
+<li>
+<p>Write the equation for any quadratic function with a vertex at $(2, -1)$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using the vertex-form, your equation should look similar to $y=a(x-2)^2-1$.  Since $a$ was not specified, any nonzero value will work.</details></p>
+</li>
+</ol>
+<p>{% /check %}</p>
+<h2 id="example-apple-prices">Example: Apple Prices</h2>
+<p>To demonstrate how all this works together, let's use the following raw data from the U.S. Department of Agriculture.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_raw.png#center" alt=""></p>
+<h3 id="step-1-choosing-variables">Step 1: Choosing Variables</h3>
+<p>With this data, it seems reasonable that the year is independent and the price is dependent.</p>
+<h3 id="step-2-aligning-and-scaling-data">Step 2: Aligning and Scaling Data</h3>
+<p>To avoid a graph that spans $2009$ units, we choose to align the years by converting them to &quot;years since 2000&quot;.  This is done by subtracting $2000$ from each year.</p>
+<p>And we might want to convert the price to &quot;<em>dollars</em> per pound&quot; rather than <em>cents</em> per pound.  To do this we'll change the scale of the prices by dividing each price by $100$.</p>
+<p>The result of aligning the years and scaling the prices is shown below.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_aligned.png#center" alt=""></p>
+<h3 id="step-3-using-a-scatterplot-to-choose-a-function">Step 3: Using a Scatterplot to Choose a Function</h3>
+<p>Now that we have aligned and scaled the apple data, let's examine the scatterplot and compare its shape with the shapes of the six basic functions that we know.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_graph.svg#center" alt=""></p>
+<p>Does the data look like the identity function or the square function? Perhaps it looks like the reciprocal or the cube root function?</p>
+<p>Since this data appears linear, we should be able to model it with a transformed version of the identity function $f(x)=x$.  For simplicity, we will use the slope-intercept form of a line $y = \color{blue}{m} x + \color{green}{b}$ but the point-slope form could be used as well.</p>
+<h3 id="step-4--using-transformations-to-fit-the-function-to-the-data">Step 4:  Using Transformations to Fit the Function to the Data</h3>
+<p>All that remains is to find values of $\color{red}{m}$ and $\color{green}{b}$ that make the model fit the data as closely as possible.</p>
+<p>In the figure below, you are free to change both the slope $\color{red}{m}$ and the y-intercept $\color{green}{b}$ until you find a line that fits the data.  Make a note of your equation before continuing.</p>
+<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
+      <iframe src="https://www.geogebra.org/material/iframe/id/m9XFVxlH/border/fafafa" scrolling="no"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent">
+      </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+  <a href="https://www.geogebra.org/m/m9XFVxlH"><img src="https://www.geogebra.org/resource/m9XFVxlH/XNmissvYwqQV8RC8/material-m9XFVxlH-thumb@l.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/m9XFVxlH"><a href="https://www.geogebra.org/m/m9XFVxlH">https://www.geogebra.org/m/m9XFVxlH</a></a></p>
+</div>
+<p>You may have had trouble finding just one line that fit well.  In fact, good arguments could be made for several lines.  However, the line that is as close as possible to each point is the line $\color{blue}{y} = \color{red}{0.04}x + \color{green}{0.86}$.</p>
+<p>Where did this equation come from, and how do we know it is the best?  Well, that's a great question would take a few weeks in a statistics course to explain fully.  For now, it's enough to know that most graphing utilities have programs that fit equations to data.  That process is called <em>least squares regression</em> and we will look at it later in this chapter.</p>
+<h3 id="step-5-constructing-the-model">Step 5: Constructing the Model</h3>
+<p>Now that we have an equation, $\color{blue}{y} = \color{red}{0.04}x + \color{green}{0.86}$, it's time to turn that into an actual model.</p>
+<p>A model is not just an equation or function, it also includes a description of the variables and their units of measure.  Without an accurate description, the function itself is meaningless since there would be no way to relate it to the real world.</p>
+<p>Since our independent variable is time in years since $2000$, we take the liberty of using $t$ in place of $\color{blue}{x}$.</p>
+<p>Similarly, using $p$ instead of $\color{blue}{y}$ will help us remember that the dependent variable represents the price of apples.  We are now ready to write our model.</p>
+<blockquote>
+<p>According to data provided by the U.S. Department of Agriculture, the price $p$ of apples per pound in dollars can be modeled by the function
+[ p(t) = 0.04t + 0.86 ]
+where $t$ is the time in years since 2000.</p>
+</blockquote>
+<h3 id="step-6--using-the-model-to-make-predictions">Step 6:  Using the Model to Make Predictions</h3>
+<p>We can use this model to estimate the price of apples in any year we want.  For example, to predict the price of a pound of apples in the year 2030 we simply evaluate the function for $t=30$ (remember, $t$ is years <em>since</em> 2000.)</p>
+<p>[
+p(30) = 0.04(30) + 0.86 = 2.06
+]</p>
+<p>Thus, our model predicts the average price of a pound of apples will be $2.06 in the year 2030.  How accurate is that?  We'll have to wait and see.</p>
+<h2 id="modeling-with-piecewise-defined-functions">Modeling with Piecewise-Defined Functions</h2>
 <div style="position:relative; clear:both; padding:0;">
-  <img src="https://duragauge.github.io/img/chapter-3/sushi-373588_1280.jpg"  title="Image by Design n Print from Pixabay"  alt="Image by Design n Print from Pixabay" style="display:block; width:100%; height:auto;" >
+  <img src="https://duragauge.github.io/img/chapter-6/pompidou_1.jpg"  title="Photo by Yann Caradec on Flickr"  alt="Photo by Yann Caradec on Flickr" style="display:block; width:100%; height:auto;" >
   <span style="position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;">
-    <a href = "https://pixabay.com/images/id-373588/">Image by Design n Print from Pixabay</a></span>
+    <a href = "https://www.flickr.com/photos/la_bretagne_a_paris/5995530090">Photo by Yann Caradec on Flickr</a></span>
 </div>
 <br>
-<p>Many people are concerned about the amount of mercury they ingest by eating some kinds of fish.  When small fish eat collect in large predatory fish such as shark, swordfish, and tuna.
-<label for="sn-fish" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-fish" class="margin-toggle" />
-<span class="sidenote"><img src="https://duragauge.github.io/img/chapter-3/MercuryFoodChain.svg#center" alt=""></span>
-Mercury levels in large fish can be over a million times higher than that found in the surrounding waters.</p>
-<p>The U. S. Environmental Protection Agency (EPA) believes that if a person has a blood mercury level under 5.8 micrograms per liter ($\mu$g/L) then they are relatively safe and should see no adverse effects.</p>
-<p>Suppose the Mercury level in your blood is at 15 $\mu$g/L.  If 5 days later it has only dropped to 14  $\mu$g/L, how long will it take to reach a safe level?</p>
-<p>If we assume mercury leaves your body in a continuous fashion, then we can try to find a model of the form $f(t)=ae^{k t}$.  From the information given we can find $k$ by solving  $14=15e^{k \thinspace 5}$.</p>
-<table>
-<thead>
-<tr>
-<th>$14 =15e^{k \thinspace 5}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{14}{15} =e^{5 \thinspace  k}$</td>
-<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{14}{15}\right) =\ln\left(e^{5 k}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{14}{15}\right) =5 k$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln\left(\frac{14}{15}\right)}{5} =k$</td>
-<td><em>Divide both sides by $5$.</em></td>
-</tr>
-<tr>
-<td>$k  \approx  -0.0138$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
-</table>
-<p>From this we see that the mercury concentration can be modeled by $f(t)=15e^{-0.0138  \thinspace  t}$.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Now that we know the model is $f(t)=15e^{-0.0138 \thinspace t}$, how do we figure out the amount of time it will take to reach a safe level of  5.8$\mu$/L?</li>
-</ol>
-<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We need to set $f(t)=5.8$ and solve the equation for $t$.</details>
-</div>
-<p>We know that if your blood mercury level is initially at 15 $\mu$/L, then the mercury concentration can be modeled by the function $f(t)=15e^{-0.0138  \thinspace t}$ where $t$ is time in days.</p>
-<p>To find out how long it will take to reach a safe level of 5.8 $\mu$g/L, we need to find $t$ so that $f(t)=5.8$.</p>
-<table>
-<thead>
-<tr>
-<th>$5.8 =  15e^{-0.0138 \thinspace  t}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{5.8}{15}  =  e^{-0.0138 \thinspace  t}$</td>
-<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{5.8}{15}\right)  =  \ln\left(e^{-0.0138 t}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{5.8}{15}\right)  =  -0.0138 t$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln\left(\frac{5.8}{15}\right)}{-0.0138}  =  t$</td>
-<td><em>Divide both sides by $-0.0138$.</em></td>
-</tr>
-<tr>
-<td>$t  \approx  68.85$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
-</table>
-<p>It appears that it will take roughly 69 days for the blood mercury concentration to return to a safe level.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>How would this process have changed if you were asked to find the biological half-life of mercury in the blood stream?</li>
-</ol>
-<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />To find the half-life we would need to solve for $t$ with $f(t)=\frac{1}{2} a$ where $a$ is the initial concentration.  The solving steps would be nearly identical to what was done above.</details>
-</div>
-<h3 id="biological-half-life">Biological Half-Life</h3>
-<p>It is very common to use the half-life model $f(x)=a\left(\frac{1}{2}\right)^{x/c}$ to describe the biological decay of substances in the body.  To change our continuous decay model for mercury into a half-life model, we must find $t$ so that $f(t)=\frac{1}{2}  a$, where $a$ is the initial concentration.</p>
-<table>
-<thead>
-<tr>
-<th>$\frac{1}{2} \cdot 15  =  15 e^{-0.0138 t}$</th>
-<th><em>Start with continuous decay model from above.</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{1}{2}  =  e^{-0.0138 t}$</td>
-<td><em>Divide both sides by $15$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{1}{2}\right)  =  \ln(e^{-0.0138 t})$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{1}{2}\right)  =  -0.0138 t$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln\left(\frac{1}{2}\right)}{-0.0138}  =  t$</td>
-<td><em>Divide both sides by $-0.0138$.</em></td>
-</tr>
-<tr>
-<td>$t  \approx  50.23$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
-</table>
-<p>This shows that the half-life of mercury in the body is about 50 days.  By taking $c=50$, we conclude that the function</p>
-<p>[
-f(x)=15\left(\frac{1}{2}\right)^{x/50}
+<p>The Pompidou Center in Paris has an amazing escalator. Designed by Italian architect Renzo Piano and British designer Richard Rogers, the 6 story escalator is encased in a glass tube and attached to the outside of the building!</p>
+<p>The Pompidou escalator is not a single straight line, but rather several small lines pieced together.  It's an example of a new type of function which we'll call <strong>piecewise-defined</strong> functions.  For instance, to model the Pompidou escalator we shift and stretch several pieces of the identity function and connect them together with horizontal line segments.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/pompidou_model.gif" alt=""></p>
+<p><strong>Piecewise-defined</strong> functions, such as this, give us a lot more flexibility when creating models.  No longer are we required to find a single function; we are now free to construct models in multiple pieces.</p>
+<p>When writing piecewise functions, we list the equations for each piece and then specify where each is used.  Consider, for example, the path a bounding ball.</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/piecewise_bounce.gif#center" alt="https://people.rit.edu/andpph/photofile-misc/stroboscope/bouncing-ball-7791m.jpg"></p>
+<p>Each bounce is an individual parabola, with its own equation, and its own limited domain.  The piecewise function for this particular ball is</p>
+<p>[ f(x)=\begin{cases}
+-(x+2)(x-2) &amp; \text{if } &amp; 0 \leq x \leq 2 \newline
+-1.2(x-2)(x-5) &amp; \text{if } &amp; 2 &lt;  x \leq 5 \newline
+-1.8(x-5)(x-7) &amp; \text{if } &amp; 5 &lt; x \leq 7
+\end{cases}
 ]</p>
-<p>is the half-life model for mercury concentration that is equivalent to our earlier continuous decay model.  Both both produce the same values, they are just written in different formats.</p>
+<p>To find a value such as $f(4)$, we first compare our x-value $4$ with the three inequalities.  Since $4$ would fit in $2&lt;x \leq 5$, we must use the second equation.  Thus, $f(4)=-1.2(4-2)(4-5) =2.4$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the piecewise function above to evaluate the following:</p>
+<ol>
+<li>
+<p>$f(0)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(0+2)(0-2) = 4$</details></p>
+</li>
+<li>
+<p>$f(2)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-(2+2)(2-2)=0$</details></p>
+</li>
+<li>
+<p>$f(6)$<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$-1.8(6-5)(6-7)=1.8$</details></p>
+</li>
+</ol>
+</div>
 <h2 id="looking-ahead">Looking Ahead</h2>
-<p>In the two sections that follow, we will use transformations and/or technology to find models that fit larger sets of data, but the basic process will be the same as what we've done here.</p>
-<p>We will always start by comparing the properties of the data with the behaviors of functions we know so that we can choose an appropriate function model that can be used to predict unknown values.</p>
-<p>If the model predicts unreasonable values that do not make any sense, then we should try to explain how we know the result is an error and why it might have occurred.  An analysis of the errors can often lead to the construction of a more robust model.</p>
+<p>In the final two sections of this book, we will approach mathematical modeling from two different perspectives.</p>
+<p>In <a href="//chapter-6/6.2">6.2</a> we will have limited data and will need to find a suitable model based on descriptions of the situation and our knowledge of how linear, power, and exponential functions behave.</p>
+<p>In <a href="//chapter-6/6.3">last section</a> we will explore the practical application of using graphing utilities to create scatterplots and find functions that best fit the data.</p>
+<p>Throughout it all, remember that while models are powerful tools, they are not infallible. Careful consideration of underlying factors is crucial for drawing meaningful insights and making accurate predictions.</p>
+</div>
 
                         </div>
                     </section>
