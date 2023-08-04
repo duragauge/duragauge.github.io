@@ -155,15 +155,13 @@
 </tbody>
 </table>
 <p>Since the list on the right describes exactly what the inverse function does, we use it to build the equation for $f^{-1}$.  This is the final step.</p>
-<p>[
-\begin{align}
+<p>\begin{align}
 \small \color{#5fa2ce}{\text{Start with an $x$:}} &amp;&amp;&amp; x \newline
 \small \color{#5fa2ce}{\text{Multiply by $5$:}} &amp;&amp;&amp; 5x \newline
 \small \color{#5fa2ce}{\text{Subtract $1$:}} &amp;&amp;&amp; 5x - 1 \newline
 \small \color{#5fa2ce}{\text{Cube root:}} &amp;&amp;&amp; \sqrt[3]{5x-1} \newline
 \small \color{#5fa2ce}{\text{Write as a function:}} &amp;&amp; f^{-1}(x) &amp;= \sqrt[3]{5x-1}<br>
-\end{align}
-]</p>
+\end{align}</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Use this shoes-and-socks method to find the inverse of $g(x)=2x-7$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$g^{-1}(x)=\frac{x+7}{2}$</details></div>
 <h2 id="review-graphing-inverses">Review Graphing Inverses</h2>
 <p>Now consider a function such as $f(x)=\frac{x-5}{x-4}$ where $x$ appears more than once in the equation.  Since we cannot determine what happens to $x$ first, we cannot establish an order of operations and cannot use the shoes-and-socks method, despite the fact that this function is indeed one-to-one.</p>
@@ -187,45 +185,45 @@
 <h2 id="learn-the-switch-and-solve-method">Learn the Switch and Solve Method</h2>
 <p>We have seen that if $(x, y)$ is a point on the graph of a one-to-one function $f$, then the point $(y, x)$ is on the graph of $f^{-1}$.  The significance of this that switching $x$ and $y$ in the equation of a one-to-one function creates an implicit equation for its inverse.  All that remains is to solve that equation for $y$ so that we can write it with function notation.   For obvious reasons, this will be called the <strong>switch-and-solve</strong> method.</p>
 <p>The <strong>switch-and-solve</strong> method can be broken down into a four-step process.</p>
-<p>[
+<p>$$
 \begin{align}
 \text{Step 1:} &amp;&amp;&amp; \small \color{#5fa2ce}{\text{Replace $f(x)$ with $y$}} \newline
 \text{Step 2:} &amp;&amp;&amp; \small \color{#5fa2ce}{\text{Switch $x$ and $y$}} \newline
 \text{Step 3:} &amp;&amp;&amp; \small \color{#5fa2ce}{\text{Solve for $y$}} \newline
 \text{Step 4:} &amp;&amp;&amp; \small \color{#5fa2ce}{\text{Replace $y$ with $f^{-1}(x)$}}
 \end{align}
-]</p>
+$$</p>
 <p>We will illustrate this process by returning to the same function $f(x)=\frac{x^{3}+1}{5}$ that we used earlier with the shoes-and-socks method.</p>
 <p><strong>$\text{Step 1: } \small \color{#5fa2ce}{\text{ Replace $f(x)$ with $y$. }}$</strong><br>
 To find the inverse using the switch-and-solve method we start by rewriting the function as an equation with $y$ in place of $f(x)$.</p>
-<p>[
+<p>$$
 y=\frac{x^{3}+1}{5}
-]</p>
+$$</p>
 <p><strong>$\text{Step 2: } \small \color{#5fa2ce}{\text{ Switch $x$ and $y$. }}$</strong><br>
 Then we turn every $x$ into a $y$ and vice versa.</p>
-<p>[
+<p>$$
 x = \frac{y^{3}+1}{5}
-]</p>
+$$</p>
 <p><strong>$\text{Step 3: } \small \color{#5fa2ce}{\text{ Solve for $y$. }}$</strong><br>
 The next step is to solve this equation for $y$.</p>
-<p>[
+<p>$$
 \begin{align}
 5x &amp;= y^{3}+1 &amp;&amp; \small \color{#5fa2ce}{\text{Multiply both sides by $5$}} \newline
 5x-1 &amp;= y^{3} &amp;&amp; \small \color{#5fa2ce}{\text{Subtract $1$ from both sides}} \newline
 \sqrt[3]{5x-1} &amp;= y &amp;&amp; \small \color{#5fa2ce}{\text{Take the cube root}}
 \end{align}
-]</p>
+$$</p>
 <p><strong>$\text{Step 4: } \small \color{#5fa2ce}{\text{ Replace $y$ with $f^{-1}(x)$. }}$</strong><br>
 Lastly we rewrite this equation using inverse function notation.</p>
-<p>[
+<p>$$
 f^{-1}(x) = \sqrt[3]{5x-1}
-]</p>
+$$</p>
 <p>Notice that this is the same answer we obtained earlier with the shoes-and-socks method and that the steps needed to solve for $y$ are exactly the steps listed in the shoes-and-socks method.</p>
 <h2 id="use-the-switch-and-solve-method">Use the Switch and Solve Method</h2>
 <p>Since there are several solving techniques that may arise when doing the switch-and-solve method, we will explore a few more examples before looking at functions with more than one $x$.</p>
 <h3 id="example-1">Example 1</h3>
 <p>Here we will find the inverse of $f(x)=e^x-2$.  Since this is an exponential function, after we switch variables we should expect the solving process to involve the natural logarithm.</p>
-<p>[
+<p>$$
 \begin{align}
 f(x) &amp;= e^x-2 &amp;&amp; \small \color{#5fa2ce}{\text{Original function}} \newline
 y &amp;= e^x-2 &amp;&amp; \small \color{#5fa2ce}{\text{Replace $f(x)$ with $y$}} \newline
@@ -235,19 +233,19 @@ x + 2 &amp;= e^y &amp;&amp; \small \color{#5fa2ce}{\text{Add $2$}} \newline
 \ln(x+2) &amp;= y &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}} \newline
 f^{-1}(x) &amp;= \ln(x+2) &amp;&amp; \small \color{#5fa2ce}{\text{Replace $y$ with $f^{-1}(x)$}}
 \end{align}
-]</p>
+$$</p>
 <p>We now know that the inverse of $f(x)=e^x-2$ is $f^{-1}(x)=\ln(x+2)$.</p>
 <h3 id="example-2">Example 2</h3>
 <p>In this next example we will use the switch-and-solve method to find the inverse of $f(x)=-5x+8$.  The solving steps do not involve anything beyond basic inverse operations.  Please try each step on your own and then check your answer.</p>
-<p>$\text{Step 1: } \small \color{#5fa2ce}{\text{ Replace $f(x)$ with $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[y=-5x+8]</details></p>
-<p>$\text{Step 2: } \small \color{#5fa2ce}{\text{ Switch $x$ and $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[x=-5y+8]</details></p>
+<p>$\text{Step 1: } \small \color{#5fa2ce}{\text{ Replace $f(x)$ with $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$y=-5x+8$$</details></p>
+<p>$\text{Step 2: } \small \color{#5fa2ce}{\text{ Switch $x$ and $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$x=-5y+8$$</details></p>
 <p>$\text{Step 3: } \small \color{#5fa2ce}{\text{ Solve for $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />\begin{align} x&amp;=-5y+8 \newline
 x-8 &amp;= -5y &amp;&amp; \small \color{#5fa2ce} {\text{subtract 8}} \newline
 \frac{x-8}{-5}&amp;=y &amp;&amp; \small \color{#5fa2ce} {\text{divide by -5}}\end{align}</details></p>
-<p>$\text{Step 4: } \small \color{#5fa2ce}{\text{ Replace $y$ with $f^{-1}(x)$. }}$</td><td><details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[f^{-1}(x)=\frac{x-8}{-5}]</details></p>
+<p>$\text{Step 4: } \small \color{#5fa2ce}{\text{ Replace $y$ with $f^{-1}(x)$. }}$</td><td><details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$f^{-1}(x)=\frac{x-8}{-5}$$</details></p>
 <h3 id="example-3">Example 3</h3>
 <p>Now let's look at a power function $f(x)=x^{2/3}+6$ and restrict its domain $x\leq0$ so that it is one-to-one.  The steps below outline the complete process for finding the equation for $f^{-1}$.</p>
-<p>[
+<p>$$
 \begin{align}
 f(x) &amp;= x^{2/3}+6 &amp;&amp; \small \color{#5fa2ce} {\text{Original function}} \newline
 y &amp;= x^{2/3}+6 &amp;&amp; \small \color{#5fa2ce} {\text{Replace $f(x)$ with $y$}} \newline
@@ -257,7 +255,7 @@ x-6 &amp;= y^{2/3} &amp;&amp; \small \color{#5fa2ce} {\text{Subtract $6$}} \newl
 \pm\sqrt{(x-6)^{3}} &amp;= y &amp;&amp; \small \color{#5fa2ce} {\text{Apply the square root}} \newline
 y &amp;= \pm(x-6)^{3/2} &amp;&amp; \small \color{#5fa2ce} {\text{Rewrite}} \newline
 \end{align}
-]</p>
+$$</p>
 <p>We now face a choice, should we pick $(x-6)^{3/2}$ or $-(x-6)^{3/2}$ as the inverse?</p>
 <p>Since the inputs and outputs of a function and its inverse should switch places, comparing the domain and range of our original function against these two options should point us to the correct choice.</p>
 <p>Both of our options have a domain of $x\geq6$, matching the range of $f$, but only $-(x-6)^{3/2}$ has a range that matches the domain of $f$, making it the correct choice for $f^{-1}$.</p>
@@ -275,7 +273,7 @@ y &amp;= \pm(x-6)^{3/2} &amp;&amp; \small \color{#5fa2ce} {\text{Rewrite}} \newl
 </div>
 <h2 id="inverses-of-combined-functions">Inverses of Combined Functions</h2>
 <p>Let's return to the function $f(x)=\frac{x-5}{x-4}$ which we graphed earlier.  Since $x$ occurs more than once, the switch-and-solve method is the best way to find the inverse.   Here are all of the steps.</p>
-<p>[
+<p>$$
 \begin{align}
 f(x) &amp;= \frac{x-5}{x-4} &amp;&amp; \small \color{#5fa2ce} {\text{Original function}} \newline
 y &amp;= \frac{x-5}{x-4} &amp;&amp; \small \color{#5fa2ce} {\text{Replace $f(x)$ with $y$}} \newline
@@ -288,33 +286,33 @@ y(x-1) &amp;= 4x-5 &amp;&amp; \small \color{#5fa2ce} {\text{Factor out $y$}} \ne
 y &amp;= \frac{4x-5}{x-1} &amp;&amp; \small \color{#5fa2ce} {\text{Divide by $x-1$}} \newline
 f^{-1}(x) &amp;= \frac{4x-5}{x-1} &amp;&amp; \small \color{#5fa2ce}{\text{Replace $y$ with $f^{-1}(x)$}}
 \end{align}
-]</p>
+$$</p>
 <p>Using function notation, we can now say that $f^{-1}=\frac{4x-5}{x-1}$ is the inverse of $f(x)=\frac{x-5}{x-4}$.</p>
 <p>As you can see, finding a formula for an inverse function can be very difficult.  In fact, sometimes it is impossible.  For example, to find the inverse of $f(x)=xe^{x}$, $x\geq0$ we would need to solve $x=ye^y$ for $y$.</p>
-<p>[
+<p>$$
 \begin{align}
 x &amp;= ye^y &amp;&amp; \small \color{#5fa2ce} {\text{Original equation}} \newline
 \frac{x}{y} &amp;= e^y &amp;&amp; \small \color{#5fa2ce} {\text{Divide by } y} \newline
 \ln\left(\frac{x}{y}\right) &amp;= y &amp;&amp; \small \color{#5fa2ce} {\text{Apply the natural logarithm}}
 \end{align}
-]</p>
+$$</p>
 <p>By removing the exponential we've freed up one $y$, but the other $y$ is now stuck inside of the logarithm.  If we were to free the $y$ inside of the logarithm, then the other $y$ would be trapped back in an exponential.  It's a loop we could never get out of.</p>
 <h2 id="verify-inverse-functions">Verify Inverse Functions</h2>
 <p><img src="https://duragauge.github.io/img/chapter-4/tahiti_flight.png#center" alt="">
 You'll remember that in <a href="../1.5">Section 1.5</a> we introduced the idea that a function combined with its inverse should act like a round trip airplane flight, bringing you back to where you started.  Now that we understand composition, we can state this rule more precisely.</p>
 <p>Given a one-to-one function $f$ and its inverse $f^{-1}$, the following round trip properties hold</p>
-<p>[
+<p>$$
 (f \circ f^{-1})(x)=f(f^{-1}(x))=x
-]</p>
+$$</p>
 <p>for all the $x$ in the domain of $f^{-1}$ and</p>
-<p>[
+<p>$$
 (f^{-1} \circ f)(x)=f^{-1}(f(x))=x
-]</p>
+$$</p>
 <p>for all the $x$ in the domain of $f$.  In other words, a function and its inverse should cancel each other, no matter which way they are composed together.</p>
 <p>These properties are only true for inverse functions.  As a consequence, they can be used to verify that two functions are inverses.</p>
 <p>Earlier, in <a href="./#example-2">Example 2</a>, we found that the inverse of $\color{red}{f(x)=-5x+8}$  was $\color{blue}{f^{-1}(x)=\frac{x-8}{-5}}$.  Let's use the round trip properties to verify that these are indeed inverses.</p>
 <p>First we'll check to see that $(f \circ f^{-1})(x) = x$.</p>
-<p>[
+<p>$$
 \begin{align}
 (f \circ f^{-1})(x) &amp;= \color{red}{f \left( \color{blue}{f^{-1}(x)} \right) } &amp;&amp;  \small \color{#5fa2ce} {\text{Definition of composition}} \newline
 &amp;= \color{red}{f \left( \color{blue}{\frac{x-8}{-5}} \right) } &amp;&amp;  \small \color{#5fa2ce} {\text{Use equation for } f^{-1}(x)} \newline
@@ -322,9 +320,9 @@ You'll remember that in <a href="../1.5">Section 1.5</a> we introduced the idea 
 &amp;= \color{red}{ \left( \color{blue}{x-8} \right) +8} &amp;&amp;  \small \color{#5fa2ce} {\text{Multiplication and division cancel}} \newline
 &amp;= x &amp;&amp;  \small \color{#5fa2ce} {\text{Simplify}}
 \end{align}
-]</p>
+$$</p>
 <p>We also need to check composition in the other direction to see if $(f^{-1} \circ f)(x) = x$.</p>
-<p>[
+<p>$$
 \begin{align}
 (f^{-1} \circ f)(x) &amp;= \color{blue}{f^{-1} \left( \color{red}{f(x)} \right) } &amp;&amp;  \small \color{#5fa2ce} {\text{Definition of composition}} \newline
 &amp;= \color{blue}{f^{-1} \left( \color{red}{-5x + 8} \right) } &amp;&amp;  \small \color{#5fa2ce} {\text{Use equation for } f(x)} \newline
@@ -332,9 +330,9 @@ You'll remember that in <a href="../1.5">Section 1.5</a> we introduced the idea 
 &amp;= \color{blue}{\frac{\color{red}{-5x}}{-5}} &amp;&amp;  \small \color{#5fa2ce} {\text{Cancel +8 and -8}} \newline
 &amp;= x &amp;&amp;  \small \color{#5fa2ce} {\text{Simplify}}
 \end{align}
-]</p>
+$$</p>
 <p>Since both round trip properties hold, we have verified that these two functions are truly inverses of eachother.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Are the functions $\color{red}{f(x)=\frac{x}{2}+3}$ and $\color{blue}{g(x)=2x-3}$ inverses?  Use the round trip properties to justify your answer. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, these are not inverses.  [(f \circ g)(x)=\color{red}{ \frac{ \color{blue}{2x-3}}{2} + 3 } = x + \frac{3}{2}] and [(g \circ f)(x) = \color{blue}{2\left(\color{red}{\frac{x}{2}+3}\right)-3}=x+3]  Neither of these equal $x$, so the functions cannot be inverses.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Are the functions $\color{red}{f(x)=\frac{x}{2}+3}$ and $\color{blue}{g(x)=2x-3}$ inverses?  Use the round trip properties to justify your answer. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, these are not inverses.  $$(f \circ g)(x)=\color{red}{ \frac{ \color{blue}{2x-3}}{2} + 3 } = x + \frac{3}{2}$$ and $$(g \circ f)(x) = \color{blue}{2\left(\color{red}{\frac{x}{2}+3}\right)-3}=x+3$$  Neither of these equal $x$, so the functions cannot be inverses.</details></div>
 <h2 id="applications-of-inverses">Applications of Inverses</h2>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-1/LMGould.jpg"  title="Photo by Bob DeValentino of the NSF"  alt="Photo by Bob DeValentino of the NSF" style="display:block; width:100%; height:auto;" >
@@ -344,7 +342,7 @@ You'll remember that in <a href="../1.5">Section 1.5</a> we introduced the idea 
 <br>
 <p>One of the main jobs of the ship L.M. Gould  is to pick up containers of food and supplies from Punta Arenas, Chile, and deliver them to the scientists working at Palmer Station in Antarctica.</p>
 <p>Suppose the amount of food, in pounds, that the station has on hand $x$ days after being re-supplied is given by $f(x)=11200-200x$.  The inverse of this function is</p>
-<p>[
+<p>$$
 \begin{align}
 f(x) &amp;= 11200-200x &amp;&amp; \small \color{#5fa2ce} {\text{Original function}} \newline
 y &amp;= 11200-200x &amp;&amp; \small \color{#5fa2ce} {\text{Replace $f(x)$ with $y$}} \newline
@@ -352,10 +350,10 @@ x &amp;= 11200-200y &amp;&amp; \small \color{#5fa2ce} {\text{Switch $x$ and $y$}
 y &amp;= \frac{x - 11200}{-200} &amp;&amp; \small \color{#5fa2ce} {\text{Solve for $y$}} \newline
 f^{-1}(x) &amp;= \frac{x - 11200}{-200} &amp;&amp; \small \color{#5fa2ce}{\text{Replace $y$ with $f^{-1}(x)$}}
 \end{align}
-]</p>
+$$</p>
 <p>But how should we interpret the inverse, what would it mean in this situation?  Our new switch-and-solve method not only gives the equation for the inverse, but can also help us see the context of the inverse as well.</p>
 <p>The key is to recognize that the inputs and outputs are trading places.  If the original function computes pounds of food based on the number of days since the supply ship arrived, then the inverse would allow the scientists to calculate how long it has been since the ship last visited by measuring the amount of food available.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Evaluate $f^{-1}(1000)$ and describe what it would mean to the scientists in Antarctica. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[f^{-1}(1000) = \frac{1000-11200}{-200} = 51]
+<div class="alert alert-success"><h4>QUICK CHECK</h4>Evaluate $f^{-1}(1000)$ and describe what it would mean to the scientists in Antarctica. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$f^{-1}(1000) = \frac{1000-11200}{-200} = 51$$
 This means that when the scientists have $1000$ pounds of food left, they will know that the supply ship came 51 days ago.</details></div>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>In this chapter we've seen how to make new, more complicated functions by combining simple functions through the operations of function addition, subtraction, multiplication, division and composition.</p>
