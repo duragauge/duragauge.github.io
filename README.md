@@ -24,5 +24,5 @@
 5.3 Applications of Polynomials
 5.4 Rational Functions
 6.1 Concepts of Modeling
-6.2 Algebraic Methods
+6.2 Algebraic Methods for Modeling
 6.3 Modeling Using Technology
