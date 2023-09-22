@@ -59,19 +59,61 @@
       <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
-            <link href="https://duragauge.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
-            <script src="https://duragauge.github.io/pagefind/pagefind-ui.js" type="text/javascript"></script>
-            <div id="search"></div>
-            <script>
-              window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search" });
-              });
-            </script>
+
         </nav>
 
     </header>
 
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
 
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#the-modeling-process">The Modeling Process</a></li>
+    <li><a href="#scatterplots">Scatterplots</a></li>
+    <li><a href="#interpolation-and-extrapolation">Interpolation and Extrapolation</a></li>
+    <li><a href="#another-tornado-data-set">Another Tornado Data Set</a></li>
+    <li><a href="#independent-and-dependent-variables">Independent and Dependent Variables</a></li>
+    <li><a href="#aligning-and-scaling-data">Aligning and Scaling Data</a></li>
+    <li><a href="#modeling-with-transformations">Modeling with Transformations</a>
+      <ul>
+        <li><a href="#slope-intercept-form-of-a-line">Slope-Intercept Form of a Line</a></li>
+        <li><a href="#point-slope-form-of-a-line">Point-Slope Form of a Line</a></li>
+        <li><a href="#vertex-form-of-a-quadratic">Vertex Form of a Quadratic</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-apple-prices">Example: Apple Prices</a>
+      <ul>
+        <li><a href="#step-1-choosing-variables">Step 1: Choosing Variables</a></li>
+        <li><a href="#step-2-aligning-and-scaling-data">Step 2: Aligning and Scaling Data</a></li>
+        <li><a href="#step-3-using-a-scatterplot-to-choose-a-function">Step 3: Using a Scatterplot to Choose a Function</a></li>
+        <li><a href="#step-4--using-transformations-to-fit-the-function-to-the-data">Step 4:  Using Transformations to Fit the Function to the Data</a></li>
+        <li><a href="#step-5-constructing-the-model">Step 5: Constructing the Model</a></li>
+        <li><a href="#step-6--using-the-model-to-make-predictions">Step 6:  Using the Model to Make Predictions</a></li>
+      </ul>
+    </li>
+    <li><a href="#modeling-with-piecewise-defined-functions">Modeling with Piecewise-Defined Functions</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+
+
+      </nav>
 
 
         <!-- Main -->
@@ -100,7 +142,7 @@
 <p>Once a model has been created, we can use the rules of mathematics to discover things about its mathematical behavior. The insights gained from these analyses can, in turn, be used to make predictions and gain understanding about how the real-world object might behave.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/modeling_diagram.svg#center" alt=""></p>
 <p>Through continued observations and adjustments, the model can be refined to more accurately represent the real-world phenomenon it is intended to simulate.</p>
-<p>While our models will never be perfect, there is a good chance that they might be accurate enough to be genuinely useful.  Renowened physicist Eugene Wigner referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This theme will be prevalent throughout this chapter.</p>
+<p>While our models will never be perfect, there is a good chance that they might be accurate enough to be genuinely useful.  Renowned physicist Eugene Wigner referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This theme will be prevalent throughout this chapter.</p>
 <h2 id="scatterplots">Scatterplots</h2>
 <p>Many physical laws, like the law of gravity, were discovered by gathering data and looking for patterns.  One of our primary tools for visualizing data is the <strong>scatterplot</strong>.  A scatterplot is nothing more than pairs of data plotted as points on a grid.</p>
 <p>For instance, researchers from Purdue University analyzed 1285 tornadoes in Indiana from 1950 to 2012.
@@ -111,7 +153,7 @@
 One set of data compared the number of tornadoes observed at different hours of the day.  The scatterplot below illustrates this data.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/tornado_time.svg#center" alt=""></p>
 <p>The scatterplot reveals a distinct pattern, suggesting that most tornadoes form late in the afternoon.  This is a well-known result that follows from the fact that, by mid-afternoon, the sun has sufficiently heated the ground and atmosphere enough to produce thunderstorms.</p>
-<p>Notice that there is a sublte but important difference between the data (black dots) and the model (the red curve).  The model allows us to make predictions for values that were not recorded.  For instance, no data point corresponds to 10:15am, but using the model we can say the number is likely to be around 20 tornadoes.</p>
+<p>Notice that there is a subtle but important difference between the data (black dots) and the model (the red curve).  The model allows us to make predictions for values that were not recorded.  For instance, no data point corresponds to 10:15am, but using the model we can say the number is likely to be around 20 tornadoes.</p>
 <h2 id="interpolation-and-extrapolation">Interpolation and Extrapolation</h2>
 <p>Models can be used to make estimations in two different ways. Making a prediction outside of a data set is called <strong>extrapolation</strong>.  Estimating a value that is in between known values is <strong>interpolation</strong>.</p>
 <p>For instance, if we knew the number of tornadoes in 1900 and in 2000, predicting how many will occur in 2050 would be an extrapolation since that value lies beyond the known data. Extrapolation assumes that an existing trend will continue unchanged into the future, which is not always guaranteed.</p>
@@ -152,14 +194,14 @@ One set of data compared the number of tornadoes observed at different hours of 
 <p>Research even suggests that slower winds and hotter air in urban areas can actually <em>increase</em> the tornado-genesis process.  According to NOAA's tornado safety guidelines, the safest place is in a <a href="https://www.spc.noaa.gov/faq/tornado/#Safety" title="NOAA's tornado safety guidelines">fortified tornado shelter.</a></p>
 <p>This example serves as a valuable lesson that even when data displays an apparent pattern, it is crucial to take time to investigate and consider other underlying factors before we make predictions or draw conclusions from our model.</p>
 <h2 id="independent-and-dependent-variables">Independent and Dependent Variables</h2>
-<p>In all of the tonado data sets we've seen, it was up to the researchers to decide which variable was independent and which was dependent.</p>
+<p>In all of the tornado data sets we've seen, it was up to the researchers to decide which variable was independent and which was dependent.</p>
 <p>Whenever we work with a raw set of data, it will be up to us to do the same thing and determine which quantity is the independent and which one is dependent.</p>
 <p>The <strong>independent variable</strong> is the parameter that changes or controls the other variable, and it is often plotted on the x-axis of a graph.</p>
 <p>On the other hand, the <strong>dependent variable</strong> is the outcome or response that is measured or observed as the independent variable changes, and it is typically plotted on the y-axis of a graph.</p>
 <p>Often, certain variables are naturally independent or dependent based on our knowledge of the situation. For example, suppose researchers collect data on the dosage of a medication given to patients and their corresponding blood pressure measurements.  Since researchers control the dosage, it would be considered the independent variable.  Blood pressure, on the other hand, is expected to change in response to the dosage level, so it should be the dependent variable.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>In an experiment, data is collected on the amount of sunlight and the harvest yield of a tomato plant.  Which variable would be considered depenent?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We would expect the yield to be dependent on the amount of sunlight.</details></p>
+<p>In an experiment, data is collected on the amount of sunlight and the harvest yield of a tomato plant.  Which variable would be considered dependent?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We would expect the yield to be dependent on the amount of sunlight.</details></p>
 </li>
 <li>
 <p>If the speed of a rocket is your dependent variable, what kinds of things might be reasonable independent variables? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Anything that influences the speed could be a reasonable choice:  time since launch; weight of the rocket; amount of fuel; size of the payload; etc.</details></p>
@@ -172,7 +214,7 @@ One set of data compared the number of tornadoes observed at different hours of 
 <h2 id="aligning-and-scaling-data">Aligning and Scaling Data</h2>
 <p>To make the data more manageable and relatable, we often use aligning and scaling techniques.</p>
 <p><strong>Aligning</strong> the data involves shifting the independent variable to a more convenient starting point. <strong>Scaling</strong> the data allows us to convert the units of the dependent variable to a more practical scale.</p>
-<p>Let's look at an example where both of these might be helpful.  The table below shows the total number of mobile game downloads on iOS and Adroid from 2015 to 2022.</p>
+<p>Let's look at an example where both of these might be helpful.  The table below shows the total number of mobile game downloads on iOS and Android from 2015 to 2022.</p>
 <table>
 <thead>
 <tr>
@@ -217,7 +259,7 @@ One set of data compared the number of tornadoes observed at different hours of 
 </table>
 <p>Since 2015 is a convenient starting point, we can align this data by converting the time to &quot;years since 2015&quot;. This is done by subtracting 2015 from each year, resulting in the aligned years 0, 1, 2, ..., 7.</p>
 <p>Next, we might want to scale the number of downloads so that 1 on the graph represents &quot;1 billion downloads&quot;. We can do this by dividing each value by 1,000,000,000.</p>
-<p>After aligning and scaling our data table has the same information but with more maneagable values.  Notice how the labels of each column have been updated to reflect those changes.</p>
+<p>After aligning and scaling our data table has the same information but with more manageable values.  Notice how the labels of each column have been updated to reflect those changes.</p>
 <table>
 <thead>
 <tr>

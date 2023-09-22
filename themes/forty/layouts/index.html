@@ -40,15 +40,5 @@
 	{{ "<!-- Scripts -->" | safeHTML}}
 		{{ partial "js.html" . }}
 
-      
-		<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
-		<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
-		<div id="search">Is this a DIV for Searching?</div>
-		<script>
-			window.addEventListener('DOMContentLoaded', (event) => {
-				new PagefindUI({ element: "#search" });
-			});
-		</script>
-
 	</body>
 </html>

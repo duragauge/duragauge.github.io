@@ -59,19 +59,50 @@
       <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
-            <link href="https://duragauge.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
-            <script src="https://duragauge.github.io/pagefind/pagefind-ui.js" type="text/javascript"></script>
-            <div id="search"></div>
-            <script>
-              window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search" });
-              });
-            </script>
+
         </nav>
 
     </header>
 
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
 
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#general-strategy">General Strategy</a>
+      <ul>
+        <li><a href="#example-keplers-third-law">Example: Kepler's Third Law</a></li>
+        <li><a href="#example-allometry">Example: Allometry</a></li>
+      </ul>
+    </li>
+    <li><a href="#check-multiple-models">Check Multiple Models</a>
+      <ul>
+        <li><a href="#example-standing-mile">Example: Standing Mile</a></li>
+        <li><a href="#example--k-12-administration">Example:  K-12 Administration</a></li>
+        <li><a href="#example-redmond-oregon">Example: Redmond, Oregon</a></li>
+        <li><a href="#example-wild-mustangs">Example: Wild Mustangs</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+
+
+      </nav>
 
 
         <!-- Main -->
@@ -106,7 +137,7 @@
 <li><strong>Investigate Potential Model Breakdowns</strong>: We'll examine instances where the model might not accurately capture certain aspects of the data. This investigation helps in refining the model and understanding its limitations.</li>
 </ol>
 <p>While a graphing calculator or other software can give you equations and values (many of which are discussed in a full class on statistics), it can't see the data.  It can, for example, find the line that fits the data best, but it can't decide if a linear model is an appropriate choice--that's up to you.</p>
-<p>It's also important to point out that even when we can identify patterns and show a correlation in data, that doesn't necessarily imply causation between the two variables.  For instance, we saw that time of day is connected to the number of observed tornados, but that doesn't mean the clock generates tonadoes.  Establishing causality involves carefully designed and controlled experiments, something we'll touch on in the next example.</p>
+<p>It's also important to point out that even when we can identify patterns and show a correlation in data, that doesn't necessarily imply causation between the two variables.  For instance, we saw that time of day is connected to the number of observed tornados, but that doesn't mean the clock generates tornadoes.  Establishing causality involves carefully designed and controlled experiments, something we'll touch on in the next example.</p>
 <h3 id="example-keplers-third-law">Example: Kepler's Third Law</h3>
 <div style="position:relative; clear:both; padding:0;">
   <img src="https://duragauge.github.io/img/chapter-6/solar-system-11111_1280.jpg"  title="Image by NASA"  alt="Image by NASA" style="display:block; width:100%; height:auto;" >
@@ -392,7 +423,7 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
 <p>Due to the shape, we can eliminate linear and exponential models from consideration.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Based on the shape of the data in the scatterplot, which types of functions do you think could be the best fit? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The shape is similar to a logarithmic function, but it is also reminiscent of a power function with a power $0&lt;p&lt;1$, like the square root function.  It might also be worthwhile to see if a logistic function might fit.</details></div>
 <p>Based on the curve of the data, it seems that we should run a logistic regression <code>Logistic</code>, a logarithmic regression <code>LnReg</code>, and a power regression <code>PwrReg</code>.</p>
-<p>Before running any regressions, we often align the data first.  In this case, it would seem natural to let $x$ represent years since 1990.  However, that would give us a value of $x=0$ and both logaritmic and power regression need $x$-values larger than $0$.  To adjust for that, we'll let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
+<p>Before running any regressions, we often align the data first.  In this case, it would seem natural to let $x$ represent years since 1990.  However, that would give us a value of $x=0$ and both logarithmic and power regression need $x$-values larger than $0$.  To adjust for that, we'll let $x$ represent years since 1989.  Now all of our $x$ values are positive.</p>
 <table>
 <thead>
 <tr>

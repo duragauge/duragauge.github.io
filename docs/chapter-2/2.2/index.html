@@ -59,19 +59,58 @@
       <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
-            <link href="https://duragauge.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
-            <script src="https://duragauge.github.io/pagefind/pagefind-ui.js" type="text/javascript"></script>
-            <div id="search"></div>
-            <script>
-              window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search" });
-              });
-            </script>
+
         </nav>
 
     </header>
 
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
 
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#the-standard-power-function-model">The Standard Power Function Model</a></li>
+    <li><a href="#applications-of-power-functions">Applications of Power Functions</a>
+      <ul>
+        <li><a href="#tugboats">Tugboats</a></li>
+        <li><a href="#pendulums">Pendulums</a></li>
+        <li><a href="#falling-bodies">Falling Bodies</a></li>
+      </ul>
+    </li>
+    <li><a href="#direct-variation">Direct Variation</a></li>
+    <li><a href="#inverse-variation">Inverse Variation</a>
+      <ul>
+        <li><a href="#boyles-law">Boyle's Law</a></li>
+      </ul>
+    </li>
+    <li><a href="#combining-direct-and-inverse-variation">Combining Direct and Inverse Variation</a>
+      <ul>
+        <li><a href="#stopping-distance">Stopping Distance</a></li>
+        <li><a href="#newtons-universal-law-of-gravity">Newton's Universal Law of Gravity</a></li>
+      </ul>
+    </li>
+    <li><a href="#finding-the-constant-of-variation">Finding the Constant of Variation</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+
+
+      </nav>
 
 
         <!-- Main -->
@@ -299,7 +338,7 @@ d =  \frac{0.0336 v^2 }{\mu}
 <p>[
 d =  \frac{0.0336(60)^{2}}{0.2}  \approx 605 \text{ feet}
 ]</p>
-<p>So if you were travelling at 60mph down a snow covered road, it would take about 605 feet for your car to stop once you had applied the brakes.</p>
+<p>So if you were traveling at 60mph down a snow covered road, it would take about 605 feet for your car to stop once you had applied the brakes.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose you were driving under the same conditions at a much safer speed of $30$ mph.  What would the stopping distance be? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $\mu=0.2$ and $v=30$ mph, we have [ d =  \frac{0.0336(30)^2}{0.2}  \approx  151.2 \text{ feet} ]</details></div>
 <h3 id="newtons-universal-law-of-gravity">Newton's Universal Law of Gravity</h3>
 <p>As a final example let's now turn our attention to Newton's law of gravity.  Isaac Newton discovered that the force of gravity $F$ between two objects, like the Sun and the Earth, is proportional to the product of their two masses, $m_1$ and $m_2$, and inversely proportional to the square of the distance $d$ between them.</p>
@@ -320,6 +359,13 @@ F =  k \frac{m_1 m_2 }{d^{2}}
 </ol>
 </div>
 <h2 id="finding-the-constant-of-variation">Finding the Constant of Variation</h2>
+<p>Occasionally, it will be necessary to find the constant of variation.  Whether dealing with direct or inverse variation, the process is basically the same:  insert two known values into the equation and solve for $k$.</p>
+<p>For instance, if $y$ varies directly with $x$ and $y=72$ when $x=12$, then we can find $k$ by solving $72=k\cdot12$ by dividing both sides by $12$ to get $k=6$. With this in hand, other values of $y$ can be calculated using the direct variation equation $y=6x$.</p>
+<p>As another example, suppose $y$ varies inversely with $x$ and that $y=3$ when $x=14$. Then $3=\frac{k}{14}$ and, after multiplying by $14$, we find that $k=42$.  So the inverse relationship between $x$ and $y$ is $y=\frac{42}{x}.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>It seems reasonable that the amount of paint needed to paint a wall is directly proportional to the surface area of the wall, since a larger wall requires more paint.  If it takes $5$ quarts to paint $600$ square feet, what is the constant of variation?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><p>If we let $y$ be the number of quarts of paint and $x$ be the square footage of the wall, then $y=kx$ since they are directly proportional.</p></p>
+<p>Substituting $y=5$ and $x=600$ we can solve $5=k\cdot 600$ to get $k=\frac{1}{120}$.</p>
+</details>
+</div>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>In this section we were given equations that represented real life scenarios and were able to evaluate them.  In the next section we will solve these equations for different parameters, and in the section after that we will create our own models.</p>
 

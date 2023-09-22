@@ -59,19 +59,64 @@
       <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
-            <link href="https://duragauge.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
-            <script src="https://duragauge.github.io/pagefind/pagefind-ui.js" type="text/javascript"></script>
-            <div id="search"></div>
-            <script>
-              window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search" });
-              });
-            </script>
+
         </nav>
 
     </header>
 
+<!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            
+        </ul>
 
+        <ul class="actions vertical">
+            
+                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+            
+            
+                <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
+            
+        </ul>
+        <div id="table_of_contents">
+          <p>Content on this page</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#identifying-functions-from-descriptions">Identifying Functions from Descriptions</a>
+      <ul>
+        <li><a href="#linear-functions-constant-rates">Linear Functions: Constant Rates</a></li>
+        <li><a href="#power-functions--proportional-changes">Power Functions:  Proportional Changes</a></li>
+        <li><a href="#exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</a></li>
+      </ul>
+    </li>
+    <li><a href="#writing-functions-from-descriptions">Writing Functions from Descriptions</a>
+      <ul>
+        <li><a href="#writing-linear-functions">Writing Linear Functions</a></li>
+        <li><a href="#writing-exponential-functions">Writing Exponential Functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-functions-from-two-points">Creating Functions from Two Points</a>
+      <ul>
+        <li><a href="#find-a-linear-function-from-two-points">Find a Linear Function from Two Points</a></li>
+        <li><a href="#find-a-power-function-from-two-points">Find a Power Function from Two Points</a></li>
+        <li><a href="#find-an-exponential-function-from-two-points">Find an Exponential Function from Two Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#convert-between-exponential-models">Convert Between Exponential Models</a></li>
+    <li><a href="#create-exponential-models">Create Exponential Models</a>
+      <ul>
+        <li><a href="#continuous-biological-decay">Continuous Biological Decay</a></li>
+        <li><a href="#biological-half-life">Biological Half-Life</a></li>
+      </ul>
+    </li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+        </div>
+
+
+      </nav>
 
 
         <!-- Main -->
@@ -102,7 +147,7 @@
 <p>Whatever that constant rate of change is, it will be the slope of the linear function.</p>
 <h3 id="power-functions--proportional-changes">Power Functions:  Proportional Changes</h3>
 <p>Back in <a href="https://duragauge.github.io/chapter-2/2.2">Chapter 2</a> when we introduced the ideas of direct and inverse proportionality, all the examples explicitly stated the type of proportionality.  Without specific guidance like that, we'll need to look for other clues.</p>
-<p>Specifically, if two quantites increase or decrease together, then they might vary directly.  On the other hand, if one goes up while the other goes down, then they could vary inversely.</p>
+<p>Specifically, if two quantities increase or decrease together, then they might vary directly.  On the other hand, if one goes up while the other goes down, then they could vary inversely.</p>
 <p>While those behaviors don't exclusively belong to power functions, they do indicate that a power function should be considered.</p>
 <h3 id="exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</h3>
 <p>As we saw in <a href="https://duragauge.github.io/chapter-3/3.2">Chapter 3</a> exponential functions often appear in scenarios involving growth or decay that follows a multiplicative pattern.</p>
@@ -139,7 +184,7 @@
 <li>The slope $m$ is the constant rate of change of the function.</li>
 <li>The y-intercept $b$ is a starting value, which is the value of $y$ when $x = 0$.</li>
 </ul>
-<p>For instance, suppose a gym has an initial signup fee of $\$50$ and monthly membership fee of $\$20$.  In this scenario, the initial signup fee is the y-intercept and the monthly fee is the slope.  Using $m=20$ and $b=50$ the equation of the linear function is:
+<p>For instance, suppose a gym has an initial sign-up fee of $\$50$ and monthly membership fee of $\$20$.  In this scenario, the initial sign-up fee is the y-intercept and the monthly fee is the slope.  Using $m=20$ and $b=50$ the equation of the linear function is:
 [ y = 20x + 50 ]
 This linear function allows us to calculate the total cost of the gym membership based on the number of months ($x$).</p>
 <h3 id="writing-exponential-functions">Writing Exponential Functions</h3>
@@ -237,7 +282,7 @@ k &amp;= 3.229 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate the division.}}
 <p>[
 f(x)=3.229x^{0.6309}
 ]</p>
-<p>Keep in mind that, since power functions generally exist only when $x \gt 0$, we should check that both $x$-cooridnates are positive before starting this process.  Additionally, since logarithms were involved in our solving process, the two $y$-coordinates should be non-zero and have the same sign.  For the most part, expect to find power functions only when both points are in the first quadrant.</p>
+<p>Keep in mind that, since power functions generally exist only when $x \gt 0$, we should check that both $x$-coordinates are positive before starting this process.  Additionally, since logarithms were involved in our solving process, the two $y$-coordinates should be non-zero and have the same sign.  For the most part, expect to find power functions only when both points are in the first quadrant.</p>
 <h3 id="find-an-exponential-function-from-two-points">Find an Exponential Function from Two Points</h3>
 <p>Suppose we are asked to find an exponential function that passes through the points $(1, 12)$ and $(3, 27)$, how is that done?  The process begins the same way it did with a power function--inserting the coordinates into the standard exponential function $f(x)=a \thinspace b^{x}$ to make two equations.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/substitution_exponential.svg#center" alt=""></p>
@@ -267,7 +312,7 @@ f(x)=3.229x^{0.6309}
 <p>is the exponential function that passes through the points $(1, 12)$ and $(3, 27)$.</p>
 <h2 id="convert-between-exponential-models">Convert Between Exponential Models</h2>
 <p>In the previous example we used the standard exponential model $f(x)=a \thinspace b^{x}$, where $b=1+r$, but we know from <a href="//chapter-3/3.2#looking-ahead">Chapter 3</a> that there are several different exponential forms.  Why didn't we use one of those?</p>
-<p>The answer is that we certainly could have.  The format we use doesn't really matter since its possible to switch between any of them.  In particular, the standard model $f(x)=a \thinspace b^{x}$ and the continuous growth model $f(t)=a \thinspace e^{k t}$ are equivalent (and are the most commly used).  Here's how you convert from one to the other.</p>
+<p>The answer is that we certainly could have.  The format we use doesn't really matter since its possible to switch between any of them.  In particular, the standard model $f(x)=a \thinspace b^{x}$ and the continuous growth model $f(t)=a \thinspace e^{k t}$ are equivalent (and are the most commonly used).  Here's how you convert from one to the other.</p>
 <p>[
 \begin{align}
 a \thinspace b^{\ x} &amp;\Longrightarrow a \thinspace e^{\ k \  t} &amp;&amp; \small \color{#5fa2ce}{\text{by setting $k = \ln (b)$}} \newline \newline
