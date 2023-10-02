@@ -2,19 +2,19 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="355.13416"
    height="152.38742"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="inverse_equation_aa.svg">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="inverse_equation_c.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -22,21 +22,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.044021"
-     inkscape:cx="141.18398"
-     inkscape:cy="147.3102"
+     inkscape:zoom="8.352168"
+     inkscape:cx="322.73058"
+     inkscape:cy="110.3905"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="683"
-     inkscape:window-height="705"
-     inkscape:window-x="336"
-     inkscape:window-y="44"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -1180,7 +1181,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1194,42 +1194,39 @@
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="-9.1140471"
        y="515.7439"
-       id="text3323"
-       sodipodi:linespacing="125%"><tspan
+       id="text3323"><tspan
          sodipodi:role="line"
          id="tspan3325"
          x="-9.1140471"
          y="515.7439"
-         style="font-size:16px">-5</tspan></text>
+         style="font-size:16px;line-height:1.25">-5</tspan></text>
     <text
        inkscape:export-ydpi="120.17618"
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="80.652916"
        y="515.75952"
-       id="text3327"
-       sodipodi:linespacing="125%"><tspan
+       id="text3327"><tspan
          sodipodi:role="line"
          id="tspan3329"
          x="80.652916"
          y="515.75952"
-         style="font-size:16px">-4</tspan></text>
+         style="font-size:16px;line-height:1.25">-4</tspan></text>
     <text
        inkscape:export-ydpi="120.17618"
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
-       sodipodi:linespacing="125%"
        id="text3331"
        y="475.18622"
        x="29.44076"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Calibri;-inkscape-font-specification:Calibri"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#ff0000"
          y="475.18622"
          x="29.44076"
          id="tspan3333"
@@ -1250,16 +1247,15 @@
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none"
        x="275.98648"
        y="552.20923"
-       id="text3337"
-       sodipodi:linespacing="125%"><tspan
+       id="text3337"><tspan
          sodipodi:role="line"
          id="tspan3339"
          x="275.98648"
          y="552.20923"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri">subtract 1</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#0000ff;fill-opacity:1;stroke:none">subtract 1</tspan></text>
     <path
        inkscape:export-ydpi="120.17618"
        inkscape:export-xdpi="120.17618"
@@ -1275,13 +1271,12 @@
        inkscape:export-ydpi="120.17618"
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
-       sodipodi:linespacing="125%"
        id="text3343"
        y="515.85327"
        x="164.19412"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:16px"
+         style="font-size:16px;line-height:1.25"
          y="515.85327"
          x="164.19412"
          id="tspan3345"
@@ -1302,27 +1297,25 @@
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
        x="114.03774"
        y="476.18524"
-       id="text3349"
-       sodipodi:linespacing="125%"><tspan
+       id="text3349"><tspan
          sodipodi:role="line"
          id="tspan3351"
          x="114.03774"
          y="476.18524"
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;font-family:Calibri;-inkscape-font-specification:Calibri">square</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#ff0000">square</tspan></text>
     <text
        inkscape:export-ydpi="120.17618"
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
-       sodipodi:linespacing="125%"
        id="text3353"
        y="553.21997"
        x="184.58981"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;fill:#0000ff;fill-opacity:1;stroke:none"
          y="553.21997"
          x="184.58981"
          id="tspan3355"
@@ -1352,40 +1345,40 @@
          inkscape:export-ydpi="119.1031">
         <text
            xml:space="preserve"
-           style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
            x="605.7771"
            y="484.38556"
-           id="text3391"
-           sodipodi:linespacing="125%"><tspan
+           id="text3391"><tspan
              sodipodi:role="line"
              id="tspan3393"
              x="605.7771"
-             y="484.38556">f <tspan
-   style="font-style:normal;fill:#ff0000;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'"
+             y="484.38556"
+             style="font-size:24px;line-height:1.25">f <tspan
+   style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#ff0000;fill-opacity:1"
    id="tspan3395">(</tspan><tspan
-   style="font-style:italic;fill:#ff0000;fill-opacity:1;-inkscape-font-specification:'Times New Roman, Italic'"
+   style="font-style:italic;-inkscape-font-specification:'Times New Roman, Italic';fill:#ff0000;fill-opacity:1"
    id="tspan3397">x</tspan><tspan
    id="tspan3399"
-   style="font-style:normal;fill:#ff0000;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'">) =</tspan></tspan></text>
+   style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#ff0000;fill-opacity:1">) =</tspan></tspan></text>
         <text
-           sodipodi:linespacing="125%"
            id="text3401"
            y="484.57391"
            x="672.79425"
-           style="font-size:24px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:2.88999963px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:2.89px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none"
            xml:space="preserve"><tspan
              y="484.57391"
              x="672.79425"
              id="tspan3403"
-             sodipodi:role="line"><tspan
+             sodipodi:role="line"
+             style="font-size:24px;line-height:1.25"><tspan
                id="tspan3405"
-               style="font-style:italic;letter-spacing:2.88999963px;fill:#ff0000;fill-opacity:1;-inkscape-font-specification:'Times New Roman, Italic'"><tspan
+               style="font-style:italic;-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:2.89px;fill:#ff0000;fill-opacity:1"><tspan
    style="font-style:normal;-inkscape-font-specification:'Times New Roman,'"
    id="tspan3407">(</tspan>x+</tspan><tspan
-               style="font-style:normal;letter-spacing:2.88999963px;fill:#ff0000;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'"
+               style="font-style:normal;-inkscape-font-specification:'Times New Roman,';letter-spacing:2.89px;fill:#ff0000;fill-opacity:1"
                id="tspan3409">1)<tspan
    id="tspan3421"
-   style="font-size:87.07885742%;baseline-shift:super">2 </tspan></tspan></tspan></text>
+   style="font-size:87.0789%;baseline-shift:super">2 </tspan></tspan></tspan></text>
       </g>
     </g>
     <g
@@ -1396,58 +1389,58 @@
          inkscape:export-xdpi="120.17618"
          inkscape:export-filename="I:\Book Ideas\images\inverse_equation_b.png"
          xml:space="preserve"
-         style="font-size:17.91483116px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none"
          x="644.06042"
          y="199.1748"
-         id="text3359"
-         sodipodi:linespacing="125%"><tspan
+         id="text3359"><tspan
            sodipodi:role="line"
            id="tspan3361"
            x="644.06042"
-           y="199.1748">f <tspan
-   style="font-style:normal;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'"
+           y="199.1748"
+           style="font-size:17.9148px;line-height:1.25">f <tspan
+   style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#0000ff;fill-opacity:1"
    id="tspan3363"><tspan
-   style="font-size:11.644804px;baseline-shift:super;fill:#0000ff;fill-opacity:1"
+   style="font-size:11.6448px;baseline-shift:super;fill:#0000ff;fill-opacity:1"
    id="tspan3365">-1</tspan>(</tspan><tspan
-   style="font-style:italic;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman, Italic'"
+   style="font-style:italic;-inkscape-font-specification:'Times New Roman, Italic';fill:#0000ff;fill-opacity:1"
    id="tspan3367">x</tspan><tspan
    id="tspan3369"
-   style="font-style:normal;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'">) =</tspan></tspan></text>
+   style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#0000ff;fill-opacity:1">) =</tspan></tspan></text>
       <text
          inkscape:export-ydpi="120.17618"
          inkscape:export-xdpi="120.17618"
          inkscape:export-filename="I:\Book Ideas\images\inverse_equation_b.png"
-         sodipodi:linespacing="125%"
          id="text3371"
          y="199.53865"
          x="733.94348"
-         style="font-size:17.91483116px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman,';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            y="199.53865"
            x="733.94348"
            id="tspan3373"
-           sodipodi:role="line"><tspan
+           sodipodi:role="line"
+           style="font-size:17.9148px;line-height:1.25"><tspan
              id="tspan3375"
-             style="font-style:normal;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'">- 1</tspan><tspan
-             style="font-style:normal;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'"
+             style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#0000ff;fill-opacity:1">- 1</tspan><tspan
+             style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#0000ff;fill-opacity:1"
              id="tspan3377" /></tspan></text>
       <g
          id="g3512"
          transform="translate(-140,-19.52231)">
         <text
-           sodipodi:linespacing="125%"
            id="text3467"
            y="218.25224"
            x="855.7168"
-           style="font-size:17.91483116px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Italic';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none"
            xml:space="preserve"><tspan
              y="218.25224"
              x="855.7168"
              id="tspan3469"
-             sodipodi:role="line"><tspan
+             sodipodi:role="line"
+             style="font-size:17.9148px;line-height:1.25"><tspan
                id="tspan3471"
-               style="font-style:italic;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman, Italic'">x</tspan><tspan
-               style="font-style:normal;fill:#0000ff;fill-opacity:1;-inkscape-font-specification:'Times New Roman,'"
+               style="font-style:italic;-inkscape-font-specification:'Times New Roman, Italic';fill:#0000ff;fill-opacity:1">x</tspan><tspan
+               style="font-style:normal;-inkscape-font-specification:'Times New Roman,';fill:#0000ff;fill-opacity:1"
                id="tspan3473" /></tspan></text>
         <path
            style="fill:none;stroke:#0000ff;stroke-width:0.93565643;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -1458,16 +1451,15 @@
       </g>
     </g>
     <text
-       sodipodi:linespacing="125%"
        id="text3537"
        y="515.75952"
        x="252.65292"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        inkscape:export-xdpi="120.17618"
        inkscape:export-ydpi="120.17618"><tspan
-         style="font-size:16px"
+         style="font-size:16px;line-height:1.25"
          y="515.75952"
          x="252.65292"
          id="tspan3539"
@@ -1477,15 +1469,14 @@
        inkscape:export-xdpi="120.17618"
        inkscape:export-filename="F:\Book Ideas\images\inverse_equation_c.png"
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="334.65292"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="339.88596"
        y="515.75952"
-       id="text3541"
-       sodipodi:linespacing="125%"><tspan
+       id="text3541"><tspan
          sodipodi:role="line"
          id="tspan3543"
-         x="334.65292"
+         x="339.88596"
          y="515.75952"
-         style="font-size:16px">-3</tspan></text>
+         style="font-size:16px;line-height:1.25">3</tspan></text>
   </g>
 </svg>
