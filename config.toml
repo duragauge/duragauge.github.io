@@ -192,15 +192,15 @@ home = [ "HTML"]
     # All blogs defined in their own files. You can find example blogs
     # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
     # at the root of this Hugo site.
-    # For more informtion take a look at the README.
+    # For more information take a look at the README.
     # To add more blogs just copy and paste the code.
 
   # Section Type Two
   [params.two]
     enable = true
     title = "About"
-    subtitle = "This is an online College Algebra textbook created by Nolan Mitchell at Chemeketa Community College.  The content (text, equations, figures, etc.) is freely available under a Creative Commons license for non-commercial purposes only and was created entirely with free software.  Math equations were written in LaTeX and are rendered using MathJax.  All photos are freely available--each one is linked to the source--and most do not require attribution.  Interactive figures were created in GeoGebra.  All other graphics were created by the author using Inkscape (including the Tex Text extension) and Gimp (including the Math Map plugin).  All content was compiled using the Hugo static site generator from Markdown files written in Visual Studio."
-#   If you want an action button in the TWO section, alter the file two.html in the partials folder
+    subtitle = "This precalculus textbook was designed as an online resource by Nolan Mitchell at Chemeketa Community College. The content (text, equations, figures, etc.) is freely available under a Creative Commons license for non-commercial purposes only and was created entirely with free software. Equations are written in LaTeX and rendered using MathJax. All photos are freely available--each is linked to the source--and most do not require attribution. Interactive figures were created in GeoGebra.  All other graphics were created by the author using Inkscape (including the Tex Text extension) and Gimp (including the Math Map plugin). All content was compiled using the Hugo static site generator from Markdown files written in Visual Studio."
+
 #    buttonText = "Get Started"
 #    url = "blogs"
 
