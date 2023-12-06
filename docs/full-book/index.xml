@@ -6,16 +6,5 @@
     <description>Recent content on Precalculus 1 - Functions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://duragauge.github.io/full-book/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About Precalculus 1 - Functions</title>
-      <link>https://duragauge.github.io/full-book/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://duragauge.github.io/full-book/about/</guid>
-      <description>This online textbook was developed by Nolan Mitchell for the MTH111Z Precalculus 1: Functions course at Chemeketa Community College.
-All content, including text, equations, figures, and interactive elements, is available under a non-commercial Creative Commons license and was created with freely available software.
-Equations are written in LaTeX and rendered through MathJax. Photos, most requiring no attribution, are linked to their sources. Interactive figures were crafted using GeoGebra. All other graphics were designed by the author using Inkscape and Gimp.</description>
-    </item>
-    
   </channel>
 </rss>

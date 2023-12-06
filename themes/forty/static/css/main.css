@@ -3766,9 +3766,9 @@ div#table_of_contents ul {
 @media print {
   body {
     margin: 0;
-		font: 11pt Georgia, "Times New Roman", Times, serif;
+		font: 4pt Georgia, "Times New Roman", Times, serif;
 		line-height: 1.2;
-		background: #fff !important;
+		background: #861a1a !important;
 		color: #000;
 	}
 
