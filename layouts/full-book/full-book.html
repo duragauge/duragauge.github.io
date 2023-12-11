@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
-   <!-- this header loads the MathJax stuff -->
    {{ partial "header.html" . }}
    <body>
-
-      {{ "<!-- Wrapper -->" | safeHTML }}
-		<div id="wrapper">
-
-		{{ partial "nav.html" . }}
-
-		{{ "<!-- Main -->" | safeHTML }}
-			<div id="main">
-				{{ partial "tile.html" . }}
-			</div>
-
-
-      {{ range .Site.RegularPages }}
+  
       <div id="wrapper">
+         <header id="header" class="alt">
+            <a href="{{ .Site.BaseURL }}" class="logo">{{ if .Site.Params.Navigation.logo }}<img src="{{ .Site.Params.baseURL }}/img/{{ .Site.Params.Navigation.logo }}" alt="" />{{ else }}<strong>{{ .Site.Params.Navigation.title }}</strong>{{ .Site.Params.Navigation.subtitle }}{{ end }}</a>
+         </header>
+         
+         
+
+         <div id="tiles">
+            <section id="one" class="tiles">
+            {{ range .Site.Params.Tiles.showcase }}
+               <article>
+                  <span class="image" style="height:30%; width:auto;">
+                     <img src="/img/{{ .image }}" alt="" />
+                  </span>
+                  <header class="minor">
+                     <h3><a href="{{ .url | absURL }}" class="link">{{ .title }}</a></h3>
+                     <p>{{ .subtitle }}</p>
+                  </header>
+               </article>
+            {{ end }}
+            </section>
+         </div><!--end tiles-->
+
+
+
          <div class="tufte" id="main">
             <section id="one">
                <div class="inner">
-                  <header class="major">
-                     <h1 id="{{ substr .RelPermalink 1 -1 }}">{{ .Title }}</h1>
-                  </header>
-                  {{ .Content }}
+                  {{ range .Site.RegularPages }}
+                     <header class="major">
+                        <h1 id="{{ substr .RelPermalink 1 -1 }}">{{ .Title }}</h1>
+                     </header>
+                     {{ .Content }}
+                  {{ end }}
                </div>
             </section>
-         </div>
-      </div>
-      {{ end }}
+         </div><!--end Tufte-->
+
+         
+      </div><!--end wrapper-->
 
       {{ partial "footer.html" . }}
 
