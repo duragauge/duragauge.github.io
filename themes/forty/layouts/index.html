@@ -1,4 +1,4 @@
-<!-- This file controls the look of the HOME page, which is the index.html file inside the partials folder. -->
+<!-- This file controls the look of the HOME page.  This is the index.html file inside the partials folder. -->
 
 <!DOCTYPE HTML>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
@@ -26,11 +26,6 @@
 
 			</div>
 
-
-		{{ "<!-- Footer -->" | safeHTML}}
-			{{ if .Site.Params.Footer.enable }}
-				{{ partial "footer.html" . }}
-			{{ end }}
 
 		</div>
 

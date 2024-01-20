@@ -9,8 +9,6 @@
 	{{ "<!-- Stylesheets -->" | safeHTML }}
 
 	<link rel="stylesheet" href="{{ "css/main.css"  | absURL}}"/>
-	<!-- Next line is where I hope to have a working CSS for print 
-	<link rel="stylesheet" media="print"  href="{{ "css/printPDF.css" | absURL}}"/>-->
 
 	{{ range .Site.Params.custom_css }}
 		<link rel="stylesheet" href="{{ . | absURL }}">

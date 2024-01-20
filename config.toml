@@ -199,7 +199,7 @@ home = [ "HTML"]
   [params.two]
     enable = true
     title = "About"
-    subtitle = "This precalculus textbook was designed as an online resource by Nolan Mitchell at Chemeketa Community College. The content (text, equations, figures, etc.) is freely available under a Creative Commons license for non-commercial purposes only and was created entirely with free software. Equations are written in LaTeX and rendered using MathJax. All photos are freely available--each is linked to the source--and most do not require attribution. Interactive figures were created in GeoGebra.  All other graphics were created by the author using Inkscape (including the Tex Text extension) and Gimp (including the Math Map plugin). All content was compiled using the Hugo static site generator from Markdown files written in Visual Studio."
+    subtitle = "This textbook was developed by Nolan Mitchell for the MTH111Z Precalculus 1: Functions course at Chemeketa Community College. All content, including text, equations, figures, and interactive elements, is available under a non-commercial Creative Commons license and was created with freely available software. Equations are written in LaTeX and rendered through MathJax. Photos, most requiring no attribution, are linked to their sources.  Interactive figures were crafted using GeoGebra.  All other graphics were designed by the author using Inkscape and Gimp. The entire book was compiled using the Hugo static site generator from Markdown files within Visual Studio, incorporating the forty theme and Tufte styles."
 
 #    buttonText = "Get Started"
 #    url = "blogs"
