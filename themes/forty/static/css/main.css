@@ -2409,24 +2409,31 @@ div#table_of_contents ul {
   
 	#wrapper {
 	  padding-top: 0em;
-	  background: white;
+	  background: blue;
 	}
   
 	#main.tufte {
 	  margin-left: 0.75;
 	  margin-right: 0.25;
-	  background: white;
+	  background: green;
 	}
   
 	#main.tufte .inner {
-	  width: 5.5in;
-	  background: white;
+	  width: 80%;
+	  background: purple;
 	}
   
+	#one {
+		page-break-after: always;
+		background: orange;
+		width:80%;
+	}
+
+
 	.sidenote, .marginnote {
 	  float: right;
 	  position: static;
-	  margin-right: -1.825in;
+	  margin-right: -2.825in;
 	  width: 1.5in;
 	  margin-top: 0.5rem;
 	  margin-bottom: 1rem;
@@ -2453,11 +2460,6 @@ div#table_of_contents ul {
 	  page-break-inside: avoid;
 	  break-inside: avoid;
 	}
-
-	#one {
-		page-break-after: always;
-		background: white;
-	  }
 
 	#about {
       page-break-after: always;
