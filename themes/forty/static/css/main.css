@@ -2459,9 +2459,8 @@ div#table_of_contents ul {
 		background: white;
 	  }
 
-	#two {
+	#about {
       page-break-after: always;
-	  background: white;
     }
 
 	#header {
