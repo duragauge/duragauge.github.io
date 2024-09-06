@@ -75,10 +75,9 @@
     <li><a href="#the-definition-of-a-function">The Definition of a Function</a></li>
     <li><a href="#function-notation">Function Notation</a></li>
     <li><a href="#evaluating--solving">Evaluating &amp; Solving</a></li>
-    <li><a href="#representations-of-functions">Representations of Functions</a></li>
     <li><a href="#graphs-of-functions">Graphs of Functions</a></li>
-    <li><a href="#the-vertical-line-test">The Vertical Line Test</a></li>
     <li><a href="#evaluate-functions-using-graphs">Evaluate Functions Using Graphs</a></li>
+    <li><a href="#the-vertical-line-test">The Vertical Line Test</a></li>
     <li><a href="#domain-of-a-function">Domain of a Function</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
@@ -134,7 +133,7 @@
     background-color: transparent">
   </iframe>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
   <a href="https://www.geogebra.org/m/tm4yf6r7"><img src="https://www.geogebra.org/resource/hwwhaa98/UQ7ydkWqAmoFriMg/material-hwwhaa98.png"></img></a>
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/tm4yf6r7"><a href="https://www.geogebra.org/m/tm4yf6r7">https://www.geogebra.org/m/tm4yf6r7</a></a></p>
 </div>
@@ -242,55 +241,116 @@ f(10) &amp;= 2(10)^2-6(10) \newline
 </li>
 </ol>
 </div>
-<h2 id="representations-of-functions">Representations of Functions</h2>
-<p>Because functions are so widely used, there are many different ways to represent them.  We have already encountered functions shown by mapping diagrams and equations.  We'll also see functions written as tables, sets of points, sequences of operations, and graphs.</p>
-<p>Each way to visualize a function highlights something special about the function, and switching from one to another can help us see different features and discover connections that might have been hidden otherwise.</p>
-<p>Of primary importance is the connection between equations, tables and graphs.</p>
 <h2 id="graphs-of-functions">Graphs of Functions</h2>
-<p>The <strong>graph</strong> of a function is the set of all points $(x, y)$ where each $y$ is found by evaluating the function's equation, since $y=f(x)$.</p>
+<p>Because functions are so widely used, there are many different ways to represent them.  Each way to visualize a function highlights something special about the function and switching from one to another can help us see different features and discover connections that might have been hidden otherwise.</p>
+<p>Of primary importance is the connection between equations, tables and graphs of functions.</p>
+<p>The <strong>graph</strong> of a function is the set of all points $(x, y)$ where each $y$ is found by evaluating the function's equation for a particular $x$.  In other words, for any $x$ value, $y=f(x)$.</p>
 <p>For instance, to graph the function $f(x)=x^{2}-3$ we randomly choose a handful of values for $x$ and evaluate the function for each one, creating a table of values.</p>
 <table>
 <thead>
 <tr>
 <th>$x$</th>
 <th>$f(x)=x^{2}-3$</th>
+<th>$(x,y)$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$-2$</td>
 <td>$(-2)^2-3 = 1$</td>
+<td>$(-2, 1)$</td>
 </tr>
 <tr>
 <td>$-1$</td>
 <td>$(-1)^2-3 =  -2$</td>
+<td>$(-1, -2)$</td>
 </tr>
 <tr>
 <td>$0$</td>
 <td>$(0)^2-3 = -3$</td>
+<td>$(0, -3)$</td>
 </tr>
 <tr>
 <td>$1$</td>
 <td>$(1)^2-3 = -2$</td>
+<td>$(1, -2)$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$(2)^2-3 = 1$</td>
+<td>$(2, 1)$</td>
 </tr>
 <tr>
 <td>$3$</td>
 <td>$(3)^2-3 = 6$</td>
+<td>$(3, 6)$</td>
 </tr>
 </tbody>
 </table>
-<p>Then we convert those values into ordered $(x, y)$ pairs</p>
-<p>[
-\left\lbrace (-2, 1),  (-1, -2),  (0, -3),  (1, -2),  (2, 1),  (3, 6) \right\rbrace
-]</p>
-<p>that can be plotted and connected with a smooth curve.</p>
+<p>Then we convert those values into ordered $(x, y)$ pairs that can be plotted as points.  Connecting the points with a smooth curve gives us a graph of the function.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/function_graph_x2-3.svg#center" alt=""></p>
 <p>Even though calculators and apps can graph most functions, graphing functions by hand is still an important skill to practice.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>Sketch a graph of the function $f(x)=\frac{2}{3}x + 1$.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><img src="https://duragauge.github.io/img/chapter-1/function_graph_2_over_3_x+1.svg#center" alt=""></details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>Sketch a graph of the function $f(x)=\frac{2}{3}x + 1$.  Use $-3, 0, 3$ as your $x$ values.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><table></p>
+<thead>
+<tr>
+<th>$x$</th>
+<th>$f(x)=\frac{2}{3}x + 1$</th>
+<th>$(x,y)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-3$</td>
+<td>$\frac{2}{3}(-3) + 1=-1$</td>
+<td>$(-3, -1)$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\frac{2}{3}(0) + 1$</td>
+<td>$(0, 1)$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\frac{2}{3}(3) + 1$</td>
+<td>$(3, 3)$</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://duragauge.github.io/img/chapter-1/function_graph_2_over_3_x+1.svg#center" alt=""></details>
+</div>
+<h2 id="evaluate-functions-using-graphs">Evaluate Functions Using Graphs</h2>
+<p>When a function is defined by a graph we evaluate the function by reading off the $y$ coordinate that matches the given $x$ value.</p>
+<p>In the figure below you can move the <strong><font color="blue">INPUT</font></strong> $x$ value which will change the <strong><font color="red">OUTPUT</font></strong> $y$ value.</p>
+<div class="no-print geogebra" style="padding-top: 53.33%;margin-bottom:0.5rem; ">
+  <iframe src="https://www.geogebra.org/material/iframe/id/lQTU2l1r/border/fafafa" scrolling="no"
+  style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent">
+  </iframe>
+</div>
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
+  <a href="https://www.geogebra.org/m/lQTU2l1r"><img src="https://www.geogebra.org/resource/lQTU2l1r/7vUTOXYoQLp7HDaD/material-lQTU2l1r.png"></img></a>
+<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/lQTU2l1r"><a href="https://www.geogebra.org/m/lQTU2l1r">https://www.geogebra.org/m/lQTU2l1r</a></a></p>
+</div>
+<p>To evaluate $f(5)$, for example, move the <strong><font color="blue">INPUT</font></strong> to $x=5$ and read off the corresponding <strong><font color="red">OUTPUT</font></strong> on the $y$-axis.  In this case, $f(5)=4$.</p>
+<p>So to use a graph to find a function's output, just find where your input value meets the graph. The height of that point is your answer.</p>
+<p>Solving reverses the process-we find $x$ when given a specific $y$.  As an example, to solve $f(x)=4$ for $x$ you move the  <strong>INPUT</strong> until the <strong>OUTPUT</strong> equals $4$.  Then you record the <strong>INPUT</strong>.  Here there are multiple values for $x$ that work: $x=1.7$, $x=4$, and $x=11.7$ all appear to give outputs of $4$ and would be valid solutions to $f(x)=4$.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p><img src="https://duragauge.github.io/img/chapter-1/evaluate_function_graph.svg#center" alt=""></p>
+<ol>
+<li>
+<p>Use the graph above to evaluate $f(2)$.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />When $x=2$ the matching $y$ value on the graph is $y=1$, so $f(2)=1$.
+<img src="https://duragauge.github.io/img/chapter-1/evaluate_function_graph_answer.svg#center" alt=""></details></p>
+</li>
+<li>
+<p>Use the graph above to evaluate $f(x)=3$.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />When $y=3$ the matching $x$ value on the graph is $x=-2$, so the solution to $f(x)=3$ is $x=-2$.
+<img src="https://duragauge.github.io/img/chapter-1/solve_function_graph_answer.svg#center" alt=""></details></p>
+</li>
+</ol>
+</div>
 <h2 id="the-vertical-line-test">The Vertical Line Test</h2>
 <p>It is important to remember that not every relationship or rule defines a function.  The key is that each input corresponds to just one output.  This applies to graphs as well.</p>
 <p>In order for a graph to be a function each $x$ can only correspond to one $y$.  This means that no two points on the graph can share the same $x$-coordinate.</p>
@@ -307,7 +367,7 @@ f(10) &amp;= 2(10)^2-6(10) \newline
     background-color: transparent">
   </iframe>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
+<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
   <a href="https://www.geogebra.org/m/r9g6gyym"><img src="https://www.geogebra.org/resource/dhf2es4y/NaLzd8wzExszZzM4/material-dhf2es4y.png"></img></a>
 <p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/r9g6gyym"><a href="https://www.geogebra.org/m/r9g6gyym">https://www.geogebra.org/m/r9g6gyym</a></a></p>
 </div>
@@ -326,30 +386,9 @@ To graph $x^2+y^2=3$ on a calculator you would need to solve for $y$, which resu
 </li>
 </ol>
 </div>
-<h2 id="evaluate-functions-using-graphs">Evaluate Functions Using Graphs</h2>
-<p>When a function is defined by a graph we evaluate the function by reading off the $y$ coordinate that matches the given $x$ value.</p>
-<p>In the figure below you can move the <strong><font color="blue">INPUT</font></strong> $x$ value which will change the <strong><font color="red">OUTPUT</font></strong> $y$ value.</p>
-<div class="no-print geogebra" style="padding-top: 53.33%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/lQTU2l1r/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
-</div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin:0.5em;">
-  <a href="https://www.geogebra.org/m/lQTU2l1r"><img src="https://www.geogebra.org/resource/lQTU2l1r/7vUTOXYoQLp7HDaD/material-lQTU2l1r.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/lQTU2l1r"><a href="https://www.geogebra.org/m/lQTU2l1r">https://www.geogebra.org/m/lQTU2l1r</a></a></p>
-</div>
-<p>To evaluate $f(5)$, for example, move the <strong><font color="blue">INPUT</font></strong> to $x=5$ and read off the corresponding <strong><font color="red">OUTPUT</font></strong> on the $y$-axis.  In this case, $f(5)=4$.</p>
-<p>So to use a graph to find a function's output, just find where your input value meets the graph. The height of that point is your answer.</p>
-<p>Solving reverses the process-we find $x$ when given a specific $y$.  As an example, to solve $f(x)=4$ for $x$ you move the  <strong>INPUT</strong> until the <strong>OUTPUT</strong> equals $4$.  Then you record the <strong>INPUT</strong>.  Here there are multiple values for $x$ that work: $x=1.7$, $x=4$, and $x=11.7$ all appear to give outputs of $4$, and would be valid solutions to $f(x)=4$.</p>
 <h2 id="domain-of-a-function">Domain of a Function</h2>
 <p>Every time we identify a function we should also determine its domain.  Recall that the domain is like the list of buttons on a vending machine: it's all the possible input choices you have.</p>
-<p>When a function is defined by a table, a diagram or a set of points, then we can list each individual thing in the domain, like we did in the sandwich and vending machine examples earlier.</p>
+<p>When a function is defined by a table, a diagram or a set of points, then we can list each individual item in the domain, like we did in the sandwich and vending machine examples earlier.</p>
 <p>When a function is defined by an equation, the domain is every real number that produces a real number output.</p>
 <p>For instance, if $f(x)=\sqrt{x} $ then the domain is any real number greater than or equal to zero, since square roots of negative values are not real numbers.  This can be written as an interval $[0,\infty)$ or with set-builder notation $\lbrace x \vert  x \ge 0 \rbrace $.</p>
 <p>Similarly, the domain of $g(x)=\frac{1}{x}$ is every real number except zero, since division by zero is undefined.  Writing this as an interval is a bit tricky since we have to use a union:  $(-\infty,0)  \bigcup  (0,\infty)$.  With set-builder notation we simply say which $x$ values cannot be used: $ \lbrace x \vert  x \neq 0 \rbrace $.</p>

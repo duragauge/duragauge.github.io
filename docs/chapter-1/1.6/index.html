@@ -76,6 +76,7 @@
     <li><a href="#total-change">Total Change</a></li>
     <li><a href="#percent-change">Percent Change</a></li>
     <li><a href="#average-rate-of-change">Average Rate of Change</a></li>
+    <li><a href="#finding-average-rate-of-change-graphically">Finding Average Rate of Change Graphically</a></li>
     <li><a href="#concavity-and-rates-that-change">Concavity and Rates that Change</a></li>
     <li><a href="#difference-quotients">Difference Quotients</a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
@@ -111,17 +112,9 @@
 <p>Apple, on the other hand, had an important announcement of their own.  The next day, on October 23, 2001, Apple CEO Steve Jobs unveiled the very first iPod.  It was an iconic success that revolutionized the consumer electronics industry and helped establish Apple as one of the most innovative technology companies in the world.</p>
 <p>As we've seen earlier, functions, just like stocks, can increase and decrease in value. Our goal in this section is to develop tools that allow us to measure, compare and categorize functions based on how they change.</p>
 <h2 id="intervals">Intervals</h2>
-<p>In <a href="../1.3">section 1.3</a> we saw how to visually identify regions where a function is increasing, decreasing or constant.  We also saw portions of graphs that were concave up or concave down.</p>
-<p>Since functions can behave differently on different subsets of their domain, we will need to describe the specific <a href="../1.1#intervals-of-real-numbers">intervals</a> we are inspecting.</p>
-<p>For instance, on this graph</p>
-<p><img src="https://duragauge.github.io/img/chapter-1/increasing_decreasing.svg#center" alt=""></p>
-<p>the function is increasing on the interval $(a,b)$, constant on $(b,c)$, decreasing over the interval $(c,d)$ and increasing again on $(d,e)$.
-<label for="sn-intervals" class="margin-toggle sidenote-number">
-</label>
-<input type="checkbox" id="sn-intervals" class="margin-toggle" />
-<span class="sidenote">Generally a function is not increasing, decreasing or constant at the endpoints of an interval so we usually write those intervals with parenthesis $( \thinspace\thinspace)$, and not brackets $[ \thinspace\thinspace ]$ unless circumstances dictate otherwise.</span></p>
-<p>Take special note that these intervals are only on the x-axis.  That is because they are parts of the domain of the function.  We will use y-values in a moment to measure how much the function has increased or decreased.</p>
-<p>In addition to identifying a specific interval, we might also need to measure how long it is.  The length of an interval from $a$ to $b$ is given by</p>
+<p>In this section we will look at how much a function changes (<a href="#total-change">total change</a>), how large that change is relative to the starting value (<a href="#percent-change">percent change</a>), and how quickly that change happens (<a href="#average-rate-of-change">average rate of change</a>).</p>
+<p>But before we can do any of those calculations we have to specify which <a href="../1.1#intervals-of-real-numbers">interval</a> we are inspecting.  It's important to note that these intervals are subsets of the domain, so they are x-values.  For instance, the interval $[5,9]$ is all real numbers from $x=5$ to $x=9$.</p>
+<p>In addition to identifying a specific interval, we might also need to measure how long it is.  The length of an interval from $x=a$ to $x=b$ is given by</p>
 <table>
 <thead>
 <tr>
@@ -129,11 +122,10 @@
 </tr>
 </thead>
 </table>
-<p>The upper-case Greek leter delta ($\Delta$) is used throughout math and science to indicate change.  If we mention the &quot;change in the x-values&quot; then that is the same as $\Delta x$ which is also the same thing as the length of the interval $[a, b]$.</p>
+<p>The Greek leter &quot;delta&quot; ($\Delta$) is used throughout math and science to indicate change.  So writing $\Delta x$ means &quot;the change in the x-values&quot; and is the length of the interval $[a, b]$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Determine the specific intervals where this graph is increasing, decreasing and/or constant.
-<img src="https://duragauge.github.io/img/chapter-1/increasing_decreasing_b.svg#center" alt=""> <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The graph is constant on the interval $(-\infty,-1)$, increasing on $(-1,0)$, and decreasing on $(0,\infty)$.</details></p>
+<p>Can you write the interval of numbers between $x=-4$ and $x=3$ as $[3,-4]$ ? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, interval notation should indicate where the numbers are relative to each other on the numberline, so the lowest number should always come first.  The proper way to write this is $[-4,3]$</details></p>
 </li>
 <li>
 <p>What is the length of the interval $[-2, 5]$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \Delta x = 5-(-2) = 7]</details></p>
@@ -144,8 +136,8 @@
 </ol>
 </div>
 <h2 id="total-change">Total Change</h2>
-<p>The amount that a function has increased or decreased on an interval is called the <strong>total change</strong> of the function.   The symbol $\Delta y$ means the change in the y-values and will be used to represent total change.</p>
-<p>To calculate the total change of a function on some interval $[a, b]$ we find the difference between the starting value $f(a)$ and the ending value $f(b)$.</p>
+<p>The amount that a function has increased or decreased on an interval is called the <strong>total change</strong> on that interval.  Since this is the change in the y-values, we will often use the shorthand notation $\Delta y$ to represent total change.</p>
+<p>To calculate the total change of a function on an interval $[a, b]$ we simply subtract the starting value $f(a)$ from the ending value $f(b)$.</p>
 <table>
 <thead>
 <tr>
@@ -153,45 +145,49 @@
 </tr>
 </thead>
 </table>
-<p>Notice that the total change does not care about what happens in the middle of the interval, it only uses the values of the function at the ends of the interval.</p>
+<p>Notice that the total change does not care about what happens in the middle of the interval, it is only the starting and ending values that matter.</p>
 <p>Both $\Delta y$ and $\Delta x$ are illustrated in the diagram below.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/deltaY_deltaX.svg#center" alt=""></p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the graph of $f(x)$ to answer the questions below.
 <img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
 <ol>
-<li>
-<p>Find $\Delta y$ on the interval $[-1,  3]$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align} f(b)-f(a)&amp;=f(3)-f(-1)\newline &amp;=-4-0 \newline &amp;=-4 \end{align}]</details></p>
-</li>
-<li>
-<p>Calculate $\Delta y$ on the interval $[3, 6]$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align} f(b)-f(a)&amp;=f(6)-f(3) \newline &amp;= 4-(-4) \newline &amp;= 8 \end{align}]</details></p>
-</li>
+<li>Find $\Delta y$ on the interval $[3, 6]$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align} f(b)-f(a)&amp;=f(6)-f(3) \newline &amp;= 4-(-4) \newline &amp;= 8 \end{align}]</details></li>
 </ol>
 </div>
+<ol>
+<li>Find $\Delta y$ on the interval $[-1,  3]$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align} f(b)-f(a)&amp;=f(3)-f(-1)\newline &amp;=-4-0 \newline &amp;=-4 \end{align}]</details></li>
+</ol>
 <h2 id="percent-change">Percent Change</h2>
-<p>If you won a million dollars you might feel like that's a really big change.  But if someone told you the government was going to increase national spending on education by a million dollars you'd probably feel like that is a very  small change, even though the amount is exactly the same.  That is one of the limitations of total change; it doesn't relate the change to the starting value.  To do that we need a <em>percent</em> change formula.</p>
-<p>The <strong>percent change</strong> of a function $f$ over an interval $[a, b]$ is the ratio of the total change to the starting value.  We calculate percent change as follows:</p>
+<p>Suppose you're planning a vacation to Hawaii and find that the price of airplane tickets has increased from $\$400$ to $\$410$.  While you might be a bit annoyed, a $\$10$ increase is unlikely to make you cancel your trip.</p>
+<p>However, if your favorite café raised the price of a cup of coffee from $\$4$ to $\$14$, that $\$10$ increase would almost certainly make you reconsider visiting that café ever again.</p>
+<p>These two situations feel so different, even though the total increase is $\$10$ in both cases, because total change doesn't look at the increase in cost relative to the starting price.</p>
+<p>To measure the relative change all we need to do is divide the total change by the original value.  This is often called <strong>percent change</strong> and is given by</p>
 <table>
 <thead>
 <tr>
-<th>[\text{percent change} = \frac{f(b)-f(a)}{f(a)}]</th>
+<th>[\text{percent change} = \frac{f(b)-f(a)}{f(a)} ]</th>
 </tr>
 </thead>
 </table>
-<p>With this formula the percent change is given in decimal form.  In other words, a value such as $0.12$ should be interpreted as $12\%$.  Also note that the percent change cannot be computed if $f(a)=0$.</p>
+<p>This formula gives us a decimal which we then interpret as a percentage.  A value such as $0.12$, for instance, should be taken to mean $12\%$. Additionally, negative values are typically labeled as &quot;decreasing&quot; percentages, so that a value like $-0.08$ would be written as a $8\% \text{decrease}$.</p>
+<p>In the case of the airplane tickets, the total change is $\$10$ and the original price is $\$400$, so the percent change is $\frac{\$10}{\$400}=0.025$ or $2.5\%$.</p>
+<p>On the other hand, the percent change for the coffee is $\frac{\$10}{\$4}=2.5$ which is a relative increase of $250\%$.</p>
+<p>As these examples illustrate, percent change can vary significantly even when the total change is the same. This is why relative change is a useful measure in many real-world scenarios.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Suppose the number of scholarships given by a university increased from 125 to 180.  What is the percent change? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \begin{align}\frac{f(b)-f(a)}{f(a)} \thinspace &amp;= \thinspace \frac{180-125}{125} \newline \thinspace &amp;= \thinspace \frac{55}{125} \newline \thinspace &amp;= \thinspace 0.44\end{align}] which we interpret as a $44\text{%}$ increase.</details></p>
 </li>
 <li>
-<p>The cost per person of sharing a \$30 pizza between $x$ people is given by the function $f(x) = \frac{30}{x}$.  Find the percent change between sharing it with 3 people instead of 2. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \begin{align}\frac{f(b)-f(a)}{f(a)} &amp;= \frac{f(3)-f(2)}{f(2)} \newline &amp;= \frac{\frac{30}{3}-\frac{30}{2}}{\frac{30}{2}} \newline &amp;= \frac{10-15}{15} \newline &amp;= \frac{-5}{15} \newline &amp;\approx -0.333 \end{align}] which we interpret as roughly a $33.3\text{%}$ decrease.</details></p>
+<p>The cost per person of sharing a \$30 pizza between $x$ people is given by the function $f(x) = \frac{30}{x}$.  Find the percent change between sharing the pizza between 3 people instead of 2. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \begin{align}\frac{f(b)-f(a)}{f(a)} &amp;= \frac{f(3)-f(2)}{f(2)} \newline &amp;= \frac{\frac{30}{3}-\frac{30}{2}}{\frac{30}{2}} \newline &amp;= \frac{10-15}{15} \newline &amp;= \frac{-5}{15} \newline &amp;\approx -0.333 \end{align}] which we interpret as roughly a $33.3\text{%}$ decrease.</details></p>
 </li>
 </ol>
 </div>
 <h2 id="average-rate-of-change">Average Rate of Change</h2>
-<p>While percent change helps you see the relative increase or decrease in values, it does not indicate how quickly the change is happening.  To see how rapidly function values change we need to average the total change across the length of the interval.</p>
-<p>You are probably already familiar with the basic process of finding averages.  For instance, if you drove a distance of 100 miles in 2 hours then your average speed would be $\frac{100 \text{ miles}}{2 \text{ hours}} = 50 \text{ miles per hour}$.</p>
-<p>Your actual speed may have gone up and down during the trip but, on average, your speed was 50 miles per hour.</p>
-<p>To find the average change of a function we follow the same process and divide the total change of the function $\Delta y$ by the corresponding change $\Delta x$ in the input values to get $\frac{\Delta y}{\Delta x}$.</p>
+<p>While percent change helps you see the relative increase or decrease in values, it does not indicate how quickly the change is happening.</p>
+<p>If we think back to our coffee example, imagine if the price increased from $\$4$ to $\$14$ over a period of $10$ years rather than overnight, that would be a much less dramatic change.</p>
+<p>To see measure how rapidly a function change we need to average the total change over the length of the interval.</p>
+<p>You are probably already familiar with the basic process of finding averages.  For instance, if you drove a distance of 100 miles in 2 hours then your average speed would be $\frac{100 \text{ miles}}{2 \text{ hours}} = 50 \text{ miles per hour}$. Your actual speed may have varied during the trip but, on average, it was 50 miles per hour.</p>
+<p>Similarly, to find the average change of a function, we divide the total change in the function values $\Delta y$ by the corresponding change $\Delta x$ in the input values.</p>
 <table>
 <thead>
 <tr>
@@ -199,58 +195,68 @@
 </tr>
 </thead>
 </table>
-<p>Since $\frac{\Delta y}{\Delta x}$ is a ratio, it is often called the <strong>average <em>rate</em> of change</strong> of a function.  The resulting quantities describe per unit changes.  That is to say, by averaging we can tell what will happen to $f(x)$ every time $x$ increases by $1$.</p>
-<p>To see how this works let's find the average rate of change of $f(x) = \sqrt{x}$ on the interval $[9, 100]$.  Using the formula above we see that</p>
+<p>Since $\frac{\Delta y}{\Delta x}$ is a ratio, it is called the <strong>average <em>rate</em> of change</strong> of a function.  This value describes what will happen to $f(x)$, on average, every time $x$ increases by $1$.</p>
+<p>To see how this works let's find the average rate of change of $f(x) = \sqrt{x}$ on the interval $[9, 100]$.  Using the formula above:</p>
 <p>[ \begin{align}
 \frac{\Delta y}{\Delta x} &amp;= \frac{\sqrt{100} - \sqrt{9}} {100 - 9} \newline
 &amp;= \frac{10-3}{91} \newline
 &amp;= \frac{7}{91} \newline
 &amp;\approx 0.077
 \end{align}]</p>
-<p>This means that from $x=9$ to $x=100$ the function $f(x)=\sqrt x$ increases, on average, by $0.077$ units every time $x$ increases by $1$ unit.</p>
-<p>It's important to point out that unless the function is linear, the average rate of change of a function will be different over different intervals.  The value we get depends on the specific interval $[a, b]$ chosen.</p>
+<p>This tells us that from $x=9$ to $x=100$ the function $f(x)=\sqrt x$ increases, on average, by $0.077$ units every time $x$ increases by $1$ unit.</p>
+<p>It's useful to know that that unless a function is linear, the average rate of change will vary depending on the interval $[a, b]$ chosen.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Calculate the average rate of change of $f(x)=\sqrt x$ over the interval $[0,16]$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align}\frac{\Delta y}{\Delta x} &amp;= \frac{\sqrt{16}-\sqrt{0}}{16-0} \newline &amp;= \frac{4-0}{16} \newline &amp;= \frac{1}{4} \end{align}]</details></div>
-<p>The average rate of change formula might look familiar.  That's because it is the same thing as the <em>slope</em> of the line connecting the points $(a, f(a))$ and $(b, f(b))$.  This line is called a secant line.</p>
+<h2 id="finding-average-rate-of-change-graphically">Finding Average Rate of Change Graphically</h2>
+<p>If the average rate of change formula looks somewhat familiar, there's a good reason for that.  It is nothing more than the classic <em>slope</em> formula $m=\frac{y_2-y_1}{x_2-x_1}$ converted to function notation.</p>
+<p>The line connecting the points $(a, f(a))$ and $(b, f(b))$ is called a secant line.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/secant.svg#center" alt=""></p>
-<p>When a function is defined by a graph, the average rate of change can always be found by calculating the slope of the secant line.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p><img src="https://duragauge.github.io/img/chapter-1/total_change_question_graph.svg#center" alt=""></p>
+<p>When a function is defined by a graph, the average rate of change can always be calculated by finding the slope of the secant line.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p><img src="https://duragauge.github.io/img/chapter-1/AROC_function_graph.svg#center" alt=""></p>
 <ol>
 <li>
-<p>Use the graph above to find $\frac{\Delta y}{\Delta x}$ on the interval $[-1,  1]$.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align} \frac{\Delta y}{\Delta x} &amp;= \frac{f(1)-f(-1)}{1-(-1)} \newline &amp;= \frac{2-0}{2} \newline &amp;= 1\end{align}]</details></p>
+<p>Use the graph above to find $\frac{\Delta y}{\Delta x}$ on the interval $[-1,  3]$.<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><img src="https://duragauge.github.io/img/chapter-1/AROC_function_graph_answer1.svg#center" alt="">
+[\begin{align} \frac{\Delta y}{\Delta x} &amp;= \frac{f(3)-f(-1)}{3-(-1)} \newline &amp;= \frac{2-0}{4} \newline &amp;= \frac{1}{2}\end{align}]</details></p>
 </li>
 <li>
-<p>From the graph, what is $\frac{\Delta y}{\Delta x}$ on the interval $[1, 6]$?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align}\frac{\Delta y}{\Delta x} &amp;= \frac{f(6)-f(1)}{6-1} \newline &amp;= \frac{4-2}{6-1} \newline &amp;= \frac{2}{5}\end{align}]</details></p>
+<p>From the graph, what is $\frac{\Delta y}{\Delta x}$ on the interval $[0, 2]$?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><img src="https://duragauge.github.io/img/chapter-1/AROC_function_graph_answer2.svg#center" alt="">
+[\begin{align}\frac{\Delta y}{\Delta x} &amp;= \frac{f(2)-f(0)}{2-0} \newline &amp;= \frac{0-1}{2} \newline &amp;= \frac{-1}{2}\end{align}]</details></p>
 </li>
 </ol>
 </div>
 <h2 id="concavity-and-rates-that-change">Concavity and Rates that Change</h2>
-<p>We've seen before that functions can curve up or curve down allowing the function to change a different speeds.  In other words, <a href="../1.3#concavity">concavity</a> is an indication that the rates of change themselves can change.</p>
-<p>For instance, an increasing function could grow at a steady rate, at a rate that quickens, or at a rate that slows.  All three options are shown below.</p>
+<p>When walking, cycling, or driving, you've no doubt sped up, slowed down or maintained a constant speed.  In other words, you've changed your rate of speed.</p>
+<p>Since speed itself is a rate of change, by accelerating (speeding up) or decelerating (slowing down) you are actually changing this rate of change.</p>
+<p>Graphically, changes in rates of change are evident when a curve becomes steeper or less steep over an interval.  This connects to the concept of <a href="../1.3#concavity">concavity</a> which we encountered earlier.</p>
+<p>It's important to recognize that this is independent of whether a function is increasing or decreasing.</p>
+<p>For instance, an increasing function could grow in three different ways: at a constant rate, at an increasing rate, or at a decreasing rate.  All three options are shown below.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/increasing_3.svg#center" alt=""></p>
-<p>Functions can also decrease at constant, increasing, and decreasing rates.</p>
+<p>Similarly, functions can decrease at constant, increasing, and decreasing rates.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/decreasing_3.svg#center" alt=""></p>
-<p>While working with these changes in the rate is a topic best studied in calculus, it's not too difficult to recognize situations where rates change.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4><p>For each of the scenarios below, decide if the rates of change would be increasing, decreasing or constant.</p>
+<p>While analyzing changing rate of change is a topic best studied in calculus, it's not too difficult to recognize situations where rates change or to spot the concavity of a graph.</p>
+<div class="alert alert-success"><h4>QUICK CHECK</h4><p>For each of the scenarios below, decide if the rate of change would be increasing, decreasing or constant.</p>
 <ol>
 <li>
-<p>The temperature of a turkey as it roasts in an oven. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The temperature would increase at a decreasing rate.</details></p>
+<p>The temperature of a turkey as it roasts in an oven. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The temperature of the turkey increases at a decreasing rate.  It heats up quickly at first but then warms more slowly as the turkey's temperature approaches the oven's temperature.</details></p>
 </li>
 <li>
-<p>The world record in the 100 meter dash. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This is decreasing at a decreasing rate.</details></p>
+<p>The world record in the 100 meter dash over time. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The world record in the 100-meter dash is decreasing at a decreasing rate. Each new world record is lower than the previous one, but the reductions become smaller and smaller.</details></p>
 </li>
 <li>
-<p>The altitude of a space ship as it is launched from Earth.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Altitude would increase at an increasing rate.</details></p>
+<p>The distance traveled by a car on cruise control on a straight highway.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The distance traveled is increasing at a constant rate (speed). Since the car is on cruise control its speed is held constant.</details></p>
 </li>
 <li>
-<p>The height of a ball dropped off a cliff. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Decreases at an increasing rate.</details></p>
+<p>The altitude of a space ship as it accelerates away from Earth.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Altitude would increase at an increasing rate (speed).  As it gets further from Earth there is less gravity and air resistance resulting in a faster and faster increase in altitude.</details></p>
+</li>
+<li>
+<p>The height of a ball dropped off a cliff as it accelerates toward the ground. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The height decreases at an increasing rate (speed).  Because of the acceleration of gravity, the ball falls faster and faster.</details></p>
 </li>
 </ol>
 </div>
 <h2 id="difference-quotients">Difference Quotients</h2>
-<p>The formulas we have used so far show what happens on a specific interval.  We'll now build a mechanism that has the potential to describe the behavior of a function on every interval all at once.</p>
-<p>The tool that does this is called the <strong>difference quotient</strong>.  The difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval from $x$ to  $x+h$, where  $h$  is any positive number.  This is the same thing as the average rate of change, but with a change in notation.</p>
+<p>The formulas we have used so far show what happens on a specific interval.  Now we'll introduce a tool that allows us to examine the behavior of a function on any interval, using a more general approach.</p>
+<p>The tool that does this is called the <strong>difference quotient</strong>.  The difference quotient $D(x)$ is a function that lets us calculate the average rate of change on a generic interval from $x$ to $x+h$, where $h$ is any positive number.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient.svg#center" alt=""></p>
-<p>To see how the difference quotient is derived from the average rate of change formula, we substitute $\color{red}{x}$ in place of  $\color{red}{a}$, and $\color{blue}{x+h}$  in place of  $\color{blue}{b}$ and simplify.</p>
+<p>To see how the difference quotient comes from the average rate of change formula, we substitute $\color{red}{x}$ for $\color{red}{a}$ and $\color{blue}{x+h}$ for $\color{blue}{b}$.</p>
 <p>[
 \begin{align}
 \frac{f(\color{blue}{b})-f(\color{red}{a})}{\color{blue}{b}-\color{red}{a}} &amp;= \frac{f(\color{blue}{x+h})-f(\color{red}{x})}{\color{blue}{(x+h)}-\color{red}{x}} \newline \newline
@@ -259,9 +265,9 @@
 ]</p>
 <p>The behavior of $D(x)$ is connected to how the function $f(x)$ changes in two important ways.  First, whether the function is strictly increasing, decreasing or constant on an interval impacts the sign of $D(x)$.</p>
 <ul>
-<li>If $f(x)$ is increasing on an interval, then the difference quotient is positive on that same interval.</li>
-<li>If $f(x)$ is decreasing on an interval, then the difference quotient will be negative on that interval.</li>
-<li>If $f(x)$ is constant over an interval, then the difference quotient is $0$ over that interval.</li>
+<li>If $f(x)$ is increasing on an interval, then the difference quotient $D(x)$ is positive on that same interval.</li>
+<li>If $f(x)$ is decreasing on an interval, then the difference quotient $D(x)$ will be negative on that interval.</li>
+<li>If $f(x)$ is constant over an interval, then the difference quotient $D(x)$ is $0$ over that interval.</li>
 </ul>
 <p>Secondly, the concavity of the function tells us if $D(x)$ itself is increasing, decreasing or constant.  That is to say,</p>
 <ul>
@@ -276,7 +282,7 @@
 <p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient_x_squared.svg" alt=""></p>
 <p>Notice that no matter what value $h$ happens to be, $D(x)$ is always increasing since it is a linear function with a slope of $2$.</p>
 <h2 id="looking-ahead">Looking Ahead</h2>
-<p>Exploring how functions change is a fascinating topic and is foundational to calculus.  Not only will calculus teach you more about efficiently computing <em>average</em> rates of change, you will also learn to use the difference quotient to calculate <em>instantaneous</em> rates change, leading to the concept of a <strong>derivative</strong>.</p>
+<p>Exploring how functions change is a fascinating topic and is foundational to calculus.  Not only will calculus teach you more about efficiently computing <em>average</em> rates of change, you will also learn to use the difference quotient to calculate <em>instantaneous</em> rates change, leading to the powerful concept of a <strong>derivative</strong>.</p>
 <p>But for now, it is enough to know that functions with similar behaviors have similar difference quotients, allowing us to group them together into different families that we will encounter in the next chapters.</p>
 
                         </div>
