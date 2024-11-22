@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{ partial "header.html" . }}
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    // Resize listener
+    $(function() {
+        $(window).on("message", function(e) {
+            if (typeof e.originalEvent.data === 'string' && e.originalEvent.data.match(/lti\.frameResize/)) {
+                var edata = JSON.parse(e.originalEvent.data);
+                if ("frame_id" in edata) {
+                    $("#" + edata["frame_id"]).height(edata.height);
+                    $("#" + edata["frame_id"] + "wrap").height(edata.wrapheight);
+                }
+            }
+        });
+    });
+    // Trigger submit
+    function triggersubmit(frameid) {
+        document.getElementById(frameid).contentWindow.postMessage("submit", "*");
+    }
+    // Change question being displayed in iframe
+    function loadnewq(frameid, qid) {
+        document.getElementById(frameid).contentWindow.postMessage(
+            JSON.stringify({ subject: "imathas.show", id: qid }), "*"
+        );
+    }
+  </script>
+  <link rel="stylesheet" href="{{ "css/practice.css" | absURL }}"/>
+  <style>
+    .embedwrap {
+        overflow: visible;
+        position: relative;
+    }
+    .embedwrap > iframe {
+        position: absolute;
+        border: none;
+        width: 100%;
+    }
+    .embedwrap > p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+  </style>
+</head>
+    <body class="practice-page">
+      {{ partial "nav.html" . }}
+
+    {{ "<!-- Wrapper -->" | safeHTML }}
+        <div id="wrapper" style="padding-left: 2rem; padding-right: 2rem;">
+        {{ partial "nav.html" . }}
+  
+        <header class="major">
+          <h1>{{ .Title}}</h1>
+        </header>
+
+    <main>
+      {{ .Content }}
+    </main>
+ </div>
+</body>
+</html>
+
+

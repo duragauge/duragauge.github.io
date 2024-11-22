@@ -1,0 +1,12 @@
+{{ $scratch := newScratch }}
+{{ if not (.Page.Scratch.Get "momCounter") }}
+  {{ .Page.Scratch.Set "momCounter" 0 }}
+{{ end }}
+{{ .Page.Scratch.Add "momCounter" 1 }}
+{{ $counter := .Page.Scratch.Get "momCounter" }}
+
+<p class="mom-number">Exercise {{ $counter }}</p>
+<div id="{{ .Get "id" }}wrap" class="embedwrap">
+    <iframe id="{{ .Get "id" }}" style="z-index:5"
+        src="https://www.myopenmath.com/embedq2.php?id={{ .Get "id" }}&frame_id={{ .Get "id" }}&hidescoreval=1" ></iframe>
+</div>

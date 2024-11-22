@@ -1,0 +1,16 @@
+/* CSS for the practice layout */
+
+.mom-number {
+  margin-block-start: 1em;
+  margin-block-end: 0;
+  padding: 0.25em;
+  background-color: #b2d9ff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.embedwrap {
+  background-color: #E6F3FF;
+}
+

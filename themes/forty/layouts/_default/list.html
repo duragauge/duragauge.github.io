@@ -28,7 +28,7 @@
 
 
                 <section id="two" class="spotlights">
-                    {{ range .Pages }}
+                    {{ range where .Pages "Type" "!=" "practice" }}
                     <section>
                         <a href="{{ .URL }}" class="image">
 							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
