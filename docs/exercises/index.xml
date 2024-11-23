@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises on Precalculus 1 - Functions</title>
+    <link>https://duragauge.github.io/exercises/</link>
+    <description>Recent content in Exercises on Precalculus 1 - Functions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://duragauge.github.io/exercises/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1 Sets &amp; Numbers</title>
+      <link>https://duragauge.github.io/exercises/1.1-exercises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://duragauge.github.io/exercises/1.1-exercises/</guid>
+      <description>Section 1.1: Sets &amp;amp; Numbers   Determine if the following sets are in set-builder notation or in roster notation.
+a) $\{ x ,|, x \text{ is a non-fiction book} \}$
+ Set-builder notation Roster notation  b) $\{ \text{bass, goldfish, trout, salmon, tuna} \}$
+ Set-builder notation Roster notation  c) $\{ x ,|, x \text{ is an animal that makes a good pet} \}$
+ Set-builder notation Roster notation  d) $\{ 🔷, ⚪️, 🟪, 🔔, 🤎 \}$</description>
+    </item>
+    
+  </channel>
+</rss>

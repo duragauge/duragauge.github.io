@@ -767,26 +767,39 @@ $f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details></div>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>The key idea from this section is that since exponential and logarithmic functions are inverses functions, we can also use them as inverse operations to solve equations and applications.</p>
 
-                        </div>
-                    </section>
-            </div>
+                            
+                            
+                                
+                                
+                                    <h2>Additional Practice</h2>
+                                    <p>Want more practice? Try these optional exercises powered by MyOpenMath. These exercises are purely for practice and are not part of your graded homework - you can attempt them as many times as you'd like!</p>
+                                    <div class="practice-button-container">
+                                        <a href="https://duragauge.github.io/chapter-3/3.5-practice/" class="button special practice-button">Try Practice Exercises</a>
+                                    </div>
+                                
+                            
 
-        <!-- Footer -->
-            
-                <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                
-            </ul>
-            <ul class="copyright">
-                <li>&copy; </li>
-                
-                <li>Deign:  <a href="https://www.html5up.net">HTML5 UP</a></li>
-                
-            </ul>
-        </div>
-    </footer>
+                            <!-- Footer -->
+                            
+                                <footer class="license-footer">
+    <div class="license-content">
+      <div class="license-image">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          <img alt="Creative Commons License" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg"/>
+        </a>
+      </div>
+      <div class="license-text">
+        This work copyrighted by Nolan Mitchell under a 
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. 
+       </div>
+    </div>
+    <div class="download-info">
+        Source files are available at 
+        <a href="https://github.com/duragauge/duragauge.github.io">https://github.com/duragauge/duragauge.github.io</a>.
+ 
+        You can also <a href="https://duragauge.github.io/precalculus-1-functions.pdf">download a PDF copy</a> of the entire book.  The PDF was last updated on January 21, 2024, and may not reflect changes to the online content made after that date.
+    </div>
+  </footer>
 
 
 
@@ -814,16 +827,14 @@ $f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details></div>
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
 </script>
 
-
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;float:left;margin:0.5em;" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" /></a>This work copyrighted by Nolan Mitchell under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-Source files are available at <a href="https://github.com/duragauge/duragauge.github.io">https://github.com/duragauge/duragauge.github.io</a>.</p>
-<p>You can also download a PDF copy of the entire book <a href="https://duragauge.github.io/precalculus-1-functions.pdf">here</a>. The PDF was last updated on January 21, 2024, and may not reflect changes to the online content made after that date.</p>
-            
-
+                            
+                        </div>
+                    </section>
+            </div>
         </div>
 
         <!-- Scripts -->
-          <!-- Scripts -->
+        <!-- Scripts -->
     <!-- jQuery -->
     <script src="https://duragauge.github.io/js/jquery.min.js"></script>
     <script src="https://duragauge.github.io/js/jquery.scrolly.min.js"></script>
@@ -841,76 +852,6 @@ Source files are available at <a href="https://github.com/duragauge/duragauge.gi
     
 
     
-
-
-
-
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
-
-          <script>
-          let vuesearch = new Vue({
-              el: '#search', 
-              data: {
-                  txt: '', 
-                  timeoutID: 0, 
-                  showresult: false, 
-                  result: {}, 
-                  bdd: [] 
-                  },
-              mounted: function() {
-                  
-                  axios.get('')
-                  .then(function (response) {
-                      vuesearch.bdd = response.data.results;
-                      })
-                  .catch(function (error) {
-                      console.log(error);
-                      });
-                  },
-              methods: {
-                  close: function() {
-                      
-                      
-                      setTimeout(function() {
-                          vuesearch.showresult = false;
-                          vuesearch.txt = '';
-                          }, 300);
-                      },
-                  search: function() {
-                      
-                      clearTimeout(this.timeoutID);
-                      this.timeoutID = setTimeout(this.dosearch, 500);
-                      },
-                  dosearch: function() {
-                      
-                      this.result = []; 
-                      let words = this.txt.split(' '); 
-                      let words2 = []; 
-                      words.forEach(function(element) { 
-                          if(element) {words2.push(element);}
-                          });
-                      let r;
-                      let resultmp;
-                      words2.forEach(function(e) { 
-                          r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
-                          if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
-                          resultmp = [];
-                          vuesearch.result.forEach(function(all1) {
-                              r.forEach(function(all2) { 
-                                  if(all1.url===all2.url) {resultmp.push(all1);}
-                                  });
-                              });
-                          vuesearch.result = resultmp.slice();
-                          });
-                      this.result = this.result.slice(0, 10); 
-                      this.showresult = (this.result.length>0); 
-                      } 
-                  } 
-              }); 
-          </script>
-
 
 
     </body>

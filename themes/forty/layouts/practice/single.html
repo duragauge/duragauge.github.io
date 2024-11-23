@@ -57,6 +57,17 @@
         </header>
 
     <main>
+      <p>The following exercises are just for practice - feel free to try them as many times as you'd like! Your answers are not saved.</p>
+
+      {{ $sectionFile := replace .File.BaseFileName "-practice" "" }}
+      <div class="practice-nav-container">
+          <a href="{{ relref . (printf "%s/%s.md" .Section $sectionFile) }}" 
+             class="button special practice-button">Section {{ $sectionFile }}</a>
+          <a href="{{ relref . "/practice" }}" 
+             class="button special practice-button">All Practice Exercises</a>
+          <a href="{{ relref . "/" }}" 
+             class="button special practice-button">Home</a>
+      </div>
       {{ .Content }}
     </main>
  </div>
