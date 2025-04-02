@@ -136,21 +136,51 @@ f(x)=(1+r)^{x}
 </div>
 <h2 id="initial-value">Initial Value</h2>
 <p>Another way to change the basic exponential function $f(x)=b^{x}$ is to apply a vertical stretch.  You might recall that a vertical stretch is caused by multiplying the function by some constant $a$, which has the effect of multiplying each y-value by $a$.  Use the figure below to explore the how exponential functions respond to vertical stretches. Make a note of your observations before continuing.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/ZfNEAkbh/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-ZfNEAkbh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/ZfNEAkbh"><img src="https://www.geogebra.org/resource/ZfNEAkbh/aMSg0ulYcZkY4Re8/material-ZfNEAkbh.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ZfNEAkbh"><a href="https://www.geogebra.org/m/ZfNEAkbh">https://www.geogebra.org/m/ZfNEAkbh</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-ZfNEAkbh", "ggb-element-ZfNEAkbh", "ZfNEAkbh");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/ZfNEAkbh">
+      <img src="https://www.geogebra.org/resource/ZfNEAkbh/ZfNEAkbh/material-ZfNEAkbh.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/ZfNEAkbh">https://www.geogebra.org/m/ZfNEAkbh</a>
+  </div>
+</noscript>
 <p>You should have noticed that multiplying an exponential function $f(x)=b^{x}$ by a constant $a$ causes the y-intercept to change from $(0, 1)$ to $(0, a)$.  For instance, if $a=4$, then the y-intercept will be $(0, 4)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/exponential_vertical_stretch.png#center" alt=""></p>
 <p>This is actually a consequence of the rule of exponents that says $b^{0}=1$, so $f(0)=a \cdot b^{0} = a$ for any valid base.</p>

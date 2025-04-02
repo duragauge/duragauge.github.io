@@ -249,21 +249,51 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
 <p>For example, the accompanying table shows the weight and cruising speed of several birds.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/bird_data.svg#center" alt=""></p>
 <p>A scatterplot of the data suggests that a slowly increasing power function with $0&lt;p&lt;1$, which would have a shape similar to the square root function, might model the data well.</p>
-<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/ZnU6AiQr/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 33.33%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-ZnU6AiQr" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/ZnU6AiQr"><img src="https://www.geogebra.org/resource/ZnU6AiQr/ncguvQHLwhXvamtn/material-ZnU6AiQr.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ZnU6AiQr"><a href="https://www.geogebra.org/m/ZnU6AiQr">https://www.geogebra.org/m/ZnU6AiQr</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-ZnU6AiQr", "ggb-element-ZnU6AiQr", "ZnU6AiQr");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/ZnU6AiQr">
+      <img src="https://www.geogebra.org/resource/ZnU6AiQr/ZnU6AiQr/material-ZnU6AiQr.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/ZnU6AiQr">https://www.geogebra.org/m/ZnU6AiQr</a>
+  </div>
+</noscript>
 </br>
 <p>Running the <code>PwrReg</code> program gives $f(x) =  23.66 x^{0.2}$ as the best fit, confirming our initial observation that $0 &lt; p &lt; 1$.</p>
 <p>We can use this function to predict the flying speed of other animals based on their weight.  For instance, the giant golden-crowned flying fox is one of the heaviest bat species, with some individuals weighing up to $3.1$ pounds.  Our model predicts that a $3.1$ pound flying fox has an optimal flying speed of $f(3.1) =  23.66 (3.1)^{0.2}=29.67 \text{ mph}$.</p>
@@ -274,21 +304,51 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
 <p>In the last two examples we identified the scatterplots as a power functions.  This isn't surprising, since power functions can grow quickly (when $p \gt 1$), grow slowly (when $0 \lt p \lt 1$) and decay (when $p \lt 0$).</p>
 <p><img src="https://duragauge.github.io/img/chapter-2/powers_all_3.svg#center" alt=""></p>
 <p>However, it would have been better to check multiple function models.  For example, the scatterplot below looks similar to Kepler's data, but no mater which values you choose for $k$ and $p$, no power function will ever fit the curvature of the data.</p>
-<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/Rv4EWJmR/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 33.33%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-Rv4EWJmR" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/Rv4EWJmR"><img src="https://www.geogebra.org/resource/Rv4EWJmR/LLBa2iAu6P4mcBKq/material-Rv4EWJmR.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/Rv4EWJmR"><a href="https://www.geogebra.org/m/Rv4EWJmR">https://www.geogebra.org/m/Rv4EWJmR</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-Rv4EWJmR", "ggb-element-Rv4EWJmR", "Rv4EWJmR");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/Rv4EWJmR">
+      <img src="https://www.geogebra.org/resource/Rv4EWJmR/Rv4EWJmR/material-Rv4EWJmR.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/Rv4EWJmR">https://www.geogebra.org/m/Rv4EWJmR</a>
+  </div>
+</noscript>
 <p>In particular, it's very easy to mistakenly identify data with exponential, logarithmic or even logistic trends as being power functions.  You can see the similarities in the three data sets below.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/scatterplots.svg#center" alt=""></p>
 <p>It's always best practice to try more than one type of function model to see which fits best.</p>
@@ -528,21 +588,51 @@ The actual population in 2020 was 33,274 so neither of our models produced a goo
 <p>Notice that he population decreased and then started to increase, so it seems reasonable that a quadratic function might fit the data.</p>
 <p>Since this is our final example, we will approach this two ways.  First we will try using transformations to make a quadratic model in the vertex form like we did in <a href="https://duragauge.github.io/chapter-6/6.1#vertex-form-of-a-quadratic">section 6.1</a>.  Then we'll use regression and will show all the steps for using a Texas-Instruments TI83 or TI84 graphing calculators.  Since a quadratic function has $3$ parameters, we will not use the algebraic methods of <a href="https://duragauge.github.io/chapter-6/6.2">section 6.2</a> since we do not have the tools for large systems of equations.</p>
 <p>To hunt for a quadratic model in the vertex form, adjust the values of $\color{blue}{a}$, $\color{brown}{h}$ and $\color{green}{k}$ in the figure below.</p>
-<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/FdLFe4II/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 50%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-FdLFe4II" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/FdLFe4II"><img src="https://www.geogebra.org/resource/FdLFe4II/NYMIg0eN3w5XIZtN/material-FdLFe4II.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/FdLFe4II"><a href="https://www.geogebra.org/m/FdLFe4II">https://www.geogebra.org/m/FdLFe4II</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-FdLFe4II", "ggb-element-FdLFe4II", "FdLFe4II");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/FdLFe4II">
+      <img src="https://www.geogebra.org/resource/FdLFe4II/FdLFe4II/material-FdLFe4II.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/FdLFe4II">https://www.geogebra.org/m/FdLFe4II</a>
+  </div>
+</noscript>
 <p>With data sets like this one it is hard to know which combination of transformations will make the curve fit the data the best.  It will be easier to let technology find the equation for us.</p>
 <p>To enter the data into the calculator we press the <code>STAT</code> button and select <code>1: Edit</code>.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/horse_regression_1.png#center" alt=""></p>

@@ -238,21 +238,51 @@ f(x) = b^{x}
 </ol>
 </div>
 <p>The shape of the graph of an exponential function is controlled entirely by the value of the base $b$.  In the following figure you can change the value of the base $b$ by moving the <strong><font color="blue">blue</font></strong> slider.  As you do so, pay attention to the shape of the graph.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/t1KIn8Z3/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-t1KIn8Z3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/t1KIn8Z3"><img src="https://www.geogebra.org/resource/t1KIn8Z3/JHZ4o4QcfJtuK37Y/material-t1KIn8Z3.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/t1KIn8Z3"><a href="https://www.geogebra.org/m/t1KIn8Z3">https://www.geogebra.org/m/t1KIn8Z3</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-t1KIn8Z3", "ggb-element-t1KIn8Z3", "t1KIn8Z3");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/t1KIn8Z3">
+      <img src="https://www.geogebra.org/resource/t1KIn8Z3/t1KIn8Z3/material-t1KIn8Z3.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/t1KIn8Z3">https://www.geogebra.org/m/t1KIn8Z3</a>
+  </div>
+</noscript>
 <p>You should specifically check for each of the following behaviors, which were introduced in <a href="//chapter-1/1.3">Chapter 1</a>.</p>
 <details><summary>Behaviors</summary>
 <ul>
@@ -436,21 +466,51 @@ D(x) =  \frac{b^{h}-1}{h} b^{x}
 ]</p>
 <p>Notice that if  $\frac{b^{h}-1}{h}=1$, then $D(x)=b^{x}=f(x)$.    In other words, if we can find values of $b$ and $h$ that make $\frac{b^{h}-1}{h}=1$, then the difference quotient will equal the function.</p>
 <p>Although there are many combinations of $b$ and $h$ that make $\frac{b^{h}-1}{h}=1$, the most important one arises when $h$ is chosen to be a very small, positive number.  In the interactive figure below, we have fixed $h = 0.001$.  Use the slider to adjust the value of $b$ until you find one where $\color{red}{D(x)}=f(x)$.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/hl5o7xc8/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-hl5o7xc8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/hl5o7xc8"><img src="https://www.geogebra.org/resource/hl5o7xc8/rCXAt1yGSjNNjcdr/material-hl5o7xc8.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hl5o7xc8"><a href="https://www.geogebra.org/m/hl5o7xc8">https://www.geogebra.org/m/hl5o7xc8</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-hl5o7xc8", "ggb-element-hl5o7xc8", "hl5o7xc8");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/hl5o7xc8">
+      <img src="https://www.geogebra.org/resource/hl5o7xc8/hl5o7xc8/material-hl5o7xc8.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/hl5o7xc8">https://www.geogebra.org/m/hl5o7xc8</a>
+  </div>
+</noscript>
 <p>Which value of $b$ works? From the figure it appears that choosing $b$ somewhere around $2.718$ does the trick.</p>
 <p>The true value is an irrational number known as $e$.   Since $e$ is an irrational number, $2.718$ is just an approximation of  it, much like $3.14$ is an approximation of $\pi$.  Before we can find more precise approximations of $e$, we need to define exactly what $e$ is.</p>
 <p>The number $e$ was discovered by a Swiss mathematician, Jacob Bernoulli, as he studied interest on loans, an application we will look at in the next section. The name $e$ was given by another Swiss mathematician, Leonard Euler.</p>

@@ -112,42 +112,102 @@
 <p>As you can see from these examples, rational functions often have x-intercepts, a property they share with polynomials, but they can also have <a href="https://duragauge.github.io/chapter-1/1.3/#asymptotes">vertical and horizonal asymptotes</a>, two things polynomials never have.  There is even a entirely new behavior that we have not seen before that seems to pop up almost out of nowhere.</p>
 <h2 id="zeros">Zeros</h2>
 <p>Rational functions inherit their zero behavior from the polynomial in the numerator.  You can explore this in the figure below.  Look carefully at the link between the location of the zero and the factors in the numerator.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/tk5488nc/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-hrgyn3qw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/hrgyn3qw"><img src="https://www.geogebra.org/resource/tk5488nc/zigao44ostIFLpfy/material-tk5488nc.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hrgyn3qw"><a href="https://www.geogebra.org/m/hrgyn3qw">https://www.geogebra.org/m/hrgyn3qw</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-hrgyn3qw", "ggb-element-hrgyn3qw", "hrgyn3qw");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/hrgyn3qw">
+      <img src="https://www.geogebra.org/resource/hrgyn3qw/hrgyn3qw/material-hrgyn3qw.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/hrgyn3qw">https://www.geogebra.org/m/hrgyn3qw</a>
+  </div>
+</noscript>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>How can you find the x-intercepts of a rational function by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the numerator, then the function has an x-intercept at $x=c$. The zeros of the polynomial in the numerator cause the zeros of the rational function.</details></li>
 </ol>
 </div>
 <h2 id="vertical-asymptotes">Vertical Asymptotes</h2>
 <p>The vertical asymptotes of a rational function are caused by the polynomial in the denominator.  In the figure below you can move the vertical asymptotes (indicated by the dotted lines).  Look for a connection between the location of the vertical asymptotes and the factors in the denominator.</p>
-<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/pcxugr4b/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 65%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-ssgbhywx" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/ssgbhywx"><img src="https://www.geogebra.org/resource/pcxugr4b/68P3xw4hSKGeNNe4/material-pcxugr4b.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ssgbhywx"><a href="https://www.geogebra.org/m/ssgbhywx">https://www.geogebra.org/m/ssgbhywx</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-ssgbhywx", "ggb-element-ssgbhywx", "ssgbhywx");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/ssgbhywx">
+      <img src="https://www.geogebra.org/resource/ssgbhywx/ssgbhywx/material-ssgbhywx.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/ssgbhywx">https://www.geogebra.org/m/ssgbhywx</a>
+  </div>
+</noscript>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>How can you tell if a rational function has a vertical asymptote, just by looking at its equation? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $(x-c)$ is a factor of the denominator, then the function has a vertical asymptote at $x=c$. The zeros of the polynomial in the denominator cause the vertical asymptotes of the rational function.</details></li>
 </ol>
@@ -159,21 +219,51 @@
 <p>Then $0 \div 0 = x$ would mean $0 = 0 \times x$, but that's true for every number!  Since there's no single well defined way to say what $0 \div 0$ equals, we leave it <em>undefined</em>.</p>
 <p>So whenever we have a rational function that has matching factors in the numerator and denominator, the graph is undefined at that point and there is a hole or break in the graph.  The official term is &quot;<em>removable discontinuity</em>&quot;.</p>
 <p>In the figure below you can change the locations of the zero, the vertical asymptote, and the hole.</p>
-<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/mhChyVxw/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 65%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-ntYzprQz" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/ntYzprQz"><img src="https://www.geogebra.org/resource/mhChyVxw/xPIL41W5dZKruUnz/material-mhChyVxw.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ntYzprQz"><a href="https://www.geogebra.org/m/ntYzprQz">https://www.geogebra.org/m/ntYzprQz</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-ntYzprQz", "ggb-element-ntYzprQz", "ntYzprQz");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/ntYzprQz">
+      <img src="https://www.geogebra.org/resource/ntYzprQz/ntYzprQz/material-ntYzprQz.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/ntYzprQz">https://www.geogebra.org/m/ntYzprQz</a>
+  </div>
+</noscript>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Identify all of the x-intercepts, vertical asymptotes and holes of the rational function [r(x)=\frac{(x-5)(x+3)(x-1)}{(x-2)(x-7)(x-1)}] <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />There are x-intercepts at $x=5, x=-3$, vertical asymptotes at $x=2, x=7$ and a hole at $x=1$.</details></p>
@@ -187,38 +277,98 @@
 <p>In addition to x-intercepts, vertical asymptotes and holes, rational functions often have horizontal asymptotes.</p>
 <p>Recall that a horizontal asymptote is a long-term behavior, describing how the function levels off as $x \rightarrow \pm \infty$.  Since the long-term behavior of a polynomial is controlled by the degree and leading coefficient, we should focus our attention on the degree and leading coefficients of the polynomials that make up a rational function.</p>
 <p>In this first figure both polynomials have the same degree.  Adjust the leading coefficients and see how that impacts the location of the horizontal asymptote.</p>
-<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/at9thts5/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 65%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-u76wmebr" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/u76wmebr"><img src="https://www.geogebra.org/resource/at9thts5/pe7TUPcu5aPtBhgT/material-at9thts5.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/u76wmebr"><a href="https://www.geogebra.org/m/u76wmebr">https://www.geogebra.org/m/u76wmebr</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-u76wmebr", "ggb-element-u76wmebr", "u76wmebr");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/u76wmebr">
+      <img src="https://www.geogebra.org/resource/u76wmebr/u76wmebr/material-u76wmebr.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/u76wmebr">https://www.geogebra.org/m/u76wmebr</a>
+  </div>
+</noscript>
 <p>As you've just seen, if the degrees match then you can simplify the leading coefficients to find the horizontal asymptote.</p>
 <p>But what if the degrees do not match?  In this figure you can alter the degree of each polynomial.</p>
-<div class="no-print geogebra" style="padding-top: 65%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/pdxmcuxv/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 65%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-prrwdbcz" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/prrwdbcz"><img src="https://www.geogebra.org/resource/pdxmcuxv/zxRWUiBDisUD0ALZ/material-pdxmcuxv.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/prrwdbcz"><a href="https://www.geogebra.org/m/prrwdbcz">https://www.geogebra.org/m/prrwdbcz</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-prrwdbcz", "ggb-element-prrwdbcz", "prrwdbcz");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/prrwdbcz">
+      <img src="https://www.geogebra.org/resource/prrwdbcz/prrwdbcz/material-prrwdbcz.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/prrwdbcz">https://www.geogebra.org/m/prrwdbcz</a>
+  </div>
+</noscript>
 <p>If the degree of the numerator is larger, then no horizontal asymptote exists. However, if the degree of the denominator is larger, the horizontal asymptote is automatically at $y = 0$ (i.e. the x-axis).</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>

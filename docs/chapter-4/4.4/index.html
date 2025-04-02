@@ -157,21 +157,51 @@
 <h2 id="review-graphing-inverses">Review Graphing Inverses</h2>
 <p>Now consider a function such as $f(x)=\frac{x-5}{x-4}$ where $x$ appears more than once in the equation.  Since we cannot determine what happens to $x$ first, we cannot establish an order of operations and cannot use the shoes-and-socks method, despite the fact that this function is indeed one-to-one.</p>
 <p>We can, however, find the graph of $f^{-1}(x)$ by reflecting points on the graph of $f(x)$ around the line $y=x$, as in the figure below (move the <font color="blue">blue</font> slider to see the reflection).</p>
-<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/izzOv7Yo/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 50%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-izzOv7Yo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/izzOv7Yo"><img src="https://www.geogebra.org/resource/izzOv7Yo/cQPv8NFYS7hVyGck/material-izzOv7Yo.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/izzOv7Yo"><a href="https://www.geogebra.org/m/izzOv7Yo">https://www.geogebra.org/m/izzOv7Yo</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-izzOv7Yo", "ggb-element-izzOv7Yo", "izzOv7Yo");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/izzOv7Yo">
+      <img src="https://www.geogebra.org/resource/izzOv7Yo/izzOv7Yo/material-izzOv7Yo.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/izzOv7Yo">https://www.geogebra.org/m/izzOv7Yo</a>
+  </div>
+</noscript>
 <p>Notice that each point $\color{red}{(x, y)}$ on the graph of $f$ turns into the point $\color{black}{(y, x)}$ on the graph of the inverse.  This may not seem like a significant fact, but it is the key to a new algebraic method for finding the equations of inverses.</p>
 <h2 id="learn-the-switch-and-solve-method">Learn the Switch and Solve Method</h2>
 <p>We have seen that if $(x, y)$ is a point on the graph of a one-to-one function $f$, then the point $(y, x)$ is on the graph of $f^{-1}$.  The significance of this that switching $x$ and $y$ in the equation of a one-to-one function creates an implicit equation for its inverse.  All that remains is to solve that equation for $y$ so that we can write it with function notation.   For obvious reasons, this will be called the <strong>switch-and-solve</strong> method.</p>

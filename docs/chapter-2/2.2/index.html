@@ -134,21 +134,51 @@ f(x) =  k x^{p}
 ]</p>
 <p>is called the <strong>standard power function model</strong>.</p>
 <p>To understand how $k$ impacts the model let's focus on the effect it has on a single point.</p>
-<div class="no-print geogebra" style="padding-top: 33.33%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/enm1qAJj/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 33.33%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-enm1qAJj" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/enm1qAJj"><img src="https://www.geogebra.org/resource/enm1qAJj/7EOvipXoNUqjGren/material-enm1qAJj.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/enm1qAJj"><a href="https://www.geogebra.org/m/enm1qAJj">https://www.geogebra.org/m/enm1qAJj</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-enm1qAJj", "ggb-element-enm1qAJj", "enm1qAJj");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/enm1qAJj">
+      <img src="https://www.geogebra.org/resource/enm1qAJj/enm1qAJj/material-enm1qAJj.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/enm1qAJj">https://www.geogebra.org/m/enm1qAJj</a>
+  </div>
+</noscript>
 <p>This causes a vertical scaling of the graph by a factor of $k$ so that any power functions of the form $f(x)=k x^{p}$ will pass through the point$(1, k)$.</p>
 <p>In many cases the scaling factor $k$ is composed of more than one constant.  For instance, the volume of a sphere is a function of the of the radius and is given by $V=\frac{4}{3} \pi r^{3}$.  Here the constant $k$ includes both the fraction $\frac{4}{3}$ and $\pi$, that is $k=\frac{4}{3} \pi$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Identify the scaling factor $k$ for each of the power functions listed below.</p>

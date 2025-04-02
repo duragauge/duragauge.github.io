@@ -199,21 +199,51 @@ The domain of $f(x)=\sqrt{x+4}$ is all numbers greater than or equal to $-4$.  T
 <p>We can also gain some insight into the graph of $(fg)(x)$ by inspecting the graphs of $f(x)$ and $g(x)$.</p>
 <p>Of particular interest is the fact that $(fg)(x)$ inherits the x-intercepts from both $f(x)$ and $g(x)$.</p>
 <p>This can be explored in the interactive figure below.  The $\color{red}{f(x)=4-x^{2}}$ and $\color{blue}{\ln(x)}$ are shown, though you can change either one.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/ccAPEyMG/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-ccAPEyMG" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/ccAPEyMG"><img src="https://www.geogebra.org/resource/ccAPEyMG/7088gRlSnR7MzxmG/material-ccAPEyMG.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/ccAPEyMG"><a href="https://www.geogebra.org/m/ccAPEyMG">https://www.geogebra.org/m/ccAPEyMG</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-ccAPEyMG", "ggb-element-ccAPEyMG", "ccAPEyMG");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/ccAPEyMG">
+      <img src="https://www.geogebra.org/resource/ccAPEyMG/ccAPEyMG/material-ccAPEyMG.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/ccAPEyMG">https://www.geogebra.org/m/ccAPEyMG</a>
+  </div>
+</noscript>
 <p>It's worth noting that the product $fg$ only exists for $x&gt;0$ since the domain of the logarithm is $x&gt;0$.</p>
 <h2 id="applications">Applications</h2>
 <p>At the start of this section we mentioned the storm surge following a tropical storm like a hurricane.  It's now time that we looked at this shape and tried to find a function with a similar graph.</p>
@@ -221,21 +251,51 @@ The domain of $f(x)=\sqrt{x+4}$ is all numbers greater than or equal to $-4$.  T
 <p><img src="https://pubs.usgs.gov/ds/2006/220/images/LA9b.gif" alt=""></p>
 <p>One way to create a function that grows quickly and then decays is to multiply an increasing power function by an exponential decay function.</p>
 <p>In the figure below, the graphs of $f(x)=10x^{2}$ and $g(x)=e^{-x}$ are shown.  The graph of $(fg)(x)=10x^{2}e^{-x}$ will be drawn as you change the value of $x$.</p>
-<div class="no-print geogebra" style="padding-top: 40%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/AfMnn6k3/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-AfMnn6k3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/AfMnn6k3"><img src="https://www.geogebra.org/resource/AfMnn6k3/GZumI2j14Zzb1bPr/material-AfMnn6k3.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/AfMnn6k3"><a href="https://www.geogebra.org/m/AfMnn6k3">https://www.geogebra.org/m/AfMnn6k3</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-AfMnn6k3", "ggb-element-AfMnn6k3", "AfMnn6k3");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/AfMnn6k3">
+      <img src="https://www.geogebra.org/resource/AfMnn6k3/AfMnn6k3/material-AfMnn6k3.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/AfMnn6k3">https://www.geogebra.org/m/AfMnn6k3</a>
+  </div>
+</noscript>
 <p>As you have just seen, the graph of the function $f(x)=10x^{2}e^{-x}$ is similar in some ways to storm surge flooding.  In fact, functions of this type, where an increasing power function is multiplied by an exponential decay function, are often called <em>surge</em> functions.  All <strong>surge functions</strong> have the form</p>
 <p>[
 f(x)=ax^{p}e^{-b x}
@@ -351,21 +411,51 @@ f(x)=\frac{x^{2}-3x}{x}=x-3, \thinspace x \neq 0
 <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The divisor is $d(x)=x-2$.  The quotient is $q(x)=3x+6$.  The remainder is $r(x)=13$.</details>
 </div>
 <p>The traditional method for dividing one polynomial by another is called <strong>polynomial long division</strong>, and works much like long division of numbers.  The figure below will walk you through the algorithm for dividing $3x^{2}+5x-2$ by $x+1$.  Use the controls in the lower left corner to start or pause the process or skip directly to any step.</p>
-<div class="no-print geogebra" style="padding-top: 50%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/kBIVwuSv/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 50%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-kBIVwuSv" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/kBIVwuSv"><img src="https://www.geogebra.org/resource/kBIVwuSv/CoF2ZmtzTw1P1KwH/material-kBIVwuSv.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/kBIVwuSv"><a href="https://www.geogebra.org/m/kBIVwuSv">https://www.geogebra.org/m/kBIVwuSv</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-kBIVwuSv", "ggb-element-kBIVwuSv", "kBIVwuSv");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/kBIVwuSv">
+      <img src="https://www.geogebra.org/resource/kBIVwuSv/kBIVwuSv/material-kBIVwuSv.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/kBIVwuSv">https://www.geogebra.org/m/kBIVwuSv</a>
+  </div>
+</noscript>
 <p>After performing the division we need to identify the divisor $d(x)$, the quotient $q(x)$ and the remainder $r(x)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/long_division.png#center" alt=""></p>
 <p>Now we can simplify $\frac{3x^{2}+5x-2}{x+1}$ using the $\frac{n(x)}{d(x)}=q(x)+\frac{r(x)}{d(x)}$ pattern.  The final result is</p>
@@ -409,21 +499,51 @@ f(x)=\frac{x^{2}-3x}{x}=x-3, \thinspace x \neq 0
 </div>
 <p>Whereas the long division algorithm required multiplication and then subtraction, with synthetic division we multiply and then add.</p>
 <p>Earlier we used long division to divide $3x^{2}+5x-2$ by $x+1$.  Here we perform the same calculation with synthetic division.   Use the controls in the lower left corner to start or pause the process or skip directly to any step.</p>
-<div class="no-print geogebra" style="padding-top: 33.333%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/kNm8cmKM/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 33.333%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-kNm8cmKM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/kNm8cmKM"><img src="https://www.geogebra.org/resource/kNm8cmKM/XtFvoYTcImPMucDB/material-kNm8cmKM.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/kNm8cmKM"><a href="https://www.geogebra.org/m/kNm8cmKM">https://www.geogebra.org/m/kNm8cmKM</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-kNm8cmKM", "ggb-element-kNm8cmKM", "kNm8cmKM");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/kNm8cmKM">
+      <img src="https://www.geogebra.org/resource/kNm8cmKM/kNm8cmKM/material-kNm8cmKM.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/kNm8cmKM">https://www.geogebra.org/m/kNm8cmKM</a>
+  </div>
+</noscript>
 <p>After identifying the divisor $d(x)$, quotient $q(x)$ and remainder $r(x)$.</p>
 <p><img src="https://duragauge.github.io/img/chapter-4/synthetic_division.png#center" alt=""></p>
 <p>we can rewrite $\frac{3x^{2}+5x-2}{x+1}$ as</p>

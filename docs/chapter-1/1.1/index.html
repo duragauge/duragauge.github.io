@@ -147,41 +147,101 @@
 </div>
 <h2 id="combining-sets">Combining Sets</h2>
 <p>Sets can be combined in two different ways. The first way is to group everything from both sets together into one big set.  This is called the <strong>union</strong> of the two sets.  In the figure below you can form the union of the two sets by moving the <strong><font color="blue">blue</font></strong> slider.</p>
-<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/s9wa8eba/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 20%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-gtgttdp7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/gtgttdp7"><img src="https://www.geogebra.org/resource/s9wa8eba/BqfEqUqLAGw8mOXv/material-s9wa8eba.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/gtgttdp7"><a href="https://www.geogebra.org/m/gtgttdp7">https://www.geogebra.org/m/gtgttdp7</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-gtgttdp7", "ggb-element-gtgttdp7", "gtgttdp7");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/gtgttdp7">
+      <img src="https://www.geogebra.org/resource/gtgttdp7/gtgttdp7/material-gtgttdp7.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/gtgttdp7">https://www.geogebra.org/m/gtgttdp7</a>
+  </div>
+</noscript>
 <p>There is a special symbol we use for unions: $\bigcup$.  If we have two sets, $A$ and $B$, then we write their union as $A \bigcup B$</p>
 <p>[
 A \bigcup B = \left\lbrace x \thinspace \vert \thinspace x \text{ is in } A  \text{ or }  x \text{ is in }B  \right\rbrace
 ]</p>
 <p>The second way to combine sets is to only consider items that the two sets have in common. This is called the <strong>intersection</strong> of the sets.</p>
-<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/f6fbnnnc/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 20%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-hq9xagby" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/hq9xagby"><img src="https://www.geogebra.org/resource/f6fbnnnc/EXR1qIEEqgqFvoOY/material-f6fbnnnc.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/hq9xagby"><a href="https://www.geogebra.org/m/hq9xagby">https://www.geogebra.org/m/hq9xagby</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-hq9xagby", "ggb-element-hq9xagby", "hq9xagby");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/hq9xagby">
+      <img src="https://www.geogebra.org/resource/hq9xagby/hq9xagby/material-hq9xagby.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/hq9xagby">https://www.geogebra.org/m/hq9xagby</a>
+  </div>
+</noscript>
 <p>The intersection of two sets also has its own symbol: $\bigcap$.</p>
 <p>[
 A \bigcap B = \left\lbrace x \thinspace \vert \thinspace x \text{ is in } A  \text{ and }  x \text{ is in }B\ \right\rbrace
@@ -366,39 +426,99 @@ C &amp;= \lbrace \text{peas, carrots, potatoes} \rbrace
 <p>Since intervals are sets of real numbers, they can be combined using unions and intersections.</p>
 <p>The union is result of combining the two intervals together, while the intersection is only the part where the intervals overlap each other.  A few examples will illustrate the idea.</p>
 <p>Suppose we have the following intervals.  What will the <strong>union</strong> look like?  Move the <strong><font color="blue">blue</font></strong> slider to see the union.</p>
-<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/xnsrxwts/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 20%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-fysebmbd" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/fysebmbd"><img src="https://www.geogebra.org/resource/xnsrxwts/QA5vWqgFMdxjV0v5/material-xnsrxwts.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/fysebmbd"><a href="https://www.geogebra.org/m/fysebmbd">https://www.geogebra.org/m/fysebmbd</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-fysebmbd", "ggb-element-fysebmbd", "fysebmbd");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/fysebmbd">
+      <img src="https://www.geogebra.org/resource/fysebmbd/fysebmbd/material-fysebmbd.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/fysebmbd">https://www.geogebra.org/m/fysebmbd</a>
+  </div>
+</noscript>
 <p>Once we've identified the union on the number line, it's much easier to write it in interval notation.</p>
 <p>[(-1, \infty) \bigcup  [-3,0 ) = [-3, \infty)]</p>
 <p>The <strong>intersection</strong> of the same two intervals is smaller, since it is only where they overlap.  You can explore the intersection in the figure below.</p>
-<div class="no-print geogebra" style="padding-top: 20%;margin-bottom:0.5rem; ">
-  <iframe src="https://www.geogebra.org/material/iframe/id/gmuyj24e/border/fafafa" scrolling="no"
-  style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent">
-  </iframe>
+<div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 20%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
+  <div id="ggb-element-bhwanhyg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
 </div>
-<div id="printOnly" style="text-align:center; font-size:0.8em; margin-left:auto;margin-right:auto;margin-top:0.25em;margin-bottom:0.5em;width:60%">
-  <a href="https://www.geogebra.org/m/bhwanhyg"><img src="https://www.geogebra.org/resource/gmuyj24e/zFJFHgkNdUtUOqRM/material-gmuyj24e.png"></img></a>
-<p><em>To use the interactive figure visit </em>   <a href="https://www.geogebra.org/m/bhwanhyg"><a href="https://www.geogebra.org/m/bhwanhyg">https://www.geogebra.org/m/bhwanhyg</a></a></p>
-</div>
+<script>
+  function initGGBApplet(instanceId, elementId, materialId) {
+    var applet = new GGBApplet({
+      id: instanceId,
+      material_id: materialId,
+      appName: "classic",
+      borderColor: "#fafafa",
+      showFullscreenButton: true,
+      showMenuBar: false,
+      showToolBar: false,
+      showToolBarHelp: false,
+      showAlgebraInput: false,
+      allowStyleBar: false,
+      showResetIcon: false,
+      enableRightClick: false,
+      enableLabelDrags: false,
+      enableShiftDragZoom: false,
+      useBrowserForJS: false,
+      scaleContainerClass: "geogebra-wrapper"
+    }, true);
+
+    window.addEventListener("load", function () {
+      applet.inject(elementId);
+    });
+  }
+
+  var ggbScript = document.createElement("script");
+  ggbScript.src = "https://www.geogebra.org/scripts/deployggb.js";
+  ggbScript.onload = function () {
+    initGGBApplet("ggbApplet-bhwanhyg", "ggb-element-bhwanhyg", "bhwanhyg");
+  };
+  document.head.appendChild(ggbScript);
+</script>
+<noscript>
+  <div style="text-align:center; font-size:0.8em; margin: 0.5em auto; width:60%">
+    <a href="https://www.geogebra.org/m/bhwanhyg">
+      <img src="https://www.geogebra.org/resource/bhwanhyg/bhwanhyg/material-bhwanhyg.png" alt="GeoGebra static preview">
+    </a><br>
+    <em>To use the interactive figure visit </em>
+    <a href="https://www.geogebra.org/m/bhwanhyg">https://www.geogebra.org/m/bhwanhyg</a>
+  </div>
+</noscript>
 <p>Now that we can see the intersection visually, the notation follows naturally.</p>
 <p>[(-1, \infty) \bigcap  [-3,0 ) = (-1, 0)]</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
