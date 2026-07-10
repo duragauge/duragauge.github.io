@@ -4,7 +4,43 @@
     <title>Chapter 3 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-3/</link>
     <description>Recent content in Chapter 3 on Precalculus 1 - Functions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-3/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://duragauge.github.io/chapter-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3.1 Exponential Functions</title>
+      <link>https://duragauge.github.io/chapter-3/3.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-3/3.1/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Exponential functions have a type of growth that we have not studied yet, but you have probably seen it before.  Perhaps the best place to start is with an example.&lt;/p&gt;&#xA;&lt;p&gt;The images below illustrate three different real world examples of exponential growth.  All three are exactly the same, just in a different context.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;img src=&#34;https://duragauge.github.io/img/chapter-3/viral_e.gif&#34; alt=&#34;&#34;&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;img src=&#34;https://duragauge.github.io/img/chapter-3/nuclear_explosion.gif&#34; alt=&#34;&#34;&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;img src=&#34;https://duragauge.github.io/img/chapter-3/cell_growth_PNNL.gif&#34; alt=&#34;&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;../3.1#going-viral&#34;&gt;Going Viral&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;../3.1#nuclear-reactions&#34;&gt;Nuclear Reactions&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;../3.1#cell-division&#34;&gt;Cell Division&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;exponential-growth&#34;&gt;Exponential Growth&lt;/h2&gt;&#xA;&lt;h3 id=&#34;going-viral&#34;&gt;Going Viral&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://duragauge.github.io/img/chapter-3/social.gif#center&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The videos and games on social media sites like YouTube and Facebook can often &amp;quot;go viral&amp;quot; when they experience a rapid increase in popularity.&lt;br&gt;&#xA;Imagine, for instance, that you share a video with two friends and each of them shares it with two new friends.  If that process continues then the number of new people viewing the video would follow the pattern:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3.2 Exponential Models and Applications</title>
+      <link>https://duragauge.github.io/chapter-3/3.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-3/3.2/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-3/hot_cocoa.jpg&#34;  title=&#34;Hot cocoa photo by Rawpixels on Unsplash&#34;  alt=&#34;Hot cocoa photo by Rawpixels on Unsplash&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://unsplash.com/photos/UbMl1U1KvvA&#34;&gt;Hot cocoa photo by Rawpixels on Unsplash&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Imagine that you have a delicious mug of creamy, homemade hot cocoa that is, unfortunately, much too hot to drink.  How long should you leave it on your kitchen counter so that it cools but doesn&#39;t lose all of its comforting warmth?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3.3 Logarithmic Functions</title>
+      <link>https://duragauge.github.io/chapter-3/3.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-3/3.3/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-3/371919441_51f06c8fb9_b.jpg&#34;  title=&#34;Photo by john allspaw&#34;  alt=&#34;Photo by john allspaw&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://flic.kr/p/ySbGa&#34;&gt;Photo by john allspaw&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Up until the invention of scientific calculators&#xA;&lt;label for=&#34;sn-HP-35&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&#xA;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-HP-35&#34; class=&#34;margin-toggle&#34; /&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;&lt;img src=&#34;https://duragauge.github.io/img/chapter-3/4368541979_ec395ea1eb_o.jpg&#34; alt=&#34;HP-35 scientific calculator&#34;&gt;The HP-35 was the first handheld scientific calculator.  Developed by Hewlett-Packard, it went on sale in 1972 for $395.  &lt;a href=&#34;https://flic.kr/p/7E2Vki&#34;&gt;Photo by Julian Bucknall&lt;/a&gt;&lt;/span&gt;&#xA;in the 1970&#39;s, people relied on 300-year-old mechanical calculators called &amp;quot;slide rules&amp;quot;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3.4 Logarithmic Models and Applications</title>
+      <link>https://duragauge.github.io/chapter-3/3.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-3/3.4/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-3/headphones.jpg&#34;  title=&#34;Photo by Matthieu A on Unsplash&#34;  alt=&#34;Photo by Matthieu A on Unsplash&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://unsplash.com/photos/bXjqPckmLD8&#34;&gt;Photo by Matthieu A on Unsplash&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The human senses are capable of perceiving a wide range of stimuli.  Our sense of hearing, for example, picks up both faint whispers and highly amplified music.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3.5 Exponential and Logarithmic Equations</title>
+      <link>https://duragauge.github.io/chapter-3/3.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-3/3.5/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-3/ken-treloar-pFoA5Pphb-Q-unsplash.jpg&#34;  title=&#34;Photo by Ken Treloar on Unsplash&#34;  alt=&#34;Photo by Ken Treloar on Unsplash&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://unsplash.com/photos/pFoA5Pphb-Q&#34;&gt;Photo by Ken Treloar on Unsplash&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Since exponential and logarithmic functions arise in many applications, it is essential to be able to manipulate and solve equations involving them.  As an example of the type of problems we might encounter, consider the following situation.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

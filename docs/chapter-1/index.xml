@@ -4,7 +4,50 @@
     <title>Chapter 1 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-1/</link>
     <description>Recent content in Chapter 1 on Precalculus 1 - Functions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-1/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://duragauge.github.io/chapter-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1 Sets &amp; Numbers</title>
+      <link>https://duragauge.github.io/chapter-1/1.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.1/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/Smithsonian_wide.jpg&#34;  title=&#34;Smithsonian Museum of Natural History, photo by Blake Patterson&#34;  alt=&#34;Smithsonian Museum of Natural History, photo by Blake Patterson&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://www.flickr.com/photos/35448539@N00/8151668486&#34;&gt;Smithsonian Museum of Natural History, photo by Blake Patterson&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The Smithsonian in Washington, DC is one of the largest museums in the world, housing vast collections of rare and historically significant objects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1.2 Functions</title>
+      <link>https://duragauge.github.io/chapter-1/1.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.2/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/vending_machine.jpg&#34;  title=&#34;Soda Vending Machine Japan Coast, photo by slackrhackr&#34;  alt=&#34;Soda Vending Machine Japan Coast, photo by slackrhackr&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://commons.wikimedia.org/wiki/File:Soda_Vending_Machine_Japan_Coast.jpg&#34;&gt;Soda Vending Machine Japan Coast, photo by slackrhackr&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Each button on a vending machine corresponds to a particular snack inside the machine. The item you get depends on the button you push. When you press the button for a soda the machine should give you that soda, if it is functioning properly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1.3 Graphs of Functions</title>
+      <link>https://duragauge.github.io/chapter-1/1.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.3/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/roller_coaster.jpg&#34;  title=&#34;Roller coaster photo by dlohner on Pixabay&#34;  alt=&#34;Roller coaster photo by dlohner on Pixabay&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/en/roller-coaster-amusement-park-3100041/&#34;&gt;Roller coaster photo by dlohner on Pixabay&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;If you&#39;ve ever ridden a roller coaster you know how it feels to crawl up a hill and rocket down the other side. You also know how your stomach floats at the top and sinks at the bottom. It would be a very boring ride if the track never changed direction. The twists and turns, peaks and valleys make a roller coaster exciting and give it character.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1.4 Transformations of Functions</title>
+      <link>https://duragauge.github.io/chapter-1/1.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.4/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/ice-cream-ice-cream-flavors-fruits-2202605.jpg&#34;  title=&#34;Ice cream cones photo by silviarita on Pixabay&#34;  alt=&#34;Ice cream cones photo by silviarita on Pixabay&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/en/ice-cream-ice-cream-flavors-fruits-2202605/&#34;&gt;Ice cream cones photo by silviarita on Pixabay&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When making ice cream, chefs often start with a basic recipe and then add in different amounts of special ingredients, like macadamia nuts or dark chocolate or berries. Experienced chefs know the effect that each addition will have before they even taste the finished product.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1.5 Inverse Functions</title>
+      <link>https://duragauge.github.io/chapter-1/1.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.5/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/Tahiti.jpg&#34;  title=&#34;Bora Bora, Tahiti photo by Julius Silver on Pexels&#34;  alt=&#34;Bora Bora, Tahiti photo by Julius Silver on Pexels&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://www.pexels.com/photo/cottages-in-the-middle-of-beach-753626/&#34;&gt;Bora Bora, Tahiti photo by Julius Silver on Pexels&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Imagine that you flew to Tahiti for a vacation.  After spending some time enjoying the white sandy beaches and crystal clear water, you &lt;em&gt;might&lt;/em&gt; want to return home.  To get back home you would need to find a return flight.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1.6 Measuring How Functions Change</title>
+      <link>https://duragauge.github.io/chapter-1/1.6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-1/1.6/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-1/ipod-1428164_1280.jpg&#34;  title=&#34;iPod photo by mikefoster on Pixabay&#34;  alt=&#34;iPod photo by mikefoster on Pixabay&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/photo-1428164/&#34;&gt;iPod photo by mikefoster on Pixabay&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When the stock market opened on Monday, October 22, 2001, stock in Enron (a large Fortune-500 energy company) was trading for about $20 per share.&lt;/p&gt;&#xA;&lt;p&gt;At the same time stock in Apple (the electronics manufacturer) could also be purchased for $20.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -45,7 +45,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
+      <a href="https://duragauge.github.io/" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
 
@@ -61,7 +61,7 @@
 
         <ul class="actions vertical">
             
-                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+                <li><a href="https://duragauge.github.io/" class="button special fit">Home</a></li>
             
             
                 <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
@@ -129,16 +129,7 @@
 <p>A model is simplified representation of a real world object.  Mathematical models are found in nearly every field of study and are useful when it is not feasible, economical, practical, or safe to work with the real item.</p>
 <p>To construct a model, we begin with a set of data points and a description of the scenario and then try to find an equation of a function that closely aligns with our observations and what we know about the situation.</p>
 <p>Once a model has been created, we can use the rules of mathematics to discover things about its mathematical behavior. The insights gained from these analyses can, in turn, be used to make predictions and gain understanding about how the real-world object might behave.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/modeling_diagram.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/modeling_diagram.svg#center" alt=""></p>
 <p>Through continued observations and adjustments, the model can be refined to more accurately represent the real-world phenomenon it is intended to simulate.</p>
 <p>While our models will never be perfect, there is a good chance that they might be accurate enough to be genuinely useful.  Renowned physicist Eugene Wigner referred to the predictive nature of mathematics, especially in the natural sciences, as the <em>&quot;unreasonable effectiveness of mathematics.&quot;</em>  This theme will be prevalent throughout this chapter.</p>
 <h2 id="scatterplots">Scatterplots</h2>
@@ -149,16 +140,7 @@
 <input type="checkbox" id="sn-tornado citation" class="margin-toggle" />
 <span class="sidenote">See the paper by Olivia Kellner and Dev Niyogi in the <a href="https://doi.org/10.1175/2013EI000548.1">American Meteorological Society's Earth Interactions journal, volume 18 no. 10 (2014).</a></span>
 One set of data compared the number of tornadoes observed at different hours of the day.  The scatterplot below illustrates this data.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/tornado_time.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/tornado_time.svg#center" alt=""></p>
 <p>The scatterplot reveals a distinct pattern, suggesting that most tornadoes form late in the afternoon.  This is a well-known result that follows from the fact that, by mid-afternoon, the sun has sufficiently heated the ground and atmosphere enough to produce thunderstorms.</p>
 <p>Notice that there is a subtle but important difference between the data (black dots) and the model (the red curve).  The model allows us to make predictions for values that were not recorded.  For instance, no data point corresponds to 10:15am, but using the model we can say the number is likely to be around 20 tornadoes.</p>
 <h2 id="interpolation-and-extrapolation">Interpolation and Extrapolation</h2>
@@ -253,103 +235,94 @@ One set of data compared the number of tornadoes observed at different hours of 
 <p><strong>Aligning</strong> the data involves shifting the independent variable to a more convenient starting point. <strong>Scaling</strong> the data allows us to convert the units of the dependent variable to a more practical scale.</p>
 <p>Let's look at an example where both of these might be helpful.  The table below shows the total number of mobile game downloads on iOS and Android from 2015 to 2022.</p>
 <table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Downloads</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2015</td>
-<td>24,300,000,000</td>
-</tr>
-<tr>
-<td>2016</td>
-<td>27,900,000,000</td>
-</tr>
-<tr>
-<td>2017</td>
-<td>34,700,000,000</td>
-</tr>
-<tr>
-<td>2018</td>
-<td>38,400,000,000</td>
-</tr>
-<tr>
-<td>2019</td>
-<td>42,100,000,000</td>
-</tr>
-<tr>
-<td>2020</td>
-<td>56,200,000,000</td>
-</tr>
-<tr>
-<td>2021</td>
-<td>55,300,000,000</td>
-</tr>
-<tr>
-<td>2022</td>
-<td>55,600,000,000</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Year</th>
+          <th>Downloads</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2015</td>
+          <td>24,300,000,000</td>
+      </tr>
+      <tr>
+          <td>2016</td>
+          <td>27,900,000,000</td>
+      </tr>
+      <tr>
+          <td>2017</td>
+          <td>34,700,000,000</td>
+      </tr>
+      <tr>
+          <td>2018</td>
+          <td>38,400,000,000</td>
+      </tr>
+      <tr>
+          <td>2019</td>
+          <td>42,100,000,000</td>
+      </tr>
+      <tr>
+          <td>2020</td>
+          <td>56,200,000,000</td>
+      </tr>
+      <tr>
+          <td>2021</td>
+          <td>55,300,000,000</td>
+      </tr>
+      <tr>
+          <td>2022</td>
+          <td>55,600,000,000</td>
+      </tr>
+  </tbody>
 </table>
 <p>Since 2015 is a convenient starting point, we can align this data by converting the time to &quot;years since 2015&quot;. This is done by subtracting 2015 from each year, resulting in the aligned years 0, 1, 2, ..., 7.</p>
 <p>Next, we might want to scale the number of downloads so that 1 on the graph represents &quot;1 billion downloads&quot;. We can do this by dividing each value by 1,000,000,000.</p>
 <p>After aligning and scaling our data table has the same information but with more manageable values.  Notice how the labels of each column have been updated to reflect those changes.</p>
 <table>
-<thead>
-<tr>
-<th>Year Since 2015</th>
-<th>Billions of Downloads</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>24.3</td>
-</tr>
-<tr>
-<td>1</td>
-<td>27.9</td>
-</tr>
-<tr>
-<td>2</td>
-<td>34.7</td>
-</tr>
-<tr>
-<td>3</td>
-<td>38.4</td>
-</tr>
-<tr>
-<td>4</td>
-<td>42.1</td>
-</tr>
-<tr>
-<td>5</td>
-<td>56.2</td>
-</tr>
-<tr>
-<td>6</td>
-<td>55.3</td>
-</tr>
-<tr>
-<td>7</td>
-<td>55.6</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Year Since 2015</th>
+          <th>Billions of Downloads</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>24.3</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>27.9</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>34.7</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>38.4</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>42.1</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>56.2</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>55.3</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>55.6</td>
+      </tr>
+  </tbody>
 </table>
 <p>Not only is the aligned and scaled data easier to read, it is also much easier to graph in a scatterplot.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/game_download_scatterplot.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/game_download_scatterplot.svg#center" alt=""></p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
 <p>Suppose you have data on housing prices from 1956 through 1974.  What would be a convenient starting point and how would you align your data?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Several answers are possible, but perhaps the best one would be to use 1950 as the starting year and subtract 1950 from each given year.</details></p>
@@ -523,44 +496,17 @@ One set of data compared the number of tornadoes observed at different hours of 
 </div>
 <h2 id="example-apple-prices">Example: Apple Prices</h2>
 <p>To demonstrate how all this works together, let's use the following raw data from the U.S. Department of Agriculture.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/apple_data_raw.png#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_raw.png#center" alt=""></p>
 <h3 id="step-1-choosing-variables">Step 1: Choosing Variables</h3>
 <p>With this data, it seems reasonable that the year is independent and the price is dependent.</p>
 <h3 id="step-2-aligning-and-scaling-data">Step 2: Aligning and Scaling Data</h3>
 <p>To avoid a graph that spans $2009$ units, we choose to align the years by converting them to &quot;years since 2000&quot;.  This is done by subtracting $2000$ from each year.</p>
 <p>And we might want to convert the price to &quot;<em>dollars</em> per pound&quot; rather than <em>cents</em> per pound.  To do this we'll change the scale of the prices by dividing each price by $100$.</p>
 <p>The result of aligning the years and scaling the prices is shown below.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/apple_data_aligned.png#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_aligned.png#center" alt=""></p>
 <h3 id="step-3-using-a-scatterplot-to-choose-a-function">Step 3: Using a Scatterplot to Choose a Function</h3>
 <p>Now that we have aligned and scaled the apple data, let's examine the scatterplot and compare its shape with the shapes of the six basic functions that we know.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/apple_data_graph.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/apple_data_graph.svg#center" alt=""></p>
 <p>Does the data look like the identity function or the square function? Perhaps it looks like the reciprocal or the cube root function?</p>
 <p>Since this data appears linear, we should be able to model it with a transformed version of the identity function $f(x)=x$.  For simplicity, we will use the slope-intercept form of a line $y = \color{blue}{m} x + \color{green}{b}$ but the point-slope form could be used as well.</p>
 <h3 id="step-4--using-transformations-to-fit-the-function-to-the-data">Step 4:  Using Transformations to Fit the Function to the Data</h3>
@@ -638,28 +584,10 @@ p(30) = 0.04(30) + 0.86 = 2.06
 <br>
 <p>The Pompidou Center in Paris has an amazing escalator. Designed by Italian architect Renzo Piano and British designer Richard Rogers, the 6 story escalator is encased in a glass tube and attached to the outside of the building!</p>
 <p>The Pompidou escalator is not a single straight line, but rather several small lines pieced together.  It's an example of a new type of function which we'll call <strong>piecewise-defined</strong> functions.  For instance, to model the Pompidou escalator we shift and stretch several pieces of the identity function and connect them together with horizontal line segments.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/pompidou_model.gif" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/pompidou_model.gif" alt=""></p>
 <p><strong>Piecewise-defined</strong> functions, such as this, give us a lot more flexibility when creating models.  No longer are we required to find a single function; we are now free to construct models in multiple pieces.</p>
 <p>When writing piecewise functions, we list the equations for each piece and then specify where each is used.  Consider, for example, the path a bounding ball.</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-6/piecewise_bounce.gif#center" alt="https://people.rit.edu/andpph/photofile-misc/stroboscope/bouncing-ball-7791m.jpg" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-6/piecewise_bounce.gif#center" alt="https://people.rit.edu/andpph/photofile-misc/stroboscope/bouncing-ball-7791m.jpg"></p>
 <p>Each bounce is an individual parabola, with its own equation, and its own limited domain.  The piecewise function for this particular ball is</p>
 <p>[ f(x)=\begin{cases}
 -(x+2)(x-2) &amp; \text{if } &amp; 0 \leq x \leq 2 \newline
@@ -763,7 +691,6 @@ p(30) = 0.04(30) + 0.86 = 2.06
     <!-- Main JS -->
     <script src="https://duragauge.github.io/js/main.js"></script>
 
-    
 
     
 

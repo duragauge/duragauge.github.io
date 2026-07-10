@@ -4,7 +4,29 @@
     <title>Chapter 2 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-2/</link>
     <description>Recent content in Chapter 2 on Precalculus 1 - Functions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-2/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://duragauge.github.io/chapter-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.1 Power Functions</title>
+      <link>https://duragauge.github.io/chapter-2/2.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-2/2.1/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-2/art-artist-brush-102127.jpg&#34;  title=&#34;Photo by Daian Gan from Pexels&#34;  alt=&#34;Photo by Daian Gan from Pexels&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://www.pexels.com/photo/brush-painting-color-paint-102127/&#34;&gt;Photo by Daian Gan from Pexels&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Part of the enjoyment of art comes from its patterns of sound and color and motion.&lt;/p&gt;&#xA;&lt;p&gt;Patterns are also an essential part of mathematics.  The British mathematician G. H. Hardy once said that &lt;em&gt;&amp;quot;A mathematician, like a painter or a poet, is a maker of patterns.   If his patterns are more permanent than theirs, it is because they are made with ideas&amp;quot;&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2.2 Applications of Power Functions</title>
+      <link>https://duragauge.github.io/chapter-2/2.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-2/2.2/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-2/Apollo_15_trimmed.png&#34;  title=&#34;Apollo 15&#34;  alt=&#34;Apollo 15&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://spaceflight.nasa.gov/gallery/images/apollo/apollo15/html/as15-88-11866.html&#34;&gt;Apollo 15&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In 1687 Isaac Newton published &lt;em&gt;Principia&lt;/em&gt;, one of the most important books in the history of science.&#xA;&lt;label for=&#34;sn-note about braces&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&#xA;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-note about braces&#34; class=&#34;margin-toggle&#34; /&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt; &lt;img src=&#34;https://duragauge.github.io/img/chapter-2/Prinicipia-title.png&#34; alt=&#34;&#34;&gt;&lt;br&gt; A rare first edition copy of &lt;em&gt;Principia&lt;/em&gt; sold at auction for $3.7 million in 2016.&lt;/span&gt;&#xA;In &lt;em&gt;Principia&lt;/em&gt; Newton formulated his three laws of motion, expanded Kepler&#39;s work on planetary orbits, laid the foundations for classical mechanics and, for the first time ever, gave a mathematical description of gravity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2.3 Equations Involving Power Functions</title>
+      <link>https://duragauge.github.io/chapter-2/2.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-2/2.3/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-2/skydive.jpg&#34;  title=&#34;Photo from the US Air Force on Flickr&#34;  alt=&#34;Photo from the US Air Force on Flickr&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://flic.kr/p/cecNKQ&#34;&gt;Photo from the US Air Force on Flickr&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Do skydivers fall at a constant speed or do they go faster and faster the longer they fall?  Is there anything they can do to control their speed or is it completely out of their hands?&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

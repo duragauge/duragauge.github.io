@@ -4,7 +4,29 @@
     <title>Chapter 6 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-6/</link>
     <description>Recent content in Chapter 6 on Precalculus 1 - Functions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-6/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://duragauge.github.io/chapter-6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6.1 Concepts of Modeling</title>
+      <link>https://duragauge.github.io/chapter-6/6.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-6/6.1/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-6/nikolas-noonan-682177-unsplash.jpg&#34;  title=&#34;Tornado photo by Nikolas Noonan on Unsplash&#34;  alt=&#34;Tornado photo by Nikolas Noonan on Unsplash&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://unsplash.com/photos/fQM8cbGY6iQ&#34;&gt;Tornado photo by Nikolas Noonan on Unsplash&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of nature&#39;s most violent events:  a tornado.  While some go to &amp;quot;Tornado Alley&amp;quot; just for the thrill, most professional storm chasers have a different goal.  What they want is data: scientific measurements that can only be found inside real tornadoes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6.2 Algebraic Methods for Modeling</title>
+      <link>https://duragauge.github.io/chapter-6/6.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-6/6.2/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-6/sushi-373588_1280.jpg&#34;  title=&#34;Image by Design n Print from Pixabay&#34;  alt=&#34;Image by Design n Print from Pixabay&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/images/id-373588/&#34;&gt;Image by Design n Print from Pixabay&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Many people are concerned about the amount of mercury they ingest by eating certain species of large fish like shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters, posing a possible health risk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6.3 Using Technology to Model Data</title>
+      <link>https://duragauge.github.io/chapter-6/6.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-6/6.3/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-6/horses-61158_1280.jpg&#34;  title=&#34;Photo Steppinstars from Pixabay &#34;  alt=&#34;Photo Steppinstars from Pixabay &#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/images/id-61158/&#34;&gt;Photo Steppinstars from Pixabay &lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Throughout the vast grasslands of Nevada live herds of wild horses known as &amp;quot;mustangs&amp;quot;.  The Bureau of Land Management (BLM) has been diligently monitoring the number of mustangs and the land&#39;s capacity to support them since 1971.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

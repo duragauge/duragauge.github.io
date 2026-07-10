@@ -45,7 +45,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
+      <a href="https://duragauge.github.io/" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
 
@@ -61,7 +61,7 @@
 
         <ul class="actions vertical">
             
-                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+                <li><a href="https://duragauge.github.io/" class="button special fit">Home</a></li>
             
             
                 <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
@@ -299,16 +299,7 @@ t &amp;\approx 70.249 &amp;&amp; \small \color{#5fa2ce} {\text{Evaluate}}
 ]</p>
 <p>This means that it will take 70.249 hours (roughly 3 days) for the radiation level to drop from 400 to 10 microcuries.</p>
 <h3 id="doubling-time">Doubling Time</h3>
-<p>
-
-
-
-
-
-
-  
-  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US_%245000_1934_Federal_Reserve_Note.jpg/1024px-US_%245000_1934_Federal_Reserve_Note.jpg" alt="" >
-</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US_%245000_1934_Federal_Reserve_Note.jpg/1024px-US_%245000_1934_Federal_Reserve_Note.jpg" alt=""></p>
 <p>When solving real life problems, we usually will not be given the equation directly.  When this happens, we must construct it from the information available and our knowledge of appropriate models.</p>
 <p>For instance, suppose you have invested $5000 in an account earning 2% interest compounded continuously.  How long will it take for your investment to double?</p>
 <p>Since this question involves continuously compounded interest, we should use the continuous growth model $A(t)=P e^{r t}$.</p>
@@ -327,84 +318,65 @@ t &amp;\approx 34.657 &amp;&amp; \small \color{#5fa2ce} {\text{Decimal approxima
 <p>We have found that it will take close to 35 years for the investment to double if it earns 2% continuously.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Rework the problem above assuming the initial deposit is just $70$ dollars.  What is the doubling time?  What does this tell you about doubling times in general?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><p>Once we divide by $70$, this is exactly the same as the problem above and has the same solution. </br></p></p>
 <table>
-<thead>
-<tr>
-<th>$140 =70 e^{0.02 t}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$2 =e^{0.02 t}$</td>
-<td><em>Divide both sides by $70$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td></br> This shows that doubling time depends entirely on the rate, not on the size of the initial investment.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</details>
+  <thead>
+      <tr>
+          <th>$140 =70 e^{0.02 t}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$2 =e^{0.02 t}$</td>
+          <td><em>Divide both sides by $70$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td></br> This shows that doubling time depends entirely on the rate, not on the size of the initial investment.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></details>
 </div>
 <h3 id="stock-price-for-google">Stock Price for Google</h3>
 <!-- prettier-ignore -->
 <p>Let's consider a similar example.  When Google went public in 2004 you could by a share of stock for $85 .</p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-3/Google_2015_logo.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/Google_2015_logo.svg#center" alt=""></p>
 <!-- prettier-ignore -->
 <p>Just 2 years later, Google stock was trading at $387 per share.  Assuming the price increased exponentially, what was the continuous rate of growth?</p>
 <p>In this case, we will also use $A(t)=P e^{r t}$.  We know $P=85$, $t=2$ and want to find $r$ so that $A(2)=387$.</p>
 <table>
-<thead>
-<tr>
-<th>$387 = 85 e^{r(2)}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{387}{85} =e^{2 r}$</td>
-<td><em>Divide both sides by $85$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{387}{85}\right) = \ln\left(e^{2 r}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{387}{85}\right) = 2 r$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln\left(\frac{387}{85}\right)}{2} = r$</td>
-<td><em>Divide both sides by $2$.</em></td>
-</tr>
-<tr>
-<td>$r \approx 0.7579$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>$387 = 85 e^{r(2)}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{387}{85} =e^{2 r}$</td>
+          <td><em>Divide both sides by $85$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln\left(\frac{387}{85}\right) = \ln\left(e^{2 r}\right)$</td>
+          <td><em>Apply the natural log $\ln$ to both sides.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln\left(\frac{387}{85}\right) = 2 r$</td>
+          <td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+      </tr>
+      <tr>
+          <td>$\frac{\ln\left(\frac{387}{85}\right)}{2} = r$</td>
+          <td><em>Divide both sides by $2$.</em></td>
+      </tr>
+      <tr>
+          <td>$r \approx 0.7579$</td>
+          <td><em>Use a calculator to find a decimal approximation.</em></td>
+      </tr>
+  </tbody>
 </table>
 <p>This means that over the 2-year period from 2004 to 2006, Google's stock increased at a continuous rate of 75.79%.</p>
 <p>Notice that while the numbers were different, the process of solving this equation was exactly the same as in the previous example. The only difference being that we were solving for $r$ instead of $t$.</p>
 <h3 id="radioactive-decay">Radioactive Decay</h3>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-3/piltdown.gif#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-3/piltdown.gif#center" alt=""></p>
 <p>In 1912, men working in an English quarry discovered what appeared to be a prehistoric human skull.  Piltdown Man, as the fossil was known, seemed to be a clear indication that the human species had originated in England and was considered by many to be the &quot;missing link&quot; in the history of human evolution.  But was it really?</p>
 <p>The age of fossils is often determined by a process called <em>carbon dating</em>.  Plants absorb small amounts of the radioactive isotope carbon-14 from the atmosphere.  People and animals collect carbon-14 when they eat plants and other animals.  Once they die, however, the amount of carbon-14 begins to decay exponentially with a half-life of about 5730 years.  By comparing the amount of carbon-14 in a fossil with the amount that would have been been present when it was alive we can estimate the fossil's age.</p>
 <p>Suppose that you were able to get a small fragment of the bone and extract $9.7 \times 10^{-15}$ grams of carbon-14 out of it.  If there would have been $1.05 \times 10^{-14}$ grams present when Piltdown Man was alive, how old is this fossil?</p>
@@ -413,38 +385,38 @@ t &amp;\approx 34.657 &amp;&amp; \small \color{#5fa2ce} {\text{Decimal approxima
 [9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}]</details></div>
 <p>To determine the actual age of the Piltdown skull, we must use the half-life formula with $a=1.05 \times 10^{-14}$, $c = 5730$ and $f(t) = 9.7 \times 10^{-15}$.  Our task is to solve for $t$.</p>
 <table>
-<thead>
-<tr>
-<th>$9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$0.9238 = \left(\frac{1}{2}\right)^{t/5730}$</td>
-<td><em>Divide both sides by $1.05 \times 10^{-14}$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln(0.9238) = \ln \left(\left(\frac{1}{2}\right)^{t/5730}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln(0.9238) = \frac{t}{5730} \ln \left(\frac{1}{2}\right)$</td>
-<td><em>Use the power rule for logarithms.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln(0.9238)}{\ln\left(\frac{1}{2}\right)} = \frac{t}{5730}$</td>
-<td><em>Divide both sides by $\ln\left(\frac{1}{2}\right)$.</em></td>
-</tr>
-<tr>
-<td>$t = 5730 \frac{\ln(0.9238)}{\ln\left(\frac{1}{2}\right)}$</td>
-<td><em>Multiply both sides by $5730$.</em></td>
-</tr>
-<tr>
-<td>$t \approx 655.21$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>$9.7 \times 10^{-15} = 1.05 \times 10^{-14}\left(\frac{1}{2}\right)^{t/5730}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$0.9238 = \left(\frac{1}{2}\right)^{t/5730}$</td>
+          <td><em>Divide both sides by $1.05 \times 10^{-14}$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln(0.9238) = \ln \left(\left(\frac{1}{2}\right)^{t/5730}\right)$</td>
+          <td><em>Apply the natural log $\ln$ to both sides.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln(0.9238) = \frac{t}{5730} \ln \left(\frac{1}{2}\right)$</td>
+          <td><em>Use the power rule for logarithms.</em></td>
+      </tr>
+      <tr>
+          <td>$\frac{\ln(0.9238)}{\ln\left(\frac{1}{2}\right)} = \frac{t}{5730}$</td>
+          <td><em>Divide both sides by $\ln\left(\frac{1}{2}\right)$.</em></td>
+      </tr>
+      <tr>
+          <td>$t = 5730 \frac{\ln(0.9238)}{\ln\left(\frac{1}{2}\right)}$</td>
+          <td><em>Multiply both sides by $5730$.</em></td>
+      </tr>
+      <tr>
+          <td>$t \approx 655.21$</td>
+          <td><em>Use a calculator to find a decimal approximation.</em></td>
+      </tr>
+  </tbody>
 </table>
 <p>As this result suggests, Piltdown Man was an elaborate forgery.  Someone had cleverly stained and carved the bones to look old, though this fact was not discovered for more than 40 years.  And while the perpetrator has never been determined, there are several suspects, including Sir Arthur Conan Doyle (author of Sherlock Holmes) who lived nearby.  In any case, Piltdown Man remains one of the greatest unsolved scientific hoaxes of all time.</p>
 <h3 id="nuclear-stockpile">Nuclear Stockpile</h3>
@@ -457,38 +429,38 @@ t &amp;\approx 34.657 &amp;&amp; \small \color{#5fa2ce} {\text{Decimal approxima
 <p>During the 1950's, the number of active nuclear warheads in the U.S. arsenal doubled every 2.27 years. If there were 369 nuclear warheads in 1950, when did the U.S. stockpile exceed 30,000?</p>
 <p>As we are given the doubling time, it makes sense to use the function $f(t)=a(2)^{t/c}$ with $a=369$, $c = 2.27$ and to try and find a $t$ so that $f(t)=30000$.</p>
 <table>
-<thead>
-<tr>
-<th>$30000 =369(2)^{t/2.27}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{30000}{369} = 2^{t/2.27}$</td>
-<td><em>Divide both sides by $369$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{30000}{369}\right) = \ln\left(2^{t/2.27}\right)$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln\left(\frac{30000}{369}\right) = \frac{t}{2.27} \ln(2)$</td>
-<td><em>Use the power rule for logarithms.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln\left(\frac{30000}{369}\right)}{\ln(2)} =\frac{t}{2.27}$</td>
-<td><em>Divide both sides by $\ln(2)$.</em></td>
-</tr>
-<tr>
-<td>$t = 2.27 \frac{\ln\left(\frac{30000}{369}\right)}{\ln(2)}$</td>
-<td><em>Multiply both sides by $2.27$.</em></td>
-</tr>
-<tr>
-<td>$t \approx 14.40$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>$30000 =369(2)^{t/2.27}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{30000}{369} = 2^{t/2.27}$</td>
+          <td><em>Divide both sides by $369$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln\left(\frac{30000}{369}\right) = \ln\left(2^{t/2.27}\right)$</td>
+          <td><em>Apply the natural log $\ln$ to both sides.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln\left(\frac{30000}{369}\right) = \frac{t}{2.27} \ln(2)$</td>
+          <td><em>Use the power rule for logarithms.</em></td>
+      </tr>
+      <tr>
+          <td>$\frac{\ln\left(\frac{30000}{369}\right)}{\ln(2)} =\frac{t}{2.27}$</td>
+          <td><em>Divide both sides by $\ln(2)$.</em></td>
+      </tr>
+      <tr>
+          <td>$t = 2.27 \frac{\ln\left(\frac{30000}{369}\right)}{\ln(2)}$</td>
+          <td><em>Multiply both sides by $2.27$.</em></td>
+      </tr>
+      <tr>
+          <td>$t \approx 14.40$</td>
+          <td><em>Use a calculator to find a decimal approximation.</em></td>
+      </tr>
+  </tbody>
 </table>
 <p>So if the number of nuclear warheads since 1950 is given by $f(t)=369(2)^{t/2.27}$, then our work suggests the United States had a stockpile of more than 30,000 warheads some time in the spring of 1964.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>If nuclear arms production had continued at that rate, how many warheads would there have been in 2010?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Taking $t=60$, we have [ f(60)=369(2)^{60/2.27} \approx 33,401,528,382 ]
@@ -503,72 +475,71 @@ which would have been enough for everyone on Earth to have about 5.  As of 2017,
 <p>Suppose your neighbor starts a farm with $4$ cute little rabbits.   One hundred days later, she is tending a herd of $28$ rabbits.  Assuming exponential growth, how long until she has $500$ rabbits at her farm?</p>
 <p>Before we can answer this question, we need to find the continuous rate of growth by solving $28=4e^{k \cdot 100}$ for $k$.</p>
 <table>
-<thead>
-<tr>
-<th>$28 = 4e^{k \cdot 100}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{28}{4} = e^{100 k}$</td>
-<td><em>Divide both sides by $4$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln 7 = \ln(e^{100 k})$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln 7 = 100 k$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln 7}{100} = k$</td>
-<td><em>Divide both sides by $100$.</em></td>
-</tr>
-<tr>
-<td>$k \approx 0.0195$</td>
-<td><em>Use a calculator to find a decimal approximation.</em></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>$28 = 4e^{k \cdot 100}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{28}{4} = e^{100 k}$</td>
+          <td><em>Divide both sides by $4$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln 7 = \ln(e^{100 k})$</td>
+          <td><em>Apply the natural log $\ln$ to both sides.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln 7 = 100 k$</td>
+          <td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+      </tr>
+      <tr>
+          <td>$\frac{\ln 7}{100} = k$</td>
+          <td><em>Divide both sides by $100$.</em></td>
+      </tr>
+      <tr>
+          <td>$k \approx 0.0195$</td>
+          <td><em>Use a calculator to find a decimal approximation.</em></td>
+      </tr>
+  </tbody>
 </table>
 <p>So the number of bunnies can be modeled by $f(t)=4e^{0.0195 \thinspace t}$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>How can we determine when there will be 500 rabbits? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We need to find $t$ so that $f(t)=500$, so we have to solve the equation $500=4e^{0.0195 \thinspace  t}$.</details></div>
 <p>Since the number of bunnies is modeled by $f(t)=4e^{0.0195 \thinspace t}$, to figure out when the population is at 500 we should solve the equation $500 = 4e^{0.0195 \thinspace t}$ for $t$.</p>
 <table>
-<thead>
-<tr>
-<th>$500 =4e^{0.0195 \thinspace  t}$</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\frac{500}{4} = e^{0.0195 t}$</td>
-<td><em>Divide both sides by $4$ to isolate the exponential.</em></td>
-</tr>
-<tr>
-<td>$\ln 125 = \ln(e^{0.0195 t})$</td>
-<td><em>Apply the natural log $\ln$ to both sides.</em></td>
-</tr>
-<tr>
-<td>$\ln 125 = 0.0195 t$</td>
-<td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
-</tr>
-<tr>
-<td>$\frac{\ln 125}{0.0195} = t$</td>
-<td><em>Divide both sides by $0.0195$.</em></td>
-</tr>
-<tr>
-<td>$t \approx 247.6$</td>
-<td>Use a calculator to find a decimal approximation.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>$500 =4e^{0.0195 \thinspace  t}$</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\frac{500}{4} = e^{0.0195 t}$</td>
+          <td><em>Divide both sides by $4$ to isolate the exponential.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln 125 = \ln(e^{0.0195 t})$</td>
+          <td><em>Apply the natural log $\ln$ to both sides.</em></td>
+      </tr>
+      <tr>
+          <td>$\ln 125 = 0.0195 t$</td>
+          <td><em>Use the inverse relationship $\ln(e^{x})=x$.</em></td>
+      </tr>
+      <tr>
+          <td>$\frac{\ln 125}{0.0195} = t$</td>
+          <td><em>Divide both sides by $0.0195$.</em></td>
+      </tr>
+      <tr>
+          <td>$t \approx 247.6$</td>
+          <td>Use a calculator to find a decimal approximation.</td>
+      </tr>
+  </tbody>
 </table>
 <p>We conclude that in roughly 250 days the farmer will have 500 rabbits.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>How would the equation have been different if we wanted to know when the farmer would have 2000 rabbits?</p>
-<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The only change would be that $f(t)=2000$.  The solving process would remain the same.</details>
-</div>
+<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The only change would be that $f(t)=2000$.  The solving process would remain the same.</details></div>
 <h1 id="techniques-for-solving-logarithmic-equations">Techniques for Solving Logarithmic Equations</h1>
 <p>While our primary focus has been solving exponential equations that arise from different applications, we should also discuss solving logarithmic equations.</p>
 <p>Just as with exponential equations, it's usually best to try and simplify the equation first.</p>
@@ -641,8 +612,7 @@ x &amp;= 83 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}}
 \frac{1000}{2} &amp;= x &amp;&amp; \small \color{#5fa2ce}{\text{Divide by }2} \newline
 x &amp;= 500 &amp;&amp; \small \color{#5fa2ce}{\text{Simplify}}
 \end{align}
-]</details>
-</div>
+]</details></div>
 <h3 id="solving-method-3-exponentiate-both-sides">Solving Method 3: Exponentiate Both Sides</h3>
 <p>Our final method is to exponentiate both sides of the equation using the base of the logarithm.</p>
 <p>To <em>exponentiate</em> both sides of an equation means to turn each side into an exponent of the base $b$.  Once that has been done we can take advantage of the inverse property between logs and exponentials.
@@ -665,131 +635,131 @@ x &amp;= 64 &amp;&amp; \small \color{#5fa2ce}{\text{Evaluate}}
 <p>As we learned earlier, we can find an inverse by listing the operations performed by the function and doing the <em>opposite operations in the reverse order</em>.  Viewing exponentiation and logarithms as opposite operations allows us to find the inverses of more complicated exponential and logarithmic functions.</p>
 <p>For instance, the function $f(x)=5(3)^{x+2}$ does three things to each input value.  It adds $2$, then exponentiates with a base of $3$, and lastly multiplies by $5$.  It's inverse should divide by $5$, then apply the base $3$ logarithm, and finally subtract $2$.  We summarize this in the table below.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th><strong>Operations Done by the Function</strong></th>
-<th></th>
-<th><strong>Operations Done by the Inverse</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Add $2$</td>
-<td>1.</td>
-<td>Divide by $5$</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Exponentiate with a base of $3$</td>
-<td>2.</td>
-<td>Apply the base $3$ logarithm</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Multiply by $5$</td>
-<td>3.</td>
-<td>Subtract $2$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th><strong>Operations Done by the Function</strong></th>
+          <th></th>
+          <th><strong>Operations Done by the Inverse</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Add $2$</td>
+          <td>1.</td>
+          <td>Divide by $5$</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>Exponentiate with a base of $3$</td>
+          <td>2.</td>
+          <td>Apply the base $3$ logarithm</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>Multiply by $5$</td>
+          <td>3.</td>
+          <td>Subtract $2$</td>
+      </tr>
+  </tbody>
 </table>
 <p>Now we take the operations listed and build the inverse function $f^{-1}$ as follows:</p>
 <table>
-<thead>
-<tr>
-<th>1.</th>
-<th>Start with a variable:</th>
-<th>$x$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2.</td>
-<td>Divide by $5$:</td>
-<td>$\frac{x}{5}$</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Apply the base $3$ logarithm:</td>
-<td>$\log_3\left(\frac{x}{5}\right)$</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Subtract $2$ :</td>
-<td>$\log_3\left(\frac{x}{5}\right)-2$</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Write as a function:</td>
-<td>$f^{-1}(x)=\log_3\left(\frac{x}{5}\right)-2$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>1.</th>
+          <th>Start with a variable:</th>
+          <th>$x$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2.</td>
+          <td>Divide by $5$:</td>
+          <td>$\frac{x}{5}$</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>Apply the base $3$ logarithm:</td>
+          <td>$\log_3\left(\frac{x}{5}\right)$</td>
+      </tr>
+      <tr>
+          <td>4.</td>
+          <td>Subtract $2$ :</td>
+          <td>$\log_3\left(\frac{x}{5}\right)-2$</td>
+      </tr>
+      <tr>
+          <td>5.</td>
+          <td>Write as a function:</td>
+          <td>$f^{-1}(x)=\log_3\left(\frac{x}{5}\right)-2$</td>
+      </tr>
+  </tbody>
 </table>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the order of operations of the function $f(x)=500(2)^{x/27}$.  Then find the inverse function $f^{\thinspace-1}$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />This function <strong>(1)</strong> divides by 27, then <strong>(2)</strong> exponentiates with a base of 2, and <strong>(3)</strong> multiplies by 500.  The inverse should <strong>(1)</strong> divide by 500, <strong>(2)</strong> apply the base 2 logarithm, and <strong>(3)</strong> multiply by 27.  The equation is
 $f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details></div>
 <p>Let's look at another example.  This time we will find the inverse of $g(t)=\log_2(3 t-7)$.  Start by listing the operations of the function in the proper order and then list which operations its inverse should do.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th><strong>Operations Done by the Function</strong></th>
-<th></th>
-<th><strong>Operations Done by the Inverse</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Multiply by $3$</td>
-<td>1.</td>
-<td>Apply the base $2$ exponential</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Subtract $7$</td>
-<td>2.</td>
-<td>Add $7$</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Apply the base$2$ logarithm</td>
-<td>3.</td>
-<td>Divide by $3$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th><strong>Operations Done by the Function</strong></th>
+          <th></th>
+          <th><strong>Operations Done by the Inverse</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Multiply by $3$</td>
+          <td>1.</td>
+          <td>Apply the base $2$ exponential</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>Subtract $7$</td>
+          <td>2.</td>
+          <td>Add $7$</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>Apply the base$2$ logarithm</td>
+          <td>3.</td>
+          <td>Divide by $3$</td>
+      </tr>
+  </tbody>
 </table>
 <p>Once we know the inverse operations and their order we can build up the inverse function.</p>
 <table>
-<thead>
-<tr>
-<th>1.</th>
-<th>Start with a variable:</th>
-<th>$t$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2.</td>
-<td>Apply the base $2$ exponential:</td>
-<td>$2^t$</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Add $7$:</td>
-<td>$2^t+7$</td>
-</tr>
-<tr>
-<td>4.</td>
-<td>Divide by $3$:</td>
-<td>$\frac{2^t+7}{3}$</td>
-</tr>
-<tr>
-<td>5.</td>
-<td>Write as a function:</td>
-<td>$g^{-1}(t)=\frac{2^t+7}{3}$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>1.</th>
+          <th>Start with a variable:</th>
+          <th>$t$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2.</td>
+          <td>Apply the base $2$ exponential:</td>
+          <td>$2^t$</td>
+      </tr>
+      <tr>
+          <td>3.</td>
+          <td>Add $7$:</td>
+          <td>$2^t+7$</td>
+      </tr>
+      <tr>
+          <td>4.</td>
+          <td>Divide by $3$:</td>
+          <td>$\frac{2^t+7}{3}$</td>
+      </tr>
+      <tr>
+          <td>5.</td>
+          <td>Write as a function:</td>
+          <td>$g^{-1}(t)=\frac{2^t+7}{3}$</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>The key idea from this section is that since exponential and logarithmic functions are inverses functions, we can also use them as inverse operations to solve equations and applications.</p>
@@ -870,7 +840,6 @@ $f^{-1}(x)=27*\log_2\left(\frac{x}{500}\right)$.</details></div>
     <!-- Main JS -->
     <script src="https://duragauge.github.io/js/main.js"></script>
 
-    
 
     
 

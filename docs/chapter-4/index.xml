@@ -4,7 +4,36 @@
     <title>Chapter 4 on Precalculus 1 - Functions</title>
     <link>https://duragauge.github.io/chapter-4/</link>
     <description>Recent content in Chapter 4 on Precalculus 1 - Functions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://duragauge.github.io/chapter-4/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://duragauge.github.io/chapter-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1 Addition and Subtraction of Functions</title>
+      <link>https://duragauge.github.io/chapter-4/4.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-4/4.1/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-4/smartphone.jpg&#34;  title=&#34;Photo by Pexels&#34;  alt=&#34;Photo by Pexels&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/photo-1283938/&#34;&gt;Photo by Pexels&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Not too long ago, mobile phones were only used for making phone calls, nothing else was possible.  Today&#39;s smart phones, however, combine the functionality of several different devices into one convenient package.&lt;/p&gt;&#xA;&lt;p&gt;In a similar way, mathematical functions can be combined together to create new functions.  In this section we will focus on combining two or more functions through the algebraic operations of addition and subtraction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4.2 Multiplication and Division of Functions</title>
+      <link>https://duragauge.github.io/chapter-4/4.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-4/4.2/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-4/storm-surge-3735936_1280.jpg&#34;  title=&#34;Photo by Jerry Coli from Pixabay &#34;  alt=&#34;Photo by Jerry Coli from Pixabay &#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/images/id-3735936/&#34;&gt;Photo by Jerry Coli from Pixabay &lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The strong winds of large tropical storms, like hurricane Katrina or super storm Sandy, can push sea water toward the shore causing severe flooding.  These &amp;quot;storm surges&amp;quot; are often a greater threat to life and property than the hurricane itself.  The surge after Katrina reached 28 feet above flood level.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4.3 Composition of Functions</title>
+      <link>https://duragauge.github.io/chapter-4/4.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-4/4.3/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-4/washing-machine-2668472_1280.jpg&#34;  title=&#34;Image by Steve Buissinne from Pixabay&#34;  alt=&#34;Image by Steve Buissinne from Pixabay&#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/images/id-2668472/&#34;&gt;Image by Steve Buissinne from Pixabay&lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Washing laundry usually involves two machines: a washer and a dryer.  Once the wash cycle is over you have to transfer the load over to the dryer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4.4 Inverses of Combined Functions</title>
+      <link>https://duragauge.github.io/chapter-4/4.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://duragauge.github.io/chapter-4/4.4/</guid>
+      <description>&lt;div style=&#34;position:relative; clear:both; padding:0;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://duragauge.github.io/img/chapter-4/small-3871893_1280.jpg&#34;  title=&#34;Image by Vinson Tan from Pixabay &#34;  alt=&#34;Image by Vinson Tan from Pixabay &#34; style=&#34;display:block; width:100%; height:auto;&#34; &gt;&#xD;&#xA;  &lt;span style=&#34;position:absolute; height:auto; bottom:0em; right:0em; margin:0;  padding: .1em .3em;  color:white;  font-size: .8em;  background:rgba(0, 0, 0, 1);  text-align:right;  z-index:5;  opacity:0.65;  border-radius:.3em 0em 0em 0em;&#34;&gt;&#xD;&#xA;    &lt;a href = &#34;https://pixabay.com/images/id-3871893/&#34;&gt;Image by Vinson Tan from Pixabay &lt;/a&gt;&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the 1980&#39;s Hasbro changed the toy world by introducing a line of robot action figures known as &lt;em&gt;Transformers&lt;/em&gt;.  What made each Transformer special was that if you bent the legs, twisted the torso, and folded the arms, the robot would change into something else, like a car or an airplane.  Undoing each of those steps in the reverse order would change it back into a robot again.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

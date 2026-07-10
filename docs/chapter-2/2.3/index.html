@@ -45,7 +45,7 @@
         <div id="wrapper">
         <!-- Header -->
     <header id="header" class="alt">
-      <a href="https://duragauge.github.io" class="logo"><strong>Precalculus</strong>Functions</a>
+      <a href="https://duragauge.github.io/" class="logo"><strong>Precalculus</strong>Functions</a>
 
         <nav>
 
@@ -61,7 +61,7 @@
 
         <ul class="actions vertical">
             
-                <li><a href="https://duragauge.github.io" class="button special fit">Home</a></li>
+                <li><a href="https://duragauge.github.io/" class="button special fit">Home</a></li>
             
             
                 <li><a href="https://duragauge.github.io/search" class="button fit">Search</a></li>
@@ -154,20 +154,11 @@ d =  \frac{0.0334 v^{2}}{\mu}
 ]</p>
 <p>where $v$ is the speed of the car in feet per second and $\mu$ is the friction coefficient of the road surface.</p>
 <p>When police need to find the speed of a car that was involved in an accident they measure the distance of the skid marks, make an observation of the road conditions, and solve this equation for $v$.</p>
-<p>Suppose a police investigator finds $286$ foot long skid marks along a snowy road.  How fast was the car going?  To answer this question we insert the known value for $d$ and the estimated $\mu$ from the table 
+<p>Suppose a police investigator finds $286$ foot long skid marks along a snowy road.  How fast was the car going?  To answer this question we insert the known value for $d$ and the estimated $\mu$ from the table
 <label for="sn-stopping" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-stopping" class="margin-toggle" />
-<span class="sidenote">
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-2/friction_coefficients.svg" alt="" >
-</span>
+<span class="sidenote"><img src="https://duragauge.github.io/img/chapter-2/friction_coefficients.svg" alt=""></span>
 and solve for $v$.   The result is</p>
 <p>[
 \begin{align}
@@ -216,20 +207,11 @@ F_D =  \frac{1}{2} C \rho A v^2
 v =  \left(\frac{2 D}{ \rho C A}\right)^{1/2} =  \sqrt{\frac{2D}{\rho C A}}
 ]</p>
 <p>Of the four values ($D$, $\rho$, $C$ and $A$)  that determine velocity, a skydiver has little control over $D$ and $\rho$.  The drag force $D$ can never be greater than the skydiver's weight, otherwise they would float instead of fall, and the density of air $\rho$ at lower altitudes is fairly consistent at about $1.1  kg/m^{2}$.</p>
-<p>A skydiver can, however, alter their shape which will affect both surface area $A$ and the drag coefficient $C$. 
+<p>A skydiver can, however, alter their shape which will affect both surface area $A$ and the drag coefficient $C$.
 <label for="mn-drag_coefficient" class="margin-toggle">⊕
 </label>
 <input type="checkbox" id="mn-drag_coefficient" class="margin-toggle" />
-<span class="marginnote">
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-2/drag_coefficient.svg#center" alt="" >
-</span></p>
+<span class="marginnote"><img src="https://duragauge.github.io/img/chapter-2/drag_coefficient.svg#center" alt=""></span></p>
 <p>For example, suppose a skydiver weighing $734$ Newtons (about 165 lbs) goes into a head-first dive.  How fast might they fall?</p>
 <p>In this instance we know $D=165$ and $\rho=1.1$, but we'll have to make some assumptions for $A$ and $C$.</p>
 <p>Assuming a stable head down position, a surface area of about $A=0.3 \thinspace m^{2}$ is reasonable, and let's choose a value for $C$ that is a little lower than that of a cylinder, say $C=0.7$.</p>
@@ -240,59 +222,58 @@ v =  \sqrt{\frac{2D}{\rho C A}} =  \sqrt{\frac{(2)(734)}{(1.1)(0.7)(0.3)}} \appr
 <p>Our model predicts that the maximum speed (sometimes called <em>terminal velocity</em>) of this skydiver in a stable head-first dive is $79.7 \thinspace  m/s$, or around $178 \thinspace mph$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Imagine that our skydiver changes to a flat position so that their surface area is $A=0.6  m^{2}$ and $C$ increases to $1.0$.  What is the maximum speed under these conditions?</p>
 <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />With $A=0.6$, $C=1.0$ and $D$ and $\rho$ as before, velocity is calculated as [ v =   \sqrt{\frac{(2)(734)}{(1.1)(1.0)(0.6)}} \approx 47.16 \thinspace m/s ]
-which is approximately $105.5 \thinspace mph$.</details>
-</div>
+which is approximately $105.5 \thinspace mph$.</details></div>
 <h2 id="find-the-inverse-of-a-power-function">Find the Inverse of a Power Function</h2>
 <p>The steps we have gone through to solve equations are essentially the same steps needed to find the inverse of a power function.  Recall that the inverse of a basic power function $f(x)=x^{p}$ is the power function $f^{-1}(x)=x^{1/p}$ whose power is the reciprocal of the other.</p>
 <p><img src="https://duragauge.github.io/img/chapter-2/reciprocal_power.svg#center" alt=""></p>
 <p>Of course, this assumes $p \neq 0$ and that we have restricted the domain if $f(x)=x^{p}$ is not one-to-one, such as in the case of $f(x)=x^{2}$.  Finding the inverse of a standard power function model of the form $f(x) =  k x^{p}$ will require the use of the <em>shoes and socks</em> method, since it contains two operations.</p>
 <p>To find the inverse of $f(x) =  3 x^{1/5}$, for example, we focus on identifying the operations performed by the function and then invert the list to find the operations of the inverse function.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th><strong>Operations Performed by the Function</strong></th>
-<th></th>
-<th><strong>Operations Performed by the Inverse</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td>Apply the $1/5$ power</td>
-<td>1.</td>
-<td>Divide by $3$</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Multiply by $3$</td>
-<td>2.</td>
-<td>Apply the $5/1$ power</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th><strong>Operations Performed by the Function</strong></th>
+          <th></th>
+          <th><strong>Operations Performed by the Inverse</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1.</td>
+          <td>Apply the $1/5$ power</td>
+          <td>1.</td>
+          <td>Divide by $3$</td>
+      </tr>
+      <tr>
+          <td>2.</td>
+          <td>Multiply by $3$</td>
+          <td>2.</td>
+          <td>Apply the $5/1$ power</td>
+      </tr>
+  </tbody>
 </table>
 <p>Now that we know what the inverse function does, we construct its equation as follows:</p>
 <table>
-<thead>
-<tr>
-<th>Start with a variable:</th>
-<th>$x$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Divide by $3$:</td>
-<td>$x/3$</td>
-</tr>
-<tr>
-<td>Apply the $5$th power:</td>
-<td>$(x/3)^{5}$</td>
-</tr>
-<tr>
-<td>Write as a function:</td>
-<td>$f^{-1}(x) =  (\frac{x}{3})^{5}$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Start with a variable:</th>
+          <th>$x$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Divide by $3$:</td>
+          <td>$x/3$</td>
+      </tr>
+      <tr>
+          <td>Apply the $5$th power:</td>
+          <td>$(x/3)^{5}$</td>
+      </tr>
+      <tr>
+          <td>Write as a function:</td>
+          <td>$f^{-1}(x) =  (\frac{x}{3})^{5}$</td>
+      </tr>
+  </tbody>
 </table>
 <p>Notice that the inverse function does the opposite operations in the reverse order, which should always be the case.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Find the inverse of the following power functions.</p>
@@ -320,26 +301,26 @@ V = 1.34 L^{1/2}
 <p>To find the inverse of $V=f(L) = 1.34 L^{1/2}$ we begin by recognizing that this function first uses the $1/2$ power and then multiplies by $1.34$.  The inverse must do the opposite operations in the reverse order: first dividing by $1.34$ and then applying the $2/1=2$ power.</p>
 <p>Now that we know what the inverse function does, we construct its equation as follows:</p>
 <table>
-<thead>
-<tr>
-<th>Start with a variable:</th>
-<th>$V$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Divide by $1.34$:</td>
-<td>$\frac{V}{1.34}$</td>
-</tr>
-<tr>
-<td>Apply the $2$ power:</td>
-<td>$\left(\frac{V}{1.34}\right)^{2}$</td>
-</tr>
-<tr>
-<td>Write as a function:</td>
-<td>$L=f^{-1}(V) =  \left(\frac{V}{1.34}\right)^{2}$</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Start with a variable:</th>
+          <th>$V$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Divide by $1.34$:</td>
+          <td>$\frac{V}{1.34}$</td>
+      </tr>
+      <tr>
+          <td>Apply the $2$ power:</td>
+          <td>$\left(\frac{V}{1.34}\right)^{2}$</td>
+      </tr>
+      <tr>
+          <td>Write as a function:</td>
+          <td>$L=f^{-1}(V) =  \left(\frac{V}{1.34}\right)^{2}$</td>
+      </tr>
+  </tbody>
 </table>
 <p>Lastly, to ensure that $f^{-1}$ is one-to-one itself we should add the condition that $V\geq0$.</p>
 <p>How might this new function get used?  Suppose the Navy needs to design a new aircraft carrier with a hull speed of at least $V= 33$ knots.  By evaluating $L=f^{-1}(30)$ the engineers could quickly know that the boat should be at least 606.48 feet long.</p>
@@ -351,16 +332,7 @@ V = 1.34 L^{1/2}
 </label>
 <input type="checkbox" id="sn-dial-up" class="margin-toggle" />
 <span class="sidenote">A 2013 study by the Pew Research Center reported that 3% of Americans still use dial-up connections, primarily in rural areas.  That’s more than 9.4 million people.</span></p>
-<p>
-
-
-
-
-
-
-  
-  <img src="https://duragauge.github.io/img/chapter-2/aol.svg#center" alt="" >
-</p>
+<p><img src="https://duragauge.github.io/img/chapter-2/aol.svg#center" alt=""></p>
 <p>The number of AOL subscribers (in millions) can be approximated by the power function $S =  f(t) =  16.32 t^{-0.84}$
 where $t$ is time in years since 2005.  What is the inverse of this function, and what significance might it have?</p>
 <p>Using the techniques discussed earlier, the inverse function is</p>
@@ -452,7 +424,6 @@ f^{-1}(1) =  \left(\frac{1}{16.32}\right)^{1/-0.84}\ \approx\ 27.78
     <!-- Main JS -->
     <script src="https://duragauge.github.io/js/main.js"></script>
 
-    
 
     
 
