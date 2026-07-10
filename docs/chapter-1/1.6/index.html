@@ -107,7 +107,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>When the stock market opened on Monday, October 22, 2001, stock in Enron (a large Fortune-500 energy company) was trading for about $20 per share.</p>
 <p>At the same time stock in Apple (the electronics manufacturer) could also be purchased for $20.</p>
-<p>Without additional information, it would be natural to assume that state of both companies was the same.  In reality, however, they were headed in opposite directions.</p>
+<p>Without additional information, it would be natural to assume that the state of both companies was the same.  In reality, however, they were headed in opposite directions.</p>
 <p>Later that day, the federal government announced they were investigating Enron for accounting irregularities.  Within weeks the company declared bankruptcy and several Enron executives were sent to prison for fraud and conspiracy.</p>
 <p>Apple, on the other hand, had an important announcement of their own.  The next day, on October 23, 2001, Apple CEO Steve Jobs unveiled the very first iPod.  It was an iconic success that revolutionized the consumer electronics industry and helped establish Apple as one of the most innovative technology companies in the world.</p>
 <p>As we've seen earlier, functions, just like stocks, can increase and decrease in value. Our goal in this section is to develop tools that allow us to measure, compare and categorize functions based on how they change.</p>
@@ -124,10 +124,10 @@
   <tbody>
   </tbody>
 </table>
-<p>The Greek leter &quot;delta&quot; ($\Delta$) is used throughout math and science to indicate change.  So writing $\Delta x$ means &quot;the change in the x-values&quot; and is the length of the interval $[a, b]$.</p>
+<p>The Greek letter &quot;delta&quot; ($\Delta$) is used throughout math and science to indicate change.  So writing $\Delta x$ means &quot;the change in the x-values&quot; and is the length of the interval $[a, b]$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Can you write the interval of numbers between $x=-4$ and $x=3$ as $[3,-4]$ ? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, interval notation should indicate where the numbers are relative to each other on the numberline, so the lowest number should always come first.  The proper way to write this is $[-4,3]$</details></p>
+<p>Can you write the interval of numbers between $x=-4$ and $x=3$ as $[3,-4]$ ? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, interval notation should indicate where the numbers are relative to each other on the number line, so the lowest number should always come first.  The proper way to write this is $[-4,3]$</details></p>
 </li>
 <li>
 <p>What is the length of the interval $[-2, 5]$? <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \Delta x = 5-(-2) = 7]</details></p>
@@ -174,7 +174,7 @@
   <tbody>
   </tbody>
 </table>
-<p>This formula gives us a decimal which we then interpret as a percentage.  A value such as $0.12$, for instance, should be taken to mean $12\%$. Additionally, negative values are typically labeled as &quot;decreasing&quot; percentages, so that a value like $-0.08$ would be written as a $8\% \text{decrease}$.</p>
+<p>This formula gives us a decimal which we then interpret as a percentage.  A value such as $0.12$, for instance, should be taken to mean $12\%$. Additionally, negative values are typically labeled as &quot;decreasing&quot; percentages, so that a value like $-0.08$ would be written as an $8\% \text{decrease}$.</p>
 <p>In the case of the airplane tickets, the total change is $\$10$ and the original price is $\$400$, so the percent change is $\frac{\$10}{\$400}=0.025$ or $2.5\%$.</p>
 <p>On the other hand, the percent change for the coffee is $\frac{\$10}{\$4}=2.5$ which is a relative increase of $250\%$.</p>
 <p>As these examples illustrate, percent change can vary significantly even when the total change is the same. This is why relative change is a useful measure in many real-world scenarios.</p>
@@ -190,7 +190,7 @@
 <h2 id="average-rate-of-change">Average Rate of Change</h2>
 <p>While percent change helps you see the relative increase or decrease in values, it does not indicate how quickly the change is happening.</p>
 <p>If we think back to our coffee example, imagine if the price increased from $\$4$ to $\$14$ over a period of $10$ years rather than overnight, that would be a much less dramatic change.</p>
-<p>To see measure how rapidly a function change we need to average the total change over the length of the interval.</p>
+<p>To measure how rapidly a function changes, we need to average the total change over the length of the interval.</p>
 <p>You are probably already familiar with the basic process of finding averages.  For instance, if you drove a distance of 100 miles in 2 hours then your average speed would be $\frac{100 \text{ miles}}{2 \text{ hours}} = 50 \text{ miles per hour}$. Your actual speed may have varied during the trip but, on average, it was 50 miles per hour.</p>
 <p>Similarly, to find the average change of a function, we divide the total change in the function values $\Delta y$ by the corresponding change $\Delta x$ in the input values.</p>
 <table>
@@ -211,7 +211,7 @@
 &amp;\approx 0.077
 \end{align}]</p>
 <p>This tells us that from $x=9$ to $x=100$ the function $f(x)=\sqrt x$ increases, on average, by $0.077$ units every time $x$ increases by $1$ unit.</p>
-<p>It's useful to know that that unless a function is linear, the average rate of change will vary depending on the interval $[a, b]$ chosen.</p>
+<p>It's useful to know that unless a function is linear, the average rate of change will vary depending on the interval $[a, b]$ chosen.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Calculate the average rate of change of $f(x)=\sqrt x$ over the interval $[0,16]$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[\begin{align}\frac{\Delta y}{\Delta x} &amp;= \frac{\sqrt{16}-\sqrt{0}}{16-0} \newline &amp;= \frac{4-0}{16} \newline &amp;= \frac{1}{4} \end{align}]</details></div>
 <h2 id="finding-average-rate-of-change-graphically">Finding Average Rate of Change Graphically</h2>
 <p>If the average rate of change formula looks somewhat familiar, there's a good reason for that.  It is nothing more than the classic <em>slope</em> formula $m=\frac{y_2-y_1}{x_2-x_1}$ converted to function notation.</p>
@@ -285,7 +285,7 @@
 <p>Let's examine a few simple examples.  The function $f(x)=3x+2$ is an increasing linear function, so we expect the difference quotient to be a positive constant value, and it is.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient_3x+2.svg#center" alt=""></p>
 <p>It is interesting to note that the value of the difference quotient is exactly the same as the value of the slope of the line.</p>
-<p>For our final example, we'll look at the square function $f(x)=x^{2}$.  We know that this function is concave up over its entire domain of all real numbers, so we expcect its difference quotient will always be increasing.</p>
+<p>For our final example, we'll look at the square function $f(x)=x^{2}$.  We know that this function is concave up over its entire domain of all real numbers, so we expect its difference quotient will always be increasing.</p>
 <p><img src="https://duragauge.github.io/img/chapter-1/difference_quotient_x_squared.svg" alt=""></p>
 <p>Notice that no matter what value $h$ happens to be, $D(x)$ is always increasing since it is a linear function with a slope of $2$.</p>
 <h2 id="looking-ahead">Looking Ahead</h2>

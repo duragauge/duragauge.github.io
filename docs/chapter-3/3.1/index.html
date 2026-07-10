@@ -84,7 +84,7 @@
     <li><a href="#identify-characteristics-of-exponential-functions">Identify Characteristics of Exponential Functions</a></li>
     <li><a href="#evaluate-exponential-functions">Evaluate Exponential Functions</a></li>
     <li><a href="#how-exponential-functions-change">How Exponential Functions Change</a></li>
-    <li><a href="#difference-quotients-of-exponentials">Difference Quotients of Exponentials</a></li>
+    <li><a href="#difference-quotients-of-exponential-functions">Difference Quotients of Exponential Functions</a></li>
     <li><a href="#the-number-e">The Number <strong>e</strong></a></li>
     <li><a href="#looking-ahead">Looking Ahead</a></li>
   </ul>
@@ -296,7 +296,7 @@ f(x) = b^{x}
 <li>Exponential functions are always concave up.</li>
 <li>The x-axis is a horizontal asymptote, but there are no vertical asymptotes.</li>
 <li>Exponential functions do not have odd or even symmetry.</li>
-<li>All exponentials are one-to-one.  This means that every exponential function must have an inverse, which will be called a <strong>logarithm.</strong></li>
+<li>All exponential functions are one-to-one.  This means that every exponential function must have an inverse, which will be called a <strong>logarithm.</strong></li>
 </ul>
 </details>
 <h2 id="evaluate-exponential-functions">Evaluate Exponential Functions</h2>
@@ -396,13 +396,13 @@ Which one is an exponential function? <details class='no-print' style="margin-le
       </tr>
   </tbody>
 </table>
-<p>This result indicates that difference between $f(x)$ and $f(x+1)$ is $r \cdot f(x)$.  In other words, to move from one value to the next you add $r$ times the current function value.</p>
+<p>This result indicates that the difference between $f(x)$ and $f(x+1)$ is $r \cdot f(x)$.  In other words, to move from one value to the next you add $r$ times the current function value.</p>
 <p>For instance, if $b=1.08$, then $f(x+1)=f(x) + .08f(x)$, meaning that every time $x$ increases by $1$, the function increases by $8\text{%}$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Suppose $f(x)=1.26^{x}$.  Identify both the growth factor $b$ and the growth rate $r$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The growth factor is the base $b=1.26$.  The growth rate is $r=0.26$, meaning the  every time $x$ increases by $1$ the function increases by $26\text{%}$.</details></li>
+<li>Suppose $f(x)=1.26^{x}$.  Identify both the growth factor $b$ and the growth rate $r$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The growth factor is the base $b=1.26$.  The growth rate is $r=0.26$, meaning that every time $x$ increases by $1$ the function increases by $26\text{%}$.</details></li>
 </ol>
 </div>
-<h2 id="difference-quotients-of-exponentials">Difference Quotients of Exponentials</h2>
+<h2 id="difference-quotients-of-exponential-functions">Difference Quotients of Exponential Functions</h2>
 <p>The difference quotient of an exponential function $f(x)=b^{x}$ can be simplified as follows:</p>
 <table>
   <thead>
@@ -449,7 +449,7 @@ Which one is an exponential function? <details class='no-print' style="margin-le
       </tr>
   </tbody>
 </table>
-<p>This shows that no mater which $h&gt;0$ we choose, $D(x)$ will always be a multiple of the original function $f(x)=10^{x}$.  For instance, choosing $h=1$ gives</p>
+<p>This shows that no matter which $h&gt;0$ we choose, $D(x)$ will always be a multiple of the original function $f(x)=10^{x}$.  For instance, choosing $h=1$ gives</p>
 <p>[
 D(x) = \left( \frac{10^{1}-1}{1} \right) 10^{x} = 9 \cdot 10^{x}
 ]</p>
@@ -458,7 +458,7 @@ D(x) = \left( \frac{10^{1}-1}{1} \right) 10^{x} = 9 \cdot 10^{x}
 <p>What is the difference quotient of $f(x)=3^{x}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Inserting $b=3$ into the formula above we see that $D(x)=\left(\frac{3^{h}-1}{h}\right) 3^{x}$</details></p>
 </li>
 <li>
-<p>Evaluate with the difference quotient of $f(x)=3^{x}$ with $h=2$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $h=2$ then $D(x)=\left(\frac{3^{2-1}}{2}\right) 3^{x}=4 \cdot 3^{x}$ </br></br>In other words, the difference quotient is the original function times $4$.</details></p>
+<p>Evaluate with the difference quotient of $f(x)=3^{x}$ with $h=2$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />If $h=2$ then $D(x)=\left(\frac{3^{2}-1}{2}\right) 3^{x}=4 \cdot 3^{x}$ </br></br>In other words, the difference quotient is the original function times $4$.</details></p>
 </li>
 </ol>
 </div>
@@ -573,7 +573,7 @@ D(x) =  \frac{b^{h}-1}{h} b^{x}
   </tbody>
 </table>
 <p>Euler once approximated $e$ out to 18 decimal places as  $2.718281828459045235$, all <em>by hand</em>.   You do not need to memorize several digits of $e$, but remembering that $e \approx 2.718$ will give you a good approximation for making rough calculations.</p>
-<p>Today $e$ is considered one of the most important numbers in mathematics and science.   It is used so frequently, that the exponential function with a base of $e$ is often called <em>the</em> exponential function, as though no other bases mattered.  You will find that your calculator as a button dedicated to evaluating $e^{x}$ for any real number $x$.</p>
+<p>Today $e$ is considered one of the most important numbers in mathematics and science.   It is used so frequently, that the exponential function with a base of $e$ is often called <em>the</em> exponential function, as though no other bases mattered.  You will find that your calculator has a button dedicated to evaluating $e^{x}$ for any real number $x$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Find the $e^{x}$ button on your calculator and use it to evaluate the following:</p>
 <ol>
 <li>

@@ -127,7 +127,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Many people are concerned about the amount of mercury they ingest by eating certain species of large fish like shark, swordfish, and tuna.  Mercury levels in large fish can be over a million times higher than that found in the surrounding waters, posing a possible health risk.</p>
 <p>An accurate mathematical model could help people understand those concerns and make informed decisions.  Fortunately, the elimination of substances like mercury from the body are known to have <em>biological half-lives</em>, and we know that half-lives can be modeled with exponential functions.</p>
-<p>In this section we'll will point out key words and phrases, like &quot;half-life&quot;, that indicate a scenario might be modeled by a particular type of function.  We'll also cover algebraic methods for finding those equations.</p>
+<p>In this section we will point out key words and phrases, like &quot;half-life&quot;, that indicate a scenario might be modeled by a particular type of function.  We'll also cover algebraic methods for finding those equations.</p>
 <h2 id="identifying-functions-from-descriptions">Identifying Functions from Descriptions</h2>
 <h3 id="linear-functions-constant-rates">Linear Functions: Constant Rates</h3>
 <p>When we studied how functions change in <a href="https://duragauge.github.io/chapter-1/1.6">Chapter 1</a>, we saw that the average rate of change formula was nothing more than the slope formula rewritten with function notation.</p>
@@ -140,7 +140,7 @@
 <p>While those behaviors don't exclusively belong to power functions, they do indicate that a power function should be considered.</p>
 <h3 id="exponential-functions--constant-percentages">Exponential Functions:  Constant Percentages</h3>
 <p>As we saw in <a href="https://duragauge.github.io/chapter-3/3.2">Chapter 3</a> exponential functions often appear in scenarios involving growth or decay that follows a multiplicative pattern.</p>
-<p>A distinguishing features of exponential functions is that they involve a constant <strong>percentage change</strong> over equal intervals.  Almost without exception, if a constant percent change is mentioned within a certain time frame, then the scenario is likely exponential in nature.</p>
+<p>A distinguishing feature of exponential functions is that they involve a constant <strong>percentage change</strong> over equal intervals.  Almost without exception, if a constant percent change is mentioned within a certain time frame, then the scenario is likely exponential in nature.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Identify the type of function (linear, power, or exponential) that would likely be the best model for each scenario.</p>
 <ol>
 <li>
@@ -275,7 +275,7 @@ f(x)=3.229x^{0.6309}
 <h3 id="find-an-exponential-function-from-two-points">Find an Exponential Function from Two Points</h3>
 <p>Suppose we are asked to find an exponential function that passes through the points $(1, 12)$ and $(3, 27)$, how is that done?  The process begins the same way it did with a power function--inserting the coordinates into the standard exponential function $f(x)=a \thinspace b^{x}$ to make two equations.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/substitution_exponential.svg#center" alt=""></p>
-<p>Forming a ratio the two equations worked before, so let's try that again.  We'll put the equation with the larger numbers on top, which should help us reduce fractions along the way.</p>
+<p>Forming a ratio of the two equations worked before, so let's try that again.  We'll put the equation with the larger numbers on top, which should help us reduce fractions along the way.</p>
 <p>[
 \begin{align}
 \frac{27}{12} &amp;= \frac{ a  \thinspace  b^{3}}{a  \thinspace  b^{1}} &amp;&amp; \small \color{#5fa2ce}{\text{Form the ratio of the two equations.}} \newline
@@ -287,7 +287,7 @@ f(x)=3.229x^{0.6309}
 \end{align}
 ]</p>
 <p>Normally getting two answers could cause a problem, but in this case we know something extra.  We are trying to find the base of an exponential function, and the base of an exponential is never negative.  So the correct value must be $b=\frac{3}{2}$.</p>
-<p>This is only half of the solution; we also need to know what $a$ is.  To find that, we'll substitute $b$ back into one of our equations.  As before, either one will work but we'll choose the one with the lower values in it--it's just is a bit simpler.</p>
+<p>This is only half of the solution; we also need to know what $a$ is.  To find that, we'll substitute $b$ back into one of our equations.  As before, either one will work but we'll choose the one with the smaller values as is a bit simpler.</p>
 <p>[
 \begin{align}
 12 &amp;= a  \thinspace  b^{1} &amp;&amp; \small \color{#5fa2ce}{\text{Equation #1}} \newline
@@ -326,7 +326,7 @@ a \thinspace e^{\ k \ t} &amp;\Longrightarrow a \thinspace b^{\ x} &amp;&amp; \s
     <a href = "https://pixabay.com/images/id-373588/">Image by Design n Print from Pixabay</a></span>
 </div>
 <br>
-<p>Let's return to the example that at the start of this section.  The Mercury that small fish eat gets collectected in large predatory fish such as shark, swordfish, and tuna that live longer.
+<p>Let's return to the example that at the start of this section.  The Mercury that small fish eat gets collected in large predatory fish such as shark, swordfish, and tuna that live longer.
 <label for="sn-fish" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-fish" class="margin-toggle" />
@@ -345,11 +345,11 @@ k  &amp;\approx  -0.0138 &amp;&amp; \small \color{#5fa2ce} {\text{Use a calculat
 \end{align}]</p>
 <p>From this we see that the mercury concentration can be modeled by $f(t)=15e^{-0.0138  \thinspace  t}$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
-<li>Now that we know the model is $f(t)=15e^{-0.0138 \thinspace t}$, how do we figure out the amount of time it will take to reach a safe level of  5.8$\mu$/L?</li>
+<li>Now that we know the model is $f(t)=15e^{-0.0138 \thinspace t}$, how do we figure out the amount of time it will take to reach a safe level of  5.8$\mu$g/L?</li>
 </ol>
 <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />We need to set $f(t)=5.8$ and solve the equation for $t$.</details>
 </div>
-<p>We know that if your blood mercury level is initially at 15 $\mu$/L, then the mercury concentration can be modeled by the function $f(t)=15e^{-0.0138  \thinspace t}$ where $t$ is time in days.</p>
+<p>We know that if your blood mercury level is initially at 15 $\mu$g/L, then the mercury concentration can be modeled by the function $f(t)=15e^{-0.0138  \thinspace t}$ where $t$ is time in days.</p>
 <p>To find out how long it will take to reach a safe level of 5.8 $\mu$g/L, we need to find $t$ so that $f(t)=5.8$.</p>
 <p>[
 \begin{align}
@@ -383,7 +383,7 @@ t  &amp;\approx  50.23 &amp;&amp; \small \color{#5fa2ce} {\text{Use a calculator
 <p>[
 f(x)=15\left(\frac{1}{2}\right)^{x/50}
 ]</p>
-<p>is the half-life model for mercury concentration that is equivalent to our earlier continuous decay model.  Both both produce the same values, they are just written in different formats.</p>
+<p>is the half-life model for mercury concentration that is equivalent to our earlier continuous decay model.  Both produce the same values, they are just written in different formats.</p>
 <h2 id="looking-ahead">Looking Ahead</h2>
 <p>In our final section we will use technology to find models that fit larger sets of data rather than doing the work by hand.  Even so, the basic process will be the same as what we've done in the past two sections.</p>
 <p>We will always start by comparing the properties of the data with the behaviors of functions we know so that we can choose an appropriate function model that can be used to predict unknown values.</p>

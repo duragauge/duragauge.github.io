@@ -112,7 +112,7 @@
 <br>
 <h2 id="introduction">Introduction</h2>
 <p>In the 1980's Hasbro changed the toy world by introducing a line of robot action figures known as <em>Transformers</em>.  What made each Transformer special was that if you bent the legs, twisted the torso, and folded the arms, the robot would change into something else, like a car or an airplane.  Undoing each of those steps in the reverse order would change it back into a robot again.</p>
-<p>Converting a Transformer is very similar to the shoes-and-socks method of finding an inverse function that we introduced in.  Unfortunately, that technique seldom works on combined functions.  In this section we develop a new procedure that can be applied to any function.</p>
+<p>Converting a Transformer is very similar to the shoes-and-socks method of finding an inverse function that we introduced in <a href="//chapter-1/1.5">Section 1.5</a>.  Unfortunately, that technique seldom works on combined functions.  In this section we develop a new procedure that can be applied to any function.</p>
 <h2 id="review-the-shoes-and-socks-method">Review the Shoes and Socks Method</h2>
 <p>Let's review the shoes-and-socks method for finding an inverse.  We'll use $f(x)=\frac{x^{3}+1}{5}$ as an example.  The first step in the process was to identify the operations performed by the function, following the standard order of operations.  The next step was to list the inverse operations in the reverse order.</p>
 <table>
@@ -204,7 +204,7 @@
 </noscript>
 <p>Notice that each point $\color{red}{(x, y)}$ on the graph of $f$ turns into the point $\color{black}{(y, x)}$ on the graph of the inverse.  This may not seem like a significant fact, but it is the key to a new algebraic method for finding the equations of inverses.</p>
 <h2 id="learn-the-switch-and-solve-method">Learn the Switch and Solve Method</h2>
-<p>We have seen that if $(x, y)$ is a point on the graph of a one-to-one function $f$, then the point $(y, x)$ is on the graph of $f^{-1}$.  The significance of this that switching $x$ and $y$ in the equation of a one-to-one function creates an implicit equation for its inverse.  All that remains is to solve that equation for $y$ so that we can write it with function notation.   For obvious reasons, this will be called the <strong>switch-and-solve</strong> method.</p>
+<p>We have seen that if $(x, y)$ is a point on the graph of a one-to-one function $f$, then the point $(y, x)$ is on the graph of $f^{-1}$.  The significance of this is that switching $x$ and $y$ in the equation of a one-to-one function creates an implicit equation for its inverse.  All that remains is to solve that equation for $y$ so that we can write it with function notation.   For obvious reasons, this will be called the <strong>switch-and-solve</strong> method.</p>
 <p>The <strong>switch-and-solve</strong> method can be broken down into a four-step process.</p>
 <p>$$
 \begin{align}
@@ -263,7 +263,7 @@ $$</p>
 <p>$\text{Step 3: } \small \color{#5fa2ce}{\text{ Solve for $y$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />\begin{align} x&amp;=-5y+8 \newline
 x-8 &amp;= -5y &amp;&amp; \small \color{#5fa2ce} {\text{subtract 8}} \newline
 \frac{x-8}{-5}&amp;=y &amp;&amp; \small \color{#5fa2ce} {\text{divide by -5}}\end{align}</details></p>
-<p>$\text{Step 4: } \small \color{#5fa2ce}{\text{ Replace $y$ with $f^{-1}(x)$. }}$</td><td><details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$f^{-1}(x)=\frac{x-8}{-5}$$</details></p>
+<p>$\text{Step 4: } \small \color{#5fa2ce}{\text{ Replace $y$ with $f^{-1}(x)$. }}$ <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$$f^{-1}(x)=\frac{x-8}{-5}$$</details></p>
 <h3 id="example-3">Example 3</h3>
 <p>Now let's look at a power function $f(x)=x^{2/3}+6$ and restrict its domain $x\leq0$ so that it is one-to-one.  The steps below outline the complete process for finding the equation for $f^{-1}$.</p>
 <p>$$
@@ -320,7 +320,7 @@ $$</p>
 <p>By removing the exponential we've freed up one $y$, but the other $y$ is now stuck inside of the logarithm.  If we were to free the $y$ inside of the logarithm, then the other $y$ would be trapped back in an exponential.  It's a loop we could never get out of.</p>
 <h2 id="verify-inverse-functions">Verify Inverse Functions</h2>
 <p><img src="https://duragauge.github.io/img/chapter-1/tahiti_flight.png#center" alt="">
-You'll remember that in <a href="../1.5">Section 1.5</a> we introduced the idea that a function combined with its inverse should act like a round trip airplane flight, bringing you back to where you started.  Now that we understand composition, we can state this rule more precisely.</p>
+You'll remember that in <a href="//chapter-1/1.5">Section 1.5</a> we introduced the idea that a function combined with its inverse should act like a round trip airplane flight, bringing you back to where you started.  Now that we understand composition, we can state this rule more precisely.</p>
 <p>Given a one-to-one function $f$ and its inverse $f^{-1}$, the following round trip properties hold</p>
 <p>$$
 (f \circ f^{-1})(x)=f(f^{-1}(x))=x
@@ -352,7 +352,7 @@ $$</p>
 &amp;= x &amp;&amp;  \small \color{#5fa2ce} {\text{Simplify}}
 \end{align}
 $$</p>
-<p>Since both round trip properties hold, we have verified that these two functions are truly inverses of eachother.</p>
+<p>Since both round trip properties hold, we have verified that these two functions are truly inverses of each other.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Are the functions $\color{red}{f(x)=\frac{x}{2}+3}$ and $\color{blue}{g(x)=2x-3}$ inverses?  Use the round trip properties to justify your answer. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />No, these are not inverses.  $$(f \circ g)(x)=\color{red}{ \frac{ \color{blue}{2x-3}}{2} + 3 } = x + \frac{3}{2}$$ and $$(g \circ f)(x) = \color{blue}{2\left(\color{red}{\frac{x}{2}+3}\right)-3}=x+3$$  Neither of these equal $x$, so the functions cannot be inverses.</details></div>
 <h2 id="applications-of-inverses">Applications of Inverses</h2>
 <div style="position:relative; clear:both; padding:0;">

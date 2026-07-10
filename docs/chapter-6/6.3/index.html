@@ -115,7 +115,7 @@
 <p>A function model of that data could be used to predict the future size of the mustang herds, helping the BLM plan actions to help the herds thrive.</p>
 <p>In this section, we will explore the process of creating function models using large data sets and then we'll return to this scenario.</p>
 <h2 id="general-strategy">General Strategy</h2>
-<p>In the previous section we found functions by hand in situations were only two data points were known.  Creating a functional model from a larger dataset involves several steps including borrowing a powerful tool from statistics called <em>regression</em>.</p>
+<p>In the previous section we found functions by hand in situations where only two data points were known.  Creating a functional model from a larger dataset involves several steps including borrowing a powerful tool from statistics called <em>regression</em>.</p>
 <p>While this might sound intimidating, we will utilize technology to do the hard lifting, leaving us free to focus on the analysis. Here's our general strategy:</p>
 <ol>
 <li><strong>Align and/or Scale the Data</strong>: Before performing regression, consider <a href="https://duragauge.github.io/chapter-6/6.1/#aligning-and-scaling-data">aligning and/or scaling</a> the data to make it easier to work with. If you encounter an &quot;overflow&quot; error when running regression in a later step, consider coming back to this step and adjusting your data to more manageable values.</li>
@@ -134,7 +134,7 @@
     <a href = "https://en.wikipedia.org/wiki/File:Solar_sys8.jpg">Image by NASA</a></span>
 </div>
 <br>
-<p>When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets:  Mercury, Venus, Earth, Mars, Jupiter and Saturn.  Kepler based his theory on measurements taken years earlier by Tycho Brahe who spent his life making observations with the naked eye--he died 8 years before the telescope was invented!</p>
+<p>When Johannes Kepler came up with his theory for the orbit of planets in 1618, he was only aware of six planets:  Mercury, Venus, Earth, Mars, Jupiter and Saturn.  Kepler based his theory on measurements taken years earlier by Tycho Brahe who spent his life making observations with the naked eye--he died 7 years before the telescope was invented!</p>
 <p>Kepler struggled for 17 years to find a relationship between the time it takes a planet to orbit the Sun (called its orbital period) and its average distance from the Sun (called the semi-major axis).  Let's see if we can't do something similar in less than 17 <strong>minutes</strong>.  We will show instructions for using a Texas Instruments graphing calculator, but other calculators and software should have similar commands available.</p>
 <p>The table below lists the periods and distances for the 8 major planets in our solar system.</p>
 <table>
@@ -226,8 +226,8 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
       </tr>
       <tr>
           <td>Pluto (a dwarf planet)</td>
-          <td>39.26</td>
-          <td>248.09</td>
+          <td>39.48</td>
+          <td>248.07</td>
       </tr>
       <tr>
           <td>Eris (a dwarf planet)</td>
@@ -236,7 +236,7 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
       </tr>
   </tbody>
 </table>
-<p>Does Kepler's 3rd law work for these objects as well?  In other words, if you insert a value for $D$ into the equation $P =  D^{3/2}$ does the resulting value for $P$ match the table?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, Kepler's 3rd law is works for all of these objects, not just planets.</details></p>
+<p>Does Kepler's 3rd law work for these objects as well?  In other words, if you insert a value for $D$ into the equation $P =  D^{3/2}$ does the resulting value for $P$ match the table?<details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Yes, Kepler's 3rd law works for all of these objects, not just planets.</details></p>
 </div>
 <h3 id="example-allometry">Example: Allometry</h3>
 <div style="position:relative; clear:both; padding:0;">
@@ -302,7 +302,7 @@ where $D$ is the distance of the planet from the Sun in astronomical units (AU).
 <h2 id="check-multiple-models">Check Multiple Models</h2>
 <p>In the last two examples we identified the scatterplots as a power functions.  This isn't surprising, since power functions can grow quickly (when $p \gt 1$), grow slowly (when $0 \lt p \lt 1$) and decay (when $p \lt 0$).</p>
 <p><img src="https://duragauge.github.io/img/chapter-2/powers_all_3.svg#center" alt=""></p>
-<p>However, it would have been better to check multiple function models.  For example, the scatterplot below looks similar to Kepler's data, but no mater which values you choose for $k$ and $p$, no power function will ever fit the curvature of the data.</p>
+<p>However, it would have been better to check multiple function models.  For example, the scatterplot below looks similar to Kepler's data, but no matter which values you choose for $k$ and $p$, no power function will ever fit the curvature of the data.</p>
 <div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 33.33%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
   <div id="ggb-element-Rv4EWJmR" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" ></div>
 </div>
@@ -549,7 +549,7 @@ one of the fastest growing cities in Oregon. The following table shows the popul
 ]</p>
 <p>Before choosing a model we should plot the data and see what it looks like.  To make it easier, we will use years <em>since</em> 1970 rather than the actual year.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/redmond_regression_1.png#center" alt=""></p>
-<p>The data appears to increase, slow down, and then increase again, like a polynomial function.  In generally, if you notice a pattern with $n$ turns in the data you can model it effectively with an $n-1$ degree polynomial. Since the data appears to have two turns, a cubic polynomial might be a good fit.</p>
+<p>The data appears to increase, slow down, and then increase again, like a polynomial function.  In general, if you notice a pattern with $n$ turns in the data you can model it effectively with an $n+1$ degree polynomial. Since the data appears to have two turns, a cubic polynomial might be a good fit.</p>
 <p>Running <code>CubicReg</code> on a calculator</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/redmond_regression_2.png#center" alt=""></p>
 <p>gives a cubic polynomial which does fit the data well, coming very close to most of the data points.</p>
@@ -582,7 +582,7 @@ The actual population in 2020 was 33,274 so neither of our models produced a goo
 <p>When the number of horses exceeds a sustainable level, the BLM takes action by gathering animals from overpopulated herds and making them available to the public for adoption.</p>
 <p>The table below gives the total number of mustangs in Nevada from 2000 to 2011.</p>
 <p><img src="https://duragauge.github.io/img/chapter-6/horse_data.png" alt=""></p>
-<p>Notice that he population decreased and then started to increase, so it seems reasonable that a quadratic function might fit the data.</p>
+<p>Notice that the population decreased and then started to increase, so it seems reasonable that a quadratic function might fit the data.</p>
 <p>Since this is our final example, we will approach this two ways.  First we will try using transformations to make a quadratic model in the vertex form like we did in <a href="https://duragauge.github.io/chapter-6/6.1#vertex-form-of-a-quadratic">section 6.1</a>.  Then we'll use regression and will show all the steps for using a Texas-Instruments TI83 or TI84 graphing calculators.  Since a quadratic function has $3$ parameters, we will not use the algebraic methods of <a href="https://duragauge.github.io/chapter-6/6.2">section 6.2</a> since we do not have the tools for large systems of equations.</p>
 <p>To hunt for a quadratic model in the vertex form, adjust the values of $\color{blue}{a}$, $\color{brown}{h}$ and $\color{green}{k}$ in the figure below.</p>
 <div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 50%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">

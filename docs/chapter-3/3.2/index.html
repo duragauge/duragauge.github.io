@@ -116,7 +116,7 @@
 <h2 id="growth-factor-and-growth-rate">Growth Factor and Growth Rate</h2>
 <p>You learned in the previous section that the base $b$ of an exponential function $f(x)=b^{x}$ is a growth factor.  For instance,  if $f(x)=1.08^{x}$, then the <em>growth factor</em> is $b=1.08$, meaning the function is multiplied by $1.08$ every time $x$ increases by $1$.</p>
 <p>We can also say that each new value of $f(x)=1.08^{x}$ is $8 \text{%}$ larger than the current one.  This second interpretation focuses on the <em>growth rate</em> $r=b-1$ rather than the growth factor $b$.</p>
-<p>In real world applications the growth rate is given much more frequently than the growth factor.  For instance, business commonly report that sales are up by $3 \text{%}$ or down by $5 \text{%}$, instead of announcing growth factors of $1.03$ or $0.95$.</p>
+<p>In real world applications the growth rate is given much more frequently than the growth factor.  For instance, businesses commonly report that sales are up by $3 \text{%}$ or down by $5 \text{%}$, instead of announcing growth factors of $1.03$ or $0.95$.</p>
 <p>For this reason, it is often useful to make the substitution $b = 1+r$ and write exponential functions in the form</p>
 <p>[
 f(x)=(1+r)^{x}
@@ -213,7 +213,7 @@ f(x)=16 (1-0.5)^{x}=16(0.5)^{x}
 <p>Our first variation of the standard model will enable us to work with applications that involve half lives and doubling times.</p>
 <p>The <strong>half-life</strong> of a function is the amount of time needed for the value to be reduced by half.  Every exponential decay function has a half-life.</p>
 <p><img src="https://duragauge.github.io/img/chapter-3/half_life.svg#center" alt=""></p>
-<p>For instance, the exponential decay function in this graph models the value of a sports car.  The initial value of $60,000 is cut in half every 3 years, so we would say it has a half-life of 3 years.</p>
+<p>For instance, the exponential decay function in this graph models the value of a sports car.  The initial value of \$60,000 is cut in half every 3 years, so we would say it has a half-life of 3 years.</p>
 <p>To make the standard model fit this situation we must stretch the $50\text{%}$ decay out over a three-year period.  In other words, we must stretch the function horizontally by a factor of $3$.  So we can model the value of this car with the function</p>
 <p>[
 f(x)=60000(1-0.5)^{x/3}
@@ -239,7 +239,7 @@ f(x)=a (1+r)^{x/c}
 <p>For instance, the function $f(x)=18(1+0.64)^{x/7}$ could model an initial quantity of $18$ that increases by $64\text{%}$ every time $x$ increases by $7$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><ol>
 <li>
-<p>Write the equation for an exponential function that starts at 20 and increases by $87\text{%}$ every time $x$ increases by 3.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=20(1+0.87)^{x/3}$ or $f(x)=20(1.87)^{x/3}$.</details></p>
+<p>Write the equation for an exponential function that starts at $20$ and increases by $87\text{%}$ every time $x$ increases by $3$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=20(1+0.87)^{x/3}$ or $f(x)=20(1.87)^{x/3}$.</details></p>
 </li>
 <li>
 <p>Write the equation for an exponential function that starts at $30$ and decreases by $52\text{%}$ every time $x$ increases by $2$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=30(1-0.52)^{x/2}$ or $f(x)=30(0.48)^{x/2}$.</details></p>
@@ -309,15 +309,15 @@ A(t) = P\left(1 + \frac{r}{n}\right)^{n \cdot t}
 <li>$A(t)$  is the account balance after t years</li>
 <li>$P$  is the principal (initial balance)</li>
 <li>$r$  is the annual interest rate (written as a decimal)</li>
-<li>$n$  is then number of compounding periods per year (ie. 12 for monthly, 52 for weekly, 365 for daily, etc.)</li>
+<li>$n$  is the number of compounding periods per year (ie. 12 for monthly, 52 for weekly, 365 for daily, etc.)</li>
 <li>$t$  is time in years</li>
 </ul>
-<p>For example, if $3000 is invested at 6% compounded monthly for 8 years, the account balance would be</p>
+<p>For example, if \$3000 is invested at 6% compounded monthly for 8 years, the account balance would be</p>
 <p>[
 A(8) =  3000\left(1+\frac{0.06}{12}\right)^{12 \cdot 8}\approx 4842.43
 ]</p>
 <p>When using a calculator, remember to include parenthesis around the exponent.</p>
-<div class="alert alert-success"><h4>QUICK CHECK</h4>What is the account balance after 10 years if $8500 is invested at 3% compounded weekly?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details></div>
+<div class="alert alert-success"><h4>QUICK CHECK</h4>What is the account balance after 10 years if \$8500 is invested at 3% compounded weekly?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$A(10)=8500\left(1+\frac{0.03}{52}\right)^{52 \cdot 10}\approx  11472.81$ dollars.</details></div>
 <h2 id="continuous-compound-interest">Continuous Compound Interest</h2>
 <p>It is logical to wonder what might happen if we were to increase the number of compounding periods $n$ over the course of a year.  Let's investigate.</p>
 <p>Suppose you invest $\$25,000$ at $5\text{%}$ interest for one year.  Using $P=25000$, $r=0.05$ and $t=1$, the accompanying table shows the account balance $A$ for ever increasing values of $n$.</p>
@@ -331,40 +331,40 @@ A(8) =  3000\left(1+\frac{0.06}{12}\right)^{12 \cdot 8}\approx 4842.43
   <tbody>
       <tr>
           <td>1</td>
-          <td>$26,250.00</td>
+          <td>\$26,250.00</td>
       </tr>
       <tr>
           <td>12</td>
-          <td>$26,279.05</td>
+          <td>\$26,279.05</td>
       </tr>
       <tr>
           <td>52</td>
-          <td>$26,281.15</td>
+          <td>\$26,281.15</td>
       </tr>
       <tr>
           <td>365</td>
-          <td>$26,281.69</td>
+          <td>\$26,281.69</td>
       </tr>
       <tr>
           <td>1,000</td>
-          <td>$26,281.74</td>
+          <td>\$26,281.74</td>
       </tr>
       <tr>
           <td>10,000</td>
-          <td>$26,281.77</td>
+          <td>\$26,281.77</td>
       </tr>
       <tr>
           <td>100,000</td>
-          <td>$26,281.78</td>
+          <td>\$26,281.78</td>
       </tr>
       <tr>
           <td>1,000,000</td>
-          <td>$26,281.78</td>
+          <td>\$26,281.78</td>
       </tr>
   </tbody>
 </table>
-<p>The table suggests that more frequent compounding does not produce unlimited growth over the course of a year.  For instance, compounding interest 365 times a year (every day) gives a balance of $26,281.69, which is only very slightly better than compounding just 12 times a year (every month).</p>
-<p>It also appears that no matter how many times we compound interest, the balance never gets above $26,281.78.</p>
+<p>The table suggests that more frequent compounding does not produce unlimited growth over the course of a year.  For instance, compounding interest 365 times a year (every day) gives a balance of \$26,281.69, which is only very slightly better than compounding just 12 times a year (every month).</p>
+<p>It also appears that no matter how many times we compound interest, the balance never gets above \$26,281.78.</p>
 <p>To explain why more frequent compounding does not produce unlimited wealth, consider what happens to the equation $A(t)=P\left(1+\frac{r}{n}\right)^{n t}$ as $n
 \rightarrow \infty$.  If $n$ gets larger, then $\frac{r}{n} \rightarrow 0$.</p>
 <p>In the past we've used the letter $h$ for quantities that get close to zero.  We will follow that convention and make the substitution $h= \frac{r}{n}$.  Note that this implies $n=\frac{r}{h}$.  With these changes we rewrite $A(t)$ as follows:</p>
