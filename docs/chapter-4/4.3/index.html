@@ -111,13 +111,40 @@
 <p>What does this have to do with math?  Well, there is a new way to combine functions called <strong>composition</strong>.  Composition is completely different than addition, subtraction, multiplication or division of functions.  Fortunately, the concept behind composition is almost exactly the same as washing laundry.</p>
 <h2 id="composition-of-functions">Composition of Functions</h2>
 <p>Let's diagram the laundry experience.  You start by putting a load of dirty clothes and linens into a washing machine.  When the washing cycle is over your laundry is not only clean, but wet as well.  To remedy this you transfer the clean, wet clothes into the dryer and turn it on.  Eventually you have what you wanted:  clean and dry clothes.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_laundry.svg" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_laundry.svg" alt="" >
+</p>
 <p>If we overlay the laundry diagram with function notation you can begin to see what function composition is.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_laundry_notation.svg" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_laundry_notation.svg" alt="" >
+</p>
 <p>When we take the output of one function (like clean, wet laundry from the washing machine) and input it into another function (like the dryer), the result (clean, dry laundry) is a <strong>composition</strong> of the two functions.</p>
 <p>Suppose, for instance, that $\color{blue}{g}$ adds 2 to any number,  and that $\color{red}{f}$ multiplies any input by 10.  In other words, $\color{blue}{g(x)=x+2}$ and $\color{red}{f(x)=10x}$.</p>
 <p>If we insert $x = 4$ into $\color{blue}{g}$ then $\color{blue}{6}$ comes out.  Now take $\color{blue}{6}$ and use it as the input to $\color{red}{f}$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_laundry_values.svg" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_laundry_values.svg" alt="" >
+</p>
 <p>The result is the composition $\color{red}{f(}\color{blue}{g(}4\color{blue}{)}\color{red}{)}=60$.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Suppose the example above had started with $x = 1$ instead.  What would be the result of the composition?  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Putting $x =1$ into $\color{blue}{g}$ gives $\color{blue}{g(}1\color{blue}{)}=\color{blue}{3}$.  Putting $\color{blue}{3}$ into $\color{red}{f}$  produces  $\color{red}{f(}\color{blue}{3}\color{red}{)}=\color{red}{30}$.  So $\color{red}{f(}\color{blue}{g(}1\color{blue}{)}\color{red}{)}=30$ is the result of the composition.</details></div>
 <h2 id="understand-composition-of-functions">Understand Composition of Functions</h2>
@@ -137,7 +164,16 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p>Since composition is a new way of combining functions, it needs its own symbol.  The symbol for composition is a small open circle $\circ$ .  If $\color{red}{f}$ and $\color{blue}{g}$ are functions, the composition of $\color{red}{f}$ with $\color{blue}{g}$ is the function given by</p>
 <p>[(f \circ g)(x)=\color{red}{f(}\color{blue}{g(}x\color{blue}{)}\color{red}{)}]</p>
 <p>For example, using $\color{red}{f(x)=2x^{3}}$ and $\color{blue}{g(x)=\frac{x+3}{2}}$ as our two functions, we can find $(f \circ g)(1)$ as follows:</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_b.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_eval_b.svg#center" alt="" >
+</p>
 <p>Notice that the output of the $\color{blue}{g}$ function was used as the input of the $\color{red}{f}$ function.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, find $(f \circ g)(7)$.   <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[
 \begin{align}
@@ -156,13 +192,40 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 <p>But the analogy is merely a suggestion.  To get real evidence we need to look at some functions and compare $(f \circ g)(x)$ with $(g \circ f)(x)$.</p>
 <p>Let's choose two simple functions to work with $\color{red}{f(x)=x+4}$ and $\color{blue}{g(x)=x^2}$.</p>
 <p>First we compute $(f \circ g)(5)$ and we'll compare that value with $(g \circ f)(5)$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_a.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_eval_a.svg#center" alt="" >
+</p>
 <p>If we compare this with $(g \circ f)(5)$</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_a_reverse.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_eval_a_reverse.svg#center" alt="" >
+</p>
 <p>it becomes clear that $(f \circ g)(5)$ and $(g \circ f)(5)$ are not the same.  In general, composition is <em>not</em> a commutative operation, and we will need to pay close attention to the order of the functions.</p>
 <h2 id="evaluate-composite-functions">Evaluate Composite Functions</h2>
 <p>Now that we know order is important, we should look at a few more examples.  This time $\color{red}{f}$ and $\color{blue}{g}$ are defined by the tables below.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_table.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_table.svg#center" alt="" >
+</p>
 <p>To evaluate $(g \circ f)(1)$, for example, we first use the table to find $f(1) = 2$, and then find $g(2) = -1$.  Thus, $(g \circ f)(1) = -1$.</p>
 <p>Contrast this with $(f \circ g)(1)=f(g(1))=f(3)$ which is undefined.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Use the table above to evaluate the following, if possible.</p>
@@ -186,20 +249,65 @@ Then evaluate [S(1850)=0.153(1850)=$283.05]</details></div>
 </div>
 <h2 id="the-domain-of-composite-functions">The Domain of Composite Functions</h2>
 <p>Let's consider another analogy for composition.  Imagine you wanted to fly from Portland, Oregon to Tahiti.  Since there is no direct service from Portland to Tahiti, you would need to fly somewhere else first and then find a connecting flight.  For instance, you might fly to Hawaii first and then on to Tahiti.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_tahiti.png#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_tahiti.png#center" alt="" >
+</p>
 <p>If we regard each flight as a function, then the entire trip could be viewed as a composition of functions.  This analogy gives us two useful insights.</p>
 <p>First, in order for composition to work, there must be some location, like Hawaii, where the range of the first function intersects the domain of the second function.  Otherwise, the composition is undefined, as you discovered previously.</p>
 <p>Second, it's possible to create a single new function that has the same actions as the composition of the two separate functions.  This new function would be similar to a direct flight from Portland to Tahiti.</p>
 <p>Consider the two functions $\color{red}{f}$ and $\color{blue}{g}$ defined by the arrow diagrams below.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_arrow_diagram_1.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_arrow_diagram_1.svg#center" alt="" >
+</p>
 <p>Since the range of $\color{blue}{g}$ intersects the domain of $\color{red}{f}$ only at $10$, the domain of $h=f \circ g$ can only be the single number $2$, there's no way to use $1$ as an input to $h = f \circ g$ because $5$ is not in the domain of $\color{red}{f}$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_arrow_diagram_2.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_arrow_diagram_2.svg#center" alt="" >
+</p>
 <p>And just as a direct flight from Portland to Tahiti would not stop in Hawaii, the composed function $h=f \circ g$ maps $2$ directly to $13$ without stopping at $10$.</p>
 <h2 id="composition-with-tables">Composition with Tables</h2>
 <p>If we return to the functions $\color{red}{f}$ and $\color{blue}{g}$ as defined in the tables below,</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_table.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_table.svg#center" alt="" >
+</p>
 <p>we should be able to compute values of $h(x)=(f \circ g)(x)$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_table_b.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_table_b.svg#center" alt="" >
+</p>
 <p>Since $x = 1$ and $x = 3$ are not valid inputs to
 $h(x)=(f \circ g)(x)$ we conclude that the domain is the set $ \lbrace 2,4,5 \rbrace $.</p>
 <p>Notice again that the domain of $h=f \circ g$ is always a subset of the domain of $\color{blue}{g}$.</p>
@@ -207,7 +315,16 @@ $h(x)=(f \circ g)(x)$ we conclude that the domain is the set $ \lbrace 2,4,5 \rb
 <h2 id="equation-of-f-circ-g">Equation of $f \circ g$</h2>
 <p>When $\color{red}{f}$ and $\color{blue}{g}$ are defined by equations, we find the equation for $h=f \circ g$ by composing the two equations rather than working with individual values.</p>
 <p>For instance, if $\color{red}{f(x)=3x^2-x+2}$ and $\color{blue}{g(x)=2^x}$ then</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_eval_4.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_eval_4.svg#center" alt="" >
+</p>
 <p>The benefit of having an equation for $h=f \circ g$ is that it allows you to evaluate the composition more efficiently.  You need only deal with one function instead of two.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Using the same functions as above, verify that $(f \circ g)(1)$ gives the same value as $h(1)$.   <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />[ \begin{align}
 (f \circ g)(1)&amp;=f(g(1)) \newline
@@ -237,7 +354,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 <p>The graphs of composite functions can display a wide range of behaviors.  In the figure below you can let $\color{red}{f}$ and $\color{blue}{g}$ be any functions you want.  The graph of $h=f \circ g$ will be drawn as you change $x$ or press <strong>Play</strong>.</p>
 <p>Consider putting a polynomial like $g(x)=2x^{2}-x^4$ inside of an exponential function $f(x)=e^{x}$.  Or, as in the example below, compose two functions that are vertical reflections of each other.  The goal here is just to have fun making graphs, so try as many as you like before continuing.</p>
 <div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 50%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-  <div id="ggb-element-Kbg4KOk8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
+  <div id="ggb-element-Kbg4KOk8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" ></div>
 </div>
 <script>
   function initGGBApplet(instanceId, elementId, materialId) {
@@ -283,7 +400,16 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
 </noscript>
 <p>Determining the exact shape of the graph of a composite function $h=f \circ g$ by examining the equations and/or graphs of $f$ and $g$ is a complicated process.  Generally, it will be best to find the equation for $h=f \circ g$ and then use a computer or graphing calculator to analyze its behavior.</p>
 <p>For instance, if $f(x)=e^{-x}$ and $g(x)=x^{2}$ then $h(x)=(f \circ g)(x)=e^{-x^{2}}$ and it can be graphed as follows.</p>
-<p><img src="https://duragauge.github.io/img/chapter-4/composition_calculator.svg" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-4/composition_calculator.svg" alt="" >
+</p>
 <p>With the graph it is easier to analyze the behavior of the function.  For instance, it is now clear that the function $h$ has a maximum of $h(x)=1$ at $x=0$.  We could also discuss asymptotes and regions where the function is increasing or decreasing as well as domain and range.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Using the graph above, or a graph on your own calculator, discuss domain, range, asymptotes, etc. of $h(x)=(f \circ g)(x)=e^{-x^{2}}$.</p>
 <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" /><ul>
@@ -303,12 +429,6 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
                             
                                 
                                 
-                                    <h2>Additional Practice</h2>
-                                    <p>Want more practice? Try these optional exercises powered by MyOpenMath. These exercises are purely for practice and are not part of your graded homework - you can attempt them as many times as you'd like!</p>
-                                    <div class="practice-button-container">
-                                        <a href="https://duragauge.github.io/chapter-4/4.3-practice/" class="button special practice-button">Try Practice Exercises</a>
-                                    </div>
-                                
                             
 
                             <!-- Footer -->
@@ -321,7 +441,7 @@ h(1)&amp;=3(4)^1-2^1+2 \newline
         </a>
       </div>
       <div class="license-text">
-        This work copyrighted by Nolan Mitchell under a 
+        &copy; Nolan Mitchell.  This work is licensed under a 
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. 
        </div>
     </div>

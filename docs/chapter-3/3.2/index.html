@@ -137,7 +137,7 @@ f(x)=(1+r)^{x}
 <h2 id="initial-value">Initial Value</h2>
 <p>Another way to change the basic exponential function $f(x)=b^{x}$ is to apply a vertical stretch.  You might recall that a vertical stretch is caused by multiplying the function by some constant $a$, which has the effect of multiplying each y-value by $a$.  Use the figure below to explore the how exponential functions respond to vertical stretches. Make a note of your observations before continuing.</p>
 <div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: 40%; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-  <div id="ggb-element-ZfNEAkbh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
+  <div id="ggb-element-ZfNEAkbh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" ></div>
 </div>
 <script>
   function initGGBApplet(instanceId, elementId, materialId) {
@@ -182,7 +182,16 @@ f(x)=(1+r)^{x}
   </div>
 </noscript>
 <p>You should have noticed that multiplying an exponential function $f(x)=b^{x}$ by a constant $a$ causes the y-intercept to change from $(0, 1)$ to $(0, a)$.  For instance, if $a=4$, then the y-intercept will be $(0, 4)$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/exponential_vertical_stretch.png#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/exponential_vertical_stretch.png#center" alt="" >
+</p>
 <p>This is actually a consequence of the rule of exponents that says $b^{0}=1$, so $f(0)=a \cdot b^{0} = a$ for any valid base.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><em>Without graphing</em>, identify the y-intercept of the function $f(x)=59(0.86)^{x}$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The y-intercept is $(0, 59)$.</details></div>
 <h2 id="the-standard-exponential-model">The Standard Exponential Model</h2>
@@ -193,7 +202,16 @@ f(x)=a(1+r)^{x}
 <p>that starts with an initial value of $a$ and grows (or decays) at a constant rate $r$. We will call this equation the <strong>standard exponential model</strong>.  All other exponential functions are variations of this equation.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Write the equation for an exponential function with an initial value of $31$ that grows at a rate of $25 \text{%}$.  <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />Using $a=31$ and $r=0.25$, the function is $f(x)=31(1+0.25)^{x}$ or $f(x)=31(1.25)^{x}$.</details></div>
 <p>Let's revisit an earlier example.  In the final stage of the 2010 FIFA World Cup, 16 teams competed for the world championship.  After each round, one-half of the teams were eliminated and eventually Spain emerged as the champion.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/Spain_World_Cup_2.gif#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/Spain_World_Cup_2.gif#center" alt="" >
+</p>
 <p>We now have the tools needed to model this scenario with the standard exponential model $f(x)=a(1+r)^{x}$.</p>
 <p>Since the final stage of the World Cup starts with 16 teams, we know that $a=16$.  And if $50\text{%}$ the teams are eliminated after each round, then $r=-0.5$ and the function</p>
 <p>[
@@ -212,7 +230,16 @@ f(x)=16 (1-0.5)^{x}=16(0.5)^{x}
 <h2 id="half-life">Half-Life</h2>
 <p>Our first variation of the standard model will enable us to work with applications that involve half lives and doubling times.</p>
 <p>The <strong>half-life</strong> of a function is the amount of time needed for the value to be reduced by half.  Every exponential decay function has a half-life.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/half_life.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/half_life.svg#center" alt="" >
+</p>
 <p>For instance, the exponential decay function in this graph models the value of a sports car.  The initial value of $60,000 is cut in half every 3 years, so we would say it has a half-life of 3 years.</p>
 <p>To make the standard model fit this situation we must stretch the $50\text{%}$ decay out over a three-year period.  In other words, we must stretch the function horizontally by a factor of $3$.  So we can model the value of this car with the function</p>
 <p>[
@@ -222,7 +249,16 @@ f(x)=60000(1-0.5)^{x/3}
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Create an exponential function that starts at $10$ and is cut in half every time $x$ increases by $4$. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />$f(x)=10(1-0.5)^{x/4}$  or $f(x)=10(1/2)^{x/4}$</details></div>
 <h2 id="doubling-time">Doubling Time</h2>
 <p>On the other hand, the <strong>doubling time</strong> of a function is the amount of time needed for the value to double.  Every exponential growth function has a doubling time.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/doubling_time.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/doubling_time.svg#center" alt="" >
+</p>
 <p>Consider, for example, the value of a collectible toy car like the one shown in this graph.  We say that the value of this toy car has a doubling time of 5 years, since its value doubles every 5 years.</p>
 <p>To make the standard model fit this situation we must stretch the $100\text{%}$ growth out over a five-year period.  In other words, we need to stretch the function horizontally by a factor of $5$.  This means we can model the value of this toy car with the function</p>
 <p>[
@@ -263,7 +299,16 @@ f(x)=a (1+r)^{x/c}
 </tbody>
 </table>
 <div class="alert alert-success"><h4>QUICK CHECK</h4>Identify the half-life of the function $g(t) = 9.2\left(\frac{1}{2}\right)^{t/1.4}$.   Assume $t$ is measured in hours. <details class='no-print' style="margin-left:0.7rem;border-style: solid;"><summary style="cursor:pointer;">Answer</summary><hr style="height:0px; visibility:hidden;" />The half-life is $1.4$ hours.</details></div>
-<p><img src="https://duragauge.github.io/img/chapter-3/Intel_C4004.jpg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/Intel_C4004.jpg#center" alt="" >
+</p>
 <p>As an example, when technology innovator, Intel, produced its first microprocessor in 1971, it contained 2300 transistors.  Intel's founder, Gordon Moore, predicted that the number of transistors on a computer chip would double <em>every two years</em>.  His prediction is known as <em>Moore's law</em> and can be modeled by</p>
 <p>[
 f(x)=2300(2)^{x/2}
@@ -293,7 +338,16 @@ On a calculator you should enter </br>  <code>2300*2^(22/2) = 4710400</code>
 <label for="sn-tuppence" class="margin-toggle sidenote-number">
 </label>
 <input type="checkbox" id="sn-tuppence" class="margin-toggle" />
-<span class="sidenote"><img src="https://duragauge.github.io/img/chapter-3/tuppence.gif#center" alt=""></span>
+<span class="sidenote">
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/tuppence.gif#center" alt="" >
+</span>
 to invest his tuppence (two pennies) in the bank with the following words of wisdom:</p>
 <p><em>If you invest your tuppence, wisely in the bank <br>
 Safe and sound <br>
@@ -431,7 +485,16 @@ y &amp;= C e^{ r x}
 </div>
 <h2 id="unlimited-growth">Unlimited Growth</h2>
 <p>In general, exponential growth cannot be sustained unless there are unlimited resources.   For this reason it is sometimes called <strong>unlimited growth</strong>.  A historic example of this is &quot;tulipmania&quot;.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/tulip_price_index.png#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/tulip_price_index.png#center" alt="" >
+</p>
 <p>During the 1630's, Holland was crazy for tulips and their value skyrocketed exponentially.  At one point, tulip prices were as much as 20-times higher than they had been just months before.  Some economists estimate that half of all the money in the Dutch economy was wrapped up in the tulip market.  Such a huge exponential rate of growth was not sustainable and soon the tulip market crashed, bankrupting many Dutch citizens.</p>
 <p>In the next few examples we look at situations where, instead of exploding, the growth is limited and eventually levels off.  Surprisingly, exponential functions are at the center of those applications as well.</p>
 <h2 id="newtons-law-of-cooling">Newton's Law of Cooling</h2>
@@ -448,7 +511,16 @@ T(t) = S + (T_{0} - S)e^{-k  \thinspace t}
 ]</p>
 <p>where $S$ is the temperature of the surroundings (or the temperature of the oven, in this case) $T_{0}$ is the initial temperature of the object (or the original temperature of the pizza), and $ k $ is a positive constant that depends on the nature of the object.</p>
 <p>This function models cooling when $T_0 &gt; S $ and heating if $T_0 &lt; S$.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/newtons_law.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/newtons_law.svg#center" alt="" >
+</p>
 <p>In either case, $y = S$ is a horizontal asymptote.  Also notice that the resulting curves are nothing more than exponential functions that have been reflected and/or shifted vertically.</p>
 <p>Let's consider a cooling example.  Suppose you put a 160°F hot cup of cocoa on the counter in a 70°F kitchen.  The cocoa will cool according to Newton's law of cooling as it approaches room temperature.</p>
 <div style="position:relative; clear:both; padding:0;">
@@ -471,7 +543,16 @@ T(t) &amp;= S+(T_0-S)e^{-k  \thinspace  t} \newline
 <p>Our final variation of the standard exponential model has its roots in population growth.</p>
 <p>Imagine that a small number of trout are introduced into a large lake.  When the population is small, the amount of food and resources available appears unlimited, and the population grows exponentially.  But as the population increases, resources become more scarce and the growth levels off.</p>
 <p>In 1838, Belgian mathematician Pierre-Francois Verhulst created a function that has this very behavior.  His function, now called the <strong>logistic function</strong>, assumes growth is proportional to both the current population size and the available resources.  The equation and graph of a logistic function are given below.  The values $a$, $b$ and $c$ are constants.</p>
-<p><img src="https://duragauge.github.io/img/chapter-3/logistic.svg#center" alt=""></p>
+<p>
+
+
+
+
+
+
+  
+  <img src="https://duragauge.github.io/img/chapter-3/logistic.svg#center" alt="" >
+</p>
 <p>The number $c$ is a horizontal asymptote of the function and is often called the <strong>carrying capacity</strong>.  In the trout example, it would represent the maximum number of trout that the lake can support.</p>
 <div class="alert alert-success"><h4>QUICK CHECK</h4><p>Suppose the population of trout in a particular mountain lake is modeled by the logistic equation $f(x)=\frac{20000}{1+39e^{-0.2x}}$ where $x$ is the number of years since the lake was first stocked.</p>
 <ol>
@@ -528,12 +609,6 @@ T(t) &amp;= S+(T_0-S)e^{-k  \thinspace  t} \newline
                             
                                 
                                 
-                                    <h2>Additional Practice</h2>
-                                    <p>Want more practice? Try these optional exercises powered by MyOpenMath. These exercises are purely for practice and are not part of your graded homework - you can attempt them as many times as you'd like!</p>
-                                    <div class="practice-button-container">
-                                        <a href="https://duragauge.github.io/chapter-3/3.2-practice/" class="button special practice-button">Try Practice Exercises</a>
-                                    </div>
-                                
                             
 
                             <!-- Footer -->
@@ -546,7 +621,7 @@ T(t) &amp;= S+(T_0-S)e^{-k  \thinspace  t} \newline
         </a>
       </div>
       <div class="license-text">
-        This work copyrighted by Nolan Mitchell under a 
+        &copy; Nolan Mitchell.  This work is licensed under a 
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. 
        </div>
     </div>
