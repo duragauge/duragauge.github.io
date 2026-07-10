@@ -30,7 +30,7 @@
                 <section id="two" class="spotlights">
                     {{ range where .Pages "Type" "!=" "practice" }}
                     <section>
-                        <a href="{{ .URL }}" class="image">
+                        <a href="{{ .Permalink }}" class="image">
 							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
 						</a>
                         <div class="content">
@@ -40,7 +40,7 @@
                                 </header>
                                 <p>{{ .Description }}</p>
                                 <ul class="actions">
-                                    <li><a href="{{ .URL }}" class="button">Open</a></li>
+                                    <li><a href="{{ .Permalink }}" class="button">Open</a></li>
                                 </ul>
                             </div>
                         </div>

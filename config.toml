@@ -145,12 +145,6 @@ home = [ "HTML"]
     enable = true
     # Display your showcases here.
 
-#    [[params.tiles.showcase]]
-#      title = "Chapter 0"
-#      subtitle = "Foundations of Algebra"
-#      image = "chapter-0-header.jpg"
-#      url = "chapter-0"
-
     [[params.tiles.showcase]]
       title = "Chapter 1"
       subtitle = "Functions"
@@ -188,67 +182,28 @@ home = [ "HTML"]
       url = "chapter-6"
     # You can make more showcases by copy and pasting the code above
 
-  [params.blog]
-    # All blogs defined in their own files. You can find example blogs
-    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
-    # at the root of this Hugo site.
-    # For more information take a look at the README.
-    # To add more blogs just copy and paste the code.
 
   # Section Type Two
   [params.two]
     enable = true
     title = "About"
     subtitle = "This textbook was developed by Nolan Mitchell for the MTH111Z Precalculus 1: Functions course at Chemeketa Community College. All content, including text, equations, figures, and interactive elements, is available under a non-commercial Creative Commons license and was created with freely available software. Equations are written in LaTeX and rendered through MathJax. Photos, most requiring no attribution, are linked to their sources.  Interactive figures were crafted using GeoGebra.  All other graphics were designed by the author using Inkscape and Gimp. The entire book was compiled using the Hugo static site generator from Markdown files within Visual Studio, incorporating the forty theme and Tufte styles."
-
 #    buttonText = "Get Started"
 #    url = "blogs"
 
 
-  # Contact section
-  [params.contact]
-    enable = false
-    buttonSend = "Send message"
-    buttonClear = "Clear"
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below and uncomment
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    # formEmail = "example@domain.com"
-
-    # Contact Section
-    # You can add multiple emails, phone numbers, or addresses
-    # by copying the corresponding map with frontmatter code.
-    [[params.contact.email]]
-    title = "Email"
-    email = "example@domain.com"
-
-    [[params.contact.phone]]
-    title = "Phone"
-    phone = "(000) 000-0000 x1234"
-
-    [[params.contact.address]]
-    title = "Address"
-    street = "Street"
-    city = "City, ST 00000"
-    country = "Country"
-
   # Footer section
   [params.footer]
     enable = true
-    copyright = ""
-
+    author = "Nolan Mitchell"
+    copyright = "© 2018-2025 Nolan Mitchell."
 
 
     [[params.footer.quicklinks]]
       text = "Deign: "
       url= "https://www.html5up.net"
       alt = "HTML5 UP"
+
+[taxonomies]
+  tag = ""
+  category = ""

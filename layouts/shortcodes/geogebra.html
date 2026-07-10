@@ -13,10 +13,11 @@ Also makes sense to set the background color in Geogebra to the same thing, whic
 
 {{ $id := .Get "id_m" }}
 {{ $ratioStr := .Get "ratio" | default "20%" }}
+{{ $ariaLabel := .Get "aria" | default "" }}
 
 <!-- Responsive container using padding-top ratio -->
 <div class="geogebra-wrapper" style="position: relative; width: 100%; max-width: 75ch; padding-top: {{ $ratioStr }}; margin-bottom: 1rem; margin-left: auto; margin-right: auto;">
-  <div id="ggb-element-{{ $id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></div>
+  <div id="ggb-element-{{ $id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" {{ if $ariaLabel }}aria-label="{{ $ariaLabel }}" role="img"{{ end }}></div>
 </div>
 
 <script>
