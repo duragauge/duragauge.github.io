@@ -1,3 +1,6 @@
+﻿<!-- Generated on: 2026-09-15 15:01:03 -->
+
+
 ---
 title: "1.1 Sets & Numbers"
 description: Sets, or collections of objects, are the basic building blocks of numbers and mathematics.
@@ -17,7 +20,7 @@ The Smithsonian in Washington, DC is one of the largest museums in the world, ho
 
 The *Air and Space* collection, for example, holds the [1903 Wright Flyer](https://www.si.edu/object/nasm_A19610048000), the first successful airplane, and the [Apollo 11 Command Module](https://www.si.edu/object/nasm_A19700102000) from the first mission to the moon.  
 
-Notable items in other collections include [Abraham Lincoln’s top hat](https://www.si.edu/object/nmah_1199660), an original [Kermit the Frog](https://www.si.edu/object/nmah_765593) puppet, and the famous [Hope Diamond](https://www.si.edu/spotlight/hope-diamond). 
+Notable items in other collections include [Abraham Lincolnâ€™s top hat](https://www.si.edu/object/nmah_1199660), an original [Kermit the Frog](https://www.si.edu/object/nmah_765593) puppet, and the famous [Hope Diamond](https://www.si.edu/spotlight/hope-diamond). 
 
 With over 200 million fossils, specimens, and treasures, these collections play a crucial role in preserving our nation's history and culture, serving as invaluable resources for researchers and scientists. 
 
@@ -215,7 +218,7 @@ The union of the sets of rational and irrational numbers is called the set of **
 
 For example, $-0.5$, $\sqrt{2}$, $\frac{7}{3}$, $-0.248$, and  $8.\overline{261}$ are all real numbers.
 
-![A diagram showing the classification of real numbers (ℝ) into rational and irrational numbers. Rational numbers (ℚ) are defined as all numbers that can be written as p/q, where p and q are integers and q ≠ 0. Inside the rational numbers set, there's a smaller set of integers (ℤ = { 0, ±1, ±2, ±3, ... }) and within that, an even smaller set of natural numbers (ℕ = {1, 2, 3, 4, ...}). To the right of the rational numbers is a separate box labeled "Irrational Numbers," defined as {x : x ∉ ℚ}. The entire diagram is enclosed in a larger box labeled "Real Numbers ℝ = {x : x is rational or irrational}".
+![A diagram showing the classification of real numbers (â„) into rational and irrational numbers. Rational numbers (â„š) are defined as all numbers that can be written as p/q, where p and q are integers and q â‰  0. Inside the rational numbers set, there's a smaller set of integers (â„¤ = { 0, Â±1, Â±2, Â±3, ... }) and within that, an even smaller set of natural numbers (â„• = {1, 2, 3, 4, ...}). To the right of the rational numbers is a separate box labeled "Irrational Numbers," defined as {x : x âˆ‰ â„š}. The entire diagram is enclosed in a larger box labeled "Real Numbers â„ = {x : x is rational or irrational}".
 ](/img/chapter-1/real_numbers.png#center)
 
 The set of real numbers is closed under all standard operations including powers and some roots.  In fact, you can do just about anything to a real number and the result will still be a real number, as long as you do not take the square root of a negative value, something we will look into in a [later chapter](//chapter-5/5.2#imaginary-numbers), or divide by $0$.
@@ -328,7 +331,7 @@ The order of operations we use today is sometimes remembered by the acronym P E 
  1. Evaluate $8-7(2+1)$.  {{% answer %}}\[\begin{align} 8-7(2+1) &= 8-7(3) \newline &= 8-21 \newline &= -13 \end{align}\]{{% /answer %}}
  1. Evaluate $\frac{4+2(5)}{7}$ {{% answer %}} \[\begin{align}\frac{4+2(5)}{7} &= \frac{4+10}{7} \newline &=\frac{14}{7} \newline &=2 \end{align}\] {{% /answer %}}
  1. True or False:  $\frac{8}{4+2}=\frac{8}{4}+\frac{8}{2}$ {{% answer %}}**False**. The correct calculation is \[\frac{8}{4+2}=\frac{8}{6}=\frac{4}{3}\].{{% /answer %}}
- 1. True or False:  $(2+3)^2=2^2+3^2$ {{% answer %}}**False**. The right side of the equation simplifies to $(2+3)^2=(5)^2=25$, but the other side of the equation is $(2)^2+(3)^2=4+9=13$.  <br><br>For real numbers $a$ and $b$, the distributive property gives \[(a+b)^2=a^2+2ab+b^2\].{{% /answer %}}
+ 1. True or False:  $(2+3)^2=2^2+3^2$ {{% answer %}}**False**. The left side of the equation simplifies to $(2+3)^2=(5)^2=25$, but the other side of the equation is $(2)^2+(3)^2=4+9=13$.  <br><br>For real numbers $a$ and $b$, the distributive property gives \[(a+b)^2=a^2+2ab+b^2\].{{% /answer %}}
  {{% /check %}}
 ---
 title: "1.2 Functions"
@@ -445,7 +448,7 @@ A function can be evaluated even if we do not get a numerical result.  Evaluatin
 
 {{% check %}}
 1. Evaluate $f(2)$ if $f(x)=x-3$. {{% answer %}}$f(2)=(2)-3=-1${{% /answer %}}
-1. If $g(x)=x^{2}+6x$, what is $g(😀)$? {{% answer %}}$g(😀)=(😀)^2+6(😀)${{% /answer %}}
+1. If $g(x)=x^{2}+6x$, what is $g(ðŸ˜€)$? {{% answer %}}$g(ðŸ˜€)=(ðŸ˜€)^2+6(ðŸ˜€)${{% /answer %}}
 1. For the function shown below, what is $f(5)$? <br><br> ![](/img/chapter-1/arrow_diagram_b_inverse.svg#center){{% answer %}}$f(5)=A${{% /answer %}}
 1. Using the same function diagram as above, what is the solution to $f(x)=D$? {{% answer %}}Since $f(42)=D$, the solution is $x=42$.{{% /answer %}}
 {{% /check %}}
@@ -845,7 +848,7 @@ You might recall that $\frac{1}{x}=x^{-1}$ is a rule of exponents.  Because of t
 
 * **Domain and Range:** The domain is all real numbers except $0$, since division by $0$ is undefined.  The range is also all real numbers except for $0$.
 * **Intercepts:** This function does not have any intercepts.
-* **Increasing, Decreasing, Constant:** The reciprocal function is decreasing on it's entire domain.
+* **Increasing, Decreasing, Constant:** The reciprocal function is increasing on $(-\infty,0)$ and decreasing on $(0,\infty)$.
 * **Maximums and Minimums:** There are no maximums or minimums.
 * **Asymptotes:** The y-axis is a vertical asymptote.  The x-axis is a horizontal asymptote.</details>
 <br>
@@ -1281,7 +1284,7 @@ When functions include several operations there are two methods for finding the 
 
 Right now, however, the focus is on a simpler **shoes and socks** method.  This method gets its name from the obvious place.  When getting dressed you put on your socks before putting on your shoes.  To take them off you must reverse the order:  first remove your shoes and then take off your socks.
 
-A great illustration of this method comes from the classic television program *Mr. Rogers' Neighborhood*.{{% marnote %}}![](/img/chapter-1/Mr-Rogers-stamp.jpg) The U.S. Postal Service honored Fred Rogers (1928–2003) with a Forever stamp on the 50th anniversary of *Mister Rogers' Neighborhood* in March, 2018.{{% /marnote %}}  At the start of each episode, the late Fred Rogers would walk in singing the song "Won't You Be My Neighbor?"  As he sang he would
+A great illustration of this method comes from the classic television program *Mr. Rogers' Neighborhood*.{{% marnote %}}![](/img/chapter-1/Mr-Rogers-stamp.jpg) The U.S. Postal Service honored Fred Rogers (1928â€“2003) with a Forever stamp on the 50th anniversary of *Mister Rogers' Neighborhood* in March, 2018.{{% /marnote %}}  At the start of each episode, the late Fred Rogers would walk in singing the song "Won't You Be My Neighbor?"  As he sang he would
 
 1.  Take off his jacket
 1.  Put on a sweater
@@ -1462,7 +1465,7 @@ Use the graph of $f(x)$ to answer the questions below.
 ## Percent Change
 Suppose you're planning a vacation to Hawaii and find that the price of airplane tickets has increased from $\\$400$ to $\\$410$.  While you might be a bit annoyed, a $\\$10$ increase is unlikely to make you cancel your trip.
 
-However, if your favorite café raised the price of a cup of coffee from $\\$4$ to $\\$14$, that $\\$10$ increase would almost certainly make you reconsider visiting that café ever again.
+However, if your favorite cafÃ© raised the price of a cup of coffee from $\\$4$ to $\\$14$, that $\\$10$ increase would almost certainly make you reconsider visiting that cafÃ© ever again.
 
 These two situations feel so different, even though the total increase is $\\$10$ in both cases, because total change doesn't look at the increase in cost relative to the starting price.
 
@@ -2040,7 +2043,7 @@ Two quantities $x$ and $y$ are said to **vary directly**{{% sidenote "variation"
 
 for any constant $k$.  
 
-In a variation problem the number $k$ is called the **constant of variation**.  Whenever $x$ increases by $1$ then $y$ will increase by a factor of $k$.  
+In a variation problem the number $k$ is called the **constant of variation**.  Whenever $x$ increases by $1$ then $y$ will increase by $k$.  
 
 While we normally think of $x$ and $y$ as single variables, they could also be algebraic expressions.  For instance, Kepler's third law describes a directly proportional relationship between a square and a cube.  It states that the square of the time it takes a planet to orbit the Sun (called its period) varies directly with the cube of its distance from the Sun.  The equation is $P^2 =  k \thinspace D^{3}$.
 
@@ -2289,10 +2292,10 @@ Use the formula above find the speed of a car that left 180 foot long skid marks
 ## Terminal Velocity
 {{% imgcap file="/img/chapter-2/skydive.jpg" title="Skydiving photo from the US Air Force on Flickr" source="https://flic.kr/p/cecNKQ"%}}
 
-The force of aerodynamic drag $F_D$ acting on a skydiver is directly proportional to four parameters: the square of the velocity $v$, the density of air $\rho$, the drag coefficient $C$, and the amount of surface area $A$ that is facing the ground, with a constant of proportionality of $1/2$.  Translating the statement above, we obtain the equation
+The force of aerodynamic drag $D$ acting on a skydiver is directly proportional to four parameters: the square of the velocity $v$, the density of air $\rho$, the drag coefficient $C$, and the amount of surface area $A$ that is facing the ground, with a constant of proportionality of $1/2$.  Translating the statement above, we obtain the equation
 
 \[
-	F_D =  \frac{1}{2} C \rho A v^2
+	D =  \frac{1}{2} C \rho A v^2
 \]
 
 From this information, is it possible to find a formula for velocity?
@@ -2395,7 +2398,7 @@ Suppose you want to build a canoe that will have a hull speed of $V = 5$  knots.
 
 
 ### Dial-up Internet
-Let's consider one last example of a power function model and the importance of its inverse.  Due to the increasing availability of high-speed internet, the number of subscribers to AOL's dial-up internet service has been decreasing.{{% sidenote "dial-up"%}}A 2013 study by the Pew Research Center reported that 3% of Americans still use dial-up connections, primarily in rural areas.  That’s more than 9.4 million people.{{% /sidenote %}}
+Let's consider one last example of a power function model and the importance of its inverse.  Due to the increasing availability of high-speed internet, the number of subscribers to AOL's dial-up internet service has been decreasing.{{% sidenote "dial-up"%}}A 2013 study by the Pew Research Center reported that 3% of Americans still use dial-up connections, primarily in rural areas.  Thatâ€™s more than 9.4 million people.{{% /sidenote %}}
 
 ![](/img/chapter-2/aol.svg#center)
 
@@ -3305,7 +3308,7 @@ For convenience, we will use the common logarithm $\log(x)$ and, to simplify the
 |Interval | $\frac{\Delta y}{\Delta x} =\frac{f(b)-f(a)}{b-a}=\frac{\log(b)-\log(a)}{b-a}$ |
 | --- | --- |
 | $[0.001, 1.001]$ | $\frac{\Delta y}{\Delta x}=\frac{\log (1.001)-\log (0.001)}{1.001-0.001}=3.000$ |
-| $[1, 2]$ | $\frac{\Delta y}{\Delta x}=\frac{\log 2-\log 1}{1-0}=0.301$ |
+| $[1, 2]$ | $\frac{\Delta y}{\Delta x}=\frac{\log 2-\log 1}{2-1}=0.301$ |
 | $[2, 3]$ | $\frac{\Delta y}{\Delta x}=\frac{\log 3-\log 2}{3-2}=0.176$ |
 | $[3, 4]$ | $\frac{\Delta y}{\Delta x}=\frac{\log 4-\log 3}{4-3}=0.125$ |
 | $[50, 51]$ | $\frac{\Delta y}{\Delta x}=\frac{\log 51-\log 50}{51-50}=0.009$ |
@@ -3418,7 +3421,7 @@ The properties we discovered are valid for all logarithms, no matter which base 
 
 {{% check %}}
 1. Use the **product rule** to rewrite $\log(7)+\log(3)${{% answer %}}$\log(7)+\log(3)=\log(7 \cdot 3)=\log(21)${{% /answer %}}
-1. Use the **quotient rule** to rewrite $\ln(8)-\ln(4)${{% answer %}}$\ln(8)-\ln(4)=\ln\left(\frac{8}{2}\right)=\ln(2)${{% /answer %}}
+1. Use the **quotient rule** to rewrite $\ln(8)-\ln(4)${{% answer %}}$\ln(8)-\ln(4)=\ln\left(\frac{8}{4}\right)=\ln(2)${{% /answer %}}
 1. Use the **power rule** to rewrite $\log(3^{x})${{% answer %}}$\log(3^{x})=x*\log(3)${{% /answer %}}
 {{% /check %}}
 
@@ -3555,17 +3558,15 @@ D &= 10 \log \left( \frac{4 \times 10^{-8}}{10^{-12}}\right) \newline
 ## The Stellar Magnitude Scale
 {{% imgcap file="/img/chapter-3/denis-degioanni-9wH624ALFQA-unsplash.jpg" title="Photo by Denis Degioanni on Unsplash" source="https://https://unsplash.com/photos/9wH624ALFQA" %}}
 
-One of the oldest logarithmic scales is the apparent magnitude scale used for measuring the brightness of stars.  
+One of the oldest logarithmic scales is the one used for measuring the brightness of stars.  The human eye responds to changes in brightness in a logarithmic way, so when the ancient Greeks categorized stars by how bright they appeared to the naked eye, they unknowingly created a logarithmic scale.
 
-It dates back at least to the Greek astronomer Hipparchus who categorized stars into 6 magnitudes, from weakest ($6$) to brightest ($1$).  The stars in each magnitude were roughly twice as bright as those in the prior magnitude.
-
-Today astronomers have a precise magnitude scale and use the following equation to calculate the apparent magnitude $m$ of a star in a particular color of light:
+In 1856, British astronomer Norman Pogson created the following equation for the apparent magnitude $m$ of a star to closely match those more ancient classifications.
 
 \[
   m=-2.5  \log \left(\frac{F}{F_{0}}\right)
 \]
 
-In this formula $F$ is the observed flux (ie. brightness) of a star and $F_0$ is a reference flux in the same color.  Flux is usually given in watts per square meter.  When working with visible light, we use the brightness of the star Vega as the reference flux: $F_0=2.8\times10^{-8}$  watts/m<sup>2</sup>.
+In this formula $F$ is the observed flux (ie. brightness) of a star and $F_0$ is a reference flux in the same color.  Flux is usually given in watts per square meter.  Modern astronomers typically use the star Vega as the reference for an apparent magnitude of zero ($m=0$), making it's flux the baseline: $F_0=2.8\times10^{-8}$  watts/m<sup>2</sup> for visible light.
 
 Suppose, for instance, that we wanted to find the apparent magnitude of the Sun, which has a flux of $1340$ watts/m<sup>2</sup>.
 
@@ -5180,7 +5181,7 @@ Using the graph above, or a graph on your own calculator, discuss domain, range,
 ## Looking Ahead
 We now have five different ways to combine functions, addition, subtraction, multiplication, division and composition.  Combining two functions with any of these operations always produces a new function.
 
-Many of these combined functions are generally not one-to-one.  They do not pass a vertical line test and do not have inverses unless the domain is restricted.  In the next section we will discuss how to find inverses of these more complicated functions.
+Many of these combined functions are generally not one-to-one.  They do not pass a horizontal line test and do not have inverses unless the domain is restricted.  In the next section we will discuss how to find inverses of these more complicated functions.
 
 We will also see how composition can be used to prove that two functions are inverses of each other.
 ---
@@ -5483,14 +5484,14 @@ draft: false
 tags: ["graphs-of-polynomials", "standard-form", "polynomial-terms", "degree", "leading-coefficient", "constant-term", "end-behavior", "even-degree", "odd-degree", "positive-leading-coefficient", "negative-leading-coefficient", "turning-points", "minimum-degree-from-graph", "y-intercept", "real-zeros", "x-intercepts", "factor-theorem", "multiple-zeros", "multiplicity", "determining-polynomial-from-graph", "imaginary-zeros", "al-khwarizmi"]
 ---
 
-{{% imgcap file="/img/chapter-5/al-jabr.jpg" title="Statue of Al-Khwārizmī in his birth town Khiva, Uzbekistan. Photo by Yunuskhuja Tuygunkhujaev on Wikipedia" source="https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi#/media/File:Khiva.jpg" %}}
+{{% imgcap file="/img/chapter-5/al-jabr.jpg" title="Statue of Al-KhwÄrizmÄ« in his birth town Khiva, Uzbekistan. Photo by Yunuskhuja Tuygunkhujaev on Wikipedia" source="https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi#/media/File:Khiva.jpg" %}}
 
 ## Introduction
 Polynomials have intrigued mathematicians for centuries.  Ancient Egyptian, Babylonian, and Greek mathematicians all studied simple polynomials.
 
 The Chinese are known to have worked with cubics in the early 7th century, at the same time mathematicians in India were busy creating the [quadratic formula](/img/chapter-5/quadratic_formula.svg).
 
-Two centuries later the Persian mathematician al-Khwārizmī introduced the world to “al-jabr”, or “algebra”, as a process for solving polynomial equations.
+Two centuries later the Persian mathematician al-KhwÄrizmÄ« introduced the world to â€œal-jabrâ€, or â€œalgebraâ€, as a process for solving polynomial equations.
 
 During the Renaissance polynomials spread throughout western Europe and contests were held to see who could solve the hardest polynomial problem.  
 
@@ -5817,7 +5818,7 @@ tags: ["zeros-of-polynomials", "fundamental-theorem-of-algebra", "galois-theory"
 {{% imgcap file="/img/chapter-5/duel.jpg" title="Drawing by Bauce and Rouget" source="https://commons.wikimedia.org/wiki/File:Duel_pistolet.JPG" %}}
 
 ## Introduction
-As the smoke cleared on the morning of May 30, 1832, young Évariste Galois lay mortally wounded on the ground, having been shot in the stomach.  Though only 20 years old, Galois had earned a reputation not only as a brilliant mathematician, but also as a reckless political activist who had threatened the life of the French king and been arrested for carrying loaded weapons during a protest in Paris.  
+As the smoke cleared on the morning of May 30, 1832, young Ã‰variste Galois lay mortally wounded on the ground, having been shot in the stomach.  Though only 20 years old, Galois had earned a reputation not only as a brilliant mathematician, but also as a reckless political activist who had threatened the life of the French king and been arrested for carrying loaded weapons during a protest in Paris.  
 
 No one knows for sure why Galois was involved the duel.  Some say that he was defending the honor of a young lady or that he was the victim of a government conspiracy.  All we know is that he feared for his life and spent the night before the duel writing farewell letters to close friends.
 
@@ -5829,7 +5830,7 @@ In the last section we saw that x-intercepts are real number solutions to the po
 
 Throughout history efforts have been made to find formulas that will produce the zeros of polynomials. The Indian mathematician Brahmagupta is generally credited as being the first to publish a description of the [quadratic formula](/img/chapter-5/quadratic_formula.svg) in 628 AD, though the roots of the solution go back thousands of years.  The quadratic formula gives the two zeros of any 2nd degree polynomial.
 
-In the 1500's, Niccolò Tartaglia, one of the most gifted mathematicians in Italy, found a general process for solving all cubic equations.  Within a few years a fellow Italian by the name of Lodovico Ferrari found a way to find the zeros of all 4th degree polynomials.
+In the 1500's, NiccolÃ² Tartaglia, one of the most gifted mathematicians in Italy, found a general process for solving all cubic equations.  Within a few years a fellow Italian by the name of Lodovico Ferrari found a way to find the zeros of all 4th degree polynomials.
 
 The work of Tartaglia and Ferrari showed there are always 3 solutions to every 3rd degree polynomial and 4 solutions to every 4th degree polynomial.  Following that pattern, it would be reasonable to expect that a polynomial with a degree of $n$ always has $n$ zeros.
 
@@ -5848,7 +5849,7 @@ For instance, since  $p(x)=2x^4-3x+8$ is a $4th$ degree polynomial, we know that
 ## Galois Theory
 Gauss showed that for a polynomial of degree $n$ there will always be $n$ solutions to the equation $p(x)=0$.  He did not, however, come up with a formula to find all of those solutions.  And there's a very good reason he didn't.
 
-In the early 1800's, Galois' notes and letters, together with the work of his equally tragic contemporary Niels Henrik Abel{{% sidenote "Abel"%}}Abel was a young Norwegian mathematician struggling to find steady income so he could marry his fiancée.  He died, unwed, at the age of 26 from tuberculosis.  Two days later a letter arrived offering a post at the University of Berlin.{{% /sidenote %}}, showed that it is impossible to find a general algebraic formula (ie. a formula involving only addition, subtraction, multiplication, division, powers and roots) for the zeros of a polynomial if the degree is higher than 4.
+In the early 1800's, Galois' notes and letters, together with the work of his equally tragic contemporary Niels Henrik Abel{{% sidenote "Abel"%}}Abel was a young Norwegian mathematician struggling to find steady income so he could marry his fiancÃ©e.  He died, unwed, at the age of 26 from tuberculosis.  Two days later a letter arrived offering a post at the University of Berlin.{{% /sidenote %}}, showed that it is impossible to find a general algebraic formula (ie. a formula involving only addition, subtraction, multiplication, division, powers and roots) for the zeros of a polynomial if the degree is higher than 4.
 
 In other words, we cannot count on using a formula to find the zeros of a polynomial if its degree is higher than 4.  In fact, since the formulas for the [cubic](/img/chapter-5/cubic_formula.svg) and [quartic](/img/chapter-5/quartic_formula.svg) are impractical, the only polynomial formula you'll likely need to remember is the [quadratic formula](/img/chapter-5/quadratic_formula.svg).
 
@@ -6184,12 +6185,12 @@ It was Galileo who proved that any object launched into the air will follow the 
 
 Physicists have studied this for hundreds of years and have discovered several equations that model the motion of projectiles.  In particular, the vertical height of a projectile (in meters) can be written as a function of time
 
-\[ h(t) = -4.9 t^{2} + v t + h \]
+\[ h(t) = -4.9 t^{2} + v_0 t + h_0 \]
 
-where $v$ is vertical velocity (in meters per second), $h$ is the initial height (in meters) and $t$ is the time (in seconds).
+where $v_0$ is vertical velocity (in meters per second), $h_0$ is the initial height (in meters) and $t$ is the time (in seconds).
 
 {{% check %}}
-{{% imgcap file="/img/chapter-5/16333686542_ca8b5866fc_b_flipped.jpg" title="Photo by Petri Damstén on Flickr" source="https://flic.kr/p/qTmpXd" %}} Suppose the skier in this photo leaves the jump with a vertical velocity of $2$ meters per second from an initial height of $70$ meters.  Write a function that models their height, assuming the jump follows projectile motion. {{% answer %}}Using $v=2$ and $h=70$ the function would be
+{{% imgcap file="/img/chapter-5/16333686542_ca8b5866fc_b_flipped.jpg" title="Photo by Petri DamstÃ©n on Flickr" source="https://flic.kr/p/qTmpXd" %}} Suppose the skier in this photo leaves the jump with a vertical velocity of $2$ meters per second from an initial height of $70$ meters.  Write a function that models their height, assuming the jump follows projectile motion. {{% answer %}}Using $v=2$ and $h=70$ the function would be
 \[ h(t)=-4.9t^{2}+2t+70 \]
 {{% /answer %}}
 {{% /check %}}
@@ -6397,7 +6398,7 @@ The vertical asymptotes of a rational function are caused by the polynomial in t
 
 
 {{% check %}}
-1. How can you tell if a rational function has a vertical asymptote, just by looking at its equation? {{% answer %}}If $(x-c)$ is a factor of the denominator, then the function has a vertical asymptote at $x=c$. The zeros of the polynomial in the denominator cause the vertical asymptotes of the rational function.{{% /answer %}}
+1. How can you tell if a rational function has a vertical asymptote, just by looking at its equation? {{% answer %}}If $(x-c)$ is a factor of the denominator and not a factor of the numerator then the function has a vertical asymptote at $x=c$. The zeros of the polynomial in the denominator cause the vertical asymptotes of the rational function.{{% /answer %}}
 {{% /check %}}
 
 ## Removable Discontinuities
@@ -6450,7 +6451,7 @@ If the degree of the numerator is larger, then no horizontal asymptote exists. H
 {{% /check %}}
 ---
 title: "6.1 Concepts of Modeling"
-description: "Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of nature’s most violent events: a tornado. "
+description: "Every spring, hundreds of people come to the Great Plains region of the United States in an attempt to get as close as possible to one of natureâ€™s most violent events: a tornado. "
 author: "Nolan Mitchell"
 type: page
 image: "tornado.jpg"

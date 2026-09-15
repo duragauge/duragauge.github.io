@@ -1,6 +1,5 @@
 # Precalculus 1
 
-
 1.1 Sets & Numbers
 1.2 Functions
 1.3 Graphs of Functions
